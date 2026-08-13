@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "project": "lab-management-system-shared",
+  "stack": "shared-typescript",
+  "suite_version": "0.5.0",
+  "source_dirs": ["tsp", "scripts"],
+  "test_dirs": ["tests"],
+  "gates": {
+    "L1": { "name": "格式", "cmd": ["npx", "--no", "tsp", "compile", ".", "--no-emit"], "fix": "修复 tsp/main.tsp 语法" },
+    "L3": { "name": "类型", "cmd": ["npx", "--no", "tsc", "--noEmit"], "fix": "补全类型" },
+    "L4": { "name": "测试", "cmd": ["npx", "--no", "vitest", "run"], "fix": "先让测试变绿" }
+  },
+  "trace_cmd": ["npx", "--no", "vitest", "run"],
+  "trace_env": { "TRACE_MAP": "1" }
+}

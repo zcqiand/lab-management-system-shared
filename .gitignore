@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+generated/ts/
+generated/java/
+generated/csharp/
+.state/trace.json
+.state/gate.json
