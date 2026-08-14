@@ -63,8 +63,8 @@ const EXPECTED_TABLES = [
   "inspection_report_name_standards",
   "inspection_report_name_parameters",
   "inspection_calculation_rules",
-  "param_interfaces",
-  "param_interface_links",
+  "inspection_param_interfaces",
+  "inspection_param_interface_links",
 ];
 
 const EXPECTED_ENUMS = [
