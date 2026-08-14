@@ -12,6 +12,10 @@ tags:
   - name: inspection-catalog
   - name: technical-requirements
   - name: summary
+  - name: inspection-dictionary
+  - name: report-names
+  - name: calculation-rules
+  - name: param-interfaces
 paths:
   /api/auth/login:
     post:
@@ -198,6 +202,150 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SsoCallbackRequest'
+  /api/calculation-rules:
+    get:
+      operationId: CalculationRules_listCalculationRules
+      parameters:
+        - name: inspectionObjectCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: inspectionParameterCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CalculationRule'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - calculation-rules
+    post:
+      operationId: CalculationRules_createCalculationRule
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculationRule'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - calculation-rules
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCalculationRuleRequest'
+  /api/calculation-rules/{inspectionObjectCode}/{inspectionParameterCode}:
+    get:
+      operationId: CalculationRules_getCalculationRule
+      parameters:
+        - name: inspectionObjectCode
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: inspectionParameterCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculationRule'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - calculation-rules
+    put:
+      operationId: CalculationRules_updateCalculationRule
+      parameters:
+        - name: inspectionObjectCode
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: inspectionParameterCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculationRule'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - calculation-rules
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateCalculationRuleRequest'
+    delete:
+      operationId: CalculationRules_deleteCalculationRule
+      parameters:
+        - name: inspectionObjectCode
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: inspectionParameterCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - calculation-rules
   /api/catalog/brands:
     get:
       operationId: Catalog_listBrands
@@ -785,6 +933,779 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
         - contracts
+  /api/inspection/links/object-parameter:
+    post:
+      operationId: InspectionDictionary_linkObjectParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ObjectParameterLink'
+    delete:
+      operationId: InspectionDictionary_unlinkObjectParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inspectionObjectCode:
+                  type: string
+                inspectionParameterCode:
+                  type: string
+              required:
+                - inspectionObjectCode
+                - inspectionParameterCode
+  /api/inspection/links/object-standard:
+    post:
+      operationId: InspectionDictionary_linkObjectStandard
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ObjectStandardLink'
+    delete:
+      operationId: InspectionDictionary_unlinkObjectStandard
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inspectionObjectCode:
+                  type: string
+                inspectionStandardCode:
+                  type: string
+                role:
+                  $ref: '#/components/schemas/InspectionStandardRole'
+              required:
+                - inspectionObjectCode
+                - inspectionStandardCode
+                - role
+  /api/inspection/links/specialty-object:
+    post:
+      operationId: InspectionDictionary_linkSpecialtyObject
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpecialtyObjectLink'
+    delete:
+      operationId: InspectionDictionary_unlinkSpecialtyObject
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpecialtyObjectLink'
+  /api/inspection/links/standard-parameter:
+    post:
+      operationId: InspectionDictionary_linkStandardParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StandardParameterLink'
+    delete:
+      operationId: InspectionDictionary_unlinkStandardParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StandardParameterLink'
+  /api/inspection/objects:
+    get:
+      operationId: InspectionDictionary_listObjects
+      parameters:
+        - name: inspectionSpecialtyCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InspectionObject'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+    post:
+      operationId: InspectionDictionary_createObject
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionObject'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInspectionObjectRequest'
+  /api/inspection/objects/{code}:
+    put:
+      operationId: InspectionDictionary_updateObject
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionObject'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateInspectionObjectRequest'
+    delete:
+      operationId: InspectionDictionary_deleteObject
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+  /api/inspection/parameters:
+    get:
+      operationId: InspectionDictionary_listParameters
+      parameters:
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: sourceType
+          in: query
+          required: false
+          schema:
+            $ref: '#/components/schemas/InspectionParameterSourceType'
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InspectionParameter'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+    post:
+      operationId: InspectionDictionary_createParameter
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionParameter'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInspectionParameterRequest'
+  /api/inspection/parameters/{code}:
+    put:
+      operationId: InspectionDictionary_updateParameter
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionParameter'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateInspectionParameterRequest'
+    delete:
+      operationId: InspectionDictionary_deleteParameter
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+  /api/inspection/specialties:
+    get:
+      operationId: InspectionDictionary_listSpecialties
+      parameters:
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InspectionSpecialty'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+    post:
+      operationId: InspectionDictionary_createSpecialty
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionSpecialty'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInspectionSpecialtyRequest'
+  /api/inspection/specialties/{code}:
+    put:
+      operationId: InspectionDictionary_updateSpecialty
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionSpecialty'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateInspectionSpecialtyRequest'
+    delete:
+      operationId: InspectionDictionary_deleteSpecialty
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+  /api/inspection/standards:
+    get:
+      operationId: InspectionDictionary_listStandards
+      parameters:
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: status
+          in: query
+          required: false
+          schema:
+            $ref: '#/components/schemas/InspectionStandardStatus'
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InspectionStandard'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+    post:
+      operationId: InspectionDictionary_createStandard
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionStandard'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInspectionStandardRequest'
+  /api/inspection/standards/{code}:
+    put:
+      operationId: InspectionDictionary_updateStandard
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionStandard'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateInspectionStandardRequest'
+    delete:
+      operationId: InspectionDictionary_deleteStandard
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
+  /api/param-interfaces:
+    get:
+      operationId: ParamInterfaces_listParamInterfaces
+      parameters:
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ParamInterface'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+    post:
+      operationId: ParamInterfaces_createParamInterface
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParamInterface'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateParamInterfaceRequest'
+  /api/param-interfaces/links:
+    post:
+      operationId: ParamInterfaces_linkParamInterface
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ParamInterfaceLink'
+    delete:
+      operationId: ParamInterfaces_unlinkParamInterface
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inspectionParameterCode:
+                  type: string
+                paramInterfaceCode:
+                  type: string
+              required:
+                - inspectionParameterCode
+                - paramInterfaceCode
+  /api/param-interfaces/{code}:
+    get:
+      operationId: ParamInterfaces_getParamInterface
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParamInterface'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+    put:
+      operationId: ParamInterfaces_updateParamInterface
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParamInterface'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateParamInterfaceRequest'
+    delete:
+      operationId: ParamInterfaces_deleteParamInterface
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
   /api/receipts:
     get:
       operationId: Receipts_listReceipts
@@ -1098,6 +2019,279 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/AssignTaskRequest'
+  /api/report-names:
+    get:
+      operationId: ReportNames_listReportNames
+      parameters:
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InspectionReportName'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+    post:
+      operationId: ReportNames_createReportName
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionReportName'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInspectionReportNameRequest'
+  /api/report-names/links/object:
+    post:
+      operationId: ReportNames_linkObjectReportName
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ObjectReportNameLink'
+    delete:
+      operationId: ReportNames_unlinkObjectReportName
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inspectionObjectCode:
+                  type: string
+                reportNameCode:
+                  type: string
+              required:
+                - inspectionObjectCode
+                - reportNameCode
+  /api/report-names/links/parameter:
+    post:
+      operationId: ReportNames_linkReportNameParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReportNameParameterLink'
+    delete:
+      operationId: ReportNames_unlinkReportNameParameter
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reportNameCode:
+                  type: string
+                inspectionParameterCode:
+                  type: string
+              required:
+                - reportNameCode
+                - inspectionParameterCode
+  /api/report-names/links/standard:
+    post:
+      operationId: ReportNames_linkReportNameStandard
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReportNameStandardLink'
+    delete:
+      operationId: ReportNames_unlinkReportNameStandard
+      parameters: []
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reportNameCode:
+                  type: string
+                inspectionStandardCode:
+                  type: string
+                role:
+                  $ref: '#/components/schemas/InspectionStandardRole'
+              required:
+                - reportNameCode
+                - inspectionStandardCode
+                - role
+  /api/report-names/{code}:
+    get:
+      operationId: ReportNames_getReportName
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionReportName'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+    put:
+      operationId: ReportNames_updateReportName
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InspectionReportName'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateInspectionReportNameRequest'
+    delete:
+      operationId: ReportNames_deleteReportName
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: 'There is no content to send for this request, but the headers may be useful. '
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
   /api/samples:
     get:
       operationId: Samples_listSamples
@@ -1697,6 +2891,55 @@ components:
           type: string
         plannedTestDate:
           type: string
+    CalculationAlgorithmType:
+      type: string
+      enum:
+        - simple_avg
+        - compressive_strength
+        - flexural_strength
+        - steel_tensile
+        - formula
+        - manual
+        - auto_calc_ratio
+    CalculationRule:
+      type: object
+      required:
+        - inspectionObjectCode
+        - inspectionParameterCode
+        - algorithmType
+        - specimenCount
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        inspectionObjectCode:
+          type: string
+        inspectionParameterCode:
+          type: string
+        testingStandardCode:
+          type: string
+        reportNameCode:
+          type: string
+        algorithmType:
+          $ref: '#/components/schemas/CalculationAlgorithmType'
+        specimenCount:
+          type: integer
+          format: int32
+        formula:
+          type: string
+        conditions:
+          type: string
+        roundingRule:
+          type: string
+        remark:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
     Contract:
       type: object
       required:
@@ -1756,6 +2999,36 @@ components:
       enum:
         - active
         - archived
+    CreateCalculationRuleRequest:
+      type: object
+      required:
+        - inspectionObjectCode
+        - inspectionParameterCode
+      properties:
+        inspectionObjectCode:
+          type: string
+        inspectionParameterCode:
+          type: string
+        testingStandardCode:
+          type: string
+        reportNameCode:
+          type: string
+        algorithmType:
+          $ref: '#/components/schemas/CalculationAlgorithmType'
+        specimenCount:
+          type: integer
+          format: int32
+        formula:
+          type: string
+        conditions:
+          type: string
+        roundingRule:
+          type: string
+        remark:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
     CreateCatalogEntryRequest:
       type: object
       required:
@@ -1817,6 +3090,151 @@ components:
           type: string
         status:
           $ref: '#/components/schemas/ContractStatus'
+    CreateInspectionObjectRequest:
+      type: object
+      required:
+        - code
+        - inspectionSpecialtyCode
+        - sourceProjectNo
+        - sourceProjectName
+        - name
+      properties:
+        code:
+          type: string
+        inspectionSpecialtyCode:
+          type: string
+        sourceProjectNo:
+          type: string
+        sourceProjectName:
+          type: string
+        name:
+          type: string
+        isOptionalForQualification:
+          type: boolean
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+    CreateInspectionParameterRequest:
+      type: object
+      required:
+        - code
+        - name
+        - rawName
+        - canonicalName
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        rawName:
+          type: string
+        canonicalName:
+          type: string
+        methodText:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        unit:
+          type: string
+        sourceType:
+          $ref: '#/components/schemas/InspectionParameterSourceType'
+        sortOrder:
+          type: integer
+          format: int32
+    CreateInspectionReportNameRequest:
+      type: object
+      required:
+        - code
+        - name
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        fullName:
+          type: string
+        templatePath:
+          type: string
+        summaryName:
+          type: string
+        extFields:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtFieldDef'
+        description:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+    CreateInspectionSpecialtyRequest:
+      type: object
+      required:
+        - code
+        - officialNo
+        - name
+      properties:
+        code:
+          type: string
+        officialNo:
+          type: string
+        name:
+          type: string
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+    CreateInspectionStandardRequest:
+      type: object
+      required:
+        - code
+        - name
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        status:
+          $ref: '#/components/schemas/InspectionStandardStatus'
+        sourceDocumentId:
+          type: string
+        sourceHash:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+    CreateParamInterfaceRequest:
+      type: object
+      required:
+        - code
+        - componentPath
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        componentPath:
+          type: string
+        description:
+          type: string
+        isOfficial:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+        config:
+          type: object
+          additionalProperties: {}
     CreateSampleReceiptRequest:
       type: object
       required:
@@ -2083,6 +3501,41 @@ components:
         details:
           type: object
           additionalProperties: {}
+    ExtFieldDef:
+      type: object
+      required:
+        - key
+        - label
+        - type
+      properties:
+        key:
+          type: string
+        label:
+          type: string
+        type:
+          $ref: '#/components/schemas/ExtFieldDefType'
+        required:
+          type: boolean
+        options:
+          type: array
+          items:
+            type: string
+        tag:
+          type: string
+        source:
+          $ref: '#/components/schemas/ExtFieldDefSource'
+    ExtFieldDefSource:
+      type: string
+      enum:
+        - sample
+        - receipt
+    ExtFieldDefType:
+      type: string
+      enum:
+        - text
+        - number
+        - date
+        - select
     FlowAction:
       type: string
       enum:
@@ -2224,6 +3677,119 @@ components:
           type: string
         updatedAt:
           type: string
+    InspectionObject:
+      type: object
+      required:
+        - code
+        - inspectionSpecialtyCode
+        - sourceProjectNo
+        - sourceProjectName
+        - name
+        - isOptionalForQualification
+        - isOfficial
+        - enabled
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        inspectionSpecialtyCode:
+          type: string
+        sourceProjectNo:
+          type: string
+        sourceProjectName:
+          type: string
+        name:
+          type: string
+        isOptionalForQualification:
+          type: boolean
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    InspectionParameter:
+      type: object
+      required:
+        - code
+        - name
+        - rawName
+        - canonicalName
+        - aliases
+        - sourceType
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        rawName:
+          type: string
+        canonicalName:
+          type: string
+        methodText:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        unit:
+          type: string
+        sourceType:
+          $ref: '#/components/schemas/InspectionParameterSourceType'
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    InspectionParameterSourceType:
+      type: string
+      enum:
+        - official
+        - custom
+    InspectionReportName:
+      type: object
+      required:
+        - code
+        - name
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        fullName:
+          type: string
+        templatePath:
+          type: string
+        summaryName:
+          type: string
+        extFields:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtFieldDef'
+        description:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
     InspectionSpec:
       type: object
       required:
@@ -2248,6 +3814,75 @@ components:
           type: string
         updatedAt:
           type: string
+    InspectionSpecialty:
+      type: object
+      required:
+        - code
+        - officialNo
+        - name
+        - isOfficial
+        - enabled
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        officialNo:
+          type: string
+        name:
+          type: string
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    InspectionStandard:
+      type: object
+      required:
+        - code
+        - name
+        - status
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        status:
+          $ref: '#/components/schemas/InspectionStandardStatus'
+        sourceDocumentId:
+          type: string
+        sourceHash:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    InspectionStandardRole:
+      type: string
+      enum:
+        - TESTING
+        - JUDGMENT
+    InspectionStandardStatus:
+      type: string
+      enum:
+        - active
+        - superseded
+        - draft
     LoginRequest:
       type: object
       required:
@@ -2288,6 +3923,95 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MenuNode'
+    ObjectParameterLink:
+      type: object
+      required:
+        - inspectionObjectCode
+        - inspectionParameterCode
+        - qualificationLevel
+      properties:
+        inspectionObjectCode:
+          type: string
+        inspectionParameterCode:
+          type: string
+        qualificationLevel:
+          $ref: '#/components/schemas/QualificationLevel'
+        sourcePage:
+          type: integer
+          format: int32
+        remark:
+          type: string
+    ObjectReportNameLink:
+      type: object
+      required:
+        - inspectionObjectCode
+        - reportNameCode
+      properties:
+        inspectionObjectCode:
+          type: string
+        reportNameCode:
+          type: string
+        remark:
+          type: string
+    ObjectStandardLink:
+      type: object
+      required:
+        - inspectionObjectCode
+        - inspectionStandardCode
+        - role
+      properties:
+        inspectionObjectCode:
+          type: string
+        inspectionStandardCode:
+          type: string
+        role:
+          $ref: '#/components/schemas/InspectionStandardRole'
+        remark:
+          type: string
+    ParamInterface:
+      type: object
+      required:
+        - code
+        - componentPath
+        - sortOrder
+        - createdAt
+        - updatedAt
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        componentPath:
+          type: string
+        description:
+          type: string
+        isOfficial:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+        config:
+          type: object
+          additionalProperties: {}
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    ParamInterfaceLink:
+      type: object
+      required:
+        - inspectionParameterCode
+        - paramInterfaceCode
+      properties:
+        inspectionParameterCode:
+          type: string
+        paramInterfaceCode:
+          type: string
+        reportNameCode:
+          type: string
+        config:
+          type: object
+          additionalProperties: {}
     PermissionSet:
       type: object
       required:
@@ -2297,6 +4021,11 @@ components:
           type: array
           items:
             type: string
+    QualificationLevel:
+      type: string
+      enum:
+        - QUALIFIED
+        - RESTRICTED
     ReceiptResult:
       type: string
       enum:
@@ -2309,6 +4038,33 @@ components:
         - refreshToken
       properties:
         refreshToken:
+          type: string
+    ReportNameParameterLink:
+      type: object
+      required:
+        - reportNameCode
+        - inspectionParameterCode
+      properties:
+        reportNameCode:
+          type: string
+        inspectionParameterCode:
+          type: string
+        remark:
+          type: string
+    ReportNameStandardLink:
+      type: object
+      required:
+        - reportNameCode
+        - inspectionStandardCode
+        - role
+      properties:
+        reportNameCode:
+          type: string
+        inspectionStandardCode:
+          type: string
+        role:
+          $ref: '#/components/schemas/InspectionStandardRole'
+        remark:
           type: string
     RequirementComparison:
       type: string
@@ -2505,6 +4261,18 @@ components:
           type: string
         updatedAt:
           type: string
+    SpecialtyObjectLink:
+      type: object
+      required:
+        - inspectionSpecialtyCode
+        - inspectionObjectCode
+      properties:
+        inspectionSpecialtyCode:
+          type: string
+        inspectionObjectCode:
+          type: string
+        remark:
+          type: string
     SsoCallbackRequest:
       type: object
       required:
@@ -2524,6 +4292,16 @@ components:
         authorizeUrl:
           type: string
         state:
+          type: string
+    StandardParameterLink:
+      type: object
+      required:
+        - inspectionStandardCode
+        - inspectionParameterCode
+      properties:
+        inspectionStandardCode:
+          type: string
+        inspectionParameterCode:
           type: string
     SummaryColumn:
       type: object
@@ -2653,6 +4431,29 @@ components:
           type: string
         updatedAt:
           type: string
+    UpdateCalculationRuleRequest:
+      type: object
+      properties:
+        testingStandardCode:
+          type: string
+        reportNameCode:
+          type: string
+        algorithmType:
+          $ref: '#/components/schemas/CalculationAlgorithmType'
+        specimenCount:
+          type: integer
+          format: int32
+        formula:
+          type: string
+        conditions:
+          type: string
+        roundingRule:
+          type: string
+        remark:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
     UpdateCatalogEntryRequest:
       type: object
       properties:
@@ -2702,6 +4503,115 @@ components:
           type: string
         status:
           $ref: '#/components/schemas/ContractStatus'
+    UpdateInspectionObjectRequest:
+      type: object
+      properties:
+        inspectionSpecialtyCode:
+          type: string
+        sourceProjectNo:
+          type: string
+        sourceProjectName:
+          type: string
+        name:
+          type: string
+        isOptionalForQualification:
+          type: boolean
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+    UpdateInspectionParameterRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        rawName:
+          type: string
+        canonicalName:
+          type: string
+        methodText:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        unit:
+          type: string
+        sourceType:
+          $ref: '#/components/schemas/InspectionParameterSourceType'
+        sortOrder:
+          type: integer
+          format: int32
+    UpdateInspectionReportNameRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        fullName:
+          type: string
+        templatePath:
+          type: string
+        summaryName:
+          type: string
+        extFields:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtFieldDef'
+        description:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+    UpdateInspectionSpecialtyRequest:
+      type: object
+      properties:
+        officialNo:
+          type: string
+        name:
+          type: string
+        isOfficial:
+          type: boolean
+        enabled:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+    UpdateInspectionStandardRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        version:
+          type: string
+        status:
+          $ref: '#/components/schemas/InspectionStandardStatus'
+        sourceDocumentId:
+          type: string
+        sourceHash:
+          type: string
+        sortOrder:
+          type: integer
+          format: int32
+    UpdateParamInterfaceRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        componentPath:
+          type: string
+        description:
+          type: string
+        isOfficial:
+          type: boolean
+        sortOrder:
+          type: integer
+          format: int32
+        config:
+          type: object
+          additionalProperties: {}
     UpdateSampleReceiptRequest:
       type: object
       properties:

@@ -64,6 +64,21 @@ const EXPECTED_TABLES = [
   "inspection_grades",
   "inspection_technical_requirements",
   "audit_events",
+  "inspection_specialties",
+  "inspection_objects",
+  "inspection_parameters",
+  "inspection_standards",
+  "inspection_specialty_objects",
+  "inspection_object_parameters",
+  "inspection_object_standards",
+  "inspection_standard_parameters",
+  "inspection_report_names",
+  "inspection_object_report_names",
+  "inspection_report_name_standards",
+  "inspection_report_name_parameters",
+  "inspection_calculation_rules",
+  "param_interfaces",
+  "param_interface_links",
 ];
 
 const EXPECTED_ENUMS = [
@@ -75,6 +90,11 @@ const EXPECTED_ENUMS = [
   "requirement_verification_status",
   "requirement_judgment_mode",
   "audit_action",
+  "inspection_standard_status",
+  "inspection_parameter_source_type",
+  "qualification_level",
+  "inspection_standard_role",
+  "calculation_algorithm_type",
 ];
 
 // tracking 表名（双下划线前缀：让它在 \dt 列表里排到最前面，标明是元数据表而非业务表；

@@ -37,6 +37,16 @@ describe("OpenAPI snapshot", () => {
       "/api/technical-requirements",
       "/api/summary",
       "/api/summary/stats",
+      "/api/inspection/specialties",
+      "/api/inspection/objects",
+      "/api/inspection/parameters",
+      "/api/inspection/standards",
+      "/api/inspection/links/specialty-object",
+      "/api/report-names",
+      "/api/report-names/links/object",
+      "/api/calculation-rules",
+      "/api/param-interfaces",
+      "/api/param-interfaces/links",
     ]) {
       expect(content, `missing path: ${path}`).toContain(path);
     }

@@ -50,6 +50,21 @@ const EXPECTED_TABLES = [
   "inspection_grades",
   "inspection_technical_requirements",
   "audit_events",
+  "inspection_specialties",
+  "inspection_objects",
+  "inspection_parameters",
+  "inspection_standards",
+  "inspection_specialty_objects",
+  "inspection_object_parameters",
+  "inspection_object_standards",
+  "inspection_standard_parameters",
+  "inspection_report_names",
+  "inspection_object_report_names",
+  "inspection_report_name_standards",
+  "inspection_report_name_parameters",
+  "inspection_calculation_rules",
+  "param_interfaces",
+  "param_interface_links",
 ];
 
 const EXPECTED_ENUMS = [
@@ -61,6 +76,11 @@ const EXPECTED_ENUMS = [
   "requirement_verification_status",
   "requirement_judgment_mode",
   "audit_action",
+  "inspection_standard_status",
+  "inspection_parameter_source_type",
+  "qualification_level",
+  "inspection_standard_role",
+  "calculation_algorithm_type",
 ];
 
 describe("SQL migrations replay", () => {
@@ -97,7 +117,7 @@ describe("SQL migrations replay", () => {
     }
   }, 30000);
 
-  it("creates 10 expected tables", async () => {
+  it("creates 25 expected tables", async () => {
     if (!client) return;
     const { rows } = await client.query<{ table_name: string }>(
       "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name",
@@ -108,7 +128,7 @@ describe("SQL migrations replay", () => {
     }
   });
 
-  it("creates 8 expected enum types", async () => {
+  it("creates 13 expected enum types", async () => {
     if (!client) return;
     const { rows } = await client.query<{ typname: string }>(
       "SELECT typname FROM pg_type WHERE typtype = 'e' ORDER BY typname",
