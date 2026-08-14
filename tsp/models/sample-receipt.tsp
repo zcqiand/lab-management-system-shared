@@ -5,6 +5,7 @@ namespace Lab.Management.Shared;
 
 model SampleReceipt {
   id: string;
+  tenantId: string;
   contractId: string;
 
   commissionCode: string;

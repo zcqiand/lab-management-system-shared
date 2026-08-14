@@ -11,6 +11,8 @@ enum ContractStatus {
 model Contract {
   id: string;
 
+  tenantId: string;
+
   contractCode: string;
 
   clientUnit: string;

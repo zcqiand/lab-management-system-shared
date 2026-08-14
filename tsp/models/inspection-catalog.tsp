@@ -6,6 +6,7 @@ namespace Lab.Management.Shared;
 
 model InspectionBrand {
   code: string;
+  tenantId: string;
   inspectionObjectCode?: string;
   name: string;
   remark?: string;
@@ -16,6 +17,7 @@ model InspectionBrand {
 
 model InspectionModel {
   code: string;
+  tenantId: string;
   inspectionObjectCode?: string;
   name: string;
   remark?: string;
@@ -26,6 +28,7 @@ model InspectionModel {
 
 model InspectionSpec {
   code: string;
+  tenantId: string;
   inspectionObjectCode?: string;
   name: string;
   remark?: string;
@@ -36,6 +39,7 @@ model InspectionSpec {
 
 model InspectionGrade {
   code: string;
+  tenantId: string;
   inspectionObjectCode?: string;
   name: string;
   remark?: string;

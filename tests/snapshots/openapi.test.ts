@@ -20,6 +20,8 @@ describe("OpenAPI snapshot", () => {
     const content = readFileSync(OPENAPI_PATH, "utf-8");
     for (const path of [
       "/api/auth/login",
+      "/api/auth/me",
+      "/api/auth/switch-tenant",
       "/api/contracts",
       "/api/contracts/{id}",
       "/api/receipts",

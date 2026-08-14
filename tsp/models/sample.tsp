@@ -5,6 +5,7 @@ namespace Lab.Management.Shared;
 
 model Sample {
   id: string;
+  tenantId: string;
   receiptId: string;
   sampleCode: string;
   sampleName?: string;

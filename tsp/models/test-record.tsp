@@ -6,6 +6,7 @@ namespace Lab.Management.Shared;
 
 model TestRecord {
   id: string;
+  tenantId: string;
   sampleId: string;
 
   // 逻辑 FK → inspection_parameters（M06，不强制）

@@ -34,6 +34,7 @@ enum RequirementJudgmentMode {
 }
 
 model TechnicalRequirement {
+  tenantId: string;
   inspectionObjectCode: string;
   inspectionParameterCode: string;
   judgmentStandardCode: string;

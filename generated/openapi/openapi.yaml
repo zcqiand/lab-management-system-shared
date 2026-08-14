@@ -78,7 +78,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CurrentUser'
+                $ref: '#/components/schemas/CurrentUserSession'
         default:
           description: An unexpected error response.
           content:
@@ -202,6 +202,31 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SsoCallbackRequest'
+  /api/auth/switch-tenant:
+    post:
+      operationId: Auth_switchTenant
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SwitchTenantRequest'
   /api/calculation-rules:
     get:
       operationId: CalculationRules_listCalculationRules
@@ -2944,6 +2969,7 @@ components:
       type: object
       required:
         - id
+        - tenantId
         - contractCode
         - clientUnit
         - projectName
@@ -2955,6 +2981,8 @@ components:
         - updatedAt
       properties:
         id:
+          type: string
+        tenantId:
           type: string
         contractCode:
           type: string
@@ -3450,6 +3478,20 @@ components:
           type: string
         roleCode:
           type: string
+    CurrentUserSession:
+      type: object
+      required:
+        - user
+        - tenants
+      properties:
+        user:
+          $ref: '#/components/schemas/CurrentUser'
+        tenants:
+          type: array
+          items:
+            $ref: '#/components/schemas/MyTenant'
+        currentTenantId:
+          type: string
     DashboardStats:
       type: object
       required:
@@ -3609,12 +3651,15 @@ components:
       type: object
       required:
         - code
+        - tenantId
         - name
         - sortOrder
         - createdAt
         - updatedAt
       properties:
         code:
+          type: string
+        tenantId:
           type: string
         inspectionObjectCode:
           type: string
@@ -3633,12 +3678,15 @@ components:
       type: object
       required:
         - code
+        - tenantId
         - name
         - sortOrder
         - createdAt
         - updatedAt
       properties:
         code:
+          type: string
+        tenantId:
           type: string
         inspectionObjectCode:
           type: string
@@ -3657,12 +3705,15 @@ components:
       type: object
       required:
         - code
+        - tenantId
         - name
         - sortOrder
         - createdAt
         - updatedAt
       properties:
         code:
+          type: string
+        tenantId:
           type: string
         inspectionObjectCode:
           type: string
@@ -3794,12 +3845,15 @@ components:
       type: object
       required:
         - code
+        - tenantId
         - name
         - sortOrder
         - createdAt
         - updatedAt
       properties:
         code:
+          type: string
+        tenantId:
           type: string
         inspectionObjectCode:
           type: string
@@ -3898,6 +3952,7 @@ components:
       required:
         - token
         - user
+        - tenants
       properties:
         token:
           type: string
@@ -3905,6 +3960,10 @@ components:
           type: string
         user:
           $ref: '#/components/schemas/CurrentUser'
+        tenants:
+          type: array
+          items:
+            $ref: '#/components/schemas/MyTenant'
     MenuNode:
       type: object
       required:
@@ -3923,6 +3982,24 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MenuNode'
+    MyTenant:
+      type: object
+      required:
+        - tenantId
+        - code
+        - name
+        - roleIds
+      properties:
+        tenantId:
+          type: string
+        code:
+          type: string
+        name:
+          type: string
+        roleIds:
+          type: array
+          items:
+            type: string
     ObjectParameterLink:
       type: object
       required:
@@ -4098,6 +4175,7 @@ components:
       type: object
       required:
         - id
+        - tenantId
         - receiptId
         - sampleCode
         - ext
@@ -4105,6 +4183,8 @@ components:
         - updatedAt
       properties:
         id:
+          type: string
+        tenantId:
           type: string
         receiptId:
           type: string
@@ -4154,6 +4234,7 @@ components:
       type: object
       required:
         - id
+        - tenantId
         - contractId
         - commissionCode
         - commissionDate
@@ -4167,6 +4248,8 @@ components:
         - updatedAt
       properties:
         id:
+          type: string
+        tenantId:
           type: string
         contractId:
           type: string
@@ -4332,9 +4415,17 @@ components:
             type: object
             additionalProperties:
               type: string
+    SwitchTenantRequest:
+      type: object
+      required:
+        - tenantId
+      properties:
+        tenantId:
+          type: string
     TechnicalRequirement:
       type: object
       required:
+        - tenantId
         - inspectionObjectCode
         - inspectionParameterCode
         - judgmentStandardCode
@@ -4346,6 +4437,8 @@ components:
         - createdAt
         - updatedAt
       properties:
+        tenantId:
+          type: string
         inspectionObjectCode:
           type: string
         inspectionParameterCode:
@@ -4404,6 +4497,7 @@ components:
       type: object
       required:
         - id
+        - tenantId
         - sampleId
         - parameterCode
         - requirement
@@ -4412,6 +4506,8 @@ components:
         - updatedAt
       properties:
         id:
+          type: string
+        tenantId:
           type: string
         sampleId:
           type: string

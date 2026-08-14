@@ -2,8 +2,8 @@
   "schema": 1,
   "project": "lab-management-system-shared",
   "functions": {
-    "modules": 6,
-    "features": 24,
+    "modules": 7,
+    "features": 26,
     "items": 0
   },
   "warnings_total": 0,

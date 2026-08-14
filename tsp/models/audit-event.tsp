@@ -16,6 +16,7 @@ enum AuditAction {
 
 model AuditEvent {
   id: string;
+  tenantId: string;
   action: AuditAction;
   operator: string;
   target: string;
