@@ -164,6 +164,10 @@ describe("SQL migrations replay", () => {
     await client.query(
       "INSERT INTO contracts (id, contract_code, client_unit, project_name, construction_unit, witness_unit, witness) VALUES ('c-1', 'HT-1', '委托方', '项目', '施工单位', '见证单位', '张三')",
     );
+    // 先插报告名称，使 sample_receipts.category_code FK 可过
+    await client.query(
+      "INSERT INTO inspection_report_names (code, name, sort_order) VALUES ('CAT-1', '测试类别', 0)",
+    );
     await client.query(
       "INSERT INTO sample_receipts (id, contract_id, commission_code, commission_date, category_code, received_by, sample_source, test_category) VALUES ('r-1', 'c-1', 'WS-1', '2026-01-01', 'CAT-1', '收样员', '现场', '常规')",
     );
