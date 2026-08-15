@@ -3337,8 +3337,9 @@ components:
           items:
             type: string
         testParameters:
-          type: object
-          additionalProperties: {}
+          type: array
+          items:
+            type: string
     CreateSampleRequest:
       type: object
       required:
@@ -4314,8 +4315,9 @@ components:
           items:
             type: string
         testParameters:
-          type: object
-          additionalProperties: {}
+          type: array
+          items:
+            type: string
         flowStatus:
           $ref: '#/components/schemas/FlowStatus'
         flowHistory:
@@ -4774,8 +4776,9 @@ components:
           items:
             type: string
         testParameters:
-          type: object
-          additionalProperties: {}
+          type: array
+          items:
+            type: string
     UpdateSampleRequest:
       type: object
       properties:

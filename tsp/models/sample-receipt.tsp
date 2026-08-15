@@ -40,10 +40,10 @@ model SampleReceipt {
   originalRecordNo?: string;
   remark?: string;
 
-  // jsonb：标准码数组 / 检测依据 / 参数缓存
+  // jsonb：标准码数组 / 检测依据 / 参数码数组（FK → InspectionParameter.code）
   judgmentBasis?: string[];
   testingBasis?: string[];
-  testParameters?: Record<unknown>;
+  testParameters?: string[];
 
   flowStatus: FlowStatus;
   flowHistory: FlowHistoryEntry[];
@@ -96,7 +96,7 @@ model CreateSampleReceiptRequest {
   remark?: string;
   judgmentBasis?: string[];
   testingBasis?: string[];
-  testParameters?: Record<unknown>;
+  testParameters?: string[];
 }
 
 model UpdateSampleReceiptRequest {
@@ -129,7 +129,7 @@ model UpdateSampleReceiptRequest {
   remark?: string;
   judgmentBasis?: string[];
   testingBasis?: string[];
-  testParameters?: Record<unknown>;
+  testParameters?: string[];
 }
 
 // M03.F02 任务分配请求
