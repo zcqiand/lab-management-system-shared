@@ -1,6 +1,27 @@
 {
   "schema": 1,
-  "last_session_at": "2026-08-14",
-  "last_session_summary": "v0.1.0 初始化：lab family 契约仓（17 已上线功能 / 5 模块 / 9 表 + audit）",
-  "open_items": []
+  "project": "lab-management-system-shared",
+  "current_task": "Sprint 1 前端绑定契约已落地(commit 5c100d7);下一步:lab-react / lab-vue 双前端 session 镜像 8 文件 + 仪表盘空壳",
+  "done": [
+    "Sprint 1 契约草案落到 .state/decision-log.md(8 schema + 4-backend + 4 态 auth 状态机 + 持久化 key + T1-T8 + §6 验收 6 条)",
+    "T1 创建 tsp/contracts/frontend-bind.tsp:8 个契约 schema(BackendConfig / BackendId / AuthHeaderKind / BackendFeatures / BackendRegistry / AuthState @discriminated union / AuthContext / TokenStorageKeys)+ 1 emit 锚点 FrontendBindMeta(_/frontend-bind/snapshot wrapper 确保 8 schema 全 reach omit-unreachable-types)",
+    "T2 main.tsp 加 import './tsp/contracts/frontend-bind.tsp'(models 与 routes 之间独立 section)",
+    "T3 npm run build(emit:openapi)编译通过,产出 13 个新 schema(8 named + AuthState 4 variant + FrontendBindSnapshot wrapper)",
+    "T4 L0/L1/L3/L4/L5 gate 全绿 exit 0,33 功能条目 0 软告警",
+    "T5 yaml 校验:BackendConfig / BackendId / BackendRegistry / BackendFeatures / AuthHeaderKind / AuthState / AuthContext / TokenStorageKeys 8 named schema + 4 AuthState variant + 1 wrapper 全部就位",
+    "T6 commit 5c100d7 feat(shared): Sprint 1 前端绑定契约 BackendSwitch + AuthContext → push origin 567fd67..5c100d7"
+  ],
+  "next": "lab-react / lab-vue 两个前端 session 镜像 8 个 schema 到 src/api/contracts.ts(用各自 codegen 工具 orval / openapi-typescript):1) BackendConfig 4 槽位常量数组(msw / nextjs / springboot / aspnetcore);2) AuthState 4 态 TypeScript discriminated union;3) AuthContext state 字段类型;4) TokenStorageKeys 5 个 key 字面量;5) BackendSwitch 运行时(React Context / Vue pinia store)按 .state/decision-log.md §2.1 表格实现;6) AuthContext 运行时(login/logout/refresh/switchTenant/hasPermission/onChange)按 §2.2 表格实现;7) 仪表盘空壳页面 + AppShell 装配;8) 双仓字段命名严格对齐(错一字段返工)",
+  "open_questions": [
+    "tsp/ 仍是与 DB 一致性的源头。未来共享 enum 如 inspection_standard_role / qualification_level 是否要在 msw 仓 spec 里镜像 schema.ts 双源?当前两源各自的纯 ts-jest + sql.replay.test.ts 共担检查。",
+    "FrontendBindMeta /_frontend-bind/snapshot 是 emit-only 锚点,后端不需要实现。消费方 codegen 后此 endpoint 会被 orval 生成 client stub。是否要在 consumer 端 orval config 加 filter 排除 'frontend-bind-meta' tag 的 op?否则双仓 codegen 会拿到一个 stub 调用,看起来像未实现。"
+  ],
+  "dont": [
+    "不要为让 L4 绿删 FK receipts_category_fk / testrec_param_fk —— V011 是 M06 real FK 回填。删了 L3 类型会过但 L5 会报 已上线但无测试引用 软告警",
+    "不要直接编辑 shared/openapi.yaml —— 必须是 npm run build(只跑 emit:openapi)。违反会让 msw/nextjs/react/vue 4 仓 codegen 不同步,跨仓 L5 alignment 报",
+    "不要在 shared 仓删 FrontendBindMeta /_frontend-bind/snapshot 锚点 —— 它是 omit-unreachable-types 过滤下 8 schema 进 yaml 的唯一通道。删了 schema 全部消失,L5 alignment 报"
+  ],
+  "last_gate_passed_at": "2026-08-17T15:00+08:00",
+  "active_branch": "master",
+  "ahead_of_origin": "0"
 }
