@@ -16,6 +16,9 @@ import "./tsp/models/report-name.tsp";
 import "./tsp/models/calculation-rule.tsp";
 import "./tsp/models/param-interface.tsp";
 
+// --- Frontend Bind Contracts (Sprint 1) ---
+import "./tsp/contracts/frontend-bind.tsp";
+
 // --- Routes ---
 import "./tsp/routes/auth.tsp";
 import "./tsp/routes/contracts.tsp";

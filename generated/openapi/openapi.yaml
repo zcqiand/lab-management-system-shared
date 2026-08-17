@@ -3,6 +3,7 @@ info:
   title: (title)
   version: 0.0.0
 tags:
+  - name: frontend-bind-meta
   - name: auth
   - name: contracts
   - name: receipts
@@ -17,6 +18,19 @@ tags:
   - name: calculation-rules
   - name: param-interfaces
 paths:
+  /api/_frontend-bind/snapshot:
+    get:
+      operationId: FrontendBindMeta_getFrontendBindSnapshot
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FrontendBindMeta.FrontendBindSnapshot'
+      tags:
+        - frontend-bind-meta
   /api/auth/login:
     post:
       operationId: Auth_login
@@ -2916,6 +2930,204 @@ components:
           type: string
         plannedTestDate:
           type: string
+    AuthContext:
+      type: object
+      required:
+        - state
+      properties:
+        state:
+          allOf:
+            - $ref: '#/components/schemas/AuthState'
+          description: 当前 auth 状态
+      description: AuthContext 数据契约。方法(login/logout/refresh/switchTenant/hasPermission/onChange)由消费方实现,TS 签名见 .state/decision-log.md §2.2
+    AuthHeaderKind:
+      type: string
+      enum:
+        - Authorization
+        - X-Auth-Token
+    AuthState:
+      type: object
+      oneOf:
+        - $ref: '#/components/schemas/AuthStateIdle'
+        - $ref: '#/components/schemas/AuthStateAnonymous'
+        - $ref: '#/components/schemas/AuthStateAwaiting_tenant'
+        - $ref: '#/components/schemas/AuthStateAuthenticated'
+      discriminator:
+        propertyName: kind
+        mapping:
+          idle: '#/components/schemas/AuthStateIdle'
+          anonymous: '#/components/schemas/AuthStateAnonymous'
+          awaiting_tenant: '#/components/schemas/AuthStateAwaiting_tenant'
+          authenticated: '#/components/schemas/AuthStateAuthenticated'
+      description: 'auth 状态机 4 态。Vue: pinia store / React: Context;两侧实现可同构'
+    AuthStateAnonymous:
+      type: object
+      required:
+        - kind
+        - value
+      properties:
+        kind:
+          type: string
+          enum:
+            - anonymous
+        value:
+          type: object
+          properties:
+            kind:
+              type: string
+              enum:
+                - anonymous
+          required:
+            - kind
+    AuthStateAuthenticated:
+      type: object
+      required:
+        - kind
+        - value
+      properties:
+        kind:
+          type: string
+          enum:
+            - authenticated
+        value:
+          type: object
+          properties:
+            kind:
+              type: string
+              enum:
+                - authenticated
+            user:
+              $ref: '#/components/schemas/CurrentUser'
+            tenant:
+              $ref: '#/components/schemas/MyTenant'
+            permissions:
+              type: array
+              items:
+                type: string
+            tokenExpiresAt:
+              type: integer
+              format: int64
+              description: unix ms
+          required:
+            - kind
+            - user
+            - tenant
+            - permissions
+            - tokenExpiresAt
+    AuthStateAwaiting_tenant:
+      type: object
+      required:
+        - kind
+        - value
+      properties:
+        kind:
+          type: string
+          enum:
+            - awaiting_tenant
+        value:
+          type: object
+          properties:
+            kind:
+              type: string
+              enum:
+                - awaiting_tenant
+            user:
+              $ref: '#/components/schemas/CurrentUser'
+            tenants:
+              type: array
+              items:
+                $ref: '#/components/schemas/MyTenant'
+          required:
+            - kind
+            - user
+            - tenants
+    AuthStateIdle:
+      type: object
+      required:
+        - kind
+        - value
+      properties:
+        kind:
+          type: string
+          enum:
+            - idle
+        value:
+          type: object
+          properties:
+            kind:
+              type: string
+              enum:
+                - idle
+          required:
+            - kind
+    BackendConfig:
+      type: object
+      required:
+        - id
+        - label
+        - baseUrl
+        - authHeader
+        - features
+      properties:
+        id:
+          allOf:
+            - $ref: '#/components/schemas/BackendId'
+          description: 槽位标识,必须是 BackendId 之一
+        label:
+          type: string
+          description: 显示名(MSW Mock / Next.js API / Spring Boot / ASP.NET Core)
+        baseUrl:
+          type: string
+          description: baseUrl 的展示值,例如 'http://localhost:3000/api'
+        authHeader:
+          allOf:
+            - $ref: '#/components/schemas/AuthHeaderKind'
+          description: token 头:Bearer 走 Authorization,部分老后端用 X-Auth-Token
+        ssoCallbackPath:
+          type: string
+          description: SSO 回调路径(仅启用 SSO 的后端填写)
+        features:
+          allOf:
+            - $ref: '#/components/schemas/BackendFeatures'
+          description: 能力矩阵
+      description: 4-backend 运行时切换配置。运行时由消费方仓各自实现(React Context / Vue pinia store)
+    BackendFeatures:
+      type: object
+      required:
+        - sso
+        - realDb
+      properties:
+        sso:
+          type: boolean
+          description: 是否启用 SSO 跳转(msw=false / nextjs=true / springboot/aspnetcore 视实现)
+        realDb:
+          type: boolean
+          description: 是否对接真实数据库(vs mock seed)
+      description: 后端能力矩阵
+    BackendId:
+      type: string
+      enum:
+        - msw
+        - nextjs
+        - springboot
+        - aspnetcore
+      description: 4 个槽位;id 锁定,避免拼写漂移
+    BackendRegistry:
+      type: object
+      required:
+        - active
+        - available
+      properties:
+        active:
+          allOf:
+            - $ref: '#/components/schemas/BackendId'
+          description: 当前激活后端
+        available:
+          type: array
+          items:
+            $ref: '#/components/schemas/BackendConfig'
+          description: 可切换列表(通常包含全部 4 个槽位)
+      description: 运行时注册表:当前激活 + 可切列表。切换/订阅方法由消费方实现,TS 签名见 .state/decision-log.md §2.1
     CalculationAlgorithmType:
       type: string
       enum:
@@ -3648,6 +3860,19 @@ components:
         - issuance
         - archived
         - completed
+    FrontendBindMeta.FrontendBindSnapshot:
+      type: object
+      required:
+        - registry
+        - authContext
+        - tokenKeys
+      properties:
+        registry:
+          $ref: '#/components/schemas/BackendRegistry'
+        authContext:
+          $ref: '#/components/schemas/AuthContext'
+        tokenKeys:
+          $ref: '#/components/schemas/TokenStorageKeys'
     InspectionBrand:
       type: object
       required:
@@ -4529,6 +4754,41 @@ components:
           type: string
         updatedAt:
           type: string
+    TokenStorageKeys:
+      type: object
+      required:
+        - accessToken
+        - refreshToken
+        - activeTenantId
+        - activeBackend
+        - permissionsCache
+      properties:
+        accessToken:
+          type: string
+          enum:
+            - lab.accessToken
+          description: Bearer token
+        refreshToken:
+          type: string
+          enum:
+            - lab.refreshToken
+          description: refresh token(与 accessToken 分存,便于隔离 XSS 影响面)
+        activeTenantId:
+          type: string
+          enum:
+            - lab.activeTenantId
+          description: 当前选中租户 ID(authenticated 态缓存)
+        activeBackend:
+          type: string
+          enum:
+            - lab.activeBackend
+          description: 当前激活后端槽位(用于跨刷新记忆)
+        permissionsCache:
+          type: string
+          enum:
+            - lab.permissions
+          description: permissions 缓存(避免每次路由跳转都打 /auth/permissions)
+      description: 前端持久化 key 命名约定;后端契约不感知,但前端实现必须遵守
     UpdateCalculationRuleRequest:
       type: object
       properties:
