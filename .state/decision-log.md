@@ -2,7 +2,8 @@
 
 > 起草日：2026-08-17
 > 起草人：suite 调度
-> 状态：**草案**（待 Session 1 在 shared/ 仓落实）
+> 状态：**落地完成**（commit 5c100d7 / session 9b74dd3 / 父仓 fdd092a,2026-08-17）
+> 验收：python scripts/gate.py -p lab-management-system-shared exit 0,L0/L1/L3/L4/L5 全绿
 > 范围：lab-management-system 双前端（lab-react / lab-vue）Sprint 1 的**前端层绑定契约**
 > 阅读对象：下一 session 进 shared/ 仓跑 Phase 3 的 agent
 
