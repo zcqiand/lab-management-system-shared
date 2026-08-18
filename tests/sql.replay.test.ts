@@ -1,4 +1,4 @@
-// SQL replay test：把 shared/sql/migrations/V001..V007 顺序跑一遍，断言 schema 一致。
+// SQL replay test：把 shared/sql/migrations/V001..V014 顺序跑一遍，断言 schema 一致。
 //
 // 依赖：borrows pg driver from output/lab-management-system-nextjs/node_modules/pg
 // （shared 仓自身禁 npm runtime 依赖，见 ADR-0007）。
@@ -68,19 +68,9 @@ const EXPECTED_TABLES = [
 ];
 
 const EXPECTED_ENUMS = [
-  "contract_status",
-  "flow_status",
-  "receipt_result",
-  "requirement_value_type",
-  "requirement_comparison",
-  "requirement_verification_status",
-  "requirement_judgment_mode",
+  // V014 把 12 个 enum 转 TEXT + DROP TYPE；仅 audit_action 仍为 PG enum（V006 引入，
+  // 暂未被 springboot 端 AuditEvent 接入，未来 audit 端点落地时再单独迁移）。
   "audit_action",
-  "inspection_standard_status",
-  "inspection_parameter_source_type",
-  "qualification_level",
-  "inspection_standard_role",
-  "calculation_algorithm_type",
 ];
 
 describe("SQL migrations replay", () => {
@@ -128,7 +118,7 @@ describe("SQL migrations replay", () => {
     }
   });
 
-  it("creates 13 expected enum types", async () => {
+  it("creates 1 expected enum types (audit_action; rest converted to TEXT by V014)", async () => {
     if (!client) return;
     const { rows } = await client.query<{ typname: string }>(
       "SELECT typname FROM pg_type WHERE typtype = 'e' ORDER BY typname",
@@ -137,6 +127,8 @@ describe("SQL migrations replay", () => {
     for (const expected of EXPECTED_ENUMS) {
       expect(enums, `missing enum: ${expected}`).toContain(expected);
     }
+    // 验证其他 12 个 enum 全部 DROP
+    expect(enums.length).toBe(EXPECTED_ENUMS.length);
   });
 
   it("sample_receipts has jsonb columns", async () => {
@@ -162,7 +154,7 @@ describe("SQL migrations replay", () => {
     if (!client) return;
     // 插入测试数据：contract + receipt + sample
     await client.query(
-      "INSERT INTO contracts (id, contract_code, client_unit, project_name, construction_unit, witness_unit, witness) VALUES ('c-1', 'HT-1', '委托方', '项目', '施工单位', '见证单位', '张三')",
+      "INSERT INTO contracts (id, contract_code, client_unit, project_name, construction_unit, witness_unit, witness, status) VALUES ('c-1', 'HT-1', '委托方', '项目', '施工单位', '见证单位', '张三', 'active')",
     );
     // 先插报告名称，使 sample_receipts.category_code FK 可过
     await client.query(
