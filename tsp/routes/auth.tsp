@@ -41,12 +41,24 @@ namespace Lab.Management.Shared.Auth {
   @route("/menus")
   op getMenus(): MenuNode[] | ErrorResponse;
 
-  // M01.F05.I03 SSO 授权码流 - 跳转端点
+  // M01.F05.I03 SSO OAuth 2.0 授权码流 - 跳转端点（RFC 6749 §4.1.1）
+  // response_type 必须为 "code"；client_id/redirect_uri/state 由前端生成（state
+  // 验证在后端 cookie/session 中保留，防 CSRF）；client_secret 仅后端持（部署 env，
+  // 不入 OpenAPI yaml）。lab 后端拿到 code 后 POST 到 saas /oauth/token 换 id_token，
+  // 再解 user + 查 lab DB 算 permissions + 用 LAB_JWT_SECRET 签自家 JWT 返回。
   @get
   @route("/sso/authorize")
-  op ssoAuthorize(@query redirect: string): SsoRedirect | ErrorResponse;
+  op ssoAuthorize(
+    @query response_type: OAuthResponseType,
+    @query client_id: string,
+    @query redirect_uri: string,
+    @query state: string,
+  ): SsoRedirect | ErrorResponse;
 
-  // M01.F05.I03 SSO 回调换 token
+  // M01.F05.I03 SSO OAuth 2.0 授权码流 - token 交换（RFC 6749 §4.1.3）
+  // body 含 grant_type/code/redirect_uri；client_secret 由后端从 env 注入 header
+  // Authorization: Basic <base64(client_id:client_secret)>。返回 LoginResponse
+  // （lab 自家 JWT，saas token 不出 lab 后端）。
   @post
   @route("/sso/callback")
   op ssoCallback(@body body: SsoCallbackRequest): LoginResponse | ErrorResponse;
@@ -113,7 +125,26 @@ model SsoRedirect {
   state: string;
 }
 
+// OAuth 2.0 授权码模式的 response_type 字面量（RFC 6749 §4.1.1）
+// 当前仅实现 "code" 一种；隐式流/混合流不在范围内。
+enum OAuthResponseType {
+  code,
+}
+
+// OAuth 2.0 授权码模式的 grant_type 字面量（RFC 6749 §4.1.3）
+// 同上，当前仅 authorization_code；password/client_credentials 不在范围。
+enum OAuthGrantType {
+  authorization_code,
+}
+
 model SsoCallbackRequest {
+  grant_type: OAuthGrantType;
   code: string;
+  redirect_uri: string;
+
+  // RFC 6749 §4.1.4: client MUST send back the same state value received from
+  // /auth/sso/authorize. lab signs the state with HS256 and stores it in an
+  // HttpOnly Secure cookie; backend verifies body.state == cookie.state +
+  // cookie signature before exchanging the code with saas /oauth/token.
   state: string;
 }

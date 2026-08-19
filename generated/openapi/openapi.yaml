@@ -170,7 +170,25 @@ paths:
     get:
       operationId: Auth_ssoAuthorize
       parameters:
-        - name: redirect
+        - name: response_type
+          in: query
+          required: true
+          schema:
+            $ref: '#/components/schemas/OAuthResponseType'
+          explode: false
+        - name: client_id
+          in: query
+          required: true
+          schema:
+            type: string
+          explode: false
+        - name: redirect_uri
+          in: query
+          required: true
+          schema:
+            type: string
+          explode: false
+        - name: state
           in: query
           required: true
           schema:
@@ -4226,6 +4244,14 @@ components:
           type: array
           items:
             type: string
+    OAuthGrantType:
+      type: string
+      enum:
+        - authorization_code
+    OAuthResponseType:
+      type: string
+      enum:
+        - code
     ObjectParameterLink:
       type: object
       required:
@@ -4586,10 +4612,16 @@ components:
     SsoCallbackRequest:
       type: object
       required:
+        - grant_type
         - code
+        - redirect_uri
         - state
       properties:
+        grant_type:
+          $ref: '#/components/schemas/OAuthGrantType'
         code:
+          type: string
+        redirect_uri:
           type: string
         state:
           type: string
