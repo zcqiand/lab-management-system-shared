@@ -141,13 +141,19 @@ describe("SQL migrations replay", () => {
     expect(byCol.get("flow_history")).toBe("jsonb");
   });
 
-  it("contracts has unique commission_code constraint (sample_receipts)", async () => {
+  it("sample_receipts commission_code is unique within tenant (V012 multi-tenant index)", async () => {
+    // V002 起 sample_receipts.commission_code 是全局唯一（CONSTRAINT sample_receipts_commission_code_unique）。
+    // V012 多租户隔离后改成同租户内唯一：UNIQUE INDEX idx_receipts_tenant_commission ON (tenant_id, commission_code)，
+    // 原 CONSTRAINT 被 DROP。information_schema.table_constraints 只列 CONSTRAINT 不列 INDEX，
+    // 故改查 pg_indexes；断言列必须包含（tenant_id, commission_code）而非 commission_code 单独唯一。
     if (!client) return;
-    const { rows } = await client.query<{ constraint_name: string }>(
-      "SELECT constraint_name FROM information_schema.table_constraints WHERE table_name = 'sample_receipts' AND constraint_type = 'UNIQUE'",
+    const { rows } = await client.query<{ indexname: string; indexdef: string }>(
+      "SELECT indexname, indexdef FROM pg_indexes WHERE tablename = 'sample_receipts'",
     );
-    const names = rows.map((r: { constraint_name: string }) => r.constraint_name);
-    expect(names).toContain("sample_receipts_commission_code_unique");
+    const idx = rows.find((r) => r.indexname === "idx_receipts_tenant_commission");
+    expect(idx, "missing idx_receipts_tenant_commission").toBeDefined();
+    expect(idx!.indexdef).toMatch(/UNIQUE INDEX/);
+    expect(idx!.indexdef).toMatch(/\(tenant_id, commission_code\)/);
   });
 
   it("FK cascade works: sample_receipt deletion removes samples", async () => {
