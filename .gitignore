@@ -8,3 +8,9 @@ generated/java/
 generated/csharp/
 .state/trace.json
 .state/gate.json
+
+# Claude 临时文件
+.claude/
+.superpowers/
+CLAUDE.md
+.mcp.json
