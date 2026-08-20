@@ -5,7 +5,11 @@ using TypeSpec.Http;
 @tag("param-interfaces")
 namespace Lab.Management.Shared.ParamInterfaces {
   @get
-  op listParamInterfaces(@query keyword?: string): ParamInterface[] | ErrorResponse;
+  op listParamInterfaces(
+    @query page?: int32,
+    @query pageSize?: int32,
+    @query keyword?: string,
+  ): Page<ParamInterface> | ErrorResponse;
 
   @post
   op createParamInterface(@body body: CreateParamInterfaceRequest): ParamInterface | ErrorResponse;

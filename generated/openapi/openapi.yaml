@@ -407,6 +407,20 @@ paths:
     get:
       operationId: Catalog_listBrands
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: inspectionObjectCode
           in: query
           required: false
@@ -425,9 +439,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionBrand'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionBrand'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -513,6 +547,20 @@ paths:
     get:
       operationId: Catalog_listGrades
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: inspectionObjectCode
           in: query
           required: false
@@ -531,9 +579,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionGrade'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionGrade'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -619,6 +687,20 @@ paths:
     get:
       operationId: Catalog_listModels
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: inspectionObjectCode
           in: query
           required: false
@@ -637,9 +719,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionModel'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionModel'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -725,6 +827,20 @@ paths:
     get:
       operationId: Catalog_listSpecs
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: inspectionObjectCode
           in: query
           required: false
@@ -743,9 +859,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionSpec'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionSpec'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -1039,6 +1175,58 @@ paths:
               required:
                 - inspectionObjectCode
                 - inspectionParameterCode
+    get:
+      operationId: InspectionDictionary_listObjectParameterLinks
+      parameters:
+        - name: inspectionObjectCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: inspectionParameterCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ObjectParameterLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
   /api/inspection/links/object-standard:
     post:
       operationId: InspectionDictionary_linkObjectStandard
@@ -1091,6 +1279,58 @@ paths:
                 - inspectionObjectCode
                 - inspectionStandardCode
                 - role
+    get:
+      operationId: InspectionDictionary_listObjectStandardLinks
+      parameters:
+        - name: inspectionObjectCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: role
+          in: query
+          required: false
+          schema:
+            $ref: '#/components/schemas/InspectionStandardRole'
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ObjectStandardLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
   /api/inspection/links/specialty-object:
     post:
       operationId: InspectionDictionary_linkSpecialtyObject
@@ -1132,6 +1372,52 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SpecialtyObjectLink'
+    get:
+      operationId: InspectionDictionary_listSpecialtyObjectLinks
+      parameters:
+        - name: inspectionSpecialtyCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SpecialtyObjectLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
   /api/inspection/links/standard-parameter:
     post:
       operationId: InspectionDictionary_linkStandardParameter
@@ -1173,10 +1459,76 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/StandardParameterLink'
+    get:
+      operationId: InspectionDictionary_listStandardParameterLinks
+      parameters:
+        - name: inspectionStandardCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: inspectionParameterCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/StandardParameterLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - inspection-dictionary
   /api/inspection/objects:
     get:
       operationId: InspectionDictionary_listObjects
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: inspectionSpecialtyCode
           in: query
           required: false
@@ -1195,9 +1547,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionObject'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionObject'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -1283,6 +1655,20 @@ paths:
     get:
       operationId: InspectionDictionary_listParameters
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: keyword
           in: query
           required: false
@@ -1301,9 +1687,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionParameter'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionParameter'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -1389,6 +1795,20 @@ paths:
     get:
       operationId: InspectionDictionary_listSpecialties
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: keyword
           in: query
           required: false
@@ -1401,9 +1821,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionSpecialty'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionSpecialty'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -1489,6 +1929,20 @@ paths:
     get:
       operationId: InspectionDictionary_listStandards
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: keyword
           in: query
           required: false
@@ -1507,9 +1961,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionStandard'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionStandard'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -1595,6 +2069,20 @@ paths:
     get:
       operationId: ParamInterfaces_listParamInterfaces
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: keyword
           in: query
           required: false
@@ -1607,9 +2095,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ParamInterface'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ParamInterface'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:
@@ -2080,6 +2588,20 @@ paths:
     get:
       operationId: ReportNames_listReportNames
       parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
         - name: keyword
           in: query
           required: false
@@ -2092,9 +2614,29 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/InspectionReportName'
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InspectionReportName'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
         default:
           description: An unexpected error response.
           content:

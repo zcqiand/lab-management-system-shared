@@ -1,0 +1,34 @@
+{
+  // 调试配置：TypeScript / Vitest 调试（vitest 后端是 Node）
+  // vitest 的 test 脚本与 test:watch 共享同一进程；想单步就 attach 到该 Node 进程。
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "vitest: current file",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "test", "--", "${file}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
+    },
+    {
+      "name": "vitest: all tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "test"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
+    },
+    {
+      "name": "Node Attach",
+      "type": "node",
+      "request": "attach"
+    }
+  ]
+}

@@ -5,7 +5,11 @@ using TypeSpec.Http;
 @tag("report-names")
 namespace Lab.Management.Shared.ReportNames {
   @get
-  op listReportNames(@query keyword?: string): InspectionReportName[] | ErrorResponse;
+  op listReportNames(
+    @query page?: int32,
+    @query pageSize?: int32,
+    @query keyword?: string,
+  ): Page<InspectionReportName> | ErrorResponse;
 
   @post
   op createReportName(@body body: CreateInspectionReportNameRequest): InspectionReportName | ErrorResponse;

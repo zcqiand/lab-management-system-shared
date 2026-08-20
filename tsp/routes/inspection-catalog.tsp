@@ -9,9 +9,11 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/brands")
   op listBrands(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
-  ): InspectionBrand[] | ErrorResponse;
+  ): Page<InspectionBrand> | ErrorResponse;
 
   @post
   @route("/brands")
@@ -29,9 +31,11 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/models")
   op listModels(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
-  ): InspectionModel[] | ErrorResponse;
+  ): Page<InspectionModel> | ErrorResponse;
 
   @post
   @route("/models")
@@ -49,9 +53,11 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/specs")
   op listSpecs(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
-  ): InspectionSpec[] | ErrorResponse;
+  ): Page<InspectionSpec> | ErrorResponse;
 
   @post
   @route("/specs")
@@ -69,9 +75,11 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/grades")
   op listGrades(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
-  ): InspectionGrade[] | ErrorResponse;
+  ): Page<InspectionGrade> | ErrorResponse;
 
   @post
   @route("/grades")

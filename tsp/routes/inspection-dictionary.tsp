@@ -8,7 +8,11 @@ namespace Lab.Management.Shared.InspectionDictionary {
   // ── M06.F01 检测专项 ──
   @get
   @route("/specialties")
-  op listSpecialties(@query keyword?: string): InspectionSpecialty[] | ErrorResponse;
+  op listSpecialties(
+    @query page?: int32,
+    @query pageSize?: int32,
+    @query keyword?: string,
+  ): Page<InspectionSpecialty> | ErrorResponse;
 
   @post
   @route("/specialties")
@@ -26,9 +30,11 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @get
   @route("/objects")
   op listObjects(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionSpecialtyCode?: string,
     @query keyword?: string,
-  ): InspectionObject[] | ErrorResponse;
+  ): Page<InspectionObject> | ErrorResponse;
 
   @post
   @route("/objects")
@@ -46,9 +52,11 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @get
   @route("/parameters")
   op listParameters(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
     @query sourceType?: InspectionParameterSourceType,
-  ): InspectionParameter[] | ErrorResponse;
+  ): Page<InspectionParameter> | ErrorResponse;
 
   @post
   @route("/parameters")
@@ -66,9 +74,11 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @get
   @route("/standards")
   op listStandards(
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
     @query status?: InspectionStandardStatus,
-  ): InspectionStandard[] | ErrorResponse;
+  ): Page<InspectionStandard> | ErrorResponse;
 
   @post
   @route("/standards")
@@ -91,6 +101,12 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @route("/links/specialty-object")
   op unlinkSpecialtyObject(@body body: SpecialtyObjectLink): void | ErrorResponse;
 
+  @get
+  @route("/links/specialty-object")
+  op listSpecialtyObjectLinks(
+    @query inspectionSpecialtyCode?: string,
+  ): Page<SpecialtyObjectLink> | ErrorResponse;
+
   @post
   @route("/links/object-parameter")
   op linkObjectParameter(@body body: ObjectParameterLink): void | ErrorResponse;
@@ -98,6 +114,13 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @delete
   @route("/links/object-parameter")
   op unlinkObjectParameter(@body body: { inspectionObjectCode: string; inspectionParameterCode: string }): void | ErrorResponse;
+
+  @get
+  @route("/links/object-parameter")
+  op listObjectParameterLinks(
+    @query inspectionObjectCode?: string,
+    @query inspectionParameterCode?: string,
+  ): Page<ObjectParameterLink> | ErrorResponse;
 
   @post
   @route("/links/object-standard")
@@ -107,6 +130,13 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @route("/links/object-standard")
   op unlinkObjectStandard(@body body: { inspectionObjectCode: string; inspectionStandardCode: string; role: InspectionStandardRole }): void | ErrorResponse;
 
+  @get
+  @route("/links/object-standard")
+  op listObjectStandardLinks(
+    @query inspectionObjectCode?: string,
+    @query role?: InspectionStandardRole,
+  ): Page<ObjectStandardLink> | ErrorResponse;
+
   @post
   @route("/links/standard-parameter")
   op linkStandardParameter(@body body: StandardParameterLink): void | ErrorResponse;
@@ -114,4 +144,11 @@ namespace Lab.Management.Shared.InspectionDictionary {
   @delete
   @route("/links/standard-parameter")
   op unlinkStandardParameter(@body body: StandardParameterLink): void | ErrorResponse;
+
+  @get
+  @route("/links/standard-parameter")
+  op listStandardParameterLinks(
+    @query inspectionStandardCode?: string,
+    @query inspectionParameterCode?: string,
+  ): Page<StandardParameterLink> | ErrorResponse;
 }

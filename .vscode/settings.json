@@ -1,0 +1,46 @@
+{
+  // ── TypeScript / TypeSpec 语言服务 ─────────────────────────────
+  // 本仓是纯契约源：tsp/*.tsp 是 SSOT，编译产 OpenAPI.yaml 给两个后端仓消费。
+  // TS 仅用于 scripts/codegen/ 与 tests/，由 tsconfig.json 覆盖。
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // ── 文件与搜索排除 ────────────────────────────────────────────
+  // generated/ 是 emit:openapi 产物；dist/ 是潜在的打包残留；.trx/.openapi-tmp 是构建中间。
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/generated": true,
+    "**/dist": true,
+    "**/.trx": true,
+    "**/.openapi-tmp": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/generated": true,
+    "**/dist": true,
+    "**/.trx": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/generated/**": true,
+    "**/dist/**": true
+  },
+
+  // ── 文件关联 ──────────────────────────────────────────────────
+  "files.associations": {
+    "*.tsp": "typespec",
+    "openapitools.json": "jsonc"
+  },
+
+  // ── Vitest（与 vitest.config.ts 一致）─────────────────────────
+  "vitest.commandLine": "npm run test --",
+  "vitest.enableWorkspaceTrust": false,
+
+  // ── 格式化 ─────────────────────────────────────────────────────
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typespec]": {
+    "editor.formatOnSave": false
+  }
+}

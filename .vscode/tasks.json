@@ -1,0 +1,51 @@
+{
+  // 任务对齐 lab-shared CLAUDE.md 工作循环：
+  //   改 tsp/*.tsp -> npm run emit:openapi -> npm run typecheck -> npm run test -> gate
+  // gate.py exit code: 0=完成 1=回代码 2=停下问人
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build (emit:openapi)",
+      "type": "npm",
+      "script": "emit:openapi",
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "lint (tsp compile --no-emit)",
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "typecheck (tsc --noEmit)",
+      "type": "npm",
+      "script": "typecheck",
+      "problemMatcher": ["$tsc"],
+      "group": "build"
+    },
+    {
+      "label": "test (vitest run)",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "test:watch (vitest)",
+      "type": "npm",
+      "script": "test:watch",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "gate (suite 门禁)",
+      "type": "shell",
+      "command": "python",
+      "args": ["${workspaceFolder}/../../scripts/gate.py", "-p", "lab-management-system-shared"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

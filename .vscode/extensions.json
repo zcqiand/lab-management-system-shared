@@ -1,0 +1,8 @@
+{
+  // 推荐扩展 — TypeSpec SSOT + Vitest 开发必备
+  "recommendations": [
+    "microsoft-typespec.typespec-vscode",
+    "dbaeumer.vscode-eslint",
+    "vitest.explorer"
+  ]
+}

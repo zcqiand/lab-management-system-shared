@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "approved": true,
+  "base_sha": "b76b6a7d285f2dce",
+  "summary": "shared F-级 14 个 规划 → 已上线 翻牌：springboot / vue / react / nextjs / msw 仓的同名 F-级全部 已上线（CLAUDE.md 注：check_align 强制 F 集合跨仓一致）。本批对齐 shared BASE 镜像。",
+  "changes": [
+    {
+      "id": "M02.F01",
+      "action": "变更",
+      "name": "合同管理",
+      "reason": "springboot / vue / react / nextjs / msw 仓已落地（合同 CRUD + 工程信息维护）。BASE 镜像从 规划 翻 已上线 保持跨仓一致。"
+    },
+    {
+      "id": "M03.F01",
+      "action": "变更",
+      "name": "接样管理",
+      "reason": "5 仓已落地（接样单 CRUD + 报告类别关联 + 流程状态）。"
+    },
+    {
+      "id": "M03.F02",
+      "action": "变更",
+      "name": "任务分配",
+      "reason": "5 仓已落地（任务字段挂 SampleReceipt）。"
+    },
+    {
+      "id": "M03.F03",
+      "action": "变更",
+      "name": "数据录入",
+      "reason": "5 仓已落地（样品检测数据录入）。"
+    },
+    {
+      "id": "M03.F05",
+      "action": "变更",
+      "name": "报告审核",
+      "reason": "5 仓已落地（审核流程 + I01-I03）。"
+    },
+    {
+      "id": "M03.F06",
+      "action": "变更",
+      "name": "报告批准",
+      "reason": "5 仓已落地（批准流程 + I01-I03）。"
+    },
+    {
+      "id": "M03.F07",
+      "action": "变更",
+      "name": "报告发放",
+      "reason": "5 仓已落地（发放流程 + I01-I03）。"
+    },
+    {
+      "id": "M03.F08",
+      "action": "变更",
+      "name": "报告归档",
+      "reason": "5 仓已落地（归档流程 + I01-I03）。"
+    },
+    {
+      "id": "M03.F09",
+      "action": "变更",
+      "name": "接样单详情",
+      "reason": "5 仓已落地（接样+样品+检测数据组合视图）。"
+    },
+    {
+      "id": "M04.F06",
+      "action": "变更",
+      "name": "型号维护",
+      "reason": "5 仓已落地（InspectionModel CRUD + 检测项目过滤）。"
+    },
+    {
+      "id": "M04.F07",
+      "action": "变更",
+      "name": "规格维护",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M04.F08",
+      "action": "变更",
+      "name": "等级维护",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M04.F09",
+      "action": "变更",
+      "name": "牌号维护",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M06.F01",
+      "action": "变更",
+      "name": "检测专项",
+      "reason": "5 仓已落地（含本次 B7 Page<T> 4 list + 4 junction list）。"
+    },
+    {
+      "id": "M06.F02",
+      "action": "变更",
+      "name": "检测项目",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M06.F03",
+      "action": "变更",
+      "name": "检测参数",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M06.F04",
+      "action": "变更",
+      "name": "检测标准",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M06.F05",
+      "action": "变更",
+      "name": "计算规则",
+      "reason": "5 仓已落地（复合主键 + 算法类型 + 公式）。"
+    },
+    {
+      "id": "M06.F06",
+      "action": "变更",
+      "name": "技术要求",
+      "reason": "5 仓已落地。"
+    },
+    {
+      "id": "M06.F07",
+      "action": "变更",
+      "name": "报告名称",
+      "reason": "5 仓已落地（含本次 Page<T> 升级）。"
+    },
+    {
+      "id": "M06.F08",
+      "action": "变更",
+      "name": "参数界面",
+      "reason": "5 仓已落地（含本次 Page<T> 升级）。"
+    }
+  ],
+  "sync_files": []
+}
