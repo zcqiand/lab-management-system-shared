@@ -3505,6 +3505,7 @@ components:
       enum:
         - Authorization
         - X-Auth-Token
+      description: 已废弃 (ADR-0014)
     AuthState:
       type: object
       oneOf:
@@ -3650,7 +3651,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/BackendFeatures'
           description: 能力矩阵
-      description: 4-backend 运行时切换配置。运行时由消费方仓各自实现(React Context / Vue pinia store)
+      description: 已废弃 (ADR-0014):用 VITE_API_BASE_URL / NEXT_PUBLIC_API_BASE_URL 替代;4-backend 运行时切换配置
     BackendFeatures:
       type: object
       required:
@@ -3663,7 +3664,7 @@ components:
         realDb:
           type: boolean
           description: 是否对接真实数据库(vs mock seed)
-      description: 后端能力矩阵
+      description: 已废弃 (ADR-0014);后端能力矩阵
     BackendId:
       type: string
       enum:
@@ -3671,7 +3672,7 @@ components:
         - nextjs
         - springboot
         - aspnetcore
-      description: 4 个槽位;id 锁定,避免拼写漂移
+      description: 已废弃 (ADR-0014);4 个槽位,id 锁定避免拼写漂移
     BackendRegistry:
       type: object
       required:
@@ -3687,7 +3688,7 @@ components:
           items:
             $ref: '#/components/schemas/BackendConfig'
           description: 可切换列表(通常包含全部 4 个槽位)
-      description: 运行时注册表:当前激活 + 可切列表。切换/订阅方法由消费方实现,TS 签名见 .state/decision-log.md §2.1
+      description: 已废弃 (ADR-0014);运行时注册表:当前激活 + 可切列表
     CalculationAlgorithmType:
       type: string
       enum:
@@ -4428,7 +4429,9 @@ components:
         - tokenKeys
       properties:
         registry:
-          $ref: '#/components/schemas/BackendRegistry'
+          allOf:
+            - $ref: '#/components/schemas/BackendRegistry'
+          description: 已废弃 (ADR-0014);保留以维持 BackendRegistry schema 在 openapi.yaml 里的可达性
         authContext:
           $ref: '#/components/schemas/AuthContext'
         tokenKeys:
@@ -5334,7 +5337,6 @@ components:
         - accessToken
         - refreshToken
         - activeTenantId
-        - activeBackend
         - permissionsCache
       properties:
         accessToken:
@@ -5352,11 +5354,6 @@ components:
           enum:
             - lab.activeTenantId
           description: 当前选中租户 ID(authenticated 态缓存)
-        activeBackend:
-          type: string
-          enum:
-            - lab.activeBackend
-          description: 当前激活后端槽位(用于跨刷新记忆)
         permissionsCache:
           type: string
           enum:
