@@ -7,6 +7,16 @@ const root = resolve(import.meta.dirname, "../..");
 const outDir = resolve(root, "generated/openapi");
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
+// 自举: 消费方 CI fresh clone 拉 shared 但不 install。
+// npx tsp 在 node_modules/.bin/ 找不到 tsp 时会去 npm 拉 tsp@0.0.1 (Microsoft 老包,不是 TypeSpec)。
+// 这里检测 local tsp 二进制,缺就 npm install。
+// 已在 dev 环境跳过此步。
+const tspBin = resolve(root, "node_modules/.bin/tsp");
+if (!existsSync(tspBin)) {
+  console.log("[emit-openapi] bootstrapping shared deps (no @typespec/compiler found)...");
+  execSync("npm install --omit=dev --no-audit --no-fund", { cwd: root, stdio: "inherit" });
+}
+
 console.log("[emit-openapi] compiling TypeSpec → OpenAPI 3.1...");
 execSync("npx tsp compile .", { cwd: root, stdio: "inherit" });
 console.log("[emit-openapi] OK");
