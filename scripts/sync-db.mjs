@@ -82,19 +82,10 @@ const EXPECTED_TABLES = [
 ];
 
 const EXPECTED_ENUMS = [
-  "contract_status",
-  "flow_status",
-  "receipt_result",
-  "requirement_value_type",
-  "requirement_comparison",
-  "requirement_verification_status",
-  "requirement_judgment_mode",
+  // V014__enums_to_text.sql 后,12 个 PG enum 全部 DROP 改 TEXT（V014 注释：TypeSpec 契约
+  // 层兜底 enum 字符串校验,DB 层用 CHECK 约束不强加）。只剩 audit_action 是 PG enum
+  // （V006 阶段未被任何 JPA 仓直接使用,保留 PG enum 兼容性）。
   "audit_action",
-  "inspection_standard_status",
-  "inspection_parameter_source_type",
-  "qualification_level",
-  "inspection_standard_role",
-  "calculation_algorithm_type",
 ];
 
 // tracking 表名（双下划线前缀：让它在 \dt 列表里排到最前面，标明是元数据表而非业务表；
