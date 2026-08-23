@@ -28,7 +28,12 @@ import { readdirSync, readFileSync } from "node:fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SHARED_ROOT = resolve(__dirname, "..");
-const MIGRATIONS_DIR = resolve(SHARED_ROOT, "sql/migrations");
+// 优先 $MIGRATIONS_DIR env（runtime container:Dockerfile 把 migrations 拷到
+// /lab-management-system-shared/sql/migrations,sync-db.mjs 在 /app/scripts/,
+// 默认算法算出的 /app/sql/migrations 不存在）。
+// dev 环境从 sibling 仓目录结构推断,通常 <repo>/sql/migrations。
+const MIGRATIONS_DIR =
+  process.env.MIGRATIONS_DIR ?? resolve(SHARED_ROOT, "sql/migrations");
 
 const INCREMENTAL = process.argv.includes("--incremental");
 
