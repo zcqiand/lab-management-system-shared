@@ -47,6 +47,10 @@ try {
 }
 
 // ── 2. 连接配置（env，fallback 到 lab_dev）──────────────────────────────────
+// 优先 DATABASE_URL（标准 PG 连接串,ADR-0009）;缺失时回退到 PG_* 单独 env
+//（兼容旧 deploy 脚本与 saas 等姊妹仓的 5 段式 env）。
+// PG_PASSWORD 需明文未 URL-encoded（DATABASE_URL 里 %2B 是 + 的 encoded 形式）。
+const DATABASE_URL = process.env.DATABASE_URL;
 const PG_HOST = process.env.PG_HOST ?? "100.79.128.25";
 const PG_PORT = Number(process.env.PG_PORT ?? 5432);
 const PG_USER = process.env.PG_USER ?? "postgres";
@@ -93,13 +97,19 @@ const EXPECTED_ENUMS = [
 const TRACKING_TABLE = "__schema_migrations";
 
 // ── 3. 执行 ────────────────────────────────────────────────────────────────
-const client = new pg.Client({
-  host: PG_HOST,
-  port: PG_PORT,
-  user: PG_USER,
-  password: PG_PASSWORD,
-  database: PG_DATABASE,
-  connectionTimeoutMillis: 10000,
+// DATABASE_URL 优先(单 string,免 5 段 env 漂移);否则用 PG_* 拼。
+const client = new pg.Client(
+  DATABASE_URL
+    ? { connectionString: DATABASE_URL, connectionTimeoutMillis: 10000 }
+    : {
+        host: PG_HOST,
+        port: PG_PORT,
+        user: PG_USER,
+        password: PG_PASSWORD,
+        database: PG_DATABASE,
+        connectionTimeoutMillis: 10000,
+      }
+);
 });
 
 try {
