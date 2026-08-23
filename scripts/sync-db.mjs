@@ -168,12 +168,17 @@ try {
 
 // ── 全量重建：库必须为空，跑全部 V*.sql ─────────────────────────────────────
 async function runFresh(client, files) {
-  const { rows: existing } = await client.query(
+  // 同时检查 tables 和 types（V014 之前 13 个 enum,V014 之后留 audit_action）。
+  // 只查 tables 会漏过 types(用户实测 V006 audit_action 残留导致全量重建半路炸)。
+  const { rows: existingTables } = await client.query(
     "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'",
   );
-  if (existing.length > 0) {
+  const { rows: existingTypes } = await client.query(
+    "SELECT typname FROM pg_type WHERE typtype IN ('e','c') AND typnamespace = (SELECT oid FROM pg_namespace WHERE nspname = 'public')",
+  );
+  if (existingTables.length > 0 || existingTypes.length > 0) {
     console.error(
-      `[sync-db] ABORT: 目标库非空（${existing.length} 张表）。` +
+      `[sync-db] ABORT: 目标库非空（${existingTables.length} 张表 + ${existingTypes.length} 个 type）。` +
         " 为防误覆盖，脚本拒绝继续。\n" +
         "  重建请先手动：DROP SCHEMA public CASCADE; CREATE SCHEMA public;\n" +
         "  增量迁移请用：node scripts/sync-db.mjs --incremental",
