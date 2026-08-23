@@ -13,7 +13,7 @@ import "./tsp/models/technical-requirement.tsp";
 import "./tsp/models/audit-event.tsp";
 import "./tsp/models/inspection-dictionary.tsp";
 import "./tsp/models/report-name.tsp";
-import "./tsp/models/calculation-rule.tsp";
+import "./tsp/models/calculation-method.tsp";
 import "./tsp/models/param-interface.tsp";
 
 // --- Frontend Bind Contracts (Sprint 1) ---
@@ -31,7 +31,7 @@ import "./tsp/routes/technical-requirements.tsp";
 import "./tsp/routes/summary.tsp";
 import "./tsp/routes/inspection-dictionary.tsp";
 import "./tsp/routes/report-names.tsp";
-import "./tsp/routes/calculation-rules.tsp";
+import "./tsp/routes/calculation-methods.tsp";
 import "./tsp/routes/param-interfaces.tsp";
 
 using TypeSpec.Http;
@@ -42,7 +42,7 @@ using TypeSpec.Http;
 //                       → openapi-generator-java (Spring)
 //                       → NSwag (ASP.NET Core)
 // 范围：M01 认证 / M02 资源 / M03 试验过程 / M04 基础数据(码表)
-//       / M05 统计 / M06 检测能力(专项/项目/参数/标准/计算规则/技术要求/报告名称/参数界面)。
+//       / M05 统计 / M06 检测能力(专项/项目/参数/标准/计算方法/技术要求/报告名称/参数界面)。
 // ============================================================
 
 @service

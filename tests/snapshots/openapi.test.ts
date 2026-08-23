@@ -46,7 +46,7 @@ describe("OpenAPI snapshot", () => {
       "/api/inspection/links/specialty-object",
       "/api/report-names",
       "/api/report-names/links/object",
-      "/api/calculation-rules",
+      "/api/calculation-methods",
       "/api/param-interfaces",
       "/api/param-interfaces/links",
     ]) {

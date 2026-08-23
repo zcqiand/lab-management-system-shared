@@ -15,7 +15,7 @@ tags:
   - name: summary
   - name: inspection-dictionary
   - name: report-names
-  - name: calculation-rules
+  - name: calculation-methods
   - name: param-interfaces
 paths:
   /api/_frontend-bind/snapshot:
@@ -259,9 +259,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SwitchTenantRequest'
-  /api/calculation-rules:
+  /api/calculation-methods:
     get:
-      operationId: CalculationRules_listCalculationRules
+      operationId: CalculationMethods_listCalculationMethods
       parameters:
         - name: inspectionObjectCode
           in: query
@@ -283,7 +283,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CalculationRule'
+                  $ref: '#/components/schemas/CalculationMethod'
         default:
           description: An unexpected error response.
           content:
@@ -291,9 +291,9 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
-        - calculation-rules
+        - calculation-methods
     post:
-      operationId: CalculationRules_createCalculationRule
+      operationId: CalculationMethods_createCalculationMethod
       parameters: []
       responses:
         '200':
@@ -301,7 +301,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CalculationRule'
+                $ref: '#/components/schemas/CalculationMethod'
         default:
           description: An unexpected error response.
           content:
@@ -309,16 +309,16 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
-        - calculation-rules
+        - calculation-methods
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CreateCalculationRuleRequest'
-  /api/calculation-rules/{inspectionObjectCode}/{inspectionParameterCode}:
+              $ref: '#/components/schemas/CreateCalculationMethodRequest'
+  /api/calculation-methods/{inspectionObjectCode}/{inspectionParameterCode}:
     get:
-      operationId: CalculationRules_getCalculationRule
+      operationId: CalculationMethods_getCalculationMethod
       parameters:
         - name: inspectionObjectCode
           in: path
@@ -336,7 +336,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CalculationRule'
+                $ref: '#/components/schemas/CalculationMethod'
         default:
           description: An unexpected error response.
           content:
@@ -344,9 +344,9 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
-        - calculation-rules
+        - calculation-methods
     put:
-      operationId: CalculationRules_updateCalculationRule
+      operationId: CalculationMethods_updateCalculationMethod
       parameters:
         - name: inspectionObjectCode
           in: path
@@ -364,7 +364,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CalculationRule'
+                $ref: '#/components/schemas/CalculationMethod'
         default:
           description: An unexpected error response.
           content:
@@ -372,15 +372,15 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
-        - calculation-rules
+        - calculation-methods
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/UpdateCalculationRuleRequest'
+              $ref: '#/components/schemas/UpdateCalculationMethodRequest'
     delete:
-      operationId: CalculationRules_deleteCalculationRule
+      operationId: CalculationMethods_deleteCalculationMethod
       parameters:
         - name: inspectionObjectCode
           in: path
@@ -402,7 +402,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
-        - calculation-rules
+        - calculation-methods
   /api/catalog/brands:
     get:
       operationId: Catalog_listBrands
@@ -3699,7 +3699,7 @@ components:
         - formula
         - manual
         - auto_calc_ratio
-    CalculationRule:
+    CalculationMethod:
       type: object
       required:
         - inspectionObjectCode
@@ -3800,7 +3800,7 @@ components:
       enum:
         - active
         - archived
-    CreateCalculationRuleRequest:
+    CreateCalculationMethodRequest:
       type: object
       required:
         - inspectionObjectCode
@@ -5360,7 +5360,7 @@ components:
             - lab.permissions
           description: permissions 缓存(避免每次路由跳转都打 /auth/permissions)
       description: 前端持久化 key 命名约定;后端契约不感知,但前端实现必须遵守
-    UpdateCalculationRuleRequest:
+    UpdateCalculationMethodRequest:
       type: object
       properties:
         testingStandardCode:

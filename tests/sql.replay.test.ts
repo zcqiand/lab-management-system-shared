@@ -62,7 +62,7 @@ const EXPECTED_TABLES = [
   "inspection_object_report_names",
   "inspection_report_name_standards",
   "inspection_report_name_parameters",
-  "inspection_calculation_rules",
+  "inspection_calculation_methods",
   "inspection_param_interfaces",
   "inspection_param_interface_links",
 ];

@@ -35,7 +35,7 @@
 | `inspection_technical_requirements` | V005 | TechnicalRequirement + 4 requirement enum | M04.F05 |
 | `audit_events` | V006 | AuditEvent / AuditAction | M01.F04/F05 |
 | `inspection_specialties` / `inspection_objects` / `inspection_specialty_objects` / `inspection_parameters` / `inspection_standards` / `inspection_object_parameters` / `inspection_object_standards` / `inspection_standard_parameters` | V008 | InspectionSpecialty / Object / Parameter / Standard + 4 junction | M06.F01-F04 |
-| `inspection_report_names` / `inspection_object_report_names` / `inspection_report_name_standards` / `inspection_report_name_parameters` / `inspection_calculation_rules` | V009 | InspectionReportName + 3 junction + CalculationRule | M06.F05/F07 |
+| `inspection_report_names` / `inspection_object_report_names` / `inspection_report_name_standards` / `inspection_report_name_parameters` / `inspection_calculation_methods` | V009 | InspectionReportName + 3 junction + CalculationMethod | M06.F05/F07 |
 | `inspection_param_interfaces` / `inspection_param_interface_links` | V010→V013 rename | ParamInterface + link | M06.F08 |
 
 V014 转换的 12 个 enum（V001/V002/V005/V008/V009 引入，V014 落地时全部 PG enum→TEXT）：
@@ -46,7 +46,7 @@ V014 转换的 12 个 enum（V001/V002/V005/V008/V009 引入，V014 落地时全
 | `flow_status` | V002 | `sample_receipts.flow_status` |
 | `receipt_result` | V002 | `sample_receipts.result` |
 | `requirement_value_type` / `requirement_comparison` / `requirement_verification_status` / `requirement_judgment_mode` | V005 | `inspection_technical_requirements.*` |
-| `calculation_algorithm_type` | V009 | `inspection_calculation_rules.algorithm_type` |
+| `calculation_algorithm_type` | V009 | `inspection_calculation_methods.algorithm_type` |
 | `inspection_parameter_source_type` / `inspection_standard_status` / `qualification_level` / `inspection_standard_role` | V008 | 字典 4 表 + 2 张 role junction |
 
 未转换：`audit_action`（V006 引入）。原因：当前 springboot 仓 AuditEvent entity 尚未对接

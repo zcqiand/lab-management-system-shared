@@ -1,6 +1,6 @@
 using TypeSpec.Http;
 
-// M06.F05 计算规则（复合主键 object + parameter）。
+// M06.F05 计算方法（复合主键 object + parameter）。
 namespace Lab.Management.Shared;
 
 enum CalculationAlgorithmType {
@@ -13,7 +13,7 @@ enum CalculationAlgorithmType {
   auto_calc_ratio,
 }
 
-model CalculationRule {
+model CalculationMethod {
   inspectionObjectCode: string;
   inspectionParameterCode: string;
   testingStandardCode?: string;
@@ -29,7 +29,7 @@ model CalculationRule {
   updatedAt: string;
 }
 
-model CreateCalculationRuleRequest {
+model CreateCalculationMethodRequest {
   inspectionObjectCode: string;
   inspectionParameterCode: string;
   testingStandardCode?: string;
@@ -43,7 +43,7 @@ model CreateCalculationRuleRequest {
   sortOrder?: int32;
 }
 
-model UpdateCalculationRuleRequest {
+model UpdateCalculationMethodRequest {
   testingStandardCode?: string;
   reportNameCode?: string;
   algorithmType?: CalculationAlgorithmType;

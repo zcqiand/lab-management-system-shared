@@ -1,36 +1,36 @@
 using TypeSpec.Http;
 
-// M06.F05 计算规则 CRUD（复合主键 object + parameter）。
-@route("/calculation-rules")
-@tag("calculation-rules")
-namespace Lab.Management.Shared.CalculationRules {
+// M06.F05 计算方法 CRUD（复合主键 object + parameter）。
+@route("/calculation-methods")
+@tag("calculation-methods")
+namespace Lab.Management.Shared.CalculationMethods {
   @get
-  op listCalculationRules(
+  op listCalculationMethods(
     @query inspectionObjectCode?: string,
     @query inspectionParameterCode?: string,
-  ): CalculationRule[] | ErrorResponse;
+  ): CalculationMethod[] | ErrorResponse;
 
   @post
-  op createCalculationRule(@body body: CreateCalculationRuleRequest): CalculationRule | ErrorResponse;
+  op createCalculationMethod(@body body: CreateCalculationMethodRequest): CalculationMethod | ErrorResponse;
 
   @get
   @route("/{inspectionObjectCode}/{inspectionParameterCode}")
-  op getCalculationRule(
+  op getCalculationMethod(
     @path inspectionObjectCode: string,
     @path inspectionParameterCode: string,
-  ): CalculationRule | ErrorResponse;
+  ): CalculationMethod | ErrorResponse;
 
   @put
   @route("/{inspectionObjectCode}/{inspectionParameterCode}")
-  op updateCalculationRule(
+  op updateCalculationMethod(
     @path inspectionObjectCode: string,
     @path inspectionParameterCode: string,
-    @body body: UpdateCalculationRuleRequest,
-  ): CalculationRule | ErrorResponse;
+    @body body: UpdateCalculationMethodRequest,
+  ): CalculationMethod | ErrorResponse;
 
   @delete
   @route("/{inspectionObjectCode}/{inspectionParameterCode}")
-  op deleteCalculationRule(
+  op deleteCalculationMethod(
     @path inspectionObjectCode: string,
     @path inspectionParameterCode: string,
   ): void | ErrorResponse;
