@@ -110,7 +110,6 @@ const client = new pg.Client(
         connectionTimeoutMillis: 10000,
       }
 );
-});
 
 try {
   console.log(
