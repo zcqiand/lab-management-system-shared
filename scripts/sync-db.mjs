@@ -32,19 +32,42 @@ const MIGRATIONS_DIR = resolve(SHARED_ROOT, "sql/migrations");
 
 const INCREMENTAL = process.argv.includes("--incremental");
 
-// ── 1. 借 nextjs 的 pg driver ──────────────────────────────────────────────
-const nextjsRoot = resolve(SHARED_ROOT, "../lab-management-system-nextjs");
+// ── 1. 借 pg driver ─────────────────────────────────────────────────────────
+// 多场景兜底(按优先级):
+// 1. /app/node_modules/pg          (runtime container:Dockerfile COPY 全量 node_modules 进 /app)
+// 2. ../lab-management-system-nextjs/node_modules/pg  (dev:从 nextjs 仓借 driver,shared 仓禁 runtime 依赖)
+// 3. ../saas-identity-platform-nextjs/node_modules/pg   (saas 家族 dev)
 let pg;
+let pgLoadStrategy = "";
 try {
-  const requireFromNext = createRequire(resolve(nextjsRoot, "package.json"));
-  pg = requireFromNext("pg");
+  const requireFromRuntime = createRequire(resolve("/app/node_modules", "pg"));
+  pg = requireFromRuntime("pg");
+  pgLoadStrategy = "/app/node_modules/pg (runtime container)";
 } catch {
-  console.error(
-    "[sync-db] FATAL: 借不到 lab-management-system-nextjs/node_modules/pg。\n" +
-      "  请先在 nextjs 仓 `npm install`，或在一个装了 pg 的环境运行。",
-  );
-  process.exit(1);
+  try {
+    const nextjsRoot = resolve(SHARED_ROOT, "../lab-management-system-nextjs");
+    const requireFromNext = createRequire(resolve(nextjsRoot, "package.json"));
+    pg = requireFromNext("pg");
+    pgLoadStrategy = "../lab-management-system-nextjs/node_modules/pg (dev)";
+  } catch {
+    try {
+      const saasNextjsRoot = resolve(SHARED_ROOT, "../saas-identity-platform-nextjs");
+      const requireFromSaas = createRequire(resolve(saasNextjsRoot, "package.json"));
+      pg = requireFromSaas("pg");
+      pgLoadStrategy = "../saas-identity-platform-nextjs/node_modules/pg (saas dev)";
+    } catch {
+      console.error(
+        "[sync-db] FATAL: 借不到 pg driver。\n" +
+          "  尝试过:/app/node_modules/pg、../lab-management-system-nextjs/node_modules/pg、\n" +
+          "  ../saas-identity-platform-nextjs/node_modules/pg。\n" +
+          "  运行时镜像应保证 /app/node_modules/pg 存在(Dockerfile COPY 全量 node_modules);\n" +
+          "  dev 环境请在 nextjs 仓 `npm install`。",
+      );
+      process.exit(1);
+    }
+  }
 }
+console.log(`[sync-db] pg driver 加载自 ${pgLoadStrategy}`);
 
 // ── 2. 连接配置（env，fallback 到 lab_dev）──────────────────────────────────
 // 优先 DATABASE_URL（标准 PG 连接串,ADR-0009）;缺失时回退到 PG_* 单独 env
