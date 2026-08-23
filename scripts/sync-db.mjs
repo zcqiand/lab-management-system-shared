@@ -187,11 +187,31 @@ async function runFresh(client, files) {
   }
 
   console.log(`[sync-db] 发现 ${files.length} 个迁移文件，顺序执行：`);
+  // 全量模式同样写 tracking 表（与增量模式同一张 __schema_migrations）：
+  // 重建完的库再跑 --incremental 时能直接对账，不依赖冷启动 baseline 猜测。
+  await client.query(`
+    CREATE TABLE IF NOT EXISTS ${TRACKING_TABLE} (
+      version    VARCHAR(255) PRIMARY KEY,
+      applied_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+    )
+  `);
+  await client.query(`DELETE FROM ${TRACKING_TABLE}`);
   for (const f of files) {
     const sql = readFileSync(resolve(MIGRATIONS_DIR, f), "utf-8");
     process.stdout.write(`  ${f} ... `);
-    await client.query(sql);
-    console.log("OK");
+    await client.query("BEGIN");
+    try {
+      await client.query(sql);
+      await client.query(`INSERT INTO ${TRACKING_TABLE} (version) VALUES ($1)`, [
+        f,
+      ]);
+      await client.query("COMMIT");
+      console.log("OK");
+    } catch (err) {
+      await client.query("ROLLBACK");
+      console.log("FAILED");
+      throw new Error(`${f}: ${err.message}`);
+    }
   }
 }
 
