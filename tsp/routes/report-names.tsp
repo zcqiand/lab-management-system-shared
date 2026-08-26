@@ -35,6 +35,13 @@ namespace Lab.Management.Shared.ReportNames {
   @route("/links/object")
   op unlinkObjectReportName(@body body: { inspectionObjectCode: string; reportNameCode: string }): void | ErrorResponse;
 
+  @get
+  @route("/links/object")
+  op listObjectReportNameLinks(
+    @query inspectionObjectCode?: string,
+    @query reportNameCode?: string,
+  ): Page<ObjectReportNameLink> | ErrorResponse;
+
   @post
   @route("/links/standard")
   op linkReportNameStandard(@body body: ReportNameStandardLink): void | ErrorResponse;
@@ -43,6 +50,13 @@ namespace Lab.Management.Shared.ReportNames {
   @route("/links/standard")
   op unlinkReportNameStandard(@body body: { reportNameCode: string; inspectionStandardCode: string; role: InspectionStandardRole }): void | ErrorResponse;
 
+  @get
+  @route("/links/standard")
+  op listReportNameStandardLinks(
+    @query reportNameCode?: string,
+    @query role?: InspectionStandardRole,
+  ): Page<ReportNameStandardLink> | ErrorResponse;
+
   @post
   @route("/links/parameter")
   op linkReportNameParameter(@body body: ReportNameParameterLink): void | ErrorResponse;
@@ -50,4 +64,11 @@ namespace Lab.Management.Shared.ReportNames {
   @delete
   @route("/links/parameter")
   op unlinkReportNameParameter(@body body: { reportNameCode: string; inspectionParameterCode: string }): void | ErrorResponse;
+
+  @get
+  @route("/links/parameter")
+  op listReportNameParameterLinks(
+    @query reportNameCode?: string,
+    @query inspectionParameterCode?: string,
+  ): Page<ReportNameParameterLink> | ErrorResponse;
 }

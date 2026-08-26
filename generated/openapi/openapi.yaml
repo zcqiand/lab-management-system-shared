@@ -2199,6 +2199,58 @@ paths:
               required:
                 - inspectionParameterCode
                 - paramInterfaceCode
+    get:
+      operationId: ParamInterfaces_listParamInterfaceLinks
+      parameters:
+        - name: inspectionParameterCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: paramInterfaceCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ParamInterfaceLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - param-interfaces
   /api/param-interfaces/{code}:
     get:
       operationId: ParamInterfaces_getParamInterface
@@ -2718,6 +2770,58 @@ paths:
               required:
                 - inspectionObjectCode
                 - reportNameCode
+    get:
+      operationId: ReportNames_listObjectReportNameLinks
+      parameters:
+        - name: inspectionObjectCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: reportNameCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ObjectReportNameLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
   /api/report-names/links/parameter:
     post:
       operationId: ReportNames_linkReportNameParameter
@@ -2767,6 +2871,58 @@ paths:
               required:
                 - reportNameCode
                 - inspectionParameterCode
+    get:
+      operationId: ReportNames_listReportNameParameterLinks
+      parameters:
+        - name: reportNameCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: inspectionParameterCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ReportNameParameterLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
   /api/report-names/links/standard:
     post:
       operationId: ReportNames_linkReportNameStandard
@@ -2819,6 +2975,58 @@ paths:
                 - reportNameCode
                 - inspectionStandardCode
                 - role
+    get:
+      operationId: ReportNames_listReportNameStandardLinks
+      parameters:
+        - name: reportNameCode
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
+        - name: role
+          in: query
+          required: false
+          schema:
+            $ref: '#/components/schemas/InspectionStandardRole'
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ReportNameStandardLink'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-names
   /api/report-names/{code}:
     get:
       operationId: ReportNames_getReportName

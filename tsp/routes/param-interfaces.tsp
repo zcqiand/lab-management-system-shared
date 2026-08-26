@@ -34,4 +34,11 @@ namespace Lab.Management.Shared.ParamInterfaces {
   @delete
   @route("/links")
   op unlinkParamInterface(@body body: { inspectionParameterCode: string; paramInterfaceCode: string }): void | ErrorResponse;
+
+  @get
+  @route("/links")
+  op listParamInterfaceLinks(
+    @query inspectionParameterCode?: string,
+    @query paramInterfaceCode?: string,
+  ): Page<ParamInterfaceLink> | ErrorResponse;
 }
