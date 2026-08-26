@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "Sprint 1 Phase 3 前端绑定契约落地完成;Phase 4 在 react/vue 仓(本仓无新工作)",
+  "current_task": "junction GET 4 op 补齐（Page<T>）已推送（2be0cdf）— 契约追上 nextjs 已有实现",
   "done": [
     "gate --all EXIT=0(7 仓全绿,shared L0/L1/L3/L4/L5 绿,33 功能条目 0 软告警)",
     "tsp/contracts/frontend-bind.tsp 落 8 契约 schema:BackendConfig / BackendId / AuthHeaderKind / BackendFeatures / BackendRegistry / AuthState(@discriminated union 4 态) / AuthContext / TokenStorageKeys",
@@ -10,7 +10,9 @@
     "commit 5c100d7 feat(shared) + 9b74dd3 chore(shared) session.json + 9e66d22 docs(shared) decision-log 全推 origin",
     "父仓指针 fdd092a + 5413aa8 全推 github.com/zcqiand/xr-code-suite"
   ],
-  "next": "1) 新 session 进 output/lab-management-system-react/,首动作 cat .state/decision-log.md(若已起草)或新建;2) 跑 npm run codegen 把 shared/generated/openapi/openapi.yaml 拉到 src/api/openapi.yaml;3) 手动或 codegen 把 8 schema 抽到 src/api/contracts.ts(BackendConfig / BackendId / AuthHeaderKind / BackendFeatures / BackendRegistry / AuthState / AuthContext / TokenStorageKeys);4) orval.config.ts 加 tags: ['frontend-bind-meta'] filter 排除 emit 锚点(否则双仓会拿到一个看似未实现的 snapshot 调用);5) React Context 实装 BackendSwitch + AuthContext(login/logout/refresh/switchTenant/hasPermission/onChange),TS 签名见 shared/.state/decision-log.md §2;6) 仪表盘空壳 + AppShell 装配;7) gate react 仓 + commit + push + 父仓指针 bump;8) vue 仓对称镜像,react 写完再开避免双仓漂移",
+  "next": [
+    "无"
+  ],
   "open_questions": [
     "FrontendBindMeta /_frontend-bind/snapshot 是 emit-only 锚点后端不实现。react/vue 仓 orval.config.ts 是否加 tags filter 排除 'frontend-bind-meta'?目前未做,默认会生成 stub 调用",
     "AuthState 4 态切换触发条件(什么时候 idle→anonymous / 什么时候 anonymous→awaiting_tenant / 什么时候 awaiting_tenant→authenticated)是否需要契约定一份 FSM 转移表?当前 contract 只锁了 4 态形状,没锁转移条件"
