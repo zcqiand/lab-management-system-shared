@@ -1,31 +1,33 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "junction GET 4 op 补齐（Page<T>）已推送（2be0cdf）— 契约追上 nextjs 已有实现",
+  "current_task": "V015/V017 收敛对齐 springboot 已推送(c81c040 / v0.1.7)— flyway 撞号事故根治",
+  "last_session_at": "2026-08-26",
+  "last_session_summary": "删 V015__rename_calculation_rules_to_methods.sql,V015 := springboot smoke_seed_dict(逐字节),新增 V017 := springboot 条件式 rename。分叉从 V014/V015 缩到 V014 单点。原 session 记的「shared V014 对齐 springboot 演化版」方案经 emit-schema 验证不可行(演化版 ALTER methods 表,fresh replay 走到 V014 时表还叫 rules,必炸),V014 定格为永久结构性分叉。/handoff 二次门禁 --all exit 0",
   "done": [
-    "gate --all EXIT=0(7 仓全绿,shared L0/L1/L3/L4/L5 绿,33 功能条目 0 软告警)",
-    "tsp/contracts/frontend-bind.tsp 落 8 契约 schema:BackendConfig / BackendId / AuthHeaderKind / BackendFeatures / BackendRegistry / AuthState(@discriminated union 4 态) / AuthContext / TokenStorageKeys",
-    "FrontendBindMeta /_frontend-bind/snapshot wrapper emit 锚点:确保 8 schema 全 reach openapi3 omit-unreachable-types 过滤;yaml 实际产出 8 named + AuthState 4 variant + 1 wrapper = 13 schema",
-    "TokenStorageKeys 5 key 全部以字符串字面量类型锁名(lab.accessToken / lab.refreshToken / lab.activeTenantId / lab.activeBackend / lab.permissions),codegen 后 TS 拿到 string literal type",
-    "commit 5c100d7 feat(shared) + 9b74dd3 chore(shared) session.json + 9e66d22 docs(shared) decision-log 全推 origin",
-    "父仓指针 fdd092a + 5413aa8 全推 github.com/zcqiand/xr-code-suite"
+    "V015__rename_calculation_rules_to_methods.sql 删除(rename 语义移入 V017);V015__smoke_seed_dict.sql + V017__rename_calculation_rules_to_methods.sql 从 springboot 逐字节拷入",
+    "收敛后 fresh replay 链：V001-V013(rules) -> V014 旧版(ALTER rules) -> V015 smoke -> V017 rename -> 终态 methods 命名,与 springboot 链终态等价(emit-schema 实测 schema.sql 与旧链产物逐字节相同)",
+    "gate L0/L1/L3/L4/L5 全绿 33 条目 0 软告警(L4 sql.replay.test 在 lab_test 全链重放新链 16 迁移,EXPECTED_TABLES 断言 inspection_calculation_methods 通过)",
+    "commit c81c040 + tag v0.1.7-20260826 + push origin/master"
   ],
   "next": [
-    "无"
+    "无阻塞。可选：sql/migrations/README.md 写一页「V014 永久分叉」+「V016 空号」+「V015/V017 一致」的版本号地图防 3 个月后自己看不懂"
   ],
   "open_questions": [
     "FrontendBindMeta /_frontend-bind/snapshot 是 emit-only 锚点后端不实现。react/vue 仓 orval.config.ts 是否加 tags filter 排除 'frontend-bind-meta'?目前未做,默认会生成 stub 调用",
-    "AuthState 4 态切换触发条件(什么时候 idle→anonymous / 什么时候 anonymous→awaiting_tenant / 什么时候 awaiting_tenant→authenticated)是否需要契约定一份 FSM 转移表?当前 contract 只锁了 4 态形状,没锁转移条件"
+    "AuthState 4 态切换触发条件是否需要契约定 FSM 转移表?当前 contract 只锁了 4 态形状,没锁转移条件",
+    "V014 永久分叉后 shared(sql/migrations) 与 springboot(db/migration) 的版本号地图是否值得写进 sql/migrations/README.md?是否值得做一篇 ADR?"
   ],
   "dont": [
-    "@discriminated(\"kind\") 字符串参数 → v1.15 DiscriminatedOptions 是 object,默认 propertyName='kind',写 @discriminated(无参)即可,带 (\"kind\") 会 invalid-argument",
-    "model 上挂方法如 `model AuthContext { login(): ... }` → TypeSpec 不允许,改 namespace 级 op 或纯数据 model + doc 注释 TS 签名",
-    "namespace Lab.Management.Shared 下裸 op 声明 → 自动当 HTTP 路由挂 /api,撞现有 auth 路由 duplicate-operation。需要 op 时套 @route 子 namespace + @get/@post",
-    "删 FrontendBindMeta /_frontend-bind/snapshot 锚点 → 8 schema 全部被 omit-unreachable-types 丢掉,L5 alignment 报 schema 消失",
-    "直接编辑 generated/openapi/openapi.yaml → 必须是 npm run build(emit:openapi),违反会让 msw/nextjs/react/vue 4 仓 codegen 不同步",
-    "为让 L4 绿删 FK receipts_category_fk / testrec_param_fk → V011 M06 real FK 回填,删了 L3 类型过但 L5 报 已上线但无测试引用"
+    "不要把 V014 改成 springboot 演化版(ALTER inspection_calculation_methods)-- fresh replay 链(emit-schema / sql.replay.test / sync-db 全量重建)走到 V014 时表还叫 rules,必炸 relation does not exist。这是 2026-08-26 验证过的死路",
+    "不要动 V015/V017 内容 -- 已与 springboot 逐字节对齐,改一个字节就重现 flyway checksum 撞号事故",
+    "@discriminated(\"kind\") 字符串参数 -> v1.15 是 object 参数,写 @discriminated(无参)即可",
+    "model 上挂方法 -> TypeSpec 不允许,改 namespace 级 op 或纯数据 model + doc 注释",
+    "namespace 下裸 op 声明 -> 自动当 HTTP 路由撞 duplicate-operation,需要时套 @route 子 namespace",
+    "删 FrontendBindMeta /_frontend-bind/snapshot 锚点 -> 8 schema 全部被 omit-unreachable-types 丢掉",
+    "直接编辑 generated/openapi/openapi.yaml -> 必须 npm run build(emit:openapi)"
   ],
-  "last_gate_passed_at": "2026-08-17T15:30+08:00",
+  "last_gate_passed_at": "2026-08-26T17:30+08:00",
   "active_branch": "master",
   "ahead_of_origin": "0"
 }
