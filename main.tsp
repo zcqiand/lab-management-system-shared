@@ -37,7 +37,7 @@ import "./tsp/routes/param-interfaces.tsp";
 using TypeSpec.Http;
 
 // ============================================================
-// Lab Management System — 实验室管理系统 TypeSpec SSOT
+// Lab Management System — 建筑工程实验室管理系统 TypeSpec SSOT
 // 唯一真源。产 OpenAPI → orval (TS api-client/msw)
 //                       → openapi-generator-java (Spring)
 //                       → NSwag (ASP.NET Core)
