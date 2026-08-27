@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "family": "lab-management-system",
+  "members": {
+    "react": ["frontend"],
+    "vue": ["frontend"],
+    "nextjs": ["frontend", "backend"],
+    "springboot": ["backend"],
+    "aspnetcore": ["backend"],
+    "msw": ["backend"]
+  },
+  "synced_keys": {
+    "JWT_SIGNING_KEY": {"secret": true, "per_repo": {"nextjs": "LAB_JWT_SECRET"}},
+    "JWT_ISSUER": {"per_repo": {"nextjs": "LAB_JWT_ISSUER"}},
+    "JWT_AUDIENCE": {},
+    "JWT_TTL_SECONDS": {"per_repo": {"nextjs": "LAB_JWT_TTL_SECONDS"}},
+    "LAB_CORS_ALLOWED_ORIGINS": {"scope": ["backend"]},
+    "SAAS_IDP_BASE": {
+      "scope": ["backend"],
+      "per_repo": {"springboot": "LAB_SAAS_BASE_URL", "aspnetcore": "LAB_SAAS_BASE_URL", "nextjs": "SAAS_IDP_URL"}
+    },
+    "SAAS_UI_BASE": {
+      "per_repo": {"react": "VITE_SAAS_BASE_URL", "vue": "VITE_SAAS_BASE_URL", "nextjs": "SAAS_UI_BASE_URL"}
+    },
+    "LAB_SSO_PROFILE": {"scope": ["backend"]}
+  }
+}
