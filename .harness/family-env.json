@@ -16,8 +16,9 @@
     "JWT_TTL_SECONDS": {"per_repo": {"nextjs": "LAB_JWT_TTL_SECONDS"}},
     "LAB_CORS_ALLOWED_ORIGINS": {"scope": ["backend"]},
     "SAAS_IDP_BASE": {
-      "scope": ["backend"],
-      "per_repo": {"springboot": "LAB_SAAS_BASE_URL", "aspnetcore": "LAB_SAAS_BASE_URL", "nextjs": "SAAS_IDP_URL"}
+      "scope": ["nextjs"],
+      "per_repo": {"springboot": "LAB_SAAS_BASE_URL", "aspnetcore": "Lab__Sso__SaasBase", "nextjs": "SAAS_IDP_URL"},
+      "note": "2026-08-28 scope backend→nextjs: lab 各后端 SSO 走同栈匹配 (springboot→saas-springboot / aspnetcore→saas-aspnetcore / nextjs→saas-nextjs), 跨栈值本就不同,不是漂移。springboot/aspnetcore 的 key 保留在 per_repo 供查值但不再跨仓比对"
     },
     "SAAS_UI_BASE": {
       "per_repo": {"react": "VITE_SAAS_BASE_URL", "vue": "VITE_SAAS_BASE_URL", "nextjs": "SAAS_UI_BASE_URL"}
