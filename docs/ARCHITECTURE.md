@@ -37,8 +37,9 @@
                    │        │        │        │        │
         ┌──────────┘        │        │        │        └────────────┐
         ▼                   ▼        ▼        ▼                     ▼
-   msw:5173           react   vue   nextjs   springboot    aspnetcore
-   (mock 后端)        :5173   :5173  :3000    :8080         :5000
+   msw:5200           react   vue   nextjs   springboot    aspnetcore
+   (mock 后端)        :5202   :5203  :5201    :5205         :5204
+                              (前端×3)        (后端×2)
                               (前端×3)        (后端×2)
 ```
 
