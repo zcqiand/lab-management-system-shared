@@ -6,7 +6,7 @@
 > 3. 一次「改契约 → 6 仓同步」的核心流程怎么走、V014 永久分叉怎么落地。
 
 > **范围**：本文档只描述 *架构*（结构 / 边界 / 数据流 / 决策）。
-> 编码细则见 [docs/conventions/](conventions/)（当前空），单决策的 ADR 见 [docs/adr/](adr/)（本仓暂未起草独立 ADR，引用父仓 [ADR-0007](../..//../../docs/adr/0007-shared-sql-ssot.md)），功能清单见 [docs/functions/function-tree.md](functions/function-tree.md)。
+> 编码细则见 [docs/conventions/](conventions/)（当前空），单决策的 ADR 见 [docs/adr/](adr/)（本仓暂未起草独立 ADR，引用父仓 [ADR-0007](../../../docs/adr/0007-shared-sql-ssot.md)），功能清单见 [docs/functions/function-tree.md](functions/function-tree.md)。
 >
 > 与父仓架构总览的关系见 [附录 A](#附录-a与父仓-docsarchitecturemd-的关系)。
 
@@ -19,7 +19,7 @@
 | 新人，30 分钟搞懂本仓 | §1 → §2 → §3.1（tsp/main.tsp 入口） |
 | 想改 API | §3.1 → §4（流程）→ §5（6 消费仓同步矩阵） |
 | 想改 DB schema | §3.3 → §3.4 → §4 → §6（V014 永久分叉） |
-| 想知道「为什么这样设计」 | §7（决策索引） → [ADR-0007](../..//../../docs/adr/0007-shared-sql-ssot.md) + [父仓 §3.1](../..//../../docs/ARCHITECTURE.md#31-双-ssotapi-契约--db-schema) |
+| 想知道「为什么这样设计」 | §7（决策索引） → [ADR-0007](../../../docs/adr/0007-shared-sql-ssot.md) + [父仓 §3.1](../../../docs/ARCHITECTURE.md#31-双-ssotapi-契约--db-schema) |
 | 想看术语定义 | §8 |
 
 ---
@@ -46,10 +46,10 @@
 | 维度 | 角色 |
 |---|---|
 | **本质** | 纯契约仓：唯一产出物是 `generated/openapi/openapi.yaml` + `sql/migrations/*.sql` |
-| **真源范围** | API 契约（TypeSpec）+ DB schema（Flyway 风格 SQL）= **双 SSOT**（[ADR-0007](../..//../../docs/adr/0007-shared-sql-ssot.md)） |
+| **真源范围** | API 契约（TypeSpec）+ DB schema（Flyway 风格 SQL）= **双 SSOT**（[ADR-0007](../../../docs/adr/0007-shared-sql-ssot.md)） |
 | **消费方** | 6 个仓：`msw` / `react` / `vue` / `nextjs` / `springboot` / `aspnetcore` |
 | **直接对接方式** | 6 仓各自 `scripts/gen-shared.{sh,ts}` 调本仓 `npm run emit:openapi` + 读 `generated/openapi/openapi.yaml` + `cp sql/migrations/*.sql` 到仓内 |
-| **禁止事项** | 业务代码 / 语言专属产物 / npm runtime 依赖 / 手写 openapi.yaml（详见本仓 [CLAUDE.md](../../CLAUDE.md) §2） |
+| **禁止事项** | 业务代码 / 语言专属产物 / npm runtime 依赖 / 手写 openapi.yaml（详见本仓 [CLAUDE.md](../CLAUDE.md) §2） |
 
 **最简定义**：「shared 仓不认识 React、Spring 或 .NET，它只产出一份 OpenAPI yaml + 一份 SQL 迁移序列」。
 
@@ -117,7 +117,7 @@ lab-management-system-shared/
 
 ### 2.2 5 段结构在 shared 仓的裁剪
 
-父仓 [§2.3](../..//../../docs/ARCHITECTURE.md#23-仓库矩阵14-个仓各自-5-段结构) 规定的 5 段：
+父仓 [§2.3](../../../docs/ARCHITECTURE.md#23-仓库矩阵14-个仓各自-5-段结构) 规定的 5 段：
 
 | 段 | 通用形态 | shared 仓裁剪 |
 |---|---|---|
@@ -354,9 +354,9 @@ namespace Lab.Management.Shared.Summary {
 
 **TypeSpec**：`tsp/contracts/frontend-bind.tsp`
 
-跨端「bind 锚点」：前端开发期需要一个稳定的 schema 锚点供 emit-only 引用，后端不实现该端点（标注 `emit-only`）。`omit-unreachable-types: true` 配 `FrontendBindMeta` 防止 8 个 bind schema 被误删（详见 [session.json](.state/session.json) `dont:` 列表）。
+跨端「bind 锚点」：前端开发期需要一个稳定的 schema 锚点供 emit-only 引用，后端不实现该端点（标注 `emit-only`）。`omit-unreachable-types: true` 配 `FrontendBindMeta` 防止 8 个 bind schema 被误删（详见 `session.json` `dont:` 列表）。
 
-**重要**：本仓根 namespace 不属于 M00-M06 BASE 树，是 emit 工具产物。开放问题见 [session.json](.state/session.json) `open_questions`：是否需在 react/vue 仓 orval.config.ts 加 tags filter 排除 `frontend-bind-meta`。
+**重要**：本仓根 namespace 不属于 M00-M06 BASE 树，是 emit 工具产物。开放问题见 `session.json` `open_questions`：是否需在 react/vue 仓 orval.config.ts 加 tags filter 排除 `frontend-bind-meta`。
 
 ### 3.7 SQL 模块映射总览
 
@@ -432,7 +432,7 @@ namespace Lab.Management.Shared.Summary {
 
 **关键检查点**：
 
-- TypeSpec 改完必须**先**在 BASE tree 加 F（[ADR-0003](../..//../../docs/adr/0003-function-tree-requires-human-approval.md)），再改本仓 + 6 仓；否则 L5 红（"已上线但无 BASE 引用"告警）；
+- TypeSpec 改完必须**先**在 BASE tree 加 F（[ADR-0003](../../../docs/adr/0003-function-tree-requires-human-approval.md)），再改本仓 + 6 仓；否则 L5 红（"已上线但无 BASE 引用"告警）；
 - `npm run emit:openapi` 自动 bootstrap devDep（fresh clone 时本地没装 @typespec/compiler 也能跑，见 [scripts/codegen/emit-openapi.ts](../scripts/codegen/emit-openapi.ts) L13-19 注释）；
 - `tspconfig.yaml` 用 `omit-unreachable-types: true`，**必须配 `FrontendBindMeta`** 锚点防 8 schema 被误丢。
 
@@ -514,9 +514,9 @@ exit 0 = 全绿；1 = 按 fix 提示回代码改；2 = 契约/环境问题（停
 
 **关键规则**：
 
-- 本仓 `stack.json` 只声明 L1/L3/L4（L0/L5 是 suite 保留，[ADR-0001](../..//../../docs/adr/0001-suite-owns-l0-and-l5.md)）；
+- 本仓 `stack.json` 只声明 L1/L3/L4（L0/L5 是 suite 保留，[ADR-0001](../../../docs/adr/0001-suite-owns-l0-and-l5.md)）；
 - L4 的 `sql.replay.test.ts` 是契约仓独有的「fresh replay 链」门禁——等价于后端的集成测试，但跑在 shared 仓本地 PG 上；
-- `trace_cmd = ["npx", "--no", "vitest", "run"]` + `TRACE_MAP=1` 触发 fnReporter 产 `.state/trace.json`（与跨语言锚点 [ADR-0002](../..//../../docs/adr/0002-trace-json-as-cross-language-anchor-contract.md) 一致）。
+- `trace_cmd = ["npx", "--no", "vitest", "run"]` + `TRACE_MAP=1` 触发 fnReporter 产 `.state/trace.json`（与跨语言锚点 [ADR-0002](../../../docs/adr/0002-trace-json-as-cross-language-anchor-contract.md) 一致）。
 
 ---
 
@@ -582,7 +582,7 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 | 2026-08-26 | emit-schema 实测 schema.sql 逐字节收敛 | 验证通过 |
 | 2026-08-26 | commit c81c040 + tag v0.1.7-20260826 + push origin/master | 提交 + 推 |
 
-**详细记录见 [`.state/session.json`](.state/session.json)**（`current_task` + `last_session_summary` + `done[]` + `next[]` + `dont[]`）。
+**详细记录见 ``.state/session.json``**（`current_task` + `last_session_summary` + `done[]` + `next[]` + `dont[]`）。
 
 ### 6.3 与 springboot 的版本号地图
 
@@ -594,7 +594,7 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 | V016 | 空号（springboot B3 早期用过；shared 跳过） | 已删 | 跳号 |
 | V017 | rename rules → methods（条件式 `IF EXISTS`） | 同（与 shared 逐字节相同） | 共享 |
 
-**关键约束**（见 [session.json](.state/session.json) `dont[]`）：
+**关键约束**（见 `session.json` `dont[]`）：
 
 - ❌ 不要把 V014 改成 springboot 演化版（ALTER methods）——fresh replay 链必炸；
 - ❌ 不要动 V015/V017 内容——已与 springboot 逐字节对齐，改一个字节就重现 flyway checksum 撞号事故；
@@ -604,7 +604,7 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 
 [V017__rename_calculation_rules_to_methods.sql](../sql/migrations/V017__rename_calculation_rules_to_methods.sql) 注释段已写明「shared 仓的 V014/V015 与本仓分叉待收敛（见 session.json 待办）」——但当前决策是**保持分叉**而非收敛（因为 fresh replay 链必须从 V001 开始按顺序跑通）。
 
-可选后续（[session.json](.state/session.json) `next[]`）：在 `sql/migrations/README.md` 写一页「V014 永久分叉 + V016 空号 + V015/V017 一致」版本号地图防 3 个月后自己看不懂；或起草一篇本仓独立 ADR 记录决策背景（详见 §7）。
+可选后续（`session.json` `next[]`）：在 `sql/migrations/README.md` 写一页「V014 永久分叉 + V016 空号 + V015/V017 一致」版本号地图防 3 个月后自己看不懂；或起草一篇本仓独立 ADR 记录决策背景（详见 §7）。
 
 ---
 
@@ -616,25 +616,25 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 
 | ADR | 主题 | 与本仓关系 |
 |---|---|---|
-| [ADR-0007](../..//../../docs/adr/0007-shared-sql-ssot.md) | shared 仓扩到双 SSOT | **本仓核心**：同时是 API 契约 + DB schema 真源；禁 runtime npm 依赖；ORM 只反射 |
-| [ADR-0009](../..//../../docs/adr/0009-db-credentials-env.md) | DB 凭据走 env | `sync-db.mjs` 的 PG_* env 来源；deploy 自举 |
+| [ADR-0007](../../../docs/adr/0007-shared-sql-ssot.md) | shared 仓扩到双 SSOT | **本仓核心**：同时是 API 契约 + DB schema 真源；禁 runtime npm 依赖；ORM 只反射 |
+| [ADR-0009](../../../docs/adr/0009-db-credentials-env.md) | DB 凭据走 env | `sync-db.mjs` 的 PG_* env 来源；deploy 自举 |
 
 ### 7.2 间接相关
 
 | ADR | 主题 | 与本仓关系 |
 |---|---|---|
-| [ADR-0001](../..//../../docs/adr/0001-suite-owns-l0-and-l5.md) | suite 保留 L0/L5 | 本仓 stack.json 只声明 L1/L3/L4 |
-| [ADR-0002](../..//../../docs/adr/0002-trace-json-as-cross-language-anchor-contract.md) | trace.json 跨语言锚点 | L4 trace_cmd 触发 fnReporter 产 `.state/trace.json` |
-| [ADR-0003](../..//../../docs/adr/0003-function-tree-requires-human-approval.md) | 功能清单变更需人批 | BASE tree 改 F 必须 `/tree-change` 提案 |
-| [ADR-0012](../..//../../docs/adr/0012-msw-as-http-server.md) | msw 升级为独立 HTTP 服务 | 决定本仓 emit 的 openapi.yaml 是 msw 仓 fixture 的唯一依据 |
-| [ADR-0014](../..//../../docs/adr/../docs/conventions/multi-repo-family.md#4-后端配置env-driven-单-urladr-0014) | env-driven 单 URL | 6 仓前端读 openapi.yaml 时走同一 baseURL 配置 |
+| [ADR-0001](../../../docs/adr/0001-suite-owns-l0-and-l5.md) | suite 保留 L0/L5 | 本仓 stack.json 只声明 L1/L3/L4 |
+| [ADR-0002](../../../docs/adr/0002-trace-json-as-cross-language-anchor-contract.md) | trace.json 跨语言锚点 | L4 trace_cmd 触发 fnReporter 产 `.state/trace.json` |
+| [ADR-0003](../../../docs/adr/0003-function-tree-requires-human-approval.md) | 功能清单变更需人批 | BASE tree 改 F 必须 `/tree-change` 提案 |
+| [ADR-0012](../../../docs/adr/0012-msw-as-http-server.md) | msw 升级为独立 HTTP 服务 | 决定本仓 emit 的 openapi.yaml 是 msw 仓 fixture 的唯一依据 |
+| [ADR-0014](../../../docs/conventions/multi-repo-family.md#4-后端配置env-driven-单-urladr-0014) | env-driven 单 URL | 6 仓前端读 openapi.yaml 时走同一 baseURL 配置 |
 
 ### 7.3 待起草（next）
 
 - 本仓 ADR：「V014 永久分叉」（2026-08-26 决策背景）；
 - 本仓 ADR：「FrontendBindMeta / M98 镜像」（emit-only 锚点不被后端实现的语义）。
 
-详见 [`.state/session.json`](.state/session.json) `open_questions[]`。
+详见 ``.state/session.json`` `open_questions[]`。
 
 ---
 
@@ -647,7 +647,7 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 | **OpenAPI yaml** | TypeSpec emit 出来的 API 契约 | `generated/openapi/openapi.yaml` |
 | **V 文件** | Flyway 风格 DDL 真源（`V<NNN>__<desc>.sql`） | [sql/migrations/](../sql/migrations/)；只增不修 |
 | **fresh replay 链** | DROP SCHEMA + 顺序跑全部 V*.sql 的测试模式 | `tests/sql.replay.test.ts` |
-| **V014 永久分叉** | shared 与 springboot 的 V014 内容不同但终态等价 | §6；[session.json](.state/session.json) |
+| **V014 永久分叉** | shared 与 springboot 的 V014 内容不同但终态等价 | §6；`session.json` |
 | **evolved chain** | springboot 仓的 DDL 演化版（表已叫 methods） | lab-springboot `db/migration/` |
 | **emit-only** | TypeSpec 定义但后端不实现，只作 codegen 锚点 | `FrontendBindMeta` / `/_frontend-bind/snapshot` |
 | **sync-db** | 跨仓 DB 直推工具（不走 gen-shared 中转） | [scripts/sync-db.mjs](../scripts/sync-db.mjs) |
@@ -664,15 +664,15 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 
 | 父仓文档章节 | 本仓文档对应章节 | 关系 |
 |---|---|---|
-| [§1 套件全景](../..//../../docs/ARCHITECTURE.md#1-套件全景) | §1 | 父仓列 14 仓全貌；本仓只 zoom in 自己 |
-| [§2.1 五种角色](../..//../../docs/ARCHITECTURE.md#21-五种角色) | §1 | 父仓「契约仓 = 1 仓/家族」；本仓细化双 SSOT 职责 |
-| [§2.3 5 段式骨架](../..//../../docs/ARCHITECTURE.md#23-仓库矩阵14-个仓各自-5-段结构) | §2 | 父仓列出通用形态；本仓列裁剪后形态（无 src/） |
-| [§3.1 双 SSOT](../..//../../docs/ARCHITECTURE.md#31-双-ssotapi-契约--db-schema) | §3 + §6 | 父仓给出双 SSOT 原则；本仓给具体落地（V001-V017 + 25 张表） |
-| [§3.2 一份契约，三套 codegen](../..//../../docs/ARCHITECTURE.md#32-一份契约三套-codegen) | §5 | 父仓列 codegen 链总览；本仓列 6 仓逐个怎么读 |
-| [§3.7 Function Tree 是跨端对齐索引](../..//../../docs/ARCHITECTURE.md#37-function-tree-是-跨端对齐的索引) | §3.7 | 父仓解释 BASE + 各仓镜像；本仓 BASE 只到 F |
-| [§4.1 契约仓职责详解](../..//../../docs/ARCHITECTURE.md#41-契约仓shared-2) | §3 + §4 | 父仓给出契约仓通用职责；本仓列具体模块切分 |
-| [§5.1 改一次契约 → 三端同步](../..//../../docs/ARCHITECTURE.md#51-改一次契约--三端同步codegen-链) | §4.1 | 父仓给三步流程；本仓给 shared 视角的完整链 |
-| [§7 决策索引](../..//../../docs/ARCHITECTURE.md#7-决策索引) | §7 | 父仓列 12 份 ADR；本仓引用 + 标注本仓特有待起草 |
+| [§1 套件全景](../../../docs/ARCHITECTURE.md#1-套件全景) | §1 | 父仓列 14 仓全貌；本仓只 zoom in 自己 |
+| [§2.1 五种角色](../../../docs/ARCHITECTURE.md#21-五种角色) | §1 | 父仓「契约仓 = 1 仓/家族」；本仓细化双 SSOT 职责 |
+| [§2.3 5 段式骨架](../../../docs/ARCHITECTURE.md#23-仓库矩阵14-个仓各自-5-段结构) | §2 | 父仓列出通用形态；本仓列裁剪后形态（无 src/） |
+| [§3.1 双 SSOT](../../../docs/ARCHITECTURE.md#31-双-ssotapi-契约--db-schema) | §3 + §6 | 父仓给出双 SSOT 原则；本仓给具体落地（V001-V017 + 25 张表；saas 家族到 V018） |
+| [§3.2 一份契约，三套 codegen](../../../docs/ARCHITECTURE.md#32-一份契约三套-codegen) | §5 | 父仓列 codegen 链总览；本仓列 6 仓逐个怎么读 |
+| [§3.7 Function Tree 是跨端对齐索引](../../../docs/ARCHITECTURE.md#37-function-tree-是-跨端对齐的索引) | §3.7 | 父仓解释 BASE + 各仓镜像；本仓 BASE 只到 F |
+| [§4.1 契约仓职责详解](../../../docs/ARCHITECTURE.md#41-契约仓shared-2) | §3 + §4 | 父仓给出契约仓通用职责；本仓列具体模块切分 |
+| [§5.1 改一次契约 → 三端同步](../../../docs/ARCHITECTURE.md#51-改一次契约--三端同步codegen-链) | §4.1 | 父仓给三步流程；本仓给 shared 视角的完整链 |
+| [§7 决策索引](../../../docs/ARCHITECTURE.md#7-决策索引) | §7 | 父仓列 12 份 ADR；本仓引用 + 标注本仓特有待起草 |
 
 **本文档与父仓 ARCHITECTURE.md 的边界**：
 
@@ -685,14 +685,14 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 
 ## 附录 B：相关约定 / 决策 / 文档
 
-- 父仓架构总览：[`docs/ARCHITECTURE.md`](../..//../../docs/ARCHITECTURE.md)
-- 父仓多仓家族约定：[`docs/conventions/multi-repo-family.md`](../..//../../docs/conventions/multi-repo-family.md)
-- 父仓 submodule 操作：[`docs/conventions/submodule.md`](../..//../../docs/conventions/submodule.md)
-- 父仓 12 份 ADR：[`docs/adr/`](../..//../../docs/adr/)
-- 本仓入口：[`CLAUDE.md`](../../CLAUDE.md)
+- 父仓架构总览：[`docs/ARCHITECTURE.md`](../../../docs/ARCHITECTURE.md)
+- 父仓多仓家族约定：[`docs/conventions/multi-repo-family.md`](../../../docs/conventions/multi-repo-family.md)
+- 父仓 submodule 操作：[`docs/conventions/submodule.md`](../../../docs/conventions/submodule.md)
+- 父仓 12 份 ADR：[`docs/adr/`](../../../docs/adr/)
+- 本仓入口：[`CLAUDE.md`](../CLAUDE.md)
 - 本仓功能清单：[`docs/functions/function-tree.md`](functions/function-tree.md)
 - 本仓 SQL 命名约定：[`sql/README.md`](../sql/README.md)
-- 本仓跨会话状态：[`.state/session.json`](.state/session.json)
+- 本仓跨会话状态：``.state/session.json``
 - 父仓跨会话经验：`~/.claude/projects/.../memory/MEMORY.md`（非入仓）
 
 ## 附录 C：本仓典型陷阱
@@ -704,7 +704,7 @@ V014 是 lab 家族的**永久结构性分叉**——shared 仓的 V014 与 spri
 | shared V014 改成 ALTER methods | fresh replay 链走 V014 时表还叫 rules，必炸 | V014 永久保留 ALTER rules + V017 rename |
 | 借不到 pg driver | sync-db.mjs FATAL exit 1 | dev 环境先在 nextjs 仓 `npm install`；运行时容器 Dockerfile COPY 全量 node_modules |
 | 删除 `FrontendBindMeta` 锚点 | 8 schema 被 `omit-unreachable-types` 丢 | 锚点必须留作 emit-only |
-| `package.json` `exports` 暴露语言路径（如 `./api-client`） | 违反 [CLAUDE.md](../../CLAUDE.md) §2 | 仅暴露 `./openapi` yaml 路径 |
+| `package.json` `exports` 暴露语言路径（如 `./api-client`） | 违反 [CLAUDE.md](../CLAUDE.md) §2 | 仅暴露 `./openapi` yaml 路径 |
 | 改 F 级但不先改 BASE tree | L5 红 + 6 仓 I 级无 BASE 引用 | 改 F 必须先 `/tree-change` |
 | 启动 L4 时本地无 PG | `vitest` 跑挂在 `pgModule` null | 配 `PG_REPLAY_SKIP=1` 跳过；或启本地 PG |
 | `sync-db.mjs` 默认模式打满库 | 库非空即 abort，但脚本不自动 `DROP SCHEMA` | 重建先手动 `DROP SCHEMA public CASCADE; CREATE SCHEMA public;` |
