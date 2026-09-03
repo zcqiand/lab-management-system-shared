@@ -4482,6 +4482,10 @@ components:
         - sampleCount
         - reportCountByStatus
         - pendingTaskCount
+        - todayTestCount
+        - qualifiedRateByMaterial
+        - reportOutputByStatus
+        - funnelByStage
       properties:
         contractCount:
           type: integer
@@ -4511,6 +4515,66 @@ components:
         pendingTaskCount:
           type: integer
           format: int32
+        todayTestCount:
+          type: integer
+          format: int32
+        qualifiedRateByMaterial:
+          type: object
+          properties:
+            concrete:
+              $ref: '#/components/schemas/MaterialQualifiedRate'
+            rebar:
+              $ref: '#/components/schemas/MaterialQualifiedRate'
+            sand:
+              $ref: '#/components/schemas/MaterialQualifiedRate'
+          required:
+            - concrete
+            - rebar
+            - sand
+        reportOutputByStatus:
+          type: object
+          properties:
+            generated:
+              type: integer
+              format: int32
+            pending:
+              type: integer
+              format: int32
+            issued:
+              type: integer
+              format: int32
+          required:
+            - generated
+            - pending
+            - issued
+        funnelByStage:
+          type: object
+          properties:
+            pending_collect:
+              type: integer
+              format: int32
+            received:
+              type: integer
+              format: int32
+            testing:
+              type: integer
+              format: int32
+            reporting:
+              type: integer
+              format: int32
+            reviewing:
+              type: integer
+              format: int32
+            issued:
+              type: integer
+              format: int32
+          required:
+            - pending_collect
+            - received
+            - testing
+            - reporting
+            - reviewing
+            - issued
     ErrorResponse:
       type: object
       required:
@@ -4961,6 +5025,22 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MyTenant'
+    MaterialQualifiedRate:
+      type: object
+      required:
+        - total
+        - pass
+        - rate
+      properties:
+        total:
+          type: integer
+          format: int32
+        pass:
+          type: integer
+          format: int32
+        rate:
+          type: number
+          format: double
     MenuNode:
       type: object
       required:

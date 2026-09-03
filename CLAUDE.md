@@ -14,6 +14,9 @@
 - **版本钉死**：依赖与 `version-lock.json` 的 `version_lock` 一致；不引入 lock 外的库
 - **tag 即放行**：全量回归绿后打 `v<MAJOR>.<MINOR>.<PATCH>-<YYYYMMDD>`（如 `v0.1.7-20260826`）
 - **功能清单是锚点**：改 function-tree 走 `/tree-change`；改功能与改清单同一个 commit；废弃只改状态，编号永不复用
+- **本仓是 API 增/改的源头**：改 `tsp/routes/*.tsp`（增/改/删端点、字段、shape、状态码）→
+  4 后端仓 + msw + contract-test 仓同 commit 同步（suite CLAUDE.md §2 硬规则）；
+  改 shared 没同步 contract-test 仓 = 家族契约静默破裂（CI 不知道）
 - 禁止业务代码（handlers/services/controllers）
 - 禁止生成语言专属产物（TS/Java/C#/Kotlin/Swift 客户端下放给消费方自己 generate）
 - 禁止 npm runtime 依赖（仅 `@typespec/*` dev）
