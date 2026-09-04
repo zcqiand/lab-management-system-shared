@@ -74,16 +74,47 @@ try {
 }
 console.log(`[sync-db] pg driver 加载自 ${pgLoadStrategy}`);
 
-// ── 2. 连接配置（env，fallback 到 lab_dev）──────────────────────────────────
+// ── 2. 连接配置（env，无字面默认值）────────────────────────────────────────
 // 优先 DATABASE_URL（标准 PG 连接串,ADR-0009）;缺失时回退到 PG_* 单独 env
 //（兼容旧 deploy 脚本与 saas 等姊妹仓的 5 段式 env）。
 // PG_PASSWORD 需明文未 URL-encoded（DATABASE_URL 里 %2B 是 + 的 encoded 形式）。
+//
+// ADR-0019：禁 env 字面默认值兜底。PG_* 任一缺失即 fail-fast 并指明缺哪个 key。
+// dev 期用 `PG_HOST=... PG_USER=... PG_PASSWORD=... node scripts/sync-db.mjs --incremental`。
 const DATABASE_URL = process.env.DATABASE_URL;
-const PG_HOST = process.env.PG_HOST ?? "100.79.128.25";
-const PG_PORT = Number(process.env.PG_PORT ?? 5432);
-const PG_USER = process.env.PG_USER ?? "postgres";
-const PG_PASSWORD = process.env.PG_PASSWORD ?? "qiand68+++";
-const PG_DATABASE = process.env.PG_DATABASE ?? "lab_dev";
+
+function requireEnv(name) {
+  const v = process.env[name];
+  if (v === undefined || v === "") {
+    console.error(
+      `[sync-db] FATAL: ${name} env required（ADR-0019 禁字面默认值）.\n` +
+        `  dev 期:PG_HOST=... PG_PORT=... PG_USER=... PG_PASSWORD=... PG_DATABASE=... node scripts/sync-db.mjs --incremental\n` +
+        `  或:export PG_HOST=... 然后跑。`,
+    );
+    process.exit(1);
+  }
+  return v;
+}
+
+// client config 一次构造,DATABASE_URL 优先,缺时 PG_* 必填（fail-fast）。
+// 用 IIFE 避免重复 requireEnv 调用;连接信息在 log 行复用 cfg.host/port/database 字段。
+const clientConfig = DATABASE_URL
+  ? { connectionString: DATABASE_URL, connectionTimeoutMillis: 10000 }
+  : (() => {
+      const host = requireEnv("PG_HOST");
+      const port = requireEnv("PG_PORT");
+      const user = requireEnv("PG_USER");
+      const password = requireEnv("PG_PASSWORD");
+      const database = requireEnv("PG_DATABASE");
+      return {
+        host,
+        port: Number(port),
+        user,
+        password,
+        database,
+        connectionTimeoutMillis: 10000,
+      };
+    })();
 
 const EXPECTED_TABLES = [
   "contracts",
@@ -125,25 +156,16 @@ const EXPECTED_ENUMS = [
 const TRACKING_TABLE = "__schema_migrations";
 
 // ── 3. 执行 ────────────────────────────────────────────────────────────────
-// DATABASE_URL 优先(单 string,免 5 段 env 漂移);否则用 PG_* 拼。
-const client = new pg.Client(
-  DATABASE_URL
-    ? { connectionString: DATABASE_URL, connectionTimeoutMillis: 10000 }
-    : {
-        host: PG_HOST,
-        port: PG_PORT,
-        user: PG_USER,
-        password: PG_PASSWORD,
-        database: PG_DATABASE,
-        connectionTimeoutMillis: 10000,
-      }
-);
+const client = new pg.Client(clientConfig);
 
 try {
   console.log(
     `[sync-db] 模式：${INCREMENTAL ? "增量（基于 tracking 表）" : "全量重建（库须为空）"}`,
   );
-  console.log(`[sync-db] 连接 ${PG_HOST}:${PG_PORT}/${PG_DATABASE} ...`);
+  const target = DATABASE_URL
+    ? "DATABASE_URL"
+    : `${clientConfig.host}:${clientConfig.port}/${clientConfig.database}`;
+  console.log(`[sync-db] 连接 ${target} ...`);
   await client.connect();
   console.log("[sync-db] 已连接。");
 

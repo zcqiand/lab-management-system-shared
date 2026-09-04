@@ -33,11 +33,26 @@ try {
   // 借不到就不跑（lab-nextjs 未 npm install）
 }
 
-const PG_HOST = process.env.PG_HOST ?? "100.79.128.25";
-const PG_PORT = Number(process.env.PG_PORT ?? 5432);
-const PG_USER = process.env.PG_USER ?? "postgres";
-const PG_PASSWORD = process.env.PG_PASSWORD ?? "qiand68+++";
-const PG_DATABASE = process.env.PG_DATABASE_TEST ?? "lab_test";
+// ADR-0019：禁 env 字面默认值兜底。PG_* 任一缺失即 fail-fast（仅在真正连接时校验）。
+function requireEnv(name: string): string {
+  const v = process.env[name];
+  if (v === undefined || v === "") {
+    throw new Error(`${name} env required (ADR-0019 禁字面默认值)`);
+  }
+  return v;
+}
+
+// 仅在真正要连接时才校验（PG_REPLAY_SKIP=1 或借不到 pg 或 env 缺失时全部 it.skip）。
+// 用 getter 让 requireEnv 只在 beforeAll 执行时才求值,避免 skip 模式下 env 缺失直接 throw。
+const PG_HOST = () => requireEnv("PG_HOST");
+const PG_PORT = () => Number(requireEnv("PG_PORT"));
+const PG_USER = () => requireEnv("PG_USER");
+const PG_PASSWORD = () => requireEnv("PG_PASSWORD");
+const PG_DATABASE = () => requireEnv("PG_DATABASE_TEST");
+
+// env 完整性检查:任一缺失 → skip(本机无 PG 时不挂 CI)
+const REQUIRED_PG_ENV = ["PG_HOST", "PG_PORT", "PG_USER", "PG_PASSWORD", "PG_DATABASE_TEST"];
+const allPgEnvPresent = REQUIRED_PG_ENV.every((n) => !!process.env[n]);
 
 const EXPECTED_TABLES = [
   "contracts",
@@ -74,8 +89,12 @@ const EXPECTED_ENUMS = [
 ];
 
 describe("SQL migrations replay", () => {
-  if (!pgModule || process.env.PG_REPLAY_SKIP === "1") {
-    it.skip("pg driver not available or PG_REPLAY_SKIP=1", () => {});
+  if (
+    !pgModule ||
+    process.env.PG_REPLAY_SKIP === "1" ||
+    !allPgEnvPresent
+  ) {
+    it.skip("pg driver or required PG_* env not available", () => {});
     return;
   }
 
@@ -83,11 +102,11 @@ describe("SQL migrations replay", () => {
 
   beforeAll(async () => {
     client = new pgModule.Client({
-      host: PG_HOST,
-      port: PG_PORT,
-      user: PG_USER,
-      password: PG_PASSWORD,
-      database: PG_DATABASE,
+      host: PG_HOST(),
+      port: PG_PORT(),
+      user: PG_USER(),
+      password: PG_PASSWORD(),
+      database: PG_DATABASE(),
       connectionTimeoutMillis: 5000,
     });
     await client.connect();
