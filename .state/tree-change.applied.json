@@ -1,0 +1,815 @@
+{
+  "schema": 1,
+  "approved": true,
+  "base_sha": "c624e615be895034",
+  "summary": "BASE 收 I 级定标（spec §3），134 个新 I 子项",
+  "changes": [
+    {
+      "id": "M00.F01.I01",
+      "action": "新增",
+      "name": "当前会话",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M00.F02.I01",
+      "action": "新增",
+      "name": "选租户换发",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F04.I01",
+      "action": "新增",
+      "name": "动态菜单",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F04.I02",
+      "action": "新增",
+      "name": "权限集",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F04.I03",
+      "action": "新增",
+      "name": "路由守卫（未登录/无权限拦截）",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F04.I04",
+      "action": "新增",
+      "name": "动态菜单",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F05.I01",
+      "action": "新增",
+      "name": "密码登录",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F05.I02",
+      "action": "新增",
+      "name": "SSO 跳转",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F05.I03",
+      "action": "新增",
+      "name": "SSO 回调",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F05.I04",
+      "action": "新增",
+      "name": "刷新 token",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M01.F05.I05",
+      "action": "新增",
+      "name": "登出",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M02.F01.I01",
+      "action": "新增",
+      "name": "合同列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M02.F01.I02",
+      "action": "新增",
+      "name": "合同详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M02.F01.I03",
+      "action": "新增",
+      "name": "创建合同",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M02.F01.I04",
+      "action": "新增",
+      "name": "更新合同",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M02.F01.I05",
+      "action": "新增",
+      "name": "删除合同",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I01",
+      "action": "新增",
+      "name": "接样单列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I02",
+      "action": "新增",
+      "name": "接样单详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I03",
+      "action": "新增",
+      "name": "创建接样单",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I04",
+      "action": "新增",
+      "name": "更新接样单",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I05",
+      "action": "新增",
+      "name": "删除接样单",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I06",
+      "action": "新增",
+      "name": "接样单流程历史",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F01.I07",
+      "action": "新增",
+      "name": "接样单 ext 字段补录",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F02.I01",
+      "action": "新增",
+      "name": "任务分配",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F02.I02",
+      "action": "新增",
+      "name": "任务编辑",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F02.I03",
+      "action": "新增",
+      "name": "任务取消（清空分配）",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F02.I04",
+      "action": "新增",
+      "name": "任务分配三态过滤器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I01",
+      "action": "新增",
+      "name": "样品列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I02",
+      "action": "新增",
+      "name": "样品详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I03",
+      "action": "新增",
+      "name": "创建样品",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I04",
+      "action": "新增",
+      "name": "更新样品",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I05",
+      "action": "新增",
+      "name": "删除样品",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I06",
+      "action": "新增",
+      "name": "检测记录列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I07",
+      "action": "新增",
+      "name": "检测记录详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I08",
+      "action": "新增",
+      "name": "创建检测记录",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I09",
+      "action": "新增",
+      "name": "更新检测记录",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I10",
+      "action": "新增",
+      "name": "删除检测记录",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I11",
+      "action": "新增",
+      "name": "检测记录改判",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F05.I01",
+      "action": "新增",
+      "name": "审核队列",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F05.I02",
+      "action": "新增",
+      "name": "报告审核-查看详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F05.I03",
+      "action": "新增",
+      "name": "报告审核-通过/退回",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F05.I04",
+      "action": "新增",
+      "name": "报告审核三态过滤器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F06.I01",
+      "action": "新增",
+      "name": "报告阶段审批推进",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F06.I02",
+      "action": "新增",
+      "name": "报告批准-查看详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F06.I03",
+      "action": "新增",
+      "name": "报告批准-批准/退回",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F06.I04",
+      "action": "新增",
+      "name": "报告批准三态过滤器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F07.I01",
+      "action": "新增",
+      "name": "报告发放队列",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F07.I02",
+      "action": "新增",
+      "name": "报告发放-查看详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F07.I03",
+      "action": "新增",
+      "name": "报告发放-发放/退回",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F07.I04",
+      "action": "新增",
+      "name": "报告发放三态过滤器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F08.I01",
+      "action": "新增",
+      "name": "报告归档队列",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F08.I02",
+      "action": "新增",
+      "name": "报告归档-查看详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F08.I03",
+      "action": "新增",
+      "name": "报告归档-归档/退回",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F08.I04",
+      "action": "新增",
+      "name": "报告归档三态过滤器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F09.I01",
+      "action": "新增",
+      "name": "接样单详情聚合",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F09.I02",
+      "action": "新增",
+      "name": "详情页",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F09.I03",
+      "action": "新增",
+      "name": "报告预览（详情页）",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 仅前端）"
+    },
+    {
+      "id": "M04.F06.I01",
+      "action": "新增",
+      "name": "型号列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F06.I02",
+      "action": "新增",
+      "name": "创建型号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F06.I03",
+      "action": "新增",
+      "name": "更新型号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F06.I04",
+      "action": "新增",
+      "name": "删除型号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F07.I01",
+      "action": "新增",
+      "name": "规格列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F07.I02",
+      "action": "新增",
+      "name": "创建规格",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F07.I03",
+      "action": "新增",
+      "name": "更新规格",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F07.I04",
+      "action": "新增",
+      "name": "删除规格",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F08.I01",
+      "action": "新增",
+      "name": "等级列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F08.I02",
+      "action": "新增",
+      "name": "创建等级",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F08.I03",
+      "action": "新增",
+      "name": "更新等级",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F08.I04",
+      "action": "新增",
+      "name": "删除等级",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F09.I01",
+      "action": "新增",
+      "name": "牌号列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F09.I02",
+      "action": "新增",
+      "name": "创建牌号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F09.I03",
+      "action": "新增",
+      "name": "更新牌号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M04.F09.I04",
+      "action": "新增",
+      "name": "删除牌号",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M05.F01.I01",
+      "action": "新增",
+      "name": "报告汇总",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M05.F01.I02",
+      "action": "新增",
+      "name": "仪表盘容器",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 仅前端）"
+    },
+    {
+      "id": "M05.F01.I03",
+      "action": "新增",
+      "name": "核心指标卡",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M05.F01.I04",
+      "action": "新增",
+      "name": "任务状态漏斗",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M05.F01.I05",
+      "action": "新增",
+      "name": "见证取样跟踪",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I01",
+      "action": "新增",
+      "name": "专项列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I02",
+      "action": "新增",
+      "name": "创建专项",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I03",
+      "action": "新增",
+      "name": "更新专项",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I04",
+      "action": "新增",
+      "name": "删除专项",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I05",
+      "action": "新增",
+      "name": "项目↔标准 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I06",
+      "action": "新增",
+      "name": "项目↔标准 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F01.I07",
+      "action": "新增",
+      "name": "项目↔标准 列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I01",
+      "action": "新增",
+      "name": "项目列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I02",
+      "action": "新增",
+      "name": "创建项目",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I03",
+      "action": "新增",
+      "name": "更新项目",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I04",
+      "action": "新增",
+      "name": "删除项目",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I05",
+      "action": "新增",
+      "name": "专项↔项目 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I06",
+      "action": "新增",
+      "name": "专项↔项目 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I07",
+      "action": "新增",
+      "name": "项目↔参数 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I08",
+      "action": "新增",
+      "name": "项目↔参数 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I09",
+      "action": "新增",
+      "name": "专项↔项目 列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F02.I10",
+      "action": "新增",
+      "name": "项目↔参数 列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I01",
+      "action": "新增",
+      "name": "参数列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I02",
+      "action": "新增",
+      "name": "创建参数",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I03",
+      "action": "新增",
+      "name": "更新参数",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I04",
+      "action": "新增",
+      "name": "删除参数",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I05",
+      "action": "新增",
+      "name": "标准↔参数 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I06",
+      "action": "新增",
+      "name": "标准↔参数 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I07",
+      "action": "新增",
+      "name": "参数↔界面 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F03.I08",
+      "action": "新增",
+      "name": "标准↔参数 列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I01",
+      "action": "新增",
+      "name": "标准列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I02",
+      "action": "新增",
+      "name": "创建标准",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I03",
+      "action": "新增",
+      "name": "更新标准",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I04",
+      "action": "新增",
+      "name": "删除标准",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I05",
+      "action": "新增",
+      "name": "项目↔报告名称 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I06",
+      "action": "新增",
+      "name": "报告名称↔参数 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F04.I07",
+      "action": "新增",
+      "name": "报告名称↔标准 unlink",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F05.I01",
+      "action": "新增",
+      "name": "计算方法列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F05.I02",
+      "action": "新增",
+      "name": "计算方法详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F05.I03",
+      "action": "新增",
+      "name": "创建计算方法",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F05.I04",
+      "action": "新增",
+      "name": "更新计算方法",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F05.I05",
+      "action": "新增",
+      "name": "删除计算方法",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F06.I01",
+      "action": "新增",
+      "name": "技术要求列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F06.I02",
+      "action": "新增",
+      "name": "技术要求详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F06.I03",
+      "action": "新增",
+      "name": "创建技术要求",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F06.I04",
+      "action": "新增",
+      "name": "更新技术要求",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F06.I05",
+      "action": "新增",
+      "name": "删除技术要求",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I01",
+      "action": "新增",
+      "name": "报告名称列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I02",
+      "action": "新增",
+      "name": "报告名称详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I03",
+      "action": "新增",
+      "name": "创建报告名称",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I04",
+      "action": "新增",
+      "name": "更新报告名称",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I05",
+      "action": "新增",
+      "name": "删除报告名称",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I06",
+      "action": "新增",
+      "name": "项目↔报告名称 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I07",
+      "action": "新增",
+      "name": "报告名称↔标准 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F07.I08",
+      "action": "新增",
+      "name": "报告名称↔参数 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I01",
+      "action": "新增",
+      "name": "参数界面列表",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I02",
+      "action": "新增",
+      "name": "参数界面详情",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I03",
+      "action": "新增",
+      "name": "创建参数界面",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I04",
+      "action": "新增",
+      "name": "更新参数界面",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I05",
+      "action": "新增",
+      "name": "删除参数界面",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M06.F08.I06",
+      "action": "新增",
+      "name": "参数↔界面 link",
+      "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    }
+  ],
+  "sync_files": [
+    "docs/functions/function-tree.md"
+  ]
+}

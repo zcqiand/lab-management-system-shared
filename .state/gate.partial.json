@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "project": "lab-management-system-shared",
+  "passed": true,
+  "partial": true,
+  "ran": [
+    "L5"
+  ],
+  "checked_at": "2026-09-06T02:06:09+0800",
+  "gates": [
+    {
+      "level": "L5",
+      "name": "引用完整性",
+      "passed": true,
+      "returncode": 0,
+      "duration_s": 1.703,
+      "output": "167 个功能条目，引用完整。软告警 305 条（见 .state/alignment.json）\r\n  [WARN] 已上线但无设计映射: M01.F04.I01, M01.F04.I02, M01.F04.I03, M01.F05.I02, M01.F05.I03, M01.F05.I04 …共 88 项\r\n  [WARN] 已上线但无测试引用: M01.F04.I01, M01.F04.I02, M01.F04.I03, M01.F05.I02, M01.F05.I03, M01.F05.I04 …共 88 项\r\n  [WARN] 已上线但不在任何流程且非孤儿白名单: M01.F04.I01, M01.F04.I02, M01.F04.I03, M01.F05.I02, M01.F05.I03, M01.F05.I04 …共 88 项\r\n  [WARN] 开发中但无需求文档引用: M00.F01.I01, M00.F02.I01, M01.F04.I04, M01.F05.I01, M02.F01.I04, M02.F01.I05 …共 41 项"
+    }
+  ]
+}
