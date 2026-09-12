@@ -15,8 +15,8 @@ npm test          # 全量测试（无 Key / 无 Docker / 无网可跑）
 ## 功能特性
 
 - `tsp/*.tsp` 契约真源：API 层契约（OpenAPI 3.1）由 `tsp compile` 生成，禁止手写 yaml
-- `sql/migrations/*.sql`：数据库 DDL 真源（Flyway 风格 `V<NNN>__<desc>.sql`，ADR-0007）
-- 消费方：react / vue / nextjs / springboot / aspnetcore / msw 六仓各自 generate 语言专属产物
+- `src/db/schema.ts`：数据库 DDL 真源（ADR-0025 schema-first，`db:generate` 物化到 `drizzle/` 入 git）
+- 消费方：react / vue / nextjs / springboot / aspnetcore / msw 六仓各自 generate 语言专属产物、从真库 pull/scaffold
 
 ## 技术栈
 

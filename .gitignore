@@ -12,3 +12,6 @@ generated/csharp/
 # Claude 临时文件
 .claude/
 .superpowers/
+
+# rebaseline 前的全量备份（ADR-0033 阶段一）
+backups/

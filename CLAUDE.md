@@ -5,8 +5,10 @@
 
 ## 1. 项目定位
 
-实验室管理系统全家族的契约源头（纯契约仓）。`*.tsp` 是唯一真源，**只产出 OpenAPI 3.1 yaml**；
-其它 6 仓（react/vue/nextjs/springboot/aspnetcore/msw）通过 `generated/openapi/openapi.yaml` 消费契约。
+实验室管理系统全家族的契约源头（纯契约仓）。双 SSOT：`tsp/` 是 API 唯一真源（只产出 OpenAPI 3.1 yaml），
+`src/db/schema.ts` 是 DB 唯一真源（ADR-0025 schema-first，`db:generate` 物化到 `drizzle/` 入 git）；
+其它 6 仓（react/vue/nextjs/springboot/aspnetcore/msw）通过 `generated/openapi/openapi.yaml` 消费 API 契约、
+从真库 pull/scaffold 消费 DB 契约。
 
 ## 2. 铁律
 
@@ -22,7 +24,10 @@
 - 禁止 npm runtime 依赖（仅 `@typespec/*` dev）
 - 禁止手写 OpenAPI yaml（必须由 `tsp compile` 生成）
 - 禁止 npm package `exports` 暴露语言路径；只暴露 `./openapi`
-- **允许** `sql/migrations/*.sql` 作为 DDL 真源（Flyway 风格，ADR-0007）；禁止在其中写应用语言代码或手写迁移工具脚本
+- **允许** `src/db/schema.ts` 作为 DB DDL 真源（ADR-0025 schema-first，取代 ADR-0007 手写 SQL）；
+  迁移只能由 `npm run db:generate` 产出到 `drizzle/` 入 git，禁止手改 `drizzle/*.sql`
+- 禁止 Flyway / EF Migrations 等迁移工具依赖；`drizzle-kit generate` 零 diff 是 L4.db.idempotent 门
+- 禁止 npm runtime 依赖（drizzle-orm/drizzle-kit/pg/postgres 是 devDep，ADR-0025 D3 豁免）
 
 ## 3. 技术栈与版本（钉死于 version-lock.json）
 
