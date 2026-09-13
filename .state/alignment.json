@@ -4,9 +4,9 @@
   "functions": {
     "modules": 7,
     "features": 26,
-    "items": 134
+    "items": 135
   },
-  "warnings_total": 323,
+  "warnings_total": 326,
   "warnings": {
     "已上线但无设计映射": [
       "M00.F01.I01",
@@ -70,6 +70,7 @@
       "M04.F09.I02",
       "M04.F09.I03",
       "M04.F09.I04",
+      "M05.F01.I06",
       "M06.F01.I01",
       "M06.F01.I02",
       "M06.F01.I03",
@@ -166,6 +167,7 @@
       "M04.F09.I02",
       "M04.F09.I03",
       "M04.F09.I04",
+      "M05.F01.I06",
       "M06.F01.I01",
       "M06.F01.I02",
       "M06.F01.I03",
@@ -268,6 +270,7 @@
       "M04.F09.I02",
       "M04.F09.I03",
       "M04.F09.I04",
+      "M05.F01.I06",
       "M06.F01.I01",
       "M06.F01.I02",
       "M06.F01.I03",
@@ -1245,6 +1248,16 @@
       "name": "见证取样跟踪",
       "status": "规划",
       "type": "报表",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M05.F01.I06": {
+      "name": "仪表盘统计基础端点",
+      "status": "已上线",
+      "type": "查询",
       "requirements": [],
       "flows": [],
       "designs": [],
