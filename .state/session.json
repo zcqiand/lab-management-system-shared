@@ -1,16 +1,19 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "family-env SAAS_IDP_BASE scope 收窄",
-  "last_session_at": "2026-08-29",
-  "last_session_summary": "删 V015__rename_calculation_rules_to_methods.sql,V015 := springboot smoke_seed_dict(逐字节),新增 V017 := springboot 条件式 rename。分叉从 V014/V015 缩到 V014 单点。原 session 记的「shared V014 对齐 springboot 演化版」方案经 emit-schema 验证不可行(演化版 ALTER methods 表,fresh replay 走到 V014 时表还叫 rules,必炸),V014 定格为永久结构性分叉。/handoff 二次门禁 --all exit 0",
+  "current_task": "ADR-0033 阶段二：白名单清零（BASE M05.F01.I06 下沉）",
   "done": [
-    "scope backend→nextjs:lab 各后端 SSO 同栈匹配(springboot→saas-springboot/aspnetcore→saas-aspnetcore/nextjs→saas-nextjs),跨栈值不同是设计意图(用户裁定)"
+    "阶段一：DB-First 迁移完成（Drizzle schema SSOT + ADR-0026 marker + gen-shared emit 链）",
+    "BASE function-tree M05.F01.I06 仪表盘统计基础端点 下沉（自 aspnetcore/springboot M05.F02.I01 收敛）",
+    ".state/alignment.json 刷新；commit ccf21ac"
   ],
-  "next": [],
+  "next": [
+    "阶段三 e2e 仓落地后如有新契约需求再动 BASE"
+  ],
   "open_questions": [],
-  "dont": [],
-  "last_gate_passed_at": "2026-08-26T17:30+08:00",
+  "dont": [
+    "消费仓单方面改 BASE（ADR-0029）——发现「本仓需要 ≠ shared」停下列方案"
+  ],
   "active_branch": "master",
-  "ahead_of_origin": "0"
+  "last_session_at": "2026-09-13"
 }
