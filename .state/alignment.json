@@ -354,7 +354,7 @@
       "designs": [],
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-me.test.ts:586 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:505 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:515 (annot)",
         "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:807 (annot)",
         "output\\lab-management-system-contract-test\\tests\\calculation-methods.test.ts:1907 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:3971 (annot)",
@@ -396,7 +396,7 @@
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:6320 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:3048 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:2874 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:712 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:1114 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:1729 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2554 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:1964 (annot)",
@@ -414,8 +414,8 @@
       "designs": [],
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:960 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1740 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:2293 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1750 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:3513 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:2573 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:2447 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:2250 (annot)",
@@ -480,12 +480,12 @@
       "designs": [],
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:2950 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1255 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1265 (annot)",
         "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:2712 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:6894 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:2972 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:2629 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:1664 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2098 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:2323 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:3055 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2535 (annot)",
@@ -1018,7 +1018,7 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:3825 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:3444 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2274 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2708 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:3090 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:2791 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:2960 (annot)"
@@ -1035,7 +1035,7 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:4482 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:4237 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2809 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3243 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:4035 (annot)"
       ],
       "entry": []
@@ -1050,7 +1050,7 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5083 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:4843 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3344 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:4039 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:4985 (annot)"
       ],
       "entry": []
@@ -1514,7 +1514,9 @@
       "name": "参数↔界面 unlink",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1796,7 +1798,9 @@
       "name": "参数界面列表",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1806,7 +1810,9 @@
       "name": "参数界面详情",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1816,7 +1822,9 @@
       "name": "创建参数界面",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1826,7 +1834,9 @@
       "name": "更新参数界面",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1836,7 +1846,9 @@
       "name": "删除参数界面",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1846,7 +1858,9 @@
       "name": "参数↔界面 link",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-001-param-interfaces-path-convergence.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [
