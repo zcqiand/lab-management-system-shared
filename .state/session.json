@@ -1,19 +1,19 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "ADR-0033 阶段二：白名单清零（BASE M05.F01.I06 下沉）",
+  "current_task": "REQ-2026-001 param-interfaces 消费侧路径收敛——已上线",
   "done": [
-    "阶段一：DB-First 迁移完成（Drizzle schema SSOT + ADR-0026 marker + gen-shared emit 链）",
-    "BASE function-tree M05.F01.I06 仪表盘统计基础端点 下沉（自 aspnetcore/springboot M05.F02.I01 收敛）",
-    ".state/alignment.json 刷新；commit ccf21ac"
+    "REQ 立项 + 澄清三案（shared 仓落点/完整收敛/方案 A 保契约路径）",
+    "§7 live 四方收敛实录：5 轮 26 passed/1 skipped/0 failed（NRT 双层、DELETE body、超时、种子 PK 漂移、\"\"时间戳）",
+    "T-1~T-6 全部完成；8 仓 gate 全 exit 0；suite bump e80921c + 收官 commit"
   ],
   "next": [
-    "阶段三 e2e 仓落地后如有新契约需求再动 BASE"
+    "后续候选 REQ 排期：calculation-methods nextjs 同款 bug / unlink 幂等推广其余 6 组 junction / skipIf(!live) 结构性洞"
   ],
   "open_questions": [],
   "dont": [
     "消费仓单方面改 BASE（ADR-0029）——发现「本仓需要 ≠ shared」停下列方案"
   ],
   "active_branch": "master",
-  "last_session_at": "2026-09-13"
+  "last_session_at": "2026-09-14"
 }
