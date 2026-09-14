@@ -5,7 +5,7 @@
 | 提出人 | zcqiand |
 | 提出日期 | 2026-09-14 |
 | 优先级 | P1 |
-| 状态 | 开发中（T-1~T-4 已完成，T-5/T-6 收尾） |
+| 状态 | 已上线（T-1~T-6 全部完成，2026-09-14） |
 | 关联 ADR | —（修复遵循 ADR-0029 消费侧对齐流程，方案 A 定案见澄清记录） |
 
 ## 1. 需求描述
@@ -58,7 +58,7 @@
 | T-3 | nextjs：删 `src/app/api/inspection-param-interfaces/*` 私生 routes；按契约补 `/api/param-interfaces`、`/{code}`、`/links` route handlers（Page envelope，fixtures）；跨路由写读共享走 `globalThis` fixtures 单例（per-route bundle 多副本实证） | 变更 | AI | 1d | 已完成 |
 | T-4 | contract-test：`CONTRACT_TARGETS` 四方全开 live 跑 param-interfaces 读写断言，确认 nextjs 补角后全绿（AC-2） | 验证 | AI | 0.5d | 已完成（5 轮收敛，见 §7） |
 | T-5 | 真后端手测收敛验证（AC-1：nextjs→5204；顺带 vue→5204、react→5205 同页 200） | 验证 | AI | 0.5d | 已完成（curl 带 token 打 5204/5205 `/api/param-interfaces` 200 ×18 项、`/links` 200 ×22 项，见 §7） |
-| T-6 | 6 仓各自 gate 全绿 + suite 根 submodule bump（AC-5） | 收尾 | AI | 0.5d | 进行中 |
+| T-6 | 6 仓各自 gate 全绿 + suite 根 submodule bump（AC-5） | 收尾 | AI | 0.5d | 已完成（8 仓 gate 全 exit 0，suite 根 bump e80921c） |
 
 ## 4. 功能影响（需求与功能对齐的唯一位置）
 
