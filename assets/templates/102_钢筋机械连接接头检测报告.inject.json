@@ -1,0 +1,371 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-102-2",
+  "comment": "钢筋机械连接接头 grid manifest。table 1（样品信息/检测信息 25 行表）= 表头 0-9 + 列头 10 + 4 试件 × 3 次试验（行 11-22）+ 结论/备注 23-24；列结构 5 列 = 编号/公称直径/技术要求/抗拉强度/断裂位置(wz)。sN_bh/zj/jz 走 sample.*，sN_jz/sN_jcz* 走 record:IP-0087:strengths[N]（JGJ 107 标准 = 抗拉强度，模板引用 IP-0087），sN_wz* 暂未挂（机械连接暂无专用卡，模板预览显示 —）。",
+  "cells": [
+    {
+      "table": 1,
+      "row": 0,
+      "col": 3,
+      "tag": "h_ypzt",
+      "source": "static:"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "col": 6,
+      "tag": "h_jcbl",
+      "source": "common.jcbl"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 6,
+      "tag": "h_gp",
+      "source": "sample.brand"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 3,
+      "tag": "h_jsdj",
+      "source": "sample.grade"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 6,
+      "tag": "h_yply",
+      "source": "common.yply"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 3,
+      "tag": "h_dbsl",
+      "source": "sample.representQuantity"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 6,
+      "tag": "h_sccj",
+      "source": "common.sccj"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 3,
+      "tag": "h_sylr",
+      "source": "common.sylr"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 6,
+      "tag": "h_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 3,
+      "tag": "h_jcdz",
+      "source": "common.jcdz"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 6,
+      "tag": "h_jchj",
+      "source": "common.jchj"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 3,
+      "tag": "h_jcyj",
+      "source": "common.jcyj"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 3,
+      "tag": "h_pdyj",
+      "source": "static:JGJ 107"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "col": 3,
+      "tag": "h_zysb",
+      "source": "common.zysb"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 0,
+      "tag": "s1_bh",
+      "source": "sample.sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 2,
+      "tag": "s1_zj",
+      "source": "sample.specification"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 3,
+      "tag": "s1_jz",
+      "source": "record:IP-0087:techReqLabel"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 4,
+      "tag": "s1_jcz0",
+      "source": "record:IP-0087:strengths[0]"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "col": 4,
+      "tag": "s1_jcz1",
+      "source": "record:IP-0087:strengths[1]"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 4,
+      "tag": "s1_jcz2",
+      "source": "record:IP-0087:strengths[2]"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 0,
+      "tag": "s2_bh",
+      "source": "sample:2:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 2,
+      "tag": "s2_zj",
+      "source": "sample:2:specification"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 3,
+      "tag": "s2_jz",
+      "source": "srecord:2:IP-0087:techReqLabel"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 4,
+      "tag": "s2_jcz0",
+      "source": "srecord:2:IP-0087:strengths[0]"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "col": 4,
+      "tag": "s2_jcz1",
+      "source": "srecord:2:IP-0087:strengths[1]"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "col": 4,
+      "tag": "s2_jcz2",
+      "source": "srecord:2:IP-0087:strengths[2]"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 0,
+      "tag": "s3_bh",
+      "source": "sample:3:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 2,
+      "tag": "s3_zj",
+      "source": "sample:3:specification"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 3,
+      "tag": "s3_jz",
+      "source": "srecord:3:IP-0087:techReqLabel"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 4,
+      "tag": "s3_jcz0",
+      "source": "srecord:3:IP-0087:strengths[0]"
+    },
+    {
+      "table": 1,
+      "row": 18,
+      "col": 4,
+      "tag": "s3_jcz1",
+      "source": "srecord:3:IP-0087:strengths[1]"
+    },
+    {
+      "table": 1,
+      "row": 19,
+      "col": 4,
+      "tag": "s3_jcz2",
+      "source": "srecord:3:IP-0087:strengths[2]"
+    },
+    {
+      "table": 1,
+      "row": 20,
+      "col": 0,
+      "tag": "s4_bh",
+      "source": "sample:4:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 20,
+      "col": 2,
+      "tag": "s4_zj",
+      "source": "sample:4:specification"
+    },
+    {
+      "table": 1,
+      "row": 20,
+      "col": 3,
+      "tag": "s4_jz",
+      "source": "srecord:4:IP-0087:techReqLabel"
+    },
+    {
+      "table": 1,
+      "row": 20,
+      "col": 4,
+      "tag": "s4_jcz0",
+      "source": "srecord:4:IP-0087:strengths[0]"
+    },
+    {
+      "table": 1,
+      "row": 21,
+      "col": 4,
+      "tag": "s4_jcz1",
+      "source": "srecord:4:IP-0087:strengths[1]"
+    },
+    {
+      "table": 1,
+      "row": 22,
+      "col": 4,
+      "tag": "s4_jcz2",
+      "source": "srecord:4:IP-0087:strengths[2]"
+    },
+    {
+      "table": 1,
+      "row": 23,
+      "col": 1,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 1,
+      "row": 24,
+      "col": 1,
+      "tag": "c_bz",
+      "source": "common.bz"
+    },
+    {
+      "tag": "s1_wz0",
+      "source": "srecord:0:IP-0087:fractureLocations[0]",
+      "table": 1,
+      "row": 11,
+      "col": 5
+    },
+    {
+      "tag": "s1_wz1",
+      "source": "srecord:0:IP-0087:fractureLocations[1]",
+      "table": 1,
+      "row": 12,
+      "col": 5
+    },
+    {
+      "tag": "s1_wz2",
+      "source": "srecord:0:IP-0087:fractureLocations[2]",
+      "table": 1,
+      "row": 13,
+      "col": 5
+    },
+    {
+      "tag": "s2_wz0",
+      "source": "srecord:1:IP-0087:fractureLocations[0]",
+      "table": 1,
+      "row": 11,
+      "col": 5
+    },
+    {
+      "tag": "s2_wz1",
+      "source": "srecord:1:IP-0087:fractureLocations[1]",
+      "table": 1,
+      "row": 12,
+      "col": 5
+    },
+    {
+      "tag": "s2_wz2",
+      "source": "srecord:1:IP-0087:fractureLocations[2]",
+      "table": 1,
+      "row": 13,
+      "col": 5
+    },
+    {
+      "tag": "s3_wz0",
+      "source": "srecord:2:IP-0087:fractureLocations[0]",
+      "table": 1,
+      "row": 11,
+      "col": 5
+    },
+    {
+      "tag": "s3_wz1",
+      "source": "srecord:2:IP-0087:fractureLocations[1]",
+      "table": 1,
+      "row": 12,
+      "col": 5
+    },
+    {
+      "tag": "s3_wz2",
+      "source": "srecord:2:IP-0087:fractureLocations[2]",
+      "table": 1,
+      "row": 13,
+      "col": 5
+    },
+    {
+      "tag": "s4_wz0",
+      "source": "srecord:3:IP-0087:fractureLocations[0]",
+      "table": 1,
+      "row": 11,
+      "col": 5
+    },
+    {
+      "tag": "s4_wz1",
+      "source": "srecord:3:IP-0087:fractureLocations[1]",
+      "table": 1,
+      "row": 12,
+      "col": 5
+    },
+    {
+      "tag": "s4_wz2",
+      "source": "srecord:3:IP-0087:fractureLocations[2]",
+      "table": 1,
+      "row": 13,
+      "col": 5
+    }
+  ]
+}

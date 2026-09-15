@@ -1,0 +1,455 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-109-3",
+  "comment": "RN-109-3 压实度（环刀法）：TABLE#1 第 1 行起 6 行试样，逐行取压实度卡（IP-0456）落库的 rows[]。",
+  "cells": [
+    {
+      "table": 0,
+      "row": 6,
+      "col": 1,
+      "tag": "wtrq",
+      "source": "common.sylr"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 0,
+      "tag": "tyzl",
+      "source": "sample.sampleName"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 0,
+      "tag": "s1_bh",
+      "source": "record:IP-0456:rows[0].code"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 1,
+      "tag": "s1_part",
+      "source": "record:IP-0456:rows[0].part"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 2,
+      "tag": "s1_lc",
+      "source": "record:IP-0456:rows[0].layer"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 3,
+      "tag": "s1_sjysd",
+      "source": "record:IP-0456:rows[0].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 4,
+      "tag": "s1_smd",
+      "source": "record:IP-0456:rows[0].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 5,
+      "tag": "s1_hsl",
+      "source": "record:IP-0456:rows[0].moisture"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 6,
+      "tag": "s1_gmd",
+      "source": "record:IP-0456:rows[0].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 7,
+      "tag": "s1_maxd",
+      "source": "record:IP-0456:rows[0].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 8,
+      "tag": "s1_ysd",
+      "source": "record:IP-0456:rows[0].degree"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 9,
+      "tag": "s1_pd",
+      "source": "record:IP-0456:rows[0].verdict"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 0,
+      "tag": "s2_bh",
+      "source": "record:IP-0456:rows[1].code"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 1,
+      "tag": "s2_part",
+      "source": "record:IP-0456:rows[1].part"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 2,
+      "tag": "s2_lc",
+      "source": "record:IP-0456:rows[1].layer"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 3,
+      "tag": "s2_sjysd",
+      "source": "record:IP-0456:rows[1].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 4,
+      "tag": "s2_smd",
+      "source": "record:IP-0456:rows[1].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 5,
+      "tag": "s2_hsl",
+      "source": "record:IP-0456:rows[1].moisture"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 6,
+      "tag": "s2_gmd",
+      "source": "record:IP-0456:rows[1].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 7,
+      "tag": "s2_maxd",
+      "source": "record:IP-0456:rows[1].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 8,
+      "tag": "s2_ysd",
+      "source": "record:IP-0456:rows[1].degree"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 9,
+      "tag": "s2_pd",
+      "source": "record:IP-0456:rows[1].verdict"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 0,
+      "tag": "s3_bh",
+      "source": "record:IP-0456:rows[2].code"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 1,
+      "tag": "s3_part",
+      "source": "record:IP-0456:rows[2].part"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 2,
+      "tag": "s3_lc",
+      "source": "record:IP-0456:rows[2].layer"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 3,
+      "tag": "s3_sjysd",
+      "source": "record:IP-0456:rows[2].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 4,
+      "tag": "s3_smd",
+      "source": "record:IP-0456:rows[2].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 5,
+      "tag": "s3_hsl",
+      "source": "record:IP-0456:rows[2].moisture"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 6,
+      "tag": "s3_gmd",
+      "source": "record:IP-0456:rows[2].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 7,
+      "tag": "s3_maxd",
+      "source": "record:IP-0456:rows[2].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 8,
+      "tag": "s3_ysd",
+      "source": "record:IP-0456:rows[2].degree"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 9,
+      "tag": "s3_pd",
+      "source": "record:IP-0456:rows[2].verdict"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 0,
+      "tag": "s4_bh",
+      "source": "record:IP-0456:rows[3].code"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 1,
+      "tag": "s4_part",
+      "source": "record:IP-0456:rows[3].part"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 2,
+      "tag": "s4_lc",
+      "source": "record:IP-0456:rows[3].layer"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 3,
+      "tag": "s4_sjysd",
+      "source": "record:IP-0456:rows[3].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 4,
+      "tag": "s4_smd",
+      "source": "record:IP-0456:rows[3].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 5,
+      "tag": "s4_hsl",
+      "source": "record:IP-0456:rows[3].moisture"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 6,
+      "tag": "s4_gmd",
+      "source": "record:IP-0456:rows[3].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 7,
+      "tag": "s4_maxd",
+      "source": "record:IP-0456:rows[3].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 8,
+      "tag": "s4_ysd",
+      "source": "record:IP-0456:rows[3].degree"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 9,
+      "tag": "s4_pd",
+      "source": "record:IP-0456:rows[3].verdict"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 0,
+      "tag": "s5_bh",
+      "source": "record:IP-0456:rows[4].code"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 1,
+      "tag": "s5_part",
+      "source": "record:IP-0456:rows[4].part"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 2,
+      "tag": "s5_lc",
+      "source": "record:IP-0456:rows[4].layer"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 3,
+      "tag": "s5_sjysd",
+      "source": "record:IP-0456:rows[4].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 4,
+      "tag": "s5_smd",
+      "source": "record:IP-0456:rows[4].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 5,
+      "tag": "s5_hsl",
+      "source": "record:IP-0456:rows[4].moisture"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 6,
+      "tag": "s5_gmd",
+      "source": "record:IP-0456:rows[4].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 7,
+      "tag": "s5_maxd",
+      "source": "record:IP-0456:rows[4].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 8,
+      "tag": "s5_ysd",
+      "source": "record:IP-0456:rows[4].degree"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 9,
+      "tag": "s5_pd",
+      "source": "record:IP-0456:rows[4].verdict"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 0,
+      "tag": "s6_bh",
+      "source": "record:IP-0456:rows[5].code"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 1,
+      "tag": "s6_part",
+      "source": "record:IP-0456:rows[5].part"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 2,
+      "tag": "s6_lc",
+      "source": "record:IP-0456:rows[5].layer"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 3,
+      "tag": "s6_sjysd",
+      "source": "record:IP-0456:rows[5].designDegree"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 4,
+      "tag": "s6_smd",
+      "source": "record:IP-0456:rows[5].wetDensity"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 5,
+      "tag": "s6_hsl",
+      "source": "record:IP-0456:rows[5].moisture"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 6,
+      "tag": "s6_gmd",
+      "source": "record:IP-0456:rows[5].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 7,
+      "tag": "s6_maxd",
+      "source": "record:IP-0456:rows[5].maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 8,
+      "tag": "s6_ysd",
+      "source": "record:IP-0456:rows[5].degree"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 9,
+      "tag": "s6_pd",
+      "source": "record:IP-0456:rows[5].verdict"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 1,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "col": 1,
+      "tag": "c_bz",
+      "source": "common.bz"
+    }
+  ]
+}

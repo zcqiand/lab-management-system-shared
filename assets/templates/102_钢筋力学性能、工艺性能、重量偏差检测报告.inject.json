@@ -1,0 +1,896 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-102-1",
+  "comment": "钢筋力学性能/工艺性能/重量偏差 grid manifest。三段：力学(下屈服/抗拉/伸长率/Agt/Rom/RoeL)、工艺(弯曲/反向弯曲)、重量偏差。每指标只填 技术要求(奇数行c5) + 检测结果首格(偶数行c5)，6 单值子格留空。检测依据/判定依据/主要设备 段落由 inject_header_labels 注入通用 tag。",
+  "cells": [
+    {
+      "tag": "jgmc",
+      "source": "static:",
+      "table": 0,
+      "row": 0,
+      "col": 0
+    },
+    {
+      "tag": "bgmc",
+      "source": "static:",
+      "table": 0,
+      "row": 1,
+      "col": 0
+    },
+    {
+      "tag": "wtdw",
+      "source": "static:",
+      "table": 0,
+      "row": 2,
+      "col": 0
+    },
+    {
+      "tag": "bgbh",
+      "source": "static:",
+      "table": 0,
+      "row": 2,
+      "col": 1
+    },
+    {
+      "tag": "gcmc",
+      "source": "static:",
+      "table": 0,
+      "row": 3,
+      "col": 0
+    },
+    {
+      "tag": "jcbl",
+      "source": "static:",
+      "table": 0,
+      "row": 3,
+      "col": 1
+    },
+    {
+      "tag": "sgdw",
+      "source": "static:",
+      "table": 0,
+      "row": 4,
+      "col": 0
+    },
+    {
+      "tag": "gcbw",
+      "source": "static:",
+      "table": 0,
+      "row": 4,
+      "col": 1
+    },
+    {
+      "tag": "jzdw",
+      "source": "static:",
+      "table": 0,
+      "row": 5,
+      "col": 0
+    },
+    {
+      "tag": "jzr",
+      "source": "static:",
+      "table": 0,
+      "row": 5,
+      "col": 1
+    },
+    {
+      "tag": "sylr",
+      "source": "static:",
+      "table": 0,
+      "row": 6,
+      "col": 1
+    },
+    {
+      "tag": "zysb",
+      "source": "static:",
+      "table": 0,
+      "row": 7,
+      "col": 0
+    },
+    {
+      "tag": "jcdz",
+      "source": "static:",
+      "table": 0,
+      "row": 8,
+      "col": 0
+    },
+    {
+      "tag": "jchj",
+      "source": "static:",
+      "table": 0,
+      "row": 8,
+      "col": 1
+    },
+    {
+      "tag": "yply",
+      "source": "static:",
+      "table": 0,
+      "row": 8,
+      "col": 1
+    },
+    {
+      "tag": "h_ypbh1",
+      "source": "sample:0:sampleCode",
+      "table": 1,
+      "row": 0,
+      "col": 5
+    },
+    {
+      "tag": "h_ypbh2",
+      "source": "sample:1:sampleCode",
+      "table": 1,
+      "row": 0,
+      "col": 7
+    },
+    {
+      "tag": "h_ypbh3",
+      "source": "sample:2:sampleCode",
+      "table": 1,
+      "row": 0,
+      "col": 9
+    },
+    {
+      "tag": "h_ypzl1",
+      "source": "sample:0:ypzl",
+      "table": 1,
+      "row": 1,
+      "col": 5
+    },
+    {
+      "tag": "h_ypzl2",
+      "source": "sample:1:ypzl",
+      "table": 1,
+      "row": 1,
+      "col": 7
+    },
+    {
+      "tag": "h_ypzl3",
+      "source": "sample:2:ypzl",
+      "table": 1,
+      "row": 1,
+      "col": 9
+    },
+    {
+      "tag": "h_gp1",
+      "source": "sample:0:specification",
+      "table": 1,
+      "row": 2,
+      "col": 5
+    },
+    {
+      "tag": "h_gp2",
+      "source": "sample:1:specification",
+      "table": 1,
+      "row": 2,
+      "col": 7
+    },
+    {
+      "tag": "h_gp3",
+      "source": "sample:2:specification",
+      "table": 1,
+      "row": 2,
+      "col": 9
+    },
+    {
+      "tag": "h_zj1",
+      "source": "sample:0:grade",
+      "table": 1,
+      "row": 3,
+      "col": 5
+    },
+    {
+      "tag": "h_zj2",
+      "source": "sample:1:grade",
+      "table": 1,
+      "row": 3,
+      "col": 7
+    },
+    {
+      "tag": "h_zj3",
+      "source": "sample:2:grade",
+      "table": 1,
+      "row": 3,
+      "col": 9
+    },
+    {
+      "tag": "h_lh1",
+      "source": "sample:0:lotNumber",
+      "table": 1,
+      "row": 4,
+      "col": 5
+    },
+    {
+      "tag": "h_lh2",
+      "source": "sample:1:lotNumber",
+      "table": 1,
+      "row": 4,
+      "col": 7
+    },
+    {
+      "tag": "h_lh3",
+      "source": "sample:2:lotNumber",
+      "table": 1,
+      "row": 4,
+      "col": 9
+    },
+    {
+      "tag": "h_sccj1",
+      "source": "sample:0:manufacturer",
+      "table": 1,
+      "row": 5,
+      "col": 5
+    },
+    {
+      "tag": "h_sccj2",
+      "source": "sample:1:manufacturer",
+      "table": 1,
+      "row": 5,
+      "col": 7
+    },
+    {
+      "tag": "h_sccj3",
+      "source": "sample:2:manufacturer",
+      "table": 1,
+      "row": 5,
+      "col": 9
+    },
+    {
+      "tag": "h_dbsl1",
+      "source": "sample:0:representQuantity",
+      "table": 1,
+      "row": 6,
+      "col": 5
+    },
+    {
+      "tag": "h_dbsl2",
+      "source": "sample:1:representQuantity",
+      "table": 1,
+      "row": 6,
+      "col": 7
+    },
+    {
+      "tag": "h_dbsl3",
+      "source": "sample:2:representQuantity",
+      "table": 1,
+      "row": 6,
+      "col": 9
+    },
+    {
+      "tag": "h_ypzt1",
+      "source": "sample:0:status",
+      "table": 1,
+      "row": 7,
+      "col": 5
+    },
+    {
+      "tag": "h_ypzt2",
+      "source": "sample:1:status",
+      "table": 1,
+      "row": 7,
+      "col": 7
+    },
+    {
+      "tag": "h_ypzt3",
+      "source": "sample:2:status",
+      "table": 1,
+      "row": 7,
+      "col": 9
+    },
+    {
+      "tag": "lx_jcyj",
+      "source": "static:GB/T 228.1",
+      "table": 1,
+      "row": 8,
+      "col": 5
+    },
+    {
+      "tag": "rl_jz1",
+      "source": "record:IP-0086:techReqLabel",
+      "table": 1,
+      "row": 9,
+      "col": 5
+    },
+    {
+      "tag": "rl_jz2",
+      "source": "record:IP-0086:techReqLabel",
+      "table": 1,
+      "row": 9,
+      "col": 7
+    },
+    {
+      "tag": "rl_jz3",
+      "source": "record:IP-0086:techReqLabel",
+      "table": 1,
+      "row": 9,
+      "col": 9
+    },
+    {
+      "tag": "rl_jcz1_1",
+      "source": "record:IP-0086:strengths[0]",
+      "table": 1,
+      "row": 10,
+      "col": 5
+    },
+    {
+      "tag": "rl_jcz1_2",
+      "source": "record:IP-0086:strengths[1]",
+      "table": 1,
+      "row": 10,
+      "col": 6
+    },
+    {
+      "tag": "rl_jcz2_1",
+      "source": "record:IP-0086:strengths[2]",
+      "table": 1,
+      "row": 10,
+      "col": 7
+    },
+    {
+      "tag": "rl_jcz2_2",
+      "source": "record:IP-0086:strengths[3]",
+      "table": 1,
+      "row": 10,
+      "col": 8
+    },
+    {
+      "tag": "rl_jcz3_1",
+      "source": "record:IP-0086:strengths[4]",
+      "table": 1,
+      "row": 10,
+      "col": 9
+    },
+    {
+      "tag": "rl_jcz3_2",
+      "source": "record:IP-0086:strengths[5]",
+      "table": 1,
+      "row": 10,
+      "col": 10
+    },
+    {
+      "tag": "rm_jz1",
+      "source": "record:IP-0087:techReqLabel",
+      "table": 1,
+      "row": 11,
+      "col": 5
+    },
+    {
+      "tag": "rm_jz2",
+      "source": "record:IP-0087:techReqLabel",
+      "table": 1,
+      "row": 11,
+      "col": 7
+    },
+    {
+      "tag": "rm_jz3",
+      "source": "record:IP-0087:techReqLabel",
+      "table": 1,
+      "row": 11,
+      "col": 9
+    },
+    {
+      "tag": "rm_jcz1_1",
+      "source": "record:IP-0087:strengths[0]",
+      "table": 1,
+      "row": 12,
+      "col": 5
+    },
+    {
+      "tag": "rm_jcz1_2",
+      "source": "record:IP-0087:strengths[1]",
+      "table": 1,
+      "row": 12,
+      "col": 6
+    },
+    {
+      "tag": "rm_jcz2_1",
+      "source": "record:IP-0087:strengths[2]",
+      "table": 1,
+      "row": 12,
+      "col": 7
+    },
+    {
+      "tag": "rm_jcz2_2",
+      "source": "record:IP-0087:strengths[3]",
+      "table": 1,
+      "row": 12,
+      "col": 8
+    },
+    {
+      "tag": "rm_jcz3_1",
+      "source": "record:IP-0087:strengths[4]",
+      "table": 1,
+      "row": 12,
+      "col": 9
+    },
+    {
+      "tag": "rm_jcz3_2",
+      "source": "record:IP-0087:strengths[5]",
+      "table": 1,
+      "row": 12,
+      "col": 10
+    },
+    {
+      "tag": "a_jz1",
+      "source": "record:IP-0150:techReqLabel",
+      "table": 1,
+      "row": 13,
+      "col": 5
+    },
+    {
+      "tag": "a_jz2",
+      "source": "record:IP-0150:techReqLabel",
+      "table": 1,
+      "row": 13,
+      "col": 7
+    },
+    {
+      "tag": "a_jz3",
+      "source": "record:IP-0150:techReqLabel",
+      "table": 1,
+      "row": 13,
+      "col": 9
+    },
+    {
+      "tag": "a_jcz1_1",
+      "source": "record:IP-0150:strengths[0]",
+      "table": 1,
+      "row": 14,
+      "col": 5
+    },
+    {
+      "tag": "a_jcz1_2",
+      "source": "record:IP-0150:strengths[1]",
+      "table": 1,
+      "row": 14,
+      "col": 6
+    },
+    {
+      "tag": "agt_jz1",
+      "source": "record:IP-0097:techReqLabel",
+      "table": 1,
+      "row": 15,
+      "col": 5
+    },
+    {
+      "tag": "agt_jz2",
+      "source": "record:IP-0097:techReqLabel",
+      "table": 1,
+      "row": 15,
+      "col": 7
+    },
+    {
+      "tag": "agt_jz3",
+      "source": "record:IP-0097:techReqLabel",
+      "table": 1,
+      "row": 15,
+      "col": 9
+    },
+    {
+      "tag": "agt_jcz1_1",
+      "source": "record:IP-0097:strengths[0]",
+      "table": 1,
+      "row": 16,
+      "col": 5
+    },
+    {
+      "tag": "agt_jcz1_2",
+      "source": "record:IP-0097:strengths[1]",
+      "table": 1,
+      "row": 16,
+      "col": 6
+    },
+    {
+      "tag": "agt_jcz2_1",
+      "source": "record:IP-0097:strengths[2]",
+      "table": 1,
+      "row": 16,
+      "col": 7
+    },
+    {
+      "tag": "agt_jcz2_2",
+      "source": "record:IP-0097:strengths[3]",
+      "table": 1,
+      "row": 16,
+      "col": 8
+    },
+    {
+      "tag": "agt_jcz3_1",
+      "source": "record:IP-0097:strengths[4]",
+      "table": 1,
+      "row": 16,
+      "col": 9
+    },
+    {
+      "tag": "agt_jcz3_2",
+      "source": "record:IP-0097:strengths[5]",
+      "table": 1,
+      "row": 16,
+      "col": 10
+    },
+    {
+      "tag": "rom_jz",
+      "source": "record:IP-0559:jz",
+      "table": 1,
+      "row": 17,
+      "col": 5
+    },
+    {
+      "tag": "rom_jcz1_1",
+      "source": "record:IP-0559:strengths[0]",
+      "table": 1,
+      "row": 18,
+      "col": 5
+    },
+    {
+      "tag": "rom_jcz1_2",
+      "source": "record:IP-0559:strengths[1]",
+      "table": 1,
+      "row": 18,
+      "col": 6
+    },
+    {
+      "tag": "rom_jcz2_1",
+      "source": "record:IP-0559:strengths[2]",
+      "table": 1,
+      "row": 18,
+      "col": 7
+    },
+    {
+      "tag": "rom_jcz2_2",
+      "source": "record:IP-0559:strengths[3]",
+      "table": 1,
+      "row": 18,
+      "col": 8
+    },
+    {
+      "tag": "rom_jcz3_1",
+      "source": "record:IP-0559:strengths[4]",
+      "table": 1,
+      "row": 18,
+      "col": 9
+    },
+    {
+      "tag": "rom_jcz3_2",
+      "source": "record:IP-0559:strengths[5]",
+      "table": 1,
+      "row": 18,
+      "col": 10
+    },
+    {
+      "tag": "roel_jz",
+      "source": "record:IP-0560:jz",
+      "table": 1,
+      "row": 19,
+      "col": 5
+    },
+    {
+      "tag": "roel_jcz1_1",
+      "source": "record:IP-0560:strengths[0]",
+      "table": 1,
+      "row": 20,
+      "col": 5
+    },
+    {
+      "tag": "roel_jcz1_2",
+      "source": "record:IP-0560:strengths[1]",
+      "table": 1,
+      "row": 20,
+      "col": 6
+    },
+    {
+      "tag": "roel_jcz2_1",
+      "source": "record:IP-0560:strengths[2]",
+      "table": 1,
+      "row": 20,
+      "col": 7
+    },
+    {
+      "tag": "roel_jcz2_2",
+      "source": "record:IP-0560:strengths[3]",
+      "table": 1,
+      "row": 20,
+      "col": 8
+    },
+    {
+      "tag": "roel_jcz3_1",
+      "source": "record:IP-0560:strengths[4]",
+      "table": 1,
+      "row": 20,
+      "col": 9
+    },
+    {
+      "tag": "roel_jcz3_2",
+      "source": "record:IP-0560:strengths[5]",
+      "table": 1,
+      "row": 20,
+      "col": 10
+    },
+    {
+      "tag": "gy_jcyj",
+      "source": "static:GB/T 232",
+      "table": 1,
+      "row": 21,
+      "col": 5
+    },
+    {
+      "tag": "wq_zj1",
+      "source": "record:IP-0155:zj1",
+      "table": 1,
+      "row": 22,
+      "col": 5
+    },
+    {
+      "tag": "wq_zj2",
+      "source": "record:IP-0155:zj2",
+      "table": 1,
+      "row": 22,
+      "col": 7
+    },
+    {
+      "tag": "wq_zj3",
+      "source": "record:IP-0155:zj3",
+      "table": 1,
+      "row": 22,
+      "col": 9
+    },
+    {
+      "tag": "wq_jd1",
+      "source": "record:IP-0155:jd1",
+      "table": 1,
+      "row": 23,
+      "col": 5
+    },
+    {
+      "tag": "wq_jd2",
+      "source": "record:IP-0155:jd2",
+      "table": 1,
+      "row": 23,
+      "col": 7
+    },
+    {
+      "tag": "wq_jd3",
+      "source": "record:IP-0155:jd3",
+      "table": 1,
+      "row": 23,
+      "col": 9
+    },
+    {
+      "tag": "wq_jz1",
+      "source": "record:IP-0155:techReqLabel",
+      "table": 1,
+      "row": 24,
+      "col": 5
+    },
+    {
+      "tag": "wq_jz2",
+      "source": "record:IP-0155:techReqLabel",
+      "table": 1,
+      "row": 24,
+      "col": 7
+    },
+    {
+      "tag": "wq_jz3",
+      "source": "record:IP-0155:techReqLabel",
+      "table": 1,
+      "row": 24,
+      "col": 9
+    },
+    {
+      "tag": "wq_jcz1_1",
+      "source": "record:IP-0155:strengths[0]",
+      "table": 1,
+      "row": 25,
+      "col": 5
+    },
+    {
+      "tag": "wq_jcz1_2",
+      "source": "record:IP-0155:strengths[1]",
+      "table": 1,
+      "row": 25,
+      "col": 6
+    },
+    {
+      "tag": "wq_jcz2_1",
+      "source": "record:IP-0155:strengths[2]",
+      "table": 1,
+      "row": 25,
+      "col": 7
+    },
+    {
+      "tag": "wq_jcz2_2",
+      "source": "record:IP-0155:strengths[3]",
+      "table": 1,
+      "row": 25,
+      "col": 8
+    },
+    {
+      "tag": "wq_jcz3_1",
+      "source": "record:IP-0155:strengths[4]",
+      "table": 1,
+      "row": 25,
+      "col": 9
+    },
+    {
+      "tag": "wq_jcz3_2",
+      "source": "record:IP-0155:strengths[5]",
+      "table": 1,
+      "row": 25,
+      "col": 10
+    },
+    {
+      "tag": "fx_zj1",
+      "source": "record:IP-0152:zj1",
+      "table": 1,
+      "row": 26,
+      "col": 5
+    },
+    {
+      "tag": "fx_zj2",
+      "source": "record:IP-0152:zj2",
+      "table": 1,
+      "row": 26,
+      "col": 7
+    },
+    {
+      "tag": "fx_zj3",
+      "source": "record:IP-0152:zj3",
+      "table": 1,
+      "row": 26,
+      "col": 9
+    },
+    {
+      "tag": "fx_jd1",
+      "source": "record:IP-0152:jd1",
+      "table": 1,
+      "row": 27,
+      "col": 5
+    },
+    {
+      "tag": "fx_jd2",
+      "source": "record:IP-0152:jd2",
+      "table": 1,
+      "row": 27,
+      "col": 7
+    },
+    {
+      "tag": "fx_jd3",
+      "source": "record:IP-0152:jd3",
+      "table": 1,
+      "row": 27,
+      "col": 9
+    },
+    {
+      "tag": "fx_jz1",
+      "source": "record:IP-0152:techReqLabel",
+      "table": 1,
+      "row": 28,
+      "col": 5
+    },
+    {
+      "tag": "fx_jz2",
+      "source": "record:IP-0152:techReqLabel",
+      "table": 1,
+      "row": 28,
+      "col": 7
+    },
+    {
+      "tag": "fx_jz3",
+      "source": "record:IP-0152:techReqLabel",
+      "table": 1,
+      "row": 28,
+      "col": 9
+    },
+    {
+      "tag": "fx_jcz1",
+      "source": "static:",
+      "table": 1,
+      "row": 29,
+      "col": 5
+    },
+    {
+      "tag": "fx_jcz2",
+      "source": "static:",
+      "table": 1,
+      "row": 29,
+      "col": 7
+    },
+    {
+      "tag": "fx_jcz3",
+      "source": "static:",
+      "table": 1,
+      "row": 29,
+      "col": 9
+    },
+    {
+      "tag": "zl_jcyj",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 30,
+      "col": 5
+    },
+    {
+      "tag": "zl_jz1",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 31,
+      "col": 5
+    },
+    {
+      "tag": "zl_jz2",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 31,
+      "col": 7
+    },
+    {
+      "tag": "zl_jz3",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 31,
+      "col": 9
+    },
+    {
+      "tag": "zl_jcz1",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 32,
+      "col": 5
+    },
+    {
+      "tag": "zl_jcz2",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 32,
+      "col": 7
+    },
+    {
+      "tag": "zl_jcz3",
+      "source": "static:GB/T 1499.2",
+      "table": 1,
+      "row": 32,
+      "col": 9
+    },
+    {
+      "tag": "c_jcl",
+      "source": "common.jcl",
+      "table": 1,
+      "row": 33,
+      "col": 3
+    },
+    {
+      "tag": "c_bz",
+      "source": "common.bz",
+      "table": 1,
+      "row": 34,
+      "col": 3
+    },
+    {
+      "tag": "pz",
+      "source": "static:",
+      "table": 2,
+      "row": 0,
+      "col": 0
+    },
+    {
+      "tag": "sh",
+      "source": "static:",
+      "table": 2,
+      "row": 0,
+      "col": 1
+    },
+    {
+      "tag": "jc",
+      "source": "static:",
+      "table": 2,
+      "row": 0,
+      "col": 2
+    },
+    {
+      "tag": "qfrq",
+      "source": "static:",
+      "table": 2,
+      "row": 1,
+      "col": 3
+    }
+  ]
+}

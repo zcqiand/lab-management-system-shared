@@ -1,0 +1,245 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-110-3",
+  "comment": "RN-110-3 grid manifest（生成器产出）.",
+  "cells": [
+    {
+      "table": 0,
+      "row": 0,
+      "col": 2,
+      "tag": "h_ypbh",
+      "source": "sample.sampleCode"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 5,
+      "tag": "h_ypmc",
+      "source": "sample.sampleName"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 7,
+      "tag": "h_jcbl",
+      "source": "common.jcbl"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 2,
+      "tag": "h_xhgg",
+      "source": "sample.specification"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 5,
+      "tag": "h_ypsl",
+      "source": "sample.sampleQuantity"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 7,
+      "tag": "h_dbsl",
+      "source": "sample.representQuantity"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 2,
+      "tag": "h_yply",
+      "source": "common.yply"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 5,
+      "tag": "h_ypzt",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 2,
+      "tag": "h_ccrq",
+      "source": "sample.arrivalDate"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 5,
+      "tag": "h_sccj",
+      "source": "common.sccj"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 2,
+      "tag": "h_sylr",
+      "source": "common.sylr"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 5,
+      "tag": "h_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 7,
+      "tag": "h_jchj",
+      "source": "common.jchj"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "col": 2,
+      "tag": "h_jcdz",
+      "source": "common.jcdz"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "col": 2,
+      "tag": "h_zysb",
+      "source": "common.zysb"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "col": 2,
+      "tag": "h_pdyj",
+      "source": "common.jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 3,
+      "tag": "p1_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 3,
+      "tag": "p2_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 3,
+      "tag": "p3_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 3,
+      "tag": "p4_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 2,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 2,
+      "tag": "c_bz",
+      "source": "common.bz"
+    },
+    {
+      "tag": "p1_jz",
+      "source": "param:IP-0030:jz",
+      "table": 0,
+      "row": 9,
+      "col": 8
+    },
+    {
+      "tag": "p1_jcz",
+      "source": "param:IP-0030:jcz",
+      "table": 0,
+      "row": 9,
+      "col": 15
+    },
+    {
+      "tag": "p1_jd",
+      "source": "param:IP-0030:jd",
+      "table": 0,
+      "row": 9,
+      "col": 17
+    },
+    {
+      "tag": "p2_jz",
+      "source": "param:IP-0031:jz",
+      "table": 0,
+      "row": 10,
+      "col": 8
+    },
+    {
+      "tag": "p2_jcz",
+      "source": "param:IP-0031:jcz",
+      "table": 0,
+      "row": 10,
+      "col": 15
+    },
+    {
+      "tag": "p2_jd",
+      "source": "param:IP-0031:jd",
+      "table": 0,
+      "row": 10,
+      "col": 17
+    },
+    {
+      "tag": "p3_jz",
+      "source": "param:IP-0032:jz",
+      "table": 0,
+      "row": 11,
+      "col": 8
+    },
+    {
+      "tag": "p3_jcz",
+      "source": "param:IP-0032:jcz",
+      "table": 0,
+      "row": 11,
+      "col": 15
+    },
+    {
+      "tag": "p3_jd",
+      "source": "param:IP-0032:jd",
+      "table": 0,
+      "row": 11,
+      "col": 17
+    },
+    {
+      "tag": "p4_jz",
+      "source": "param:IP-0033:jz",
+      "table": 0,
+      "row": 12,
+      "col": 8
+    },
+    {
+      "tag": "p4_jcz",
+      "source": "param:IP-0033:jcz",
+      "table": 0,
+      "row": 12,
+      "col": 15
+    },
+    {
+      "tag": "p4_jd",
+      "source": "param:IP-0033:jd",
+      "table": 0,
+      "row": 12,
+      "col": 17
+    }
+  ]
+}

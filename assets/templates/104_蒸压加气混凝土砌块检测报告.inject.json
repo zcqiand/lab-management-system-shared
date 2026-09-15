@@ -1,0 +1,406 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-104-5",
+  "comment": "RN-104-5 grid manifest（生成器产出）.",
+  "cells": [
+    {
+      "table": 0,
+      "row": 0,
+      "col": 2,
+      "tag": "h_ypbh",
+      "source": "sample.sampleCode"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 4,
+      "tag": "h_ypmc",
+      "source": "sample.sampleName"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 7,
+      "tag": "h_jcbl",
+      "source": "common.jcbl"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 2,
+      "tag": "h_xhgg",
+      "source": "sample.specification"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 4,
+      "tag": "h_ypsl",
+      "source": "sample.sampleQuantity"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 7,
+      "tag": "h_dbsl",
+      "source": "sample.representQuantity"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 2,
+      "tag": "h_yply",
+      "source": "common.yply"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 4,
+      "tag": "h_ypzt",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 2,
+      "tag": "h_ccrq",
+      "source": "sample.arrivalDate"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 4,
+      "tag": "h_sccj",
+      "source": "common.sccj"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 2,
+      "tag": "h_sylr",
+      "source": "common.sylr"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 4,
+      "tag": "h_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 7,
+      "tag": "h_jchj",
+      "source": "common.jchj"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "col": 2,
+      "tag": "h_jcdz",
+      "source": "common.jcdz"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "col": 2,
+      "tag": "h_zysb",
+      "source": "common.zysb"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "col": 2,
+      "tag": "h_pdyj",
+      "source": "common.jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 3,
+      "tag": "p1_jcyj",
+      "source": "param:IP-0055:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 4,
+      "tag": "p1_jz",
+      "source": "param:IP-0055:jz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 5,
+      "tag": "p1_jcz",
+      "source": "param:IP-0055:jcz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 7,
+      "tag": "p1_jd",
+      "source": "param:IP-0055:jd"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 3,
+      "tag": "p2_jcyj",
+      "source": "param:IP-0055:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 3,
+      "tag": "p3_jcyj",
+      "source": "param:IP-0056:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 4,
+      "tag": "p3_jz",
+      "source": "param:IP-0056:jz"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 5,
+      "tag": "p3_jcz",
+      "source": "param:IP-0056:jcz"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 7,
+      "tag": "p3_jd",
+      "source": "param:IP-0056:jd"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 3,
+      "tag": "p4_jcyj",
+      "source": "param:IP-0056:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 3,
+      "tag": "p5_jcyj",
+      "source": "param:IP-0074:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 3,
+      "tag": "p6_jcyj",
+      "source": "param:IP-0059:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 3,
+      "tag": "p7_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 3,
+      "tag": "p8_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 3,
+      "tag": "p9_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 3,
+      "tag": "p10_jcyj",
+      "source": "static:"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 2,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 2,
+      "tag": "c_bz",
+      "source": "common.bz"
+    },
+    {
+      "tag": "p2_jz",
+      "source": "param:IP-0055:jz",
+      "table": 0,
+      "row": 10,
+      "col": 8
+    },
+    {
+      "tag": "p2_jcz",
+      "source": "param:IP-0055:jcz",
+      "table": 0,
+      "row": 10,
+      "col": 15
+    },
+    {
+      "tag": "p2_jd",
+      "source": "param:IP-0055:jd",
+      "table": 0,
+      "row": 10,
+      "col": 17
+    },
+    {
+      "tag": "p4_jz",
+      "source": "param:IP-0056:jz",
+      "table": 0,
+      "row": 12,
+      "col": 8
+    },
+    {
+      "tag": "p4_jcz",
+      "source": "param:IP-0056:jcz",
+      "table": 0,
+      "row": 12,
+      "col": 15
+    },
+    {
+      "tag": "p4_jd",
+      "source": "param:IP-0056:jd",
+      "table": 0,
+      "row": 12,
+      "col": 17
+    },
+    {
+      "tag": "p5_jz",
+      "source": "param:IP-0189:jz",
+      "table": 0,
+      "row": 13,
+      "col": 8
+    },
+    {
+      "tag": "p5_jcz",
+      "source": "param:IP-0189:jcz",
+      "table": 0,
+      "row": 13,
+      "col": 15
+    },
+    {
+      "tag": "p5_jd",
+      "source": "param:IP-0189:jd",
+      "table": 0,
+      "row": 13,
+      "col": 17
+    },
+    {
+      "tag": "p6_jz",
+      "source": "param:IP-0059:jz",
+      "table": 0,
+      "row": 14,
+      "col": 8
+    },
+    {
+      "tag": "p6_jcz",
+      "source": "param:IP-0059:jcz",
+      "table": 0,
+      "row": 14,
+      "col": 15
+    },
+    {
+      "tag": "p6_jd",
+      "source": "param:IP-0059:jd",
+      "table": 0,
+      "row": 14,
+      "col": 17
+    },
+    {
+      "tag": "p7_jz",
+      "source": "param:IP-0190:jz",
+      "table": 0,
+      "row": 15,
+      "col": 8
+    },
+    {
+      "tag": "p7_jcz",
+      "source": "param:IP-0190:jcz",
+      "table": 0,
+      "row": 15,
+      "col": 15
+    },
+    {
+      "tag": "p7_jd",
+      "source": "param:IP-0190:jd",
+      "table": 0,
+      "row": 15,
+      "col": 17
+    },
+    {
+      "tag": "p9_jz",
+      "source": "param:IP-0195:jz",
+      "table": 0,
+      "row": 17,
+      "col": 8
+    },
+    {
+      "tag": "p9_jcz",
+      "source": "param:IP-0195:jcz",
+      "table": 0,
+      "row": 17,
+      "col": 15
+    },
+    {
+      "tag": "p9_jd",
+      "source": "param:IP-0195:jd",
+      "table": 0,
+      "row": 17,
+      "col": 17
+    },
+    {
+      "tag": "p10_jz",
+      "source": "param:IP-0327:jz",
+      "table": 0,
+      "row": 18,
+      "col": 8
+    },
+    {
+      "tag": "p10_jcz",
+      "source": "param:IP-0327:jcz",
+      "table": 0,
+      "row": 18,
+      "col": 15
+    },
+    {
+      "tag": "p10_jd",
+      "source": "param:IP-0327:jd",
+      "table": 0,
+      "row": 18,
+      "col": 17
+    },
+    {
+      "tag": "p8_jz",
+      "source": "param:IP-0195:jz",
+      "table": 0,
+      "row": 16,
+      "col": 8
+    },
+    {
+      "tag": "p8_jcz",
+      "source": "param:IP-0195:jcz",
+      "table": 0,
+      "row": 16,
+      "col": 15
+    }
+  ]
+}

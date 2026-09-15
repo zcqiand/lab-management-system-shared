@@ -1,0 +1,105 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-109-1",
+  "comment": "RN-109-1 土工击实：5 组（干密度/含水率）+ 峰值最大干密度/最优含水率，均取自击实卡（IP-0226）落库 JSON。",
+  "cells": [
+    {
+      "table": 1,
+      "row": 1,
+      "col": 1,
+      "tag": "d1",
+      "source": "record:IP-0226:points[0].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 1,
+      "tag": "w1",
+      "source": "record:IP-0226:points[0].moisture"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 2,
+      "tag": "d2",
+      "source": "record:IP-0226:points[1].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 2,
+      "tag": "w2",
+      "source": "record:IP-0226:points[1].moisture"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 4,
+      "tag": "d4",
+      "source": "record:IP-0226:points[2].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 4,
+      "tag": "w4",
+      "source": "record:IP-0226:points[2].moisture"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 6,
+      "tag": "d6",
+      "source": "record:IP-0226:points[3].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 6,
+      "tag": "w6",
+      "source": "record:IP-0226:points[3].moisture"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 7,
+      "tag": "d7",
+      "source": "record:IP-0226:points[4].dryDensity"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 7,
+      "tag": "w7",
+      "source": "record:IP-0226:points[4].moisture"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 1,
+      "tag": "maxd",
+      "source": "record:IP-0226:maxDryDensity"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 5,
+      "tag": "bestw",
+      "source": "record:IP-0226:optimalMoisture"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 1,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 1,
+      "tag": "c_bz",
+      "source": "common.bz"
+    }
+  ]
+}

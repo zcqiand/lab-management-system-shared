@@ -1,0 +1,665 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-103-3",
+  "comment": "RN-103-3 grid manifest (生成器产出). 表头+参数行(检测依据/技术要求/检测结果/判定)+结论备注. [颗粒级配块补] r24=Ⅰ区 / r25=Ⅱ区 / r26=Ⅲ区（JGJ 52 表 3 区间，param IP-0577 zone×sieve），r27=实测累计筛余（record IP-0577.average）；xdms=rows[1]。",
+  "cells": [
+    {
+      "table": 0,
+      "row": 0,
+      "col": 3,
+      "tag": "h_ypbh",
+      "source": "sample.sampleCode"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 7,
+      "tag": "h_ypmc",
+      "source": "sample.sampleName"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 15,
+      "tag": "h_jcbl",
+      "source": "common.jcbl"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 3,
+      "tag": "h_gg",
+      "source": "sample.specification"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 7,
+      "tag": "h_ypsl",
+      "source": "sample.sampleQuantity"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 15,
+      "tag": "h_ypms",
+      "source": "common.ypms"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 3,
+      "tag": "h_dbpl",
+      "source": "sample.representQuantity"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 7,
+      "tag": "h_sccj",
+      "source": "common.sccj"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 15,
+      "tag": "h_yply",
+      "source": "common.yply"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 3,
+      "tag": "h_sylr",
+      "source": "common.sylr"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 7,
+      "tag": "h_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 15,
+      "tag": "h_jchj",
+      "source": "common.jchj"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 3,
+      "tag": "h_jcdz",
+      "source": "common.jcdz"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "col": 3,
+      "tag": "h_zysb",
+      "source": "common.zysb"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "col": 3,
+      "tag": "h_pdyj",
+      "source": "common.jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 4,
+      "tag": "p1_jcyj",
+      "source": "param:IP-0171:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 7,
+      "tag": "p1_jz",
+      "source": "param:IP-0171:jz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 13,
+      "tag": "p1_jcz",
+      "source": "param:IP-0171:jcz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 15,
+      "tag": "p1_jd",
+      "source": "param:IP-0171:jd"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 4,
+      "tag": "p2_jcyj",
+      "source": "param:IP-0172:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 7,
+      "tag": "p2_jz",
+      "source": "param:IP-0172:jz"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 13,
+      "tag": "p2_jcz",
+      "source": "param:IP-0172:jcz"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 15,
+      "tag": "p2_jd",
+      "source": "param:IP-0172:jd"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 4,
+      "tag": "p3_jcyj",
+      "source": "static:GB/T 14685"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 4,
+      "tag": "p4_jcyj",
+      "source": "static:GB/T 14685"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 4,
+      "tag": "p5_jcyj",
+      "source": "param:IP-0173:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 7,
+      "tag": "p5_jz",
+      "source": "param:IP-0173:jz"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 13,
+      "tag": "p5_jcz",
+      "source": "param:IP-0173:jcz"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 15,
+      "tag": "p5_jd",
+      "source": "param:IP-0173:jd"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 4,
+      "tag": "p6_jcyj",
+      "source": "param:IP-0175:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 7,
+      "tag": "p6_jz",
+      "source": "param:IP-0175:jz"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 13,
+      "tag": "p6_jcz",
+      "source": "param:IP-0175:jcz"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 15,
+      "tag": "p6_jd",
+      "source": "param:IP-0175:jd"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 4,
+      "tag": "p7_jcyj",
+      "source": "param:IP-0177:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 7,
+      "tag": "p7_jz",
+      "source": "param:IP-0177:jz"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 13,
+      "tag": "p7_jcz",
+      "source": "param:IP-0177:jcz"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 15,
+      "tag": "p7_jd",
+      "source": "param:IP-0177:jd"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 4,
+      "tag": "p8_jcyj",
+      "source": "param:IP-0178:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 7,
+      "tag": "p8_jz",
+      "source": "param:IP-0178:jz"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 13,
+      "tag": "p8_jcz",
+      "source": "param:IP-0178:jcz"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 15,
+      "tag": "p8_jd",
+      "source": "param:IP-0178:jd"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 4,
+      "tag": "p9_jcyj",
+      "source": "param:IP-0179:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 7,
+      "tag": "p9_jz",
+      "source": "param:IP-0179:jz"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 13,
+      "tag": "p9_jcz",
+      "source": "param:IP-0179:jcz"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 15,
+      "tag": "p9_jd",
+      "source": "param:IP-0179:jd"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 4,
+      "tag": "p10_jcyj",
+      "source": "param:IP-0156:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 7,
+      "tag": "p10_jz",
+      "source": "param:IP-0156:jz"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 13,
+      "tag": "p10_jcz",
+      "source": "param:IP-0156:jcz"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 15,
+      "tag": "p10_jd",
+      "source": "param:IP-0156:jd"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 4,
+      "tag": "p11_jcyj",
+      "source": "param:IP-0059:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 7,
+      "tag": "p11_jz",
+      "source": "param:IP-0059:jz"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 13,
+      "tag": "p11_jcz",
+      "source": "param:IP-0059:jcz"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 15,
+      "tag": "p11_jd",
+      "source": "param:IP-0059:jd"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 4,
+      "tag": "p12_jcyj",
+      "source": "param:IP-0185:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 7,
+      "tag": "p12_jz",
+      "source": "param:IP-0185:jz"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 13,
+      "tag": "p12_jcz",
+      "source": "param:IP-0185:jcz"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 15,
+      "tag": "p12_jd",
+      "source": "param:IP-0185:jd"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 4,
+      "tag": "p13_jcyj",
+      "source": "param:IP-0004:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 7,
+      "tag": "p13_jz",
+      "source": "param:IP-0004:jz"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 13,
+      "tag": "p13_jcz",
+      "source": "param:IP-0004:jcz"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 15,
+      "tag": "p13_jd",
+      "source": "param:IP-0004:jd"
+    },
+    {
+      "table": 0,
+      "row": 28,
+      "col": 3,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 0,
+      "row": 29,
+      "col": 3,
+      "tag": "c_bz",
+      "source": "common.bz"
+    },
+    {
+      "table": 0,
+      "row": 32,
+      "col": 1,
+      "tag": "p3_jz",
+      "source": "param:IP-0561:jz"
+    },
+    {
+      "table": 0,
+      "row": 32,
+      "col": 2,
+      "tag": "p3_jcz",
+      "source": "param:IP-0561:jcz"
+    },
+    {
+      "table": 0,
+      "row": 32,
+      "col": 3,
+      "tag": "p3_jd",
+      "source": "param:IP-0561:jd"
+    },
+    {
+      "table": 0,
+      "row": 33,
+      "col": 1,
+      "tag": "p4_jz",
+      "source": "param:IP-0173:jz"
+    },
+    {
+      "table": 0,
+      "row": 33,
+      "col": 2,
+      "tag": "p4_jcz",
+      "source": "param:IP-0173:jcz"
+    },
+    {
+      "table": 0,
+      "row": 33,
+      "col": 3,
+      "tag": "p4_jd",
+      "source": "param:IP-0173:jd"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 3,
+      "tag": "kljp1_1",
+      "source": "param:IP-0577:Ⅰ区:5.00mm"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 5,
+      "tag": "kljp1_2",
+      "source": "param:IP-0577:Ⅰ区:2.50mm"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 7,
+      "tag": "kljp1_3",
+      "source": "param:IP-0577:Ⅰ区:1.25mm"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 9,
+      "tag": "kljp1_4",
+      "source": "param:IP-0577:Ⅰ区:630μm"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 11,
+      "tag": "kljp1_5",
+      "source": "param:IP-0577:Ⅰ区:315μm"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 14,
+      "tag": "kljp1_6",
+      "source": "param:IP-0577:Ⅰ区:160μm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 3,
+      "tag": "kljp2_1",
+      "source": "param:IP-0577:Ⅱ区:5.00mm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 5,
+      "tag": "kljp2_2",
+      "source": "param:IP-0577:Ⅱ区:2.50mm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 7,
+      "tag": "kljp2_3",
+      "source": "param:IP-0577:Ⅱ区:1.25mm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 9,
+      "tag": "kljp2_4",
+      "source": "param:IP-0577:Ⅱ区:630μm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 11,
+      "tag": "kljp2_5",
+      "source": "param:IP-0577:Ⅱ区:315μm"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 14,
+      "tag": "kljp2_6",
+      "source": "param:IP-0577:Ⅱ区:160μm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 3,
+      "tag": "kljp3_1",
+      "source": "param:IP-0577:Ⅲ区:5.00mm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 5,
+      "tag": "kljp3_2",
+      "source": "param:IP-0577:Ⅲ区:2.50mm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 7,
+      "tag": "kljp3_3",
+      "source": "param:IP-0577:Ⅲ区:1.25mm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 9,
+      "tag": "kljp3_4",
+      "source": "param:IP-0577:Ⅲ区:630μm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 11,
+      "tag": "kljp3_5",
+      "source": "param:IP-0577:Ⅲ区:315μm"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 14,
+      "tag": "kljp3_6",
+      "source": "param:IP-0577:Ⅲ区:160μm"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 3,
+      "tag": "kljp4_1",
+      "source": "record:IP-0577:averageCumulativePct[0]"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 5,
+      "tag": "kljp4_2",
+      "source": "record:IP-0577:averageCumulativePct[1]"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 7,
+      "tag": "kljp4_3",
+      "source": "record:IP-0577:averageCumulativePct[2]"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 9,
+      "tag": "kljp4_4",
+      "source": "record:IP-0577:averageCumulativePct[3]"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 11,
+      "tag": "kljp4_5",
+      "source": "record:IP-0577:averageCumulativePct[4]"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 14,
+      "tag": "kljp4_6",
+      "source": "record:IP-0577:averageCumulativePct[5]"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 15,
+      "tag": "xdms",
+      "source": "record:IP-0577:averageFinenessModulus"
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-105-2",
+  "comment": "RN-105-2 抗渗性能：TABLE#1 三个样品块（首行 1/7/13）× 6 试件；渗水压力/渗水情况按样品序号取 IP-0190 记录。",
+  "cells": [
+    {
+      "table": 1,
+      "row": 1,
+      "col": 0,
+      "tag": "s1_bh",
+      "source": "sample:0:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 1,
+      "tag": "s1_gcbw",
+      "source": "sample:0:structuralPart"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 2,
+      "tag": "s1_sdj",
+      "source": "sample:0:model"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 3,
+      "tag": "s1_ccm",
+      "source": "sample:0:specification"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 4,
+      "tag": "s1_cxrq",
+      "source": "sample:0:arrivalDate"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 6,
+      "tag": "s1_lq",
+      "source": "sample:0:age"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 7,
+      "tag": "s1_yhtj",
+      "source": "sample:0:curingCondition"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 5,
+      "tag": "s1_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 10,
+      "tag": "s1_jd",
+      "source": "srecord:0:IP-0190:gradeLabel"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 8,
+      "tag": "s1_syl0",
+      "source": "srecord:0:IP-0190:specimens[0].pressure"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 9,
+      "tag": "s1_sqk0",
+      "source": "srecord:0:IP-0190:specimens[0].permeated"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 8,
+      "tag": "s1_syl1",
+      "source": "srecord:0:IP-0190:specimens[1].pressure"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 9,
+      "tag": "s1_sqk1",
+      "source": "srecord:0:IP-0190:specimens[1].permeated"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 8,
+      "tag": "s1_syl2",
+      "source": "srecord:0:IP-0190:specimens[2].pressure"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 9,
+      "tag": "s1_sqk2",
+      "source": "srecord:0:IP-0190:specimens[2].permeated"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 8,
+      "tag": "s1_syl3",
+      "source": "srecord:0:IP-0190:specimens[3].pressure"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 9,
+      "tag": "s1_sqk3",
+      "source": "srecord:0:IP-0190:specimens[3].permeated"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 8,
+      "tag": "s1_syl4",
+      "source": "srecord:0:IP-0190:specimens[4].pressure"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 9,
+      "tag": "s1_sqk4",
+      "source": "srecord:0:IP-0190:specimens[4].permeated"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 8,
+      "tag": "s1_syl5",
+      "source": "srecord:0:IP-0190:specimens[5].pressure"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 9,
+      "tag": "s1_sqk5",
+      "source": "srecord:0:IP-0190:specimens[5].permeated"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 0,
+      "tag": "s2_bh",
+      "source": "sample:1:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 1,
+      "tag": "s2_gcbw",
+      "source": "sample:1:structuralPart"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 2,
+      "tag": "s2_sdj",
+      "source": "sample:1:model"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 3,
+      "tag": "s2_ccm",
+      "source": "sample:1:specification"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 4,
+      "tag": "s2_cxrq",
+      "source": "sample:1:arrivalDate"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 6,
+      "tag": "s2_lq",
+      "source": "sample:1:age"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 7,
+      "tag": "s2_yhtj",
+      "source": "sample:1:curingCondition"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 5,
+      "tag": "s2_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 10,
+      "tag": "s2_jd",
+      "source": "srecord:1:IP-0190:gradeLabel"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 8,
+      "tag": "s2_syl0",
+      "source": "srecord:1:IP-0190:specimens[0].pressure"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 9,
+      "tag": "s2_sqk0",
+      "source": "srecord:1:IP-0190:specimens[0].permeated"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "col": 8,
+      "tag": "s2_syl1",
+      "source": "srecord:1:IP-0190:specimens[1].pressure"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "col": 9,
+      "tag": "s2_sqk1",
+      "source": "srecord:1:IP-0190:specimens[1].permeated"
+    },
+    {
+      "table": 1,
+      "row": 9,
+      "col": 8,
+      "tag": "s2_syl2",
+      "source": "srecord:1:IP-0190:specimens[2].pressure"
+    },
+    {
+      "table": 1,
+      "row": 9,
+      "col": 9,
+      "tag": "s2_sqk2",
+      "source": "srecord:1:IP-0190:specimens[2].permeated"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 8,
+      "tag": "s2_syl3",
+      "source": "srecord:1:IP-0190:specimens[3].pressure"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 9,
+      "tag": "s2_sqk3",
+      "source": "srecord:1:IP-0190:specimens[3].permeated"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 8,
+      "tag": "s2_syl4",
+      "source": "srecord:1:IP-0190:specimens[4].pressure"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 9,
+      "tag": "s2_sqk4",
+      "source": "srecord:1:IP-0190:specimens[4].permeated"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "col": 8,
+      "tag": "s2_syl5",
+      "source": "srecord:1:IP-0190:specimens[5].pressure"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "col": 9,
+      "tag": "s2_sqk5",
+      "source": "srecord:1:IP-0190:specimens[5].permeated"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 0,
+      "tag": "s3_bh",
+      "source": "sample:2:sampleCode"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 1,
+      "tag": "s3_gcbw",
+      "source": "sample:2:structuralPart"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 2,
+      "tag": "s3_sdj",
+      "source": "sample:2:model"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 3,
+      "tag": "s3_ccm",
+      "source": "sample:2:specification"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 4,
+      "tag": "s3_cxrq",
+      "source": "sample:2:arrivalDate"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 6,
+      "tag": "s3_lq",
+      "source": "sample:2:age"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 7,
+      "tag": "s3_yhtj",
+      "source": "sample:2:curingCondition"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 5,
+      "tag": "s3_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 10,
+      "tag": "s3_jd",
+      "source": "srecord:2:IP-0190:gradeLabel"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 8,
+      "tag": "s3_syl0",
+      "source": "srecord:2:IP-0190:specimens[0].pressure"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 9,
+      "tag": "s3_sqk0",
+      "source": "srecord:2:IP-0190:specimens[0].permeated"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 8,
+      "tag": "s3_syl1",
+      "source": "srecord:2:IP-0190:specimens[1].pressure"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 9,
+      "tag": "s3_sqk1",
+      "source": "srecord:2:IP-0190:specimens[1].permeated"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "col": 8,
+      "tag": "s3_syl2",
+      "source": "srecord:2:IP-0190:specimens[2].pressure"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "col": 9,
+      "tag": "s3_sqk2",
+      "source": "srecord:2:IP-0190:specimens[2].permeated"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "col": 8,
+      "tag": "s3_syl3",
+      "source": "srecord:2:IP-0190:specimens[3].pressure"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "col": 9,
+      "tag": "s3_sqk3",
+      "source": "srecord:2:IP-0190:specimens[3].permeated"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 8,
+      "tag": "s3_syl4",
+      "source": "srecord:2:IP-0190:specimens[4].pressure"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 9,
+      "tag": "s3_sqk4",
+      "source": "srecord:2:IP-0190:specimens[4].permeated"
+    },
+    {
+      "table": 1,
+      "row": 18,
+      "col": 8,
+      "tag": "s3_syl5",
+      "source": "srecord:2:IP-0190:specimens[5].pressure"
+    },
+    {
+      "table": 1,
+      "row": 18,
+      "col": 9,
+      "tag": "s3_sqk5",
+      "source": "srecord:2:IP-0190:specimens[5].permeated"
+    },
+    {
+      "table": 1,
+      "row": 19,
+      "col": 1,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 1,
+      "row": 20,
+      "col": 1,
+      "tag": "c_bz",
+      "source": "common.bz"
+    }
+  ]
+}

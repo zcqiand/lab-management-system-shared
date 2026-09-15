@@ -1,0 +1,441 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-105-1",
+  "comment": "RN-105-1 抗压强度 grid manifest（5 段 × 12 cell 版，2026-07-25）。TABLE#0 共 18 行：r0 表头 + r1-r15 数据 5 段 × 3 行 + r16 jcl + r17 bz。每段 3 行高放 1 个样品（vMerge restart+continue）；段内 ybbh/gcbw/.../yhtj/dbz 9 列合并显示，kyqd 列 3 个独立 cell（col=8）分别为 kyqd0/kyqd1/kyqd2 → 3 个试件强度各 1 cell（段内 3 行高正好容纳 3 行字）。manifest tag：p<pos>_<field>，pos ∈ {0,1,2,3,4} 对应 5 段。1 样品 → 1 SpecimenRow（kyqd0/1/2 各 1 值）。flattenForDocx 按 row:N:field 取 structured.rows[N][field]。",
+  "cells": [
+    {
+      "table": 1,
+      "row": 1,
+      "col": 0,
+      "tag": "p0_ybbh",
+      "source": "row:0:ybbh"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 1,
+      "tag": "p0_gcbw",
+      "source": "row:0:gcbw"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 2,
+      "tag": "p0_sjdj",
+      "source": "row:0:sjdj"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 3,
+      "tag": "p0_gccm",
+      "source": "row:0:gccm"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 4,
+      "tag": "p0_cxrq",
+      "source": "row:0:cxrq"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 5,
+      "tag": "p0_jcrq",
+      "source": "row:0:jcrq"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 6,
+      "tag": "p0_lq",
+      "source": "row:0:lq"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 7,
+      "tag": "p0_yhtj",
+      "source": "row:0:yhtj"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 8,
+      "tag": "p0_kyqd0",
+      "source": "row:0:kyqd0"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "col": 8,
+      "tag": "p0_kyqd1",
+      "source": "row:0:kyqd1"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "col": 8,
+      "tag": "p0_kyqd2",
+      "source": "row:0:kyqd2"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "col": 9,
+      "tag": "p0_dbz",
+      "source": "row:0:dbz"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 0,
+      "tag": "p1_ybbh",
+      "source": "row:1:ybbh"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 1,
+      "tag": "p1_gcbw",
+      "source": "row:1:gcbw"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 2,
+      "tag": "p1_sjdj",
+      "source": "row:1:sjdj"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 3,
+      "tag": "p1_gccm",
+      "source": "row:1:gccm"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 4,
+      "tag": "p1_cxrq",
+      "source": "row:1:cxrq"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 5,
+      "tag": "p1_jcrq",
+      "source": "row:1:jcrq"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 6,
+      "tag": "p1_lq",
+      "source": "row:1:lq"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 7,
+      "tag": "p1_yhtj",
+      "source": "row:1:yhtj"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 8,
+      "tag": "p1_kyqd0",
+      "source": "row:1:kyqd0"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "col": 8,
+      "tag": "p1_kyqd1",
+      "source": "row:1:kyqd1"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "col": 8,
+      "tag": "p1_kyqd2",
+      "source": "row:1:kyqd2"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "col": 9,
+      "tag": "p1_dbz",
+      "source": "row:1:dbz"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 0,
+      "tag": "p2_ybbh",
+      "source": "row:2:ybbh"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 1,
+      "tag": "p2_gcbw",
+      "source": "row:2:gcbw"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 2,
+      "tag": "p2_sjdj",
+      "source": "row:2:sjdj"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 3,
+      "tag": "p2_gccm",
+      "source": "row:2:gccm"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 4,
+      "tag": "p2_cxrq",
+      "source": "row:2:cxrq"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 5,
+      "tag": "p2_jcrq",
+      "source": "row:2:jcrq"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 6,
+      "tag": "p2_lq",
+      "source": "row:2:lq"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 7,
+      "tag": "p2_yhtj",
+      "source": "row:2:yhtj"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 8,
+      "tag": "p2_kyqd0",
+      "source": "row:2:kyqd0"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "col": 8,
+      "tag": "p2_kyqd1",
+      "source": "row:2:kyqd1"
+    },
+    {
+      "table": 1,
+      "row": 9,
+      "col": 8,
+      "tag": "p2_kyqd2",
+      "source": "row:2:kyqd2"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "col": 9,
+      "tag": "p2_dbz",
+      "source": "row:2:dbz"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 0,
+      "tag": "p3_ybbh",
+      "source": "row:3:ybbh"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 1,
+      "tag": "p3_gcbw",
+      "source": "row:3:gcbw"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 2,
+      "tag": "p3_sjdj",
+      "source": "row:3:sjdj"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 3,
+      "tag": "p3_gccm",
+      "source": "row:3:gccm"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 4,
+      "tag": "p3_cxrq",
+      "source": "row:3:cxrq"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 5,
+      "tag": "p3_jcrq",
+      "source": "row:3:jcrq"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 6,
+      "tag": "p3_lq",
+      "source": "row:3:lq"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 7,
+      "tag": "p3_yhtj",
+      "source": "row:3:yhtj"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 8,
+      "tag": "p3_kyqd0",
+      "source": "row:3:kyqd0"
+    },
+    {
+      "table": 1,
+      "row": 11,
+      "col": 8,
+      "tag": "p3_kyqd1",
+      "source": "row:3:kyqd1"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "col": 8,
+      "tag": "p3_kyqd2",
+      "source": "row:3:kyqd2"
+    },
+    {
+      "table": 1,
+      "row": 10,
+      "col": 9,
+      "tag": "p3_dbz",
+      "source": "row:3:dbz"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 0,
+      "tag": "p4_ybbh",
+      "source": "row:4:ybbh"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 1,
+      "tag": "p4_gcbw",
+      "source": "row:4:gcbw"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 2,
+      "tag": "p4_sjdj",
+      "source": "row:4:sjdj"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 3,
+      "tag": "p4_gccm",
+      "source": "row:4:gccm"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 4,
+      "tag": "p4_cxrq",
+      "source": "row:4:cxrq"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 5,
+      "tag": "p4_jcrq",
+      "source": "row:4:jcrq"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 6,
+      "tag": "p4_lq",
+      "source": "row:4:lq"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 7,
+      "tag": "p4_yhtj",
+      "source": "row:4:yhtj"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 8,
+      "tag": "p4_kyqd0",
+      "source": "row:4:kyqd0"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "col": 8,
+      "tag": "p4_kyqd1",
+      "source": "row:4:kyqd1"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "col": 8,
+      "tag": "p4_kyqd2",
+      "source": "row:4:kyqd2"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "col": 9,
+      "tag": "p4_dbz",
+      "source": "row:4:dbz"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "col": 0,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 1,
+      "row": 17,
+      "col": 0,
+      "tag": "c_bz",
+      "source": "common.bz"
+    }
+  ]
+}

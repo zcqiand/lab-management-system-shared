@@ -1,0 +1,651 @@
+{
+  "mode": "grid",
+  "reportNameCode": "RN-101",
+  "comment": "水泥检测报告 grid manifest。表头段落(委托单位/报告编号/工程名称/施工单位/工程部位/见证单位/见证人/批准/审核/签发日期)由 inject_header_labels 注入通用 tag；本 manifest 只列表格内的格子。列布局：序号=col0, 检测项目=col1-4(子项名 col3), 检测依据=col5-6, 技术要求=col7-8, 检测结果=col9-13(强度块含 单个强度值/平均值), 单项判定=col14。强度块每龄期只填 平均值(col13)+判定(col14)，单个强度值子格留空(形似合理)。",
+  "cells": [
+    {
+      "table": 0,
+      "row": 0,
+      "col": 4,
+      "tag": "c_ypbh",
+      "source": "sample.sampleCode"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 8,
+      "tag": "c_ypmc",
+      "source": "sample.sampleName"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "col": 14,
+      "tag": "c_jcbl",
+      "source": "common.jcbl"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 4,
+      "tag": "c_ypsl",
+      "source": "sample.sampleQuantity"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 8,
+      "tag": "c_pzdj",
+      "source": "sample.model"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "col": 14,
+      "tag": "c_ccbh",
+      "source": "sample.batchNumber"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 4,
+      "tag": "c_yply",
+      "source": "common.yply"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "col": 8,
+      "tag": "c_ypms",
+      "source": "common.ypms"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 4,
+      "tag": "c_ccrq",
+      "source": "sample.arrivalDate"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "col": 8,
+      "tag": "c_sccj",
+      "source": "common.sccj"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 4,
+      "tag": "c_sylr",
+      "source": "common.sylr"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 8,
+      "tag": "c_jcrq",
+      "source": "common.qfrq"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "col": 14,
+      "tag": "c_jchj",
+      "source": "common.jchj"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "col": 4,
+      "tag": "c_jcdz",
+      "source": "common.jcdz"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "col": 4,
+      "tag": "c_zysb",
+      "source": "common.zysb"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "col": 4,
+      "tag": "c_pdyj",
+      "source": "common.jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 5,
+      "tag": "r9_jcyj",
+      "source": "param:IP-0548:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 7,
+      "tag": "r9_jz",
+      "source": "param:IP-0548:jz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 9,
+      "tag": "r9_jcz",
+      "source": "param:IP-0548:jcz"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "col": 14,
+      "tag": "r9_jd",
+      "source": "param:IP-0548:jd"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 5,
+      "tag": "r10_jcyj",
+      "source": "param:IP-0549:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 7,
+      "tag": "r10_jz",
+      "source": "param:IP-0549:jz"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 9,
+      "tag": "r10_jcz",
+      "source": "param:IP-0549:jcz"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "col": 14,
+      "tag": "r10_jd",
+      "source": "param:IP-0549:jd"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 5,
+      "tag": "r11_jcyj",
+      "source": "param:IP-0550:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 7,
+      "tag": "r11_jz",
+      "source": "param:IP-0550:jz"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 9,
+      "tag": "r11_jcz",
+      "source": "param:IP-0550:jcz"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "col": 14,
+      "tag": "r11_jd",
+      "source": "param:IP-0550:jd"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 5,
+      "tag": "r12_jcyj",
+      "source": "param:IP-0551:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 7,
+      "tag": "r12_jz",
+      "source": "param:IP-0551:jz"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 9,
+      "tag": "r12_jcz",
+      "source": "param:IP-0551:jcz"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "col": 14,
+      "tag": "r12_jd",
+      "source": "param:IP-0551:jd"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 5,
+      "tag": "r13_jcyj",
+      "source": "param:IP-0552:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 7,
+      "tag": "r13_jz",
+      "source": "param:IP-0552:jz"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 9,
+      "tag": "r13_jcz",
+      "source": "param:IP-0552:jcz"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "col": 14,
+      "tag": "r13_jd",
+      "source": "param:IP-0552:jd"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 5,
+      "tag": "r14_jcyj",
+      "source": "param:IP-0553:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 7,
+      "tag": "r14_jz",
+      "source": "param:IP-0553:jz"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 9,
+      "tag": "r14_jcz",
+      "source": "param:IP-0553:jcz"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "col": 14,
+      "tag": "r14_jd",
+      "source": "param:IP-0553:jd"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 5,
+      "tag": "r15_jcyj",
+      "source": "param:IP-0008:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 7,
+      "tag": "r15_jz",
+      "source": "param:IP-0008:jz"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 9,
+      "tag": "r15_jcz",
+      "source": "param:IP-0008:jcz"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "col": 14,
+      "tag": "r15_jd",
+      "source": "param:IP-0008:jd"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 5,
+      "tag": "r16_jcyj",
+      "source": "param:IP-0554:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 7,
+      "tag": "r16_jz",
+      "source": "param:IP-0554:jz"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 9,
+      "tag": "r16_jcz",
+      "source": "param:IP-0554:jcz"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "col": 14,
+      "tag": "r16_jd",
+      "source": "param:IP-0554:jd"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 5,
+      "tag": "r17_jcyj",
+      "source": "param:IP-0004:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 7,
+      "tag": "r17_jz",
+      "source": "param:IP-0004:jz"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 9,
+      "tag": "r17_jcz",
+      "source": "param:IP-0004:jcz"
+    },
+    {
+      "table": 0,
+      "row": 17,
+      "col": 14,
+      "tag": "r17_jd",
+      "source": "param:IP-0004:jd"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 5,
+      "tag": "r18_jcyj",
+      "source": "param:IP-0007:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 7,
+      "tag": "r18_jz",
+      "source": "param:IP-0007:jz"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 9,
+      "tag": "r18_jcz",
+      "source": "param:IP-0007:jcz"
+    },
+    {
+      "table": 0,
+      "row": 18,
+      "col": 14,
+      "tag": "r18_jd",
+      "source": "param:IP-0007:jd"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 13,
+      "tag": "qd3z_avg",
+      "source": "param:IP-0555:jcz"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 14,
+      "tag": "qd3z_jd",
+      "source": "param:IP-0555:jd"
+    },
+    {
+      "table": 0,
+      "row": 22,
+      "col": 13,
+      "tag": "qd3y_avg",
+      "source": "param:IP-0556:jcz"
+    },
+    {
+      "table": 0,
+      "row": 22,
+      "col": 14,
+      "tag": "qd3y_jd",
+      "source": "param:IP-0556:jd"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 13,
+      "tag": "qd28z_avg",
+      "source": "param:IP-0557:jcz"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 14,
+      "tag": "qd28z_jd",
+      "source": "param:IP-0557:jd"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 13,
+      "tag": "qd28y_avg",
+      "source": "param:IP-0558:jcz"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 14,
+      "tag": "qd28y_jd",
+      "source": "param:IP-0558:jd"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 5,
+      "tag": "r19_jcyj",
+      "source": "param:IP-0555:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 19,
+      "col": 7,
+      "tag": "r19_jz",
+      "source": "param:IP-0555:jz"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 9,
+      "tag": "qd3z_0",
+      "source": "param:IP-0555:s0"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 10,
+      "tag": "qd3z_1",
+      "source": "param:IP-0555:s1"
+    },
+    {
+      "table": 0,
+      "row": 20,
+      "col": 12,
+      "tag": "qd3z_2",
+      "source": "param:IP-0555:s2"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 7,
+      "tag": "r20_jz",
+      "source": "param:IP-0556:jz"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 5,
+      "tag": "r20_jcyj",
+      "source": "param:IP-0556:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 9,
+      "tag": "qd3y_0",
+      "source": "param:IP-0556:s0"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 10,
+      "tag": "qd3y_1",
+      "source": "param:IP-0556:s1"
+    },
+    {
+      "table": 0,
+      "row": 21,
+      "col": 12,
+      "tag": "qd3y_2",
+      "source": "param:IP-0556:s2"
+    },
+    {
+      "table": 0,
+      "row": 22,
+      "col": 9,
+      "tag": "qd3y_3",
+      "source": "param:IP-0556:s3"
+    },
+    {
+      "table": 0,
+      "row": 22,
+      "col": 10,
+      "tag": "qd3y_4",
+      "source": "param:IP-0556:s4"
+    },
+    {
+      "table": 0,
+      "row": 22,
+      "col": 12,
+      "tag": "qd3y_5",
+      "source": "param:IP-0556:s5"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 7,
+      "tag": "r21_jz",
+      "source": "param:IP-0557:jz"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 5,
+      "tag": "r21_jcyj",
+      "source": "param:IP-0557:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 9,
+      "tag": "qd28z_0",
+      "source": "param:IP-0557:s0"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 10,
+      "tag": "qd28z_1",
+      "source": "param:IP-0557:s1"
+    },
+    {
+      "table": 0,
+      "row": 23,
+      "col": 12,
+      "tag": "qd28z_2",
+      "source": "param:IP-0557:s2"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 7,
+      "tag": "r22_jz",
+      "source": "param:IP-0558:jz"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 5,
+      "tag": "r22_jcyj",
+      "source": "param:IP-0558:jcyj"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 9,
+      "tag": "qd28y_0",
+      "source": "param:IP-0558:s0"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 10,
+      "tag": "qd28y_1",
+      "source": "param:IP-0558:s1"
+    },
+    {
+      "table": 0,
+      "row": 24,
+      "col": 12,
+      "tag": "qd28y_2",
+      "source": "param:IP-0558:s2"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 9,
+      "tag": "qd28y_3",
+      "source": "param:IP-0558:s3"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 10,
+      "tag": "qd28y_4",
+      "source": "param:IP-0558:s4"
+    },
+    {
+      "table": 0,
+      "row": 25,
+      "col": 12,
+      "tag": "qd28y_5",
+      "source": "param:IP-0558:s5"
+    },
+    {
+      "table": 0,
+      "row": 26,
+      "col": 4,
+      "tag": "c_jcl",
+      "source": "common.jcl"
+    },
+    {
+      "table": 0,
+      "row": 27,
+      "col": 4,
+      "tag": "c_bz",
+      "source": "common.bz"
+    }
+  ]
+}
