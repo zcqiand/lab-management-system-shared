@@ -13,6 +13,9 @@ const CONSUMERS = [
   "../../lab-management-system-vue/src/data/templates",
   "../../lab-management-system-nextjs/src/data/templates",
   "../../lab-management-system-nextjs/public/templates",
+  // react/vue 的运行时 docx 服务位（ReportPreviewModal fetch /templates/*），spec §3.1 补锁
+  "../../lab-management-system-react/public/templates",
+  "../../lab-management-system-vue/public/templates",
 ].map((p) => ({ rel: p, abs: resolve(__dirname, p) }));
 
 // 副本私有文件白名单：消费位本地生成物（各自 scripts/gen-template-index.mjs 产物），
@@ -22,6 +25,8 @@ const ALLOWED_EXTRA = {
   "../../lab-management-system-vue/src/data/templates": ["manifests.ts"],
   "../../lab-management-system-nextjs/src/data/templates": ["manifests.ts"],
   "../../lab-management-system-nextjs/public/templates": [],
+  "../../lab-management-system-react/public/templates": [],
+  "../../lab-management-system-vue/public/templates": [],
 };
 
 const CHECK = process.argv.includes("--check");
