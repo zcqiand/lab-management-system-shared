@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 // scripts/seed-db.mjs — 把 seeds/*.json（DB 快照形状）upsert 到目标 PG。
 //
+// saas 家族姊妹脚本（saas-identity-platform-shared/scripts/seed-db.mjs）语义为
+// TRUNCATE 全量重灌，与本脚本 upsert 幂等不同，改种子语义时两处勿混。
+//
 // 与 lab-nextjs/scripts/seed-from-snapshot.mjs 的差异（2026-09-15 移植时定）：
 //   - SEEDS_DIR = <shared>/seeds（不再读 nextjs src/seeds）
 //   - 默认 upsert ON CONFLICT (<PK>) DO UPDATE（可重跑、不动目标库其他行）；
