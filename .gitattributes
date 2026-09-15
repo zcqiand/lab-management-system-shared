@@ -1,0 +1,7 @@
+# 二进制资产：模板 docx 禁止任何换行/编码改写
+*.docx binary
+# 文本资产：LF 归一，防 autocrlf checkout 后 parity 哈希假红（Phase 1 Task 4 裁定）
+*.json text eol=lf
+*.mjs text eol=lf
+*.ts text eol=lf
+*.md text eol=lf
