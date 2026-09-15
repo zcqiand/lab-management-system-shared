@@ -4,15 +4,18 @@
 import { describe, it, expect } from "vitest";
 import { readdirSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
-import { resolve, dirname, relative } from "node:path";
+import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SHARED_SEEDS = resolve(__dirname, "../seeds");
 const NEXTJS_SEEDS = resolve(__dirname, "../../lab-management-system-nextjs/src/seeds");
 
+// hash 前 eol 归一：对 CRLF/LF 噪音免疫（.gitattributes 是第一道防线，这是第二道）
 const sha = (p: string) =>
-  createHash("sha256").update(readFileSync(p)).digest("hex");
+  createHash("sha256")
+    .update(readFileSync(p).toString().replace(/\r\n/g, "\n"))
+    .digest("hex");
 
 describe("seeds 双源漂移防护（shared ↔ lab-nextjs）", () => {
   it("两目录 JSON 文件集合与逐文件 sha256 一致", () => {
@@ -22,7 +25,7 @@ describe("seeds 双源漂移防护（shared ↔ lab-nextjs）", () => {
 
     const drifted = shared.filter((f) => sha(resolve(SHARED_SEEDS, f)) !== sha(resolve(NEXTJS_SEEDS, f)));
     expect(
-      drifted.map((f) => relative(process.cwd(), resolve(SHARED_SEEDS, f))),
+      drifted.map((f) => `seeds/${f}`),
       "内容漂移——改 shared/seeds 必须同 commit 同步 lab-nextjs/src/seeds（双写约定，seeds/README.md）",
     ).toEqual([]);
   });
