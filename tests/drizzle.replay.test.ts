@@ -46,6 +46,17 @@ const REQUIRED_PG_ENV = [
 ];
 const allPgEnvPresent = REQUIRED_PG_ENV.every((name) => !!process.env[name]);
 
+// 家族安全互锁（2026-09-14 saas_test 被清库事故）：本测试会 DROP public 全量重灌
+// lab DDL，目标库必须显式是 lab_*——suite 共享 db-env.sh 的 PG_DATABASE_TEST
+// 默认值是 saas_test，lab 门禁链带着这个默认值跑到这里就把 saas 测试库清了。
+if (allPgEnvPresent && !process.env.PG_DATABASE_TEST!.startsWith("lab_")) {
+  throw new Error(
+    `PG_DATABASE_TEST=${process.env.PG_DATABASE_TEST} 不是 lab_* 库——` +
+      "drizzle.replay 会 DROP public 重灌 lab DDL，拒绝跨族执行" +
+      "（suite scripts/lib/db-env.sh 默认 saas_test，lab 链必须显式覆盖为 lab_test）",
+  );
+}
+
 // 25 张业务表（与 src/db/schema.ts 一一对应；簿记表 flyway_schema_history /
 // __schema_migrations / __drizzle_migrations 不在目标模型里）
 const EXPECTED_TABLES = [
