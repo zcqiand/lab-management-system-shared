@@ -1,0 +1,912 @@
+[
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-10",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "10",
+    "remark": "",
+    "sort_order": 62,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-15",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "15",
+    "remark": "",
+    "sort_order": 63,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-20",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "20",
+    "remark": "",
+    "sort_order": 64,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-8",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "8",
+    "remark": "",
+    "sort_order": 61,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q195a",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q195a",
+    "remark": "",
+    "sort_order": 67,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q215A",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q215A",
+    "remark": "",
+    "sort_order": 55,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q215B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q215B",
+    "remark": "",
+    "sort_order": 68,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q235A",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q235A",
+    "remark": "",
+    "sort_order": 69,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q235B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q235B",
+    "remark": "",
+    "sort_order": 70,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q235C",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q235C",
+    "remark": "",
+    "sort_order": 56,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q275A",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q275A",
+    "remark": "",
+    "sort_order": 65,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q275B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q275B",
+    "remark": "",
+    "sort_order": 66,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q295A",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q295A",
+    "remark": "",
+    "sort_order": 71,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q295B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q295B",
+    "remark": "",
+    "sort_order": 72,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q345A",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q345A",
+    "remark": "",
+    "sort_order": 73,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q345B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q345B",
+    "remark": "",
+    "sort_order": 74,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q345C",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q345C",
+    "remark": "",
+    "sort_order": 60,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q355B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q355B",
+    "remark": "",
+    "sort_order": 57,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q355C",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q355C",
+    "remark": "",
+    "sort_order": 58,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P12-金属管材-Q355D",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Q355D",
+    "remark": "",
+    "sort_order": 59,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HPB235",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HPB235",
+    "remark": "",
+    "sort_order": 26,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HPB300",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HPB300",
+    "remark": "",
+    "sort_order": 27,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB335",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB335",
+    "remark": "",
+    "sort_order": 28,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB335E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB335E",
+    "remark": "",
+    "sort_order": 29,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB400",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB400",
+    "remark": "",
+    "sort_order": 30,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB400E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB400E",
+    "remark": "",
+    "sort_order": 31,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB500",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB500",
+    "remark": "",
+    "sort_order": 32,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRB500E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRB500E",
+    "remark": "",
+    "sort_order": 33,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF335",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF335",
+    "remark": "",
+    "sort_order": 34,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF335E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF335E",
+    "remark": "",
+    "sort_order": 35,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF400",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF400",
+    "remark": "",
+    "sort_order": 36,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF400E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF400E",
+    "remark": "",
+    "sort_order": 37,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF500",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF500",
+    "remark": "",
+    "sort_order": 38,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-HRBF500E",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "HRBF500E",
+    "remark": "",
+    "sort_order": 39,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-Q235A",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "Q235A",
+    "remark": "",
+    "sort_order": 40,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P15-Q235B",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "Q235B",
+    "remark": "",
+    "sort_order": 41,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-1050",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "1050",
+    "remark": "",
+    "sort_order": 42,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-1050A",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "1050A",
+    "remark": "",
+    "sort_order": 43,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-1060",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "1060",
+    "remark": "",
+    "sort_order": 44,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-1100",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "1100",
+    "remark": "",
+    "sort_order": 45,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-3003",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "3003",
+    "remark": "",
+    "sort_order": 46,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-3004",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "3004",
+    "remark": "",
+    "sort_order": 47,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-3005",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "3005",
+    "remark": "",
+    "sort_order": 48,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-3A21",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "3A21",
+    "remark": "",
+    "sort_order": 49,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-5005",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "5005",
+    "remark": "",
+    "sort_order": 50,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-5052",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "5052",
+    "remark": "",
+    "sort_order": 51,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-5754",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "5754",
+    "remark": "",
+    "sort_order": 52,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6005",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6005",
+    "remark": "",
+    "sort_order": 82,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6060",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6060",
+    "remark": "",
+    "sort_order": 83,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6061",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6061",
+    "remark": "",
+    "sort_order": 84,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6063",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6063",
+    "remark": "",
+    "sort_order": 85,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6063A",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6063A",
+    "remark": "",
+    "sort_order": 86,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6463",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6463",
+    "remark": "",
+    "sort_order": 87,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-6463A",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "6463A",
+    "remark": "",
+    "sort_order": 88,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-8011A",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "8011A",
+    "remark": "",
+    "sort_order": 53,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P20-8A06",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "8A06",
+    "remark": "",
+    "sort_order": 54,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CPB550",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "冷拔光面 CPB550",
+    "remark": "",
+    "sort_order": 81,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CRB550",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "冷轧带肋 CRB550",
+    "remark": "",
+    "sort_order": 76,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CRB600H",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "高延性冷轧带肋 CRB600H",
+    "remark": "",
+    "sort_order": 80,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CRB650",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "冷轧带肋 CRB650",
+    "remark": "",
+    "sort_order": 77,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CRB800",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "冷轧带肋 CRB800",
+    "remark": "",
+    "sort_order": 78,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-CRB970",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "冷轧带肋 CRB970",
+    "remark": "",
+    "sort_order": 79,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HPB235",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧光圆 HPB235",
+    "remark": "",
+    "sort_order": 13,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HPB300",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧光圆 HPB300",
+    "remark": "",
+    "sort_order": 14,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB335",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB335",
+    "remark": "",
+    "sort_order": 1,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB335E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB335E",
+    "remark": "",
+    "sort_order": 10,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB400",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB400",
+    "remark": "",
+    "sort_order": 5,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB400-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRB400",
+    "remark": "",
+    "sort_order": 15,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB400E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB400E",
+    "remark": "",
+    "sort_order": 11,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB400E-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRB400E",
+    "remark": "",
+    "sort_order": 20,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB500",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB500",
+    "remark": "",
+    "sort_order": 6,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB500-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRB500",
+    "remark": "",
+    "sort_order": 19,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB500E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRB500E",
+    "remark": "",
+    "sort_order": 12,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB500E-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRB500E",
+    "remark": "",
+    "sort_order": 21,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRB600",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRB600",
+    "remark": "",
+    "sort_order": 75,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF335",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF335",
+    "remark": "",
+    "sort_order": 7,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF335E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF335E",
+    "remark": "",
+    "sort_order": 2,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF400",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF400",
+    "remark": "",
+    "sort_order": 8,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF400-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRBF400",
+    "remark": "",
+    "sort_order": 22,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF400E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF400E",
+    "remark": "",
+    "sort_order": 3,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF400E-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRBF400E",
+    "remark": "",
+    "sort_order": 24,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF500",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF500",
+    "remark": "",
+    "sort_order": 9,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF500-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRBF500",
+    "remark": "",
+    "sort_order": 23,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF500E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "热轧带肋 HRBF500E",
+    "remark": "",
+    "sort_order": 4,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-HRBF500E-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 HRBF500E",
+    "remark": "",
+    "sort_order": 25,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-RRB400",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 RRB400",
+    "remark": "",
+    "sort_order": 16,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-RRB400W",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 RRB400W",
+    "remark": "",
+    "sort_order": 18,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "BR-OBJ-SP01-P2-RRB500",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "钢筋带肋 RRB500",
+    "remark": "",
+    "sort_order": 17,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "HRB400",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "HRB400（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "HRB400E",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "HRB400E（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "HRBF400",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "HRBF400（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
+    "tenant_id": "TENANT-001"
+  }
+]

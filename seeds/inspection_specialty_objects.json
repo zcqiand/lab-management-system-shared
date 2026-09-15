@@ -1,0 +1,779 @@
+[
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P10-防水涂料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P11",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P13",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P14",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P16-塑料波纹管",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P16-金属波纹管",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P18-位移相关型阻尼器",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P18-速度相关型阻尼器",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P19-叠层橡胶隔震支座",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P19-建筑摩擦摆隔震支座",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P21",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P22",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P23",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P3-粗骨料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P3-细骨料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P3-轻集料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP01",
+    "inspection_object_code": "OBJ-SP01-P9",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P8",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP02",
+    "inspection_object_code": "OBJ-SP02-P9",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP03",
+    "inspection_object_code": "OBJ-SP03-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP04",
+    "inspection_object_code": "OBJ-SP04-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP04",
+    "inspection_object_code": "OBJ-SP04-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP04",
+    "inspection_object_code": "OBJ-SP04-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP04",
+    "inspection_object_code": "OBJ-SP04-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP04",
+    "inspection_object_code": "OBJ-SP04-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P10",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P11-绝热材料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P11-采暖散热器",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P11-风机盘管机组",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P12-灯具",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P12-照明光源",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P12-设备",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P13-太阳能光伏发电系统",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P13-太阳能光伏组件",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P13-太阳能集热器",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P8",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP05",
+    "inspection_object_code": "OBJ-SP05-P9",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP06",
+    "inspection_object_code": "OBJ-SP06-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP06",
+    "inspection_object_code": "OBJ-SP06-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP06",
+    "inspection_object_code": "OBJ-SP06-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P10",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P11",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P12",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P13",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P14",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P15",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P16",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P17",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P18",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P19",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P5-木质素纤维",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P5-矿粉",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P5-粗集料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P5-细集料",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P8",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP07",
+    "inspection_object_code": "OBJ-SP07-P9",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP08",
+    "inspection_object_code": "OBJ-SP08-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP08",
+    "inspection_object_code": "OBJ-SP08-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP08",
+    "inspection_object_code": "OBJ-SP08-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP08",
+    "inspection_object_code": "OBJ-SP08-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP08",
+    "inspection_object_code": "OBJ-SP08-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P1",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P2",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P3",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P4",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P5",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P6",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P7",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P8",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_specialty_code": "SP09",
+    "inspection_object_code": "OBJ-SP09-P9",
+    "remark": null,
+    "created_at": "",
+    "updated_at": ""
+  }
+]

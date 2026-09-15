@@ -1,0 +1,3050 @@
+[
+  {
+    "inspection_standard_code": "DB33/T 1095 -2013",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "DB33/T 1095 -2013",
+    "inspection_parameter_code": "IP-0005",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "DB33/T 1095 -2013",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "DB33/T 1095 -2013",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "DB33/T 1095 -2013",
+    "inspection_parameter_code": "IP-0225",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 13788-2024",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 13788-2024",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 13788-2024",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0086",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0150",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.1-2024",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0086",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0150",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0152",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 1499.2-2024",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0003",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0548",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0549",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0550",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0551",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0552",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0553",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0554",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0555",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0556",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0557",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 175-2023",
+    "inspection_parameter_code": "IP-0558",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18173.4-2010",
+    "inspection_parameter_code": "IP-0016",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18173.4-2010",
+    "inspection_parameter_code": "IP-0039",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18173.4-2010",
+    "inspection_parameter_code": "IP-0040",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0019",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0030",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18242-2008",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0019",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0030",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB18243-2008",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0030",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 18967-2009",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 23439-2009",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 23439-2009",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 23439-2009",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 23439-2009",
+    "inspection_parameter_code": "IP-0199",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 23439-2009",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0195",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0196",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0197",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0200",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0206",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0207",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0209",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0210",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0212",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0214",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0215",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0216",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0489",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0544",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0545",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0546",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50119-2013",
+    "inspection_parameter_code": "IP-0547",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0066",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0234",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0244",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50204-2015",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0018",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0034",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 50208-2011",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0097",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0098",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0099",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0154",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0173",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0176",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0183",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0185",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55008-2021",
+    "inspection_parameter_code": "IP-0523",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55030-2022",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 55030-2022",
+    "inspection_parameter_code": "IP-0452",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 6566-2010",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0200",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0206",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0207",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0209",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0212",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0215",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0216",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0386",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB 8076-2008",
+    "inspection_parameter_code": "IP-0544",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 10294-2008",
+    "inspection_parameter_code": "IP-0327",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11945-2019",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0189",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0327",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11968-2020",
+    "inspection_parameter_code": "IP-0452",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11969-2020",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11969-2020",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11969-2020",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 11969-2020",
+    "inspection_parameter_code": "IP-0189",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1345-2005",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1346-2024",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1346-2024",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 13544-2011",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 13544-2011",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 13545 - 2014",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 13545 - 2014",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0183",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14684-2022",
+    "inspection_parameter_code": "IP-0185",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0173",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 14685-2022",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 15762-2020",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 15762-2020",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 15762-2020",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 15762-2020",
+    "inspection_parameter_code": "IP-0189",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 15762-2020",
+    "inspection_parameter_code": "IP-0327",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 1596-2017",
+    "inspection_parameter_code": "IP-0219",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0017",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0025",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0034",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0045",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 16777-2008",
+    "inspection_parameter_code": "IP-0057",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 17671-2021",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 17671-2021",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0220",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0221",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18046-2017",
+    "inspection_parameter_code": "IP-0222",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18173.2-2014",
+    "inspection_parameter_code": "IP-0016",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18173.2-2014",
+    "inspection_parameter_code": "IP-0018",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18173.2-2014",
+    "inspection_parameter_code": "IP-0040",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18173.3-2014",
+    "inspection_parameter_code": "IP-0016",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18173.3-2014",
+    "inspection_parameter_code": "IP-0039",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0019",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2015-2017",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 208-2014",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 21144-2023",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 21144-2023",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 21839-2008",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0086",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0097",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0150",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0154",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0559",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 228.1-2021",
+    "inspection_parameter_code": "IP-0560",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 232-2024",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 24492-2009",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 24492-2009",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0005",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0225",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0296",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0452",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2542-2012",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 2542-2012",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 25779 - 2010",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 26538-2011",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 26538-2011",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 28900-2022",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 28900-2022",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 31061-2014",
+    "inspection_parameter_code": "IP-0016",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0005",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 3183-2025",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 326-2007",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 326-2007",
+    "inspection_parameter_code": "IP-0015",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 326-2007",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.10-2007",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.11-2007",
+    "inspection_parameter_code": "IP-0015",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.11-2007",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.14-2007",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.20-2007",
+    "inspection_parameter_code": "IP-0019",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.20-2007",
+    "inspection_parameter_code": "IP-0042",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.26-2007",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.4-2007",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.8-2007",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 328.8-2007",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 4111-2013",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 4111-2013",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 4111-2013",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0099",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0201",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0202",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50081-2019",
+    "inspection_parameter_code": "IP-0558",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50082-2024",
+    "inspection_parameter_code": "IP-0190",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50082-2024",
+    "inspection_parameter_code": "IP-0195",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50082-2024",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50082-2024",
+    "inspection_parameter_code": "IP-0452",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50123-2019",
+    "inspection_parameter_code": "IP-0032",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50123-2019",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50123-2019",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50123-2019",
+    "inspection_parameter_code": "IP-0378",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 50123-2019",
+    "inspection_parameter_code": "IP-0456",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 51003-2014",
+    "inspection_parameter_code": "IP-0219",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 5101-2017",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 528-2009",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 528-2009",
+    "inspection_parameter_code": "IP-0016",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 528-2009",
+    "inspection_parameter_code": "IP-0017",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 528-2009",
+    "inspection_parameter_code": "IP-0034",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 528-2009",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 8074-2008",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "GB/T 8074-2008",
+    "inspection_parameter_code": "IP-0220",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC 943-2004",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 2428-2017",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 2428-2017",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 2428-2017",
+    "inspection_parameter_code": "IP-0421",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 408-2005",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 408-2005",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 408-2005",
+    "inspection_parameter_code": "IP-0025",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 408-2005",
+    "inspection_parameter_code": "IP-0045",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 408-2005",
+    "inspection_parameter_code": "IP-0057",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0009",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0010",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0021",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0022",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0030",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0044",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 690-2008",
+    "inspection_parameter_code": "IP-0396",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0014",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0017",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0018",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0025",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0034",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0038",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0041",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0045",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JC/T 864-2023",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 107-2016",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 107-2016",
+    "inspection_parameter_code": "IP-0154",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 107-2016",
+    "inspection_parameter_code": "IP-0523",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 18-2012",
+    "inspection_parameter_code": "IP-0087",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0062",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0173",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0176",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0183",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ 52-2006",
+    "inspection_parameter_code": "IP-0185",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0005",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0223",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0225",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "inspection_parameter_code": "IP-0296",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JG/T 163-2013",
+    "inspection_parameter_code": "IP-0523",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0197",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3420-2020",
+    "inspection_parameter_code": "IP-0201",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3430-2020",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3430-2020",
+    "inspection_parameter_code": "IP-0226",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3430-2020",
+    "inspection_parameter_code": "IP-0378",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3430-2020",
+    "inspection_parameter_code": "IP-0456",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0375",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0405",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0431",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0432",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0433",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0434",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3432-2024",
+    "inspection_parameter_code": "IP-0442",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3441-2024",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3441-2024",
+    "inspection_parameter_code": "IP-0373",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG 3441-2024",
+    "inspection_parameter_code": "IP-0374",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0375",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0405",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0423",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0431",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0432",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0433",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0434",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0442",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0445",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0446",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "JTG F40-2004",
+    "inspection_parameter_code": "IP-0448",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "NY/T 671-2025",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "NY/T 671-2025",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "Q/ZTG 001-2025",
+    "inspection_parameter_code": "IP-0152",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "Q/ZTG 001-2025",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "Q/ZTG 001-2025",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "Q/ZTG 001-2025",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "SL/T 352-2020",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "SL/T 352-2020",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "SL/T 352-2020",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "SL/T 352-2020",
+    "inspection_parameter_code": "IP-0200",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "SL/T 352-2020",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0183",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0185",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB 10424-2018",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0001",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0002",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0004",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0007",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0008",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0055",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0056",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0074",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0156",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0170",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0171",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0172",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0175",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0176",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0177",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0178",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0179",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0183",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0184",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0204",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0217",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "TB∕T 3275-2018",
+    "inspection_parameter_code": "IP-0218",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "T/ZBTA 02-2024",
+    "inspection_parameter_code": "IP-0152",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "T/ZBTA 02-2024",
+    "inspection_parameter_code": "IP-0153",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "T/ZBTA 02-2024",
+    "inspection_parameter_code": "IP-0155",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "T/ZBTA 02-2024",
+    "inspection_parameter_code": "IP-0323",
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_standard_code": "T/ZBTA 02-2024",
+    "inspection_parameter_code": "IP-0523",
+    "created_at": "",
+    "updated_at": ""
+  }
+]

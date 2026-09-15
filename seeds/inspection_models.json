@@ -1,0 +1,1252 @@
+[
+  {
+    "code": "C30",
+    "inspection_object_code": "OBJ-SP01-P5",
+    "name": "C30（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-APP",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "APP 塑性体改性沥青防水卷材",
+    "remark": "",
+    "sort_order": 17,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-SBS",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "SBS 弹性体改性沥青防水卷材",
+    "remark": "",
+    "sort_order": 16,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "沥青复合胎柔性防水卷材",
+    "remark": "",
+    "sort_order": 18,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-2",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "改性沥青聚乙烯胎防水卷",
+    "remark": "",
+    "sort_order": 19,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-3",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "石油沥青纸胎油毡",
+    "remark": "",
+    "sort_order": 20,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-4",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "卷材与卷材",
+    "remark": "",
+    "sort_order": 40,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-5",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "卷材与铝板",
+    "remark": "",
+    "sort_order": 41,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-6",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "卷材与铝板(上表面)",
+    "remark": "",
+    "sort_order": 42,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P10-防水卷材-x-7",
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "name": "卷材与铝板(下表面)",
+    "remark": "",
+    "sort_order": 43,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P11-x",
+    "inspection_object_code": "OBJ-SP01-P11",
+    "name": "——",
+    "remark": "",
+    "sort_order": 72,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P11-x-2",
+    "inspection_object_code": "OBJ-SP01-P11",
+    "name": "低密度石灰石",
+    "remark": "",
+    "sort_order": 73,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P11-x-3",
+    "inspection_object_code": "OBJ-SP01-P11",
+    "name": "中密度石灰石",
+    "remark": "",
+    "sort_order": 74,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P11-x-4",
+    "inspection_object_code": "OBJ-SP01-P11",
+    "name": "高密度石灰石",
+    "remark": "",
+    "sort_order": 75,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-100",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-100",
+    "remark": "",
+    "sort_order": 35,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-115",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-115",
+    "remark": "",
+    "sort_order": 36,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-130",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-130",
+    "remark": "",
+    "sort_order": 37,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-50",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-50",
+    "remark": "",
+    "sort_order": 29,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-60",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-60",
+    "remark": "",
+    "sort_order": 32,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-75",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-75",
+    "remark": "",
+    "sort_order": 33,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-C-90",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "C-90",
+    "remark": "",
+    "sort_order": 34,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-F-41",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "F-41",
+    "remark": "",
+    "sort_order": 38,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-F-55",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "F-55",
+    "remark": "",
+    "sort_order": 39,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-F-72",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "F-72",
+    "remark": "",
+    "sort_order": 30,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-塑料管材-F-90",
+    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
+    "name": "F-90",
+    "remark": "",
+    "sort_order": 31,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-金属管材-B",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "B型",
+    "remark": "",
+    "sort_order": 44,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P12-金属管材-Z",
+    "inspection_object_code": "OBJ-SP01-P12-金属管材",
+    "name": "Z型",
+    "remark": "",
+    "sort_order": 45,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "——",
+    "remark": "",
+    "sort_order": 23,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x-2",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "化学锚固",
+    "remark": "",
+    "sort_order": 24,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x-3",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "化学植筋",
+    "remark": "",
+    "sort_order": 25,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x-4",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "机械锚固",
+    "remark": "",
+    "sort_order": 26,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x-5",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "扩底锚固",
+    "remark": "",
+    "sort_order": 27,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P15-x-6",
+    "inspection_object_code": "OBJ-SP01-P15",
+    "name": "膨胀锚固",
+    "remark": "",
+    "sort_order": 28,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-25",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "加气混凝土和空心率大于25%的主体材料",
+    "remark": "",
+    "sort_order": 54,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-25-2",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "空心率大于25%主体材料",
+    "remark": "",
+    "sort_order": 58,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-A",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "无机非金属装饰装修材料放射性限量A类",
+    "remark": "",
+    "sort_order": 56,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-B",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "无机非金属装饰装修材料放射性限量B类",
+    "remark": "",
+    "sort_order": 57,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-x",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "无机非金属主体材料",
+    "remark": "",
+    "sort_order": 52,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-x-2",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "无机非金属装饰装修材料",
+    "remark": "",
+    "sort_order": 53,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P17-x-3",
+    "inspection_object_code": "OBJ-SP01-P17",
+    "name": "无机非金属主体材料放射性限量",
+    "remark": "",
+    "sort_order": 55,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "——",
+    "remark": "",
+    "sort_order": 46,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x-2",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "二涂氟碳漆涂层",
+    "remark": "",
+    "sort_order": 47,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x-3",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "三涂氟碳漆涂层",
+    "remark": "",
+    "sort_order": 48,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x-4",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "四涂氟碳漆涂层",
+    "remark": "",
+    "sort_order": 49,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x-5",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "氟碳粉末涂层",
+    "remark": "",
+    "sort_order": 50,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P20-x-6",
+    "inspection_object_code": "OBJ-SP01-P20",
+    "name": "聚酯粉末涂层",
+    "remark": "",
+    "sort_order": 51,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "——",
+    "remark": "",
+    "sort_order": 1,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-10",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "剥肋直螺纹套筒",
+    "remark": "",
+    "sort_order": 10,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-11",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "套筒灌浆连接",
+    "remark": "",
+    "sort_order": 11,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-12",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "全灌浆套筒连接",
+    "remark": "",
+    "sort_order": 21,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-13",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "半灌浆套筒连接",
+    "remark": "",
+    "sort_order": 22,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-14",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "单向拉伸",
+    "remark": "",
+    "sort_order": 78,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-15",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "高应力反复拉压",
+    "remark": "",
+    "sort_order": 79,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-16",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "大变形反复拉压",
+    "remark": "",
+    "sort_order": 80,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-2",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "套筒挤压连接",
+    "remark": "",
+    "sort_order": 2,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-3",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "剥肋滚轧直螺纹",
+    "remark": "",
+    "sort_order": 3,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-4",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "锥螺纹连接",
+    "remark": "",
+    "sort_order": 4,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-5",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "镦粗直螺纹连接",
+    "remark": "",
+    "sort_order": 5,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-6",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "滚轧直螺纹连接",
+    "remark": "",
+    "sort_order": 6,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-7",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "熔融金属充填连接",
+    "remark": "",
+    "sort_order": 7,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-8",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "水泥灌浆充填连接",
+    "remark": "",
+    "sort_order": 8,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P2-x-9",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "直螺纹套筒连接",
+    "remark": "",
+    "sort_order": 9,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "增强型加速干燥胶粘剂",
+    "remark": "",
+    "sort_order": 98,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-10",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "——",
+    "remark": "",
+    "sort_order": 107,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-11",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "粉煤灰砖",
+    "remark": "",
+    "sort_order": 108,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-12",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "固体废弃物砌块",
+    "remark": "",
+    "sort_order": 109,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-13",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "固体废弃物砖",
+    "remark": "",
+    "sort_order": 110,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-14",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "混凝土装饰",
+    "remark": "",
+    "sort_order": 111,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-15",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "煤矸石砖",
+    "remark": "",
+    "sort_order": 112,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-16",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "烧结装饰砖",
+    "remark": "",
+    "sort_order": 113,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-17",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "页岩砖",
+    "remark": "",
+    "sort_order": 114,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-18",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "淤泥砌块",
+    "remark": "",
+    "sort_order": 115,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-19",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "淤泥砖",
+    "remark": "",
+    "sort_order": 116,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-2",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "普通型水泥基胶粘剂",
+    "remark": "",
+    "sort_order": 99,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-3",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "抗滑移普通型水泥基胶粘剂",
+    "remark": "",
+    "sort_order": 100,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-4",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "增强型水泥基胶粘剂",
+    "remark": "",
+    "sort_order": 101,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-5",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "抗滑移增强型水泥基胶粘剂",
+    "remark": "",
+    "sort_order": 102,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-6",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "普通型膏状乳液胶粘剂",
+    "remark": "",
+    "sort_order": 103,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-7",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "增强型膏状乳液胶粘剂",
+    "remark": "",
+    "sort_order": 104,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-8",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "普通型反应型树脂胶粘剂",
+    "remark": "",
+    "sort_order": 105,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P4-x-9",
+    "inspection_object_code": "OBJ-SP01-P4",
+    "name": "抗滑移加长晾置时间增强型水泥基胶粘剂",
+    "remark": "",
+    "sort_order": 106,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P7-C",
+    "inspection_object_code": "OBJ-SP01-P7",
+    "name": "C类",
+    "remark": "",
+    "sort_order": 77,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P7-F",
+    "inspection_object_code": "OBJ-SP01-P7",
+    "name": "F类",
+    "remark": "",
+    "sort_order": 76,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P7-x",
+    "inspection_object_code": "OBJ-SP01-P7",
+    "name": "岩棉",
+    "remark": "",
+    "sort_order": 67,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P7-x-2",
+    "inspection_object_code": "OBJ-SP01-P7",
+    "name": "矿渣棉",
+    "remark": "",
+    "sort_order": 68,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-A",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "A型",
+    "remark": "",
+    "sort_order": 119,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-B",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "B型",
+    "remark": "",
+    "sort_order": 120,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-C",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "C型",
+    "remark": "",
+    "sort_order": 121,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-CCCWA",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "CCCWA",
+    "remark": "",
+    "sort_order": 64,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-CCCWC",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "CCCWC",
+    "remark": "",
+    "sort_order": 63,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-EPS",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "EPS板界面砂浆",
+    "remark": "",
+    "sort_order": 65,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-I",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "I型",
+    "remark": "",
+    "sort_order": 117,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-II",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "II 型",
+    "remark": "",
+    "sort_order": 118,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "——",
+    "remark": "",
+    "sort_order": 12,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-10",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "抹面砂浆（水泥砂浆）",
+    "remark": "",
+    "sort_order": 70,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-11",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "抹面砂浆（石膏砂浆）",
+    "remark": "",
+    "sort_order": 71,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-12",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "抹灰砂浆",
+    "remark": "",
+    "sort_order": 84,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-13",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "界面砂浆",
+    "remark": "",
+    "sort_order": 85,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-14",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "抹灰石膏",
+    "remark": "",
+    "sort_order": 86,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-15",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "薄层砌筑砂浆",
+    "remark": "",
+    "sort_order": 87,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-16",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "内墙预拌抹灰砂浆",
+    "remark": "",
+    "sort_order": 88,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-17",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "外墙、顶棚预拌抹灰砂浆",
+    "remark": "",
+    "sort_order": 89,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-18",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "水泥抹灰砂浆",
+    "remark": "",
+    "sort_order": 90,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-19",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "水泥粉煤灰抹灰砂浆",
+    "remark": "",
+    "sort_order": 91,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-2",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "水泥混合砂浆",
+    "remark": "",
+    "sort_order": 13,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-20",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "水泥石灰抹灰砂浆",
+    "remark": "",
+    "sort_order": 92,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-21",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "掺塑化剂水泥抹灰砂浆",
+    "remark": "",
+    "sort_order": 93,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-22",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "聚合物水泥抹灰砂浆",
+    "remark": "",
+    "sort_order": 94,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-23",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "预拌抹灰砂浆",
+    "remark": "",
+    "sort_order": 95,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-24",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "预拌普通防水砂浆",
+    "remark": "",
+    "sort_order": 96,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-25",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "预拌界面砂浆",
+    "remark": "",
+    "sort_order": 97,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-26",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "Ⅲ型",
+    "remark": "",
+    "sort_order": 122,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-27",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "Ⅳ型",
+    "remark": "",
+    "sort_order": 123,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-3",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "水泥砂浆",
+    "remark": "",
+    "sort_order": 14,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-4",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "预拌砌筑砂浆",
+    "remark": "",
+    "sort_order": 15,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-5",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "Ⅰ型",
+    "remark": "",
+    "sort_order": 59,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-6",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "Ⅱ型",
+    "remark": "",
+    "sort_order": 60,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-7",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "缓凝型(Ⅰ型)",
+    "remark": "",
+    "sort_order": 61,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-8",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "速凝型(Ⅱ型)",
+    "remark": "",
+    "sort_order": 62,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-x-9",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "砌筑砂浆",
+    "remark": "",
+    "sort_order": 69,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P8-XPS",
+    "inspection_object_code": "OBJ-SP01-P8",
+    "name": "XPS板界面砂浆",
+    "remark": "",
+    "sort_order": 66,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P9-x",
+    "inspection_object_code": "OBJ-SP01-P9",
+    "name": "——",
+    "remark": "",
+    "sort_order": 81,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P9-x-2",
+    "inspection_object_code": "OBJ-SP01-P9",
+    "name": "土路床",
+    "remark": "",
+    "sort_order": 82,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "MO-OBJ-SP01-P9-x-3",
+    "inspection_object_code": "OBJ-SP01-P9",
+    "name": "塘渣",
+    "remark": "",
+    "sort_order": 83,
+    "created_at": "",
+    "updated_at": "",
+    "tenant_id": "TENANT-001"
+  },
+  {
+    "code": "P·O 42.5",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "P·O 42.5（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
+    "tenant_id": "TENANT-001"
+  }
+]

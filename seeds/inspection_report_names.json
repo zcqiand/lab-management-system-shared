@@ -1,0 +1,401 @@
+[
+  {
+    "code": "CAT-SMK-001",
+    "name": "报告类别 smoke",
+    "full_name": null,
+    "template_path": null,
+    "summary_name": null,
+    "ext_fields": null,
+    "description": null,
+    "sort_order": 0,
+    "created_at": "2026-08-18",
+    "updated_at": "2026-08-18"
+  },
+  {
+    "code": "RN-101",
+    "name": "水泥",
+    "full_name": "水泥检测报告",
+    "template_path": "101_水泥检测报告.docx",
+    "summary_name": "水泥试验报告汇总表",
+    "ext_fields": [],
+    "description": "通用硅酸盐水泥检测",
+    "sort_order": 101,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-102-1",
+    "name": "钢筋力学性能",
+    "full_name": "钢筋力学性能、工艺性能、重量偏差检测报告",
+    "template_path": "102_钢筋力学性能、工艺性能、重量偏差检测报告.docx",
+    "summary_name": "钢材试验报告汇总表",
+    "ext_fields": [
+      {
+        "key": "qualityCertNo",
+        "label": "质保单编号"
+      }
+    ],
+    "description": "钢筋（含焊接与机械连接）力学性能、工艺性能、重量偏差",
+    "sort_order": 1021,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-102-2",
+    "name": "钢筋机械连接接头",
+    "full_name": "钢筋机械连接接头检测报告",
+    "template_path": "102_钢筋机械连接接头检测报告.docx",
+    "summary_name": "钢筋机械连接试验报告汇总表",
+    "ext_fields": [
+      {
+        "key": "jointType",
+        "label": "接头类型"
+      },
+      {
+        "key": "concreteCastingDate",
+        "label": "对应部位混凝土浇筑时间"
+      }
+    ],
+    "description": "钢筋机械连接接头抗拉强度",
+    "sort_order": 1022,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-102-3",
+    "name": "钢筋焊接接头",
+    "full_name": "钢筋焊接接头检测报告",
+    "template_path": "102_钢筋焊接接头检测报告.docx",
+    "summary_name": "钢筋焊接连接试验报告汇总表",
+    "ext_fields": [
+      {
+        "key": "welderName",
+        "label": "焊工姓名"
+      },
+      {
+        "key": "welderCertNo",
+        "label": "焊工证号"
+      },
+      {
+        "key": "concreteCastingDate",
+        "label": "对应部位混凝土浇筑时间"
+      }
+    ],
+    "description": "钢筋焊接接头抗拉/弯曲",
+    "sort_order": 1023,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-103-1",
+    "name": "建设用砂",
+    "full_name": "建设用砂检测报告",
+    "template_path": "103_建设用砂检测报告.docx",
+    "summary_name": "砂试验报告汇总表",
+    "ext_fields": [],
+    "description": "建设用砂细度模数/含泥量/泥块含量",
+    "sort_order": 1031,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-103-2",
+    "name": "建设用碎（卵）石",
+    "full_name": "建设用碎（卵）石检测报告",
+    "template_path": "103_建设用碎（卵）石检测报告.docx",
+    "summary_name": "碎（卵）石试验报告汇总表",
+    "ext_fields": [],
+    "description": "建设用碎卵石压碎指标/含泥量/针片状",
+    "sort_order": 1032,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-103-3",
+    "name": "普通混凝土用砂",
+    "full_name": "普通混凝土用砂检测报告",
+    "template_path": "103_普通混凝土用砂检测报告.docx",
+    "summary_name": "砂试验报告汇总表",
+    "ext_fields": [],
+    "description": "普通混凝土用砂检测",
+    "sort_order": 1033,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-103-4",
+    "name": "普通混凝土用碎（卵）石",
+    "full_name": "普通混凝土用碎（卵）石检测报告",
+    "template_path": "103_普通混凝土用碎（卵）石检测报告.docx",
+    "summary_name": "碎（卵）石试验报告汇总表",
+    "ext_fields": [],
+    "description": "普通混凝土用碎卵石检测",
+    "sort_order": 1034,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-103-5",
+    "name": "轻集料",
+    "full_name": "轻集料检测报告",
+    "template_path": "103_轻集料检测报告.docx",
+    "summary_name": "轻集料试验报告汇总表",
+    "ext_fields": [],
+    "description": "轻集料堆积密度/表观密度",
+    "sort_order": 1035,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-104-1",
+    "name": "墙板",
+    "full_name": "墙板检测报告",
+    "template_path": "104_墙板检测报告.docx",
+    "summary_name": "墙板试验报告汇总表",
+    "ext_fields": [],
+    "description": "墙板检测",
+    "sort_order": 1041,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-104-2",
+    "name": "混凝土瓦",
+    "full_name": "混凝土瓦检测报告",
+    "template_path": "104_混凝土瓦检测报告.docx",
+    "summary_name": "混凝土瓦试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土瓦检测",
+    "sort_order": 1042,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-104-3",
+    "name": "烧结瓦",
+    "full_name": "烧结瓦检测报告",
+    "template_path": "104_烧结瓦检测报告.docx",
+    "summary_name": "烧结瓦试验报告汇总表",
+    "ext_fields": [],
+    "description": "烧结瓦检测",
+    "sort_order": 1043,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-104-4",
+    "name": "砖",
+    "full_name": "砖检测报告",
+    "template_path": "104_砖检测报告.docx",
+    "summary_name": "砖试验报告汇总表",
+    "ext_fields": [],
+    "description": "砖检测",
+    "sort_order": 1044,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-104-5",
+    "name": "蒸压加气混凝土砌块",
+    "full_name": "蒸压加气混凝土砌块检测报告",
+    "template_path": "104_蒸压加气混凝土砌块检测报告.docx",
+    "summary_name": "蒸压加气混凝土砌块试验报告汇总表",
+    "ext_fields": [],
+    "description": "蒸压加气混凝土砌块检测",
+    "sort_order": 1045,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-105-1",
+    "name": "混凝土抗压强度",
+    "full_name": "混凝土抗压强度检测报告",
+    "template_path": "105_混凝土抗压强度检测报告.docx",
+    "summary_name": "（标准养护）混凝土抗压强度试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土抗压强度",
+    "sort_order": 1051,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-105-2",
+    "name": "混凝土抗渗性能",
+    "full_name": "混凝土抗渗性能检测报告",
+    "template_path": "105_混凝土抗渗性能检测报告.docx",
+    "summary_name": "（标准养护）混凝土抗压强度试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土抗渗性能",
+    "sort_order": 1052,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-105-3",
+    "name": "混凝土拌合用水",
+    "full_name": "混凝土拌合用水检测报告",
+    "template_path": "105_混凝土拌合用水检测报告.docx",
+    "summary_name": "（标准养护）混凝土抗压强度试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土拌合用水检测",
+    "sort_order": 1053,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-106-1",
+    "name": "混凝土外加剂",
+    "full_name": "混凝土外加剂检测报告",
+    "template_path": "106_混凝土外加剂检测报告.docx",
+    "summary_name": "混凝土外加剂试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土外加剂坍落度/含气量",
+    "sort_order": 1061,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-106-2",
+    "name": "混凝土膨胀剂",
+    "full_name": "混凝土膨胀剂检测报告",
+    "template_path": "106_混凝土膨胀剂检测报告.docx",
+    "summary_name": "混凝土膨胀剂试验报告汇总表",
+    "ext_fields": [],
+    "description": "混凝土膨胀剂检测",
+    "sort_order": 1062,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-107-1",
+    "name": "矿粉",
+    "full_name": "矿粉检测报告",
+    "template_path": "107_矿粉检测报告.docx",
+    "summary_name": "矿粉试验报告汇总表",
+    "ext_fields": [],
+    "description": "矿粉细度检测",
+    "sort_order": 1071,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-107-2",
+    "name": "粉煤灰",
+    "full_name": "粉煤灰检测报告",
+    "template_path": "107_粉煤灰检测报告.docx",
+    "summary_name": "粉煤灰试验报告汇总表",
+    "ext_fields": [],
+    "description": "粉煤灰细度检测",
+    "sort_order": 1072,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-108-1",
+    "name": "建筑砂浆",
+    "full_name": "建筑砂浆检测报告",
+    "template_path": "108_建筑砂浆检测报告.docx",
+    "summary_name": "建筑砂浆试验报告汇总表",
+    "ext_fields": [],
+    "description": "建筑砂浆抗压强度/稠度",
+    "sort_order": 1081,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-108-2",
+    "name": "砂浆抗压强度",
+    "full_name": "砂浆抗压强度检测报告",
+    "template_path": "108_砂浆抗压强度检测报告.docx",
+    "summary_name": "砂浆抗压强度试验报告汇总表",
+    "ext_fields": [],
+    "description": "砂浆抗压强度",
+    "sort_order": 1082,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-109-1",
+    "name": "土工击实",
+    "full_name": "土工击实检测报告",
+    "template_path": "109_土工击实检测报告.docx",
+    "summary_name": "土工击实试验报告汇总表",
+    "ext_fields": [],
+    "description": "土工击实试验",
+    "sort_order": 1091,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-109-2",
+    "name": "土工压实度（灌砂法）",
+    "full_name": "土工压实度检测报告（灌砂法）",
+    "template_path": "109_土工压实度检测报告（灌砂法）.docx",
+    "summary_name": "土工压实度试验报告汇总表（灌砂法）",
+    "ext_fields": [],
+    "description": "土工压实度灌砂法",
+    "sort_order": 1092,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-109-3",
+    "name": "土工压实度（环刀法）",
+    "full_name": "土工压实度检测报告（环刀法）",
+    "template_path": "109_土工压实度检测报告（环刀法）.docx",
+    "summary_name": "土工压实度试验报告汇总表（环刀法）",
+    "ext_fields": [],
+    "description": "土工压实度环刀法",
+    "sort_order": 1093,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-110-1",
+    "name": "防水卷材",
+    "full_name": "防水卷材检测报告",
+    "template_path": "110_防水卷材检测报告.docx",
+    "summary_name": "防水卷材试验报告汇总表",
+    "ext_fields": [],
+    "description": "防水卷材剥离/不透水",
+    "sort_order": 1101,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-110-2",
+    "name": "防水密封材料",
+    "full_name": "防水密封材料检测报告",
+    "template_path": "110_防水密封材料检测报告.docx",
+    "summary_name": "防水密封材料试验报告汇总表",
+    "ext_fields": [],
+    "description": "防水密封材料检测",
+    "sort_order": 1102,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-110-3",
+    "name": "防水材料",
+    "full_name": "防水材料检测报告",
+    "template_path": "110_防水材料检测报告.docx",
+    "summary_name": "防水材料试验报告汇总表",
+    "ext_fields": [],
+    "description": "防水材料综合检测（卷材/涂料/密封）",
+    "sort_order": 1103,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "code": "RN-110-4",
+    "name": "防水涂料",
+    "full_name": "防水涂料检测报告",
+    "template_path": "110_防水涂料检测报告.docx",
+    "summary_name": "防水涂料试验报告汇总表",
+    "ext_fields": [],
+    "description": "防水涂料检测",
+    "sort_order": 1104,
+    "created_at": "",
+    "updated_at": ""
+  }
+]

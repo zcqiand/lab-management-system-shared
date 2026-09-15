@@ -1,0 +1,187 @@
+[
+  {
+    "inspection_parameter_code": "IP-0055",
+    "param_interface_code": "concrete-compress",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0055",
+    "param_interface_code": "mortar-compress",
+    "report_name_code": "RN-108-2",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0086",
+    "param_interface_code": "rebar-mech-connection-yield",
+    "report_name_code": "RN-102-2",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0086",
+    "param_interface_code": "rebar-mech-yield",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0087",
+    "param_interface_code": "rebar-mech-connection-tensile",
+    "report_name_code": "RN-102-2",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0087",
+    "param_interface_code": "rebar-mech-tensile",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0087",
+    "param_interface_code": "rebar-welding-tensile",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0097",
+    "param_interface_code": "rebar-mech-elongation",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0150",
+    "param_interface_code": "rebar-mech-elongation",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0152",
+    "param_interface_code": "rebar-mech-tensile",
+    "report_name_code": "RN-102-1",
+    "config": {
+      "formulaKey": "passthrough",
+      "inputLabel": "反向弯曲形变 (mm)",
+      "valueLabel": "反向弯曲 (mm)",
+      "specimenCount": 3
+    },
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0155",
+    "param_interface_code": "rebar-welding-bend",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0190",
+    "param_interface_code": "concrete-permeability",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0226",
+    "param_interface_code": "soil-compaction",
+    "report_name_code": "RN-109-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0456",
+    "param_interface_code": "soil-compaction-degree-ring",
+    "report_name_code": "RN-109-3",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0456",
+    "param_interface_code": "soil-compaction-degree-sand",
+    "report_name_code": "RN-109-2",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0555",
+    "param_interface_code": "cement-flexural",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0556",
+    "param_interface_code": "cement-compress",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0557",
+    "param_interface_code": "cement-flexural",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0558",
+    "param_interface_code": "cement-compress",
+    "report_name_code": null,
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0559",
+    "param_interface_code": "rebar-mech-yield-ratio",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0560",
+    "param_interface_code": "rebar-mech-yield-ratio",
+    "report_name_code": "RN-102-1",
+    "config": null,
+    "created_at": "",
+    "updated_at": ""
+  },
+  {
+    "inspection_parameter_code": "IP-0577",
+    "param_interface_code": "particle-gradation",
+    "report_name_code": "RN-103-1",
+    "config": {
+      "gravel": false,
+      "sampleRows": 2,
+      "sieveCount": 7
+    },
+    "created_at": "",
+    "updated_at": ""
+  }
+]
