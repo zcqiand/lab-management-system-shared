@@ -4,15 +4,19 @@
 // 关联：docs/adr/0034-contract-tree-iid-strong-binding.md §Decision 3
 // 关联：docs/conventions/tsp-routes-exempt.md
 //
-// 当前：7 条（共享端点——1:1 强绑定下，4 F 共享 2 条 + 4 link GET list + 1 shared-with 详情）
-// 工具链 warning 档跑完后，按 spec §3.3 原则逐条评估（infra 探针 / RFC 协议强制 / 多态响应 / 4 F 共享 / link GET list / shared-with 详情）。
+// 当前：7 条（共享端点——1:1 强绑定下，7 F 共享 2 条 + 4 link GET list + 1 shared-with 详情）
+// 工具链 warning 档跑完后，按 spec §3.3 原则逐条评估（infra 探针 / RFC 协议强制 / 多态响应 / 7 F 共享 / link GET list / shared-with 详情）。
 
-// ── 1. 4 F 共享流程动作端点（按 stage query 参数区分 review/approval/issuance/archived）──
-// M03.F05.I03 (审核单条) + F06.I03 (批准单条) + F07.I03 (发放单条) + F08.I03 (归档单条)
-// + M03.F05.I05 (批量提交) + F05.I06 (批量退回) 共享此 POST 端点；
-// 按 stage query 参数区分阶段，无法拆 4 个 op（同路径同方法多 grant 类比 oauth/token）。
+// ── 1. 7 F 共享流程动作端点（按 stage query 参数区分 receiving/assigning/data_entry/review/approval/issuance/archived）──
+// 报告流程：M03.F05.I03 (审核单条) + F06.I03 (批准单条) + F07.I03 (发放单条) + F08.I03 (归档单条) +
+//          M03.F05.I05 (批量提交) + F05.I06 (批量退回)；
+// 接样/任务分配/数据录入流程：
+//   M03.F01.I08 (接样-提交) / I09 (接样-退回) / I10 (接样-撤回)
+//   M03.F02.I05 (任务分配-提交) / I06 (任务分配-退回) / I07 (任务分配-撤回)
+//   M03.F03.I12 (数据录入-提交) / I13 (数据录入-退回) / I14 (数据录入-撤回)
+// 共享此 POST 端点；按 stage query 参数区分阶段，无法拆 7 个 op（同路径同方法多 grant 类比 oauth/token）。
 @route("/receipts/flow") op submitFlowAction(): void;
-// rationale: 4 F 共享流程动作端点；I 注释挂在各自 F 的 stage 分支
+// rationale: 7 F 共享流程动作端点；I 注释挂在各自 F 的 stage 分支
 
 // M03.F05.I01 (审核队列)/ F06.I01 (批准队列)/ F07.I01 (发放队列)/ F08.I01 (归档队列) 共享此 GET 队列端点；
 // 按 stage query 参数区分阶段。

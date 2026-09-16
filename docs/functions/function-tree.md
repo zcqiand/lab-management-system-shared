@@ -139,6 +139,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F01.I05 | 删除接样单 | 接口 | 前端+后端 | DELETE /api/receipts/{id}：CASCADE 删除下属 samples | 开发中 |
 | M03.F01.I06 | 接样单流程历史 | 接口 | 前端+后端 | GET /api/receipts/{id}/history：返回 FlowHistoryEntry[]（jsonb 展开为 List） | 已上线 |
 | M03.F01.I07 | 接样单 ext 字段补录 | 接口 | 前端+后端 | 报告预览前按当前类别 extFields 弹 SampleExtFieldsModal，补录持久化到 Sample.ext | 已上线 |
+| M03.F01.I08 | 接样-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：FlowActionRequest{stage=receiving, action=SUBMIT} 推进 receiving→assigning（7 F 共享端点 _exempt.tsp §1） | 已上线 |
+| M03.F01.I09 | 接样-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=receiving, action=RETURN；前置阶段退回，无前置则 422 | 已上线 |
+| M03.F01.I10 | 接样-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=receiving, action=WITHDRAW；提交人撤回回到原阶段 | 已上线 |
 
 
 ### M03.F02 任务分配
@@ -149,6 +152,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F02.I02 | 任务编辑（客户端视角 anchor） | 按钮 | 前端+后端 | 安排弹窗维护 assigneeName/assigneeId/plannedTestDate（前端弹窗 UI 动作，调 PUT /api/receipts/{id}/task 共 I01 端点；保留 ID 作为客户端视角 anchor，react/vue/nextjs 三仓 data-fn=I01） | 已上线 |
 | M03.F02.I03 | 任务取消（清空分配） | 按钮 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate（调 PUT /api/receipts/{id}/task 共 I01 端点），前端按钮仅 UI 层 | 开发中 |
 | M03.F02.I04 | 任务分配三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表（前端过滤器） | 开发中 |
+| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=SUBMIT 推进 assigning→data_entry（7 F 共享端点 _exempt.tsp §1） | 已上线 |
+| M03.F02.I06 | 任务分配-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=RETURN 退回到 receiving | 已上线 |
+| M03.F02.I07 | 任务分配-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=WITHDRAW | 已上线 |
 
 ### M03.F03 数据录入
 
@@ -165,6 +171,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F03.I09 | 更新检测记录 | 接口 | 前端+后端 | PUT /api/test-records/{id}：PATCH 语义，未传字段保留 | 已上线 |
 | M03.F03.I10 | 删除检测记录 | 接口 | 前端+后端 | DELETE /api/test-records/{id}：204 if exists | 已上线 |
 | M03.F03.I11 | 检测记录改判 | 接口 | 前端+后端 | PUT /api/test-records/{id}/verdict：人工改判（M03.F05/F06 报告流程可触发） | 已上线 |
+| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=SUBMIT 推进 data_entry→review（7 F 共享端点 _exempt.tsp §1） | 已上线 |
+| M03.F03.I13 | 数据录入-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=RETURN 退回到 assigning | 已上线 |
+| M03.F03.I14 | 数据录入-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=WITHDRAW | 已上线 |
 
 ### M03.F05 报告审核
 

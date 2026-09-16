@@ -6,10 +6,13 @@ using TypeSpec.Http;
 @route("/receipts/flow")
 @tag("report-flow")
 namespace Lab.Management.Shared.ReportFlow {
-  // 批量流程动作（4 F 共享，按 stage query 参数区分阶段，详见 _exempt.tsp §1）
-  // 挂载 I：M03.F05.I03 (单条提交/退回 仅前端) / M03.F06.I03 (单条批准/退回 仅前端) /
-  //        M03.F07.I03 (单条发放/退回 仅前端) / M03.F08.I03 (单条归档/退回 仅前端) /
-  //        M03.F05.I05 (批量提交 仅后端) / M03.F05.I06 (批量退回 仅后端)
+  // 批量流程动作（7 F 共享，按 stage query 参数区分阶段，详见 _exempt.tsp §1）
+  // 挂载 I：
+  //   M03.F01.I08 / M03.F01.I09 / M03.F01.I10
+  //   M03.F02.I05 / M03.F02.I06 / M03.F02.I07
+  //   M03.F03.I12 / M03.F03.I13 / M03.F03.I14
+  //   M03.F05.I03 / M03.F05.I05 / M03.F05.I06
+  //   M03.F06.I03 / M03.F07.I03 / M03.F08.I03
   @post
   op submitFlowAction(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
 
