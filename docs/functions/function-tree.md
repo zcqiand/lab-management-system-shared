@@ -79,8 +79,8 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 |---|---|---|---|---|---|
 | M01.F04.I01 | 动态菜单 | 接口 | 前端+后端 | GET /api/auth/menus：按角色下发导航树（5 根节点，镜像 lab-msw） | 已上线 |
 | M01.F04.I02 | 权限集 | 接口 | 前端+后端 | GET /api/auth/permissions：RBAC 权限串列表（admin 全量 11 项） | 已上线 |
-| M01.F04.I03 | 路由守卫（未登录/无权限拦截） | 接口 | 前端+后端 | 与 I02 描述重复，合并到 F02；本仓无独立挂点 | 开发中 |
-| M01.F04.I04 | 动态菜单 | 接口 | 前端+后端 | 侧边栏菜单由身份平台 GET /menus?appId=lab-management 下发，按权限码显隐；分组无可见子项则隐藏 | 开发中 |
+| M01.F04.I03 | 路由守卫（未登录/无权限拦截） | 接口 | 前端+后端 | 前端路由守卫 useRequireAuth 钩子（react/vue 仓实现）；本仓 BASE 登记仓内未挂 entry，react/vue 仓 useRequireAuth 5+ 处引用作为产品线 anchor | 开发中 |
+| M01.F04.I04 | 动态菜单（lab 侧边栏）          | 接口 | 前端+后端 | 侧边栏容器锚点（nextjs 仓 `<aside>` 实现）；与 I01 共端点 /api/auth/menus（lab 本地端点，非 saas IdP /menus?appId=lab-management） | 开发中 |
 
 
 ### M01.F05 认证管理
@@ -133,7 +133,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F01.I01 | 接样单列表 | 接口 | 前端+后端 | GET /api/receipts?contractId=&flowStatus=&keyword=：按 tenant 收口 + 3 过滤 | 已上线 |
-| M03.F01.I02 | 接样单详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history） | 已上线 |
+| M03.F01.I02 | 接样单详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）；**shared-with: M03.F05.I02 / M03.F06.I02 / M03.F07.I02 / M03.F08.I02 / M03.F09.I01** | 已上线 |
 | M03.F01.I03 | 创建接样单 | 接口 | 前端+后端 | POST /api/receipts：contract_id FK 必存在；flow_status=receiving 起步；flow_history=[] | 已上线 |
 | M03.F01.I04 | 更新接样单 | 接口 | 前端+后端 | PUT /api/receipts/{id}：PATCH 语义 | 已上线 |
 | M03.F01.I05 | 删除接样单 | 接口 | 前端+后端 | DELETE /api/receipts/{id}：CASCADE 删除下属 samples | 开发中 |
@@ -146,10 +146,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F02.I01 | 任务分配 | 接口 | 前端+后端 | PUT /api/receipts/{id}/task：AssignTaskRequest 设 assigneeId/Name/plannedTestDate；非 receiving 阶段不自动 advance | 已上线 |
-| M03.F02.I02 | 任务编辑 | 接口 | 前端+后端 | 安排弹窗维护 assigneeName/assigneeId/plannedTestDate | 已上线 |
+| M03.F02.I02 | 任务编辑（客户端视角 anchor） | 接口 | 前端+后端 | 安排弹窗维护 assigneeName/assigneeId/plannedTestDate（**与 I01 共端点 PUT /api/receipts/{id}/task；保留 ID 作为客户端视角 anchor**，react/vue/nextjs 三仓 data-fn 同步从 I02 → I01） | 已上线 |
 | M03.F02.I03 | 任务取消（清空分配） | 接口 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate，把已分配单子在本阶段重置为未分配（非退回接样；退回接样走 FlowStagePage 通用退回按钮） | 开发中 |
 | M03.F02.I04 | 任务分配三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表 | 开发中 |
-
 
 ### M03.F03 数据录入
 
@@ -167,15 +166,14 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F03.I10 | 删除检测记录 | 接口 | 前端+后端 | DELETE /api/test-records/{id}：204 if exists | 已上线 |
 | M03.F03.I11 | 检测记录改判 | 接口 | 前端+后端 | PUT /api/test-records/{id}/verdict：人工改判（M03.F05/F06 报告流程可触发） | 已上线 |
 
-
 ### M03.F05 报告审核
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F05.I01 | 审核队列 | 接口 | 前端+后端 | GET /api/receipts/flow/queue?stage=：按 stage 过滤+按 tenant 收口，返回 ReceiptsListReceipts200Response（pageSize 默认 50，cap 200） | 已上线 |
-| M03.F05.I02 | 报告审核-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 review 视角 | 已上线 |
+| M03.F05.I02 | 报告审核-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 review 视角；**shared-with: M03.F01.I02** | 已上线 |
 | M03.F05.I03 | 报告审核-通过/退回 | 接口 | 前端+后端 | POST /api/receipts/flow：FlowActionRequest{ids, action, operator, reason}；review 视角下 action=SUBMIT 推进到 approval / RETURN 退回 data_entry | 已上线 |
-| M03.F05.I04 | 报告审核三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表 | 开发中 |
+| M03.F05.I04 | 报告审核三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表（nextjs 仓已实现 8 处 filterDataFn + 1 个 fnTest；react/vue 仓 page 存在但 prop 未挂） | 开发中 |
 
 
 ### M03.F06 报告批准
@@ -183,9 +181,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F06.I01 | 报告阶段审批推进 | 接口 | 前端+后端 | POST /api/receipts/flow：FlowActionRequest{ids, action, operator, reason}；action=SUBMIT/RETURN/WITHDRAW；FAIL 单条结果进 FlowActionResult{ok, message} | 已上线 |
-| M03.F06.I02 | 报告批准-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 approval 视角 | 已上线 |
+| M03.F06.I02 | 报告批准-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 approval 视角；**shared-with: M03.F01.I02** | 已上线 |
 | M03.F06.I03 | 报告批准-批准/退回 | 接口 | 前端+后端 | POST /api/receipts/flow：approval 视角下 action=SUBMIT 推进到 issuance / RETURN 退回 review | 已上线 |
-| M03.F06.I04 | 报告批准三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 开发中 |
+| M03.F06.I04 | 报告批准三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 开发中 |
 
 
 ### M03.F07 报告发放
@@ -193,9 +191,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F07.I01 | 报告发放队列 | 接口 | 前端+后端 | GET /api/receipts/flow/queue?stage=issuance：按 stage=issuance 过滤当前租户 receipt 列表 | 已上线 |
-| M03.F07.I02 | 报告发放-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history + issued_at）走 issuance 视角 | 已上线 |
+| M03.F07.I02 | 报告发放-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history + issued_at）走 issuance 视角；**shared-with: M03.F01.I02** | 已上线 |
 | M03.F07.I03 | 报告发放-发放/退回 | 接口 | 前端+后端 | POST /api/receipts/flow：issuance 视角下 action=SUBMIT 推进到 archived / RETURN 退回 approval | 已上线 |
-| M03.F07.I04 | 报告发放三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 开发中 |
+| M03.F07.I04 | 报告发放三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 开发中 |
 
 
 ### M03.F08 报告归档
@@ -203,18 +201,18 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M03.F08.I01 | 报告归档队列 | 接口 | 前端+后端 | GET /api/receipts/flow/queue?stage=archived：按 stage=archived 过滤当前租户 receipt 列表 | 已上线 |
-| M03.F08.I02 | 报告归档-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 archived 视角 | 已上线 |
+| M03.F08.I02 | 报告归档-查看详情 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）走 archived 视角；**shared-with: M03.F01.I02** | 已上线 |
 | M03.F08.I03 | 报告归档-归档/退回 | 接口 | 前端+后端 | POST /api/receipts/flow：archived 视角下 action=SUBMIT 推进终态 / RETURN 退回 issuance | 已上线 |
-| M03.F08.I04 | 报告归档三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 开发中 |
+| M03.F08.I04 | 报告归档三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 开发中 |
 
 
 ### M03.F09 接样单详情
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F09.I01 | 接样单详情聚合 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）；客户端组合 GET /api/samples?receiptId= + GET /api/test-records?sampleId= 展示接样/样品/检测数据三视图 | 已上线 |
-| M03.F09.I02 | 详情页 | 接口 | 前端+后端 | 展示接样信息、样品列表、检测数据；检测参数显示为「名称(单位)」、报告类别显示为报告简称 | 已上线 |
-| M03.F09.I03 | 报告预览（详情页） | 接口 | 仅前端 | 详情页标题栏按钮，复用 ReportPreviewModal，按 receipt.categoryCode 找模板 docx 渲染 | 已上线 |
+| M03.F09.I01 | 接样单详情聚合 | 接口 | 前端+后端 | GET /api/receipts/{id}：返回 SampleReceipt（含 flow_history）；客户端组合 GET /api/samples?receiptId= + GET /api/test-records?sampleId= 展示接样/样品/检测数据三视图；**shared-with: M03.F01.I02** | 已上线 |
+| M03.F09.I02 | 详情页 | 页面 | 仅前端 | 展示接样信息、样品列表、检测数据（三仓前端 Card/div 容器实现）；检测参数显示为「名称(单位)」、报告类别显示为报告简称 | 已上线 |
+| M03.F09.I03 | 报告预览（详情页） | 按钮 | 仅前端 | 详情页标题栏按钮（三仓前端 + ReportPreviewModal 组件），复用 ReportPreviewModal 按 receipt.categoryCode 找模板 docx 渲染 | 已上线 |
 
 
 ---
