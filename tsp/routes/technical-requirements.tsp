@@ -6,6 +6,7 @@ using TypeSpec.Http;
 @route("/technical-requirements")
 @tag("technical-requirements")
 namespace Lab.Management.Shared.TechnicalRequirements {
+  // M06.F06.I01 技术要求列表
   @get
   op listTechnicalRequirements(
     @query inspectionObjectCode?: string,
@@ -14,9 +15,11 @@ namespace Lab.Management.Shared.TechnicalRequirements {
     @query verificationStatus?: RequirementVerificationStatus,
   ): TechnicalRequirement[] | ErrorResponse;
 
+  // M06.F06.I03 创建技术要求
   @post
   op createTechnicalRequirement(@body body: CreateTechnicalRequirementRequest): TechnicalRequirement | ErrorResponse;
 
+  // M06.F06.I02 技术要求详情
   @get
   @route("/{inspectionObjectCode}/{inspectionParameterCode}/{judgmentStandardCode}")
   op getTechnicalRequirement(
@@ -25,6 +28,7 @@ namespace Lab.Management.Shared.TechnicalRequirements {
     @path judgmentStandardCode: string,
   ): TechnicalRequirement | ErrorResponse;
 
+  // M06.F06.I04 更新技术要求
   @put
   @route("/{inspectionObjectCode}/{inspectionParameterCode}/{judgmentStandardCode}")
   op updateTechnicalRequirement(
@@ -34,6 +38,7 @@ namespace Lab.Management.Shared.TechnicalRequirements {
     @body body: UpdateTechnicalRequirementRequest,
   ): TechnicalRequirement | ErrorResponse;
 
+  // M06.F06.I05 删除技术要求
   @delete
   @route("/{inspectionObjectCode}/{inspectionParameterCode}/{judgmentStandardCode}")
   op deleteTechnicalRequirement(

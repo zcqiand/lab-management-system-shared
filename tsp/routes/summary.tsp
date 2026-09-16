@@ -4,7 +4,7 @@ using TypeSpec.Http;
 @route("/summary")
 @tag("summary")
 namespace Lab.Management.Shared.Summary {
-  // M05.F01 报告汇总（按报告名称 categoryCode 选择汇总口径）
+  // M05.F01.I01 报告汇总（按报告名称 categoryCode 选择汇总口径）
   @get
   op getReportSummary(
     @query categoryCode?: string,
@@ -12,7 +12,7 @@ namespace Lab.Management.Shared.Summary {
     @query dateTo?: string,
   ): SummaryData | ErrorResponse;
 
-  // M05 仪表盘统计
+  // M05.F01.I06 仪表盘统计基础端点（核心指标卡 + 任务状态漏斗 + 见证取样跟踪经此端点的扩展字段输出）
   @get
   @route("/stats")
   op getDashboardStats(): DashboardStats | ErrorResponse;

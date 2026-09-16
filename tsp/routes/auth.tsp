@@ -21,22 +21,23 @@ namespace Lab.Management.Shared.Auth {
   @route("/logout")
   op logout(@body body: { token: string }): void | ErrorResponse;
 
-  // M00.F01 当前用户会话（含关联租户列表）
+  // M00.F01.I01 当前用户会话（含关联租户列表）
   @get
   @route("/me")
   op getCurrentUser(): CurrentUserSession | ErrorResponse;
 
-  // M00.F02 登录后选择租户（换发携带该 tenant_id claim 的 token）
+  // M00.F02.I01 登录后选择租户（换发携带该 tenant_id claim 的 token）
   @post
   @route("/switch-tenant")
   op switchTenant(@body body: SwitchTenantRequest): LoginResponse | ErrorResponse;
 
-  // M01.F04.I04 动态权限集（身份平台下发，按当前租户）
+  // M01.F04.I02 动态权限集（身份平台下发，按当前租户）
   @get
   @route("/permissions")
   op getPermissions(): PermissionSet | ErrorResponse;
 
-  // M01.F04.I04 动态菜单（身份平台下发，按当前租户）
+  // M01.F04.I01 动态菜单（身份平台下发，按当前租户）
+  // 注：M01.F04.I04（lab 侧边栏容器）共享此端点，详见 _exempt.tsp §3
   @get
   @route("/menus")
   op getMenus(): MenuNode[] | ErrorResponse;
