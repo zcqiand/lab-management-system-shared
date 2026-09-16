@@ -138,10 +138,10 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F01.I04 | 更新接样单 | 接口 | 前端+后端 | PUT /api/receipts/{id}：PATCH 语义 | 已上线 |
 | M03.F01.I05 | 删除接样单 | 接口 | 前端+后端 | DELETE /api/receipts/{id}：CASCADE 删除下属 samples | 开发中 |
 | M03.F01.I06 | 接样单流程历史 | 接口 | 前端+后端 | GET /api/receipts/{id}/history：返回 FlowHistoryEntry[]（jsonb 展开为 List） | 已上线 |
-| M03.F01.I07 | 接样单 ext 字段补录 | 接口 | 前端+后端 | 报告预览前按当前类别 extFields 弹 SampleExtFieldsModal，补录持久化到 Sample.ext | 已上线 |
-| M03.F01.I08 | 接样-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：FlowActionRequest{stage=receiving, action=SUBMIT} 推进 receiving→assigning（7 F 共享端点 _exempt.tsp §1） | 已上线 |
-| M03.F01.I09 | 接样-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=receiving, action=RETURN；前置阶段退回，无前置则 422 | 已上线 |
-| M03.F01.I10 | 接样-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=receiving, action=WITHDRAW；提交人撤回回到原阶段 | 已上线 |
+| M03.F01.I07 | 接样单 ext 字段补录 | 接口 | 前端+后端 | PUT /api/samples/{id}/ext：UpdateSampleExtRequest{ext} 按当前类别 extFields 补录持久化到 Sample.ext | 已上线 |
+| M03.F01.I08 | 接样-提交 | 接口 | 前端+后端 | POST /api/receipts/receiving/submit：FlowActionRequest{stage=receiving, action=SUBMIT} 推进 receiving→assigning | 已上线 |
+| M03.F01.I09 | 接样-退回 | 接口 | 前端+后端 | POST /api/receipts/receiving/return：stage=receiving, action=RETURN；前置阶段退回，无前置则 422 | 已上线 |
+| M03.F01.I10 | 接样-撤回 | 接口 | 前端+后端 | POST /api/receipts/receiving/withdraw：stage=receiving, action=WITHDRAW；提交人撤回回到原阶段 | 已上线 |
 
 
 ### M03.F02 任务分配
@@ -152,9 +152,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F02.I02 | 任务编辑（客户端视角 anchor） | 按钮 | 前端+后端 | 安排弹窗维护 assigneeName/assigneeId/plannedTestDate（前端弹窗 UI 动作，调 PUT /api/receipts/{id}/task 共 I01 端点；保留 ID 作为客户端视角 anchor，react/vue/nextjs 三仓 data-fn=I01） | 已上线 |
 | M03.F02.I03 | 任务取消（清空分配） | 按钮 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate（调 PUT /api/receipts/{id}/task 共 I01 端点），前端按钮仅 UI 层 | 开发中 |
 | M03.F02.I04 | 任务分配三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表（前端过滤器） | 开发中 |
-| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=SUBMIT 推进 assigning→data_entry（7 F 共享端点 _exempt.tsp §1） | 已上线 |
-| M03.F02.I06 | 任务分配-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=RETURN 退回到 receiving | 已上线 |
-| M03.F02.I07 | 任务分配-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=assigning, action=WITHDRAW | 已上线 |
+| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/assigning/submit：stage=assigning, action=SUBMIT 推进 assigning→data_entry | 已上线 |
+| M03.F02.I06 | 任务分配-退回 | 接口 | 前端+后端 | POST /api/receipts/assigning/return：stage=assigning, action=RETURN 退回到 receiving | 已上线 |
+| M03.F02.I07 | 任务分配-撤回 | 接口 | 前端+后端 | POST /api/receipts/assigning/withdraw：stage=assigning, action=WITHDRAW | 已上线 |
 
 ### M03.F03 数据录入
 
@@ -171,29 +171,29 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F03.I09 | 更新检测记录 | 接口 | 前端+后端 | PUT /api/test-records/{id}：PATCH 语义，未传字段保留 | 已上线 |
 | M03.F03.I10 | 删除检测记录 | 接口 | 前端+后端 | DELETE /api/test-records/{id}：204 if exists | 已上线 |
 | M03.F03.I11 | 检测记录改判 | 接口 | 前端+后端 | PUT /api/test-records/{id}/verdict：人工改判（M03.F05/F06 报告流程可触发） | 已上线 |
-| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=SUBMIT 推进 data_entry→review（7 F 共享端点 _exempt.tsp §1） | 已上线 |
-| M03.F03.I13 | 数据录入-退回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=RETURN 退回到 assigning | 已上线 |
-| M03.F03.I14 | 数据录入-撤回 | 接口 | 前端+后端 | POST /api/receipts/flow：stage=data_entry, action=WITHDRAW | 已上线 |
+| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/data-entry/submit：stage=data_entry, action=SUBMIT 推进 data_entry→review | 已上线 |
+| M03.F03.I13 | 数据录入-退回 | 接口 | 前端+后端 | POST /api/receipts/data-entry/return：stage=data_entry, action=RETURN 退回到 assigning | 已上线 |
+| M03.F03.I14 | 数据录入-撤回 | 接口 | 前端+后端 | POST /api/receipts/data-entry/withdraw：stage=data_entry, action=WITHDRAW | 已上线 |
 
 ### M03.F05 报告审核
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F05.I01 | 审核队列 | 接口 | 仅前端 | 4 F 共享端点 GET /api/receipts/flow/queue?stage=（_exempt.tsp §1）；前端队列页语义 | 已上线 |
+| M03.F05.I01 | 审核队列 | 接口 | 仅前端 | GET /api/receipts/review/queue；前端队列页语义 | 已上线 |
 | M03.F05.I02 | 报告审核-查看详情 | 按钮 | 前端+后端 | 审核详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
-| M03.F05.I03 | 报告审核-通过/退回 | 接口 | 仅前端 | 4 F 共享端点 POST /api/receipts/flow（_exempt.tsp §1）；前端按钮触发单条提交/退回 | 已上线 |
+| M03.F05.I03 | 报告审核-通过/退回 | 接口 | 仅前端 | POST /api/receipts/review/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条审核操作（body.action 区分） | 已上线 |
 | M03.F05.I04 | 报告审核三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表（nextjs 仓已实现 8 处 filterDataFn + 1 个 fnTest；react/vue 仓 page 存在但 prop 未挂） | 开发中 |
-| M03.F05.I05 | 报告审核-批量提交 | 接口 | 仅后端 | POST /api/receipts/flow：FlowActionRequest{ids[], action=SUBMIT} 批量推进 review→approval（4 F 共享端点 _exempt.tsp §1） | 开发中 |
-| M03.F05.I06 | 报告审核-批量退回 | 接口 | 仅后端 | POST /api/receipts/flow：FlowActionRequest{ids[], action=RETURN} 批量退回 approval→review | 开发中 |
+| M03.F05.I05 | 报告审核-批量提交 | 接口 | 仅后端 | POST /api/receipts/review/batch-submit：FlowActionRequest{ids[], action=SUBMIT} 批量推进 review→approval | 开发中 |
+| M03.F05.I06 | 报告审核-批量退回 | 接口 | 仅后端 | POST /api/receipts/review/batch-return：FlowActionRequest{ids[], action=RETURN} 批量退回 approval→review | 开发中 |
 
 
 ### M03.F06 报告批准
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F06.I01 | 报告阶段审批推进 | 接口 | 仅前端 | 4 F 共享端点 POST /api/receipts/flow（_exempt.tsp §1）；前端按钮触发单条审批推进 | 已上线 |
+| M03.F06.I01 | 报告阶段审批推进 | 接口 | 仅前端 | GET /api/receipts/approve/queue | 已上线 |
 | M03.F06.I02 | 报告批准-查看详情 | 按钮 | 前端+后端 | 批准详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
-| M03.F06.I03 | 报告批准-批准/退回 | 接口 | 仅前端 | 4 F 共享端点 POST /api/receipts/flow（_exempt.tsp §1）；前端按钮触发单条批准/退回 | 已上线 |
+| M03.F06.I03 | 报告批准-批准/退回 | 接口 | 仅前端 | POST /api/receipts/approve/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条批准操作 | 已上线 |
 | M03.F06.I04 | 报告批准三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 开发中 |
 
 
@@ -201,9 +201,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F07.I01 | 报告发放队列 | 接口 | 仅前端 | 4 F 共享端点 GET /api/receipts/flow/queue?stage=issuance（_exempt.tsp §1）；前端队列页语义 | 已上线 |
+| M03.F07.I01 | 报告发放队列 | 接口 | 仅前端 | GET /api/receipts/issuance/queue | 已上线 |
 | M03.F07.I02 | 报告发放-查看详情 | 按钮 | 前端+后端 | 发放详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
-| M03.F07.I03 | 报告发放-发放/退回 | 接口 | 仅前端 | 4 F 共享端点 POST /api/receipts/flow（_exempt.tsp §1）；前端按钮触发单条发放/退回 | 已上线 |
+| M03.F07.I03 | 报告发放-发放/退回 | 接口 | 仅前端 | POST /api/receipts/issuance/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条发放操作 | 已上线 |
 | M03.F07.I04 | 报告发放三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 开发中 |
 
 
@@ -211,9 +211,9 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F08.I01 | 报告归档队列 | 接口 | 仅前端 | 4 F 共享端点 GET /api/receipts/flow/queue?stage=archived（_exempt.tsp §1）；前端队列页语义 | 已上线 |
+| M03.F08.I01 | 报告归档队列 | 接口 | 仅前端 | GET /api/receipts/archived/queue | 已上线 |
 | M03.F08.I02 | 报告归档-查看详情 | 按钮 | 前端+后端 | 归档详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
-| M03.F08.I03 | 报告归档-归档/退回 | 接口 | 仅前端 | 4 F 共享端点 POST /api/receipts/flow（_exempt.tsp §1）；前端按钮触发单条归档/退回 | 已上线 |
+| M03.F08.I03 | 报告归档-归档/退回 | 接口 | 仅前端 | POST /api/receipts/archived/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条归档操作 | 已上线 |
 | M03.F08.I04 | 报告归档三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 开发中 |
 
 

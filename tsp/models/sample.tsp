@@ -78,3 +78,8 @@ model UpdateSampleRequest {
   ext?: Record<string>;
   remark?: string;
 }
+
+// M03.F01.I07 ext 字段补录（独立端点 PUT /samples/{id}/ext 专用）
+model UpdateSampleExtRequest {
+  ext: Record<string>;
+}

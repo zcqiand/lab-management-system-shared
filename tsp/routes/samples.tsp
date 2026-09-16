@@ -22,7 +22,12 @@ namespace Lab.Management.Shared.Samples {
   @route("/{id}")
   op getSample(@path id: string): Sample | ErrorResponse;
 
-  // M03.F03.I04 更新样品（含 M03.F01.I07 ext 字段补录，详见 _exempt.tsp §3）
+  // M03.F01.I07 ext 字段补录（独立端点：sample.ext 字段按当前类别 extFields 补录）
+  @put
+  @route("/{id}/ext")
+  op updateSampleExt(@path id: string, @body body: UpdateSampleExtRequest): Sample | ErrorResponse;
+
+// M03.F03.I04 更新样品
   @put
   @route("/{id}")
   op updateSample(@path id: string, @body body: UpdateSampleRequest): Sample | ErrorResponse;
