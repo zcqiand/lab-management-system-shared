@@ -11,7 +11,7 @@ namespace Lab.Management.Shared.Auth {
   @route("/login")
   op login(@body body: LoginRequest): LoginResponse | ErrorResponse;
 
-  // M01.F05.I02 token 刷新
+  // M01.F05.I04 token 刷新
   @post
   @route("/refresh")
   op refresh(@body body: RefreshTokenRequest): LoginResponse | ErrorResponse;
@@ -37,12 +37,12 @@ namespace Lab.Management.Shared.Auth {
   op getPermissions(): PermissionSet | ErrorResponse;
 
   // M01.F04.I01 动态菜单（身份平台下发，按当前租户）
-  // 注：M01.F04.I04（lab 侧边栏容器）共享此端点，详见 _exempt.tsp §3
+  // 注：F04.I04（lab 侧边栏容器）走 type=标签页不参与反向候选
   @get
   @route("/menus")
   op getMenus(): MenuNode[] | ErrorResponse;
 
-  // M01.F05.I03 SSO OAuth 2.0 授权码流 - 跳转端点（RFC 6749 §4.1.1）
+  // M01.F05.I02 SSO OAuth 2.0 授权码流 - 跳转端点（RFC 6749 §4.1.1）
   // response_type 必须为 "code"；client_id/redirect_uri/state 由前端生成（state
   // 验证在后端 cookie/session 中保留，防 CSRF）；client_secret 仅后端持（部署 env，
   // 不入 OpenAPI yaml）。lab 后端拿到 code 后 POST 到 saas /oauth/token 换 id_token，

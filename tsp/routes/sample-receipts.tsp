@@ -20,7 +20,7 @@ namespace Lab.Management.Shared.Receipts {
   op createReceipt(@body body: CreateSampleReceiptRequest): SampleReceipt | ErrorResponse;
 
   // M03.F01.I02 接样单详情（接样信息+样品+检测数据）
-  // 注：M03.F05.I02 / M03.F06.I02 / M03.F07.I02 / M03.F08.I02 / M03.F09.I01 共享此端点，详见 _exempt.tsp §3
+  // 注：F05.I02 / F06.I02 / F07.I02 / F08.I02 / F09.I01 均走 type=按钮（前端打开详情页动作），1:1 端点只挂 I02
   @get
   @route("/{id}")
   op getReceipt(@path id: string): SampleReceipt | ErrorResponse;
@@ -36,7 +36,7 @@ namespace Lab.Management.Shared.Receipts {
   op deleteReceipt(@path id: string): void | ErrorResponse;
 
   // M03.F02.I01 任务分配 / 取消
-  // 注：M03.F02.I02（客户端视角 anchor）共享此端点，详见 _exempt.tsp §3
+  // 注：F02.I02（客户端视角 anchor）走 type=按钮（前端弹窗 UI 动作），1:1 端点只挂 I01
   @put
   @route("/{id}/task")
   op assignTask(@path id: string, @body body: AssignTaskRequest): SampleReceipt | ErrorResponse;
