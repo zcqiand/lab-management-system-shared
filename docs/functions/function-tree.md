@@ -151,7 +151,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F02.I01 | 任务分配 | 接口 | 前端+后端 | PUT /api/receipts/{id}/task：AssignTaskRequest 设 assigneeId/Name/plannedTestDate；非 receiving 阶段不自动 advance | 已上线 |
 | M03.F02.I02 | 任务编辑（客户端视角 anchor） | 按钮 | 前端+后端 | 安排弹窗维护 assigneeName/assigneeId/plannedTestDate（前端弹窗 UI 动作，调 PUT /api/receipts/{id}/task 共 I01 端点；保留 ID 作为客户端视角 anchor，react/vue/nextjs 三仓 data-fn=I01） | 已上线 |
 | M03.F02.I03 | 任务取消（清空分配） | 按钮 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate（调 PUT /api/receipts/{id}/task 共 I01 端点），前端按钮仅 UI 层 | 开发中 |
-| M03.F02.I04 | 任务分配三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表（前端过滤器） | 开发中 |
+| M03.F02.I04 | 任务分配三态过滤器 | 按钮 | 仅前端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表（前端过滤器，触发 GET /api/receipts?flowStatus=…） | 开发中 |
 | M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/assigning/submit：stage=assigning, action=SUBMIT 推进 assigning→data_entry | 已上线 |
 | M03.F02.I06 | 任务分配-退回 | 接口 | 前端+后端 | POST /api/receipts/assigning/return：stage=assigning, action=RETURN 退回到 receiving | 已上线 |
 | M03.F02.I07 | 任务分配-撤回 | 接口 | 前端+后端 | POST /api/receipts/assigning/withdraw：stage=assigning, action=WITHDRAW | 已上线 |
