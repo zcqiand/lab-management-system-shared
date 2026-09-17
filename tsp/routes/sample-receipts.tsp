@@ -137,36 +137,7 @@ namespace Lab.Management.Shared.Receipts {
   @post
   op actFlowArchived(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
 
-  // 各阶段队列（4 端点）
-  // 挂载 I：M03.F05.I01
-  @route("/review/queue")
-  @get
-  op listReviewQueue(
-    @query page?: int32,
-    @query pageSize?: int32,
-  ): Page<SampleReceipt> | ErrorResponse;
-
-  // 挂载 I：M03.F06.I01
-  @route("/approve/queue")
-  @get
-  op listApproveQueue(
-    @query page?: int32,
-    @query pageSize?: int32,
-  ): Page<SampleReceipt> | ErrorResponse;
-
-  // 挂载 I：M03.F07.I01
-  @route("/issuance/queue")
-  @get
-  op listIssuanceQueue(
-    @query page?: int32,
-    @query pageSize?: int32,
-  ): Page<SampleReceipt> | ErrorResponse;
-
-  // 挂载 I：M03.F08.I01
-  @route("/archived/queue")
-  @get
-  op listArchivedQueue(
-    @query page?: int32,
-    @query pageSize?: int32,
-  ): Page<SampleReceipt> | ErrorResponse;
+  // 各阶段队列端点（4 个：F05/F06/F07/F08.I01）已于 2026-09-17 删除——队列数据走前端
+  // FlowQueue 共享端点 + Receipts 流式筛选，不再需要 per-stage 队列端点。
+  // 对应 function-tree I01 状态 → 已废弃。
 }
