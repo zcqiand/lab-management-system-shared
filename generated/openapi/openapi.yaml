@@ -2555,6 +2555,7 @@ paths:
             schema:
               $ref: '#/components/schemas/FlowActionRequest'
   /api/receipts/receiving/act:
+    x-fuzz: skip
     post:
       operationId: Receipts_actFlowReceiving
       parameters: []

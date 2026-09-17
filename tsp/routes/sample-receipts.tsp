@@ -58,8 +58,11 @@ namespace Lab.Management.Shared.Receipts {
   // 旧 F01.I08 submit / F01.I09 return / F01.I10 withdraw 3 端点合并为单一 act 端点
   // 新结构：F01.I08 提交 / F01.I09 退回 / F01.I10 撤回 共用 act 端点（POST /receiving/act with body.action={SUBMIT|RETURN|WITHDRAW}）
   // 挂载 I：M03.F01.I08 / F01.I09 / F01.I10
+  // ADR-0036 fuzz:skip：流程动作 7 阶段 act 模式（body.action=SUBMIT/RETURN/WITHDRAW），
+  // 状态机 + 顺序决定结果，Schemathesis 跳过；语义由 vitest 套件测
   @route("/receiving/act")
   @post
+  // fuzz:skip
   op actFlowReceiving(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
 
   // 任务分配阶段流程动作（2026-09-17 合并为 act）
