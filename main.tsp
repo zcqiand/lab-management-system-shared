@@ -10,7 +10,6 @@ import "./tsp/models/sample.tsp";
 import "./tsp/models/test-record.tsp";
 import "./tsp/models/inspection-catalog.tsp";
 import "./tsp/models/technical-requirement.tsp";
-import "./tsp/models/audit-event.tsp";
 import "./tsp/models/inspection-dictionary.tsp";
 import "./tsp/models/report-name.tsp";
 import "./tsp/models/calculation-method.tsp";

@@ -2420,9 +2420,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateSampleReceiptRequest'
-  /api/receipts/flow:
+  /api/receipts/approve/act:
     post:
-      operationId: ReportFlow_submitFlowAction
+      operationId: ReportFlow_actFlowApprove
       parameters: []
       responses:
         '200':
@@ -2447,16 +2447,553 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/flow/queue:
+  /api/receipts/approve/queue:
     get:
-      operationId: ReportFlow_listFlowQueue
+      operationId: ReportFlow_listApproveQueue
       parameters:
-        - name: stage
+        - name: page
           in: query
-          required: true
+          required: false
           schema:
-            $ref: '#/components/schemas/FlowStatus'
+            type: integer
+            format: int32
           explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SampleReceipt'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+  /api/receipts/archived/act:
+    post:
+      operationId: ReportFlow_actFlowArchived
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/archived/queue:
+    get:
+      operationId: ReportFlow_listArchivedQueue
+      parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SampleReceipt'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+  /api/receipts/assigning/return:
+    post:
+      operationId: ReportFlow_returnFlowAssigning
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/assigning/submit:
+    post:
+      operationId: ReportFlow_submitFlowAssigningSubmit
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/assigning/withdraw:
+    post:
+      operationId: ReportFlow_withdrawFlowAssigning
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/data-entry/return:
+    post:
+      operationId: ReportFlow_returnFlowDataEntry
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/data-entry/submit:
+    post:
+      operationId: ReportFlow_submitFlowDataEntrySubmit
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/data-entry/withdraw:
+    post:
+      operationId: ReportFlow_withdrawFlowDataEntry
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/issuance/act:
+    post:
+      operationId: ReportFlow_actFlowIssuance
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/issuance/queue:
+    get:
+      operationId: ReportFlow_listIssuanceQueue
+      parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+          explode: false
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - items
+                  - page
+                  - pageSize
+                  - total
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SampleReceipt'
+                  page:
+                    type: integer
+                    format: int32
+                    example: 1
+                  pageSize:
+                    type: integer
+                    format: int32
+                    example: 20
+                  total:
+                    type: integer
+                    format: int64
+                    example: 0
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+  /api/receipts/receiving/return:
+    post:
+      operationId: ReportFlow_returnFlowReceiving
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/receiving/submit:
+    post:
+      operationId: ReportFlow_submitFlowReceivingSubmit
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/receiving/withdraw:
+    post:
+      operationId: ReportFlow_withdrawFlowReceiving
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/review/act:
+    post:
+      operationId: ReportFlow_actFlowReview
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/review/batch-return:
+    post:
+      operationId: ReportFlow_batchReturnFlowReview
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/review/batch-submit:
+    post:
+      operationId: ReportFlow_batchSubmitFlowReview
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlowActionResult'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - report-flow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FlowActionRequest'
+  /api/receipts/review/queue:
+    get:
+      operationId: ReportFlow_listReviewQueue
+      parameters:
         - name: page
           in: query
           required: false
@@ -3262,6 +3799,36 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
         - samples
+  /api/samples/{id}/ext:
+    put:
+      operationId: Samples_updateSampleExt
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Sample'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - samples
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateSampleExtRequest'
   /api/summary:
     get:
       operationId: Summary_getReportSummary
@@ -5829,6 +6396,15 @@ components:
         config:
           type: object
           additionalProperties: {}
+    UpdateSampleExtRequest:
+      type: object
+      required:
+        - ext
+      properties:
+        ext:
+          type: object
+          additionalProperties:
+            type: string
     UpdateSampleReceiptRequest:
       type: object
       properties:
