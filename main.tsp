@@ -24,7 +24,6 @@ import "./tsp/routes/contracts.tsp";
 import "./tsp/routes/sample-receipts.tsp";
 import "./tsp/routes/samples.tsp";
 import "./tsp/routes/test-records.tsp";
-import "./tsp/routes/report-flow.tsp";
 import "./tsp/routes/inspection-catalog.tsp";
 import "./tsp/routes/technical-requirements.tsp";
 import "./tsp/routes/summary.tsp";
