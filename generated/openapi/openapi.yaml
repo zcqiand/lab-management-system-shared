@@ -2473,9 +2473,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/assigning/return:
+  /api/receipts/assigning/act:
     post:
-      operationId: Receipts_returnFlowAssigning
+      operationId: Receipts_actFlowAssigning
       parameters: []
       responses:
         '200':
@@ -2500,117 +2500,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/assigning/submit:
+  /api/receipts/data-entry/act:
     post:
-      operationId: Receipts_submitFlowAssigningSubmit
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/assigning/withdraw:
-    post:
-      operationId: Receipts_withdrawFlowAssigning
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/data-entry/return:
-    post:
-      operationId: Receipts_returnFlowDataEntry
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/data-entry/submit:
-    post:
-      operationId: Receipts_submitFlowDataEntrySubmit
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/data-entry/withdraw:
-    post:
-      operationId: Receipts_withdrawFlowDataEntry
+      operationId: Receipts_actFlowDataEntry
       parameters: []
       responses:
         '200':
@@ -2662,63 +2554,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/receiving/return:
+  /api/receipts/receiving/act:
     post:
-      operationId: Receipts_returnFlowReceiving
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/receiving/submit:
-    post:
-      operationId: Receipts_submitFlowReceivingSubmit
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/receiving/withdraw:
-    post:
-      operationId: Receipts_withdrawFlowReceiving
+      operationId: Receipts_actFlowReceiving
       parameters: []
       responses:
         '200':
@@ -2746,60 +2584,6 @@ paths:
   /api/receipts/review/act:
     post:
       operationId: Receipts_actFlowReview
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/review/batch-return:
-    post:
-      operationId: Receipts_batchReturnFlowReview
-      parameters: []
-      responses:
-        '200':
-          description: The request has succeeded.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/FlowActionResult'
-        default:
-          description: An unexpected error response.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      tags:
-        - receipts
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/FlowActionRequest'
-  /api/receipts/review/batch-submit:
-    post:
-      operationId: Receipts_batchSubmitFlowReview
       parameters: []
       responses:
         '200':
