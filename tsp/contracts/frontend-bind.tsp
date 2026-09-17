@@ -47,9 +47,8 @@ model BackendConfig {
   features: BackendFeatures;
 }
 
-@doc("已废弃 (ADR-0014);4 个槽位,id 锁定避免拼写漂移")
+@doc("已废弃 (ADR-0014);3 个槽位,id 锁定避免拼写漂移。msw 成员 2026-09-17 随 msw 仓剔除删除")
 enum BackendId {
-  msw,
   nextjs,
   springboot,
   aspnetcore,
@@ -63,7 +62,7 @@ enum AuthHeaderKind {
 
 @doc("已废弃 (ADR-0014);后端能力矩阵")
 model BackendFeatures {
-  @doc("是否启用 SSO 跳转(msw=false / nextjs=true / springboot/aspnetcore 视实现)")
+  @doc("是否启用 SSO 跳转(nextjs=true / springboot/aspnetcore 视实现)")
   sso: boolean;
 
   @doc("是否对接真实数据库(vs mock seed)")
