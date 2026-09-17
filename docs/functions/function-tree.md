@@ -182,7 +182,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F05.I01 | 审核队列 | 接口 | 仅前端 | GET /api/receipts/review/queue；2026-09-17 共享端点删除，前端列表筛选替代 | 已废弃 |
 | M03.F05.I02 | 报告审核-查看详情 | 按钮 | 前端+后端 | 审核详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
 | M03.F05.I03 | 报告审核-通过/退回 | 接口 | 仅前端 | POST /api/receipts/review/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条审核操作（body.action 区分） | 已上线 |
-| M03.F05.I04 | 报告审核三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表（nextjs 仓已实现 8 处 filterDataFn + 1 个 fnTest；react/vue 仓 page 存在但 prop 未挂） | 开发中 |
+| M03.F05.I04 | 报告审核三态过滤器 | 按钮 | 仅前端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表（前端过滤器，触发 GET /api/receipts?flowStatus=…；nextjs 仓已实现 8 处 filterDataFn + 1 个 fnTest；react/vue 仓 page 存在但 prop 未挂） | 开发中 |
 | M03.F05.I05 | 报告审核-批量提交 | 接口 | 仅后端 | POST /api/receipts/review/batch-submit：FlowActionRequest{ids[], action=SUBMIT} 批量推进 review→approval | 开发中 |
 | M03.F05.I06 | 报告审核-批量退回 | 接口 | 仅后端 | POST /api/receipts/review/batch-return：FlowActionRequest{ids[], action=RETURN} 批量退回 approval→review | 开发中 |
 
@@ -194,7 +194,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F06.I01 | 报告阶段审批推进 | 接口 | 仅前端 | GET /api/receipts/approve/queue；2026-09-17 共享端点删除，前端列表筛选替代 | 已废弃 |
 | M03.F06.I02 | 报告批准-查看详情 | 按钮 | 前端+后端 | 批准详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
 | M03.F06.I03 | 报告批准-批准/退回 | 接口 | 仅前端 | POST /api/receipts/approve/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条批准操作 | 已上线 |
-| M03.F06.I04 | 报告批准三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 开发中 |
+| M03.F06.I04 | 报告批准三态过滤器 | 按钮 | 仅前端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表（前端过滤器，触发 GET /api/receipts?flowStatus=…） | 开发中 |
 
 
 ### M03.F07 报告发放
@@ -204,7 +204,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F07.I01 | 报告发放队列 | 接口 | 仅前端 | GET /api/receipts/issuance/queue；2026-09-17 共享端点删除，前端列表筛选替代 | 已废弃 |
 | M03.F07.I02 | 报告发放-查看详情 | 按钮 | 前端+后端 | 发放详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
 | M03.F07.I03 | 报告发放-发放/退回 | 接口 | 仅前端 | POST /api/receipts/issuance/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条发放操作 | 已上线 |
-| M03.F07.I04 | 报告发放三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 开发中 |
+| M03.F07.I04 | 报告发放三态过滤器 | 按钮 | 仅前端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表（前端过滤器，触发 GET /api/receipts?flowStatus=…） | 开发中 |
 
 
 ### M03.F08 报告归档
@@ -214,7 +214,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M03.F08.I01 | 报告归档队列 | 接口 | 仅前端 | GET /api/receipts/archived/queue；2026-09-17 共享端点删除，前端列表筛选替代 | 已废弃 |
 | M03.F08.I02 | 报告归档-查看详情 | 按钮 | 前端+后端 | 归档详情页打开动作（前端按钮调 GET /api/receipts/{id}，与 5 共享 I 共端点） | 已上线 |
 | M03.F08.I03 | 报告归档-归档/退回 | 接口 | 仅前端 | POST /api/receipts/archived/act：FlowActionRequest{action=SUBMIT 或 RETURN} 单条归档操作 | 已上线 |
-| M03.F08.I04 | 报告归档三态过滤器 | 按钮 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 开发中 |
+| M03.F08.I04 | 报告归档三态过滤器 | 按钮 | 仅前端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表（前端过滤器，触发 GET /api/receipts?flowStatus=…） | 开发中 |
 
 
 ### M03.F09 接样单详情
