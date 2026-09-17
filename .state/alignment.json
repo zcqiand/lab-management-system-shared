@@ -449,7 +449,7 @@
     },
     "M01.F05.I01": {
       "name": "密码登录",
-      "status": "开发中",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -666,7 +666,7 @@
     },
     "M03.F02.I02": {
       "name": "任务编辑",
-      "status": "已上线",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -676,7 +676,7 @@
     },
     "M03.F02.I03": {
       "name": "任务取消（清空分配）",
-      "status": "开发中",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -808,6 +808,16 @@
       "tests": [],
       "entry": []
     },
+    "M03.F03.I15": {
+      "name": "数据录入三态过滤器",
+      "status": "开发中",
+      "type": "按钮",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
     "M03.F05.I01": {
       "name": "审核队列",
       "status": "已上线",
@@ -821,7 +831,7 @@
     "M03.F05.I02": {
       "name": "报告审核-查看详情",
       "status": "已上线",
-      "type": "接口",
+      "type": "按钮",
       "requirements": [],
       "flows": [],
       "designs": [],
@@ -829,8 +839,8 @@
       "entry": []
     },
     "M03.F05.I03": {
-      "name": "报告审核-通过/退回",
-      "status": "已上线",
+      "name": "报告审核-通过/退回（act 共端点）",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -841,6 +851,56 @@
     "M03.F05.I04": {
       "name": "报告审核三态过滤器",
       "status": "开发中",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F05.I05": {
+      "name": "报告审核-批量提交",
+      "status": "已废弃",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F05.I06": {
+      "name": "报告审核-批量退回",
+      "status": "已废弃",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F05.I07": {
+      "name": "报告审核-提交",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F05.I08": {
+      "name": "报告审核-退回",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F05.I09": {
+      "name": "报告审核-撤回",
+      "status": "已上线",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -861,7 +921,7 @@
     "M03.F06.I02": {
       "name": "报告批准-查看详情",
       "status": "已上线",
-      "type": "接口",
+      "type": "按钮",
       "requirements": [],
       "flows": [],
       "designs": [],
@@ -869,8 +929,8 @@
       "entry": []
     },
     "M03.F06.I03": {
-      "name": "报告批准-批准/退回",
-      "status": "已上线",
+      "name": "报告批准-批准/退回（act 共端点）",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -881,6 +941,36 @@
     "M03.F06.I04": {
       "name": "报告批准三态过滤器",
       "status": "开发中",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F06.I05": {
+      "name": "报告批准-提交",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F06.I06": {
+      "name": "报告批准-退回",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F06.I07": {
+      "name": "报告批准-撤回",
+      "status": "已上线",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -901,7 +991,7 @@
     "M03.F07.I02": {
       "name": "报告发放-查看详情",
       "status": "已上线",
-      "type": "接口",
+      "type": "按钮",
       "requirements": [],
       "flows": [],
       "designs": [],
@@ -909,8 +999,8 @@
       "entry": []
     },
     "M03.F07.I03": {
-      "name": "报告发放-发放/退回",
-      "status": "已上线",
+      "name": "报告发放-发放/退回（act 共端点）",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -921,6 +1011,36 @@
     "M03.F07.I04": {
       "name": "报告发放三态过滤器",
       "status": "开发中",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F07.I05": {
+      "name": "报告发放-提交",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F07.I06": {
+      "name": "报告发放-退回",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F07.I07": {
+      "name": "报告发放-撤回",
+      "status": "已上线",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -941,7 +1061,7 @@
     "M03.F08.I02": {
       "name": "报告归档-查看详情",
       "status": "已上线",
-      "type": "接口",
+      "type": "按钮",
       "requirements": [],
       "flows": [],
       "designs": [],
@@ -949,8 +1069,8 @@
       "entry": []
     },
     "M03.F08.I03": {
-      "name": "报告归档-归档/退回",
-      "status": "已上线",
+      "name": "报告归档-归档/退回（act 共端点）",
+      "status": "已废弃",
       "type": "接口",
       "requirements": [],
       "flows": [],
@@ -968,8 +1088,8 @@
       "tests": [],
       "entry": []
     },
-    "M03.F09.I01": {
-      "name": "接样单详情聚合",
+    "M03.F08.I05": {
+      "name": "报告归档-提交",
       "status": "已上线",
       "type": "接口",
       "requirements": [],
@@ -978,10 +1098,40 @@
       "tests": [],
       "entry": []
     },
-    "M03.F09.I02": {
-      "name": "详情页",
+    "M03.F08.I06": {
+      "name": "报告归档-退回",
       "status": "已上线",
       "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F08.I07": {
+      "name": "报告归档-撤回",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F09.I01": {
+      "name": "接样单详情聚合",
+      "status": "已上线",
+      "type": "按钮",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [],
+      "entry": []
+    },
+    "M03.F09.I02": {
+      "name": "详情页",
+      "status": "已废弃",
+      "type": "页面",
       "requirements": [],
       "flows": [],
       "designs": [],

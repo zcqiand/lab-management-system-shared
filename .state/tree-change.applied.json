@@ -47,6 +47,12 @@
       "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
     },
     {
+      "id": "M01.F05.I01",
+      "action": "废弃",
+      "name": "密码登录",
+      "reason": "2026-09-17：SSO (M01.F05.I02/I03) 已上线替代密码登录；9 仓 ServiceLogin/live_smoke/contract-test 13 注解仍依赖，分步处理：BASE 先标 已废弃 + tsp op 暂留，follow-up 9 仓同步迁移后删 op + LoginRequest/Response model"
+    },
+    {
       "id": "M01.F05.I02",
       "action": "新增",
       "name": "SSO 跳转",
@@ -155,10 +161,22 @@
       "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
     },
     {
+      "id": "M03.F02.I02",
+      "action": "废弃",
+      "name": "任务编辑（客户端视角 anchor）",
+      "reason": "2026-09-17：前端按钮 anchor，1:1 共 I01 端点；无独立 .tsp 端点定义（仅 sample-receipts.tsp 注释引用），清注释 + function-tree.md / alignment.json 标 已废弃"
+    },
+    {
       "id": "M03.F02.I03",
       "action": "新增",
       "name": "任务取消（清空分配）",
       "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 nextjs（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F02.I03",
+      "action": "废弃",
+      "name": "任务取消（清空分配）",
+      "reason": "2026-09-17：前端按钮 anchor，1:1 共 I01 端点；无独立 .tsp 端点定义，仅 sample-receipts.tsp 注释引用；function-tree.md / alignment.json 标 已废弃"
     },
     {
       "id": "M03.F02.I04",
@@ -807,9 +825,191 @@
       "action": "新增",
       "name": "参数↔界面 link",
       "reason": "Task 4 BASE 收 I 级定标（spec §3），主源 springboot（交付列 前端+后端）"
+    },
+    {
+      "id": "M03.F03.I15",
+      "action": "新增",
+      "name": "数据录入三态过滤器",
+      "reason": "2026-09-17：镜像 M03.F02.I04 模式，仅前端按钮触发 GET /api/receipts?flowStatus=… 过滤"
+    },
+    {
+      "id": "M03.F05.I02",
+      "action": "变更",
+      "name": "报告审核-查看详情",
+      "reason": "2026-09-17：交付列 前端+后端 → 仅前端（type=按钮 本就只前端动作）"
+    },
+    {
+      "id": "M03.F05.I03",
+      "action": "废弃",
+      "name": "报告审核-通过/退回（act 共端点）",
+      "reason": "2026-09-17：act 端点拆为 M03.F05.I07 提交 + I08 退回；ID 层面 废，端点保留作为共享底层"
+    },
+    {
+      "id": "M03.F05.I05",
+      "action": "废弃",
+      "name": "报告审核-批量提交",
+      "reason": "2026-09-17：未实现，删 op batchSubmitFlowReview"
+    },
+    {
+      "id": "M03.F05.I06",
+      "action": "废弃",
+      "name": "报告审核-批量退回",
+      "reason": "2026-09-17：未实现，删 op batchReturnFlowReview"
+    },
+    {
+      "id": "M03.F05.I07",
+      "action": "新增",
+      "name": "报告审核-提交",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I08/I09 共 F05.I03 (POST /review/act with action=SUBMIT)"
+    },
+    {
+      "id": "M03.F05.I08",
+      "action": "新增",
+      "name": "报告审核-退回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I07/I09 共 F05.I03 (POST /review/act with action=RETURN)"
+    },
+    {
+      "id": "M03.F05.I09",
+      "action": "新增",
+      "name": "报告审核-撤回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I07/I08 共 F05.I03 (POST /review/act with action=WITHDRAW)；删原 withdrawFlowReview op"
+    },
+    {
+      "id": "M03.F06.I03",
+      "action": "废弃",
+      "name": "报告批准-批准/退回（act 共端点）",
+      "reason": "2026-09-17：act 端点拆为 M03.F06.I05 提交 + I06 退回；ID 层面 废，端点保留作为共享底层"
+    },
+    {
+      "id": "M03.F06.I05",
+      "action": "新增",
+      "name": "报告批准-提交",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I06/I07 共 F06.I03 (POST /approve/act with action=SUBMIT)"
+    },
+    {
+      "id": "M03.F06.I06",
+      "action": "新增",
+      "name": "报告批准-退回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I07 共 F06.I03 (POST /approve/act with action=RETURN)"
+    },
+    {
+      "id": "M03.F06.I07",
+      "action": "新增",
+      "name": "报告批准-撤回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I06 共 F06.I03 (POST /approve/act with action=WITHDRAW)；删原 withdrawFlowApprove op"
+    },
+    {
+      "id": "M03.F07.I03",
+      "action": "废弃",
+      "name": "报告发放-发放/退回（act 共端点）",
+      "reason": "2026-09-17：act 端点拆为 M03.F07.I05 提交 + I06 退回；ID 层面 废，端点保留作为共享底层"
+    },
+    {
+      "id": "M03.F07.I05",
+      "action": "新增",
+      "name": "报告发放-提交",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I06/I07 共 F07.I03 (POST /issuance/act with action=SUBMIT)"
+    },
+    {
+      "id": "M03.F07.I06",
+      "action": "新增",
+      "name": "报告发放-退回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I07 共 F07.I03 (POST /issuance/act with action=RETURN)"
+    },
+    {
+      "id": "M03.F07.I07",
+      "action": "新增",
+      "name": "报告发放-撤回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I06 共 F07.I03 (POST /issuance/act with action=WITHDRAW)；删原 withdrawFlowIssuance op"
+    },
+    {
+      "id": "M03.F08.I03",
+      "action": "废弃",
+      "name": "报告归档-归档/退回（act 共端点）",
+      "reason": "2026-09-17：act 端点拆为 M03.F08.I05 提交 + I06 退回；ID 层面 废，端点保留作为共享底层"
+    },
+    {
+      "id": "M03.F08.I05",
+      "action": "新增",
+      "name": "报告归档-提交",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I06/I07 共 F08.I03 (POST /archived/act with action=SUBMIT)"
+    },
+    {
+      "id": "M03.F08.I06",
+      "action": "新增",
+      "name": "报告归档-退回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I07 共 F08.I03 (POST /archived/act with action=RETURN)"
+    },
+    {
+      "id": "M03.F08.I07",
+      "action": "新增",
+      "name": "报告归档-撤回",
+      "reason": "2026-09-17：4 阶段全 act 合并方案 B；与 I05/I06 共 F08.I03 (POST /archived/act with action=WITHDRAW)；删原 withdrawFlowArchived op"
+    },
+    {
+      "id": "M03.F09.I02",
+      "action": "废弃",
+      "name": "详情页",
+      "reason": "2026-09-17：type=页面 仅前端无 .tsp 端点；清 sample-receipts.tsp 注释引用；保留前端 UI 不变"
+    },
+    {
+      "id": "M03.F01.I08",
+      "action": "变更",
+      "name": "接样-提交",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点从 /receiving/submit 改为 /receiving/act with body.action=SUBMIT；删原 submitFlowReceivingSubmit op"
+    },
+    {
+      "id": "M03.F01.I09",
+      "action": "变更",
+      "name": "接样-退回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /receiving/act with body.action=RETURN；删原 returnFlowReceiving op"
+    },
+    {
+      "id": "M03.F01.I10",
+      "action": "变更",
+      "name": "接样-撤回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /receiving/act with body.action=WITHDRAW；删原 withdrawFlowReceiving op"
+    },
+    {
+      "id": "M03.F02.I05",
+      "action": "变更",
+      "name": "任务分配-提交",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点从 /assigning/submit 改为 /assigning/act with body.action=SUBMIT；删原 submitFlowAssigningSubmit op"
+    },
+    {
+      "id": "M03.F02.I06",
+      "action": "变更",
+      "name": "任务分配-退回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /assigning/act with body.action=RETURN；删原 returnFlowAssigning op"
+    },
+    {
+      "id": "M03.F02.I07",
+      "action": "变更",
+      "name": "任务分配-撤回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /assigning/act with body.action=WITHDRAW；删原 withdrawFlowAssigning op"
+    },
+    {
+      "id": "M03.F03.I12",
+      "action": "变更",
+      "name": "数据录入-提交",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点从 /data-entry/submit 改为 /data-entry/act with body.action=SUBMIT；删原 submitFlowDataEntrySubmit op"
+    },
+    {
+      "id": "M03.F03.I13",
+      "action": "变更",
+      "name": "数据录入-退回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /data-entry/act with body.action=RETURN；删原 returnFlowDataEntry op"
+    },
+    {
+      "id": "M03.F03.I14",
+      "action": "变更",
+      "name": "数据录入-撤回",
+      "reason": "2026-09-17：7 阶段全 act 模式统一；端点改为 /data-entry/act with body.action=WITHDRAW；删原 withdrawFlowDataEntry op"
     }
   ],
   "sync_files": [
-    "docs/functions/function-tree.md"
+    "docs/functions/function-tree.md",
+    "tsp/routes/sample-receipts.tsp",
+    ".state/alignment.json"
   ]
 }

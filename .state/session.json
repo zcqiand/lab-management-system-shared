@@ -1,19 +1,34 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "REQ-2026-001 param-interfaces 消费侧路径收敛——已上线",
+  "current_task": "M03 流程动作 7 阶段全 act 模式重整——base 仓完成，9 仓 follow-up 待续",
   "done": [
-    "REQ 立项 + 澄清三案（shared 仓落点/完整收敛/方案 A 保契约路径）",
-    "§7 live 四方收敛实录：5 轮 26 passed/1 skipped/0 failed（NRT 双层、DELETE body、超时、种子 PK 漂移、\"\"时间戳）",
-    "T-1~T-6 全部完成；8 仓 gate 全 exit 0；suite bump e80921c + 收官 commit"
+    "M01.F05.I01 标 已废弃（tsp op 暂留作 ServiceLogin/live_smoke 共享底层）",
+    "M01.F04.I02/I03/I04 用户原定全删→切到 I01 后未执行",
+    "M03.F02.I02/I03 标 已废弃（前端 anchor，无独立 .tsp 端点）",
+    "M03.F03.I15 数据录入三态过滤器新增",
+    "M03.F05.I02 交付列 前端+后端 → 仅前端",
+    "M03.F05.I03/I05/I06 标 已废弃；F05.I07/I08/I09 新增（act+body.action）",
+    "M03.F06/F07/F08 I03 标 已废；I05/I06/I07 新增（同 act 模式）",
+    "M03.F09.I02 详情页标 已废弃",
+    "F01/F02/F03 早期 3 阶段 submit/return/withdraw 9 op 合并为 3 个 act op（receiving/act/assigning/act/data-entry/act）",
+    "F05 batch-submit/batch-return 2 op 删（I05/I06 已废）",
+    "F05/F06/F07/F08 withdraw 4 op 删（撤回回归 act body.action=WITHDRAW）",
+    "7 阶段全 act 模式一致性达成：21 个 I 共 7 个 op"
   ],
   "next": [
-    "后续候选 REQ 排期：calculation-methods nextjs 同款 bug / unlink 幂等推广其余 6 组 junction / skipIf(!live) 结构性洞"
+    "写 ADR-0035「7 阶段全 act 模式 + body.action 区分」沉淀架构决策",
+    "9 仓 follow-up：4 后端（springboot/aspnetcore/nextjs 后端）+ msw handlers + 3 前端 auth.ts + contract-test 13 注解全量同步",
+    "修复 tests/snapshots/openapi.test.ts 第 31 行期望悬空路径 /api/receipts/flow（report-flow.tsp 合并前路径，2026-09-17 之前历史 bug）",
+    "L4 测试快照同步重导：删 9 op + 加 7 op 后 openapi.yaml 应重生成；gen-shared 应真实运行而非 dry-run",
+    "lab-springboot/lab-aspnetcore 4 后端 ServiceLogin 调用迁移完后才能删 M01.F05.I01 op + LoginRequest/Response model",
+    "WITHDRAW 行为在 4 后端一致性回归测试（合并 act 后 with action=WITHDRAW 是否被各 handler 识别）"
   ],
   "open_questions": [],
   "dont": [
-    "消费仓单方面改 BASE（ADR-0029）——发现「本仓需要 ≠ shared」停下列方案"
+    "消费仓单方面改 BASE（ADR-0029）——发现「本仓需要 ≠ shared」停下列方案",
+    "改 snapshot test 期望路径当次会话（即与本次 M03 重整无因果关系的悬空路径 /api/receipts/flow 应在单独 fix 任务里处理）"
   ],
   "active_branch": "master",
-  "last_session_at": "2026-09-14"
+  "last_session_at": "2026-09-17"
 }

@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "approved": true,
+  "base_sha": "cbe3796d97af8fd0",
+  "summary": "M03 流程动作结构重整：F03 三态过滤、F05-I02 仅前端、F05/F06/F07/F08 act 拆 submit/return/withdraw 子项 + 废 act/batch op、F09.I02 废",
+  "changes": [
+    {
+      "id": "M03.F03.I15",
+      "action": "新增",
+      "name": "数据录入三态过滤器",
+      "reason": "镜像 M03.F02.I04 模式：仅前端按钮，触发 GET /api/receipts?flowStatus=… 过滤任务分配列表"
+    },
+    {
+      "id": "M03.F05.I02",
+      "action": "变更",
+      "name": "报告审核-查看详情",
+      "reason": "交付列 前端+后端 → 仅前端（type=按钮 本就只前端动作，调用共 F01.I02 详情端点）"
+    },
+    {
+      "id": "M03.F05.I03",
+      "action": "废弃",
+      "name": "报告审核-通过/退回",
+      "reason": "act 端点（POST /review/act）拆为 M03.F05.I07 提交 + I08 退回；删 op actFlowReview"
+    },
+    {
+      "id": "M03.F05.I05",
+      "action": "废弃",
+      "name": "报告审核-批量提交",
+      "reason": "未实现，开发中状态；删 op batchSubmitFlowReview"
+    },
+    {
+      "id": "M03.F05.I06",
+      "action": "废弃",
+      "name": "报告审核-批量退回",
+      "reason": "未实现，开发中状态；删 op batchReturnFlowReview"
+    },
+    {
+      "id": "M03.F05.I07",
+      "action": "新增",
+      "name": "报告审核-提交",
+      "reason": "act 拆子项；端点共 F05.I03（POST /review/act with action=SUBMIT），建议同步拆为独立端点（follow-up）"
+    },
+    {
+      "id": "M03.F05.I08",
+      "action": "新增",
+      "name": "报告审核-退回",
+      "reason": "act 拆子项；端点共 F05.I03（POST /review/act with action=RETURN），建议同步拆为独立端点（follow-up）"
+    },
+    {
+      "id": "M03.F05.I09",
+      "action": "新增",
+      "name": "报告审核-撤回",
+      "reason": "对齐早期 3 阶段（F01.I10/F02.I07/F03.I14）撤回模式；新增 op withdrawFlowReview（POST /review/withdraw），镜像 /receiving/withdraw 等"
+    },
+    {
+      "id": "M03.F06.I03",
+      "action": "废弃",
+      "name": "报告批准-批准/退回",
+      "reason": "act 端点拆为 M03.F06.I05 提交 + I06 退回；删 op actFlowApprove"
+    },
+    {
+      "id": "M03.F06.I05",
+      "action": "新增",
+      "name": "报告批准-提交",
+      "reason": "act 拆子项；端点共 F06.I03（POST /approve/act with action=SUBMIT）"
+    },
+    {
+      "id": "M03.F06.I06",
+      "action": "新增",
+      "name": "报告批准-退回",
+      "reason": "act 拆子项；端点共 F06.I03（POST /approve/act with action=RETURN）"
+    },
+    {
+      "id": "M03.F06.I07",
+      "action": "新增",
+      "name": "报告批准-撤回",
+      "reason": "对齐早期 3 阶段；新增 op withdrawFlowApprove（POST /approve/withdraw）"
+    },
+    {
+      "id": "M03.F07.I03",
+      "action": "废弃",
+      "name": "报告发放-发放/退回",
+      "reason": "act 端点拆为 M03.F07.I05 提交 + I06 退回；删 op actFlowIssuance"
+    },
+    {
+      "id": "M03.F07.I05",
+      "action": "新增",
+      "name": "报告发放-提交",
+      "reason": "act 拆子项；端点共 F07.I03（POST /issuance/act with action=SUBMIT）"
+    },
+    {
+      "id": "M03.F07.I06",
+      "action": "新增",
+      "name": "报告发放-退回",
+      "reason": "act 拆子项；端点共 F07.I03（POST /issuance/act with action=RETURN）"
+    },
+    {
+      "id": "M03.F07.I07",
+      "action": "新增",
+      "name": "报告发放-撤回",
+      "reason": "对齐早期 3 阶段；新增 op withdrawFlowIssuance（POST /issuance/withdraw）"
+    },
+    {
+      "id": "M03.F08.I03",
+      "action": "废弃",
+      "name": "报告归档-归档/退回",
+      "reason": "act 端点拆为 M03.F08.I05 提交 + I06 退回；删 op actFlowArchived"
+    },
+    {
+      "id": "M03.F08.I05",
+      "action": "新增",
+      "name": "报告归档-提交",
+      "reason": "act 拆子项；端点共 F08.I03（POST /archived/act with action=SUBMIT）"
+    },
+    {
+      "id": "M03.F08.I06",
+      "action": "新增",
+      "name": "报告归档-退回",
+      "reason": "act 拆子项；端点共 F08.I03（POST /archived/act with action=RETURN）"
+    },
+    {
+      "id": "M03.F08.I07",
+      "action": "新增",
+      "name": "报告归档-撤回",
+      "reason": "对齐早期 3 阶段；新增 op withdrawFlowArchived（POST /archived/withdraw）"
+    },
+    {
+      "id": "M03.F09.I02",
+      "action": "废弃",
+      "name": "详情页",
+      "reason": "type=页面 仅前端，无 .tsp 端点（清 sample-receipts.tsp 第 24 行注释引用）；保留前端 UI 不变"
+    }
+  ],
+  "sync_files": [
+    "tsp/routes/sample-receipts.tsp",
+    "docs/functions/function-tree.md",
+    ".state/alignment.json"
+  ]
+}
