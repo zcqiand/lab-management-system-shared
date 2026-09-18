@@ -1,7 +1,10 @@
 // scripts/sync-templates.mjs — 把 assets/templates 拷到四个消费位；
 // --check 只比对不写（哈希级），差异退出码 1。
+// 拷贝用 read+write 而非 fs.cpSync：Node 24 Windows 下 cpSync 遇中文文件名
+// 直接 exit 9（Invalid Argument）进程崩、无报错输出——2026-09-18 模板漂移
+// 「跑同步不生效」的根因。
 import { createHash } from "node:crypto";
-import { readdirSync, readFileSync, cpSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -42,7 +45,7 @@ for (const { rel, abs: dest } of CONSUMERS) {
     if (!destSet.has(f) || hash(resolve(SRC, f)) !== hash(resolve(dest, f))) {
       drift = true;
       console.log(`[drift] ${rel}/${f}`);
-      if (!CHECK) cpSync(resolve(SRC, f), resolve(dest, f));
+      if (!CHECK) writeFileSync(resolve(dest, f), readFileSync(resolve(SRC, f)));
     }
   }
   const extraOk = new Set(ALLOWED_EXTRA[rel]);
