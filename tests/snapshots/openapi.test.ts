@@ -28,8 +28,11 @@ describe("OpenAPI snapshot", () => {
       "/api/receipts/{id}",
       "/api/receipts/{id}/task",
       "/api/receipts/{id}/history",
-      "/api/receipts/flow",
+      // 2026-09-17 ADR-0035 act 模式：/api/receipts/flow 删除，换 7 个状态机 act 端点（此处抽代表）
+      "/api/receipts/receiving/act",
+      "/api/receipts/review/act",
       "/api/samples",
+      "/api/samples/{id}/ext",
       "/api/test-records",
       "/api/test-records/{id}/verdict",
       "/api/catalog/brands",
