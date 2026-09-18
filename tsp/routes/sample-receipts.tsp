@@ -57,7 +57,7 @@ namespace Lab.Management.Shared.Receipts {
   // 接样阶段流程动作（2026-09-17 合并为 act）
   // 旧 F01.I08 submit / F01.I09 return / F01.I10 withdraw 3 端点合并为单一 act 端点
   // 新结构：F01.I08 提交 / F01.I09 退回 / F01.I10 撤回 共用 act 端点（POST /receiving/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F01.I08 / F01.I09 / F01.I10
+  // 挂载 I：M03.F01.I08（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I09 退回/I10 撤回 2026-09-18 已废弃并入本 ID）
   // ADR-0036 fuzz:skip：流程动作 7 阶段 act 模式（body.action=SUBMIT/RETURN/WITHDRAW），
   // 状态机 + 顺序决定结果，Schemathesis 跳过；语义由 vitest 套件测
   @route("/receiving/act")
@@ -68,7 +68,7 @@ namespace Lab.Management.Shared.Receipts {
   // 任务分配阶段流程动作（2026-09-17 合并为 act）
   // 旧 F02.I05 submit / F02.I06 return / F02.I07 withdraw 3 端点合并为单一 act 端点
   // 新结构：F02.I05 提交 / F02.I06 退回 / F02.I07 撤回 共用 act 端点（POST /assigning/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F02.I05 / F02.I06 / F02.I07
+  // 挂载 I：M03.F02.I05（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I06/I07 2026-09-18 已废弃并入本 ID）
   @route("/assigning/act")
   @post
   op actFlowAssigning(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
@@ -76,7 +76,7 @@ namespace Lab.Management.Shared.Receipts {
   // 数据录入阶段流程动作（2026-09-17 合并为 act）
   // 旧 F03.I12 submit / F03.I13 return / F03.I14 withdraw 3 端点合并为单一 act 端点
   // 新结构：F03.I12 提交 / F03.I13 退回 / F03.I14 撤回 共用 act 端点（POST /data-entry/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F03.I12 / F03.I13 / F03.I14
+  // 挂载 I：M03.F03.I12（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I13/I14 2026-09-18 已废弃并入本 ID）
   @route("/data-entry/act")
   @post
   op actFlowDataEntry(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
@@ -85,7 +85,7 @@ namespace Lab.Management.Shared.Receipts {
   // 旧 F05.I03 act（submit/return 共端点，body.action 区分）扩展为 3 动作端点（SUBMIT/RETURN/WITHDRAW）
   // 旧 F05.I05 batch-submit / F05.I06 batch-return 已废弃并删 op
   // 新结构：F05.I07 提交 / F05.I08 退回 / F05.I09 撤回 共用同一 act 端点（POST /review/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F05.I07 / F05.I08 / F05.I09（提交/退回/撤回 共端点，body.action 区分）
+  // 挂载 I：M03.F05.I07（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I08/I09 2026-09-18 已废弃并入本 ID）
   @route("/review/act")
   @post
   op actFlowReview(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
@@ -93,7 +93,7 @@ namespace Lab.Management.Shared.Receipts {
   // 报告批准阶段流程动作（2026-09-17 重整 → 4 阶段全 act 合并）
   // 旧 F06.I03 act 扩展为 3 动作端点（SUBMIT/RETURN/WITHDRAW）
   // 新结构：F06.I05 提交 / F06.I06 退回 / F06.I07 撤回 共用同一 act 端点（POST /approve/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F06.I05 / F06.I06 / F06.I07
+  // 挂载 I：M03.F06.I05（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I06/I07 2026-09-18 已废弃并入本 ID）
   @route("/approve/act")
   @post
   op actFlowApprove(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
@@ -101,7 +101,7 @@ namespace Lab.Management.Shared.Receipts {
   // 报告发放阶段流程动作（2026-09-17 重整 → 4 阶段全 act 合并）
   // 旧 F07.I03 act 扩展为 3 动作端点
   // 新结构：F07.I05 提交 / F07.I06 退回 / F07.I07 撤回 共用同一 act 端点（POST /issuance/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F07.I05 / F07.I06 / F07.I07
+  // 挂载 I：M03.F07.I05（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I06/I07 2026-09-18 已废弃并入本 ID）
   @route("/issuance/act")
   @post
   op actFlowIssuance(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;
@@ -109,7 +109,7 @@ namespace Lab.Management.Shared.Receipts {
   // 报告归档阶段流程动作（2026-09-17 重整 → 4 阶段全 act 合并）
   // 旧 F08.I03 act 扩展为 3 动作端点
   // 新结构：F08.I05 提交 / F08.I06 退回 / F08.I07 撤回 共用同一 act 端点（POST /archived/act with body.action={SUBMIT|RETURN|WITHDRAW}）
-  // 挂载 I：M03.F08.I05 / F08.I06 / F08.I07
+  // 挂载 I：M03.F08.I05（body.action={SUBMIT|RETURN|WITHDRAW} 三动作统一；I06/I07 2026-09-18 已废弃并入本 ID）
   @route("/archived/act")
   @post
   op actFlowArchived(@body body: FlowActionRequest): FlowActionResult[] | ErrorResponse;

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "M03 流程动作 7 阶段全 act 模式重整——base 仓完成，9 仓 follow-up 待续",
+  "current_task": "ADR-0035 9 仓 follow-up 收链完成（2026-09-18 task-2.2）；遗留观察见 next",
   "done": [
     "M01.F05.I01 标 已废弃（tsp op 暂留作 ServiceLogin/live_smoke 共享底层）",
     "M01.F04.I02/I03/I04 用户原定全删→切到 I01 后未执行",
@@ -14,15 +14,16 @@
     "F01/F02/F03 早期 3 阶段 submit/return/withdraw 9 op 合并为 3 个 act op（receiving/act/assigning/act/data-entry/act）",
     "F05 batch-submit/batch-return 2 op 删（I05/I06 已废）",
     "F05/F06/F07/F08 withdraw 4 op 删（撤回回归 act body.action=WITHDRAW）",
-    "7 阶段全 act 模式一致性达成：21 个 I 共 7 个 op"
+    "7 阶段全 act 模式一致性达成：21 个 I 共 7 个 op",
+    "9 仓 follow-up 收链（2026-09-18）：aspnetcore 220ee0f / springboot 8d9f927 / nextjs 772bae8 谱系 / react d383f6f / vue 1efc4a0 / contract-test 4409fb9；msw 项作废（仓已下线）、e2e 零残留",
+    "2026-09-18 act 兄弟 I 废弃并入 anchor 行：tsp 挂载注释收敛单 ID + function-tree 14 行废弃措辞 + tree-change + alignment regen",
+    "openapi.test.ts 悬空 /api/receipts/flow 期望修复（red→green：HEAD 红 missing path，改指 7 act 端点代表后绿）",
+    "gen-shared 真跑（emit:openapi 非 dry-run）：openapi.yaml 与 .tsp 零漂移，下游无需 regen"
   ],
   "next": [
-    "写 ADR-0035「7 阶段全 act 模式 + body.action 区分」沉淀架构决策",
-    "9 仓 follow-up：4 后端（springboot/aspnetcore/nextjs 后端）+ msw handlers + 3 前端 auth.ts + contract-test 13 注解全量同步",
-    "修复 tests/snapshots/openapi.test.ts 第 31 行期望悬空路径 /api/receipts/flow（report-flow.tsp 合并前路径，2026-09-17 之前历史 bug）",
-    "L4 测试快照同步重导：删 9 op + 加 7 op 后 openapi.yaml 应重生成；gen-shared 应真实运行而非 dry-run",
-    "lab-springboot/lab-aspnetcore 4 后端 ServiceLogin 调用迁移完后才能删 M01.F05.I01 op + LoginRequest/Response model",
-    "WITHDRAW 行为在 4 后端一致性回归测试（合并 act 后 with action=WITHDRAW 是否被各 handler 识别）"
+    "contract-test receipts-act WITHDRAW 探针 action 改契约小写（submit/return/withdraw）后，待 live 栈复跑四方比对（本机无 live 栈，live 绿未验）",
+    "M01.F05.I01 op 删除仍挂起：springboot/aspnetcore ServiceLogin 已迁 saas service-account，但 3 前端密码登录 + live_smoke + contract-test 仍消费 POST /auth/login",
+    "观察项：nextjs src/api/legacy-client.ts 仍含 /receipts/flow 死映射（注释自证已删）；contract-test 自有 .state/alignment.json 与 docs 仍引用 M96 flow 旧端点措辞"
   ],
   "open_questions": [],
   "dont": [
