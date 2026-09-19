@@ -24,7 +24,6 @@
       "per_repo": {"react": "VITE_SAAS_BASE_URL", "vue": "VITE_SAAS_BASE_URL", "nextjs": "SAAS_UI_BASE_URL"},
       "note": "2026-08-29 scope 全family→nextjs: lab 前端 SSO 登录页同栈匹配 (react→saas-react / vue→saas-vue / nextjs→saas-nextjs), 跨栈值本就不同,不是漂移。react/vue 的 key 保留在 per_repo 供查值但不再跨仓比对"
     },
-    "LAB_SSO_PROFILE": {"scope": ["backend"]},
     "DATABASE_NAME": {"scope": ["springboot", "aspnetcore"]}
   }
 }

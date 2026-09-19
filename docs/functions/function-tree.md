@@ -88,7 +88,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
 | M01.F05.I01 | 密码登录 | 接口 | 前端+后端 | POST /api/auth/login：用户名+密码校验，签发 access/refresh token + 租户列表。**2026-09-17 标记 已废弃**（SSO M01.F05.I02/I03 替代）；tsp op 暂留，9 仓 ServiceLogin/live_smoke/contract-test 13 注解迁移完成后一并删 op + LoginRequest/Response model | 已废弃 |
-| M01.F05.I02 | SSO 跳转 | 接口 | 前端+后端 | GET /api/auth/sso/authorize：RFC 6749 §10.12 标准 state（前端生成、原样透传 saas 回显、前端比对），forward saas POST /api/v1/oauth/authorize 拿 code；no-sso profile 走 NoopSaasAuthClient | 已上线 |
+| M01.F05.I02 | SSO 跳转 | 接口 | 前端+后端 | GET /api/auth/sso/authorize：RFC 6749 §10.12 标准 state（前端生成、原样透传 saas 回显、前端比对），forward saas POST /api/v1/oauth/authorize 拿 code | 已上线 |
 | M01.F05.I03 | SSO 回调 | 接口 | 前端+后端 | POST /api/auth/sso/callback:saas POST /api/v1/oauth/token 用一次性 code 换 token,再 /me/whoami + /me/tenants 拿 user,membership 信 saas;首次 SSO 按 email upsert 到 lab directory;state 校验在前端回跳比对 | 已上线 |
 | M01.F05.I04 | 刷新 token | 接口 | 前端+后端 | POST /api/auth/refresh:lab refresh token 是 HS256 JWT(typ=refresh),内嵌 saas refresh token;调 saas POST /api/v1/oauth/token grantType=refresh_token 续,再签新 lab JWT | 已上线 |
 | M01.F05.I05 | 登出 | 接口 | 前端+后端 | POST /api/auth/logout：无状态 JWT 服务端无 session，前端清存储 | 已上线 |
