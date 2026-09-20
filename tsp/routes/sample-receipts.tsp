@@ -7,6 +7,14 @@ using TypeSpec.Http;
 @tag("receipts")
 namespace Lab.Management.Shared.Receipts {
   // M03.F01.I01 列表（三态过滤：全部/未提交/已提交）
+  //
+  // filter 三态语义（5.57 入契约，SSOT = lab-nextjs db-queries.ts:53-58，全家族同款）：
+  //   不传       = 全部（第三态）
+  //   not_yet    = 停在 flowStatus 环节待提交；无 flowStatus 时 = jsonb_array_length(flow_history)=0
+  //                （无流转记录新单）
+  //   submitted  = 已从本环节 submit 至下一环节（history 有 submit from 本环节且当前 flowStatus
+  //                ≠ 本环节）；无 flowStatus 时 = 有流转记录且 last_submitted_by 非空
+  // 其余值不参与过滤（等同不传）。
   @get
   op listReceipts(
     @query page?: int32,
@@ -14,6 +22,7 @@ namespace Lab.Management.Shared.Receipts {
     @query keyword?: string,
     @query contractId?: string,
     @query flowStatus?: FlowStatus,
+    @query filter?: string,
   ): Page<SampleReceipt> | ErrorResponse;
 
   // M03.F01.I03 创建接样单

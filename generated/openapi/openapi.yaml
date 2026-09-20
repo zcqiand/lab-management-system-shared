@@ -2358,6 +2358,12 @@ paths:
           schema:
             $ref: '#/components/schemas/FlowStatus'
           explode: false
+        - name: filter
+          in: query
+          required: false
+          schema:
+            type: string
+          explode: false
       responses:
         '200':
           description: The request has succeeded.
