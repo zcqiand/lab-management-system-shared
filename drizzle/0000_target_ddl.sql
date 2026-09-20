@@ -1,18 +1,3 @@
-CREATE TYPE "public"."audit_action" AS ENUM('login', 'logout', 'create', 'update', 'delete', 'flow', 'export', 'other');--> statement-breakpoint
-CREATE TABLE IF NOT EXISTS "audit_events" (
-	"id" text PRIMARY KEY NOT NULL,
-	"action" "audit_action" NOT NULL,
-	"operator" text NOT NULL,
-	"target" text NOT NULL,
-	"target_id" text,
-	"detail" text,
-	"ip" text,
-	"at" text NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
-);
---> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "contracts" (
 	"id" text PRIMARY KEY NOT NULL,
 	"contract_code" text NOT NULL,
@@ -608,11 +593,6 @@ DO $$ BEGIN
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;
---> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_audit_events_at" ON "audit_events" USING btree ("at");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_audit_events_operator" ON "audit_events" USING btree ("operator");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_audit_events_target" ON "audit_events" USING btree ("target","target_id");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_audit_events_tenant" ON "audit_events" USING btree ("tenant_id");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_contracts_tenant" ON "contracts" USING btree ("tenant_id");--> statement-breakpoint
 CREATE UNIQUE INDEX IF NOT EXISTS "idx_contracts_tenant_code" ON "contracts" USING btree ("tenant_id","contract_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_brands_tenant" ON "inspection_brands" USING btree ("tenant_id");--> statement-breakpoint

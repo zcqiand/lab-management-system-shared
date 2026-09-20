@@ -1,10 +1,9 @@
 {
   "dumped_at": "2026-08-23T16:26:26.340Z",
   "source_db": "lab_dev",
-  "table_count": 24,
+  "table_count": 23,
   "total_rows": 4377,
   "skipped": [
-    "audit_events (empty)",
     "flyway_schema_history (system)"
   ]
 }

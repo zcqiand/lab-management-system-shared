@@ -73,7 +73,7 @@ lab-management-system-shared/
 │   ├── models/                      ← 11 个 .tsp 文件（@discriminated 联合 + DTO 形状）
 │   ├── routes/                      ← 13 个 .tsp 文件（@route 子 namespace + @get/@post op）
 │   └── contracts/                   ← 跨端 bind 锚点（FrontendBindMeta）
-├── src/db/schema.ts                 ← DB schema 真源（Drizzle 手写；25 表 + audit_action enum）
+├── src/db/schema.ts                 ← DB schema 真源（Drizzle 手写；24 表，零 PG enum）
 ├── drizzle/
 │   ├── 0000_target_ddl.sql          ← db:generate 物化的 baseline（与 lab_dev 实测一致）
 │   └── meta/                        ← drizzle journal + snapshot（入 git；幂等门的对照物）
@@ -371,14 +371,13 @@ V001-V017 的 SQL 历史看 git log -- sql/（2026-09-13 ADR-0033 阶段一切�
 | `inspection_specs` | InspectionSpec | M04.F07 |
 | `inspection_grades` | InspectionGrade | M04.F08 |
 | `inspection_technical_requirements` | TechnicalRequirement + 4 enum | M04.F05 |
-| `audit_events` | AuditEvent / AuditAction | M01.F04/F05 |
 | `inspection_specialties` + `inspection_objects` + 4 junction | InspectionSpecialty / Object / Parameter / Standard + 4 junction | M06.F01-F04 |
 | `inspection_report_names` + 3 junction + `inspection_calculation_methods` | InspectionReportName + 3 junction + CalculationMethod | M06.F05/F07 |
 | `inspection_param_interfaces` + `inspection_param_interface_links` | ParamInterface + link | M06.F08 |
-| `audit_action`（仅 PG enum） | AuditAction | M01 |
 
-**enum 值域**：V014（历史迁移）把 12 个业务 PG enum 全部转 TEXT，值域校验由 TypeSpec/OpenAPI 层兜底；
-仅 `audit_action` 保留 PG enum。schema.ts 里体现为 text 列 + 单个 `pgEnum`。
+**enum 值域**：V014（历史迁移）把 12 个业务 PG enum 全部转 TEXT，值域校验由 TypeSpec/OpenAPI 层兜底
+（audit_action PG enum 已随 audit_events 表清理删除，2026-09-20，5.65）；
+现零 PG enum。schema.ts 里全部值域列为 text。
 
 ---
 
@@ -439,7 +438,7 @@ V001-V017 的 SQL 历史看 git log -- sql/（2026-09-13 ADR-0033 阶段一切�
 3. [shared] python scripts/gate.py -p lab-management-system-shared
    L4: vitest run
    ├─ drizzle.replay.test.ts: 空库 drop schema → drizzle-kit push 全量重建
-   ├─ 断言 25 张表 + audit_action enum + 租户隔离列 + junction PK + cascade 链
+   ├─ 断言 24 张表 + 零 PG enum + 租户隔离列 + junction PK + cascade 链
    └─ 通过 → exit 0
    ↓
 
@@ -569,7 +568,7 @@ shared 的 V014（`ALTER TABLE inspection_calculation_rules ...`）与 springboo
 
 | 遗产 | 现状 |
 |---|---|
-| 12 个业务 enum → TEXT 化 | 保留在 schema.ts 终态里（仅 `audit_action` 一个 PG enum） |
+| 12 个业务 enum → TEXT 化 | 保留在 schema.ts 终态里（零 PG enum；audit_action 已随 audit_events 清理删除，5.65） |
 | 遗留约束名 `param_interfaces_pkey` / `inspection_calculation_rules_pkey` | schema.ts 显式保留（`primaryKey({ name })`），与 lab_dev 实测一致 |
 | 撞号事故教训（2026-08-26 flyway checksum） | 附录 C 陷阱表保留一行，作为「为什么迁移必须从真源生成」的反面教材 |
 

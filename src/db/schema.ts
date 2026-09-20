@@ -16,7 +16,6 @@
 //  sampleReceipts                    public.sample_receipts      (M03)
 //  samples                           public.samples              (M03)
 //  testRecords                       public.test_records         (M03)
-//  auditEvents                       public.audit_events         (M06)
 //  inspectionSpecialties             public.inspection_specialties         (M04)
 //  inspectionObjects                 public.inspection_objects             (M04)
 //  inspectionSpecialtyObjects        public.inspection_specialty_objects   (M04)
@@ -40,15 +39,14 @@
 // 约定：
 // - 时间列（created_at/updated_at）与 tenant_id 是 TEXT，默认 ''（V001 起的历史设计，
 //   区别于 saas 家族的 timestamptz）；业务时间字段（commission_date 等）同为 TEXT。
-// - enum 值域：V014 后 12 个业务 enum 全部 TEXT 化，TypeSpec/OpenAPI 层兜底校验；
-//   仅 audit_action 保留 PG enum。
+// - enum 值域：V014 后 12 个业务 enum 全部 TEXT 化，TypeSpec/OpenAPI 层兜底校验
+//   （audit_action PG enum 已随 audit_events 表清理删除，2026-09-20，5.65）。
 // - 索引 / FK / 约束名与 2026-09-13 lab_dev 实测一致（含历史遗留
 //   inspection_calculation_rules_pkey），rebaseline 后保持不变。
 // - updated_at 由各消费后端应用层维护（saas ADR-0025 D5/D6 同款，lab 无触发器）。
 
 import {
   pgTable,
-  pgEnum,
   text,
   integer,
   boolean,
@@ -59,17 +57,6 @@ import {
   primaryKey,
   foreignKey,
 } from "drizzle-orm/pg-core";
-
-export const auditAction = pgEnum("audit_action", [
-  "login",
-  "logout",
-  "create",
-  "update",
-  "delete",
-  "flow",
-  "export",
-  "other",
-]);
 
 // ── M02 合同 ────────────────────────────────────────────────────────────────
 
@@ -250,31 +237,6 @@ export const testRecords = pgTable(
       foreignColumns: [inspectionStandards.code],
       name: "testrec_standard_fk",
     }).onDelete("set null"),
-  ],
-);
-
-// ── M06 审计 ────────────────────────────────────────────────────────────────
-
-export const auditEvents = pgTable(
-  "audit_events",
-  {
-    id: text("id").primaryKey(),
-    action: auditAction("action").notNull(),
-    operator: text("operator").notNull(),
-    target: text("target").notNull(),
-    targetId: text("target_id"),
-    detail: text("detail"),
-    ip: text("ip"),
-    at: text("at").notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
-  },
-  (t) => [
-    index("idx_audit_events_at").on(t.at),
-    index("idx_audit_events_operator").on(t.operator),
-    index("idx_audit_events_target").on(t.target, t.targetId),
-    index("idx_audit_events_tenant").on(t.tenantId),
   ],
 );
 

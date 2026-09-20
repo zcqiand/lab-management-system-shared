@@ -57,10 +57,9 @@ if (allPgEnvPresent && !process.env.PG_DATABASE_TEST!.startsWith("lab_")) {
   );
 }
 
-// 25 张业务表（与 src/db/schema.ts 一一对应；簿记表 flyway_schema_history /
+// 24 张业务表（与 src/db/schema.ts 一一对应；簿记表 flyway_schema_history /
 // __schema_migrations / __drizzle_migrations 不在目标模型里）
 const EXPECTED_TABLES = [
-  "audit_events",
   "contracts",
   "inspection_brands",
   "inspection_calculation_methods",
@@ -149,15 +148,16 @@ describe("target DDL schema replay", () => {
     expect(rows.map((row) => row.table_name)).toEqual(EXPECTED_TABLES);
   });
 
-  it("keeps the single audit_action enum and TEXT-only value columns", async () => {
+  it("keeps TEXT-only value columns (no PG enums remain)", async () => {
     if (!client) return;
     const { rows: enums } = await client.query<{ typname: string }>(
       `SELECT t.typname FROM pg_type t
        WHERE t.typnamespace = 'public'::regnamespace AND t.typtype = 'e'
        ORDER BY t.typname`,
     );
-    // V014 后 12 个业务 enum 全部 TEXT 化，仅 audit_action 保留 PG enum
-    expect(enums.map((r) => r.typname)).toEqual(["audit_action"]);
+    // V014 后 12 个业务 enum 全部 TEXT 化；audit_action PG enum 已随
+    // audit_events 表清理删除（2026-09-20，5.65）——目标模型零 PG enum
+    expect(enums.map((r) => r.typname)).toEqual([]);
 
     const { rows: statusCols } = await client.query<{ data_type: string }>(
       `SELECT data_type FROM information_schema.columns
@@ -173,7 +173,6 @@ describe("target DDL schema replay", () => {
       "sample_receipts",
       "samples",
       "test_records",
-      "audit_events",
       "inspection_brands",
       "inspection_models",
       "inspection_specs",
