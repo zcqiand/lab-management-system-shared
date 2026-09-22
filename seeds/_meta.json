@@ -3,7 +3,5 @@
   "source_db": "lab_dev",
   "table_count": 23,
   "total_rows": 4377,
-  "skipped": [
-    "flyway_schema_history (system)"
-  ]
+  "skipped": ["flyway_schema_history (system)"]
 }

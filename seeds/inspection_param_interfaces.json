@@ -107,12 +107,7 @@
       "needsDiameter": true,
       "specimenCount": 3,
       "connectionMode": true,
-      "fractureLocationOptions": [
-        "母材断裂",
-        "断于接头",
-        "热影响区断裂",
-        "其他"
-      ]
+      "fractureLocationOptions": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
     },
     "created_at": "",
     "updated_at": ""
