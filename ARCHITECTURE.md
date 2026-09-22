@@ -57,7 +57,7 @@ graph TB
 | `seeds/` | 家族种子权威源（PG 快照形状，源 lab_dev；2026-09-15 自 lab-nextjs 迁入）；与 msw 仓双源共存期约定：改种子须同 commit 同步 msw 对应数据 | `seeds/*.json`（24 个）、`seeds/_meta.json` |
 | `assets/templates/` | 报告模板（docx + inject.json 注入数据），由 `sync-templates.mjs` 分发到消费仓 | `assets/templates/101_水泥检测报告.docx` 等 |
 | `tests/` | 契约与 DB 一致性测试（详见 §7） | `tests/drizzle.replay.test.ts`（281 行）、`tests/snapshots/openapi.test.ts`、`tests/fnReporter.ts` |
-| `docs/` | 仓内架构文档 / 功能树 | `docs/ARCHITECTURE.md`（682 行，长篇版）、`docs/functions/function-tree.md`（428 行，与 tsp/routes 一一对应的双账本） |
+| `docs/` | 功能树账本 | `docs/functions/function-tree.md`（428 行，与 tsp/routes 一一对应的双账本；原 `docs/ARCHITECTURE.md` 682 行历史长文已于 2026-09-22 移除，由根部 `ARCHITECTURE.md` 取代） |
 | 根部账本文件 | 版本锁定 / 变更日志 / 待办 / codegen 工具配置 | `version-lock.json`、`CHANGELOG.md`、`PLAN.md`、`openapitools.json`、`drizzle.config.ts`、`vitest.config.ts`（testTimeout 10s，reporter 含自定义 `FnReporter`） |
 | `backups/` | 重建库前的全量 JSON 备份与配套工具（rebaseline 前置义务：先备份） | `backups/lab_dev-backup-20260913.json`、`backups/dump-json.mjs`、`backups/restore-db.mjs`、`backups/catalog-diff.mjs` |
 

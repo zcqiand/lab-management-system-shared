@@ -39,7 +39,7 @@ npm test          # 全量测试（无 Key / 无 Docker / 无网可跑）
 ## 快速链接
 
 - [CLAUDE.md](CLAUDE.md) — 开发约定与编码规范
-- [系统架构.md](docs/ARCHITECTURE.md) — 结构 / 边界 / 数据流 / 决策
+- [架构](ARCHITECTURE.md) — DeepWiki 风格七章速览（结构 / 边界 / 数据流 / 门禁）
 - [功能规格.md](docs/functions/function-tree.md) — 功能名称、描述与验收标准
 - [未来开发计划](PLAN.md) — 待办与迭代方向
 - [更新日志](CHANGELOG.md) — 版本变更记录
