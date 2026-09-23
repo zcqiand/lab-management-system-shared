@@ -1,20 +1,22 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
+  "tier": "full",
+  "excluded_tier": [],
   "passed": true,
   "partial": true,
   "ran": [
-    "L5.inventory"
+    "L5"
   ],
-  "checked_at": "2026-09-17T00:27:55+0800",
+  "checked_at": "2026-09-20T11:33:03+0800",
   "gates": [
     {
-      "level": "L5.inventory",
-      "name": "端点 ↔ function-tree 1:1 强绑定（lab family）",
+      "level": "L5",
+      "name": "引用完整性",
       "passed": true,
       "returncode": 0,
-      "duration_s": 0.078,
-      "output": "=== family=lab ===\r\ntsp 路径：output\\lab-management-system-shared\\tsp\\routes\r\nfunction-tree：output\\lab-management-system-shared\\docs\\functions\\function-tree.md\r\n\r\nSSOT 端点总数：130\r\n  - 唯一路径数：74\r\n  - 含 I 注释端点数：126\r\n  - 单挂（1:1 命中）：126\r\n  - 0 挂：4\r\n  - 多挂：0\r\n\r\n正方向 0 挂：4\r\n  - GET    /param-interfaces/links  (param-interfaces.tsp:48)\r\n  - GET    /report-names/links/object  (report-names.tsp:49)\r\n  - GET    /report-names/links/standard  (report-names.tsp:67)\r\n  - GET    /report-names/links/parameter  (report-names.tsp:85)\r\n\r\n正方向多挂：0\r\n\r\n反方向候选 I：116（delivery ∈ {前端+后端, 仅后端} 且 type=接口）\r\n反方向 0 命中：0\r\n\r\n反方向多命中：0\r\n\r\n豁免候选（infra 端点，建议入 _exempt.tsp）：12\r\n  - POST   /param-interfaces/links  IDs=[M06.F08.I06]  (param-interfaces.tsp:38)\r\n  - DELETE /param-interfaces/links  IDs=[M06.F03.I07]  (param-interfaces.tsp:43)\r\n  - GET    /param-interfaces/links  IDs=[(无 I 注释)]  (param-interfaces.tsp:48)\r\n  - POST   /report-names/links/object  IDs=[M06.F07.I06]  (report-names.tsp:39)\r\n  - DELETE /report-names/links/object  IDs=[M06.F04.I05]  (report-names.tsp:44)\r\n  - GET    /report-names/links/object  IDs=[(无 I 注释)]  (report-names.tsp:49)\r\n  - POST   /report-names/links/standard  IDs=[M06.F07.I07]  (report-names.tsp:57)\r\n  - DELETE /report-names/links/standard  IDs=[M06.F04.I07]  (report-names.tsp:62)\r\n  - GET    /report-names/links/standard  IDs=[(无 I 注释)]  (report-names.tsp:67)\r\n  - POST   /report-names/links/parameter  IDs=[M06.F07.I08]  (report-names.tsp:75)\r\n  ... (其余 2 条省略)\r\n\r\n# ── 调试数据 ──\r\n# 未豁免的 0 挂端点（真问题）：0\r\n# 未豁免的多挂端点（真问题）：0\r\n#\r\n# 反向 0 命中候选 I 全量（真问题）：0\r\n#\r\n# 反向多命中候选 I 全量（真问题）：0\r\n#\r\n# 多挂端点全量（真问题）：0"
+      "duration_s": 1.734,
+      "output": "192 个功能条目，引用完整。软告警 323 条（见 .state/alignment.json）\r\n  [WARN] 已上线但无设计映射: M00.F01.I01, M00.F02.I01, M01.F04.I01, M01.F04.I02, M01.F05.I02, M01.F05.I03 …共 111 项\r\n  [WARN] 已上线但无测试引用: M00.F02.I01, M01.F05.I03, M01.F05.I04, M01.F05.I05, M03.F01.I01, M03.F01.I02 …共 78 项\r\n  [WARN] 已上线但不在任何流程且非孤儿白名单: M00.F01.I01, M00.F02.I01, M01.F04.I01, M01.F04.I02, M01.F05.I02, M01.F05.I03 …共 111 项\r\n  [WARN] 开发中但无需求文档引用: M01.F04.I03, M01.F04.I04, M02.F01.I04, M03.F01.I05, M03.F02.I04, M03.F03.I05 …共 15 项\r\n  [WARN] 开发中但代码里无 UI 入口(用户还点不到): M01.F04.I03, M01.F04.I04, M03.F02.I04, M03.F03.I15, M03.F05.I04, M03.F06.I04 …共 8 项"
     }
   ]
 }
