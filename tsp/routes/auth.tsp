@@ -8,9 +8,19 @@ using TypeSpec.Http;
 namespace Lab.Management.Shared.Auth {
   // M01.F05.I01 用户名+密码登录 — 2026-09-17 标记 已废弃；op 暂留待消费仓同步后删（BASE 端点须随 9 仓迁移一并下线）
   // follow-up: lab-springboot/lab-aspnetcore ServiceLogin(labConfig.sso().serviceUser/...) + lab-live_smoke /auth/login 探针 + contract-test 13 注解 全部迁移到 saas service-account 或 lab-internal endpoint 后，删 op + LoginRequest/Response model
+  // 2026-09-28 修订：LoginRequest 由 M01.F05.I06（原生登录）沿用——I01 删除时 LoginRequest 不随删，LoginResponse 因 refresh/switch-tenant/sso-callback 继续保留
   @post
   @route("/login")
   op login(@body body: LoginRequest): LoginResponse | ErrorResponse;
+
+  // M01.F05.I06 原生登录（非浏览器客户端：iOS/Android 原生表单）— REQ-2026-003 Q4-C（2026-09-28 人裁 A+B+C）
+  // 为原生客户端新开的密码通道，**非恢复 web 密码端点**（I01 仍为已废弃，web 端走 SSO I02/I03）。
+  // 请求/响应与 login 同形（LoginRequest → LoginResponse），lab 后端按 service-account
+  // 口径校验后签发 lab 自家 JWT（含 refreshToken）。浏览器客户端禁止调用（后端按
+  // Origin/Client 约束，契约层不做 UA 判断）。
+  @post
+  @route("/native-login")
+  op nativeLogin(@body body: LoginRequest): LoginResponse | ErrorResponse;
 
   // M01.F05.I04 token 刷新
   @post
@@ -48,6 +58,9 @@ namespace Lab.Management.Shared.Auth {
   // 验证在后端 cookie/session 中保留，防 CSRF）；client_secret 仅后端持（部署 env，
   // 不入 OpenAPI yaml）。lab 后端拿到 code 后 POST 到 saas /oauth/token 换 id_token，
   // 再解 user + 查 lab DB 算 permissions + 用 LAB_JWT_SECRET 签自家 JWT 返回。
+  // redirect_uri 白名单（REQ-2026-003 Q4-B，2026-09-28 人裁）：除 https 域名外，
+  // 原生客户端允许自定义 scheme（如 labmanagement://callback）；白名单校验在
+  // lab 后端实现，配置随部署 env（不入契约）。
   @get
   @route("/sso/authorize")
   op ssoAuthorize(
@@ -148,5 +161,9 @@ model SsoCallbackRequest {
   // /auth/sso/authorize. lab signs the state with HS256 and stores it in an
   // HttpOnly Secure cookie; backend verifies body.state == cookie.state +
   // cookie signature before exchanging the code with saas /oauth/token.
+  // state 验证双轨（REQ-2026-003 Q4-A，2026-09-28 人裁）：cookie 之外，后端同时
+  // 接受 body.state 对上 ssoAuthorize 签发时留存的服务端记录（一次性消费、
+  // 短时效）——为原生/非浏览器客户端提供对账路径（dev http 下 Secure cookie
+  // 不落盘，家族「state cookie 按 host 分档」先例）。两轨任一通过即放行。
   state: string;
 }

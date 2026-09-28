@@ -121,6 +121,31 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
       tags:
         - auth
+  /api/auth/native-login:
+    post:
+      operationId: Auth_nativeLogin
+      parameters: []
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        default:
+          description: An unexpected error response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      tags:
+        - auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
   /api/auth/permissions:
     get:
       operationId: Auth_getPermissions

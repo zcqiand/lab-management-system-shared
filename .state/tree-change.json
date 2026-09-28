@@ -1,32 +1,14 @@
 {
   "schema": 1,
   "approved": true,
-  "base_sha": "4e578964bc7fd758",
-  "summary": "废弃 ID 契约残留清理（树侧措辞）：4 个 F0x.I03 废弃行的「端点保留作为 I07/I08（I05/I06）的底层共享端点」说明已失真——被引用的兄弟 I 已于 2026-09-18 废止，且 act 端点现已直接锚定 I07/F0x.I05（tsp 挂载注释收敛为 anchor 单 ID）。改为与 14 个兄弟 I 同款「并入注记」措辞。tsp 侧无动作（queue/batch op 已于 2026-09-17 删净，flow 模型全部被 live op 引用，openapi.yaml 无残留）",
+  "base_sha": "b96434e52d79607e",
+  "summary": "REQ-2026-003 Q4-C（2026-09-28 人裁 A+B+C）：auth.tsp 新增原生登录端点 /auth/native-login（op nativeLogin，复用 LoginRequest/LoginResponse），登记 M01.F05.I06（I05 已用，号不回收）。同 commit 含 A state 双轨 / B scheme 白名单注释（纯语义增补无新 ID）。",
   "changes": [
     {
-      "id": "M03.F05.I03",
-      "action": "变更",
-      "name": "报告审核-通过/退回（act 共端点）",
-      "reason": "废弃行说明失真修正：删「端点保留作为 I07/I08 的底层共享端点」（I08 已废弃），改为「POST /api/receipts/review/act 端点锚定 M03.F05.I07，本行无独立端点」"
-    },
-    {
-      "id": "M03.F06.I03",
-      "action": "变更",
-      "name": "报告批准-批准/退回（act 共端点）",
-      "reason": "同款修正：POST /api/receipts/approve/act 端点锚定 M03.F06.I05，本行无独立端点"
-    },
-    {
-      "id": "M03.F07.I03",
-      "action": "变更",
-      "name": "报告发放-发放/退回（act 共端点）",
-      "reason": "同款修正：POST /api/receipts/issuance/act 端点锚定 M03.F07.I05，本行无独立端点"
-    },
-    {
-      "id": "M03.F08.I03",
-      "action": "变更",
-      "name": "报告归档-归档/退回（act 共端点）",
-      "reason": "同款修正：POST /api/receipts/archived/act 端点锚定 M03.F08.I05，本行无独立端点"
+      "id": "M01.F05.I06",
+      "action": "新增",
+      "name": "原生登录（非浏览器客户端表单，POST /auth/native-login）",
+      "reason": "REQ-2026-003 Q4-C：为 iOS/Android 原生客户端新开密码通道（非恢复已废弃的 I01 web 密码端点）；tsp op 已落，行同 commit 补齐（双账本）"
     }
   ],
   "sync_files": []
