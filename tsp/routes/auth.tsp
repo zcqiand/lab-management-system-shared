@@ -8,7 +8,7 @@ using TypeSpec.Http;
 namespace Lab.Management.Shared.Auth {
   // M01.F05.I01 用户名+密码登录 — 2026-09-17 标记 已废弃；op 暂留待消费仓同步后删（BASE 端点须随 9 仓迁移一并下线）
   // follow-up: lab-springboot/lab-aspnetcore ServiceLogin(labConfig.sso().serviceUser/...) + lab-live_smoke /auth/login 探针 + contract-test 13 注解 全部迁移到 saas service-account 或 lab-internal endpoint 后，删 op + LoginRequest/Response model
-  // 2026-09-28 修订：LoginRequest 由 M01.F05.I06（原生登录）沿用——I01 删除时 LoginRequest 不随删，LoginResponse 因 refresh/switch-tenant/sso-callback 继续保留
+  // 2026-09-28 修订：LoginRequest 由下方原生登录 op（I06）沿用——I01 删除时 LoginRequest 不随删，LoginResponse 因 refresh/switch-tenant/sso-callback 继续保留
   @post
   @route("/login")
   op login(@body body: LoginRequest): LoginResponse | ErrorResponse;
