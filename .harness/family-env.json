@@ -6,7 +6,8 @@
     "vue": ["frontend"],
     "nextjs": ["frontend", "backend"],
     "springboot": ["backend"],
-    "aspnetcore": ["backend"]
+    "aspnetcore": ["backend"],
+    "rails": ["backend"]
   },
   "synced_keys": {
     "JWT_SIGNING_KEY": {"secret": true, "per_repo": {"nextjs": "LAB_JWT_SECRET"}},
