@@ -32,7 +32,9 @@
     "ext_fields": [
       {
         "key": "qualityCertNo",
-        "label": "质保单编号"
+        "label": "质保单编号",
+        "type": "text",
+        "options": []
       }
     ],
     "description": "钢筋（含焊接与机械连接）力学性能、工艺性能、重量偏差",
@@ -49,11 +51,15 @@
     "ext_fields": [
       {
         "key": "jointType",
-        "label": "接头类型"
+        "label": "接头类型",
+        "type": "select",
+        "options": []
       },
       {
         "key": "concreteCastingDate",
-        "label": "对应部位混凝土浇筑时间"
+        "label": "对应部位混凝土浇筑时间",
+        "type": "date",
+        "options": []
       }
     ],
     "description": "钢筋机械连接接头抗拉强度",
@@ -70,15 +76,21 @@
     "ext_fields": [
       {
         "key": "welderName",
-        "label": "焊工姓名"
+        "label": "焊工姓名",
+        "type": "text",
+        "options": []
       },
       {
         "key": "welderCertNo",
-        "label": "焊工证号"
+        "label": "焊工证号",
+        "type": "text",
+        "options": []
       },
       {
         "key": "concreteCastingDate",
-        "label": "对应部位混凝土浇筑时间"
+        "label": "对应部位混凝土浇筑时间",
+        "type": "date",
+        "options": []
       }
     ],
     "description": "钢筋焊接接头抗拉/弯曲",
