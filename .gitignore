@@ -15,3 +15,8 @@ generated/csharp/
 
 # rebaseline 前的全量备份（ADR-0033 阶段一）
 backups/
+
+# 2026-10-04 env 泄漏纪律（2026-09-23 事故复盘）：本机密值不入库；.env.example/.env.test 等契约三件套不受影响
+.env
+.env.local
+.env.*.local
