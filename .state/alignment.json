@@ -473,7 +473,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:3601 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:4261 (annot)",
         "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1336 (annot)",
         "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:3147 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:8707 (annot)",
