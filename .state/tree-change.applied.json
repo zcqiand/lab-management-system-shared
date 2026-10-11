@@ -1,18 +1,16 @@
 {
   "schema": 1,
-  "approved": false,
-  "base_sha": "e518869cd912014a",
-  "summary": "REQ-2026-023（2026-10-11 人裁方案 A）：M01.F05.I06 原生登录校验委托 saas IdP 代理——native-login 以请求体账密调 saas /api/v1/auth/login（clientId=lab-management），lab JWT 重签与 LoginResponse 契约形状不变；LAB_AUTH_DEV_PASSWORD 全家族退役。",
+  "approved": true,
+  "base_sha": "2c8f833d5d58e4cb",
+  "summary": "REQ-2026-023 AC-7 验收闭环：M01.F05.I06 原生登录（代理 saas IdP）GA 翻转 开发中→已上线",
   "changes": [
     {
       "id": "M01.F05.I06",
       "action": "变更",
       "name": "原生登录",
-      "reason": "REQ-2026-023：校验委托 saas IdP 代理（凭据真源=saas 库，身份双源收敛），lab JWT 重签与响应契约形状不变；LAB_AUTH_DEV_PASSWORD（含 aspnetcore 分层拼法）全家族退役。行描述同步改写，状态 规划→开发中。"
+      "reason": "REQ-2026-023：tag 链 5/5 部署探针全过 + lab-flutter prod 浏览器原生登录人工验收通过（2026-10-12），AC-1~AC-7 闭环"
     }
   ],
-  "sync_files": [
-    "docs/requirements/REQ-2026-023-native-login-saas-proxy.md"
-  ],
-  "applied_at": "2026-10-11T01:51:38+0800"
+  "sync_files": [],
+  "applied_at": "2026-10-12T00:56:28"
 }

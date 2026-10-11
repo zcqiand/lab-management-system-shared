@@ -1,35 +1,18 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "ADR-0035 9 仓 follow-up 收链完成（2026-09-18 task-2.2）；遗留观察见 next",
+  "current_task": "REQ-2026-023 原生登录代理 saas IdP——全闭环（验收+GA 翻转完成）",
   "done": [
-    "M01.F05.I01 标 已废弃（tsp op 暂留作 ServiceLogin/live_smoke 共享底层）",
-    "M01.F04.I02/I03/I04 用户原定全删→切到 I01 后未执行",
-    "M03.F02.I02/I03 标 已废弃（前端 anchor，无独立 .tsp 端点）",
-    "M03.F03.I15 数据录入三态过滤器新增",
-    "M03.F05.I02 交付列 前端+后端 → 仅前端",
-    "M03.F05.I03/I05/I06 标 已废弃；F05.I07/I08/I09 新增（act+body.action）",
-    "M03.F06/F07/F08 I03 标 已废；I05/I06/I07 新增（同 act 模式）",
-    "M03.F09.I02 详情页标 已废弃",
-    "F01/F02/F03 早期 3 阶段 submit/return/withdraw 9 op 合并为 3 个 act op（receiving/act/assigning/act/data-entry/act）",
-    "F05 batch-submit/batch-return 2 op 删（I05/I06 已废）",
-    "F05/F06/F07/F08 withdraw 4 op 删（撤回回归 act body.action=WITHDRAW）",
-    "7 阶段全 act 模式一致性达成：21 个 I 共 7 个 op",
-    "9 仓 follow-up 收链（2026-09-18）：aspnetcore 220ee0f / springboot 8d9f927 / nextjs 772bae8 谱系 / react d383f6f / vue 1efc4a0 / contract-test 4409fb9；msw 项作废（仓已下线）、e2e 零残留",
-    "2026-09-18 act 兄弟 I 废弃并入 anchor 行：tsp 挂载注释收敛单 ID + function-tree 14 行废弃措辞 + tree-change + alignment regen",
-    "openapi.test.ts 悬空 /api/receipts/flow 期望修复（red→green：HEAD 红 missing path，改指 7 act 端点代表后绿）",
-    "gen-shared 真跑（emit:openapi 非 dry-run）：openapi.yaml 与 .tsp 零漂移，下游无需 regen"
+    "I06 树变更获批写树（状态=开发中）；REQ-2026-023 落库",
+    "§7 实施记录：tag 链 5/5 探针记录+AC 归账+遗留观察项三条",
+    "GH secrets LAB_AUTH_DEV_PASSWORD 已删（rails/fastapi）"
   ],
   "next": [
-    "contract-test receipts-act WITHDRAW 探针 action 改契约小写（submit/return/withdraw）后，待 live 栈复跑四方比对（本机无 live 栈，live 绿未验）",
-    "M01.F05.I01 op 删除仍挂起：springboot/aspnetcore ServiceLogin 已迁 saas service-account，但 3 前端密码登录 + live_smoke + contract-test 仍消费 POST /auth/login",
-    "观察项：nextjs src/api/legacy-client.ts 仍含 /receipts/flow 死映射（注释自证已删）；contract-test 自有 .state/alignment.json 与 docs 仍引用 M96 flow 旧端点措辞"
+    "REQ-2026-023 全闭环：AC-1~AC-7 过、I06 已 GA（已上线）——无挂起项"
   ],
   "open_questions": [],
   "dont": [
-    "消费仓单方面改 BASE（ADR-0029）——发现「本仓需要 ≠ shared」停下列方案",
-    "改 snapshot test 期望路径当次会话（即与本次 M03 重整无因果关系的悬空路径 /api/receipts/flow 应在单独 fix 任务里处理）"
-  ],
-  "active_branch": "master",
-  "last_session_at": "2026-09-17"
+    "部署一律新 tag，严禁 rerun 旧 tag（REQ-2026-023 R2）",
+    "LAB_AUTH_DEV_PASSWORD 已退役：读点/ env / secret 全清，回滚走 revert+新 tag+VPS 回填"
+  ]
 }
