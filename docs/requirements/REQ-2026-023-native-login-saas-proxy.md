@@ -90,3 +90,9 @@
 ## 7. 实施记录
 
 - 2026-10-11 REQ 落库;tree-change 提案待人批。
+- 2026-10-11 T-0 完成:提案获批写树(I06 状态=开发中,描述含代理语义);REQ 落库;contract-test auth.test.ts 注释同 commit。
+- 2026-10-11 T-1~T-5 完成:五后端按 nextjs→springboot→aspnetcore→rails→fastapi 顺序逐仓 TDD+gate 绿;commit:nextjs 147b6f6+bffc20c / springboot 003b61d+4eef769 / aspnetcore dfca356+7116fe5 / rails 307cbcd / fastapi 3010035(分支全推)。
+- 2026-10-11 T-6 完成:LAB_AUTH_DEV_PASSWORD 全家族退役(35 文件两拼法);全家族 grep 零命中(AC-5 ✓)。
+- 2026-10-12 T-7 完成:**顺序 tag 链 5/5**(v0.3.89 / v0.1.54 / v0.2.37 / v0.1.9 / v0.1.4,均 `-20261011`),CI 全绿;prod 探针五仓:有效账密 200(LoginResponse 形状全,富化真名)+错密码 401(**AC-3 ✓**);死键清理部署日志实锤(nextjs/rails/fastapi "drop dead key"、aspnetcore "drop legacy key Lab__Auth__DevPassword");**AC-1/AC-2/AC-7(自动化部分)✓**。终验:alice/dev123456 → `https://lab-nextjs.xiangru.uk/api/auth/native-login` 200。
+- 2026-10-12 T-8 完成:GH secrets `LAB_AUTH_DEV_PASSWORD` 已删(rails/fastapi)。**AC-4(502 三态)未逐仓实测**(saas 恒健康,故障注入无窗口;映射逻辑有单测覆盖)——留观察项。
+- **遗留观察项**:① springboot 死键清理块 2026-10-12 后补(deploy 脚本 v0.1.54 部署时无该块),VPS springboot.env 残留行待下次自然部署清除(读点已删,无害);② aspnetcore 401 body 形状 `{"error":...}` 与其余四仓 `{"code":"INVALID_CREDENTIALS",...}` 分叉(状态码/语义一致,normalize 未破裂,与既有「重复 POST 语义五仓分叉」同类留档);③ lab-flutter prod 浏览器人工验收待用户执行(AC-7 闭环条件)。
