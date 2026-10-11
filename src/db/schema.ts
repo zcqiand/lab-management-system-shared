@@ -132,6 +132,7 @@ export const sampleReceipts = pgTable(
     judgmentBasis: jsonb("judgment_basis"),
     testingBasis: jsonb("testing_basis"),
     testParameters: jsonb("test_parameters"),
+    ext: jsonb("ext").default({}).notNull(),
     flowStatus: text("flow_status").default("receiving").notNull(),
     flowHistory: jsonb("flow_history").default([]).notNull(),
     lastSubmittedBy: text("last_submitted_by"),
