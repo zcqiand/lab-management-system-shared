@@ -96,3 +96,5 @@
 - 2026-10-12 T-7 完成:**顺序 tag 链 5/5**(v0.3.89 / v0.1.54 / v0.2.37 / v0.1.9 / v0.1.4,均 `-20261011`),CI 全绿;prod 探针五仓:有效账密 200(LoginResponse 形状全,富化真名)+错密码 401(**AC-3 ✓**);死键清理部署日志实锤(nextjs/rails/fastapi "drop dead key"、aspnetcore "drop legacy key Lab__Auth__DevPassword");**AC-1/AC-2/AC-7(自动化部分)✓**。终验:alice/dev123456 → `https://lab-nextjs.xiangru.uk/api/auth/native-login` 200。
 - 2026-10-12 T-8 完成:GH secrets `LAB_AUTH_DEV_PASSWORD` 已删(rails/fastapi)。**AC-4(502 三态)未逐仓实测**(saas 恒健康,故障注入无窗口;映射逻辑有单测覆盖)——留观察项。
 - **遗留观察项**:① springboot 死键清理块 2026-10-12 后补(deploy 脚本 v0.1.54 部署时无该块),VPS springboot.env 残留行待下次自然部署清除(读点已删,无害);② aspnetcore 401 body 形状 `{"error":...}` 与其余四仓 `{"code":"INVALID_CREDENTIALS",...}` 分叉(状态码/语义一致,normalize 未破裂,与既有「重复 POST 语义五仓分叉」同类留档);③ lab-flutter prod 浏览器人工验收待用户执行(AC-7 闭环条件)。
+- 2026-10-12 **AC-7 闭环**:lab-flutter prod 浏览器原生登录**人工验收通过**(用户确认 alice/dev123456 登录 `https://lab-flutter.xiangru.uk` 成功)——七条验收标准全过,REQ-2026-023 交付完成。
+- 2026-10-12 人裁:服务账号凭据(`LAB_SAAS_SERVICE_USER=alice`/`LAB_SAAS_SERVICE_PASSWORD` 复用 alice 密码)**暂不处理**——菜单快照服务账号独立化/强密码轮换留待后续需求,本 REQ 范围不扩。
