@@ -61,6 +61,18 @@ namespace Lab.Management.Shared.Auth {
   // redirect_uri 白名单（REQ-2026-003 Q4-B，2026-09-28 人裁）：除 https 域名外，
   // 原生客户端允许自定义 scheme（如 labmanagement://callback）；白名单校验在
   // lab 后端实现，配置随部署 env（不入契约）。
+  //
+  // 2026-10-11 契约面补注：以上语义原先只活在本文件注释里，消费位只从生成物进
+  // （openapi.yaml），看不到这段承重语义——@doc 落进生成物，消费方读 yaml 即得。
+  // 纯注记增量，零形状变更。
+  @doc("""
+    SSO 跳转端点（RFC 6749 §4.1.1 授权码流）。返回跳板 URL 而非 302：客户端取
+    authorizeUrl 做 top-level navigation。
+
+    state 由前端生成并原样透传，回跳时前端比对，防 CSRF；redirect_uri 须在后端
+    白名单内（https 域名之外，原生客户端允许自定义 scheme），白名单配置随部署
+    env，不入契约；client_secret 仅后端持有，不出现在本契约。
+  """)
   @get
   @route("/sso/authorize")
   op ssoAuthorize(
