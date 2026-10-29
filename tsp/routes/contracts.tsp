@@ -7,8 +7,8 @@ namespace Lab.Management.Shared.Contracts {
   // M02.F01.I01 列表
   @get
   op listContracts(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query keyword?: string,
     @query status?: ContractStatus,
   ): Page<Contract> | ErrorResponse;

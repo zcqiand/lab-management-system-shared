@@ -7,8 +7,8 @@ namespace Lab.Management.Shared.ParamInterfaces {
   // M06.F08.I01 参数界面列表
   @get
   op listParamInterfaces(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query keyword?: string,
   ): Page<ParamInterface> | ErrorResponse;
 

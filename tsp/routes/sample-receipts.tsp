@@ -17,8 +17,8 @@ namespace Lab.Management.Shared.Receipts {
   // 其余值不参与过滤（等同不传）。
   @get
   op listReceipts(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query keyword?: string,
     @query contractId?: string,
     @query flowStatus?: FlowStatus,

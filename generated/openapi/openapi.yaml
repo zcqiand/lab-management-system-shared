@@ -441,6 +441,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -448,6 +449,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -484,10 +486,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -581,6 +585,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -588,6 +593,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -624,10 +630,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -721,6 +729,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -728,6 +737,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -764,10 +774,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -861,6 +873,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -868,6 +881,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -904,10 +918,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1001,6 +1017,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1008,6 +1025,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1044,10 +1062,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1241,10 +1261,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1345,10 +1367,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1432,10 +1456,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1525,10 +1551,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1549,6 +1577,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1556,6 +1585,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1592,10 +1622,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1689,6 +1721,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1696,6 +1729,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1732,10 +1766,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1829,6 +1865,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1836,6 +1873,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1866,10 +1904,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -1963,6 +2003,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1970,6 +2011,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2006,10 +2048,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -2103,6 +2147,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2110,6 +2155,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2140,10 +2186,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -2265,10 +2313,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -2361,6 +2411,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2368,6 +2419,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2416,10 +2468,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -2782,6 +2836,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2789,6 +2844,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2819,10 +2875,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -2944,10 +3002,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -3045,10 +3105,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -3149,10 +3211,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -3245,6 +3309,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -3252,6 +3317,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -3288,10 +3354,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer
@@ -3665,6 +3733,7 @@ paths:
         - name: page
           in: query
           required: false
+          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -3672,6 +3741,7 @@ paths:
         - name: pageSize
           in: query
           required: false
+          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -3708,10 +3778,12 @@ paths:
                   page:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
                     example: 1
                   pageSize:
                     type: integer
                     format: int32
+                    description: 当前实现仅回显，不切片。
                     example: 20
                   total:
                     type: integer

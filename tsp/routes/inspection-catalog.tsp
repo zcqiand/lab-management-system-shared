@@ -10,8 +10,8 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/brands")
   op listBrands(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionBrand> | ErrorResponse;
@@ -36,8 +36,8 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/models")
   op listModels(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionModel> | ErrorResponse;
@@ -62,8 +62,8 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/specs")
   op listSpecs(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionSpec> | ErrorResponse;
@@ -88,8 +88,8 @@ namespace Lab.Management.Shared.Catalog {
   @get
   @route("/grades")
   op listGrades(
-    @query page?: int32,
-    @query pageSize?: int32,
+    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
+    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionGrade> | ErrorResponse;

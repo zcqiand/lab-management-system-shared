@@ -64,8 +64,8 @@ model ErrorResponse {
 // ============================================================
 model Page<T> {
   items: T[];
-  @example(1) page: int32;
-  @example(20) pageSize: int32;
+  @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @example(1) page: int32;
+  @doc("当前实现仅回显，不切片。") @example(20) pageSize: int32;
   @example(0) total: int64;
 }
 
