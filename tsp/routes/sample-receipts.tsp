@@ -16,9 +16,10 @@ namespace Lab.Management.Shared.Receipts {
   //                ≠ 本环节）；无 flowStatus 时 = 有流转记录且 last_submitted_by 非空
   // 其余值不参与过滤（等同不传）。
   @get
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listReceipts(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
     @query contractId?: string,
     @query flowStatus?: FlowStatus,

@@ -9,9 +9,10 @@ namespace Lab.Management.Shared.InspectionDictionary {
   // M06.F01.I01 专项列表
   @get
   @route("/specialties")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listSpecialties(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
   ): Page<InspectionSpecialty> | ErrorResponse;
 
@@ -34,9 +35,10 @@ namespace Lab.Management.Shared.InspectionDictionary {
   // M06.F02.I01 项目列表
   @get
   @route("/objects")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listObjects(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionSpecialtyCode?: string,
     @query keyword?: string,
   ): Page<InspectionObject> | ErrorResponse;
@@ -60,9 +62,10 @@ namespace Lab.Management.Shared.InspectionDictionary {
   // M06.F03.I01 参数列表
   @get
   @route("/parameters")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listParameters(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
     @query sourceType?: InspectionParameterSourceType,
   ): Page<InspectionParameter> | ErrorResponse;
@@ -86,9 +89,10 @@ namespace Lab.Management.Shared.InspectionDictionary {
   // M06.F04.I01 标准列表
   @get
   @route("/standards")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listStandards(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query keyword?: string,
     @query status?: InspectionStandardStatus,
   ): Page<InspectionStandard> | ErrorResponse;

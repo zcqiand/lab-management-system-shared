@@ -437,11 +437,11 @@ paths:
   /api/catalog/brands:
     get:
       operationId: Catalog_listBrands
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -449,7 +449,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -581,11 +580,11 @@ paths:
   /api/catalog/grades:
     get:
       operationId: Catalog_listGrades
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -593,7 +592,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -725,11 +723,11 @@ paths:
   /api/catalog/models:
     get:
       operationId: Catalog_listModels
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -737,7 +735,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -869,11 +866,11 @@ paths:
   /api/catalog/specs:
     get:
       operationId: Catalog_listSpecs
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -881,7 +878,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1013,11 +1009,11 @@ paths:
   /api/contracts:
     get:
       operationId: Contracts_listContracts
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1025,7 +1021,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1573,11 +1568,11 @@ paths:
   /api/inspection/objects:
     get:
       operationId: InspectionDictionary_listObjects
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1585,7 +1580,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1717,11 +1711,11 @@ paths:
   /api/inspection/parameters:
     get:
       operationId: InspectionDictionary_listParameters
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1729,7 +1723,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1861,11 +1854,11 @@ paths:
   /api/inspection/specialties:
     get:
       operationId: InspectionDictionary_listSpecialties
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -1873,7 +1866,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -1999,11 +1991,11 @@ paths:
   /api/inspection/standards:
     get:
       operationId: InspectionDictionary_listStandards
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2011,7 +2003,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2143,11 +2134,11 @@ paths:
   /api/param-interfaces:
     get:
       operationId: ParamInterfaces_listParamInterfaces
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2155,7 +2146,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2407,11 +2397,11 @@ paths:
   /api/receipts:
     get:
       operationId: Receipts_listReceipts
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2419,7 +2409,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -2832,11 +2821,11 @@ paths:
   /api/report-names:
     get:
       operationId: ReportNames_listReportNames
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -2844,7 +2833,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -3305,11 +3293,11 @@ paths:
   /api/samples:
     get:
       operationId: Samples_listSamples
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -3317,7 +3305,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32
@@ -3729,11 +3716,11 @@ paths:
   /api/test-records:
     get:
       operationId: TestRecords_listTestRecords
+      description: 分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。
       parameters:
         - name: page
           in: query
           required: false
-          description: 当前实现仅回显，不切片：参照实现返回全量，无分页语义。
           schema:
             type: integer
             format: int32
@@ -3741,7 +3728,6 @@ paths:
         - name: pageSize
           in: query
           required: false
-          description: 当前实现仅回显，不切片。
           schema:
             type: integer
             format: int32

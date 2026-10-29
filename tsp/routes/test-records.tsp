@@ -6,9 +6,10 @@ using TypeSpec.Http;
 namespace Lab.Management.Shared.TestRecords {
   // M03.F03.I06 检测记录列表
   @get
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listTestRecords(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query sampleId?: string,
     @query parameterCode?: string,
   ): Page<TestRecord> | ErrorResponse;

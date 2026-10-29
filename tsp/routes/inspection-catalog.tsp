@@ -9,9 +9,10 @@ namespace Lab.Management.Shared.Catalog {
   // M04.F09.I01 牌号列表
   @get
   @route("/brands")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listBrands(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionBrand> | ErrorResponse;
@@ -35,9 +36,10 @@ namespace Lab.Management.Shared.Catalog {
   // M04.F06.I01 型号列表
   @get
   @route("/models")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listModels(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionModel> | ErrorResponse;
@@ -61,9 +63,10 @@ namespace Lab.Management.Shared.Catalog {
   // M04.F07.I01 规格列表
   @get
   @route("/specs")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listSpecs(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionSpec> | ErrorResponse;
@@ -87,9 +90,10 @@ namespace Lab.Management.Shared.Catalog {
   // M04.F08.I01 等级列表
   @get
   @route("/grades")
+  @doc("分页：当前实现仅回显不切片，参照实现返回全量，无分页语义（pageSize 同）。")
   op listGrades(
-    @doc("当前实现仅回显，不切片：参照实现返回全量，无分页语义。") @query page?: int32,
-    @doc("当前实现仅回显，不切片。") @query pageSize?: int32,
+    @query page?: int32,
+    @query pageSize?: int32,
     @query inspectionObjectCode?: string,
     @query keyword?: string,
   ): Page<InspectionGrade> | ErrorResponse;
