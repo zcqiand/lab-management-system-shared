@@ -7,7 +7,7 @@
     "sort_order": 62,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-15",
@@ -17,7 +17,7 @@
     "sort_order": 63,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-20",
@@ -27,7 +27,7 @@
     "sort_order": 64,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-8",
@@ -37,7 +37,7 @@
     "sort_order": 61,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q195a",
@@ -47,7 +47,7 @@
     "sort_order": 67,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q215A",
@@ -57,7 +57,7 @@
     "sort_order": 55,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q215B",
@@ -67,7 +67,7 @@
     "sort_order": 68,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q235A",
@@ -77,7 +77,7 @@
     "sort_order": 69,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q235B",
@@ -87,7 +87,7 @@
     "sort_order": 70,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q235C",
@@ -97,7 +97,7 @@
     "sort_order": 56,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q275A",
@@ -107,7 +107,7 @@
     "sort_order": 65,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q275B",
@@ -117,7 +117,7 @@
     "sort_order": 66,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q295A",
@@ -127,7 +127,7 @@
     "sort_order": 71,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q295B",
@@ -137,7 +137,7 @@
     "sort_order": 72,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q345A",
@@ -147,7 +147,7 @@
     "sort_order": 73,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q345B",
@@ -157,7 +157,7 @@
     "sort_order": 74,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q345C",
@@ -167,7 +167,7 @@
     "sort_order": 60,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q355B",
@@ -177,7 +177,7 @@
     "sort_order": 57,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q355C",
@@ -187,7 +187,7 @@
     "sort_order": 58,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P12-金属管材-Q355D",
@@ -197,7 +197,7 @@
     "sort_order": 59,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HPB235",
@@ -207,7 +207,7 @@
     "sort_order": 26,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HPB300",
@@ -217,7 +217,7 @@
     "sort_order": 27,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB335",
@@ -227,7 +227,7 @@
     "sort_order": 28,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB335E",
@@ -237,7 +237,7 @@
     "sort_order": 29,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB400",
@@ -247,7 +247,7 @@
     "sort_order": 30,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB400E",
@@ -257,7 +257,7 @@
     "sort_order": 31,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB500",
@@ -267,7 +267,7 @@
     "sort_order": 32,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRB500E",
@@ -277,7 +277,7 @@
     "sort_order": 33,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF335",
@@ -287,7 +287,7 @@
     "sort_order": 34,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF335E",
@@ -297,7 +297,7 @@
     "sort_order": 35,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF400",
@@ -307,7 +307,7 @@
     "sort_order": 36,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF400E",
@@ -317,7 +317,7 @@
     "sort_order": 37,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF500",
@@ -327,7 +327,7 @@
     "sort_order": 38,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-HRBF500E",
@@ -337,7 +337,7 @@
     "sort_order": 39,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-Q235A",
@@ -347,7 +347,7 @@
     "sort_order": 40,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P15-Q235B",
@@ -357,7 +357,7 @@
     "sort_order": 41,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-1050",
@@ -367,7 +367,7 @@
     "sort_order": 42,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-1050A",
@@ -377,7 +377,7 @@
     "sort_order": 43,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-1060",
@@ -387,7 +387,7 @@
     "sort_order": 44,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-1100",
@@ -397,7 +397,7 @@
     "sort_order": 45,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-3003",
@@ -407,7 +407,7 @@
     "sort_order": 46,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-3004",
@@ -417,7 +417,7 @@
     "sort_order": 47,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-3005",
@@ -427,7 +427,7 @@
     "sort_order": 48,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-3A21",
@@ -437,7 +437,7 @@
     "sort_order": 49,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-5005",
@@ -447,7 +447,7 @@
     "sort_order": 50,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-5052",
@@ -457,7 +457,7 @@
     "sort_order": 51,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-5754",
@@ -467,7 +467,7 @@
     "sort_order": 52,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6005",
@@ -477,7 +477,7 @@
     "sort_order": 82,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6060",
@@ -487,7 +487,7 @@
     "sort_order": 83,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6061",
@@ -497,7 +497,7 @@
     "sort_order": 84,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6063",
@@ -507,7 +507,7 @@
     "sort_order": 85,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6063A",
@@ -517,7 +517,7 @@
     "sort_order": 86,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6463",
@@ -527,7 +527,7 @@
     "sort_order": 87,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-6463A",
@@ -537,7 +537,7 @@
     "sort_order": 88,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-8011A",
@@ -547,7 +547,7 @@
     "sort_order": 53,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P20-8A06",
@@ -557,7 +557,7 @@
     "sort_order": 54,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CPB550",
@@ -567,7 +567,7 @@
     "sort_order": 81,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB550",
@@ -577,7 +577,7 @@
     "sort_order": 76,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB600H",
@@ -587,7 +587,7 @@
     "sort_order": 80,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB650",
@@ -597,7 +597,7 @@
     "sort_order": 77,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB800",
@@ -607,7 +607,7 @@
     "sort_order": 78,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB970",
@@ -617,7 +617,7 @@
     "sort_order": 79,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HPB235",
@@ -627,7 +627,7 @@
     "sort_order": 13,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HPB300",
@@ -637,7 +637,7 @@
     "sort_order": 14,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB335",
@@ -647,7 +647,7 @@
     "sort_order": 1,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB335E",
@@ -657,7 +657,7 @@
     "sort_order": 10,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB400",
@@ -667,7 +667,7 @@
     "sort_order": 5,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB400-2",
@@ -677,7 +677,7 @@
     "sort_order": 15,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB400E",
@@ -687,7 +687,7 @@
     "sort_order": 11,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB400E-2",
@@ -697,7 +697,7 @@
     "sort_order": 20,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB500",
@@ -707,7 +707,7 @@
     "sort_order": 6,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB500-2",
@@ -717,7 +717,7 @@
     "sort_order": 19,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB500E",
@@ -727,7 +727,7 @@
     "sort_order": 12,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB500E-2",
@@ -737,7 +737,7 @@
     "sort_order": 21,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRB600",
@@ -747,7 +747,7 @@
     "sort_order": 75,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF335",
@@ -757,7 +757,7 @@
     "sort_order": 7,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF335E",
@@ -767,7 +767,7 @@
     "sort_order": 2,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF400",
@@ -777,7 +777,7 @@
     "sort_order": 8,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF400-2",
@@ -787,7 +787,7 @@
     "sort_order": 22,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF400E",
@@ -797,7 +797,7 @@
     "sort_order": 3,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF400E-2",
@@ -807,7 +807,7 @@
     "sort_order": 24,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF500",
@@ -817,7 +817,7 @@
     "sort_order": 9,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF500-2",
@@ -827,7 +827,7 @@
     "sort_order": 23,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF500E",
@@ -837,7 +837,7 @@
     "sort_order": 4,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF500E-2",
@@ -847,7 +847,7 @@
     "sort_order": 25,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-RRB400",
@@ -857,7 +857,7 @@
     "sort_order": 16,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-RRB400W",
@@ -867,7 +867,7 @@
     "sort_order": 18,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "BR-OBJ-SP01-P2-RRB500",
@@ -877,7 +877,7 @@
     "sort_order": 17,
     "created_at": "",
     "updated_at": "",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "HRB400",
@@ -887,7 +887,7 @@
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "HRB400E",
@@ -897,7 +897,7 @@
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   },
   {
     "code": "HRBF400",
@@ -907,6 +907,6 @@
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z",
-    "tenant_id": "TENANT-001"
+    "tenant_id": "acme"
   }
 ]
