@@ -1,7 +1,6 @@
 [
   {
     "code": "OBJ-SP01-P1",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "1",
     "source_project_name": "水泥",
     "name": "水泥",
@@ -9,12 +8,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 1,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P10-防水卷材",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "10",
     "source_project_name": "防水材料及防水密封材料",
     "name": "防水卷材",
@@ -22,12 +20,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 12,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P10-防水密封材料及其他防水材料",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "10",
     "source_project_name": "防水材料及防水密封材料",
     "name": "防水密封材料及其他防水材料",
@@ -35,12 +32,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 14,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P10-防水涂料",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "10",
     "source_project_name": "防水材料及防水密封材料",
     "name": "防水涂料",
@@ -48,12 +44,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 13,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P11",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "11",
     "source_project_name": "瓷砖及石材",
     "name": "瓷砖及石材",
@@ -61,12 +56,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 15,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P12-塑料管材",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "12",
     "source_project_name": "塑料及金属管材",
     "name": "塑料管材",
@@ -74,12 +68,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 16,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P12-金属管材",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "12",
     "source_project_name": "塑料及金属管材",
     "name": "金属管材",
@@ -87,12 +80,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 17,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P13",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "13",
     "source_project_name": "预制混凝土构件",
     "name": "预制混凝土构件",
@@ -100,12 +92,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 18,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P14",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "14",
     "source_project_name": "预应力钢绞线",
     "name": "预应力钢绞线",
@@ -113,12 +104,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 19,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P15",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "15",
     "source_project_name": "预应力混凝土用锚具夹具及连接器",
     "name": "预应力混凝土用锚具夹具及连接器",
@@ -126,12 +116,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 20,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P16-塑料波纹管",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "16",
     "source_project_name": "预应力混凝土用波纹管",
     "name": "塑料波纹管",
@@ -139,12 +128,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 22,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P16-金属波纹管",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "16",
     "source_project_name": "预应力混凝土用波纹管",
     "name": "金属波纹管",
@@ -152,12 +140,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 21,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P17",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "17",
     "source_project_name": "材料中有害物质",
     "name": "材料中有害物质",
@@ -165,12 +152,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 23,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P18-位移相关型阻尼器",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "18",
     "source_project_name": "建筑消能减震装置",
     "name": "位移相关型阻尼器",
@@ -178,12 +164,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 24,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P18-速度相关型阻尼器",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "18",
     "source_project_name": "建筑消能减震装置",
     "name": "速度相关型阻尼器",
@@ -191,12 +176,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 25,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P19-叠层橡胶隔震支座",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "19",
     "source_project_name": "建筑隔震装置",
     "name": "叠层橡胶隔震支座",
@@ -204,12 +188,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 26,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P19-建筑摩擦摆隔震支座",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "19",
     "source_project_name": "建筑隔震装置",
     "name": "建筑摩擦摆隔震支座",
@@ -217,12 +200,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 27,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P2",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "2",
     "source_project_name": "钢筋（含焊接与机械连接）",
     "name": "钢筋（含焊接与机械连接）",
@@ -230,12 +212,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 2,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P20",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "20",
     "source_project_name": "铝塑复合板",
     "name": "铝塑复合板",
@@ -243,12 +224,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 28,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P21",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "21",
     "source_project_name": "木材料及构配件",
     "name": "木材料及构配件",
@@ -256,12 +236,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 29,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P22",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "22",
     "source_project_name": "加固材料",
     "name": "加固材料",
@@ -269,12 +248,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 30,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P23",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "23",
     "source_project_name": "焊接材料",
     "name": "焊接材料",
@@ -282,12 +260,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 31,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P3-粗骨料",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "3",
     "source_project_name": "骨料、集料",
     "name": "粗骨料",
@@ -295,12 +272,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 4,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P3-细骨料",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "3",
     "source_project_name": "骨料、集料",
     "name": "细骨料",
@@ -308,12 +284,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 3,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P3-轻集料",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "3",
     "source_project_name": "骨料、集料",
     "name": "轻集料",
@@ -321,12 +296,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 5,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P4",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "4",
     "source_project_name": "砖、砌块、瓦、墙板",
     "name": "砖、砌块、瓦、墙板",
@@ -334,12 +308,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 6,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P5",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "5",
     "source_project_name": "混凝土及拌合用水",
     "name": "混凝土及拌合用水",
@@ -347,12 +320,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 7,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P6",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "6",
     "source_project_name": "混凝土外加剂",
     "name": "混凝土外加剂",
@@ -360,12 +332,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 8,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P7",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "7",
     "source_project_name": "混凝土掺合料",
     "name": "混凝土掺合料",
@@ -373,12 +344,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 9,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P8",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "8",
     "source_project_name": "砂浆",
     "name": "砂浆",
@@ -386,12 +356,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 10,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP01-P9",
-    "inspection_specialty_code": "SP01",
     "source_project_no": "9",
     "source_project_name": "土",
     "name": "土",
@@ -399,12 +368,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 11,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P1",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "1",
     "source_project_name": "混凝土结构构件强度、砌体结构构件强度",
     "name": "混凝土结构构件强度、砌体结构构件强度",
@@ -412,12 +380,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 32,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P2",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "2",
     "source_project_name": "钢筋及保护层厚度",
     "name": "钢筋及保护层厚度",
@@ -425,12 +392,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 33,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P3",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "3",
     "source_project_name": "植筋锚固力",
     "name": "植筋锚固力",
@@ -438,12 +404,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 34,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P4",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "4",
     "source_project_name": "构件位置和尺寸（涵盖砌体、混凝土、木结构）",
     "name": "构件位置和尺寸（涵盖砌体、混凝土、木结构）",
@@ -451,12 +416,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 35,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P5",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "5",
     "source_project_name": "外观质量及内部缺陷",
     "name": "外观质量及内部缺陷",
@@ -464,12 +428,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 36,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P6",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "6",
     "source_project_name": "装配式混凝土结构节点",
     "name": "装配式混凝土结构节点",
@@ -477,12 +440,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 37,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P7",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "7",
     "source_project_name": "结构构件性能（涵盖砌体、混凝土、木结构）",
     "name": "结构构件性能（涵盖砌体、混凝土、木结构）",
@@ -490,12 +452,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 38,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P8",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "8",
     "source_project_name": "装饰装修工程",
     "name": "装饰装修工程",
@@ -503,12 +464,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 39,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP02-P9",
-    "inspection_specialty_code": "SP02",
     "source_project_no": "9",
     "source_project_name": "室内环境污染物",
     "name": "室内环境污染物",
@@ -516,12 +476,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 40,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P1",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "1",
     "source_project_name": "钢材及焊接材料",
     "name": "钢材及焊接材料",
@@ -529,12 +488,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 41,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P2",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "2",
     "source_project_name": "焊缝",
     "name": "焊缝",
@@ -542,12 +500,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 42,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P3",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "3",
     "source_project_name": "钢结构防腐及防火涂装",
     "name": "钢结构防腐及防火涂装",
@@ -555,12 +512,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 43,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P4",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "4",
     "source_project_name": "高强度螺栓及普通紧固件",
     "name": "高强度螺栓及普通紧固件",
@@ -568,12 +524,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 44,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P5",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "5",
     "source_project_name": "构件位置与尺寸",
     "name": "构件位置与尺寸",
@@ -581,12 +536,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 45,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P6",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "6",
     "source_project_name": "结构构件性能",
     "name": "结构构件性能",
@@ -594,12 +548,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 46,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP03-P7",
-    "inspection_specialty_code": "SP03",
     "source_project_no": "7",
     "source_project_name": "金属屋面",
     "name": "金属屋面",
@@ -607,12 +560,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 47,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP04-P1",
-    "inspection_specialty_code": "SP04",
     "source_project_no": "1",
     "source_project_name": "地基及复合地基",
     "name": "地基及复合地基",
@@ -620,12 +572,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 48,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP04-P2",
-    "inspection_specialty_code": "SP04",
     "source_project_no": "2",
     "source_project_name": "桩的承载力",
     "name": "桩的承载力",
@@ -633,12 +584,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 49,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP04-P3",
-    "inspection_specialty_code": "SP04",
     "source_project_no": "3",
     "source_project_name": "桩身完整性",
     "name": "桩身完整性",
@@ -646,12 +596,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 50,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP04-P4",
-    "inspection_specialty_code": "SP04",
     "source_project_no": "4",
     "source_project_name": "锚杆抗拔承载力",
     "name": "锚杆抗拔承载力",
@@ -659,12 +608,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 51,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP04-P5",
-    "inspection_specialty_code": "SP04",
     "source_project_no": "5",
     "source_project_name": "地下连续墙",
     "name": "地下连续墙",
@@ -672,12 +620,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 52,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P1",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "1",
     "source_project_name": "保温、绝热材料",
     "name": "保温、绝热材料",
@@ -685,12 +632,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 53,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P10",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "10",
     "source_project_name": "反射隔热材料",
     "name": "反射隔热材料",
@@ -698,12 +644,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 62,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P11-绝热材料",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "11",
     "source_project_name": "供暖通风空调节能工程用材料、构件和设备",
     "name": "绝热材料",
@@ -711,12 +656,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 65,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P11-采暖散热器",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "11",
     "source_project_name": "供暖通风空调节能工程用材料、构件和设备",
     "name": "采暖散热器",
@@ -724,12 +668,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 64,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P11-风机盘管机组",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "11",
     "source_project_name": "供暖通风空调节能工程用材料、构件和设备",
     "name": "风机盘管机组",
@@ -737,12 +680,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 63,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P12-灯具",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "12",
     "source_project_name": "配电与照明节能工程用材料、构件和设备",
     "name": "灯具",
@@ -750,12 +692,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 67,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P12-照明光源",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "12",
     "source_project_name": "配电与照明节能工程用材料、构件和设备",
     "name": "照明光源",
@@ -763,12 +704,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 66,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P12-设备",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "12",
     "source_project_name": "配电与照明节能工程用材料、构件和设备",
     "name": "设备",
@@ -776,12 +716,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 68,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P13-太阳能光伏发电系统",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "13",
     "source_project_name": "可再生能源应用系统",
     "name": "太阳能光伏发电系统",
@@ -789,12 +728,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 72,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P13-太阳能光伏组件",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "13",
     "source_project_name": "可再生能源应用系统",
     "name": "太阳能光伏组件",
@@ -802,12 +740,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 71,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "13",
     "source_project_name": "可再生能源应用系统",
     "name": "太阳能热利用系统的太阳能集热系统",
@@ -815,12 +752,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 70,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P13-太阳能集热器",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "13",
     "source_project_name": "可再生能源应用系统",
     "name": "太阳能集热器",
@@ -828,12 +764,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 69,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P2",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "2",
     "source_project_name": "粘接材料",
     "name": "粘接材料",
@@ -841,12 +776,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 54,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P3",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "3",
     "source_project_name": "增强加固材料",
     "name": "增强加固材料",
@@ -854,12 +788,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 55,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P4",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "4",
     "source_project_name": "保温砂浆",
     "name": "保温砂浆",
@@ -867,12 +800,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 56,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P5",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "5",
     "source_project_name": "抹面材料",
     "name": "抹面材料",
@@ -880,12 +812,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 57,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P6",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "6",
     "source_project_name": "隔热型材",
     "name": "隔热型材",
@@ -893,12 +824,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 58,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P7",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "7",
     "source_project_name": "建筑外窗",
     "name": "建筑外窗",
@@ -906,12 +836,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 59,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P8",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "8",
     "source_project_name": "节能工程",
     "name": "节能工程",
@@ -919,12 +848,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 60,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP05-P9",
-    "inspection_specialty_code": "SP05",
     "source_project_no": "9",
     "source_project_name": "电线电缆",
     "name": "电线电缆",
@@ -932,12 +860,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 61,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP06-P1",
-    "inspection_specialty_code": "SP06",
     "source_project_no": "1",
     "source_project_name": "密封胶",
     "name": "密封胶",
@@ -945,12 +872,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 73,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP06-P2",
-    "inspection_specialty_code": "SP06",
     "source_project_no": "2",
     "source_project_name": "幕墙玻璃",
     "name": "幕墙玻璃",
@@ -958,12 +884,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 74,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP06-P3",
-    "inspection_specialty_code": "SP06",
     "source_project_no": "3",
     "source_project_name": "幕墙",
     "name": "幕墙",
@@ -971,12 +896,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 75,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P1",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "1",
     "source_project_name": "土、无机结合稳定材料",
     "name": "土、无机结合稳定材料",
@@ -984,12 +908,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 76,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P10",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "10",
     "source_project_name": "骨料、集料",
     "name": "骨料、集料",
@@ -997,12 +920,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 88,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P11",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "11",
     "source_project_name": "钢筋（含焊接与机械连接）",
     "name": "钢筋（含焊接与机械连接）",
@@ -1010,12 +932,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 89,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P12",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "12",
     "source_project_name": "外加剂",
     "name": "外加剂",
@@ -1023,12 +944,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 90,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P13",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "13",
     "source_project_name": "砂浆",
     "name": "砂浆",
@@ -1036,12 +956,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 91,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P14",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "14",
     "source_project_name": "混凝土",
     "name": "混凝土",
@@ -1049,12 +968,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 92,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P15",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "15",
     "source_project_name": "防水材料及防水密封材料",
     "name": "防水材料及防水密封材料",
@@ -1062,12 +980,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 93,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P16",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "16",
     "source_project_name": "水",
     "name": "水",
@@ -1075,12 +992,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 94,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P17",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "17",
     "source_project_name": "石灰",
     "name": "石灰",
@@ -1088,12 +1004,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 95,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P18",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "18",
     "source_project_name": "石材",
     "name": "石材",
@@ -1101,12 +1016,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 96,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P19",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "19",
     "source_project_name": "螺栓、锚具夹具及连接器",
     "name": "螺栓、锚具夹具及连接器",
@@ -1114,12 +1028,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 97,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P2",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "2",
     "source_project_name": "土工合成材料",
     "name": "土工合成材料",
@@ -1127,12 +1040,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 77,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P3",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "3",
     "source_project_name": "掺合料（粉煤灰、钢渣）",
     "name": "掺合料（粉煤灰、钢渣）",
@@ -1140,12 +1052,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 78,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P4",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "4",
     "source_project_name": "沥青及乳化沥青",
     "name": "沥青及乳化沥青",
@@ -1153,12 +1064,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 79,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P5-木质素纤维",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "5",
     "source_project_name": "沥青混合料用粗集料、细集料、矿粉、木质素纤维",
     "name": "木质素纤维",
@@ -1166,12 +1076,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 83,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P5-矿粉",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "5",
     "source_project_name": "沥青混合料用粗集料、细集料、矿粉、木质素纤维",
     "name": "矿粉",
@@ -1179,12 +1088,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 82,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P5-粗集料",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "5",
     "source_project_name": "沥青混合料用粗集料、细集料、矿粉、木质素纤维",
     "name": "粗集料",
@@ -1192,12 +1100,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 80,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P5-细集料",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "5",
     "source_project_name": "沥青混合料用粗集料、细集料、矿粉、木质素纤维",
     "name": "细集料",
@@ -1205,12 +1112,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 81,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P6",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "6",
     "source_project_name": "沥青混合料",
     "name": "沥青混合料",
@@ -1218,12 +1124,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 84,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P7",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "7",
     "source_project_name": "路面砖及路缘石",
     "name": "路面砖及路缘石",
@@ -1231,12 +1136,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 85,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P8",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "8",
     "source_project_name": "检查井盖、水篦、混凝土模块、防撞墩、隔离墩",
     "name": "检查井盖、水篦、混凝土模块、防撞墩、隔离墩",
@@ -1244,12 +1148,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 86,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP07-P9",
-    "inspection_specialty_code": "SP07",
     "source_project_no": "9",
     "source_project_name": "水泥",
     "name": "水泥",
@@ -1257,12 +1160,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 87,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP08-P1",
-    "inspection_specialty_code": "SP08",
     "source_project_no": "1",
     "source_project_name": "沥青混合料路面",
     "name": "沥青混合料路面",
@@ -1270,12 +1172,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 98,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP08-P2",
-    "inspection_specialty_code": "SP08",
     "source_project_no": "2",
     "source_project_name": "基层及底基层",
     "name": "基层及底基层",
@@ -1283,12 +1184,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 99,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP08-P3",
-    "inspection_specialty_code": "SP08",
     "source_project_no": "3",
     "source_project_name": "土路基",
     "name": "土路基",
@@ -1296,12 +1196,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 100,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP08-P4",
-    "inspection_specialty_code": "SP08",
     "source_project_no": "4",
     "source_project_name": "排水管道工程",
     "name": "排水管道工程",
@@ -1309,12 +1208,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 101,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP08-P5",
-    "inspection_specialty_code": "SP08",
     "source_project_no": "5",
     "source_project_name": "水泥混凝土路面",
     "name": "水泥混凝土路面",
@@ -1322,12 +1220,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 102,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P1",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "1",
     "source_project_name": "桥梁结构与构件",
     "name": "桥梁结构与构件",
@@ -1335,12 +1232,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 103,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P2",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "2",
     "source_project_name": "隧道主体结构",
     "name": "隧道主体结构",
@@ -1348,12 +1244,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 104,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P3",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "3",
     "source_project_name": "桥梁及附属物",
     "name": "桥梁及附属物",
@@ -1361,12 +1256,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 105,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P4",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "4",
     "source_project_name": "桥梁支座",
     "name": "桥梁支座",
@@ -1374,12 +1268,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 106,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P5",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "5",
     "source_project_name": "桥梁伸缩装置",
     "name": "桥梁伸缩装置",
@@ -1387,12 +1280,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 107,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P6",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "6",
     "source_project_name": "隧道环境",
     "name": "隧道环境",
@@ -1400,12 +1292,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 108,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P7",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "7",
     "source_project_name": "人行天桥及地下通道",
     "name": "人行天桥及地下通道",
@@ -1413,12 +1304,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 109,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P8",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "8",
     "source_project_name": "综合管廊主体结构",
     "name": "综合管廊主体结构",
@@ -1426,12 +1316,11 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 110,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "OBJ-SP09-P9",
-    "inspection_specialty_code": "SP09",
     "source_project_no": "9",
     "source_project_name": "涵洞主体结构",
     "name": "涵洞主体结构",
@@ -1439,7 +1328,7 @@
     "is_official": true,
     "enabled": true,
     "sort_order": 111,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

@@ -17,9 +17,10 @@ CREATE TABLE IF NOT EXISTS "contracts" (
 	"contact_phone" text,
 	"entrusted_date" text,
 	"status" text DEFAULT 'active' NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"tenant_id" text NOT NULL,
+	CONSTRAINT "ck_contracts_status" CHECK ("contracts"."status" in ('active', 'archived'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_brands" (
@@ -28,9 +29,8 @@ CREATE TABLE IF NOT EXISTS "inspection_brands" (
 	"name" text NOT NULL,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_calculation_methods" (
@@ -45,9 +45,10 @@ CREATE TABLE IF NOT EXISTS "inspection_calculation_methods" (
 	"rounding_rule" text,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	CONSTRAINT "inspection_calculation_rules_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code")
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "inspection_calculation_rules_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code"),
+	CONSTRAINT "ck_calc_algorithm_type" CHECK ("inspection_calculation_methods"."algorithm_type" in ('simple_avg', 'compressive_strength', 'flexural_strength', 'steel_tensile', 'formula', 'manual', 'auto_calc_ratio'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_grades" (
@@ -56,9 +57,8 @@ CREATE TABLE IF NOT EXISTS "inspection_grades" (
 	"name" text NOT NULL,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_models" (
@@ -67,9 +67,8 @@ CREATE TABLE IF NOT EXISTS "inspection_models" (
 	"name" text NOT NULL,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_object_parameters" (
@@ -78,17 +77,18 @@ CREATE TABLE IF NOT EXISTS "inspection_object_parameters" (
 	"qualification_level" text DEFAULT 'QUALIFIED' NOT NULL,
 	"source_page" integer,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	CONSTRAINT "inspection_object_parameters_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code")
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "inspection_object_parameters_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code"),
+	CONSTRAINT "ck_obj_params_qual_level" CHECK ("inspection_object_parameters"."qualification_level" in ('QUALIFIED', 'RESTRICTED'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_object_report_names" (
 	"inspection_object_code" text NOT NULL,
 	"report_name_code" text NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "inspection_object_report_names_pkey" PRIMARY KEY("inspection_object_code","report_name_code")
 );
 --> statement-breakpoint
@@ -97,14 +97,14 @@ CREATE TABLE IF NOT EXISTS "inspection_object_standards" (
 	"inspection_standard_code" text NOT NULL,
 	"role" text NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	CONSTRAINT "inspection_object_standards_pkey" PRIMARY KEY("inspection_object_code","inspection_standard_code","role")
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "inspection_object_standards_pkey" PRIMARY KEY("inspection_object_code","inspection_standard_code","role"),
+	CONSTRAINT "ck_obj_std_role" CHECK ("inspection_object_standards"."role" in ('TESTING', 'JUDGMENT'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_objects" (
 	"code" text PRIMARY KEY NOT NULL,
-	"inspection_specialty_code" text NOT NULL,
 	"source_project_no" text NOT NULL,
 	"source_project_name" text NOT NULL,
 	"name" text NOT NULL,
@@ -112,8 +112,8 @@ CREATE TABLE IF NOT EXISTS "inspection_objects" (
 	"is_official" boolean DEFAULT true NOT NULL,
 	"enabled" boolean DEFAULT true NOT NULL,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_param_interface_links" (
@@ -121,8 +121,8 @@ CREATE TABLE IF NOT EXISTS "inspection_param_interface_links" (
 	"param_interface_code" text NOT NULL,
 	"report_name_code" text,
 	"config" jsonb,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "param_interface_links_pkey" PRIMARY KEY("inspection_parameter_code","param_interface_code")
 );
 --> statement-breakpoint
@@ -134,8 +134,8 @@ CREATE TABLE IF NOT EXISTS "inspection_param_interfaces" (
 	"is_official" boolean,
 	"sort_order" integer DEFAULT 0 NOT NULL,
 	"config" jsonb,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "param_interfaces_pkey" PRIMARY KEY("code")
 );
 --> statement-breakpoint
@@ -149,16 +149,17 @@ CREATE TABLE IF NOT EXISTS "inspection_parameters" (
 	"unit" text,
 	"source_type" text DEFAULT 'official' NOT NULL,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "ck_params_source_type" CHECK ("inspection_parameters"."source_type" in ('official', 'custom'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_report_name_parameters" (
 	"report_name_code" text NOT NULL,
 	"inspection_parameter_code" text NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "inspection_report_name_parameters_pkey" PRIMARY KEY("report_name_code","inspection_parameter_code")
 );
 --> statement-breakpoint
@@ -167,9 +168,10 @@ CREATE TABLE IF NOT EXISTS "inspection_report_name_standards" (
 	"inspection_standard_code" text NOT NULL,
 	"role" text NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	CONSTRAINT "inspection_report_name_standards_pkey" PRIMARY KEY("report_name_code","inspection_standard_code","role")
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "inspection_report_name_standards_pkey" PRIMARY KEY("report_name_code","inspection_standard_code","role"),
+	CONSTRAINT "ck_rn_std_role" CHECK ("inspection_report_name_standards"."role" in ('TESTING', 'JUDGMENT'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_report_names" (
@@ -181,8 +183,8 @@ CREATE TABLE IF NOT EXISTS "inspection_report_names" (
 	"ext_fields" jsonb,
 	"description" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_specialties" (
@@ -192,16 +194,16 @@ CREATE TABLE IF NOT EXISTS "inspection_specialties" (
 	"is_official" boolean DEFAULT true NOT NULL,
 	"enabled" boolean DEFAULT true NOT NULL,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_specialty_objects" (
 	"inspection_specialty_code" text NOT NULL,
 	"inspection_object_code" text NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "inspection_specialty_objects_pkey" PRIMARY KEY("inspection_specialty_code","inspection_object_code")
 );
 --> statement-breakpoint
@@ -211,16 +213,15 @@ CREATE TABLE IF NOT EXISTS "inspection_specs" (
 	"name" text NOT NULL,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_standard_parameters" (
 	"inspection_standard_code" text NOT NULL,
 	"inspection_parameter_code" text NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "inspection_standard_parameters_pkey" PRIMARY KEY("inspection_standard_code","inspection_parameter_code")
 );
 --> statement-breakpoint
@@ -232,8 +233,9 @@ CREATE TABLE IF NOT EXISTS "inspection_standards" (
 	"source_document_id" text,
 	"source_hash" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "ck_standards_status" CHECK ("inspection_standards"."status" in ('active', 'superseded', 'draft'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "inspection_technical_requirements" (
@@ -242,8 +244,8 @@ CREATE TABLE IF NOT EXISTS "inspection_technical_requirements" (
 	"judgment_standard_code" text NOT NULL,
 	"conditions" text,
 	"value_type" text DEFAULT 'numeric' NOT NULL,
-	"min_value" integer,
-	"max_value" integer,
+	"min_value" numeric(12, 4),
+	"max_value" numeric(12, 4),
 	"target_value" text,
 	"expression" text,
 	"unit" text,
@@ -260,10 +262,13 @@ CREATE TABLE IF NOT EXISTS "inspection_technical_requirements" (
 	"sieve" text,
 	"remark" text,
 	"sort_order" integer DEFAULT 0 NOT NULL,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL,
-	CONSTRAINT "inspection_technical_requirements_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code","judgment_standard_code")
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "inspection_technical_requirements_pkey" PRIMARY KEY("inspection_object_code","inspection_parameter_code","judgment_standard_code"),
+	CONSTRAINT "ck_tech_req_value_type" CHECK ("inspection_technical_requirements"."value_type" in ('numeric', 'string', 'range', 'formula', 'manual')),
+	CONSTRAINT "ck_tech_req_comparison" CHECK ("inspection_technical_requirements"."comparison" in ('≥', '≤', '=', 'range', 'eq')),
+	CONSTRAINT "ck_tech_req_judgment_mode" CHECK ("inspection_technical_requirements"."judgment_mode" in ('automatic', 'manual')),
+	CONSTRAINT "ck_tech_req_verification_status" CHECK ("inspection_technical_requirements"."verification_status" in ('draft', 'reviewed', 'verified', 'rejected'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "sample_receipts" (
@@ -298,6 +303,7 @@ CREATE TABLE IF NOT EXISTS "sample_receipts" (
 	"judgment_basis" jsonb,
 	"testing_basis" jsonb,
 	"test_parameters" jsonb,
+	"ext" jsonb DEFAULT '{}'::jsonb NOT NULL,
 	"flow_status" text DEFAULT 'receiving' NOT NULL,
 	"flow_history" jsonb DEFAULT '[]'::jsonb NOT NULL,
 	"last_submitted_by" text,
@@ -309,9 +315,10 @@ CREATE TABLE IF NOT EXISTS "sample_receipts" (
 	"conclusion" text,
 	"result" text,
 	"issued_at" timestamp with time zone,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"tenant_id" text NOT NULL,
+	CONSTRAINT "ck_receipts_flow_status" CHECK ("sample_receipts"."flow_status" in ('receiving', 'task_assignment', 'data_entry', 'review', 'approval', 'issuance', 'archived', 'completed'))
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "samples" (
@@ -335,9 +342,9 @@ CREATE TABLE IF NOT EXISTS "samples" (
 	"age" text,
 	"ext" jsonb DEFAULT '{}'::jsonb NOT NULL,
 	"remark" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"tenant_id" text NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "test_records" (
@@ -349,9 +356,9 @@ CREATE TABLE IF NOT EXISTS "test_records" (
 	"requirement" text NOT NULL,
 	"result" text NOT NULL,
 	"verdict" text,
-	"created_at" text DEFAULT '' NOT NULL,
-	"updated_at" text DEFAULT '' NOT NULL,
-	"tenant_id" text DEFAULT '' NOT NULL
+	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"tenant_id" text NOT NULL
 );
 --> statement-breakpoint
 DO $$ BEGIN
@@ -434,12 +441,6 @@ END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "inspection_object_standards" ADD CONSTRAINT "obj_std_standard_fk" FOREIGN KEY ("inspection_standard_code") REFERENCES "public"."inspection_standards"("code") ON DELETE cascade ON UPDATE no action;
-EXCEPTION
- WHEN duplicate_object THEN null;
-END $$;
---> statement-breakpoint
-DO $$ BEGIN
- ALTER TABLE "inspection_objects" ADD CONSTRAINT "objects_specialty_fk" FOREIGN KEY ("inspection_specialty_code") REFERENCES "public"."inspection_specialties"("code") ON DELETE restrict ON UPDATE no action;
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;
@@ -593,39 +594,30 @@ DO $$ BEGIN
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;
+--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_contracts_tenant" ON "contracts" USING btree ("tenant_id");--> statement-breakpoint
 CREATE UNIQUE INDEX IF NOT EXISTS "idx_contracts_tenant_code" ON "contracts" USING btree ("tenant_id","contract_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_brands_tenant" ON "inspection_brands" USING btree ("tenant_id");--> statement-breakpoint
-CREATE UNIQUE INDEX IF NOT EXISTS "idx_brands_tenant_code" ON "inspection_brands" USING btree ("tenant_id","code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_inspection_brands_object" ON "inspection_brands" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_calc_method_object" ON "inspection_calculation_methods" USING btree ("inspection_object_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_grades_tenant" ON "inspection_grades" USING btree ("tenant_id");--> statement-breakpoint
-CREATE UNIQUE INDEX IF NOT EXISTS "idx_grades_tenant_code" ON "inspection_grades" USING btree ("tenant_id","code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_inspection_grades_object" ON "inspection_grades" USING btree ("inspection_object_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_models_tenant" ON "inspection_models" USING btree ("tenant_id");--> statement-breakpoint
-CREATE UNIQUE INDEX IF NOT EXISTS "idx_models_tenant_code" ON "inspection_models" USING btree ("tenant_id","code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_inspection_models_object" ON "inspection_models" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_obj_params_object" ON "inspection_object_parameters" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_obj_params_param" ON "inspection_object_parameters" USING btree ("inspection_parameter_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_obj_rn_object" ON "inspection_object_report_names" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_obj_std_object" ON "inspection_object_standards" USING btree ("inspection_object_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_objects_specialty" ON "inspection_objects" USING btree ("inspection_specialty_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_pil_param" ON "inspection_param_interface_links" USING btree ("inspection_parameter_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_rn_param_report" ON "inspection_report_name_parameters" USING btree ("report_name_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_rn_std_report" ON "inspection_report_name_standards" USING btree ("report_name_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_specs_tenant" ON "inspection_specs" USING btree ("tenant_id");--> statement-breakpoint
-CREATE UNIQUE INDEX IF NOT EXISTS "idx_specs_tenant_code" ON "inspection_specs" USING btree ("tenant_id","code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_inspection_specs_object" ON "inspection_specs" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_std_param_standard" ON "inspection_standard_parameters" USING btree ("inspection_standard_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_tech_req_object" ON "inspection_technical_requirements" USING btree ("inspection_object_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_tech_req_parameter" ON "inspection_technical_requirements" USING btree ("inspection_parameter_code");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_tech_req_tenant" ON "inspection_technical_requirements" USING btree ("tenant_id");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_receipts_tenant" ON "sample_receipts" USING btree ("tenant_id");--> statement-breakpoint
 CREATE UNIQUE INDEX IF NOT EXISTS "idx_receipts_tenant_commission" ON "sample_receipts" USING btree ("tenant_id","commission_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_sample_receipts_category" ON "sample_receipts" USING btree ("category_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_sample_receipts_contract" ON "sample_receipts" USING btree ("contract_id");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_sample_receipts_flow_status" ON "sample_receipts" USING btree ("flow_status");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_samples_receipt" ON "samples" USING btree ("receipt_id");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "idx_samples_tenant" ON "samples" USING btree ("tenant_id");--> statement-breakpoint
+CREATE UNIQUE INDEX IF NOT EXISTS "idx_samples_tenant_code" ON "samples" USING btree ("tenant_id","sample_code");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_test_records_sample" ON "test_records" USING btree ("sample_id");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "idx_test_records_tenant" ON "test_records" USING btree ("tenant_id");

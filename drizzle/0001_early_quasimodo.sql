@@ -1,1 +1,0 @@
-ALTER TABLE "sample_receipts" ADD COLUMN "ext" jsonb DEFAULT '{}'::jsonb NOT NULL;

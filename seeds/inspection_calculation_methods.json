@@ -11,8 +11,8 @@
     "rounding_rule": null,
     "remark": "凝结时间人工读数",
     "sort_order": 6,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P1",
@@ -26,8 +26,8 @@
     "rounding_rule": "修约到 0.1",
     "remark": "胶砂强度",
     "sort_order": 5,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -41,8 +41,8 @@
     "rounding_rule": "修约到 1",
     "remark": "机械连接接头屈服强度（3 件，无断裂位置）",
     "sort_order": 17,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -56,8 +56,8 @@
     "rounding_rule": "修约到 1",
     "remark": "机械连接接头抗拉强度（3 件 + 断裂位置）",
     "sort_order": 16,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -71,8 +71,8 @@
     "rounding_rule": "修约到 1%",
     "remark": "断后伸长率",
     "sort_order": 11,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -86,8 +86,8 @@
     "rounding_rule": "修约到 0.5%",
     "remark": "最大力总延伸率",
     "sort_order": 12,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -101,8 +101,8 @@
     "rounding_rule": null,
     "remark": "反向弯曲（裂纹观察）",
     "sort_order": 13,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -116,8 +116,8 @@
     "rounding_rule": "修约到 0.5%",
     "remark": "重量偏差（每批 ≥10 根）",
     "sort_order": 14,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -131,8 +131,8 @@
     "rounding_rule": null,
     "remark": "弯曲性能（裂纹观察）",
     "sort_order": 15,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -146,8 +146,8 @@
     "rounding_rule": "修约到 0.01",
     "remark": "强屈比=抗拉强度/屈服强度",
     "sort_order": 9,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -161,8 +161,8 @@
     "rounding_rule": "修约到 0.01",
     "remark": "超强比=实测屈服/标准屈服",
     "sort_order": 10,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
@@ -176,8 +176,8 @@
     "rounding_rule": "修约到 0.1%",
     "remark": "颗粒级配累计筛余百分率（按级配区 × 筛孔查 GB/T 14684-2022 表 3）",
     "sort_order": 22,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -191,8 +191,8 @@
     "rounding_rule": "修约到 0.1",
     "remark": "立方体抗压强度取算术平均",
     "sort_order": 1,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -206,8 +206,8 @@
     "rounding_rule": "修约到 0.1",
     "remark": "抗折强度",
     "sort_order": 2,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -221,8 +221,8 @@
     "rounding_rule": null,
     "remark": "混凝土抗渗等级（逐级加压法：0.1MPa 起每 8h 加 0.1MPa，6 件中 4 件未渗水即停止）",
     "sort_order": 18,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -236,8 +236,8 @@
     "rounding_rule": "修约到 0.01 g/cm³",
     "remark": "最大干密度（击实曲线峰值，对应 JTG 3430-2020 §4.3）",
     "sort_order": 19,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -251,8 +251,8 @@
     "rounding_rule": "修约到 0.1%",
     "remark": "最优含水率（击实曲线峰值对应含水率）",
     "sort_order": 20,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -266,7 +266,7 @@
     "rounding_rule": "修约到 0.1%",
     "remark": "压实度（实测干密度 / 最大干密度 × 100%）",
     "sort_order": 21,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

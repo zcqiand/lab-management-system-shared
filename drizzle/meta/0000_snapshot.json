@@ -1,5 +1,5 @@
 {
-  "id": "95f627e7-879f-4a9d-8b41-4e1bbc3c8bc1",
+  "id": "66813551-60aa-4296-8fdf-07eac896e1d3",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -119,24 +119,23 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "tenant_id": {
           "name": "tenant_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "notNull": true
         }
       },
       "indexes": {
@@ -195,7 +194,12 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_contracts_status": {
+          "name": "ck_contracts_status",
+          "value": "\"contracts\".\"status\" in ('active', 'archived')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_brands": {
@@ -235,63 +239,20 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
-        "idx_brands_tenant": {
-          "name": "idx_brands_tenant",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "idx_brands_tenant_code": {
-          "name": "idx_brands_tenant_code",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            },
-            {
-              "expression": "code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": true,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
         "idx_inspection_brands_object": {
           "name": "idx_inspection_brands_object",
           "columns": [
@@ -404,17 +365,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -499,7 +460,12 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_calc_algorithm_type": {
+          "name": "ck_calc_algorithm_type",
+          "value": "\"inspection_calculation_methods\".\"algorithm_type\" in ('simple_avg', 'compressive_strength', 'flexural_strength', 'steel_tensile', 'formula', 'manual', 'auto_calc_ratio')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_grades": {
@@ -539,63 +505,20 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
-        "idx_grades_tenant": {
-          "name": "idx_grades_tenant",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "idx_grades_tenant_code": {
-          "name": "idx_grades_tenant_code",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            },
-            {
-              "expression": "code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": true,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
         "idx_inspection_grades_object": {
           "name": "idx_inspection_grades_object",
           "columns": [
@@ -670,63 +593,20 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
-        "idx_models_tenant": {
-          "name": "idx_models_tenant",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "idx_models_tenant_code": {
-          "name": "idx_models_tenant_code",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            },
-            {
-              "expression": "code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": true,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
         "idx_inspection_models_object": {
           "name": "idx_inspection_models_object",
           "columns": [
@@ -801,17 +681,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -885,7 +765,12 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_obj_params_qual_level": {
+          "name": "ck_obj_params_qual_level",
+          "value": "\"inspection_object_parameters\".\"qualification_level\" in ('QUALIFIED', 'RESTRICTED')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_object_report_names": {
@@ -912,17 +797,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -1014,17 +899,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -1084,7 +969,12 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_obj_std_role": {
+          "name": "ck_obj_std_role",
+          "value": "\"inspection_object_standards\".\"role\" in ('TESTING', 'JUDGMENT')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_objects": {
@@ -1095,12 +985,6 @@
           "name": "code",
           "type": "text",
           "primaryKey": true,
-          "notNull": true
-        },
-        "inspection_specialty_code": {
-          "name": "inspection_specialty_code",
-          "type": "text",
-          "primaryKey": false,
           "notNull": true
         },
         "source_project_no": {
@@ -1151,51 +1035,21 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
-      "indexes": {
-        "idx_objects_specialty": {
-          "name": "idx_objects_specialty",
-          "columns": [
-            {
-              "expression": "inspection_specialty_code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "objects_specialty_fk": {
-          "name": "objects_specialty_fk",
-          "tableFrom": "inspection_objects",
-          "tableTo": "inspection_specialties",
-          "columnsFrom": [
-            "inspection_specialty_code"
-          ],
-          "columnsTo": [
-            "code"
-          ],
-          "onDelete": "restrict",
-          "onUpdate": "no action"
-        }
-      },
+      "indexes": {},
+      "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
@@ -1232,17 +1086,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -1366,17 +1220,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -1457,17 +1311,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -1475,7 +1329,12 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_params_source_type": {
+          "name": "ck_params_source_type",
+          "value": "\"inspection_parameters\".\"source_type\" in ('official', 'custom')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_report_name_parameters": {
@@ -1502,17 +1361,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -1604,17 +1463,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -1674,7 +1533,12 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_rn_std_role": {
+          "name": "ck_rn_std_role",
+          "value": "\"inspection_report_name_standards\".\"role\" in ('TESTING', 'JUDGMENT')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_report_names": {
@@ -1732,17 +1596,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -1798,17 +1662,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -1843,17 +1707,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -1936,63 +1800,20 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
-        "idx_specs_tenant": {
-          "name": "idx_specs_tenant",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "idx_specs_tenant_code": {
-          "name": "idx_specs_tenant_code",
-          "columns": [
-            {
-              "expression": "tenant_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            },
-            {
-              "expression": "code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": true,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
         "idx_inspection_specs_object": {
           "name": "idx_inspection_specs_object",
           "columns": [
@@ -2048,17 +1869,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -2170,17 +1991,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {},
@@ -2188,7 +2009,12 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_standards_status": {
+          "name": "ck_standards_status",
+          "value": "\"inspection_standards\".\"status\" in ('active', 'superseded', 'draft')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.inspection_technical_requirements": {
@@ -2228,13 +2054,13 @@
         },
         "min_value": {
           "name": "min_value",
-          "type": "integer",
+          "type": "numeric(12, 4)",
           "primaryKey": false,
           "notNull": false
         },
         "max_value": {
           "name": "max_value",
-          "type": "integer",
+          "type": "numeric(12, 4)",
           "primaryKey": false,
           "notNull": false
         },
@@ -2339,24 +2165,17 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "default": "now()"
         }
       },
       "indexes": {
@@ -2380,21 +2199,6 @@
           "columns": [
             {
               "expression": "inspection_parameter_code",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "idx_tech_req_tenant": {
-          "name": "idx_tech_req_tenant",
-          "columns": [
-            {
-              "expression": "tenant_id",
               "isExpression": false,
               "asc": true,
               "nulls": "last"
@@ -2511,7 +2315,24 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_tech_req_value_type": {
+          "name": "ck_tech_req_value_type",
+          "value": "\"inspection_technical_requirements\".\"value_type\" in ('numeric', 'string', 'range', 'formula', 'manual')"
+        },
+        "ck_tech_req_comparison": {
+          "name": "ck_tech_req_comparison",
+          "value": "\"inspection_technical_requirements\".\"comparison\" in ('≥', '≤', '=', 'range', 'eq')"
+        },
+        "ck_tech_req_judgment_mode": {
+          "name": "ck_tech_req_judgment_mode",
+          "value": "\"inspection_technical_requirements\".\"judgment_mode\" in ('automatic', 'manual')"
+        },
+        "ck_tech_req_verification_status": {
+          "name": "ck_tech_req_verification_status",
+          "value": "\"inspection_technical_requirements\".\"verification_status\" in ('draft', 'reviewed', 'verified', 'rejected')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.sample_receipts": {
@@ -2704,6 +2525,13 @@
           "primaryKey": false,
           "notNull": false
         },
+        "ext": {
+          "name": "ext",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'{}'::jsonb"
+        },
         "flow_status": {
           "name": "flow_status",
           "type": "text",
@@ -2774,24 +2602,23 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "tenant_id": {
           "name": "tenant_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "notNull": true
         }
       },
       "indexes": {
@@ -2908,7 +2735,12 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "ck_receipts_flow_status": {
+          "name": "ck_receipts_flow_status",
+          "value": "\"sample_receipts\".\"flow_status\" in ('receiving', 'task_assignment', 'data_entry', 'review', 'approval', 'issuance', 'archived', 'completed')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.samples": {
@@ -3038,24 +2870,23 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "tenant_id": {
           "name": "tenant_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "notNull": true
         }
       },
       "indexes": {
@@ -3074,17 +2905,23 @@
           "method": "btree",
           "with": {}
         },
-        "idx_samples_tenant": {
-          "name": "idx_samples_tenant",
+        "idx_samples_tenant_code": {
+          "name": "idx_samples_tenant_code",
           "columns": [
             {
               "expression": "tenant_id",
               "isExpression": false,
               "asc": true,
               "nulls": "last"
+            },
+            {
+              "expression": "sample_code",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
             }
           ],
-          "isUnique": false,
+          "isUnique": true,
           "concurrently": false,
           "method": "btree",
           "with": {}
@@ -3165,24 +3002,23 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "updated_at": {
           "name": "updated_at",
-          "type": "text",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": "''"
+          "default": "now()"
         },
         "tenant_id": {
           "name": "tenant_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": "''"
+          "notNull": true
         }
       },
       "indexes": {

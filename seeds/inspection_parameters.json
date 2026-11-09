@@ -9,8 +9,8 @@
     "unit": "min",
     "source_type": "official",
     "sort_order": 1,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0002",
@@ -22,8 +22,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 2,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0003",
@@ -35,8 +35,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 3,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0004",
@@ -48,8 +48,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 4,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0005",
@@ -61,8 +61,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 5,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0006",
@@ -74,8 +74,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 6,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0007",
@@ -87,8 +87,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 7,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0008",
@@ -100,8 +100,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 8,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0009",
@@ -113,8 +113,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 9,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0010",
@@ -126,8 +126,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 10,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0011",
@@ -139,8 +139,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 11,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0012",
@@ -152,8 +152,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 12,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0013",
@@ -165,8 +165,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 13,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0014",
@@ -178,8 +178,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 14,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0015",
@@ -191,8 +191,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 15,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0016",
@@ -204,8 +204,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 16,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0017",
@@ -217,8 +217,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 17,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0018",
@@ -230,8 +230,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 18,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0019",
@@ -243,8 +243,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 19,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0020",
@@ -256,8 +256,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 20,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0021",
@@ -269,8 +269,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 21,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0022",
@@ -282,8 +282,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 22,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0023",
@@ -295,8 +295,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 23,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0024",
@@ -308,8 +308,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 24,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0025",
@@ -321,8 +321,8 @@
     "unit": "h",
     "source_type": "official",
     "sort_order": 25,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0026",
@@ -334,8 +334,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 26,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0027",
@@ -347,8 +347,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 27,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0028",
@@ -360,8 +360,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 28,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0029",
@@ -373,8 +373,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 29,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0030",
@@ -386,8 +386,8 @@
     "unit": "m²",
     "source_type": "official",
     "sort_order": 30,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0031",
@@ -399,8 +399,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 31,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0032",
@@ -412,8 +412,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 32,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0033",
@@ -425,8 +425,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 33,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0034",
@@ -438,8 +438,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 34,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0035",
@@ -451,8 +451,8 @@
     "unit": "HB",
     "source_type": "official",
     "sort_order": 35,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0036",
@@ -464,8 +464,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 36,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0037",
@@ -477,8 +477,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 37,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0038",
@@ -490,8 +490,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 38,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0039",
@@ -503,8 +503,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 39,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0040",
@@ -516,8 +516,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 40,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0041",
@@ -529,8 +529,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 41,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0042",
@@ -542,8 +542,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 42,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0043",
@@ -555,8 +555,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 43,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0044",
@@ -568,8 +568,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 44,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0045",
@@ -581,8 +581,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 45,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0046",
@@ -594,8 +594,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 46,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0047",
@@ -607,8 +607,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 47,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0048",
@@ -620,8 +620,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 48,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0049",
@@ -633,8 +633,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 49,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0050",
@@ -646,8 +646,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 50,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0051",
@@ -659,8 +659,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 51,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0052",
@@ -672,8 +672,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 52,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0053",
@@ -685,8 +685,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 53,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0054",
@@ -698,8 +698,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 54,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0055",
@@ -711,8 +711,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 55,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0056",
@@ -724,8 +724,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 56,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0057",
@@ -737,8 +737,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 57,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0058",
@@ -750,8 +750,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 58,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0059",
@@ -763,8 +763,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 59,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0060",
@@ -776,8 +776,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 60,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0061",
@@ -789,8 +789,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 61,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0062",
@@ -802,8 +802,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 62,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0063",
@@ -815,8 +815,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 63,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0064",
@@ -828,8 +828,8 @@
     "unit": "J",
     "source_type": "official",
     "sort_order": 64,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0065",
@@ -841,8 +841,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 65,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0066",
@@ -854,8 +854,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 66,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0067",
@@ -867,8 +867,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 67,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0068",
@@ -880,8 +880,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 68,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0069",
@@ -893,8 +893,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 69,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0070",
@@ -906,8 +906,8 @@
     "unit": "J",
     "source_type": "official",
     "sort_order": 70,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0071",
@@ -919,8 +919,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 71,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0072",
@@ -932,8 +932,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 72,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0073",
@@ -945,8 +945,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 73,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0074",
@@ -958,8 +958,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 74,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0075",
@@ -971,8 +971,8 @@
     "unit": "kPa",
     "source_type": "official",
     "sort_order": 75,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0076",
@@ -984,8 +984,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 76,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0077",
@@ -997,8 +997,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 77,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0078",
@@ -1010,8 +1010,8 @@
     "unit": "h",
     "source_type": "official",
     "sort_order": 78,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0079",
@@ -1023,8 +1023,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 79,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0080",
@@ -1036,8 +1036,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 80,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0081",
@@ -1049,8 +1049,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 81,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0082",
@@ -1062,8 +1062,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 82,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0083",
@@ -1075,8 +1075,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 83,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0084",
@@ -1088,8 +1088,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 84,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0085",
@@ -1101,8 +1101,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 85,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0086",
@@ -1114,8 +1114,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 86,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0087",
@@ -1127,8 +1127,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 87,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0088",
@@ -1140,8 +1140,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 88,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0089",
@@ -1153,8 +1153,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 89,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0090",
@@ -1166,8 +1166,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 90,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0091",
@@ -1179,8 +1179,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 91,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0092",
@@ -1192,8 +1192,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 92,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0093",
@@ -1205,8 +1205,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 93,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0094",
@@ -1218,8 +1218,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 94,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0095",
@@ -1231,8 +1231,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 95,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0096",
@@ -1244,8 +1244,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 96,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0097",
@@ -1257,8 +1257,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 97,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0098",
@@ -1270,8 +1270,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 98,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0099",
@@ -1283,8 +1283,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 99,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0100",
@@ -1296,8 +1296,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 100,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0101",
@@ -1309,8 +1309,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 101,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0102",
@@ -1322,8 +1322,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 102,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0103",
@@ -1335,8 +1335,8 @@
     "unit": "kN",
     "source_type": "official",
     "sort_order": 103,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0104",
@@ -1348,8 +1348,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 104,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0105",
@@ -1361,8 +1361,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 105,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0106",
@@ -1374,8 +1374,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 106,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0107",
@@ -1387,8 +1387,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 107,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0108",
@@ -1400,8 +1400,8 @@
     "unit": "J",
     "source_type": "official",
     "sort_order": 108,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0109",
@@ -1413,8 +1413,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 109,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0110",
@@ -1426,8 +1426,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 110,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0111",
@@ -1439,8 +1439,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 111,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0112",
@@ -1452,8 +1452,8 @@
     "unit": "kN",
     "source_type": "official",
     "sort_order": 112,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0113",
@@ -1465,8 +1465,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 113,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0114",
@@ -1478,8 +1478,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 114,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0115",
@@ -1491,8 +1491,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 115,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0116",
@@ -1504,8 +1504,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 116,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0117",
@@ -1517,8 +1517,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 117,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0118",
@@ -1530,8 +1530,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 118,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0119",
@@ -1543,8 +1543,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 119,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0120",
@@ -1556,8 +1556,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 120,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0121",
@@ -1569,8 +1569,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 121,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0122",
@@ -1582,8 +1582,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 122,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0123",
@@ -1595,8 +1595,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 123,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0124",
@@ -1608,8 +1608,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 124,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0125",
@@ -1621,8 +1621,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 125,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0126",
@@ -1634,8 +1634,8 @@
     "unit": "m²",
     "source_type": "official",
     "sort_order": 126,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0127",
@@ -1647,8 +1647,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 127,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0128",
@@ -1660,8 +1660,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 128,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0129",
@@ -1673,8 +1673,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 129,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0130",
@@ -1686,8 +1686,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 130,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0131",
@@ -1699,8 +1699,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 131,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0132",
@@ -1712,8 +1712,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 132,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0133",
@@ -1725,8 +1725,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 133,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0134",
@@ -1738,8 +1738,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 134,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0135",
@@ -1751,8 +1751,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 135,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0136",
@@ -1764,8 +1764,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 136,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0137",
@@ -1777,8 +1777,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 137,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0138",
@@ -1790,8 +1790,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 138,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0139",
@@ -1803,8 +1803,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 139,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0140",
@@ -1816,8 +1816,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 140,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0141",
@@ -1829,8 +1829,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 141,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0142",
@@ -1842,8 +1842,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 142,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0143",
@@ -1855,8 +1855,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 143,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0144",
@@ -1868,8 +1868,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 144,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0145",
@@ -1881,8 +1881,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 145,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0146",
@@ -1894,8 +1894,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 146,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0147",
@@ -1907,8 +1907,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 147,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0148",
@@ -1920,8 +1920,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 148,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0149",
@@ -1933,8 +1933,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 149,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0150",
@@ -1946,8 +1946,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 150,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0151",
@@ -1959,8 +1959,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 151,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0152",
@@ -1972,8 +1972,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 152,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0153",
@@ -1985,8 +1985,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 153,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0154",
@@ -1998,8 +1998,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 154,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0155",
@@ -2011,8 +2011,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 155,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0156",
@@ -2024,8 +2024,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 156,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0157",
@@ -2037,8 +2037,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 157,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0158",
@@ -2050,8 +2050,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 158,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0159",
@@ -2063,8 +2063,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 159,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0160",
@@ -2076,8 +2076,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 160,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0161",
@@ -2089,8 +2089,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 161,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0162",
@@ -2102,8 +2102,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 162,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0163",
@@ -2115,8 +2115,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 163,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0164",
@@ -2128,8 +2128,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 164,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0165",
@@ -2141,8 +2141,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 165,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0166",
@@ -2154,8 +2154,8 @@
     "unit": "m²",
     "source_type": "official",
     "sort_order": 166,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0167",
@@ -2167,8 +2167,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 167,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0168",
@@ -2180,8 +2180,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 168,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0169",
@@ -2193,8 +2193,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 169,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0170",
@@ -2206,8 +2206,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 170,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0171",
@@ -2219,8 +2219,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 171,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0172",
@@ -2232,8 +2232,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 172,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0173",
@@ -2245,8 +2245,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 173,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0174",
@@ -2258,8 +2258,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 174,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0175",
@@ -2271,8 +2271,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 175,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0176",
@@ -2284,8 +2284,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 176,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0177",
@@ -2297,8 +2297,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 177,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0178",
@@ -2310,8 +2310,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 178,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0179",
@@ -2323,8 +2323,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 179,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0180",
@@ -2336,8 +2336,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 180,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0181",
@@ -2349,8 +2349,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 181,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0182",
@@ -2362,8 +2362,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 182,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0183",
@@ -2375,8 +2375,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 183,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0184",
@@ -2388,8 +2388,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 184,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0185",
@@ -2401,8 +2401,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 185,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0186",
@@ -2414,8 +2414,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 186,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0187",
@@ -2427,8 +2427,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 187,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0188",
@@ -2440,8 +2440,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 188,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0189",
@@ -2453,8 +2453,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 189,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0190",
@@ -2466,8 +2466,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 190,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0191",
@@ -2479,8 +2479,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 191,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0192",
@@ -2492,8 +2492,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 192,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0193",
@@ -2505,8 +2505,8 @@
     "unit": "kN",
     "source_type": "official",
     "sort_order": 193,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0194",
@@ -2518,8 +2518,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 194,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0195",
@@ -2531,8 +2531,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 195,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0196",
@@ -2544,8 +2544,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 196,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0197",
@@ -2557,8 +2557,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 197,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0198",
@@ -2570,8 +2570,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 198,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0199",
@@ -2583,8 +2583,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 199,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0200",
@@ -2596,8 +2596,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 200,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0201",
@@ -2609,8 +2609,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 201,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0202",
@@ -2622,8 +2622,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 202,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0203",
@@ -2635,8 +2635,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 203,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0204",
@@ -2648,8 +2648,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 204,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0205",
@@ -2661,8 +2661,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 205,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0206",
@@ -2674,8 +2674,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 206,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0207",
@@ -2687,8 +2687,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 207,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0208",
@@ -2700,8 +2700,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 208,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0209",
@@ -2713,8 +2713,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 209,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0210",
@@ -2726,8 +2726,8 @@
     "unit": "min",
     "source_type": "official",
     "sort_order": 210,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0211",
@@ -2739,8 +2739,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 211,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0212",
@@ -2752,8 +2752,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 212,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0213",
@@ -2765,8 +2765,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 213,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0214",
@@ -2778,8 +2778,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 214,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0215",
@@ -2791,8 +2791,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 215,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0216",
@@ -2804,8 +2804,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 216,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0217",
@@ -2817,8 +2817,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 217,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0218",
@@ -2830,8 +2830,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 218,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0219",
@@ -2843,8 +2843,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 219,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0220",
@@ -2856,8 +2856,8 @@
     "unit": "m²/kg",
     "source_type": "official",
     "sort_order": 220,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0221",
@@ -2869,8 +2869,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 221,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0222",
@@ -2882,8 +2882,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 222,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0223",
@@ -2895,8 +2895,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 223,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0224",
@@ -2908,8 +2908,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 224,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0225",
@@ -2921,8 +2921,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 225,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0226",
@@ -2934,8 +2934,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 226,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0227",
@@ -2947,8 +2947,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 227,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0228",
@@ -2960,8 +2960,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 228,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0229",
@@ -2973,8 +2973,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 229,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0230",
@@ -2986,8 +2986,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 230,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0231",
@@ -2999,8 +2999,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 231,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0232",
@@ -3012,8 +3012,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 232,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0233",
@@ -3025,8 +3025,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 233,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0234",
@@ -3038,8 +3038,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 234,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0235",
@@ -3051,8 +3051,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 235,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0236",
@@ -3064,8 +3064,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 236,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0237",
@@ -3077,8 +3077,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 237,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0238",
@@ -3090,8 +3090,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 238,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0239",
@@ -3103,8 +3103,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 239,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0240",
@@ -3116,8 +3116,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 240,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0241",
@@ -3129,8 +3129,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 241,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0242",
@@ -3142,8 +3142,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 242,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0243",
@@ -3155,8 +3155,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 243,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0244",
@@ -3168,8 +3168,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 244,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0245",
@@ -3181,8 +3181,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 245,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0246",
@@ -3194,8 +3194,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 246,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0247",
@@ -3207,8 +3207,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 247,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0248",
@@ -3220,8 +3220,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 248,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0249",
@@ -3233,8 +3233,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 249,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0250",
@@ -3246,8 +3246,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 250,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0251",
@@ -3259,8 +3259,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 251,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0252",
@@ -3272,8 +3272,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 252,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0253",
@@ -3285,8 +3285,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 253,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0254",
@@ -3298,8 +3298,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 254,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0255",
@@ -3311,8 +3311,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 255,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0256",
@@ -3324,8 +3324,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 256,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0257",
@@ -3337,8 +3337,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 257,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0258",
@@ -3350,8 +3350,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 258,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0259",
@@ -3363,8 +3363,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 259,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0260",
@@ -3376,8 +3376,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 260,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0261",
@@ -3389,8 +3389,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 261,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0262",
@@ -3402,8 +3402,8 @@
     "unit": "J",
     "source_type": "official",
     "sort_order": 262,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0263",
@@ -3415,8 +3415,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 263,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0264",
@@ -3428,8 +3428,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 264,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0265",
@@ -3441,8 +3441,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 265,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0266",
@@ -3454,8 +3454,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 266,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0267",
@@ -3467,8 +3467,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 267,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0268",
@@ -3480,8 +3480,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 268,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0269",
@@ -3493,8 +3493,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 269,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0270",
@@ -3506,8 +3506,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 270,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0271",
@@ -3519,8 +3519,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 271,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0272",
@@ -3532,8 +3532,8 @@
     "unit": "N·m",
     "source_type": "official",
     "sort_order": 272,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0273",
@@ -3545,8 +3545,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 273,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0274",
@@ -3558,8 +3558,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 274,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0275",
@@ -3571,8 +3571,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 275,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0276",
@@ -3584,8 +3584,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 276,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0277",
@@ -3597,8 +3597,8 @@
     "unit": "kPa",
     "source_type": "official",
     "sort_order": 277,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0278",
@@ -3610,8 +3610,8 @@
     "unit": "kPa",
     "source_type": "official",
     "sort_order": 278,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0279",
@@ -3623,8 +3623,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 279,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0280",
@@ -3636,8 +3636,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 280,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0281",
@@ -3649,8 +3649,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 281,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0282",
@@ -3662,8 +3662,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 282,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0283",
@@ -3675,8 +3675,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 283,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0284",
@@ -3688,8 +3688,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 284,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0285",
@@ -3701,8 +3701,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 285,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0286",
@@ -3714,8 +3714,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 286,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0287",
@@ -3727,8 +3727,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 287,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0288",
@@ -3740,8 +3740,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 288,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0289",
@@ -3753,8 +3753,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 289,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0290",
@@ -3766,8 +3766,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 290,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0291",
@@ -3779,8 +3779,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 291,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0292",
@@ -3792,8 +3792,8 @@
     "unit": "W/(m·K)",
     "source_type": "official",
     "sort_order": 292,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0293",
@@ -3805,8 +3805,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 293,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0294",
@@ -3818,8 +3818,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 294,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0295",
@@ -3831,8 +3831,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 295,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0296",
@@ -3844,8 +3844,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 296,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0297",
@@ -3857,8 +3857,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 297,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0298",
@@ -3870,8 +3870,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 298,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0299",
@@ -3883,8 +3883,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 299,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0300",
@@ -3896,8 +3896,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 300,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0301",
@@ -3909,8 +3909,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 301,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0302",
@@ -3922,8 +3922,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 302,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0303",
@@ -3935,8 +3935,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 303,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0304",
@@ -3948,8 +3948,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 304,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0305",
@@ -3961,8 +3961,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 305,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0306",
@@ -3974,8 +3974,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 306,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0307",
@@ -3987,8 +3987,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 307,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0308",
@@ -4000,8 +4000,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 308,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0309",
@@ -4013,8 +4013,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 309,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0310",
@@ -4026,8 +4026,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 310,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0311",
@@ -4039,8 +4039,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 311,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0312",
@@ -4052,8 +4052,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 312,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0313",
@@ -4065,8 +4065,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 313,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0314",
@@ -4078,8 +4078,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 314,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0315",
@@ -4091,8 +4091,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 315,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0316",
@@ -4104,8 +4104,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 316,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0317",
@@ -4117,8 +4117,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 317,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0318",
@@ -4130,8 +4130,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 318,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0319",
@@ -4143,8 +4143,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 319,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0320",
@@ -4156,8 +4156,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 320,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0321",
@@ -4169,8 +4169,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 321,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0322",
@@ -4182,8 +4182,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 322,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0323",
@@ -4195,8 +4195,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 323,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0324",
@@ -4208,8 +4208,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 324,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0325",
@@ -4221,8 +4221,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 325,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0326",
@@ -4234,8 +4234,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 326,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0327",
@@ -4247,8 +4247,8 @@
     "unit": "W/(m·K)",
     "source_type": "official",
     "sort_order": 327,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0328",
@@ -4260,8 +4260,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 328,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0329",
@@ -4273,8 +4273,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 329,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0330",
@@ -4286,8 +4286,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 330,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0331",
@@ -4299,8 +4299,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 331,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0332",
@@ -4312,8 +4312,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 332,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0333",
@@ -4325,8 +4325,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 333,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0334",
@@ -4338,8 +4338,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 334,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0335",
@@ -4351,8 +4351,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 335,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0336",
@@ -4364,8 +4364,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 336,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0337",
@@ -4377,8 +4377,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 337,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0338",
@@ -4390,8 +4390,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 338,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0339",
@@ -4403,8 +4403,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 339,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0340",
@@ -4416,8 +4416,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 340,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0341",
@@ -4429,8 +4429,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 341,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0342",
@@ -4442,8 +4442,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 342,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0343",
@@ -4455,8 +4455,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 343,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0344",
@@ -4468,8 +4468,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 344,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0345",
@@ -4481,8 +4481,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 345,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0346",
@@ -4494,8 +4494,8 @@
     "unit": "L/s",
     "source_type": "official",
     "sort_order": 346,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0347",
@@ -4507,8 +4507,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 347,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0348",
@@ -4520,8 +4520,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 348,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0349",
@@ -4533,8 +4533,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 349,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0350",
@@ -4546,8 +4546,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 350,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0351",
@@ -4559,8 +4559,8 @@
     "unit": "Ω",
     "source_type": "official",
     "sort_order": 351,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0352",
@@ -4572,8 +4572,8 @@
     "unit": "HB",
     "source_type": "official",
     "sort_order": 352,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0353",
@@ -4585,8 +4585,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 353,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0354",
@@ -4598,8 +4598,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 354,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0355",
@@ -4611,8 +4611,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 355,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0356",
@@ -4624,8 +4624,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 356,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0357",
@@ -4637,8 +4637,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 357,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0358",
@@ -4650,8 +4650,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 358,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0359",
@@ -4663,8 +4663,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 359,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0360",
@@ -4676,8 +4676,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 360,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0361",
@@ -4689,8 +4689,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 361,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0362",
@@ -4702,8 +4702,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 362,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0363",
@@ -4715,8 +4715,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 363,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0364",
@@ -4728,8 +4728,8 @@
     "unit": "dB",
     "source_type": "official",
     "sort_order": 364,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0365",
@@ -4741,8 +4741,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 365,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0366",
@@ -4754,8 +4754,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 366,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0367",
@@ -4767,8 +4767,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 367,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0368",
@@ -4780,8 +4780,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 368,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0369",
@@ -4793,8 +4793,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 369,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0370",
@@ -4806,8 +4806,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 370,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0371",
@@ -4819,8 +4819,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 371,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0372",
@@ -4832,8 +4832,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 372,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0373",
@@ -4845,8 +4845,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 373,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0374",
@@ -4858,8 +4858,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 374,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0375",
@@ -4871,8 +4871,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 375,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0376",
@@ -4884,8 +4884,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 376,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0377",
@@ -4897,8 +4897,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 377,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0378",
@@ -4910,8 +4910,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 378,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0379",
@@ -4923,8 +4923,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 379,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0380",
@@ -4936,8 +4936,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 380,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0381",
@@ -4949,8 +4949,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 381,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0382",
@@ -4962,8 +4962,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 382,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0383",
@@ -4975,8 +4975,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 383,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0384",
@@ -4988,8 +4988,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 384,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0385",
@@ -5001,8 +5001,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 385,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0386",
@@ -5014,8 +5014,8 @@
     "unit": "min",
     "source_type": "official",
     "sort_order": 386,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0387",
@@ -5027,8 +5027,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 387,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0388",
@@ -5040,8 +5040,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 388,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0389",
@@ -5053,8 +5053,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 389,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0390",
@@ -5066,8 +5066,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 390,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0391",
@@ -5079,8 +5079,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 391,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0392",
@@ -5092,8 +5092,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 392,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0393",
@@ -5105,8 +5105,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 393,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0394",
@@ -5118,8 +5118,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 394,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0395",
@@ -5131,8 +5131,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 395,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0396",
@@ -5144,8 +5144,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 396,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0397",
@@ -5157,8 +5157,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 397,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0398",
@@ -5170,8 +5170,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 398,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0399",
@@ -5183,8 +5183,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 399,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0400",
@@ -5196,8 +5196,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 400,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0401",
@@ -5209,8 +5209,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 401,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0402",
@@ -5222,8 +5222,8 @@
     "unit": "m²/kg",
     "source_type": "official",
     "sort_order": 402,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0403",
@@ -5235,8 +5235,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 403,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0404",
@@ -5248,8 +5248,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 404,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0405",
@@ -5261,8 +5261,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 405,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0406",
@@ -5274,8 +5274,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 406,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0407",
@@ -5287,8 +5287,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 407,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0408",
@@ -5300,8 +5300,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 408,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0409",
@@ -5313,8 +5313,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 409,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0410",
@@ -5326,8 +5326,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 410,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0411",
@@ -5339,8 +5339,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 411,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0412",
@@ -5352,8 +5352,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 412,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0413",
@@ -5365,8 +5365,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 413,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0414",
@@ -5378,8 +5378,8 @@
     "unit": "Pa·s",
     "source_type": "official",
     "sort_order": 414,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0415",
@@ -5391,8 +5391,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 415,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0416",
@@ -5404,8 +5404,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 416,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0417",
@@ -5417,8 +5417,8 @@
     "unit": "Pa·s",
     "source_type": "official",
     "sort_order": 417,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0418",
@@ -5430,8 +5430,8 @@
     "unit": "Pa·s",
     "source_type": "official",
     "sort_order": 418,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0419",
@@ -5443,8 +5443,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 419,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0420",
@@ -5456,8 +5456,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 420,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0421",
@@ -5469,8 +5469,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 421,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0422",
@@ -5482,8 +5482,8 @@
     "unit": "Pa·s",
     "source_type": "official",
     "sort_order": 422,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0423",
@@ -5495,8 +5495,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 423,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0424",
@@ -5508,8 +5508,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 424,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0425",
@@ -5521,8 +5521,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 425,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0426",
@@ -5534,8 +5534,8 @@
     "unit": "Pa·s",
     "source_type": "official",
     "sort_order": 426,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0427",
@@ -5547,8 +5547,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 427,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0428",
@@ -5560,8 +5560,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 428,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0429",
@@ -5573,8 +5573,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 429,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0430",
@@ -5586,8 +5586,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 430,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0431",
@@ -5599,8 +5599,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 431,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0432",
@@ -5612,8 +5612,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 432,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0433",
@@ -5625,8 +5625,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 433,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0434",
@@ -5638,8 +5638,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 434,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0435",
@@ -5651,8 +5651,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 435,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0436",
@@ -5664,8 +5664,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 436,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0437",
@@ -5677,8 +5677,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 437,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0438",
@@ -5690,8 +5690,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 438,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0439",
@@ -5703,8 +5703,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 439,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0440",
@@ -5716,8 +5716,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 440,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0441",
@@ -5729,8 +5729,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 441,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0442",
@@ -5742,8 +5742,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 442,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0443",
@@ -5755,8 +5755,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 443,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0444",
@@ -5768,8 +5768,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 444,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0445",
@@ -5781,8 +5781,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 445,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0446",
@@ -5794,8 +5794,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 446,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0447",
@@ -5807,8 +5807,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 447,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0448",
@@ -5820,8 +5820,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 448,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0449",
@@ -5833,8 +5833,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 449,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0450",
@@ -5846,8 +5846,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 450,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0451",
@@ -5859,8 +5859,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 451,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0452",
@@ -5872,8 +5872,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 452,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0453",
@@ -5885,8 +5885,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 453,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0454",
@@ -5898,8 +5898,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 454,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0455",
@@ -5911,8 +5911,8 @@
     "unit": "kN",
     "source_type": "official",
     "sort_order": 455,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0456",
@@ -5924,8 +5924,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 456,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0457",
@@ -5937,8 +5937,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 457,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0458",
@@ -5950,8 +5950,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 458,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0459",
@@ -5963,8 +5963,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 459,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0460",
@@ -5976,8 +5976,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 460,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0461",
@@ -5989,8 +5989,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 461,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0462",
@@ -6002,8 +6002,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 462,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0463",
@@ -6015,8 +6015,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 463,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0464",
@@ -6028,8 +6028,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 464,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0465",
@@ -6041,8 +6041,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 465,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0466",
@@ -6054,8 +6054,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 466,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0467",
@@ -6067,8 +6067,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 467,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0468",
@@ -6080,8 +6080,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 468,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0469",
@@ -6093,8 +6093,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 469,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0470",
@@ -6106,8 +6106,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 470,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0471",
@@ -6119,8 +6119,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 471,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0472",
@@ -6132,8 +6132,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 472,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0473",
@@ -6145,8 +6145,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 473,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0474",
@@ -6158,8 +6158,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 474,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0475",
@@ -6171,8 +6171,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 475,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0476",
@@ -6184,8 +6184,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 476,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0477",
@@ -6197,8 +6197,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 477,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0478",
@@ -6210,8 +6210,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 478,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0479",
@@ -6223,8 +6223,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 479,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0480",
@@ -6236,8 +6236,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 480,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0481",
@@ -6249,8 +6249,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 481,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0482",
@@ -6262,8 +6262,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 482,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0483",
@@ -6275,8 +6275,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 483,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0484",
@@ -6288,8 +6288,8 @@
     "unit": "℃",
     "source_type": "official",
     "sort_order": 484,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0485",
@@ -6301,8 +6301,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 485,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0486",
@@ -6314,8 +6314,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 486,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0487",
@@ -6327,8 +6327,8 @@
     "unit": "J",
     "source_type": "official",
     "sort_order": 487,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0488",
@@ -6340,8 +6340,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 488,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0489",
@@ -6353,8 +6353,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 489,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0490",
@@ -6366,8 +6366,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 490,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0491",
@@ -6379,8 +6379,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 491,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0492",
@@ -6392,8 +6392,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 492,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0493",
@@ -6405,8 +6405,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 493,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0494",
@@ -6418,8 +6418,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 494,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0495",
@@ -6431,8 +6431,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 495,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0496",
@@ -6444,8 +6444,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 496,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0497",
@@ -6457,8 +6457,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 497,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0498",
@@ -6470,8 +6470,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 498,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0499",
@@ -6483,8 +6483,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 499,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0500",
@@ -6496,8 +6496,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 500,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0501",
@@ -6509,8 +6509,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 501,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0502",
@@ -6522,8 +6522,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 502,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0503",
@@ -6535,8 +6535,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 503,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0504",
@@ -6548,8 +6548,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 504,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0505",
@@ -6561,8 +6561,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 505,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0506",
@@ -6574,8 +6574,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 506,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0507",
@@ -6587,8 +6587,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 507,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0508",
@@ -6600,8 +6600,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 508,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0509",
@@ -6613,8 +6613,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 509,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0510",
@@ -6626,8 +6626,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 510,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0511",
@@ -6639,8 +6639,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 511,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0512",
@@ -6652,8 +6652,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 512,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0513",
@@ -6665,8 +6665,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 513,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0514",
@@ -6678,8 +6678,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 514,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0515",
@@ -6691,8 +6691,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 515,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0516",
@@ -6704,8 +6704,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 516,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0517",
@@ -6717,8 +6717,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 517,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0518",
@@ -6730,8 +6730,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 518,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0519",
@@ -6743,8 +6743,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 519,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0520",
@@ -6756,8 +6756,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 520,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0521",
@@ -6769,8 +6769,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 521,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0522",
@@ -6782,8 +6782,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 522,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0523",
@@ -6795,8 +6795,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 523,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0524",
@@ -6808,8 +6808,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 524,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0525",
@@ -6821,8 +6821,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 525,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0526",
@@ -6834,8 +6834,8 @@
     "unit": "lx",
     "source_type": "official",
     "sort_order": 526,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0527",
@@ -6847,8 +6847,8 @@
     "unit": "dB",
     "source_type": "official",
     "sort_order": 527,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0528",
@@ -6860,8 +6860,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 528,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0529",
@@ -6873,8 +6873,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 529,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0530",
@@ -6886,8 +6886,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 530,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0531",
@@ -6899,8 +6899,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 531,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0532",
@@ -6912,8 +6912,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 532,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0533",
@@ -6925,8 +6925,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 533,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0534",
@@ -6938,8 +6938,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 534,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0535",
@@ -6951,8 +6951,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 535,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0536",
@@ -6964,8 +6964,8 @@
     "unit": "mg/m³",
     "source_type": "official",
     "sort_order": 536,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0537",
@@ -6977,8 +6977,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 537,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0538",
@@ -6990,8 +6990,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 538,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0539",
@@ -7003,8 +7003,8 @@
     "unit": "kg",
     "source_type": "official",
     "sort_order": 539,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0540",
@@ -7016,8 +7016,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 540,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0541",
@@ -7029,8 +7029,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 541,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0542",
@@ -7042,8 +7042,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 542,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0543",
@@ -7055,8 +7055,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 543,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0544",
@@ -7068,8 +7068,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 544,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0545",
@@ -7081,8 +7081,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 545,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0546",
@@ -7094,8 +7094,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 546,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0547",
@@ -7107,8 +7107,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 547,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0548",
@@ -7120,8 +7120,8 @@
     "unit": "m²/kg",
     "source_type": "official",
     "sort_order": 548,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0549",
@@ -7133,8 +7133,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 549,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0550",
@@ -7146,8 +7146,8 @@
     "unit": "min",
     "source_type": "official",
     "sort_order": 550,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0551",
@@ -7159,8 +7159,8 @@
     "unit": "min",
     "source_type": "official",
     "sort_order": 551,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0552",
@@ -7172,8 +7172,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 552,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0553",
@@ -7185,8 +7185,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 553,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0554",
@@ -7198,8 +7198,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 554,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0555",
@@ -7211,8 +7211,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 555,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0556",
@@ -7224,8 +7224,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 556,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0557",
@@ -7237,8 +7237,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 557,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0558",
@@ -7250,8 +7250,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 558,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0559",
@@ -7263,8 +7263,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 559,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0560",
@@ -7276,8 +7276,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 560,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0561",
@@ -7289,8 +7289,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 561,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0562",
@@ -7302,8 +7302,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 562,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0563",
@@ -7315,8 +7315,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 563,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0564",
@@ -7328,8 +7328,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 564,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0565",
@@ -7341,8 +7341,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 565,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0566",
@@ -7354,8 +7354,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 566,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0567",
@@ -7367,8 +7367,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 567,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0568",
@@ -7380,8 +7380,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 568,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0569",
@@ -7393,8 +7393,8 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 569,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0570",
@@ -7406,8 +7406,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 570,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0571",
@@ -7419,8 +7419,8 @@
     "unit": "mm",
     "source_type": "official",
     "sort_order": 571,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0572",
@@ -7432,8 +7432,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 572,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0573",
@@ -7445,8 +7445,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 573,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0574",
@@ -7458,8 +7458,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 574,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0575",
@@ -7471,8 +7471,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 575,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0576",
@@ -7484,8 +7484,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 576,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0577",
@@ -7497,8 +7497,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 577,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0578",
@@ -7510,8 +7510,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 578,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0579",
@@ -7523,8 +7523,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 579,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0580",
@@ -7536,8 +7536,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 580,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0581",
@@ -7549,8 +7549,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 581,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0582",
@@ -7562,8 +7562,8 @@
     "unit": "%",
     "source_type": "official",
     "sort_order": 582,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0583",
@@ -7575,8 +7575,8 @@
     "unit": "h",
     "source_type": "official",
     "sort_order": 583,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0584",
@@ -7588,8 +7588,8 @@
     "unit": null,
     "source_type": "official",
     "sort_order": 584,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0585",
@@ -7601,8 +7601,8 @@
     "unit": "kg/m²",
     "source_type": "official",
     "sort_order": 585,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0586",
@@ -7614,8 +7614,8 @@
     "unit": "kg/m³",
     "source_type": "official",
     "sort_order": 586,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "IP-0587",
@@ -7627,7 +7627,7 @@
     "unit": "MPa",
     "source_type": "official",
     "sort_order": 587,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

@@ -8,8 +8,8 @@
     "requirement": "凝结时间 符合GB 175-2023要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21,8 +21,8 @@
     "requirement": "凝结时间 符合GB 175-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -34,8 +34,8 @@
     "requirement": "凝结时间 符合GB 175-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -47,8 +47,8 @@
     "requirement": "凝结时间 符合GB 175-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -60,8 +60,8 @@
     "requirement": "凝结时间 符合GB 175-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -73,8 +73,8 @@
     "requirement": "屈服强度 符合GB 13788-2024要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -86,8 +86,8 @@
     "requirement": "屈服强度 符合GB 13788-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -99,8 +99,8 @@
     "requirement": "屈服强度 符合GB 13788-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -112,8 +112,8 @@
     "requirement": "屈服强度 符合GB 13788-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -125,8 +125,8 @@
     "requirement": "屈服强度 符合GB 13788-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -138,8 +138,8 @@
     "requirement": "抗拉强度 符合GB 55008-2021要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -151,8 +151,8 @@
     "requirement": "抗拉强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -164,8 +164,8 @@
     "requirement": "抗拉强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -177,8 +177,8 @@
     "requirement": "抗拉强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -190,8 +190,8 @@
     "requirement": "抗拉强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -203,8 +203,8 @@
     "requirement": "抗拉强度 符合JGJ 18-2012要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -216,8 +216,8 @@
     "requirement": "抗拉强度 符合JGJ 18-2012要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -229,8 +229,8 @@
     "requirement": "抗拉强度 符合JGJ 18-2012要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -242,8 +242,8 @@
     "requirement": "抗拉强度 符合JGJ 18-2012要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -255,8 +255,8 @@
     "requirement": "抗拉强度 符合JGJ 18-2012要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -268,8 +268,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -281,8 +281,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -294,8 +294,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -307,8 +307,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -320,8 +320,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -333,8 +333,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -346,8 +346,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -359,8 +359,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -372,8 +372,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -385,8 +385,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -398,8 +398,8 @@
     "requirement": "氯离子含量 符合GB 55008-2021要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -411,8 +411,8 @@
     "requirement": "氯离子含量 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -424,8 +424,8 @@
     "requirement": "氯离子含量 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -437,8 +437,8 @@
     "requirement": "氯离子含量 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -450,8 +450,8 @@
     "requirement": "氯离子含量 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -463,8 +463,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -476,8 +476,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -489,8 +489,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -502,8 +502,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -515,8 +515,8 @@
     "requirement": "抗压强度 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -528,8 +528,8 @@
     "requirement": "吸水率 符合GB/T 14684-2022要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -541,8 +541,8 @@
     "requirement": "吸水率 符合GB/T 14684-2022要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -554,8 +554,8 @@
     "requirement": "吸水率 符合GB/T 14684-2022要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -567,8 +567,8 @@
     "requirement": "吸水率 符合GB/T 14684-2022要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -580,8 +580,8 @@
     "requirement": "吸水率 符合GB/T 14684-2022要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -593,8 +593,8 @@
     "requirement": "抗压强度 符合GB 50204-2015要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -606,8 +606,8 @@
     "requirement": "抗压强度 符合GB 50204-2015要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -619,8 +619,8 @@
     "requirement": "抗压强度 符合GB 50204-2015要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -632,8 +632,8 @@
     "requirement": "抗压强度 符合GB 50204-2015要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -645,8 +645,8 @@
     "requirement": "抗压强度 符合GB 50204-2015要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -658,8 +658,8 @@
     "requirement": "吸水率 符合GB/T 21144-2023要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -671,8 +671,8 @@
     "requirement": "吸水率 符合GB/T 21144-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -684,8 +684,8 @@
     "requirement": "吸水率 符合GB/T 21144-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -697,8 +697,8 @@
     "requirement": "吸水率 符合GB/T 21144-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -710,8 +710,8 @@
     "requirement": "吸水率 符合GB/T 21144-2023要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -723,8 +723,8 @@
     "requirement": "吸水率 符合GB 50208-2011要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -736,8 +736,8 @@
     "requirement": "吸水率 符合GB 50208-2011要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -749,8 +749,8 @@
     "requirement": "吸水率 符合GB 50208-2011要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -762,8 +762,8 @@
     "requirement": "吸水率 符合GB 50208-2011要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -775,8 +775,8 @@
     "requirement": "吸水率 符合GB 50208-2011要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -788,8 +788,8 @@
     "requirement": "抗压强度 符合GB/T 11945-2019要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -801,8 +801,8 @@
     "requirement": "抗压强度 符合GB/T 11945-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -814,8 +814,8 @@
     "requirement": "抗压强度 符合GB/T 11945-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -827,8 +827,8 @@
     "requirement": "抗压强度 符合GB/T 11945-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -840,8 +840,8 @@
     "requirement": "抗压强度 符合GB/T 11945-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -853,8 +853,8 @@
     "requirement": "抗压强度 符合GB/T 10294-2008要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -866,8 +866,8 @@
     "requirement": "抗压强度 符合GB/T 10294-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -879,8 +879,8 @@
     "requirement": "抗压强度 符合GB/T 10294-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -892,8 +892,8 @@
     "requirement": "抗压强度 符合GB/T 10294-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -905,8 +905,8 @@
     "requirement": "抗压强度 符合GB/T 10294-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -918,8 +918,8 @@
     "requirement": "抗压强度 符合GB/T 50081-2019要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -931,8 +931,8 @@
     "requirement": "抗压强度 符合GB/T 50081-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -944,8 +944,8 @@
     "requirement": "抗压强度 符合GB/T 50081-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -957,8 +957,8 @@
     "requirement": "抗压强度 符合GB/T 50081-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -970,8 +970,8 @@
     "requirement": "抗压强度 符合GB/T 50081-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -983,8 +983,8 @@
     "requirement": "抗渗性能 符合GB/T 50082-2024要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -996,8 +996,8 @@
     "requirement": "抗渗性能 符合GB/T 50082-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1009,8 +1009,8 @@
     "requirement": "抗渗性能 符合GB/T 50082-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1022,8 +1022,8 @@
     "requirement": "抗渗性能 符合GB/T 50082-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1035,8 +1035,8 @@
     "requirement": "抗渗性能 符合GB/T 50082-2024要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1048,8 +1048,8 @@
     "requirement": "胶砂强度 符合GB 55008-2021要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1061,8 +1061,8 @@
     "requirement": "胶砂强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1074,8 +1074,8 @@
     "requirement": "胶砂强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1087,8 +1087,8 @@
     "requirement": "胶砂强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1100,8 +1100,8 @@
     "requirement": "胶砂强度 符合GB 55008-2021要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1113,8 +1113,8 @@
     "requirement": "氯离子含量 符合GB 8076-2008要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1126,8 +1126,8 @@
     "requirement": "氯离子含量 符合GB 8076-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1139,8 +1139,8 @@
     "requirement": "氯离子含量 符合GB 8076-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1152,8 +1152,8 @@
     "requirement": "氯离子含量 符合GB 8076-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1165,8 +1165,8 @@
     "requirement": "氯离子含量 符合GB 8076-2008要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1178,8 +1178,8 @@
     "requirement": "凝结时间 符合GB 23439-2009要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1191,8 +1191,8 @@
     "requirement": "凝结时间 符合GB 23439-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1204,8 +1204,8 @@
     "requirement": "凝结时间 符合GB 23439-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1217,8 +1217,8 @@
     "requirement": "凝结时间 符合GB 23439-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1230,8 +1230,8 @@
     "requirement": "凝结时间 符合GB 23439-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1243,8 +1243,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1256,8 +1256,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1269,8 +1269,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1282,8 +1282,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1295,8 +1295,8 @@
     "requirement": "氯离子含量 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1308,8 +1308,8 @@
     "requirement": "安定性 符合GB 6566-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1321,8 +1321,8 @@
     "requirement": "安定性 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1334,8 +1334,8 @@
     "requirement": "安定性 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1347,8 +1347,8 @@
     "requirement": "安定性 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1360,8 +1360,8 @@
     "requirement": "安定性 符合GB 6566-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1373,8 +1373,8 @@
     "requirement": "凝结时间 符合DB33/T 1095 -2013要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1386,8 +1386,8 @@
     "requirement": "凝结时间 符合DB33/T 1095 -2013要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1399,8 +1399,8 @@
     "requirement": "凝结时间 符合DB33/T 1095 -2013要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1412,8 +1412,8 @@
     "requirement": "凝结时间 符合DB33/T 1095 -2013要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1425,8 +1425,8 @@
     "requirement": "凝结时间 符合DB33/T 1095 -2013要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1438,8 +1438,8 @@
     "requirement": "抗压强度 符合JGJ/T 70-2009要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1451,8 +1451,8 @@
     "requirement": "抗压强度 符合JGJ/T 70-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1464,8 +1464,8 @@
     "requirement": "抗压强度 符合JGJ/T 70-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1477,8 +1477,8 @@
     "requirement": "抗压强度 符合JGJ/T 70-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1490,8 +1490,8 @@
     "requirement": "抗压强度 符合JGJ/T 70-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1503,8 +1503,8 @@
     "requirement": "含水率 符合GB/T 50123-2019要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1516,8 +1516,8 @@
     "requirement": "含水率 符合GB/T 50123-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1529,8 +1529,8 @@
     "requirement": "含水率 符合GB/T 50123-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1542,8 +1542,8 @@
     "requirement": "含水率 符合GB/T 50123-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1555,8 +1555,8 @@
     "requirement": "含水率 符合GB/T 50123-2019要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1568,8 +1568,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1581,8 +1581,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1594,8 +1594,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1607,8 +1607,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1620,8 +1620,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1633,8 +1633,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1646,8 +1646,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1659,8 +1659,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1672,8 +1672,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1685,8 +1685,8 @@
     "requirement": "含水率 符合JTG 3430-2020要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1698,8 +1698,8 @@
     "requirement": "可溶物含量 符合GB 18967-2009要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1711,8 +1711,8 @@
     "requirement": "可溶物含量 符合GB 18967-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1724,8 +1724,8 @@
     "requirement": "可溶物含量 符合GB 18967-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1737,8 +1737,8 @@
     "requirement": "可溶物含量 符合GB 18967-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1750,8 +1750,8 @@
     "requirement": "可溶物含量 符合GB 18967-2009要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1763,8 +1763,8 @@
     "requirement": "断裂伸长率 符合GB 18173.4-2010要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1776,8 +1776,8 @@
     "requirement": "断裂伸长率 符合GB 18173.4-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1789,8 +1789,8 @@
     "requirement": "断裂伸长率 符合GB 18173.4-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1802,8 +1802,8 @@
     "requirement": "断裂伸长率 符合GB 18173.4-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1815,8 +1815,8 @@
     "requirement": "断裂伸长率 符合GB 18173.4-2010要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1828,8 +1828,8 @@
     "requirement": "单位面积质量 符合GB/T 328.20-2007要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1841,8 +1841,8 @@
     "requirement": "单位面积质量 符合GB/T 328.20-2007要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1854,8 +1854,8 @@
     "requirement": "单位面积质量 符合GB/T 328.20-2007要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1867,8 +1867,8 @@
     "requirement": "单位面积质量 符合GB/T 328.20-2007要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1880,8 +1880,8 @@
     "requirement": "单位面积质量 符合GB/T 328.20-2007要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1893,8 +1893,8 @@
     "requirement": "低温柔度 符合JC/T 2428-2017要求",
     "result": "",
     "verdict": "",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1906,8 +1906,8 @@
     "requirement": "低温柔度 符合JC/T 2428-2017要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1919,8 +1919,8 @@
     "requirement": "低温柔度 符合JC/T 2428-2017要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1932,8 +1932,8 @@
     "requirement": "低温柔度 符合JC/T 2428-2017要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1945,8 +1945,8 @@
     "requirement": "低温柔度 符合JC/T 2428-2017要求",
     "result": "符合",
     "verdict": "合格",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   }
 ]

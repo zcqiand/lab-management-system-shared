@@ -1,18 +1,20 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "REQ-2026-023 原生登录代理 saas IdP——全闭环（验收+GA 翻转完成）",
+  "current_task": "DB 六裁定落 SSOT + drizzle 全量 re-baseline（ADR-0055，2026-11-09 人批；#4 字典 FK 已翻案）",
   "done": [
-    "I06 树变更获批写树（状态=开发中）；REQ-2026-023 落库",
-    "§7 实施记录：tag 链 5/5 探针记录+AC 归账+遗留观察项三条",
-    "GH secrets LAB_AUTH_DEV_PASSWORD 已删（rails/fastapi）"
+    "schema.ts 六裁定落地：四字典/tech_req 去租户、min/max numeric、objects 直挂列退役、timestamptz、tenant 去 default ''、12 个 ck_* CHECK、samples 唯一索引",
+    "drizzle/ 重出 0000_target_ddl；lab_dev/lab_test（127.0.0.1:54321）rebaseline+重灌，备份 _work/*-backup-20261109.json",
+    "种子确定性变换（8706 时间戳/670 行去租户/111 直挂键；samples 原值保留）+ nextjs 双源同步（pretier 规范形以 nextjs 为准）",
+    "gate L0-L5 全绿 exit 0；prod 未动（迁移窗口另行人批）"
   ],
   "next": [
-    "REQ-2026-023 全闭环：AC-1~AC-7 过、I06 已 GA（已上线）——无挂起项"
+    "兄弟仓回放队列：aspnetcore/springboot/rails/react/vue/fastapi/laravel/go/ktor/django 等按家族批次重 pull schema + 修租户查询（清单见 shared CHANGELOG [Unreleased]）",
+    "prod 库 rebaseline 窗口：需人批（NODE_ENV=production + PG_REBASELINE_ALLOW=1）"
   ],
   "open_questions": [],
   "dont": [
-    "部署一律新 tag，严禁 rerun 旧 tag（REQ-2026-023 R2）",
-    "LAB_AUTH_DEV_PASSWORD 已退役：读点/ env / secret 全清，回滚走 revert+新 tag+VPS 回填"
+    "prod（100.79.128.25）在六裁定回放完成前禁止部署窗口",
+    "seeds 双源改动必须同 commit 双写（seeds-parity 门咬漂移）"
   ]
 }

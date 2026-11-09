@@ -20,8 +20,8 @@
     "ext_fields": [],
     "description": "通用硅酸盐水泥检测",
     "sort_order": 101,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-102-1",
@@ -39,8 +39,8 @@
     ],
     "description": "钢筋（含焊接与机械连接）力学性能、工艺性能、重量偏差",
     "sort_order": 1021,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-102-2",
@@ -64,8 +64,8 @@
     ],
     "description": "钢筋机械连接接头抗拉强度",
     "sort_order": 1022,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-102-3",
@@ -95,8 +95,8 @@
     ],
     "description": "钢筋焊接接头抗拉/弯曲",
     "sort_order": 1023,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-103-1",
@@ -107,8 +107,8 @@
     "ext_fields": [],
     "description": "建设用砂细度模数/含泥量/泥块含量",
     "sort_order": 1031,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-103-2",
@@ -119,8 +119,8 @@
     "ext_fields": [],
     "description": "建设用碎卵石压碎指标/含泥量/针片状",
     "sort_order": 1032,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-103-3",
@@ -131,8 +131,8 @@
     "ext_fields": [],
     "description": "普通混凝土用砂检测",
     "sort_order": 1033,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-103-4",
@@ -143,8 +143,8 @@
     "ext_fields": [],
     "description": "普通混凝土用碎卵石检测",
     "sort_order": 1034,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-103-5",
@@ -155,8 +155,8 @@
     "ext_fields": [],
     "description": "轻集料堆积密度/表观密度",
     "sort_order": 1035,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-104-1",
@@ -167,8 +167,8 @@
     "ext_fields": [],
     "description": "墙板检测",
     "sort_order": 1041,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-104-2",
@@ -179,8 +179,8 @@
     "ext_fields": [],
     "description": "混凝土瓦检测",
     "sort_order": 1042,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-104-3",
@@ -191,8 +191,8 @@
     "ext_fields": [],
     "description": "烧结瓦检测",
     "sort_order": 1043,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-104-4",
@@ -203,8 +203,8 @@
     "ext_fields": [],
     "description": "砖检测",
     "sort_order": 1044,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-104-5",
@@ -215,8 +215,8 @@
     "ext_fields": [],
     "description": "蒸压加气混凝土砌块检测",
     "sort_order": 1045,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-105-1",
@@ -227,8 +227,8 @@
     "ext_fields": [],
     "description": "混凝土抗压强度",
     "sort_order": 1051,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-105-2",
@@ -239,8 +239,8 @@
     "ext_fields": [],
     "description": "混凝土抗渗性能",
     "sort_order": 1052,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-105-3",
@@ -251,8 +251,8 @@
     "ext_fields": [],
     "description": "混凝土拌合用水检测",
     "sort_order": 1053,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-106-1",
@@ -263,8 +263,8 @@
     "ext_fields": [],
     "description": "混凝土外加剂坍落度/含气量",
     "sort_order": 1061,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-106-2",
@@ -275,8 +275,8 @@
     "ext_fields": [],
     "description": "混凝土膨胀剂检测",
     "sort_order": 1062,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-107-1",
@@ -287,8 +287,8 @@
     "ext_fields": [],
     "description": "矿粉细度检测",
     "sort_order": 1071,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-107-2",
@@ -299,8 +299,8 @@
     "ext_fields": [],
     "description": "粉煤灰细度检测",
     "sort_order": 1072,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-108-1",
@@ -311,8 +311,8 @@
     "ext_fields": [],
     "description": "建筑砂浆抗压强度/稠度",
     "sort_order": 1081,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-108-2",
@@ -323,8 +323,8 @@
     "ext_fields": [],
     "description": "砂浆抗压强度",
     "sort_order": 1082,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-109-1",
@@ -335,8 +335,8 @@
     "ext_fields": [],
     "description": "土工击实试验",
     "sort_order": 1091,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-109-2",
@@ -347,8 +347,8 @@
     "ext_fields": [],
     "description": "土工压实度灌砂法",
     "sort_order": 1092,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-109-3",
@@ -359,8 +359,8 @@
     "ext_fields": [],
     "description": "土工压实度环刀法",
     "sort_order": 1093,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-110-1",
@@ -371,8 +371,8 @@
     "ext_fields": [],
     "description": "防水卷材剥离/不透水",
     "sort_order": 1101,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-110-2",
@@ -383,8 +383,8 @@
     "ext_fields": [],
     "description": "防水密封材料检测",
     "sort_order": 1102,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-110-3",
@@ -395,8 +395,8 @@
     "ext_fields": [],
     "description": "防水材料综合检测（卷材/涂料/密封）",
     "sort_order": 1103,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "RN-110-4",
@@ -407,7 +407,7 @@
     "ext_fields": [],
     "description": "防水涂料检测",
     "sort_order": 1104,
-    "created_at": "",
-    "updated_at": ""
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

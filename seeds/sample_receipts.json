@@ -83,8 +83,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -179,8 +179,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -282,8 +282,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -392,8 +392,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -509,8 +509,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -633,8 +633,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-07T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -764,8 +764,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-08T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -837,8 +837,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -918,8 +918,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1006,8 +1006,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1101,8 +1101,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1203,8 +1203,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1312,8 +1312,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-14T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1428,8 +1428,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-15T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1488,8 +1488,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1556,8 +1556,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1631,8 +1631,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1713,8 +1713,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1802,8 +1802,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -1898,8 +1898,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-21T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -2001,8 +2001,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-22T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -2742,7 +2742,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-23T16:06:21.466Z",
     "tenant_id": "acme"
   },
@@ -2803,8 +2803,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -2871,8 +2871,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -2946,8 +2946,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3028,8 +3028,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3117,8 +3117,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-02T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3213,8 +3213,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-03T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3289,8 +3289,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3373,8 +3373,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3464,8 +3464,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3562,8 +3562,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3667,8 +3667,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3779,8 +3779,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-09T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3898,8 +3898,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-10T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -3963,8 +3963,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4036,8 +4036,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4116,8 +4116,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4203,8 +4203,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4297,8 +4297,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4398,8 +4398,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-16T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4506,8 +4506,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-17T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4572,8 +4572,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4646,8 +4646,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4727,8 +4727,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4815,8 +4815,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -4910,8 +4910,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -5012,8 +5012,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-23T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -5121,8 +5121,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-24T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6383,7 +6383,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-20T14:35:43.018Z",
     "tenant_id": "acme"
   },
@@ -6455,8 +6455,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6534,8 +6534,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6620,8 +6620,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6713,8 +6713,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6813,8 +6813,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-04T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6920,8 +6920,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-05T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -6978,8 +6978,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7044,8 +7044,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7117,8 +7117,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7197,8 +7197,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7284,8 +7284,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7378,8 +7378,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-11T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7479,8 +7479,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-12T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7540,8 +7540,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7609,8 +7609,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7685,8 +7685,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7768,8 +7768,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7858,8 +7858,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -7955,8 +7955,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-18T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8059,8 +8059,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-19T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8106,8 +8106,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8161,8 +8161,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8223,8 +8223,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8292,8 +8292,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8368,8 +8368,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8451,8 +8451,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-25T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8541,8 +8541,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-26T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8588,8 +8588,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8643,8 +8643,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8705,8 +8705,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8774,8 +8774,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8850,8 +8850,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -8933,8 +8933,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-06T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9023,8 +9023,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-07T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9092,8 +9092,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9169,8 +9169,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9253,8 +9253,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9344,8 +9344,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9442,8 +9442,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9547,8 +9547,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-13T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9659,8 +9659,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-14T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9723,8 +9723,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9795,8 +9795,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9874,8 +9874,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -9960,8 +9960,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10053,8 +10053,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10153,8 +10153,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-20T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10260,8 +10260,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-21T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10551,7 +10551,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-23T16:23:39.164Z",
     "tenant_id": "acme"
   },
@@ -10606,8 +10606,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10668,8 +10668,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10737,8 +10737,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10813,8 +10813,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10896,8 +10896,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-01T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -10986,8 +10986,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-02T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11033,8 +11033,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11088,8 +11088,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11150,8 +11150,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11219,8 +11219,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11295,8 +11295,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11378,8 +11378,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-08T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11468,8 +11468,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-09T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11529,8 +11529,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11598,8 +11598,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11674,8 +11674,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11757,8 +11757,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11847,8 +11847,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -11944,8 +11944,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-15T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12048,8 +12048,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-16T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12111,8 +12111,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12182,8 +12182,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12260,8 +12260,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12345,8 +12345,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12437,8 +12437,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12536,8 +12536,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-22T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -12642,8 +12642,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-23T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13286,7 +13286,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-21T18:05:18.786Z",
     "tenant_id": "acme"
   },
@@ -13350,8 +13350,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13421,8 +13421,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13499,8 +13499,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13584,8 +13584,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13676,8 +13676,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-03T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13775,8 +13775,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-04T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13851,8 +13851,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -13935,8 +13935,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14026,8 +14026,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14124,8 +14124,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14229,8 +14229,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14341,8 +14341,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-10T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14460,8 +14460,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-11T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14530,8 +14530,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14608,8 +14608,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14693,8 +14693,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14785,8 +14785,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14884,8 +14884,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -14990,8 +14990,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-17T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15103,8 +15103,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-18T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15162,8 +15162,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15229,8 +15229,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15303,8 +15303,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15384,8 +15384,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15472,8 +15472,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15567,8 +15567,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-24T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -15669,8 +15669,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-25T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17559,7 +17559,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-19T08:42:29.285Z",
     "tenant_id": "acme"
   },
@@ -17614,8 +17614,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17676,8 +17676,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17745,8 +17745,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17821,8 +17821,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17904,8 +17904,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-05T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -17994,8 +17994,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-06T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18041,8 +18041,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18096,8 +18096,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18158,8 +18158,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18227,8 +18227,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18303,8 +18303,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18386,8 +18386,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-12T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18476,8 +18476,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-13T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18523,8 +18523,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18578,8 +18578,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18640,8 +18640,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18709,8 +18709,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18785,8 +18785,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18868,8 +18868,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-19T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -18958,8 +18958,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-20T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19005,8 +19005,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19060,8 +19060,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19122,8 +19122,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19191,8 +19191,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19267,8 +19267,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19350,8 +19350,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-26T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19440,8 +19440,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-01T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19522,8 +19522,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19612,8 +19612,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19709,8 +19709,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19813,8 +19813,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -19924,8 +19924,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20042,8 +20042,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-07T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20167,8 +20167,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-08T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20235,8 +20235,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20311,8 +20311,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20394,8 +20394,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20484,8 +20484,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20581,8 +20581,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20685,8 +20685,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-14T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20796,8 +20796,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-15T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20843,8 +20843,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20898,8 +20898,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -20960,8 +20960,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21029,8 +21029,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21105,8 +21105,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21188,8 +21188,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-21T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21278,8 +21278,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-22T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21345,7 +21345,7 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-08-21T18:06:33.167Z",
     "tenant_id": "acme"
   },
@@ -21412,8 +21412,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21486,8 +21486,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21567,8 +21567,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21655,8 +21655,8 @@
     "conclusion": "",
     "result": "",
     "issued_at": null,
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21750,8 +21750,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-02T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   },
   {
@@ -21852,8 +21852,8 @@
     "conclusion": "所检项目符合标准要求",
     "result": "pass",
     "issued_at": "2026-07-03T09:00:00.000Z",
-    "created_at": "",
-    "updated_at": "",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z",
     "tenant_id": "acme"
   }
 ]

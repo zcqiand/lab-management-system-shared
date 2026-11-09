@@ -36,19 +36,33 @@
 //  inspectionParamInterfaces         public.inspection_param_interfaces     (M10)
 //  inspectionParamInterfaceLinks     public.inspection_param_interface_links (M10)
 //
-// 约定：
-// - 时间列（created_at/updated_at）与 tenant_id 是 TEXT，默认 ''（V001 起的历史设计，
-//   区别于 saas 家族的 timestamptz）；业务时间字段（commission_date 等）同为 TEXT。
-// - enum 值域：V014 后 12 个业务 enum 全部 TEXT 化，TypeSpec/OpenAPI 层兜底校验
-//   （audit_action PG enum 已随 audit_events 表清理删除，2026-09-20，5.65）。
+// 约定（2026-11-09 六裁定修订，2026-11-09 人批）：
+// - 时间列 created_at/updated_at 全库 timestamptz notNull default now()
+//   （原 TEXT default '' 历史设计退役；应用层维护 updated_at 语义保留，DB 兜底 now()；
+//    消费端 ISO UTC 字符串写入经 mode:"string" 直通）。业务时间字段
+//   （commission_date 等）仍 TEXT（表单数据，非元数据）。
+// - 租户语义：业务表（contracts/sample_receipts/samples/test_records）tenant_id
+//   隔离；目录/字典类（inspection_* 全部 catalog 表含四小字典与技术要求）全局
+//   共享、无 tenant_id（2026-11-09 人裁：原 brands/models/specs/grades 的
+//   tenant 唯一索引自相矛盾、tech_req PK 缺 tenant 跨租户必撞，一并归全局）。
+// - enum 值域：业务 enum 列全部 TEXT + DB CHECK 约束兜底（ck_* 命名，值域与
+//   TypeSpec enum 一字不差，含 RequirementComparison 的 ≥/≤/= 符号；值域变更
+//   = shared 改 tsp enum + schema check 同 commit）；audit_action PG enum 已随
+//   audit_events 表清理删除（2026-09-20，5.65）。
 // - 索引 / FK / 约束名与 2026-09-13 lab_dev 实测一致（含历史遗留
-//   inspection_calculation_rules_pkey），rebaseline 后保持不变。
+//   inspection_calculation_rules_pkey），rebaseline 后保持不变；
+//   2026-11-09 六裁定批 drizzle/ 全量重新 baseline（老 ALTER 对 TEXT 时间列
+//   无法 USING 迁移，走 drop+重灌种子，先例 backups/lab_dev-backup-20260913.json）。
 // - updated_at 由各消费后端应用层维护（saas ADR-0025 D5/D6 同款，lab 无触发器）。
+// - inspection_objects 与专项关系以 junction 表 inspection_specialty_objects
+//   为唯一真源（M:N）；objects 直挂列已删（2026-11-09 人裁 #5，删前实测
+//   111 对直挂与 junction 完全一致，零数据丢失）。
 
 import {
   pgTable,
   text,
   integer,
+  numeric,
   boolean,
   jsonb,
   timestamp,
@@ -56,7 +70,9 @@ import {
   uniqueIndex,
   primaryKey,
   foreignKey,
+  check,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 
 // ── M02 合同 ────────────────────────────────────────────────────────────────
 
@@ -81,9 +97,9 @@ export const contracts = pgTable(
     contactPhone: text("contact_phone"),
     entrustedDate: text("entrusted_date"),
     status: text("status").default("active").notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    tenantId: text("tenant_id").notNull(),
   },
   (t) => [
     index("idx_contracts_tenant").on(t.tenantId),
@@ -93,6 +109,7 @@ export const contracts = pgTable(
       foreignColumns: [inspectionSpecialties.code],
       name: "contracts_specialty_fk",
     }).onDelete("set null"),
+    check("ck_contracts_status", sql`${t.status} in ('active', 'archived')`),
   ],
 );
 
@@ -108,6 +125,8 @@ export const sampleReceipts = pgTable(
     commissionRegisterCode: text("commission_register_code"),
     commissionRegisterDate: text("commission_register_date"),
     categoryCode: text("category_code").notNull(),
+    // 快照语义（2026-11-09 中危 #10）：projectName 至 witnessPhone 为接样时刻自
+    // 合同/委托单冻结的副本，不随合同后续变更联动；取值链 = 合同带出 → 接样单可覆盖。
     projectName: text("project_name"),
     clientUnit: text("client_unit"),
     buildingUnit: text("building_unit"),
@@ -144,9 +163,9 @@ export const sampleReceipts = pgTable(
     conclusion: text("conclusion"),
     result: text("result"),
     issuedAt: timestamp("issued_at", { withTimezone: true, mode: "string" }),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    tenantId: text("tenant_id").notNull(),
   },
   (t) => [
     index("idx_receipts_tenant").on(t.tenantId),
@@ -164,6 +183,10 @@ export const sampleReceipts = pgTable(
       foreignColumns: [inspectionReportNames.code],
       name: "receipts_category_fk",
     }).onDelete("restrict"),
+    check(
+      "ck_receipts_flow_status",
+      sql`${t.flowStatus} in ('receiving', 'task_assignment', 'data_entry', 'review', 'approval', 'issuance', 'archived', 'completed')`,
+    ),
   ],
 );
 
@@ -190,18 +213,22 @@ export const samples = pgTable(
     age: text("age"),
     ext: jsonb("ext").default({}).notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    tenantId: text("tenant_id").notNull(),
   },
   (t) => [
     index("idx_samples_receipt").on(t.receiptId),
-    index("idx_samples_tenant").on(t.tenantId),
+    uniqueIndex("idx_samples_tenant_code").on(t.tenantId, t.sampleCode),
     foreignKey({
       columns: [t.receiptId],
       foreignColumns: [sampleReceipts.id],
       name: "samples_receipt_fk",
     }).onDelete("cascade"),
+    // model/specification/grade/brand 保持裸 TEXT（2026-11-09 人裁翻案：不做字典 FK）。
+    // 字典表（brands/models/specs/grades）的职责 = 值域校验 + UI 选项来源——引用字段的
+    // 值「不是自由输入而是从字典选择」，应用层负责校验；DB 层保留自由 TEXT，
+    // 历史数据（如 specification='标准试样' 等字典外值）不受 FK 阻塞。
   ],
 );
 
@@ -216,9 +243,9 @@ export const testRecords = pgTable(
     requirement: text("requirement").notNull(),
     result: text("result").notNull(),
     verdict: text("verdict"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    tenantId: text("tenant_id").notNull(),
   },
   (t) => [
     index("idx_test_records_sample").on(t.sampleId),
@@ -250,15 +277,14 @@ export const inspectionSpecialties = pgTable("inspection_specialties", {
   isOfficial: boolean("is_official").default(true).notNull(),
   enabled: boolean("enabled").default(true).notNull(),
   sortOrder: integer("sort_order").default(0).notNull(),
-  createdAt: text("created_at").default("").notNull(),
-  updatedAt: text("updated_at").default("").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
 });
 
 export const inspectionObjects = pgTable(
   "inspection_objects",
   {
     code: text("code").primaryKey(),
-    inspectionSpecialtyCode: text("inspection_specialty_code").notNull(),
     sourceProjectNo: text("source_project_no").notNull(),
     sourceProjectName: text("source_project_name").notNull(),
     name: text("name").notNull(),
@@ -268,18 +294,9 @@ export const inspectionObjects = pgTable(
     isOfficial: boolean("is_official").default(true).notNull(),
     enabled: boolean("enabled").default(true).notNull(),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-  },
-  (t) => [
-    index("idx_objects_specialty").on(t.inspectionSpecialtyCode),
-    foreignKey({
-      columns: [t.inspectionSpecialtyCode],
-      foreignColumns: [inspectionSpecialties.code],
-      name: "objects_specialty_fk",
-    }).onDelete("restrict"),
-  ],
-);
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+});
 
 export const inspectionSpecialtyObjects = pgTable(
   "inspection_specialty_objects",
@@ -287,8 +304,8 @@ export const inspectionSpecialtyObjects = pgTable(
     inspectionSpecialtyCode: text("inspection_specialty_code").notNull(),
     inspectionObjectCode: text("inspection_object_code").notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -308,8 +325,9 @@ export const inspectionSpecialtyObjects = pgTable(
   ],
 );
 
-// ── M04 检测对象 × 字典（品牌 / 型号 / 规格 / 等级，tenant 隔离）───────────
-// 四张字典表结构相同，但索引/FK 名各自独立（与 lab_dev 实测一致），显式逐张声明。
+// ── M04 检测对象 × 字典（品牌 / 型号 / 规格 / 等级，全局共享）───────────────
+// 四张字典表结构相同，索引/FK 名各自独立（与 lab_dev 实测一致），显式逐张声明。
+// 2026-11-09 人裁：字典表全局共享、无 tenant_id（PK=code 唯一真源）。
 
 export const inspectionBrands = pgTable(
   "inspection_brands",
@@ -319,13 +337,10 @@ export const inspectionBrands = pgTable(
     name: text("name").notNull(),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
-    index("idx_brands_tenant").on(t.tenantId),
-    uniqueIndex("idx_brands_tenant_code").on(t.tenantId, t.code),
     index("idx_inspection_brands_object").on(t.inspectionObjectCode),
     foreignKey({
       columns: [t.inspectionObjectCode],
@@ -343,13 +358,10 @@ export const inspectionModels = pgTable(
     name: text("name").notNull(),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
-    index("idx_models_tenant").on(t.tenantId),
-    uniqueIndex("idx_models_tenant_code").on(t.tenantId, t.code),
     index("idx_inspection_models_object").on(t.inspectionObjectCode),
     foreignKey({
       columns: [t.inspectionObjectCode],
@@ -367,13 +379,10 @@ export const inspectionSpecs = pgTable(
     name: text("name").notNull(),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
-    index("idx_specs_tenant").on(t.tenantId),
-    uniqueIndex("idx_specs_tenant_code").on(t.tenantId, t.code),
     index("idx_inspection_specs_object").on(t.inspectionObjectCode),
     foreignKey({
       columns: [t.inspectionObjectCode],
@@ -391,13 +400,10 @@ export const inspectionGrades = pgTable(
     name: text("name").notNull(),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
-    index("idx_grades_tenant").on(t.tenantId),
-    uniqueIndex("idx_grades_tenant_code").on(t.tenantId, t.code),
     index("idx_inspection_grades_object").on(t.inspectionObjectCode),
     foreignKey({
       columns: [t.inspectionObjectCode],
@@ -419,9 +425,11 @@ export const inspectionParameters = pgTable("inspection_parameters", {
   unit: text("unit"),
   sourceType: text("source_type").default("official").notNull(),
   sortOrder: integer("sort_order").default(0).notNull(),
-  createdAt: text("created_at").default("").notNull(),
-  updatedAt: text("updated_at").default("").notNull(),
-});
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+}, (t) => [
+  check("ck_params_source_type", sql`${t.sourceType} in ('official', 'custom')`),
+]);
 
 export const inspectionStandards = pgTable("inspection_standards", {
   code: text("code").primaryKey(),
@@ -431,17 +439,19 @@ export const inspectionStandards = pgTable("inspection_standards", {
   sourceDocumentId: text("source_document_id"),
   sourceHash: text("source_hash"),
   sortOrder: integer("sort_order").default(0).notNull(),
-  createdAt: text("created_at").default("").notNull(),
-  updatedAt: text("updated_at").default("").notNull(),
-});
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+}, (t) => [
+  check("ck_standards_status", sql`${t.status} in ('active', 'superseded', 'draft')`),
+]);
 
 export const inspectionStandardParameters = pgTable(
   "inspection_standard_parameters",
   {
     inspectionStandardCode: text("inspection_standard_code").notNull(),
     inspectionParameterCode: text("inspection_parameter_code").notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -473,8 +483,8 @@ export const inspectionReportNames = pgTable("inspection_report_names", {
   extFields: jsonb("ext_fields"),
   description: text("description"),
   sortOrder: integer("sort_order").default(0).notNull(),
-  createdAt: text("created_at").default("").notNull(),
-  updatedAt: text("updated_at").default("").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
 });
 
 export const inspectionObjectReportNames = pgTable(
@@ -483,8 +493,8 @@ export const inspectionObjectReportNames = pgTable(
     inspectionObjectCode: text("inspection_object_code").notNull(),
     reportNameCode: text("report_name_code").notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -512,8 +522,8 @@ export const inspectionReportNameStandards = pgTable(
     inspectionStandardCode: text("inspection_standard_code").notNull(),
     role: text("role").notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -521,6 +531,7 @@ export const inspectionReportNameStandards = pgTable(
       name: "inspection_report_name_standards_pkey",
     }),
     index("idx_rn_std_report").on(t.reportNameCode),
+    check("ck_rn_std_role", sql`${t.role} in ('TESTING', 'JUDGMENT')`),
     foreignKey({
       columns: [t.reportNameCode],
       foreignColumns: [inspectionReportNames.code],
@@ -540,8 +551,8 @@ export const inspectionReportNameParameters = pgTable(
     reportNameCode: text("report_name_code").notNull(),
     inspectionParameterCode: text("inspection_parameter_code").notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -572,8 +583,8 @@ export const inspectionTechnicalRequirements = pgTable(
     judgmentStandardCode: text("judgment_standard_code").notNull(),
     conditions: text("conditions"),
     valueType: text("value_type").default("numeric").notNull(),
-    minValue: integer("min_value"),
-    maxValue: integer("max_value"),
+    minValue: numeric("min_value", { precision: 12, scale: 4 }),
+    maxValue: numeric("max_value", { precision: 12, scale: 4 }),
     targetValue: text("target_value"),
     expression: text("expression"),
     unit: text("unit"),
@@ -590,9 +601,8 @@ export const inspectionTechnicalRequirements = pgTable(
     sieve: text("sieve"),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
-    tenantId: text("tenant_id").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -601,7 +611,22 @@ export const inspectionTechnicalRequirements = pgTable(
     }),
     index("idx_tech_req_object").on(t.inspectionObjectCode),
     index("idx_tech_req_parameter").on(t.inspectionParameterCode),
-    index("idx_tech_req_tenant").on(t.tenantId),
+    check(
+      "ck_tech_req_value_type",
+      sql`${t.valueType} in ('numeric', 'string', 'range', 'formula', 'manual')`,
+    ),
+    check(
+      "ck_tech_req_comparison",
+      sql`${t.comparison} in ('≥', '≤', '=', 'range', 'eq')`,
+    ),
+    check(
+      "ck_tech_req_judgment_mode",
+      sql`${t.judgmentMode} in ('automatic', 'manual')`,
+    ),
+    check(
+      "ck_tech_req_verification_status",
+      sql`${t.verificationStatus} in ('draft', 'reviewed', 'verified', 'rejected')`,
+    ),
     foreignKey({
       columns: [t.inspectionObjectCode],
       foreignColumns: [inspectionObjects.code],
@@ -656,8 +681,8 @@ export const inspectionCalculationMethods = pgTable(
     roundingRule: text("rounding_rule"),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -666,6 +691,10 @@ export const inspectionCalculationMethods = pgTable(
       name: "inspection_calculation_rules_pkey",
     }),
     index("idx_calc_method_object").on(t.inspectionObjectCode),
+    check(
+      "ck_calc_algorithm_type",
+      sql`${t.algorithmType} in ('simple_avg', 'compressive_strength', 'flexural_strength', 'steel_tensile', 'formula', 'manual', 'auto_calc_ratio')`,
+    ),
     foreignKey({
       columns: [t.inspectionObjectCode],
       foreignColumns: [inspectionObjects.code],
@@ -701,8 +730,8 @@ export const inspectionParamInterfaces = pgTable(
     isOfficial: boolean("is_official"),
     sortOrder: integer("sort_order").default(0).notNull(),
     config: jsonb("config"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     // 主键约束名保留 V013 改表名前的遗留名 param_interfaces_pkey（lab_dev 实测）
@@ -718,8 +747,8 @@ export const inspectionObjectParameters = pgTable(
     qualificationLevel: text("qualification_level").default("QUALIFIED").notNull(),
     sourcePage: integer("source_page"),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -728,6 +757,7 @@ export const inspectionObjectParameters = pgTable(
     }),
     index("idx_obj_params_object").on(t.inspectionObjectCode),
     index("idx_obj_params_param").on(t.inspectionParameterCode),
+    check("ck_obj_params_qual_level", sql`${t.qualificationLevel} in ('QUALIFIED', 'RESTRICTED')`),
     foreignKey({
       columns: [t.inspectionObjectCode],
       foreignColumns: [inspectionObjects.code],
@@ -748,8 +778,8 @@ export const inspectionObjectStandards = pgTable(
     inspectionStandardCode: text("inspection_standard_code").notNull(),
     role: text("role").notNull(),
     remark: text("remark"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
@@ -757,6 +787,7 @@ export const inspectionObjectStandards = pgTable(
       name: "inspection_object_standards_pkey",
     }),
     index("idx_obj_std_object").on(t.inspectionObjectCode),
+    check("ck_obj_std_role", sql`${t.role} in ('TESTING', 'JUDGMENT')`),
     foreignKey({
       columns: [t.inspectionObjectCode],
       foreignColumns: [inspectionObjects.code],
@@ -777,8 +808,8 @@ export const inspectionParamInterfaceLinks = pgTable(
     paramInterfaceCode: text("param_interface_code").notNull(),
     reportNameCode: text("report_name_code"),
     config: jsonb("config"),
-    createdAt: text("created_at").default("").notNull(),
-    updatedAt: text("updated_at").default("").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
   (t) => [
     primaryKey({
