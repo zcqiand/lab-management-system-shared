@@ -1,7 +1,7 @@
 using TypeSpec.Http;
 
 // M00 租户管理 + M01.F04 权限管理 + M01.F05 认证管理
-// 多租户：一个用户关联多个租户，登录后选一个进去。租户真相源在 saas 身份平台，
+// 多租户：一个用户关联多个租户，登录后选一个进去。租户真相源在 SaaS 多租户多应用身份平台，
 // lab 不建 tenants 表，运行时通过 /auth/me 拿用户关联的租户列表。
 @route("/auth")
 @tag("auth")
@@ -127,7 +127,7 @@ model CurrentUserSession {
   currentTenantId?: string;
 }
 
-// 从 saas 身份平台下发的租户视图（lab 不拥有 tenants 表）
+// 从 SaaS 多租户多应用身份平台下发的租户视图（lab 不拥有 tenants 表）
 model MyTenant {
   tenantId: string;
   code: string;

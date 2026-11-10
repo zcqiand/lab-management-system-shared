@@ -1,11 +1,11 @@
-# CLAUDE.md — 实验室管理系统契约仓
+# CLAUDE.md — 建筑工程实验室管理系统契约仓
 
 > 书稿配套仓 + harness 门禁仓双身份。入口，不是手册。L0 门强制上限 60 行。
 > 本仓为《（书稿信息待补）》案例（待补）的可运行配套工程，是书稿代码块的 **source of truth**。
 
 ## 1. 项目定位
 
-实验室管理系统全家族的契约源头（纯契约仓）。双 SSOT：`tsp/` 是 API 唯一真源（只产出 OpenAPI 3.1 yaml），
+建筑工程实验室管理系统全家族的契约源头（纯契约仓）。双 SSOT：`tsp/` 是 API 唯一真源（只产出 OpenAPI 3.1 yaml），
 `src/db/schema.ts` 是 DB 唯一真源（ADR-0025 schema-first，`db:generate` 物化到 `drizzle/` 入 git）；
 其它 6 仓（react/vue/nextjs/springboot/aspnetcore/msw）通过 `generated/openapi/openapi.yaml` 消费 API 契约、
 从真库 pull/scaffold 消费 DB 契约。
