@@ -239,7 +239,12 @@ export const testRecords = pgTable(
     sampleId: text("sample_id").notNull(),
     parameterCode: text("parameter_code").notNull(),
     standardCode: text("standard_code"),
-    requirementCode: text("requirement_code"),
+    /**
+     * 动态表单数据（Data）——按所属参数界面 config.schema 采集的 key-value
+     * 原值 + 计算产物快照（ADR-0056 Schema/Data 解耦）。requirement/result/
+     * verdict 保留为汇总快照列（报告/列表直读，不必解 JSON）。
+     */
+    data: jsonb("data").default({}).notNull(),
     requirement: text("requirement").notNull(),
     result: text("result").notNull(),
     verdict: text("verdict"),
@@ -725,10 +730,18 @@ export const inspectionParamInterfaces = pgTable(
   {
     code: text("code").notNull(),
     name: text("name"),
-    componentPath: text("component_path").notNull(),
     description: text("description"),
-    isOfficial: boolean("is_official"),
-    sortOrder: integer("sort_order").default(0).notNull(),
+    /** 结构版本（表单结构迭代升级用；渲染器按 schema 演进向前兼容）。 */
+    version: integer("version").default(1).notNull(),
+    /**
+     * 表单结构定义（Schema）——JSON 动态表单的渲染真源（ADR-0056）。
+     * 形状：{ title?, fields: FieldSpec[], computed?: ComputedSpec[], params? }
+     * fields=采集面（input/textarea/number/select/number_series/table，
+     * 含 label/required/rules/options/defaultValue）；computed=计算面，
+     * 引用算法域（inspection_calculation_methods.algorithm_type 同域）；
+     * params=算法域入参（area/span 等常数，随表单走）。
+     * 数据面在 test_records.data（key-value 采集原值），两相解耦。
+     */
     config: jsonb("config"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
@@ -807,7 +820,8 @@ export const inspectionParamInterfaceLinks = pgTable(
     inspectionParameterCode: text("inspection_parameter_code").notNull(),
     paramInterfaceCode: text("param_interface_code").notNull(),
     reportNameCode: text("report_name_code"),
-    config: jsonb("config"),
+    /** 绑定检测依据（可空=不限依据）；与 report_name_code 同款作用域语义（ADR-0056）。 */
+    inspectionStandardCode: text("inspection_standard_code"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
   },
@@ -831,6 +845,11 @@ export const inspectionParamInterfaceLinks = pgTable(
       columns: [t.reportNameCode],
       foreignColumns: [inspectionReportNames.code],
       name: "pil_report_fk",
+    }).onDelete("set null"),
+    foreignKey({
+      columns: [t.inspectionStandardCode],
+      foreignColumns: [inspectionStandards.code],
+      name: "pil_standard_fk",
     }).onDelete("set null"),
   ],
 );

@@ -4452,19 +4452,14 @@ components:
       type: object
       required:
         - code
-        - componentPath
       properties:
         code:
           type: string
         name:
           type: string
-        componentPath:
-          type: string
         description:
           type: string
-        isOfficial:
-          type: boolean
-        sortOrder:
+        version:
           type: integer
           format: int32
         config:
@@ -4664,8 +4659,9 @@ components:
           type: string
         standardCode:
           type: string
-        requirementCode:
-          type: string
+        data:
+          type: object
+          additionalProperties: {}
         requirement:
           type: string
         result:
@@ -5360,8 +5356,7 @@ components:
       type: object
       required:
         - code
-        - componentPath
-        - sortOrder
+        - version
         - createdAt
         - updatedAt
       properties:
@@ -5369,18 +5364,16 @@ components:
           type: string
         name:
           type: string
-        componentPath:
-          type: string
         description:
           type: string
-        isOfficial:
-          type: boolean
-        sortOrder:
+        version:
           type: integer
           format: int32
+          description: 表单结构版本，结构迭代升级用，服务端管理，缺省 1。
         config:
           type: object
           additionalProperties: {}
+          description: 表单结构定义（Schema）：{ title?, fields[], computed?, params? }。
         createdAt:
           type: string
         updatedAt:
@@ -5397,9 +5390,9 @@ components:
           type: string
         reportNameCode:
           type: string
-        config:
-          type: object
-          additionalProperties: {}
+        inspectionStandardCode:
+          type: string
+          description: 绑定的检测依据 code，可空=不限依据。
     PermissionSet:
       type: object
       required:
@@ -5818,6 +5811,7 @@ components:
         - tenantId
         - sampleId
         - parameterCode
+        - data
         - requirement
         - result
         - createdAt
@@ -5833,8 +5827,10 @@ components:
           type: string
         standardCode:
           type: string
-        requirementCode:
-          type: string
+        data:
+          type: object
+          additionalProperties: {}
+          description: 动态表单采集数据（key-value 原值 + 计算产物快照），缺省 {}。
         requirement:
           type: string
         result:
@@ -6043,13 +6039,9 @@ components:
       properties:
         name:
           type: string
-        componentPath:
-          type: string
         description:
           type: string
-        isOfficial:
-          type: boolean
-        sortOrder:
+        version:
           type: integer
           format: int32
         config:
@@ -6232,8 +6224,9 @@ components:
           type: string
         standardCode:
           type: string
-        requirementCode:
-          type: string
+        data:
+          type: object
+          additionalProperties: {}
         requirement:
           type: string
         result:

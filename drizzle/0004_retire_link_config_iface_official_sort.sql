@@ -1,0 +1,1 @@
+ALTER TABLE "inspection_param_interface_links" DROP COLUMN IF EXISTS "config";

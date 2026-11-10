@@ -1,12 +1,13 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "DB 六裁定落 SSOT + drizzle 全量 re-baseline（ADR-0055，2026-11-09 人批；#4 字典 FK 已翻案）",
+  "current_task": "动态表单 Schema/Data 解耦（ADR-0056，2026-11-10 人批 + 批中追加裁定）",
   "done": [
-    "schema.ts 六裁定落地：四字典/tech_req 去租户、min/max numeric、objects 直挂列退役、timestamptz、tenant 去 default ''、12 个 ck_* CHECK、samples 唯一索引",
-    "drizzle/ 重出 0000_target_ddl；lab_dev/lab_test（127.0.0.1:54321）rebaseline+重灌，备份 _work/*-backup-20261109.json",
-    "种子确定性变换（8706 时间戳/670 行去租户/111 直挂键；samples 原值保留）+ nextjs 双源同步（pretier 规范形以 nextjs 为准）",
-    "gate L0-L5 全绿 exit 0；prod 未动（迁移窗口另行人批）"
+    "schema.ts 三表改造：param_interfaces 去 component_path/is_official/sort_order + version int default 1，config 语义升级=表单结构 schema；test_records 去 requirement_code + data jsonb default {}；links 去 config + inspection_standard_code（FK set null）",
+    "drizzle 增量迁移 0001-0004（两段式生成避开 drizzle-kit 交互 rename 询问；禁手改 drizzle SQL 纪律未破）；lab_dev/lab_test 已 migrate 数据零动，prod 未动（随 ADR-0055 窗口人批）",
+    "tsp 三模型同步（ParamInterface/TestRecord/ParamInterfaceLink + Create/Update），openapi 重编译",
+    "seeds：18 参数界面 config 全 schema 化（8 字段类型/computed 7 算法域/variant 扩展/params 常数）；test_records 150 行去 requirement_code；links 22 行换列",
+    "gate exit 0；CHANGELOG [Unreleased] 新增 ADR-0056 段"
   ],
   "next": [
     "兄弟仓回放队列：aspnetcore/springboot/rails/react/vue/fastapi/laravel/go/ktor/django 等按家族批次重 pull schema + 修租户查询（清单见 shared CHANGELOG [Unreleased]）",
@@ -16,5 +17,6 @@
   "dont": [
     "prod（100.79.128.25）在六裁定回放完成前禁止部署窗口",
     "seeds 双源改动必须同 commit 双写（seeds-parity 门咬漂移）"
-  ]
+  ],
+  "history": []
 }

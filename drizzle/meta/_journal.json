@@ -8,6 +8,34 @@
       "when": 1794240078626,
       "tag": "0000_target_ddl",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794281708505,
+      "tag": "0001_add_version_data_no_legacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794281726322,
+      "tag": "0002_retire_component_path_requirement_code",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794283974404,
+      "tag": "0003_add_link_standard_code",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794283995393,
+      "tag": "0004_retire_link_config_iface_official_sort",
+      "breakpoints": true
     }
   ]
 }

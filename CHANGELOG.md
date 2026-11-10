@@ -4,6 +4,50 @@
 
 ## [Unreleased] — 2026-11-09/10
 
+### Changed — 动态表单 Schema/Data 解耦（ADR-0056，2026-11-10 人批 + 批中补充裁定）
+
+**src/db/schema.ts（DB 唯一真源）**
+
+- `inspection_param_interfaces`：**component_path 退役**（schema 驱动动态渲染是唯一
+  渲染路径）；**is_official / sort_order 退役**（2026-11-10 批中追加裁定）；新增
+  **version int default 1**（结构迭代）；`config` 语义升级为表单结构 schema
+  （`{title?, fields[], computed[], params}`——fields=采集面 8 种字段类型；
+  computed[].algorithm 与 ck_calc_algorithm_type 同域 7 值，计算逻辑归算法域；
+  params=算法入参常数）。
+- `test_records`：**requirement_code 退役**（批中补充裁定）；新增
+  **data jsonb default '{}' notNull**（动态表单采集原值+计算产物）；requirement/
+  result/verdict 保留为汇总快照列。
+- `inspection_param_interface_links`：**config 退役**；新增
+  **inspection_standard_code text**（绑定检测依据，可空=不限，FK set null，
+  与 report_name_code 同款作用域语义）。
+
+**drizzle/ + 库**
+
+- 增量迁移 0001（纯 ADD version/data，两段式生成避开 drizzle-kit 交互式 rename
+  询问）→ 0002（纯 DROP component_path/requirement_code）→ 0003（ADD
+  links.inspection_standard_code）→ 0004（DROP is_official/sort_order/links.config）。
+  lab_dev / lab_test 已 migrate，数据零动；**prod 未动**（随 ADR-0055 prod 窗口一并人批）。
+
+**tsp/（API 契约）**
+
+- `ParamInterface`：-componentPath/-isOfficial/-sortOrder，+version（响应必填）；
+  Create/Update 请求同形（version 可选，服务端缺省 1）。
+- `TestRecord`：-requirementCode，+data: Record<unknown>（响应必填，缺省 {}）；
+  Create/Update 同形。
+- `ParamInterfaceLink`：-config，+inspectionStandardCode?。
+- 端点路径与状态码零变化；generated/openapi 已重编译。
+
+**seeds**
+
+- 18 个参数界面 config 全部 schema 化（ CementCompress/Flexural 带 gb17671 variant、
+  抗渗 permeability_grade、级配 table 形 + 砂/石筛孔集入 params、焊接弯曲 3 试件、
+  土工击实/压实度复合形状）；150 条 test_records 去 requirement_code；
+  links 22 行去 config、加 inspection_standard_code: null。
+- 三份镜像同步：nextjs src/seeds ↔ nextjs src/data/generated ↔ nextjs
+  vendor/msw/src/seeds。
+
+**决策记录**：suite `docs/adr/0056-lab-dynamic-form-schema-data-decoupling.md`。
+
 ### Changed — DB 六裁定落 SSOT + drizzle 全量 re-baseline（ADR-0055，2026-11-09 人批）
 
 **src/db/schema.ts（DB 唯一真源）**
