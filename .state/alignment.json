@@ -3,10 +3,10 @@
   "project": "lab-management-system-shared",
   "functions": {
     "modules": 7,
-    "features": 26,
-    "items": 160
+    "features": 27,
+    "items": 167
   },
-  "warnings_total": 322,
+  "warnings_total": 336,
   "warnings": {
     "已上线但无设计映射": [
       "M00.F01.I01",
@@ -120,7 +120,14 @@
       "M06.F08.I03",
       "M06.F08.I04",
       "M06.F08.I05",
-      "M06.F08.I06"
+      "M06.F08.I06",
+      "M06.F09.I01",
+      "M06.F09.I02",
+      "M06.F09.I03",
+      "M06.F09.I04",
+      "M06.F09.I05",
+      "M06.F09.I06",
+      "M06.F09.I07"
     ],
     "已上线但无测试引用": [
       "M00.F02.I01",
@@ -311,7 +318,14 @@
       "M06.F08.I03",
       "M06.F08.I04",
       "M06.F08.I05",
-      "M06.F08.I06"
+      "M06.F08.I06",
+      "M06.F09.I01",
+      "M06.F09.I02",
+      "M06.F09.I03",
+      "M06.F09.I04",
+      "M06.F09.I05",
+      "M06.F09.I06",
+      "M06.F09.I07"
     ],
     "开发中但无需求文档引用": [
       "M01.F04.I03",
@@ -359,6 +373,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:1704 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:1836 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:2226 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2450 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:2696 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:734 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples.test.ts:2066 (annot)",
@@ -394,6 +409,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:3332 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:3710 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:1248 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:1030 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:3716 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2944 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2321 (annot)",
@@ -417,6 +433,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:2667 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:3022 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:3272 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:3398 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:2588 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2295 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:2203 (annot)",
@@ -459,6 +476,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:2678 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:2437 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:985 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1274 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:1578 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:1011 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples.test.ts:920 (annot)",
@@ -483,6 +501,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:3496 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:2942 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2465 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2212 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:4374 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:3538 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2964 (annot)",
@@ -1283,6 +1302,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:4260 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:4367 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3139 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2910 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:3566 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:3250 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:3593 (annot)"
@@ -1300,6 +1320,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5030 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:5553 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3761 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3566 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:4662 (annot)"
       ],
       "entry": []
@@ -1315,6 +1336,7 @@
         "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5695 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:6223 (annot)",
         "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:4699 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4524 (annot)",
         "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:5800 (annot)"
       ],
       "entry": []
@@ -2129,6 +2151,90 @@
       "designs": [],
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:12381 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I01": {
+      "name": "界面列表",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1238 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I02": {
+      "name": "界面详情",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2412 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I03": {
+      "name": "创建界面",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:978 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I04": {
+      "name": "更新界面",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2154 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I05": {
+      "name": "删除界面",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2849 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I06": {
+      "name": "报告名称↔界面 link",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3508 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F09.I07": {
+      "name": "报告名称↔界面 unlink",
+      "status": "已上线",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4464 (annot)"
       ],
       "entry": []
     }

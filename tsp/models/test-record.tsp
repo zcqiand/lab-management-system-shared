@@ -4,8 +4,9 @@ using TypeSpec.Http;
 // parameter/standard 为逻辑 FK 到已废弃 M06，不强制。
 namespace Lab.Management.Shared;
 
-// ADR-0056：requirementCode 退役；新增 data —— 动态表单采集原值（Schema/Data
-// 解耦，结构定义在 ParamInterface.config）。requirement/result/verdict 保留为
+// ADR-0056：requirementCode 退役；新增 ext —— 动态表单采集原值（Schema/Data
+// 解耦，结构定义在 ParamInterface.config；2026-11-10 人裁列名 data→ext，与
+// sample_receipts.ext 命名对齐）。requirement/result/verdict 保留为
 // 汇总快照列（报告/列表直读）。
 model TestRecord {
   id: string;
@@ -18,7 +19,7 @@ model TestRecord {
   standardCode?: string;
 
   @doc("动态表单采集数据（key-value 原值 + 计算产物快照），缺省 {}。")
-  data: Record<unknown>;
+  ext: Record<unknown>;
 
   requirement: string;
   result: string;
@@ -32,7 +33,7 @@ model CreateTestRecordRequest {
   sampleId: string;
   parameterCode: string;
   standardCode?: string;
-  data?: Record<unknown>;
+  ext?: Record<unknown>;
   requirement: string;
   result: string;
   verdict?: string;
@@ -42,7 +43,7 @@ model UpdateTestRecordRequest {
   sampleId?: string;
   parameterCode?: string;
   standardCode?: string;
-  data?: Record<unknown>;
+  ext?: Record<unknown>;
   requirement?: string;
   result?: string;
   verdict?: string;

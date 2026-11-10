@@ -796,6 +796,7 @@
     "test_start_date": "",
     "test_end_date": "",
     "original_record_no": "",
+    "retest_mode": "double",
     "remark": "刚接样,未提交",
     "judgment_basis": [
       "GB 13788-2024",
@@ -1588,6 +1589,7 @@
     "test_start_date": "2026-07-18",
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0017",
+    "retest_mode": "double",
     "remark": "数据录入中",
     "judgment_basis": [
       "GB 55008-2021",

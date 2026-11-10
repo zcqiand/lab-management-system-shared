@@ -1,0 +1,2 @@
+ALTER TABLE "sample_receipts" ADD COLUMN "retest_mode" text DEFAULT 'none' NOT NULL;--> statement-breakpoint
+ALTER TABLE "sample_receipts" ADD CONSTRAINT "ck_receipts_retest_mode" CHECK ("sample_receipts"."retest_mode" in ('none', 'double', 'original'));

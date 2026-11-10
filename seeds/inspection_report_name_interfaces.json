@@ -1,0 +1,125 @@
+[
+  {
+    "code": "sri-rebar-mech",
+    "name": "钢筋原材样品扩展属性",
+    "description": "RN-102-1 钢筋力学性能样品扩展属性（2026-11-10 ext_fields→interface 迁移）：质保单编号。",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "qualityCertNo",
+          "label": "质保单编号",
+          "type": "input"
+        }
+      ]
+    },
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "code": "sri-mech-joint",
+    "name": "钢筋机械连接接头样品扩展属性",
+    "description": "RN-102-2 样品扩展属性（2026-11-10 ext_fields→interface 迁移）：接头类型 + 对应部位混凝土浇筑时间。",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "jointType",
+          "label": "接头类型",
+          "type": "select",
+          "options": []
+        },
+        {
+          "field": "concreteCastingDate",
+          "label": "对应部位混凝土浇筑时间",
+          "type": "input"
+        }
+      ]
+    },
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "code": "sri-welding",
+    "name": "钢筋焊接接头样品扩展属性",
+    "description": "RN-102-3 样品扩展属性（2026-11-10 ext_fields→interface 迁移）：焊工姓名/焊工证号 + 浇筑时间。",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "welderName",
+          "label": "焊工姓名",
+          "type": "input"
+        },
+        {
+          "field": "welderCertNo",
+          "label": "焊工证号",
+          "type": "input"
+        },
+        {
+          "field": "concreteCastingDate",
+          "label": "对应部位混凝土浇筑时间",
+          "type": "input"
+        }
+      ]
+    },
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "code": "sri-concrete-strength",
+    "name": "混凝土抗压强度样品扩展属性",
+    "description": "RN-105-1 样品扩展属性（2026-11-10 人裁：samples curing_condition/age 列删除，按报告名称移入 ext）：养护条件 + 龄期。",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "curingCondition",
+          "label": "养护条件",
+          "type": "select",
+          "options": [
+            "自然养护",
+            "标准养护",
+            "蒸压养护"
+          ],
+          "defaultValue": "自然养护"
+        },
+        {
+          "field": "age",
+          "label": "龄期",
+          "type": "input"
+        }
+      ]
+    },
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "code": "sri-concrete-impermeability",
+    "name": "混凝土抗渗样品扩展属性",
+    "description": "RN-105-2 样品扩展属性（2026-11-10 人裁：samples curing_condition/age 列删除，按报告名称移入 ext）：养护条件 + 龄期。",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "curingCondition",
+          "label": "养护条件",
+          "type": "select",
+          "options": [
+            "自然养护",
+            "标准养护",
+            "蒸压养护"
+          ],
+          "defaultValue": "自然养护"
+        },
+        {
+          "field": "age",
+          "label": "龄期",
+          "type": "input"
+        }
+      ]
+    },
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  }
+]

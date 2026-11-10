@@ -24,8 +24,6 @@ model Sample {
   supplyUnit?: string;
   arrivalDate?: string;
   samplingDate?: string;
-  curingCondition?: string;
-  age?: string;
 
   ext: Record<string>;
 
@@ -51,8 +49,6 @@ model CreateSampleRequest {
   supplyUnit?: string;
   arrivalDate?: string;
   samplingDate?: string;
-  curingCondition?: string;
-  age?: string;
   ext?: Record<string>;
   remark?: string;
 }
@@ -73,8 +69,6 @@ model UpdateSampleRequest {
   supplyUnit?: string;
   arrivalDate?: string;
   samplingDate?: string;
-  curingCondition?: string;
-  age?: string;
   ext?: Record<string>;
   remark?: string;
 }

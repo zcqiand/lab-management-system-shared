@@ -36,6 +36,34 @@
       "when": 1794283995393,
       "tag": "0004_retire_link_config_iface_official_sort",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794310847032,
+      "tag": "0005_late_redwing",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794310848032,
+      "tag": "0006_test_record_data_to_ext",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794312298576,
+      "tag": "0007_report_name_interfaces",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794312508133,
+      "tag": "0008_drop_sample_curing_age",
+      "breakpoints": true
     }
   ]
 }

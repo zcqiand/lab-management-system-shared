@@ -325,6 +325,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M06.F06 | 技术要求 | TechnicalRequirement 维护，按四维度匹配；brand/model/grade/spec 改为 FK 引用实体 | 已上线 |
 | M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 已上线 |
 | M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 已上线 |
+| M06.F09 | 报告名称扩展属性界面 | InspectionReportNameInterface 维护 + 报告名称↔界面 link（样品信息扩展属性，2026-11-10 接替 ext_fields） | 已上线 |
 
 ### M06.F01 检测专项
 
@@ -428,3 +429,18 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M06.F08.I04 | 更新参数界面 | 接口 | 前端+后端 | PUT /api/param-interfaces/{code}：PATCH 语义 | 已上线 |
 | M06.F08.I05 | 删除参数界面 | 接口 | 前端+后端 | DELETE /api/param-interfaces/{code}：204 if exists | 已上线 |
 | M06.F08.I06 | 参数↔界面 link | 接口 | 前端+后端 | POST /api/param-interfaces/links：建立 parameter→interface 关联，reportNameCode/config 可选（config 走 jsonb） | 已上线 |
+
+
+### M06.F09 报告名称扩展属性界面
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F09.I01 | 界面列表 | 接口 | 前端+后端 | GET /api/report-name-interfaces?page=&pageSize=&keyword=：`Page<ReportNameInterface>`，按 code/name 模糊 | 已上线 |
+| M06.F09.I02 | 界面详情 | 接口 | 前端+后端 | GET /api/report-name-interfaces/{code}：返回 ReportNameInterface（含 config 反序列化的 Map<String,Object>） | 已上线 |
+| M06.F09.I03 | 创建界面 | 接口 | 前端+后端 | POST /api/report-name-interfaces：code 必填；config 默认 {}；version 默认 1 | 已上线 |
+| M06.F09.I04 | 更新界面 | 接口 | 前端+后端 | PUT /api/report-name-interfaces/{code}：PATCH 语义 | 已上线 |
+| M06.F09.I05 | 删除界面 | 接口 | 前端+后端 | DELETE /api/report-name-interfaces/{code}：204 if exists；级联删 report-name-interface-links | 已上线 |
+| M06.F09.I06 | 报告名称↔界面 link | 接口 | 前端+后端 | POST /api/report-name-interfaces/links：建立 reportName→interface 关联（复合 PK 去重 400） | 已上线 |
+| M06.F09.I07 | 报告名称↔界面 unlink | 接口 | 前端+后端 | DELETE /api/report-name-interfaces/links：幂等 204 | 已上线 |
+
+（GET /api/report-name-interfaces/links → ADR-0034 §3 link GET list 自然豁免）

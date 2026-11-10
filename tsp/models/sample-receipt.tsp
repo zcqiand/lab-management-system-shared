@@ -3,6 +3,13 @@ using TypeSpec.Http;
 // SampleReceipt — 接样单（M03.F01/F02/F05-F09）。报告字段已并入。
 namespace Lab.Management.Shared;
 
+// M03 复验方式（2026-11-10 人裁）：double = 双倍取样复验；original = 原样数量复验
+enum RetestMode {
+  none,
+  double,
+  original,
+}
+
 model SampleReceipt {
   id: string;
   tenantId: string;
@@ -38,6 +45,9 @@ model SampleReceipt {
   testStartDate?: string;
   testEndDate?: string;
   originalRecordNo?: string;
+  // 复验方式：double = 双倍取样复验（数据录入走 rows 翻倍的 -retest 界面变体）；
+  // original = 原样数量复验（常规行数，仅标记供报告特殊处理）
+  retestMode?: RetestMode;
   remark?: string;
 
   // jsonb：标准码数组 / 检测依据 / 参数码数组（FK → InspectionParameter.code）
@@ -93,6 +103,7 @@ model CreateSampleReceiptRequest {
   testStartDate?: string;
   testEndDate?: string;
   originalRecordNo?: string;
+  retestMode?: RetestMode;
   remark?: string;
   judgmentBasis?: string[];
   testingBasis?: string[];
@@ -126,6 +137,7 @@ model UpdateSampleReceiptRequest {
   testStartDate?: string;
   testEndDate?: string;
   originalRecordNo?: string;
+  retestMode?: RetestMode;
   remark?: string;
   judgmentBasis?: string[];
   testingBasis?: string[];

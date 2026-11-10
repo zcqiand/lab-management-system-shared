@@ -4,6 +4,24 @@
 
 ## [Unreleased]
 - chore(rename): 系统显示名统一（suite 全家族批）——「实验室管理系统」→「建筑工程实验室管理系统」；「身份平台」名称位（标题/品牌/包描述/UI 标签）→「SaaS 多租户多应用身份平台」，行文短称保留。同批兄弟仓同节奏提交。
+
+### Changed — 钢筋四接口结构化拆分 + M06.F09 树注册（2026-11-10 人裁第二波）
+
+- **断后伸长率/最大力总伸长率拆两卡**：各自结构化表格（原始标距｜断后标距
+  input → 伸长率 computed decimals 1｜标准要求 req_select），算法 elongation
+  扩标距口径（gaugeLengths/fractureLengths → (Lu-L0)/L0×100，手输百分比回退）；
+  最大力总伸长率 = algorithm elongation + variant agt。
+- **强屈比/超强比拆两卡**：比值测定表 computed 列跨记录预填（crossRecord 联立，
+  specimenCount=rows）；强屈比 yield_ratio decimals 2；超强比 = algorithm
+  auto_calc_ratio + variant super_ratio（只吃 实测屈服/标准屈服）。
+- **种子**：rebar-mech-elongation 换 elongationTable；新增 rebar-mech-agt /
+  rebar-mech-super-ratio 两接口 + IP-0097/IP-0560 两条 link（24/24）。
+- **树/契约**：M06.F09 功能树注册（I01-I07，人批）+ tsp 挂锚 + GET /links
+  ADR-0034 §3 豁免；contract-test 同 commit 补 report-name-interfaces 读/写
+  两测试文件（SSOT 覆盖 127/127）。
+- 消费仓镜像同步：lab-nextjs 同 commit 节奏（渲染器/算法/页面/种子三镜像），
+  见其 CHANGELOG。
+
  — 2026-11-09/10
 
 ### Changed — 钢筋力学四接口结构化表格种子 + ADR-0056 种子漂移回灌（2026-11-10 人裁「落这个批」）

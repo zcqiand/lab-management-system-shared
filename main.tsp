@@ -31,6 +31,7 @@ import "./tsp/routes/inspection-dictionary.tsp";
 import "./tsp/routes/report-names.tsp";
 import "./tsp/routes/calculation-methods.tsp";
 import "./tsp/routes/param-interfaces.tsp";
+import "./tsp/routes/report-name-interfaces.tsp";
 
 using TypeSpec.Http;
 

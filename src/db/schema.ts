@@ -147,6 +147,10 @@ export const sampleReceipts = pgTable(
     testStartDate: text("test_start_date"),
     testEndDate: text("test_end_date"),
     originalRecordNo: text("original_record_no"),
+    // 复验方式（2026-11-10 人裁，不用布尔）：double = 双倍取样复验（数据录入走
+    // rows 翻倍的 -retest 界面变体）；original = 原样数量复验（常规行数，仅标记
+    // 供报告特殊处理）；none = 非复验。
+    retestMode: text("retest_mode").default("none").notNull(),
     remark: text("remark"),
     judgmentBasis: jsonb("judgment_basis"),
     testingBasis: jsonb("testing_basis"),
@@ -187,6 +191,7 @@ export const sampleReceipts = pgTable(
       "ck_receipts_flow_status",
       sql`${t.flowStatus} in ('receiving', 'task_assignment', 'data_entry', 'review', 'approval', 'issuance', 'archived', 'completed')`,
     ),
+    check("ck_receipts_retest_mode", sql`${t.retestMode} in ('none', 'double', 'original')`),
   ],
 );
 
@@ -209,8 +214,8 @@ export const samples = pgTable(
     supplyUnit: text("supply_unit"),
     arrivalDate: text("arrival_date"),
     samplingDate: text("sampling_date"),
-    curingCondition: text("curing_condition"),
-    age: text("age"),
+    // curing_condition / age 已删（2026-11-10 人裁）：按报告名称归属各异的样品
+    // 扩展属性统一进 ext（key 由 inspection_report_name_interfaces schema 承载）。
     ext: jsonb("ext").default({}).notNull(),
     remark: text("remark"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
@@ -240,11 +245,12 @@ export const testRecords = pgTable(
     parameterCode: text("parameter_code").notNull(),
     standardCode: text("standard_code"),
     /**
-     * 动态表单数据（Data）——按所属参数界面 config.schema 采集的 key-value
-     * 原值 + 计算产物快照（ADR-0056 Schema/Data 解耦）。requirement/result/
+     * 动态表单数据（Ext）——按所属参数界面 config.schema 采集的 key-value
+     * 原值 + 计算产物快照（ADR-0056 Schema/Data 解耦；2026-11-10 人裁列名
+     * data→ext，与 sample_receipts.ext 命名对齐）。requirement/result/
      * verdict 保留为汇总快照列（报告/列表直读，不必解 JSON）。
      */
-    data: jsonb("data").default({}).notNull(),
+    ext: jsonb("ext").default({}).notNull(),
     requirement: text("requirement").notNull(),
     result: text("result").notNull(),
     verdict: text("verdict"),
@@ -485,7 +491,8 @@ export const inspectionReportNames = pgTable("inspection_report_names", {
   fullName: text("full_name"),
   templatePath: text("template_path"),
   summaryName: text("summary_name"),
-  extFields: jsonb("ext_fields"),
+  // ext_fields 已删（2026-11-10 人裁）：样品信息扩展属性的采集结构移交
+  // inspection_report_name_interfaces（schema 驱动，参考 param_interfaces）。
   description: text("description"),
   sortOrder: integer("sort_order").default(0).notNull(),
   createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
@@ -851,5 +858,53 @@ export const inspectionParamInterfaceLinks = pgTable(
       foreignColumns: [inspectionStandards.code],
       name: "pil_standard_fk",
     }).onDelete("set null"),
+  ],
+);
+
+// 报告名称级样品扩展属性界面（2026-11-10 人裁，参考 inspection_param_interfaces 同构）：
+// 取代 inspection_report_names.ext_fields（已删）——样品信息扩展属性的采集结构
+// 从静态字段清单升级为 schema 驱动表单（config 形状与 param_interfaces 同款）。
+export const inspectionReportNameInterfaces = pgTable(
+  "inspection_report_name_interfaces",
+  {
+    code: text("code").notNull(),
+    name: text("name"),
+    description: text("description"),
+    /** 结构版本（表单结构迭代升级用；渲染器按 schema 演进向前兼容）。 */
+    version: integer("version").default(1).notNull(),
+    /** 表单结构定义（Schema）：{ title?, fields[], computed?, params? }。 */
+    config: jsonb("config"),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  },
+  (t) => [
+    primaryKey({ columns: [t.code], name: "report_name_interfaces_pkey" }),
+  ],
+);
+
+export const inspectionReportNameInterfaceLinks = pgTable(
+  "inspection_report_name_interface_links",
+  {
+    reportNameCode: text("report_name_code").notNull(),
+    reportNameInterfaceCode: text("report_name_interface_code").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
+  },
+  (t) => [
+    primaryKey({
+      columns: [t.reportNameCode, t.reportNameInterfaceCode],
+      name: "report_name_interface_links_pkey",
+    }),
+    index("idx_rnil_report").on(t.reportNameCode),
+    foreignKey({
+      columns: [t.reportNameCode],
+      foreignColumns: [inspectionReportNames.code],
+      name: "rnil_report_fk",
+    }).onDelete("cascade"),
+    foreignKey({
+      columns: [t.reportNameInterfaceCode],
+      foreignColumns: [inspectionReportNameInterfaces.code],
+      name: "rnil_interface_fk",
+    }).onDelete("cascade"),
   ],
 );

@@ -1,0 +1,32 @@
+[
+  {
+    "report_name_code": "RN-102-1",
+    "report_name_interface_code": "sri-rebar-mech",
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-102-2",
+    "report_name_interface_code": "sri-mech-joint",
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-102-3",
+    "report_name_interface_code": "sri-welding",
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-105-1",
+    "report_name_interface_code": "sri-concrete-strength",
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-105-2",
+    "report_name_interface_code": "sri-concrete-impermeability",
+    "created_at": "2026-11-10T00:00:00Z",
+    "updated_at": "2026-11-10T00:00:00Z"
+  }
+]
