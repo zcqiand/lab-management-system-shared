@@ -4,6 +4,20 @@
 
 ## [Unreleased] — 2026-11-09/10
 
+### Changed — 钢筋力学四接口结构化表格种子 + ADR-0056 种子漂移回灌（2026-11-10 人裁「落这个批」）
+
+- **四个钢筋力学接口 config 转结构化表格列**（yield/tensile + connection 两变体）：
+  `columns: [{loads input}, {diameters input}, {strengths computed steel_tensile},
+  {req static}]` + highlight 越限红显。阈值全部有 tech_req 种子背书不编数：
+  IP-0086 屈服 ≥400 / IP-0087 抗拉 ≥540（GB 1499.2-2024 技术要求）。
+  connection-tensile 断裂位置保留独立 select_series；version 1→2。
+- **种子漂移收口（SSOT 纪律）**：发现 nextjs src/seeds 在 ADR-0056 回放时只改了
+  消费仓没回灌本仓（variant 派发键 / 渗水情况 select_series / 抗压强度代表值
+  label / 土工压实度 maxDryDensity 等字段细化，16/18 行语义领先）——本批以
+  nextjs HEAD 语义为基准叠加四个结构化 config 回灌本仓 SSOT。消费仓镜像三处
+  （nextjs src/seeds ↔ src/data/generated ↔ vendor/msw seeds）byte-identical。
+- 消费仓镜像同步：lab-nextjs 渲染器扩展批同 commit 节奏（见其 CHANGELOG）。
+
 ### Changed — 动态表单 Schema/Data 解耦（ADR-0056，2026-11-10 人批 + 批中补充裁定）
 
 **src/db/schema.ts（DB 唯一真源）**
