@@ -21,6 +21,10 @@
   两测试文件（SSOT 覆盖 127/127）。
 - 消费仓镜像同步：lab-nextjs 同 commit 节奏（渲染器/算法/页面/种子三镜像），
   见其 CHANGELOG。
+- **种子格式收口（seeds-parity 追平 2fdc56e 先例）**：本批种子直写为展开形，
+  parity 测（sha256 字节等）× nextjs prettier 90 列规范形双夹击红——shared seeds
+  须按 nextjs .prettierrc（printWidth 90）canonical 形格式化后 byte-copy 消费仓，
+  shared 无 prettier 门（L1=tsp compile）不会自己纠正。
 
  — 2026-11-09/10
 

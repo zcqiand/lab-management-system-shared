@@ -20,9 +20,7 @@
           "field": "strengths",
           "algorithm": "compressive_strength",
           "variant": "gb17671_compress",
-          "from": [
-            "loads"
-          ],
+          "from": ["loads"],
           "label": "抗压强度 (MPa)"
         }
       ],
@@ -54,9 +52,7 @@
           "field": "strengths",
           "algorithm": "flexural_strength",
           "variant": "gb17671_flexural",
-          "from": [
-            "loads"
-          ],
+          "from": ["loads"],
           "label": "抗折强度 (MPa)"
         }
       ],
@@ -88,9 +84,7 @@
         {
           "field": "strengths",
           "algorithm": "compressive_strength",
-          "from": [
-            "loads"
-          ],
+          "from": ["loads"],
           "label": "抗压强度代表值"
         }
       ],
@@ -121,10 +115,7 @@
           "type": "select_series",
           "label": "渗水情况",
           "count": 6,
-          "options": [
-            "未渗",
-            "已渗"
-          ]
+          "options": ["未渗", "已渗"]
         }
       ],
       "computed": [
@@ -132,10 +123,7 @@
           "field": "grade",
           "algorithm": "formula",
           "variant": "permeability_grade",
-          "from": [
-            "pressures",
-            "seepage"
-          ],
+          "from": ["pressures", "seepage"],
           "label": "抗渗等级"
         }
       ]
@@ -187,9 +175,7 @@
         {
           "field": "strengths",
           "algorithm": "compressive_strength",
-          "from": [
-            "loads"
-          ],
+          "from": ["loads"],
           "label": "抗压强度 (MPa)"
         }
       ],
@@ -233,9 +219,7 @@
           "field": "cumulativeRetains",
           "algorithm": "formula",
           "variant": "gradation",
-          "from": [
-            "sieveRetains"
-          ],
+          "from": ["sieveRetains"],
           "label": "累计筛余 / 细度模数"
         }
       ],
@@ -318,12 +302,7 @@
           "type": "select_series",
           "label": "断裂位置",
           "count": 3,
-          "options": [
-            "母材断裂",
-            "断于接头",
-            "热影响区断裂",
-            "其他"
-          ]
+          "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
         }
       ]
     },
@@ -577,10 +556,7 @@
           "label": "弯曲结果",
           "count": 3,
           "defaultValue": "合格",
-          "options": [
-            "合格",
-            "不合格"
-          ]
+          "options": ["合格", "不合格"]
         }
       ],
       "computed": [
@@ -588,9 +564,7 @@
           "field": "verdictDraft",
           "algorithm": "manual",
           "variant": "welding_bend",
-          "from": [
-            "results"
-          ],
+          "from": ["results"],
           "label": "弯曲性能评定"
         }
       ]
@@ -632,9 +606,7 @@
           "field": "strengths",
           "algorithm": "steel_tensile",
           "variant": "welding_tensile",
-          "from": [
-            "loads"
-          ],
+          "from": ["loads"],
           "label": "抗拉强度 (MPa)"
         }
       ],
@@ -674,10 +646,7 @@
           "field": "peak",
           "algorithm": "formula",
           "variant": "compaction_peak",
-          "from": [
-            "dryDensities",
-            "waterContents"
-          ],
+          "from": ["dryDensities", "waterContents"],
           "label": "最大干密度 / 最优含水率"
         }
       ]
@@ -746,10 +715,7 @@
           "field": "degrees",
           "algorithm": "formula",
           "variant": "compaction_degree",
-          "from": [
-            "wetDensities",
-            "waterContents"
-          ],
+          "from": ["wetDensities", "waterContents"],
           "label": "压实度 (%)"
         }
       ],
@@ -821,10 +787,7 @@
           "field": "degrees",
           "algorithm": "formula",
           "variant": "compaction_degree",
-          "from": [
-            "wetDensities",
-            "waterContents"
-          ],
+          "from": ["wetDensities", "waterContents"],
           "label": "压实度 (%)"
         }
       ],
@@ -1031,12 +994,7 @@
           "type": "select_series",
           "label": "断裂位置",
           "count": 6,
-          "options": [
-            "母材断裂",
-            "断于接头",
-            "热影响区断裂",
-            "其他"
-          ]
+          "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
         }
       ]
     },
