@@ -3,6 +3,9 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- chore(seeds): RECEIPT-FM-0017 retest_mode double→none（2026-11-11 用户裁定
+  「WS-2026-F0017 数据改成非复验报告」SSOT 侧）：live lab_dev 已 PUT 落库；
+  种子双侧 byte-equal 同改，防下次 seed:db 翻回。消费仓详单见其 CHANGELOG 同日条。
 - chore(seeds): inspection_calculation_methods.json shared 侧回放补欠账——批1
   （nextjs 25de2d4，2026-11-11 人审定稿表达式）只同步了消费仓三镜像、漏了
   shared SSOT 侧，seeds-parity 门红（本仓 L4）；字节拷贝恢复双写约定不变式，

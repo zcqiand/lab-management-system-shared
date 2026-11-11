@@ -1465,7 +1465,7 @@
     "test_start_date": "2026-07-18",
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0017",
-    "retest_mode": "double",
+    "retest_mode": "none",
     "remark": "数据录入中",
     "judgment_basis": ["JGJ 107-2016"],
     "testing_basis": [
