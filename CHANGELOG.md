@@ -3,6 +3,11 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): 强度修约收口至整数位（2026-11-12 用户裁定「修约至 1 MPa（保留 0 位
+  小数）」SSOT 侧，第二批）：rebar-mech-* steel_tensile **列级** computed 补
+  `"decimals": 0`（8 处；顶层 mean 9 处 `showDisplay:false` 不渲染不动），与消费仓
+  三镜像同 commit 节奏 byte-equal。消费仓实现详单（显示层 `?? 1` 兜底暴露、
+  steelTensile 均值转整数、批A 模板同步、测试钉值更新）见 nextjs CHANGELOG 同日条。
 - chore(seeds): SAMPLE-FM-0017（YP-2026-F0017-01）牌号 HRB400→HRB400E、规格
   Φ25→Φ32（2026-11-12 用户裁定 SSOT 侧）：种子与消费仓 src/seeds byte-equal
   同改（含样品名勘误——旧值「钢筋机械连接接头试样」与报告 RN-102-1 钢筋力学

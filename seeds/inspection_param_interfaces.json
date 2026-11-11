@@ -281,7 +281,8 @@
               "field": "strengths",
               "label": "抗拉强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -347,7 +348,8 @@
               "field": "strengths",
               "label": "屈服强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -460,7 +462,8 @@
               "field": "strengths",
               "label": "抗拉强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -519,7 +522,8 @@
               "field": "strengths",
               "label": "屈服强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -886,7 +890,8 @@
               "field": "strengths",
               "label": "屈服强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -945,7 +950,8 @@
               "field": "strengths",
               "label": "抗拉强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -1004,7 +1010,8 @@
               "field": "strengths",
               "label": "屈服强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
@@ -1063,7 +1070,8 @@
               "field": "strengths",
               "label": "抗拉强度 (MPa)",
               "mode": "computed",
-              "algorithm": "steel_tensile"
+              "algorithm": "steel_tensile",
+              "decimals": 0
             },
             {
               "field": "req",
