@@ -3,6 +3,13 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): 钢筋力学技术要求剥 spec/grade（2026-11-11 人裁定：力学性能只跟牌号，
+  规格与等级必须空；grade 对 GB 1499.2 全参数清空，spec 仅弯曲/重量类保留——表7/表4
+  直径段是要求本身）。根因与证据链落 `docs/requirements/REQ-2026-038` §6。同 commit
+  兄弟仓（react/vue/aspnetcore/springboot/rails/fastapi/kotlin/laravel/go 等 20 仓）
+  各自 seeds 镜像同节奏回放——**回放清单见 lab-nextjs CHANGELOG 同批条目**。
+- chore(doc): REQ-2026-038 补 §6 根因记录（git 考古证据链 + 三层真因 + T-5 维度依赖
+  声明机器不变式提案）。
 - chore(rename): 系统显示名统一（suite 全家族批）——「实验室管理系统」→「建筑工程实验室管理系统」；「身份平台」名称位（标题/品牌/包描述/UI 标签）→「SaaS 多租户多应用身份平台」，行文短称保留。同批兄弟仓同节奏提交。
 
 ### Changed — 钢筋四接口结构化拆分 + M06.F09 树注册（2026-11-10 人裁第二波）

@@ -39,17 +39,52 @@
 
 ## 4. 任务拆解
 
-1. T-1 ✅ 抽取管线：`lab-nextjs/_work/import-rebar-tech-req.py` → 71 条草稿
-   （45 HIGH / 17 MED / 9 LOW）+ 人核报告 `_work/rebar-import-review.md`。
-2. T-2 **人核**（阻塞点，归 zcqiand）：逐行核对 review 报告，LOW 行（Agt 归属）必须裁；
-   同键冲突 2 处裁合并。
+1. T-1 ✅ 抽取管线：`lab-nextjs/_work/import-rebar-tech-req.py` → 70 条草稿
+   （全 HIGH，表6=40 / 表7=27 / 表4=3）+ 人核报告 `_work/rebar-import-review.md`。
+2. T-2 **人核**（阻塞点，归 zcqiand）：逐行核对 review 报告；Agt 归属行带
+   「OCR 塌缩行归属靠双版对照推定」标注，转 verified 前须对照原 PDF。
 3. T-3 人核通过 → 草稿行并入 shared `seeds/inspection_technical_requirements.json`
    （draft 状态）→ byte-copy 三镜像 → seed:db → UI 技术要求页复核。
 4. T-4（可选，人裁）：扩 GB 1499.1-2024 / GB 13788-2024 / JGJ 107-2016；
    LLM 兜底抽取 LOW 行。
+5. T-5（2026-11-11 人批后立）**维度依赖声明与机器不变式**：每个检测参数声明
+   依赖维度（如屈服强度=仅牌号），种子校验按声明拒绝越维赋值——见 §6。
 
 ## 5. 验收标准
 
 - 草稿行全部带 clause + source_hash 溯源，verification_status=draft，不影响自动评定。
-- 人核报告逐行可对回 OCR 原文；LOW 行零静默转 verified。
+- 人核报告逐行可对回 OCR 原文；LOW 行零静默越维赋值。
 - seeds 三镜像 byte-equal，seeds-parity 不变式绿，gate L0-L5 绿。
+
+## 6. 根因记录（2026-11-11 人令彻查，git 考古证据在案）
+
+**问题**：现网 verified 行 `spec=Φ22` / `grade=一级` 是污染（力学性能只跟牌号，
+规格/等级必须空）；为何污染能存活 4 个月、为何每次导入都要人从头核。
+
+**数据侧真因**（git 证据）：
+
+1. **模板克隆+继承式造数**：污染在入仓前就有——msw 仓（已删）手工造的种子行
+   `e793209`（2026-08-15）入仓即 `spec` 全 `Φ22` 系、`grade` 全同值、`clause`/`sourcePage`
+   全空。E 牌号行 remark 留痕 `[E 牌号继承非 E 牌号基值 + 抗震附加]`——先造一行基值，
+   其余牌号克隆时把 spec/grade 一起抄过去。
+2. **「继承」心智模型二次发作**：本次管线 Agt 按屈服等级族归属（而非按 E 后缀），
+   与当年克隆继承同款错误模型。「继承非 E 基值」对限值成立（E=基值+附加），对
+   **维度赋值不成立**——维度是「这个要求对什么规格成立」，不继承。
+3. **四级拷贝零语义检查**：msw seeds → generated JSON（e793209）→ seed:db 入 lab_dev →
+   dump-db 回写 src/seeds（ff833b1）→ DB 快照迁 shared（8d0f0d0/8d0f409）。横跨
+   2026-08-15 → 11-10 近 4 个月，各跳只查字节相等（seeds-parity），语义污染每跳无损通过。
+
+**流程侧真因（为何每次导入都要人审）**：
+
+1. **OCR 塌缩了表结构**：Weaviate 存的是 OCR 文本，列归属（哪个值属于哪个牌号）已丢，
+   文本邻近≠归属证明。归属不可机器判定 → 人必须核。这是**结构性的**，不是脚本 bug。
+2. **没有机器可读真值**：限值表只存在于 OCR 文本和 PDF 照片，无结构化锚。每次导入
+   都在重做同样的归属推理，人核也就每次从头核。**第一次人核是一次性投资**：
+   把每张限值表 captura 一次成结构化、人验、带 source_hash 钉版的真值件后，后续
+   导入/改版只 diff 真值件（2018→2024 表4 ±6.0→±5.5 是 3 行 diff，不是 74 行）。
+3. **维度依赖无机器门**：spec/grade 越维赋值（力学参数带 Φ22/一级）机器判不了，
+   因为**参数没有声明自己依赖哪些维度**。T-5 声明后这就是可机器判的：力学参数行带
+   spec/grade → 红。此不变式会拦下本次全部污染行，在造数那一刻拦，不用等 4 个月。
+
+**裁定留档**：fix = 剥 84 行（vendor）+ 9 行（src/seeds→shared byte-copy）spec/grade，
+弯曲/重量类保留 spec（表7/表4 语义：直径段是要求本身）；grade 对 GB 1499.2 全参数清空。
