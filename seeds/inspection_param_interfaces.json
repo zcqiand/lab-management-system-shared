@@ -1200,5 +1200,179 @@
     },
     "createdAt": "2026-11-10T00:00:00Z",
     "updatedAt": "2026-11-10T00:00:00Z"
+  },
+  {
+    "code": "rebar-bend",
+    "name": "弯曲性能",
+    "description": "钢筋弯曲性能（GB/T 232，弯心直径+弯曲结果逐行录入，无裂纹自动评定）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "bendTable",
+          "type": "table",
+          "label": "弯曲性能",
+          "showLabel": false,
+          "rows": 2,
+          "columns": [
+            {
+              "field": "bendDiameters",
+              "label": "弯心直径 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "results",
+              "label": "弯曲结果",
+              "mode": "select",
+              "options": ["无裂纹", "裂纹"]
+            }
+          ]
+        }
+      ],
+      "computed": [
+        {
+          "field": "bendVerdict",
+          "algorithm": "manual",
+          "variant": "rebar_bend",
+          "from": ["results"],
+          "label": "弯曲性能评定",
+          "showDisplay": false
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-11T00:00:00Z",
+    "updated_at": "2026-11-11T00:00:00Z"
+  },
+  {
+    "code": "rebar-reverse-bend",
+    "name": "反向弯曲",
+    "description": "钢筋反向弯曲（GB/T 232，弯心直径+弯曲结果单行录入，无裂纹自动评定）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "bendTable",
+          "type": "table",
+          "label": "反向弯曲",
+          "showLabel": false,
+          "rows": 1,
+          "columns": [
+            {
+              "field": "bendDiameters",
+              "label": "弯心直径 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "results",
+              "label": "弯曲结果",
+              "mode": "select",
+              "options": ["无裂纹", "裂纹"]
+            }
+          ]
+        }
+      ],
+      "computed": [
+        {
+          "field": "bendVerdict",
+          "algorithm": "manual",
+          "variant": "rebar_bend",
+          "from": ["results"],
+          "label": "弯曲性能评定",
+          "showDisplay": false
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-11T00:00:00Z",
+    "updated_at": "2026-11-11T00:00:00Z"
+  },
+  {
+    "code": "rebar-weight-deviation",
+    "name": "重量偏差(%)",
+    "description": "钢筋重量偏差（GB 1499.2-2024 表7，dev=(W-ρL)/(ρL)×100，range 技术要求自动评定）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "weightTable",
+          "type": "table",
+          "label": "重量偏差 (%)",
+          "showLabel": false,
+          "rows": 1,
+          "columns": [
+            {
+              "field": "lengths1",
+              "label": "试样长度1 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "lengths2",
+              "label": "试样长度2 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "lengths3",
+              "label": "试样长度3 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "lengths4",
+              "label": "试样长度4 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "lengths5",
+              "label": "试样长度5 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "actualWeights",
+              "label": "试样实际总重量 (g)",
+              "mode": "input"
+            },
+            {
+              "field": "theoryWeights",
+              "label": "理论重量 (g/mm)",
+              "mode": "input"
+            },
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "weightDeviation",
+              "label": "检测结果 (%)",
+              "mode": "computed",
+              "algorithm": "manual",
+              "variant": "weight_deviation",
+              "decimals": 1
+            }
+          ]
+        }
+      ],
+      "computed": [
+        {
+          "field": "weightDeviation",
+          "algorithm": "manual",
+          "variant": "weight_deviation",
+          "from": [
+            "lengths1",
+            "lengths2",
+            "lengths3",
+            "lengths4",
+            "lengths5",
+            "actualWeights",
+            "theoryWeights"
+          ],
+          "label": "重量偏差 (%)",
+          "showDisplay": false
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-11T00:00:00Z",
+    "updated_at": "2026-11-11T00:00:00Z"
   }
 ]

@@ -3,6 +3,22 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(seeds): 弯曲性能/反向弯曲/重量偏差三卡 + IP-0153 verified min/max 回填
+  （2026-11-11 用户裁定「反向弯曲、重量偏差（%）、弯曲性能按报告模板建卡」SSOT 侧）：
+  ① inspection_param_interfaces 24→27——rebar-bend（弯心直径+弯曲结果 select
+  无裂纹/裂纹，2 行，rebar_bend 顶层 computed showDisplay:false）、
+  rebar-reverse-bend（同列 1 行）、rebar-weight-deviation（试样长度×5+实际总重+
+  理论重量+req_select+computed 检测结果列，weight_deviation 算法 dev=(W−ρΣL)/(ρΣL)
+  ×100 保留 1 位）；schema 渲染层新列模式 `select`（options 由种子携带）由消费仓
+  渲染器同批支持。② inspection_param_interface_links 24→27——三参数（IP-0155/
+  IP-0152/IP-0153）→ 三卡 scoped RN-102-1（钢筋力学报告；IP-0155 全局
+  IP-0155→rebar-welding-bend 链保留供其他报告）。③
+  inspection_technical_requirements IP-0153 verified Φ6~12 行 min/max 回填 ±5.5
+  （remark 已有记载；ADR-0055 numeric(12,4) 落地后 integer 置 null 的候选 V014
+  就此收口；reviewed ±4.5/±3.5 行不动——T-2b 人批前不入下拉/判定）。
+  camel 镜像（消费仓 vendor 27/27/238 与 generated 27/28/159）同 commit 节奏同步，
+  verified 行 min/max 消费仓镜像本就为 ±5.5 无需改；消费仓实现详单（rebar_bend/
+  weight_deviation 算法、单项评定全线退役、录入卡排序）见 nextjs CHANGELOG 同日条。
 - feat(seeds): 机械性能表格卡补顶层 computed（2026-11-11 用户报障「保存了但没自动
   评定」修复的 SSOT 侧）：rebar-mech-* 12 卡 config 只有列级 computed，顶层无
   computed → 消费仓 schema.computed 派发从不发生 → verdict 恒不产出。补
