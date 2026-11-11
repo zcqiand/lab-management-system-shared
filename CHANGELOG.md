@@ -5,8 +5,9 @@
 ## [Unreleased]
 - chore(seeds): SAMPLE-FM-0017（YP-2026-F0017-01）牌号 HRB400→HRB400E、规格
   Φ25→Φ32（2026-11-12 用户裁定 SSOT 侧）：种子与消费仓 src/seeds byte-equal
-  同改；消费仓 fixtures 派生面（flow-matrix n===17 单点覆写）与 live PUT 详单
-  见其 CHANGELOG 同日条。
+  同改（含样品名勘误——旧值「钢筋机械连接接头试样」与报告 RN-102-1 钢筋力学
+  性能不符，纠为「钢筋力学性能试样」）；消费仓 fixtures 派生面（flow-matrix
+  n===17 单点覆写）、.next 陈旧缓存复发与 live PUT 详单见其 CHANGELOG 同日条。
 - chore(seeds): RECEIPT-FM-0017 retest_mode double→none（2026-11-11 用户裁定
   「WS-2026-F0017 数据改成非复验报告」SSOT 侧）：live lab_dev 已 PUT 落库；
   种子双侧 byte-equal 同改，防下次 seed:db 翻回。消费仓详单见其 CHANGELOG 同日条。
