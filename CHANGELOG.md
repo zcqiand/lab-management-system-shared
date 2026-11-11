@@ -3,6 +3,12 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): 延伸率修约分档（2026-11-12 用户裁定：GB/T 1499.2 产品标准优先于
+  GB/T 228.1 基底）SSOT 侧：inspection_calculation_methods.json IP-0150 断后
+  伸长率 rounding_rule 修约到 1%→**0.5%**（旧值与速查表不符一并纠）、IP-0151
+  最大力总延伸率 修约到 0.5%→**0.1%**（抗震钢筋习惯）。消费仓实现详单
+  （elongationBy rounder 分档派发 / roundHalf 新导出 / 红-first 两用例）见
+  nextjs CHANGELOG 同日条。
 - fix(seeds): 强度修约收口至整数位（2026-11-12 用户裁定「修约至 1 MPa（保留 0 位
   小数）」SSOT 侧，第二批）：rebar-mech-* steel_tensile **列级** computed 补
   `"decimals": 0`（8 处；顶层 mean 9 处 `showDisplay:false` 不渲染不动），与消费仓
