@@ -3,6 +3,11 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(seeds): REQ-2026-038 T-2 人核通过 → 70 行转 reviewed 并入种子
+  （32→102 行；+70 行带 clause/source_page/source_hash 溯源，GB 1499.2-2024
+  表4/表6/表7 全量切片，verification_status=reviewed 待人批转 verified）。
+  消费仓镜像同步：lab-nextjs 同 commit 节奏（vendor 238 / src 102，byte-copy
+  本仓），见其 CHANGELOG。
 - fix(seeds): 钢筋力学技术要求剥 spec/grade（2026-11-11 人裁定：力学性能只跟牌号，
   规格与等级必须空；grade 对 GB 1499.2 全参数清空，spec 仅弯曲/重量类保留——表7/表4
   直径段是要求本身）。根因与证据链落 `docs/requirements/REQ-2026-038` §6。同 commit

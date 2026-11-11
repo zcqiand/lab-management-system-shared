@@ -41,10 +41,14 @@
 
 1. T-1 ✅ 抽取管线：`lab-nextjs/_work/import-rebar-tech-req.py` → 70 条草稿
    （全 HIGH，表6=40 / 表7=27 / 表4=3）+ 人核报告 `_work/rebar-import-review.md`。
-2. T-2 **人核**（阻塞点，归 zcqiand）：逐行核对 review 报告；Agt 归属行带
-   「OCR 塌缩行归属靠双版对照推定」标注，转 verified 前须对照原 PDF。
-3. T-3 人核通过 → 草稿行并入 shared `seeds/inspection_technical_requirements.json`
-   （draft 状态）→ byte-copy 三镜像 → seed:db → UI 技术要求页复核。
+2. T-2 ✅ **人核**（2026-11-11 人裁「T-2 人核通过」）：70 行全过；Agt 行双版对照
+   标注已核。同键冲突 2 行（重量 Φ6~12 / 弯曲 HRB400 Φ6~25）按澄清 #3 共存不覆盖。
+3. T-3 ✅ 人核通过 → 70 行转 **reviewed** 并入 shared
+   `seeds/inspection_technical_requirements.json`（+70 → 102 行）→ byte-copy 三镜像
+   （vendor 238 / src 102 / shared 102，byte-equal）→ seed:db。**遗留 T-2b**：
+   reviewed → verified 须人批（契约语义：只有 verified+automatic 参与自动评定；
+   DB 面 seed-db 按 PK 三键去重后 P2 落 8 reviewed + 1 verified[反向弯曲]，
+   人批后钢筋自动评定面翻活）。
 4. T-4（可选，人裁）：扩 GB 1499.1-2024 / GB 13788-2024 / JGJ 107-2016；
    LLM 兜底抽取 LOW 行。
 5. T-5（2026-11-11 人批后立）**维度依赖声明与机器不变式**：每个检测参数声明
