@@ -3,6 +3,11 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- chore(seeds): inspection_calculation_methods.json shared 侧回放补欠账——批1
+  （nextjs 25de2d4，2026-11-11 人审定稿表达式）只同步了消费仓三镜像、漏了
+  shared SSOT 侧，seeds-parity 门红（本仓 L4）；字节拷贝恢复双写约定不变式，
+  内容零改动（已人审定稿，非新内容）。另：批1 自己的延批待办「generated 镜像
+  五行漂移」仍归批1 收口。
 - fix(seeds): IP-0152 旧占位链退役——反向弯曲界面修复（2026-11-11 用户报障
   「反向弯曲界面没有改过来」SSOT 侧）：RN-102-1 下 IP-0152 同时挂旧占位链
   （→rebar-mech-tensile，2026-01-01 时代占位，把反向弯曲错绑抗拉表格卡）与新
