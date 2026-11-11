@@ -9,7 +9,10 @@
   yield/tensile/连接件×2 及 4 复验变体=steel_tensile；elongation/agt=elongation
   (+variant agt)；强屈比/超强比=yield_ratio/super_ratio。追加（同日）：顶层 computed
   增 `showDisplay:false`（不要均值行，只要右上角自动评定——2026-11-11 用户裁定）。
-  三镜像（shared SSOT / nextjs src byte-copy / vendor+generated camel）同 commit 节奏；
+  二次追加（同日）：12 卡 table 字段增 `showLabel:false`（不渲染表题小标题——
+  卡头已命名，「屈服强度测定」这类表题行重复，用户裁定去除；消费仓渲染器同批
+  支持）。三镜像（shared SSOT / nextjs src byte-copy / vendor+generated camel）
+  同 commit 节奏；
   消费仓修复详单见 nextjs CHANGELOG 同日条。
 - feat(seeds): REQ-2026-038 T-2 人核通过 → 70 行转 reviewed 并入种子
   （32→102 行；+70 行带 clause/source_page/source_hash 溯源，GB 1499.2-2024

@@ -295,7 +295,8 @@
               "op": "lt",
               "value": 540
             }
-          }
+          },
+          "showLabel": false
         },
         {
           "field": "fractureLocations",
@@ -360,7 +361,8 @@
               "op": "lt",
               "value": 400
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -411,7 +413,8 @@
               "label": "标准要求",
               "mode": "req_select"
             }
-          ]
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -471,7 +474,8 @@
               "op": "lt",
               "value": 540
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -529,7 +533,8 @@
               "op": "lt",
               "value": 400
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -570,7 +575,8 @@
               "label": "标准要求",
               "mode": "req_select"
             }
-          ]
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -894,7 +900,8 @@
               "op": "lt",
               "value": 400
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -952,7 +959,8 @@
               "op": "lt",
               "value": 540
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1010,7 +1018,8 @@
               "op": "lt",
               "value": 400
             }
-          }
+          },
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1068,7 +1077,8 @@
               "op": "lt",
               "value": 540
             }
-          }
+          },
+          "showLabel": false
         },
         {
           "field": "fractureLocations",
@@ -1127,7 +1137,8 @@
               "label": "标准要求",
               "mode": "req_select"
             }
-          ]
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1171,7 +1182,8 @@
               "label": "标准要求",
               "mode": "req_select"
             }
-          ]
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
