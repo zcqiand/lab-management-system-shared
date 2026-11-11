@@ -3,6 +3,13 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(seeds): 机械性能表格卡补顶层 computed（2026-11-11 用户报障「保存了但没自动
+  评定」修复的 SSOT 侧）：rebar-mech-* 12 卡 config 只有列级 computed，顶层无
+  computed → 消费仓 schema.computed 派发从不发生 → verdict 恒不产出。补
+  yield/tensile/连接件×2 及 4 复验变体=steel_tensile；elongation/agt=elongation
+  (+variant agt)；强屈比/超强比=yield_ratio/super_ratio。三镜像（shared SSOT /
+  nextjs src byte-copy / vendor+generated camel）同 commit 节奏；消费仓修复详单
+  见 nextjs CHANGELOG 同日条。
 - feat(seeds): REQ-2026-038 T-2 人核通过 → 70 行转 reviewed 并入种子
   （32→102 行；+70 行带 clause/source_page/source_hash 溯源，GB 1499.2-2024
   表4/表6/表7 全量切片，verification_status=reviewed 待人批转 verified）。
