@@ -3,6 +3,12 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): IP-0152 旧占位链退役——反向弯曲界面修复（2026-11-11 用户报障
+  「反向弯曲界面没有改过来」SSOT 侧）：RN-102-1 下 IP-0152 同时挂旧占位链
+  （→rebar-mech-tensile，2026-01-01 时代占位，把反向弯曲错绑抗拉表格卡）与新
+  模板卡链（→rebar-reverse-bend），消费仓 resolveInterfaceByParam 同层先登记者
+  胜出 → 旧链排前遮蔽新卡。四镜像删链（26 行；消费仓实现详单与真种子回归锚
+  三支见 nextjs CHANGELOG 同日条）。
 - feat(seeds): 弯曲性能/反向弯曲/重量偏差三卡 + IP-0153 verified min/max 回填
   （2026-11-11 用户裁定「反向弯曲、重量偏差（%）、弯曲性能按报告模板建卡」SSOT 侧）：
   ① inspection_param_interfaces 24→27——rebar-bend（弯心直径+弯曲结果 select

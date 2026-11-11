@@ -72,14 +72,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "inspection_parameter_code": "IP-0152",
-    "param_interface_code": "rebar-mech-tensile",
-    "report_name_code": "RN-102-1",
-    "inspection_standard_code": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "inspection_parameter_code": "IP-0155",
     "param_interface_code": "rebar-welding-bend",
     "report_name_code": null,
