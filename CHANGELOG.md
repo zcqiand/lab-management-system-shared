@@ -3,6 +3,18 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): 拆卡旧占位链清理 SSOT 侧——IP-0560/IP-0097 同款 link 遮蔽（2026-11-12
+  用户裁定「同批清理」，与 IP-0152 旧链退役同模式）：2026-11-10 拆卡波只加新卡链
+  没删旧占位链，同层先登记者胜出，旧链抢走解析——IP-0560 超强比旧链
+  →rebar-mech-yield-ratio（2026-01-01 错绑强屈比卡）遮蔽 →rebar-mech-super-ratio；
+  IP-0097 最大力总延伸率旧链 →rebar-mech-elongation（错绑断后伸长率卡）遮蔽
+  →rebar-mech-agt。inspection_param_interface_links.json 删 2 行（26→24；IP-0559
+  强屈比链不动）。消费仓实现详单（真种子回归锚三支、generated/vendor camel 镜像
+  同步）见 nextjs CHANGELOG 同日条。
+- fix(seeds): 焊接抗拉强度修约至 1 MPa 整数位 SSOT 侧（2026-11-12 用户裁定：
+  JGJ/T 27-2014 §3 引 GB/T 228.1，GB/T 8170 四舍六入五成双）——纯消费仓代码批，
+  shared 侧无种子面改动，仅记事。消费仓实现详单（tensileStrength/meanOfSpecimen/
+  weldingTensile 均值转整数、DOM 五钉）见 nextjs CHANGELOG 同条。
 - fix(seeds): 延伸率修约分档（2026-11-12 用户裁定：GB/T 1499.2 产品标准优先于
   GB/T 228.1 基底）SSOT 侧：inspection_calculation_methods.json IP-0150 断后
   伸长率 rounding_rule 修约到 1%→**0.5%**（旧值与速查表不符一并纠）、IP-0151
