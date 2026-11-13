@@ -3,6 +3,10 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): GB/T 1345 种子升版 2005→2026 回放（lab-nextjs 同批，2026-11-13 人裁
+  「2026 有效、2005 过期，后续标准版本漂移都按语料现行版升种」）——
+  inspection_standards 行 code/version 升 2026 + 接样单 testing_basis 14 处 +
+  标准参数/对象标准/报告名标准关联表，四镜像 byte-equal。
 - fix(seeds): 计算方法公式面 kN 语境同步（bb57dfc，lab-nextjs 批D 裁定① 随批回放）——
   IP-0086/0087 四行 formula `ROUND_HALF_EVEN(Fm / ...)` → `ROUND_HALF_EVEN(Fm * 1000 / ...)`，
   与 nextjs src/seeds、vendor/msw、data/generated 四镜像 byte-equal；引擎/REGISTRY 不动

@@ -242,9 +242,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GB/T 1345-2005",
+    "code": "GB/T 1345-2026",
     "name": "水泥细度检验方法 筛析法",
-    "version": "2005",
+    "version": "2026",
     "status": "active",
     "source_document_id": null,
     "source_hash": null,
