@@ -3,6 +3,11 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(seeds): IP-0002 安定性新行回放（lab-nextjs 批F 人裁落点同批）——
+  inspection_calculation_methods.json +IP-0002 行（OBJ-SP01-P1 × GB 175-2023，
+  manual×2；按 seeds-parity 门契约与 nextjs src/seeds 快照 byte-equal，真实导入
+  时间戳）；nextjs 侧详单（--write 落盘 + seed:db 重浇 + file: 依赖陈旧副本指纹
+  复发处置）见 nextjs CHANGELOG 同日条。
 - fix(seeds): GB/T 200 种子升版 2017→2025 回放（lab-nextjs 同批，常设令第二例，
   语料 2025 版代替 2017）——standards 行 + 接样单 7 处 + 关联表，四镜像 byte-equal。
 - fix(seeds): GB/T 1345 种子升版 2005→2026 回放（lab-nextjs 同批，2026-11-13 人裁
