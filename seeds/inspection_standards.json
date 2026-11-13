@@ -407,9 +407,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GB/T 200-2017",
+    "code": "GB/T 200-2025",
     "name": "中热硅酸盐水泥、低热硅酸盐水泥",
-    "version": "2017",
+    "version": "2025",
     "status": "active",
     "source_document_id": null,
     "source_hash": null,

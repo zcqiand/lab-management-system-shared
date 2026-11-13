@@ -3,6 +3,8 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds): GB/T 200 种子升版 2017→2025 回放（lab-nextjs 同批，常设令第二例，
+  语料 2025 版代替 2017）——standards 行 + 接样单 7 处 + 关联表，四镜像 byte-equal。
 - fix(seeds): GB/T 1345 种子升版 2005→2026 回放（lab-nextjs 同批，2026-11-13 人裁
   「2026 有效、2005 过期，后续标准版本漂移都按语料现行版升种」）——
   inspection_standards 行 code/version 升 2026 + 接样单 testing_basis 14 处 +
