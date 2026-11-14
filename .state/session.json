@@ -1,22 +1,23 @@
 {
   "schema": 1,
   "project": "lab-management-system-shared",
-  "current_task": "动态表单 Schema/Data 解耦（ADR-0056，2026-11-10 人批 + 批中追加裁定）",
+  "current_task": "批H 三件收官（V014 小数限值 + calc PK 补 standard 维度 + IP-0554 并入 IP-0006 + MgO 补绑）",
   "done": [
-    "schema.ts 三表改造：param_interfaces 去 component_path/is_official/sort_order + version int default 1，config 语义升级=表单结构 schema；test_records 去 requirement_code + data jsonb default {}；links 去 config + inspection_standard_code（FK set null）",
-    "drizzle 增量迁移 0001-0004（两段式生成避开 drizzle-kit 交互 rename 询问；禁手改 drizzle SQL 纪律未破）；lab_dev/lab_test 已 migrate 数据零动，prod 未动（随 ADR-0055 窗口人批）",
-    "tsp 三模型同步（ParamInterface/TestRecord/ParamInterfaceLink + Create/Update），openapi 重编译",
-    "seeds：18 参数界面 config 全 schema 化（8 字段类型/computed 7 算法域/variant 扩展/params 常数）；test_records 150 行去 requirement_code；links 22 行换列",
-    "gate exit 0；CHANGELOG [Unreleased] 新增 ADR-0056 段"
+    "CAT-SMK-001 冒烟行删除（2026-11-14 人裁，0e83b50）：种子 31→30 + lab_dev 14 行对齐清引用，与 nextjs 四镜像同批回放",
+    "V018 calc PK 补 standard 维度：schema.ts PK 三列 + testing_standard_code NOT NULL + FK set null→no action（行为变更：删被引用标准码从静默置空变报错阻断），迁移 0009_sturdy_romulus.sql 应用 lab_dev（7cb163b）",
+    "批H 种子回放 byte-equal ×6 文件（5 种子 a7a5f0e/355f088 + tech-req 125 行）",
+    "101 模板单源 assets/templates 批H 同步（IP-0554→IP-0006 4 处，9dd8c3a）+ sync 六消费位（react/vue parity 回放）",
+    "drizzle.replay 4 处既有漂移随批修复（表清单/租户列/索引名/时间戳空串），PK 三列断言新用例绿 7/7",
+    "双门 L0-L5 exit 0",
+    "收官 commits：shared 53890bd / suite 93eac20"
   ],
-  "next": [
-    "兄弟仓回放队列：aspnetcore/springboot/rails/react/vue/fastapi/laravel/go/ktor/django 等按家族批次重 pull schema + 修租户查询（清单见 shared CHANGELOG [Unreleased]）",
-    "prod 库 rebaseline 窗口：需人批（NODE_ENV=production + PG_REBASELINE_ALLOW=1）"
+  "next": "无进行中批；挂账待人裁：E2 report 维度 + V018 兄弟仓回放窗口",
+  "open_questions": [
+    "V018 兄弟仓回放窗口（消费 calc 表后端仓）",
+    "E2 report 维度键设计待人裁（半账保留，见 SKILL.md §六-8）"
   ],
-  "open_questions": [],
   "dont": [
-    "prod（100.79.128.25）在六裁定回放完成前禁止部署窗口",
+    "prod 部署窗口待 V018 回放队列完成后人批",
     "seeds 双源改动必须同 commit 双写（seeds-parity 门咬漂移）"
-  ],
-  "history": []
+  ]
 }
