@@ -821,10 +821,37 @@
   {
     "code": "32.5",
     "inspection_object_code": "OBJ-SP01-P1",
-    "name": "32.5（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
+    "name": "32.5",
+    "remark": "",
+    "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "BR-OBJ-SP01-P1-32.5R",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "32.5R",
+    "remark": "",
+    "sort_order": 2,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "BR-OBJ-SP01-P1-42.5",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "42.5",
+    "remark": "",
+    "sort_order": 3,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "BR-OBJ-SP01-P1-42.5R",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "42.5R",
+    "remark": "",
+    "sort_order": 4,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
   }
 ]

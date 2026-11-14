@@ -551,28 +551,73 @@
   {
     "code": "Φ6~12",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "Φ6~12（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
+    "name": "Φ6~12",
+    "remark": "",
+    "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
   },
   {
     "code": "Φ6~25",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "Φ6~25（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
+    "name": "Φ6~25",
+    "remark": "",
+    "sort_order": 2,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
   },
   {
     "code": "3d",
     "inspection_object_code": "OBJ-SP01-P1",
-    "name": "3d（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
+    "name": "3d",
+    "remark": "",
+    "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "SP-OBJ-SP01-P1-28d",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "28d",
+    "remark": "",
+    "sort_order": 2,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "SP-OBJ-SP01-P2-Φ14~20",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "Φ14~20",
+    "remark": "",
+    "sort_order": 3,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "SP-OBJ-SP01-P2-Φ22~50",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "Φ22~50",
+    "remark": "",
+    "sort_order": 4,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "SP-OBJ-SP01-P2-Φ28~40",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "Φ28~40",
+    "remark": "",
+    "sort_order": 5,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
+  },
+  {
+    "code": "SP-OBJ-SP01-P2-Φ>40~50",
+    "inspection_object_code": "OBJ-SP01-P2",
+    "name": "Φ>40~50",
+    "remark": "",
+    "sort_order": 6,
+    "created_at": "2026-11-14T16:20:47.744Z",
+    "updated_at": "2026-11-14T16:20:47.744Z"
   }
 ]

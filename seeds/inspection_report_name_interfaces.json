@@ -20,14 +20,20 @@
     "code": "sri-mech-joint",
     "name": "钢筋机械连接接头样品扩展属性",
     "description": "RN-102-2 样品扩展属性（2026-11-10 ext_fields→interface 迁移）：接头类型 + 对应部位混凝土浇筑时间。",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
           "field": "jointType",
           "label": "接头类型",
           "type": "select",
-          "options": []
+          "options": [
+            "套筒挤压接头",
+            "锥螺纹接头",
+            "剥肋滚轧直螺纹接头",
+            "直接滚轧直螺纹接头",
+            "镦粗直螺纹接头"
+          ]
         },
         {
           "field": "concreteCastingDate",
@@ -37,7 +43,7 @@
       ]
     },
     "created_at": "2026-11-10T00:00:00Z",
-    "updated_at": "2026-11-10T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
   },
   {
     "code": "sri-welding",
@@ -77,7 +83,11 @@
           "field": "curingCondition",
           "label": "养护条件",
           "type": "select",
-          "options": ["自然养护", "标准养护", "蒸压养护"],
+          "options": [
+            "自然养护",
+            "标准养护",
+            "蒸压养护"
+          ],
           "defaultValue": "自然养护"
         },
         {
@@ -101,7 +111,11 @@
           "field": "curingCondition",
           "label": "养护条件",
           "type": "select",
-          "options": ["自然养护", "标准养护", "蒸压养护"],
+          "options": [
+            "自然养护",
+            "标准养护",
+            "蒸压养护"
+          ],
           "defaultValue": "自然养护"
         },
         {

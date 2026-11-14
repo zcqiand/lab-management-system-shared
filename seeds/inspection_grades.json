@@ -2,11 +2,11 @@
   {
     "code": "1区",
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
-    "name": "1区（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
+    "name": "1区",
+    "remark": "",
+    "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-14T16:20:47.744Z"
   },
   {
     "code": "42.5",
