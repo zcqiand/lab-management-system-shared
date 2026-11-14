@@ -668,11 +668,11 @@
   {
     "code": "BR-OBJ-SP01-P2-HRB600",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "钢筋带肋 HRB600",
+    "name": "HRB600",
     "remark": "",
     "sort_order": 75,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-15T00:00:00Z"
   },
   {
     "code": "BR-OBJ-SP01-P2-HRBF335",
