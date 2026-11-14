@@ -606,11 +606,14 @@ export const inspectionTechnicalRequirements = pgTable(
     clause: text("clause"),
     sourcePage: integer("source_page"),
     sourceHash: text("source_hash"),
-    brand: text("brand"),
-    model: text("model"),
-    grade: text("grade"),
-    spec: text("spec"),
-    sieve: text("sieve"),
+    // V020（2026-11-15 方案 A 人批）：变体列进 PK——同 3 键下不同 brand/model/
+    // spec/grade/sieve 变体行（seed 125 行 vs 旧 PK 只活 41 行）不再互吞。
+    // '' 哨兵=不限维度；字典 FK 撤除（'' 过不了 FK，set null 会破 NOT NULL PK）。
+    brand: text("brand").default("").notNull(),
+    model: text("model").default("").notNull(),
+    grade: text("grade").default("").notNull(),
+    spec: text("spec").default("").notNull(),
+    sieve: text("sieve").default("").notNull(),
     remark: text("remark"),
     sortOrder: integer("sort_order").default(0).notNull(),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "string" }).defaultNow().notNull(),
@@ -618,7 +621,16 @@ export const inspectionTechnicalRequirements = pgTable(
   },
   (t) => [
     primaryKey({
-      columns: [t.inspectionObjectCode, t.inspectionParameterCode, t.judgmentStandardCode],
+      columns: [
+        t.inspectionObjectCode,
+        t.inspectionParameterCode,
+        t.judgmentStandardCode,
+        t.brand,
+        t.model,
+        t.spec,
+        t.grade,
+        t.sieve,
+      ],
       name: "inspection_technical_requirements_pkey",
     }),
     index("idx_tech_req_object").on(t.inspectionObjectCode),
@@ -654,26 +666,7 @@ export const inspectionTechnicalRequirements = pgTable(
       foreignColumns: [inspectionStandards.code],
       name: "tech_req_judgment_standard_fk",
     }).onDelete("restrict"),
-    foreignKey({
-      columns: [t.brand],
-      foreignColumns: [inspectionBrands.code],
-      name: "tech_req_brand_fk",
-    }).onDelete("set null"),
-    foreignKey({
-      columns: [t.model],
-      foreignColumns: [inspectionModels.code],
-      name: "tech_req_model_fk",
-    }).onDelete("set null"),
-    foreignKey({
-      columns: [t.grade],
-      foreignColumns: [inspectionGrades.code],
-      name: "tech_req_grade_fk",
-    }).onDelete("set null"),
-    foreignKey({
-      columns: [t.spec],
-      foreignColumns: [inspectionSpecs.code],
-      name: "tech_req_spec_fk",
-    }).onDelete("set null"),
+    // V020 撤 brand/model/grade/spec 四字典 FK（'' 哨兵过不了 FK；set null 破 PK）
   ],
 );
 

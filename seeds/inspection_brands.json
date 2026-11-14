@@ -506,11 +506,11 @@
   {
     "code": "BR-OBJ-SP01-P2-CPB550",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "冷拔光面 CPB550",
+    "name": "CPB550",
     "remark": "",
     "sort_order": 81,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-15T00:00:00Z"
   },
   {
     "code": "BR-OBJ-SP01-P2-CRB550",
