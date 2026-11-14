@@ -28,7 +28,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -57,7 +59,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -107,7 +108,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -136,7 +139,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -194,7 +196,9 @@
     "test_end_date": "2026-07-06",
     "original_record_no": "JL-2026-F0003",
     "remark": "数据录入中",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -223,7 +227,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -288,7 +291,9 @@
     "test_end_date": "2026-07-07",
     "original_record_no": "JL-2026-F0004",
     "remark": "待审核",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -317,7 +322,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -389,7 +393,9 @@
     "test_end_date": "2026-07-08",
     "original_record_no": "JL-2026-F0005",
     "remark": "待批准",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -418,7 +424,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -497,7 +502,9 @@
     "test_end_date": "2026-07-09",
     "original_record_no": "JL-2026-F0006",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -526,7 +533,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -612,7 +618,9 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0007",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB 175-2023"],
+    "judgment_basis": [
+      "GB 175-2023"
+    ],
     "testing_basis": [
       "GB/T 1345-2026",
       "GB/T 1346-2024",
@@ -641,7 +649,6 @@
       "IP-0551",
       "IP-0552",
       "IP-0553",
-      "IP-0554",
       "IP-0555",
       "IP-0556",
       "IP-0557",
@@ -735,7 +742,9 @@
     "original_record_no": "",
     "retest_mode": "double",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -801,7 +810,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -875,7 +886,9 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0010",
     "remark": "数据录入中",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -956,7 +969,9 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0011",
     "remark": "待审核",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -1044,7 +1059,9 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0012",
     "remark": "待批准",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -1139,7 +1156,9 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0013",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -1241,7 +1260,9 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0014",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB 1499.2-2024"],
+    "judgment_basis": [
+      "GB 1499.2-2024"
+    ],
     "testing_basis": [
       "GB 1499.2-2024",
       "GB 50204-2015",
@@ -1350,7 +1371,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1359,7 +1382,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -1404,7 +1429,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1413,7 +1440,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -1467,7 +1496,9 @@
     "original_record_no": "JL-2026-F0017",
     "retest_mode": "none",
     "remark": "数据录入中",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1476,7 +1507,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -1536,7 +1569,9 @@
     "test_end_date": "2026-07-21",
     "original_record_no": "JL-2026-F0018",
     "remark": "待审核",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1545,7 +1580,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -1612,7 +1649,9 @@
     "test_end_date": "2026-07-22",
     "original_record_no": "JL-2026-F0019",
     "remark": "待批准",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1621,7 +1660,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -1695,7 +1736,9 @@
     "test_end_date": "2026-07-23",
     "original_record_no": "JL-2026-F0020",
     "remark": "已批准,待发放",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1704,7 +1747,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -1785,7 +1830,9 @@
     "test_end_date": "2026-07-24",
     "original_record_no": "JL-2026-F0021",
     "remark": "已发放,待归档",
-    "judgment_basis": ["JGJ 107-2016"],
+    "judgment_basis": [
+      "JGJ 107-2016"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 42901-2023",
@@ -1794,7 +1841,9 @@
       "Q/ZTG 001-2025",
       "T/ZBTA 02-2024"
     ],
-    "test_parameters": ["IP-0087"],
+    "test_parameters": [
+      "IP-0087"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -1882,7 +1931,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -1890,7 +1941,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -2623,7 +2677,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -2631,7 +2687,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -2684,7 +2743,9 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0024",
     "remark": "数据录入中",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -2692,7 +2753,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -2752,7 +2816,9 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0025",
     "remark": "待审核",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -2760,7 +2826,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -2827,7 +2896,9 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0026",
     "remark": "待批准",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -2835,7 +2906,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -2909,7 +2983,9 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0027",
     "remark": "已批准,待发放",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -2917,7 +2993,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -2998,7 +3077,9 @@
     "test_end_date": "2026-07-05",
     "original_record_no": "JL-2026-F0028",
     "remark": "已发放,待归档",
-    "judgment_basis": ["JGJ 18-2012"],
+    "judgment_basis": [
+      "JGJ 18-2012"
+    ],
     "testing_basis": [
       "GB/T 228.1-2021",
       "GB/T 2651-2023",
@@ -3006,7 +3087,10 @@
       "JGJ/T 27-2014",
       "Q/ZTG 001-2025"
     ],
-    "test_parameters": ["IP-0087", "IP-0155"],
+    "test_parameters": [
+      "IP-0087",
+      "IP-0155"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -3094,7 +3178,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3163,7 +3249,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3240,7 +3328,9 @@
     "test_end_date": "2026-07-08",
     "original_record_no": "JL-2026-F0031",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3324,7 +3414,9 @@
     "test_end_date": "2026-07-09",
     "original_record_no": "JL-2026-F0032",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3415,7 +3507,9 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0033",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3513,7 +3607,9 @@
     "test_end_date": "2026-07-11",
     "original_record_no": "JL-2026-F0034",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3618,7 +3714,9 @@
     "test_end_date": "2026-07-12",
     "original_record_no": "JL-2026-F0035",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 14684-2022"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 14684-2022",
@@ -3730,8 +3828,14 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -3790,8 +3894,14 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -3858,8 +3968,14 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0038",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -3933,8 +4049,14 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0039",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -4015,8 +4137,14 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0040",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -4104,8 +4232,14 @@
     "test_end_date": "2026-07-18",
     "original_record_no": "JL-2026-F0041",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -4200,8 +4334,14 @@
     "test_end_date": "2026-07-19",
     "original_record_no": "JL-2026-F0042",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "GB/T 14685-2022", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "GB/T 14685-2022",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -4303,8 +4443,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4364,8 +4509,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4433,8 +4583,13 @@
     "test_end_date": "2026-07-22",
     "original_record_no": "JL-2026-F0045",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4509,8 +4664,13 @@
     "test_end_date": "2026-07-23",
     "original_record_no": "JL-2026-F0046",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4592,8 +4752,13 @@
     "test_end_date": "2026-07-24",
     "original_record_no": "JL-2026-F0047",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4682,8 +4847,13 @@
     "test_end_date": "2026-07-25",
     "original_record_no": "JL-2026-F0048",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4779,8 +4949,13 @@
     "test_end_date": "2026-07-26",
     "original_record_no": "JL-2026-F0049",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0059",
@@ -4883,8 +5058,14 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6140,8 +6321,14 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6207,8 +6394,14 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0052",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6281,8 +6474,14 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0053",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6362,8 +6561,14 @@
     "test_end_date": "2026-07-05",
     "original_record_no": "JL-2026-F0054",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6450,8 +6655,14 @@
     "test_end_date": "2026-07-06",
     "original_record_no": "JL-2026-F0055",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6545,8 +6756,14 @@
     "test_end_date": "2026-07-07",
     "original_record_no": "JL-2026-F0056",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 14685-2022"],
-    "testing_basis": ["GB 6566-2010", "JGJ 52-2006", "TB∕T 3275-2018"],
+    "judgment_basis": [
+      "GB/T 14685-2022"
+    ],
+    "testing_basis": [
+      "GB 6566-2010",
+      "JGJ 52-2006",
+      "TB∕T 3275-2018"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0059",
@@ -6647,8 +6864,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -6705,8 +6927,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -6771,8 +6998,13 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0059",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -6844,8 +7076,13 @@
     "test_end_date": "2026-07-11",
     "original_record_no": "JL-2026-F0060",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -6924,8 +7161,13 @@
     "test_end_date": "2026-07-12",
     "original_record_no": "JL-2026-F0061",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -7011,8 +7253,13 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0062",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -7105,8 +7352,13 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0063",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 14684-2022"],
-    "testing_basis": ["GB/T 14684-2022", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB/T 14684-2022"
+    ],
+    "testing_basis": [
+      "GB/T 14684-2022",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0059",
       "IP-0171",
@@ -7206,7 +7458,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7267,7 +7521,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7336,7 +7592,9 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0066",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7412,7 +7670,9 @@
     "test_end_date": "2026-07-18",
     "original_record_no": "JL-2026-F0067",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7495,7 +7755,9 @@
     "test_end_date": "2026-07-19",
     "original_record_no": "JL-2026-F0068",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7585,7 +7847,9 @@
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0069",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7682,7 +7946,9 @@
     "test_end_date": "2026-07-21",
     "original_record_no": "JL-2026-F0070",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 15762-2020"],
+    "judgment_basis": [
+      "GB/T 15762-2020"
+    ],
     "testing_basis": [],
     "test_parameters": [
       "IP-0055",
@@ -7786,9 +8052,18 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -7833,9 +8108,18 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -7888,9 +8172,18 @@
     "test_end_date": "2026-07-24",
     "original_record_no": "JL-2026-F0073",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -7950,9 +8243,18 @@
     "test_end_date": "2026-07-25",
     "original_record_no": "JL-2026-F0074",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -8019,9 +8321,18 @@
     "test_end_date": "2026-07-26",
     "original_record_no": "JL-2026-F0075",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -8095,9 +8406,18 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0076",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -8178,9 +8498,18 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0077",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 21144-2023"],
-    "testing_basis": ["GB/T 21144-2023", "GB/T 13545 - 2014"],
-    "test_parameters": ["IP-0059", "IP-0090", "IP-0195"],
+    "judgment_basis": [
+      "GB/T 21144-2023"
+    ],
+    "testing_basis": [
+      "GB/T 21144-2023",
+      "GB/T 13545 - 2014"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0090",
+      "IP-0195"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -8269,8 +8598,18 @@
     "original_record_no": "",
     "remark": "刚接样,未提交",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -8316,8 +8655,18 @@
     "original_record_no": "",
     "remark": "待分配检测人员",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -8371,8 +8720,18 @@
     "original_record_no": "JL-2026-F0080",
     "remark": "数据录入中",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -8433,8 +8792,18 @@
     "original_record_no": "JL-2026-F0081",
     "remark": "待审核",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -8502,8 +8871,18 @@
     "original_record_no": "JL-2026-F0082",
     "remark": "待批准",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -8578,8 +8957,18 @@
     "original_record_no": "JL-2026-F0083",
     "remark": "已批准,待发放",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -8661,8 +9050,18 @@
     "original_record_no": "JL-2026-F0084",
     "remark": "已发放,待归档",
     "judgment_basis": [],
-    "testing_basis": ["GB 50208-2011", "GB/T 2542-2012"],
-    "test_parameters": ["IP-0059", "IP-0155", "IP-0190", "IP-0191", "IP-0192", "IP-0195"],
+    "testing_basis": [
+      "GB 50208-2011",
+      "GB/T 2542-2012"
+    ],
+    "test_parameters": [
+      "IP-0059",
+      "IP-0155",
+      "IP-0190",
+      "IP-0191",
+      "IP-0192",
+      "IP-0195"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -8750,8 +9149,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -8808,8 +9212,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -8874,8 +9283,13 @@
     "test_end_date": "2026-07-12",
     "original_record_no": "JL-2026-F0087",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -8947,8 +9361,13 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0088",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9027,8 +9446,13 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0089",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9114,8 +9538,13 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0090",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9208,8 +9637,13 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0091",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 5101-2017"],
-    "testing_basis": ["GB/T 2542-2012", "GB/T 4111-2013"],
+    "judgment_basis": [
+      "GB/T 5101-2017"
+    ],
+    "testing_basis": [
+      "GB/T 2542-2012",
+      "GB/T 4111-2013"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9309,8 +9743,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9368,8 +9807,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9435,8 +9879,13 @@
     "test_end_date": "2026-07-19",
     "original_record_no": "JL-2026-F0094",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9509,8 +9958,13 @@
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0095",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9590,8 +10044,13 @@
     "test_end_date": "2026-07-21",
     "original_record_no": "JL-2026-F0096",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9678,8 +10137,13 @@
     "test_end_date": "2026-07-22",
     "original_record_no": "JL-2026-F0097",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9773,8 +10237,13 @@
     "test_end_date": "2026-07-23",
     "original_record_no": "JL-2026-F0098",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 11968-2020"],
-    "testing_basis": ["GB/T 10294-2008", "GB/T 11969-2020"],
+    "judgment_basis": [
+      "GB/T 11968-2020"
+    ],
+    "testing_basis": [
+      "GB/T 10294-2008",
+      "GB/T 11969-2020"
+    ],
     "test_parameters": [
       "IP-0055",
       "IP-0056",
@@ -9875,9 +10344,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -10166,9 +10643,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -10221,9 +10706,17 @@
     "test_end_date": "2026-07-26",
     "original_record_no": "JL-2026-F0101",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -10283,9 +10776,17 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0102",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -10352,9 +10853,17 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0103",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -10428,9 +10937,17 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0104",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -10511,9 +11028,17 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0105",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 50081-2019"],
-    "testing_basis": ["GB/T 50081-2019", "JTG 3420-2020", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "GB/T 50081-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JTG 3420-2020",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -10601,9 +11126,16 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -10648,9 +11180,16 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -10703,9 +11242,16 @@
     "test_end_date": "2026-07-07",
     "original_record_no": "JL-2026-F0108",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -10765,9 +11311,16 @@
     "test_end_date": "2026-07-08",
     "original_record_no": "JL-2026-F0109",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -10834,9 +11387,16 @@
     "test_end_date": "2026-07-09",
     "original_record_no": "JL-2026-F0110",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -10910,9 +11470,16 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0111",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -10993,9 +11560,16 @@
     "test_end_date": "2026-07-11",
     "original_record_no": "JL-2026-F0112",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 50082-2024"],
-    "testing_basis": ["GB/T 50081-2019", "GB/T 50082-2024"],
-    "test_parameters": ["IP-0190"],
+    "judgment_basis": [
+      "GB/T 50082-2024"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "GB/T 50082-2024"
+    ],
+    "test_parameters": [
+      "IP-0190"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -11083,8 +11657,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11144,8 +11723,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11213,8 +11797,13 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0115",
     "remark": "数据录入中",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11289,8 +11878,13 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0116",
     "remark": "待审核",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11372,8 +11966,13 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0117",
     "remark": "待批准",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11462,8 +12061,13 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0118",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11559,8 +12163,13 @@
     "test_end_date": "2026-07-18",
     "original_record_no": "JL-2026-F0119",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB 55008-2021"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ 52-2006"],
+    "judgment_basis": [
+      "GB 55008-2021"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ 52-2006"
+    ],
     "test_parameters": [
       "IP-0003",
       "IP-0004",
@@ -11663,8 +12272,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -11726,8 +12340,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -11797,8 +12416,13 @@
     "test_end_date": "2026-07-21",
     "original_record_no": "JL-2026-F0122",
     "remark": "数据录入中",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -11875,8 +12499,13 @@
     "test_end_date": "2026-07-22",
     "original_record_no": "JL-2026-F0123",
     "remark": "待审核",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -11960,8 +12589,13 @@
     "test_end_date": "2026-07-23",
     "original_record_no": "JL-2026-F0124",
     "remark": "待批准",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -12052,8 +12686,13 @@
     "test_end_date": "2026-07-24",
     "original_record_no": "JL-2026-F0125",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -12151,8 +12790,13 @@
     "test_end_date": "2026-07-25",
     "original_record_no": "JL-2026-F0126",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB 8076-2008"],
-    "testing_basis": ["GB 8076-2008", "GB 50119-2013"],
+    "judgment_basis": [
+      "GB 8076-2008"
+    ],
+    "testing_basis": [
+      "GB 8076-2008",
+      "GB 50119-2013"
+    ],
     "test_parameters": [
       "IP-0004",
       "IP-0074",
@@ -12257,8 +12901,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -12901,8 +13550,13 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -12965,8 +13619,13 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0129",
     "remark": "数据录入中",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -13036,8 +13695,13 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0130",
     "remark": "待审核",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -13114,8 +13778,13 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0131",
     "remark": "待批准",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -13199,8 +13868,13 @@
     "test_end_date": "2026-07-05",
     "original_record_no": "JL-2026-F0132",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -13291,8 +13965,13 @@
     "test_end_date": "2026-07-06",
     "original_record_no": "JL-2026-F0133",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB 23439-2009"],
-    "testing_basis": ["GB 23439-2009", "GB/T 3183-2025"],
+    "judgment_basis": [
+      "GB 23439-2009"
+    ],
+    "testing_basis": [
+      "GB 23439-2009",
+      "GB/T 3183-2025"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0006",
@@ -13390,7 +14069,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13460,7 +14141,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13538,7 +14221,9 @@
     "test_end_date": "2026-07-09",
     "original_record_no": "JL-2026-F0136",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13623,7 +14308,9 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0137",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13715,7 +14402,9 @@
     "test_end_date": "2026-07-11",
     "original_record_no": "JL-2026-F0138",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13814,7 +14503,9 @@
     "test_end_date": "2026-07-12",
     "original_record_no": "JL-2026-F0139",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -13920,7 +14611,9 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0140",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 18046-2017"],
+    "judgment_basis": [
+      "GB/T 18046-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 176-2025",
@@ -14033,7 +14726,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14103,7 +14798,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14181,7 +14878,9 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0143",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14266,7 +14965,9 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0144",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14358,7 +15059,9 @@
     "test_end_date": "2026-07-18",
     "original_record_no": "JL-2026-F0145",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14457,7 +15160,9 @@
     "test_end_date": "2026-07-19",
     "original_record_no": "JL-2026-F0146",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14563,7 +15268,9 @@
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0147",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 1596-2017"],
+    "judgment_basis": [
+      "GB/T 1596-2017"
+    ],
     "testing_basis": [
       "GB 6566-2010",
       "GB/T 1345-2026",
@@ -14676,8 +15383,12 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -14735,8 +15446,12 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -14802,8 +15517,12 @@
     "test_end_date": "2026-07-23",
     "original_record_no": "JL-2026-F0150",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -14876,8 +15595,12 @@
     "test_end_date": "2026-07-24",
     "original_record_no": "JL-2026-F0151",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -14957,8 +15680,12 @@
     "test_end_date": "2026-07-25",
     "original_record_no": "JL-2026-F0152",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -15045,8 +15772,12 @@
     "test_end_date": "2026-07-26",
     "original_record_no": "JL-2026-F0153",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -15140,8 +15871,12 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0154",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 25181-2019"],
-    "testing_basis": ["JGJ/T 70-2009"],
+    "judgment_basis": [
+      "GB/T 25181-2019"
+    ],
+    "testing_basis": [
+      "JGJ/T 70-2009"
+    ],
     "test_parameters": [
       "IP-0001",
       "IP-0005",
@@ -15242,9 +15977,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -17132,9 +17875,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -17187,9 +17938,17 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0157",
     "remark": "数据录入中",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -17249,9 +18008,17 @@
     "test_end_date": "2026-07-05",
     "original_record_no": "JL-2026-F0158",
     "remark": "待审核",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -17318,9 +18085,17 @@
     "test_end_date": "2026-07-06",
     "original_record_no": "JL-2026-F0159",
     "remark": "待批准",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -17394,9 +18169,17 @@
     "test_end_date": "2026-07-07",
     "original_record_no": "JL-2026-F0160",
     "remark": "已批准,待发放",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -17477,9 +18260,17 @@
     "test_end_date": "2026-07-08",
     "original_record_no": "JL-2026-F0161",
     "remark": "已发放,待归档",
-    "judgment_basis": ["JGJ/T 70-2009"],
-    "testing_basis": ["GB/T 50081-2019", "JGJ/T 70-2009", "SL/T 352-2020"],
-    "test_parameters": ["IP-0055"],
+    "judgment_basis": [
+      "JGJ/T 70-2009"
+    ],
+    "testing_basis": [
+      "GB/T 50081-2019",
+      "JGJ/T 70-2009",
+      "SL/T 352-2020"
+    ],
+    "test_parameters": [
+      "IP-0055"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -17567,9 +18358,20 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -17614,9 +18416,20 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -17669,9 +18482,20 @@
     "test_end_date": "2026-07-11",
     "original_record_no": "JL-2026-F0164",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -17731,9 +18555,20 @@
     "test_end_date": "2026-07-12",
     "original_record_no": "JL-2026-F0165",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -17800,9 +18635,20 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0166",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -17876,9 +18722,20 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0167",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -17959,9 +18816,20 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0168",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019", "JTG 3430-2020", "JTG 3441-2024"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0227"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019",
+      "JTG 3430-2020",
+      "JTG 3441-2024"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0227"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -18049,9 +18917,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -18096,9 +18972,17 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -18151,9 +19035,17 @@
     "test_end_date": "2026-07-18",
     "original_record_no": "JL-2026-F0171",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -18213,9 +19105,17 @@
     "test_end_date": "2026-07-19",
     "original_record_no": "JL-2026-F0172",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -18282,9 +19182,17 @@
     "test_end_date": "2026-07-20",
     "original_record_no": "JL-2026-F0173",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -18358,9 +19266,17 @@
     "test_end_date": "2026-07-21",
     "original_record_no": "JL-2026-F0174",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -18441,9 +19357,17 @@
     "test_end_date": "2026-07-22",
     "original_record_no": "JL-2026-F0175",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0456"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -18531,9 +19455,18 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -18578,9 +19511,18 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -18633,9 +19575,18 @@
     "test_end_date": "2026-07-25",
     "original_record_no": "JL-2026-F0178",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -18695,9 +19646,18 @@
     "test_end_date": "2026-07-26",
     "original_record_no": "JL-2026-F0179",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -18764,9 +19724,18 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0180",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -18840,9 +19809,18 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0181",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -18923,9 +19901,18 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0182",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 50123-2019"],
-    "testing_basis": ["GB/T 50123-2019"],
-    "test_parameters": ["IP-0156", "IP-0189", "IP-0226", "IP-0456"],
+    "judgment_basis": [
+      "GB/T 50123-2019"
+    ],
+    "testing_basis": [
+      "GB/T 50123-2019"
+    ],
+    "test_parameters": [
+      "IP-0156",
+      "IP-0189",
+      "IP-0226",
+      "IP-0456"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -19013,7 +20000,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19086,7 +20075,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19167,7 +20158,9 @@
     "test_end_date": "2026-07-06",
     "original_record_no": "JL-2026-F0185",
     "remark": "数据录入中",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19255,7 +20248,9 @@
     "test_end_date": "2026-07-07",
     "original_record_no": "JL-2026-F0186",
     "remark": "待审核",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19350,7 +20345,9 @@
     "test_end_date": "2026-07-08",
     "original_record_no": "JL-2026-F0187",
     "remark": "待批准",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19452,7 +20449,9 @@
     "test_end_date": "2026-07-09",
     "original_record_no": "JL-2026-F0188",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19561,7 +20560,9 @@
     "test_end_date": "2026-07-10",
     "original_record_no": "JL-2026-F0189",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB18242-2008"],
+    "judgment_basis": [
+      "GB18242-2008"
+    ],
     "testing_basis": [
       "GB/T 18242-2025",
       "GB/T 328.10-2007",
@@ -19677,7 +20678,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -19740,7 +20743,9 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -19811,7 +20816,9 @@
     "test_end_date": "2026-07-13",
     "original_record_no": "JL-2026-F0192",
     "remark": "数据录入中",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -19889,7 +20896,9 @@
     "test_end_date": "2026-07-14",
     "original_record_no": "JL-2026-F0193",
     "remark": "待审核",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -19974,7 +20983,9 @@
     "test_end_date": "2026-07-15",
     "original_record_no": "JL-2026-F0194",
     "remark": "待批准",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -20066,7 +21077,9 @@
     "test_end_date": "2026-07-16",
     "original_record_no": "JL-2026-F0195",
     "remark": "已批准,待发放",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -20165,7 +21178,9 @@
     "test_end_date": "2026-07-17",
     "original_record_no": "JL-2026-F0196",
     "remark": "已发放,待归档",
-    "judgment_basis": ["GB/T 18173.2-2014"],
+    "judgment_basis": [
+      "GB/T 18173.2-2014"
+    ],
     "testing_basis": [
       "GB/T 18173.3-2014",
       "GB/T 39693.4-2025",
@@ -20272,8 +21287,17 @@
     "original_record_no": "",
     "remark": "刚接样,未提交",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "receiving",
     "flow_history": [],
     "last_submitted_by": "",
@@ -20319,8 +21343,17 @@
     "original_record_no": "",
     "remark": "待分配检测人员",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "task_assignment",
     "flow_history": [
       {
@@ -20374,8 +21407,17 @@
     "original_record_no": "JL-2026-F0199",
     "remark": "数据录入中",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "data_entry",
     "flow_history": [
       {
@@ -20436,8 +21478,17 @@
     "original_record_no": "JL-2026-F0200",
     "remark": "待审核",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "review",
     "flow_history": [
       {
@@ -20505,8 +21556,17 @@
     "original_record_no": "JL-2026-F0201",
     "remark": "待批准",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "approval",
     "flow_history": [
       {
@@ -20581,8 +21641,17 @@
     "original_record_no": "JL-2026-F0202",
     "remark": "已批准,待发放",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "issuance",
     "flow_history": [
       {
@@ -20664,8 +21733,17 @@
     "original_record_no": "JL-2026-F0203",
     "remark": "已发放,待归档",
     "judgment_basis": [],
-    "testing_basis": ["GB/T 328.20-2007", "GB 50208-2011"],
-    "test_parameters": ["IP-0030", "IP-0031", "IP-0032", "IP-0033", "IP-0397"],
+    "testing_basis": [
+      "GB/T 328.20-2007",
+      "GB 50208-2011"
+    ],
+    "test_parameters": [
+      "IP-0030",
+      "IP-0031",
+      "IP-0032",
+      "IP-0033",
+      "IP-0397"
+    ],
     "flow_status": "archived",
     "flow_history": [
       {
@@ -20753,8 +21831,12 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "刚接样,未提交",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -20820,8 +21902,12 @@
     "test_end_date": "",
     "original_record_no": "",
     "remark": "待分配检测人员",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -20887,8 +21973,12 @@
     "test_end_date": "2026-07-01",
     "original_record_no": "JL-2026-F0206",
     "remark": "数据录入中",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -20961,8 +22051,12 @@
     "test_end_date": "2026-07-02",
     "original_record_no": "JL-2026-F0207",
     "remark": "待审核",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -21042,8 +22136,12 @@
     "test_end_date": "2026-07-03",
     "original_record_no": "JL-2026-F0208",
     "remark": "待批准",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -21130,8 +22228,12 @@
     "test_end_date": "2026-07-04",
     "original_record_no": "JL-2026-F0209",
     "remark": "已批准,待发放",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",
@@ -21225,8 +22327,12 @@
     "test_end_date": "2026-07-05",
     "original_record_no": "JL-2026-F0210",
     "remark": "已发放,待归档",
-    "judgment_basis": ["JC/T 2428-2017"],
-    "testing_basis": ["GB/T 16777-2008"],
+    "judgment_basis": [
+      "JC/T 2428-2017"
+    ],
+    "testing_basis": [
+      "GB/T 16777-2008"
+    ],
     "test_parameters": [
       "IP-0012",
       "IP-0013",

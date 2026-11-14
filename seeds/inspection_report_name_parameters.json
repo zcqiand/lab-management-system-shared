@@ -85,13 +85,6 @@
   },
   {
     "report_name_code": "RN-101",
-    "inspection_parameter_code": "IP-0554",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
     "inspection_parameter_code": "IP-0555",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",

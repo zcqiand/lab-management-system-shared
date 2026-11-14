@@ -7189,19 +7189,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "IP-0554",
-    "name": "氧化镁含量",
-    "raw_name": "氧化镁含量",
-    "canonical_name": "氧化镁含量",
-    "method_text": "见对应标准条款",
-    "aliases": [],
-    "unit": "%",
-    "source_type": "official",
-    "sort_order": 554,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "IP-0555",
     "name": "3 天抗折强度",
     "raw_name": "3 天抗折强度",
