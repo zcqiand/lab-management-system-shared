@@ -6,17 +6,17 @@
   "passed": true,
   "partial": true,
   "ran": [
-    "L0.5"
+    "L4"
   ],
-  "checked_at": "2026-10-26T21:44:21+0800",
+  "checked_at": "2026-11-14T09:18:06+0800",
   "gates": [
     {
-      "level": "L0.5",
-      "name": "env 一致性",
+      "level": "L4",
+      "name": "测试",
       "passed": true,
       "returncode": 0,
-      "duration_s": 0.094,
-      "output": "[SKIP] lab-management-system-shared 不在 lab-management-system 家族 members 里,L0.5 跳过"
+      "duration_s": 2.156,
+      "output": "[INFO][gate-inject] PG_HOST <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] PG_PORT <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] PG_USER <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] PG_DATABASE <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] JWT_SIGNING_KEY <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] JWT_ISSUER <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] JWT_AUDIENCE <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] JWT_TTL_SECONDS <- lab-management-system-shared/.env.test（通用通道，调用方未设）\n[INFO][gate-inject] JWT_REFRESH_TTL_SECONDS <- lab-management-system-shared/.env.test（通用通道，调用方未设）\nRUN  v2.1.9 D:/qiand-life/1-projects/xr-code-suite/output/lab-management-system-shared\n\n ✓ tests/snapshots/openapi.test.ts (2 tests) 8ms\n ↓ tests/drizzle.replay.test.ts (1 test | 1 skipped)\n ✓ tests/seeds-parity.test.ts (1 test) 39ms\n ✓ tests/templates.test.ts (3 tests) 8ms\n ✓ tests/seed-db.test.ts (6 tests | 1 skipped) 117ms\n ✓ tests/templates-parity.test.ts (1 test) 211ms\n\n Test Files  5 passed | 1 skipped (6)\n      Tests  12 passed | 2 skipped (14)\n   Start at  09:18:05\n   Duration  673ms (transform 182ms, setup 0ms, collect 361ms, tests 384ms, environment 2ms, prepare 922ms)"
     }
   ]
 }

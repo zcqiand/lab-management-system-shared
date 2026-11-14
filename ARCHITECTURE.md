@@ -124,6 +124,6 @@ flowchart LR
 | L4 | 测试 | `npx --no vitest run`（trace_cmd 同，trace_env `TRACE_MAP=1`） |
 | L4.db.idempotent | Drizzle schema 幂等 | `python scripts/check_drizzle_idempotent.py`（skip_env: `CI_DRIZZLE_SKIP=1`） |
 
-测试面（`tests/`）：`drizzle.replay.test.ts`（空 schema 起 drizzle-kit push 全量重建测试库，校验租户隔离列 / junction 图 / cascade 链）、`snapshots/openapi.test.ts`（snapshot 锁 OpenAPI 产物：`openapi: 3.0.0` + 关键 path 必在）、`seed-db.test.ts` / `seeds-parity.test.ts`（种子灌库幂等与 parity）、`templates.test.ts` / `templates-parity.test.ts`（模板分发一致性）；`fnReporter.ts` 挂功能 ID 产出 trace。Vitest 配置（`vitest.config.ts`）：environment node、include `tests/**/*.test.ts`、testTimeout 10s、无 Docker / 无外网可跑（README 承诺）。
+测试面（`tests/`）：`drizzle.replay.test.ts`（空 schema 起 drizzle-kit push 全量重建测试库，校验租户隔离列 / junction 图 / cascade 链）、`snapshots/openapi.test.ts`（snapshot 锁 OpenAPI 产物：`openapi: 3.0.0` + 关键 path 必在）、`seed-db.test.ts`（种子灌库幂等；seeds-parity 门已随种子唯一源改造 B1 退役——shared/seeds 唯一手写源，镜像面废除）、`templates.test.ts` / `templates-parity.test.ts`（模板分发一致性）；`fnReporter.ts` 挂功能 ID 产出 trace。Vitest 配置（`vitest.config.ts`）：environment node、include `tests/**/*.test.ts`、testTimeout 10s、无 Docker / 无外网可跑（README 承诺）。
 
 exit code 语义：0 = 过；1 = 按修复提示回代码；2 = 契约/环境问题，停下问人。入口命令：suite 根 `python scripts/gate.py -p lab-management-system-shared`；日常验收 = gate exit 0 + `npm run build`（只跑 emit:openapi）。改动纪律：TDD（先红后绿）；tag 即放行 `v<MAJOR>.<MINOR>.<PATCH>-<YYYYMMDD>`；功能清单是锚点（改功能与改 function-tree.md 同一 commit，废弃只改状态、编号永不复用）。

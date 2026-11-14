@@ -3,6 +3,12 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- refactor(seeds): **seeds-parity 门退役**（B1 Phase1 收官件，与 nextjs 同批）——删
+  tests/seeds-parity.test.ts（shared ↔ nextjs src/seeds 双源 sha256 漂移防护，镜像双写
+  约定的执行器）+ ci.yml sibling checkout 步摘除 + ARCHITECTURE 摘引用。本仓此后
+  shared/seeds 唯一手写源（管线 --write 直写，人批 diff），镜像面废除。种子行集零变化。
+  同步清单：nextjs 仓 B1 Phase1 主条（三管线切源 + 五护栏切锚 + parameter-dimension-deps
+  搬家，commit 9b3e3d3 / ec652b2 / 16d1f23）。
 - refactor(seeds): 删报告名称冒烟占位行 CAT-SMK-001「报告类别 smoke」（2026-11-14 人裁）——
   种子 31→30，与 nextjs 四镜像同批删行；lab_dev 14 行陈旧委托单对齐现种子 RN-101 后
   删类别行，全库引用清零。nextjs 护栏转正：entryToReportChain 撤豁免过滤（每个报告
