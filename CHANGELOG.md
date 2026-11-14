@@ -3,6 +3,17 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(seeds): **B1 Phase2 Task6 灌库收拢收官**——① scripts/seed-drift-check.mjs 漂移检测
+  （种子按灌库同款语义 dedupe+mirror 算库应有面 vs 库逐行 canonical 对比 + 列集对比，
+  不符 exit 1；canonical 归一 ISO datetime/numeric scale/jsonb 深排序三类假差实证消解）；
+  ② seed-db.mjs 四修：buildUpsertSql 列集改全行并集并返回 cols（values 展开同列集，
+  bind 数错位实证）、catalog 4 表镜像不注入 tenant_id（库无此列，ts 注释过时，lab_dev
+  schema 实证）、mirror env 键改家族统一 SAAS_TENANT_ID、dedupeByPk 导出；③ 种子补齐
+  NOT NULL 默认值列（库面真值实证）：sample_receipts 补 retest_mode(none)×208 +
+  ext({})×210、test_records 补 ext({})×150（dump 快照早于列演化）；SP-SMK-001 date-only
+  时间戳归真值 instant（2026-08-17T16:00:00Z）。lab_dev --reset 重灌 26 表 + drift clean
+  （mirror=on）实证。tests: seed-db.test.ts 9 pass / seed-drift-check.test.ts 3 pass。
+  同步清单：nextjs 仓薄壳化主条（seed:db/seed:check 指 shared，commit bb8ed40）。
 - fix(seeds+scripts): **B1 Phase2 Task5 等值验证三修**（临时库 lab_equiv_a/b 双链对灌，
   用完即 DROP；报告 _work/equiv-report.md）——① seeds/inspection_param_interfaces.json
   4 行键大小写/时间戳死值修复（camelCase createdAt/updatedAt→snake；2026-11-10 死值
