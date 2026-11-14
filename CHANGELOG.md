@@ -3,6 +3,14 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- chore(seeds): **B1 种子唯一源改造收官条**（Phase1-4 全闭环，2026-11-14）——种子唯一源=本仓
+  `seeds/`（管线 --write 直写人批 + seed-db.mjs 直灌 + seed-drift-check 漂移门）；消费仓镜像面
+  （nextjs src/seeds、src/data/generated、vendor/msw/src/seeds+fixtures 导出面、react
+  src/data/generated）随 Phase4 整体退役（nextjs 36c578d / react 59af64e）。记忆条
+  seeddb-pour-source-vendor-fixtures 与 seed-mirror-cascade-single-source 已改写收口
+  （灌库链=shared 直读单条，镜像级联排查退役；模板单源方向与 IP-0554 先例保留）。
+  spec/plan 见 suite 仓 `docs/superpowers/{specs,plans}/2026-11-14-seeds-single-source-b1*.md`。
+  同步清单：nextjs（Task 11/12/13 三条已记）、react（Task 11/13 已记）。
 - feat(seeds): **B1 Phase2 Task6 灌库收拢收官**——① scripts/seed-drift-check.mjs 漂移检测
   （种子按灌库同款语义 dedupe+mirror 算库应有面 vs 库逐行 canonical 对比 + 列集对比，
   不符 exit 1；canonical 归一 ISO datetime/numeric scale/jsonb 深排序三类假差实证消解）；
