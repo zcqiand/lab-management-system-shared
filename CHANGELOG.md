@@ -3,6 +3,12 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- refactor(seeds): 删报告名称冒烟占位行 CAT-SMK-001「报告类别 smoke」（2026-11-14 人裁）——
+  种子 31→30，与 nextjs 四镜像同批删行；lab_dev 14 行陈旧委托单对齐现种子 RN-101 后
+  删类别行，全库引用清零。nextjs 护栏转正：entryToReportChain 撤豁免过滤（每个报告
+  名称须有参数关联，RED→GREEN）。
+  同步清单：nextjs 四镜像删行 + 护栏断言（随批回放）；contract-test seed.ts 删死常量
+  smokeReportName。
 - feat(db+seeds): **批H 三件**——① V018 calc PK 补 testing_standard_code 维度：schema
   `inspection_calculation_methods` PK 三列 `(obj,param,std)`（约束名历史遗留不改），testing_standard_code
   NOT NULL + FK set null→no action（**行为变更**：删被引用标准码由静默置空变报错阻断），迁移
