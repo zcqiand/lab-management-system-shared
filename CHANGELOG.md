@@ -3,6 +3,12 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+
+- feat(seeds): 样品界面配置支首批落库（批 I，2026-11-15）——specimen 管线 --write 直写五文件：
+  inspection_report_name_interfaces.json（sri-mech-joint v1→v2 jointType options=JGJ 107-2016
+  五接头类型）+ inspection_report_name_links.json（5 links）+ inspection_brands/grades/models/specs.json
+  （字典首批按需供货 8 append + 6 补全行收敛 update）；幂等复跑全 skip 实证；
+  manifest 真源与管线在 nextjs 仓（standard-gen Step 4.5），护栏测试 tests/seeds/specimen-config.test.ts。
 - chore(seeds): **B1 种子唯一源改造收官条**（Phase1-4 全闭环，2026-11-14）——种子唯一源=本仓
   `seeds/`（管线 --write 直写人批 + seed-db.mjs 直灌 + seed-drift-check 漂移门）；消费仓镜像面
   （nextjs src/seeds、src/data/generated、vendor/msw/src/seeds+fixtures 导出面、react
@@ -171,13 +177,13 @@
   须按 nextjs .prettierrc（printWidth 90）canonical 形格式化后 byte-copy 消费仓，
   shared 无 prettier 门（L1=tsp compile）不会自己纠正。
 
- — 2026-11-09/10
+— 2026-11-09/10
 
 ### Changed — 钢筋力学四接口结构化表格种子 + ADR-0056 种子漂移回灌（2026-11-10 人裁「落这个批」）
 
 - **四个钢筋力学接口 config 转结构化表格列**（yield/tensile + connection 两变体）：
   `columns: [{loads input}, {diameters input}, {strengths computed steel_tensile},
-  {req static}]` + highlight 越限红显。阈值全部有 tech_req 种子背书不编数：
+{req static}]` + highlight 越限红显。阈值全部有 tech_req 种子背书不编数：
   IP-0086 屈服 ≥400 / IP-0087 抗拉 ≥540（GB 1499.2-2024 技术要求）。
   connection-tensile 断裂位置保留独立 select_series；version 1→2。
 - **种子漂移收口（SSOT 纪律）**：发现 nextjs src/seeds 在 ADR-0056 回放时只改了
@@ -248,7 +254,7 @@
 - 全库 created_at/updated_at：TEXT default '' → **timestamptz notNull defaultNow()**
   （mode:"string"）；业务时间字段（commission_date 等）仍 TEXT。
 - 4 业务表 tenant_id **去 default ''**（notNull 无默认，身份必须显式，ADR-0019 同精神）。
-- **12 个 ck_* CHECK 约束**（contracts.status / receipts.flow_status /
+- _*12 个 ck_* CHECK 约束_*（contracts.status / receipts.flow_status /
   standards.status / params.source_type / obj_params.qualification_level /
   rn_std.role / obj_std.role / tech_req value_type·comparison·judgment_mode·
   verification_status / calc.algorithm_type）——值域与 TypeSpec enum 一字不差
