@@ -4,10 +4,10 @@ export function buildUpsertSql(
   tableName: string,
   rows: Array<Record<string, unknown>>,
   conflictCols: string[],
-): { sql: string; params: unknown[] };
+): { sql: string; params: unknown[]; cols: string[] };
 export const SSO_MIRROR_TABLES: Record<
   string,
-  { idCol: string; fkCols: string[] }
+  { idCol: string; fkCols: string[]; tenant: boolean }
 >;
 export function mirrorTenantRows(
   table: string,

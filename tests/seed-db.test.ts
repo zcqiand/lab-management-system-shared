@@ -56,7 +56,7 @@ describe("seed-db buildUpsertSql", () => {
 
   it("列集取全行并集：后行新增列进 INSERT，前行缺位补 null（B1 tenant-mirror 前置）", async () => {
     const { buildUpsertSql } = await import("../scripts/seed-db.mjs");
-    const { sql, params } = buildUpsertSql(
+    const result = buildUpsertSql(
       "inspection_brands",
       [
         { code: "BR-1", name: "b" },
@@ -64,8 +64,11 @@ describe("seed-db buildUpsertSql", () => {
       ],
       ["code"],
     );
+    const { sql, params } = result;
     expect(sql).toContain("tenant_id");
     expect(params).toEqual(["BR-1", "b", null, "BR-2", "b", "T2"]);
+    // 调用方（主循环 values 展开）必须复用同一列集，否则 bind 参数数错位
+    expect(result.cols).toEqual(["code", "name", "tenant_id"]);
   });
 
   it("空行集返回空 SQL 不抛错", async () => {
@@ -100,7 +103,7 @@ describe("seed-db mirrorTenantRows（SSO 租户镜像，语义照抄 lab-nextjs 
     expect(mirrored[0]).not.toBe(mirrored);
   });
 
-  it("catalog 表（无 tenant_id 键）：code 加 -sso 后缀并补 tenant_id 列", async () => {
+  it("catalog 表（无 tenant_id 列）：仅 code 加 -sso 后缀，不注入 tenant_id", async () => {
     const { mirrorTenantRows } = await import("../scripts/seed-db.mjs");
     const mirrored = mirrorTenantRows(
       "inspection_brands",
@@ -108,7 +111,7 @@ describe("seed-db mirrorTenantRows（SSO 租户镜像，语义照抄 lab-nextjs 
       T,
     )!;
     expect(mirrored[0].code).toBe("32.5-sso");
-    expect(mirrored[0].tenant_id).toBe(T);
+    expect("tenant_id" in mirrored[0]).toBe(false); // 表无此列（ts 注释 unique(tenant_id,code) 系过时描述）
     expect(mirrored[0].inspection_object_code).toBe("OBJ-SP01-P1"); // FK 指全局 objects 不重映射
   });
 
