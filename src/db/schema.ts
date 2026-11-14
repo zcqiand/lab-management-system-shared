@@ -684,7 +684,9 @@ export const inspectionCalculationMethods = pgTable(
   {
     inspectionObjectCode: text("inspection_object_code").notNull(),
     inspectionParameterCode: text("inspection_parameter_code").notNull(),
-    testingStandardCode: text("testing_standard_code"),
+    // V018（2026-11-14 批H）：PK 补 standard 维度——同参跨标准行（IP-0003|17671
+    // 被 GB 175 行吞实锤）不再互吞。NOT NULL 由 PK 成员身份要求。
+    testingStandardCode: text("testing_standard_code").notNull(),
     reportNameCode: text("report_name_code"),
     algorithmType: text("algorithm_type").default("manual").notNull(),
     specimenCount: integer("specimen_count").default(1).notNull(),
@@ -698,7 +700,7 @@ export const inspectionCalculationMethods = pgTable(
   },
   (t) => [
     primaryKey({
-      columns: [t.inspectionObjectCode, t.inspectionParameterCode],
+      columns: [t.inspectionObjectCode, t.inspectionParameterCode, t.testingStandardCode],
       // 历史遗留名（V017 重命名表时未同步改约束名），与 lab_dev 实测一致
       name: "inspection_calculation_rules_pkey",
     }),
@@ -717,11 +719,13 @@ export const inspectionCalculationMethods = pgTable(
       foreignColumns: [inspectionParameters.code],
       name: "calc_rule_parameter_fk",
     }).onDelete("cascade"),
+    // 批H：NOT NULL PK 成员不可 set null——删除被引用标准码从「静默置空」变
+    // 「报错阻断」（行为变更，CHANGELOG 记录）
     foreignKey({
       columns: [t.testingStandardCode],
       foreignColumns: [inspectionStandards.code],
       name: "calc_rule_standard_fk",
-    }).onDelete("set null"),
+    }),
     foreignKey({
       columns: [t.reportNameCode],
       foreignColumns: [inspectionReportNames.code],

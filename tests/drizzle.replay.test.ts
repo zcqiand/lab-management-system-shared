@@ -57,8 +57,9 @@ if (allPgEnvPresent && !process.env.PG_DATABASE_TEST!.startsWith("lab_")) {
   );
 }
 
-// 24 张业务表（与 src/db/schema.ts 一一对应；簿记表 flyway_schema_history /
-// __schema_migrations / __drizzle_migrations 不在目标模型里）
+// 26 张业务表（与 src/db/schema.ts 一一对应；簿记表 flyway_schema_history /
+// __schema_migrations / __drizzle_migrations 不在目标模型里。
+// 2026-11-14 批H 修复漂移：补 0007 的 report_name_interfaces(+links) 两张）
 const EXPECTED_TABLES = [
   "contracts",
   "inspection_brands",
@@ -72,6 +73,8 @@ const EXPECTED_TABLES = [
   "inspection_param_interface_links",
   "inspection_param_interfaces",
   "inspection_parameters",
+  "inspection_report_name_interface_links",
+  "inspection_report_name_interfaces",
   "inspection_report_name_parameters",
   "inspection_report_name_standards",
   "inspection_report_names",
@@ -168,16 +171,13 @@ describe("target DDL schema replay", () => {
 
   it("has tenant isolation columns on the tenant-scoped tables", async () => {
     if (!client) return;
+    // 批H 修复漂移（2026-11-14）：四小字典（brands/models/specs/grades）与
+    // technical_requirements 已全局共享（无 tenant_id），租户面=4 张业务表
     const tenantScoped = [
       "contracts",
       "sample_receipts",
       "samples",
       "test_records",
-      "inspection_brands",
-      "inspection_models",
-      "inspection_specs",
-      "inspection_grades",
-      "inspection_technical_requirements",
     ];
     for (const table of tenantScoped) {
       const { rows } = await client.query<{ is_nullable: string; column_default: string }>(
@@ -192,11 +192,13 @@ describe("target DDL schema replay", () => {
 
   it("enforces per-tenant business code uniqueness", async () => {
     if (!client) return;
+    // 批H 修复漂移（2026-11-14）：对齐现行索引面——四小字典租户索引已退役，
+    // samples/test_records 补了租户唯一索引
     const { rows } = await client.query<{ indexname: string }>(
       `SELECT indexname FROM pg_indexes WHERE schemaname='public'
-       AND indexname IN ('idx_contracts_tenant_code','idx_receipts_tenant_commission',
-                         'idx_brands_tenant_code','idx_models_tenant_code',
-                         'idx_specs_tenant_code','idx_grades_tenant_code')`,
+       AND indexname IN ('idx_contracts_tenant','idx_contracts_tenant_code',
+                         'idx_receipts_tenant','idx_receipts_tenant_commission',
+                         'idx_samples_tenant_code','idx_test_records_tenant')`,
     );
     expect(rows).toHaveLength(6);
   });
@@ -233,41 +235,62 @@ describe("target DDL schema replay", () => {
     );
   });
 
+  it("calc PK 含 testing_standard_code 维度（V018 批H：同参跨标准行不互吞）", async () => {
+    if (!client) return;
+    const { rows } = await client.query<{ attname: string }>(
+      `SELECT a.attname FROM pg_index i
+       JOIN pg_class c ON c.oid = i.indrelid
+       JOIN pg_attribute a ON a.attrelid = c.oid AND a.attnum = ANY(i.indkey)
+       WHERE c.relname = 'inspection_calculation_methods' AND i.indisprimary
+       ORDER BY a.attnum`,
+    );
+    expect(rows.map((r) => r.attname)).toEqual([
+      "inspection_object_code",
+      "inspection_parameter_code",
+      "testing_standard_code",
+    ]);
+  });
+
   it("cascades receipt deletion through samples and test records", async () => {
     if (!client) return;
     const receiptId = "replay-receipt-1";
     const contractId = "replay-contract-1";
     const sampleId = "replay-sample-1";
 
+    // created_at/updated_at 是 timestamptz（TEXT→timestamptz 迁移后）——
+    // 空串炸 RangeError，用 canonical instant（seed-db 同款）
+    const ts = "2026-01-01T00:00:00Z";
     await client.query(
       `INSERT INTO contracts (id, contract_code, client_unit, project_name, construction_unit, witness_unit, witness, created_at, updated_at, tenant_id)
-       VALUES ($1,'RC-1','c','p','b','w','w','','','t-replay')`,
-      [contractId],
+       VALUES ($1,'RC-1','c','p','b','w','w',$2,$2,'t-replay')`,
+      [contractId, ts],
     );
     // category_code 有真 FK（receipts_category_fk → inspection_report_names.code），先造父行
     await client.query(
       `INSERT INTO inspection_report_names (code, name, created_at, updated_at)
-       VALUES ('rn-1','replay-report','','')`,
+       VALUES ('rn-1','replay-report',$1,$1)`,
+      [ts],
     );
     // parameter_code 有真 FK（testrec_param_fk → inspection_parameters.code），先造父行
     await client.query(
       `INSERT INTO inspection_parameters (code, name, raw_name, canonical_name, created_at, updated_at)
-       VALUES ('req','replay-param','replay-param','replay-param','','')`,
+       VALUES ('req','replay-param','replay-param','replay-param',$1,$1)`,
+      [ts],
     );
     await client.query(
       `INSERT INTO sample_receipts (id, contract_id, commission_code, commission_date, category_code, received_by, sample_source, test_category, created_at, updated_at, tenant_id)
-       VALUES ($1,$2,'CM-1','2026-09-13','rn-1','op','client','cat','','','t-replay')`,
-      [receiptId, contractId],
+       VALUES ($1,$2,'CM-1','2026-09-13','rn-1','op','client','cat',$3,$3,'t-replay')`,
+      [receiptId, contractId, ts],
     );
     await client.query(
       `INSERT INTO samples (id, receipt_id, sample_code, ext, created_at, updated_at, tenant_id)
-       VALUES ($1,$2,'S-1','{}','','','t-replay')`,
-      [sampleId, receiptId],
+       VALUES ($1,$2,'S-1','{}',$3,$3,'t-replay')`,
+      [sampleId, receiptId, ts],
     );
     await client.query(
       `INSERT INTO test_records (id, sample_id, parameter_code, requirement, result, created_at, updated_at, tenant_id)
-       VALUES ('replay-tr-1',$1,'req','r','5','','','t-replay')`,
-      [sampleId],
+       VALUES ('replay-tr-1',$1,'req','r','5',$2,$2,'t-replay')`,
+      [sampleId, ts],
     );
 
     await client.query("DELETE FROM sample_receipts WHERE id = $1", [receiptId]);
