@@ -63,6 +63,37 @@ export function buildUpsertSql(tableName, rows, conflictCols) {
   };
 }
 
+// 种子面 PK 去重（B1 Phase2 等值验证 2026-11-14 补）：种子文件允许同 PK 变体行
+// 共存（calc 报告级 vs 对象级，E2 半账挂账），单条多值 INSERT 撞 PG
+// "cannot affect row a second time"。语义照抄 lab-nextjs seed-db.ts dedupe()：
+// 非空字段数最多的行胜（后行往往补全 variant 信息），平局保首行（稳定）。
+function dedupeByPk(table, rows, pkCols) {
+  const fullness = (r) =>
+    Object.values(r).filter((v) => v !== undefined && v !== null && v !== "").length;
+  const best = new Map();
+  const dropped = new Set();
+  for (let i = 0; i < rows.length; i++) {
+    const k = pkCols.map((c) => String(rows[i][c])).join(" ");
+    const cur = best.get(k);
+    if (cur === undefined) {
+      best.set(k, i);
+      continue;
+    }
+    if (fullness(rows[i]) > fullness(rows[cur])) {
+      dropped.add(cur);
+      best.set(k, i);
+    } else {
+      dropped.add(i);
+    }
+  }
+  if (dropped.size === 0) return rows;
+  const kept = rows.filter((_, i) => !dropped.has(i));
+  console.warn(
+    `  dedupe ${table}: dropped ${dropped.size} variant rows (PK granularity)`,
+  );
+  return kept;
+}
+
 function loadSnapshot() {
   const metaPath = resolve(SEEDS_DIR, "_meta.json");
   if (!existsSync(metaPath)) {
@@ -174,9 +205,12 @@ async function main() {
     await client.query(`TRUNCATE ${quoted} RESTART IDENTITY CASCADE`);
   }
 
-  // upsert：默认分支逐表 buildUpsertSql 执行（幂等，不删目标库快照外的行）
+  // upsert：默认分支逐表 buildUpsertSql 执行（幂等，不删目标库快照外的行）。
+  // dedupedCount 记去重后行数——post-flight 对账基线（灌库实况=去重后）。
+  const dedupedCount = new Map();
   for (const table of ordered) {
-    const rows = tables[table];
+    const rows = dedupeByPk(table, tables[table], pkByTable.get(table));
+    dedupedCount.set(table, rows.length);
     if (rows.length === 0) {
       console.log(`  ${table}: 0 rows (empty in snapshot, skipped)`);
       continue;
@@ -215,7 +249,7 @@ async function main() {
   if (!DRY_RUN) {
     const mismatches = [];
     for (const table of tableNames) {
-      const expected = tables[table].length;
+      const expected = dedupedCount.get(table) ?? tables[table].length;
       const { rows } = await client.query(
         `SELECT count(*)::int AS n FROM "${table}"`,
       );

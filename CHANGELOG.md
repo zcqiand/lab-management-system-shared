@@ -3,6 +3,16 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- fix(seeds+scripts): **B1 Phase2 Task5 等值验证三修**（临时库 lab_equiv_a/b 双链对灌，
+  用完即 DROP；报告 _work/equiv-report.md）——① seeds/inspection_param_interfaces.json
+  4 行键大小写/时间戳死值修复（camelCase createdAt/updatedAt→snake；2026-11-10 死值
+  按 fixtures 真值归 2026-01-01——三链分叉死值从未进库面）；② 种子补 2 个 FK 合成字典行
+  （brands 91→92 `32.5`、specs 63→64 `3d`，ts 链 synthesize 形状，与 lab_dev 实测库面
+  一致）；③ seed-db.mjs 补 dedupeByPk（PK 变体行灌库前去重，语义照 nextjs dedupe：
+  非空字段多者胜/平局保首行；calc 报告级 2 行 dropped=2 实证）+ post-flight 对账基线改
+  用去重后行数。等值结论：26 表 12 全等，14 差全归 a（SSO mirror 缺口→Task6 前置）/
+  b（fixtures 陈旧面，种子胜出）/c（时间戳语义）三类，shared 为准。
+  同步清单：nextjs 仓 B1 Phase2 主条（Task6 换链时回放）。
 - refactor(seeds): **seeds-parity 门退役**（B1 Phase1 收官件，与 nextjs 同批）——删
   tests/seeds-parity.test.ts（shared ↔ nextjs src/seeds 双源 sha256 漂移防护，镜像双写
   约定的执行器）+ ci.yml sibling checkout 步摘除 + ARCHITECTURE 摘引用。本仓此后

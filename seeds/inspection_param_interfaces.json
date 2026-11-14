@@ -431,8 +431,7 @@
       "params": {}
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z",
-    "updatedAt": "2026-11-10T00:00:00Z"
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "rebar-mech-tensile",
@@ -595,8 +594,7 @@
       "params": {}
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z",
-    "updatedAt": "2026-11-10T00:00:00Z"
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "rebar-welding-bend",
@@ -1161,8 +1159,8 @@
       ],
       "params": {}
     },
-    "createdAt": "2026-11-10T00:00:00Z",
-    "updatedAt": "2026-11-10T00:00:00Z"
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "rebar-mech-super-ratio",
@@ -1206,8 +1204,8 @@
       ],
       "params": {}
     },
-    "createdAt": "2026-11-10T00:00:00Z",
-    "updatedAt": "2026-11-10T00:00:00Z"
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "code": "rebar-bend",

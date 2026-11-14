@@ -817,5 +817,14 @@
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "32.5",
+    "inspection_object_code": "OBJ-SP01-P1",
+    "name": "32.5（seed 补全）",
+    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
+    "sort_order": 9999,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
