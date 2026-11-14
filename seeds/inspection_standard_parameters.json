@@ -2088,6 +2088,12 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0006",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "inspection_standard_code": "JC/T 690-2008",
     "inspection_parameter_code": "IP-0009",
     "created_at": "2026-01-01T00:00:00Z",
