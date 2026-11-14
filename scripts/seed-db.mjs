@@ -38,7 +38,10 @@ export function buildUpsertSql(tableName, rows, conflictCols) {
     );
   }
   if (rows.length === 0) return { sql: "", params: [] };
-  const cols = Object.keys(rows[0]); // 快照形状同表同列
+  // 列集 = 全行并集（保首行键序，后行新增列追加在尾）。快照形状同表同列，但
+  // tenant-mirror 会给 catalog 4 表补 tenant_id 列（种子行本身无此键）——取
+  // rows[0] 键集会把镜像行的租户值静默丢掉（B1 Phase2 tenant-mirror 前置修复）。
+  const cols = [...new Set(rows.flatMap((r) => Object.keys(r)))];
   const missing = conflictCols.filter((c) => !cols.includes(c));
   if (missing.length > 0) {
     throw new Error(
@@ -59,7 +62,7 @@ export function buildUpsertSql(tableName, rows, conflictCols) {
       `INSERT INTO ${tableName} (${cols.join(", ")})\nVALUES ${tuples.join(", ")}\n` +
       `ON CONFLICT (${conflictCols.join(", ")}) DO UPDATE SET ` +
       updates.map((c) => `${c} = EXCLUDED.${c}`).join(", "),
-    params: rows.flatMap((r) => cols.map((c) => r[c])),
+    params: rows.flatMap((r) => cols.map((c) => r[c] ?? null)),
   };
 }
 
@@ -92,6 +95,41 @@ function dedupeByPk(table, rows, pkCols) {
     `  dedupe ${table}: dropped ${dropped.size} variant rows (PK granularity)`,
   );
   return kept;
+}
+
+// SSO 租户镜像（B1 Phase2 前置件，语义照抄 lab-nextjs seed-db.ts mirrorTenantScopedRows
+// 2026-09-23 引入）：业务 fixtures 全挂 demo 租户 TENANT-001（密码直登世界），SSO 登录
+// （token 租户=SAAS_DEV_TENANT_ID）后按租户过滤的端点会空数据。镜像在灌库转换层做：
+// 4 张租户隔离表复制一份 id 加 "-sso" 后缀挂 SSO 租户，FK 沿 receipt.contractId →
+// sample.receiptId → test_record.sampleId 链重映射；catalog 4 表 PK=code 全局唯一 +
+// unique(tenant_id, code) → code 加后缀，FK 指全局 objects 不重映射；种子行无
+// tenant_id 键由并集列集兜住（见 buildUpsertSql 注释）。env 不设则跳过（lab_test
+// 等共享库不灌镜像面；禁兜底不等于禁分支——env 是显式开关，无默认值）。
+const SSO_ID_SUFFIX = "-sso";
+export const SSO_MIRROR_TABLES = {
+  contracts: { idCol: "id", fkCols: [] },
+  sample_receipts: { idCol: "id", fkCols: ["contract_id"] },
+  samples: { idCol: "id", fkCols: ["receipt_id"] },
+  test_records: { idCol: "id", fkCols: ["sample_id"] },
+  inspection_brands: { idCol: "code", fkCols: [] },
+  inspection_models: { idCol: "code", fkCols: [] },
+  inspection_specs: { idCol: "code", fkCols: [] },
+  inspection_grades: { idCol: "code", fkCols: [] },
+};
+
+export function mirrorTenantRows(table, rows, tenantId) {
+  const spec = SSO_MIRROR_TABLES[table];
+  if (!spec) return null;
+  return rows.map((r) => ({
+    ...r,
+    [spec.idCol]: `${r[spec.idCol]}${SSO_ID_SUFFIX}`,
+    tenant_id: tenantId,
+    ...Object.fromEntries(
+      spec.fkCols
+        .filter((f) => r[f]) // 空 FK 值（""/null）不重映射
+        .map((f) => [f, `${r[f]}${SSO_ID_SUFFIX}`]),
+    ),
+  }));
 }
 
 function loadSnapshot() {
@@ -206,10 +244,20 @@ async function main() {
   }
 
   // upsert：默认分支逐表 buildUpsertSql 执行（幂等，不删目标库快照外的行）。
-  // dedupedCount 记去重后行数——post-flight 对账基线（灌库实况=去重后）。
+  // dedupedCount 记去重+镜像后行数——post-flight 对账基线（灌库实况）。
+  const ssoTenantId = process.env.SAAS_DEV_TENANT_ID;
   const dedupedCount = new Map();
   for (const table of ordered) {
-    const rows = dedupeByPk(table, tables[table], pkByTable.get(table));
+    let rows = dedupeByPk(table, tables[table], pkByTable.get(table));
+    if (ssoTenantId) {
+      const mirrored = mirrorTenantRows(table, rows, ssoTenantId);
+      if (mirrored) {
+        rows = rows.concat(mirrored);
+        console.log(
+          `  sso mirror ${table}: +${mirrored.length} rows → ${ssoTenantId}`,
+        );
+      }
+    }
     dedupedCount.set(table, rows.length);
     if (rows.length === 0) {
       console.log(`  ${table}: 0 rows (empty in snapshot, skipped)`);

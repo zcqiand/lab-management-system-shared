@@ -5,3 +5,12 @@ export function buildUpsertSql(
   rows: Array<Record<string, unknown>>,
   conflictCols: string[],
 ): { sql: string; params: unknown[] };
+export const SSO_MIRROR_TABLES: Record<
+  string,
+  { idCol: string; fkCols: string[] }
+>;
+export function mirrorTenantRows(
+  table: string,
+  rows: Array<Record<string, unknown>>,
+  tenantId: string,
+): Array<Record<string, unknown>> | null;

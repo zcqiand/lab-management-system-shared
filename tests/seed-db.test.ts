@@ -54,11 +54,68 @@ describe("seed-db buildUpsertSql", () => {
     expect(() => buildUpsertSql("whatever", [{ id: "x" }], [])).toThrow(/conflictCols/);
   });
 
+  it("列集取全行并集：后行新增列进 INSERT，前行缺位补 null（B1 tenant-mirror 前置）", async () => {
+    const { buildUpsertSql } = await import("../scripts/seed-db.mjs");
+    const { sql, params } = buildUpsertSql(
+      "inspection_brands",
+      [
+        { code: "BR-1", name: "b" },
+        { code: "BR-2", name: "b", tenant_id: "T2" },
+      ],
+      ["code"],
+    );
+    expect(sql).toContain("tenant_id");
+    expect(params).toEqual(["BR-1", "b", null, "BR-2", "b", "T2"]);
+  });
+
   it("空行集返回空 SQL 不抛错", async () => {
     const { buildUpsertSql } = await import("../scripts/seed-db.mjs");
     const { sql, params } = buildUpsertSql("any_table", [], ["id"]);
     expect(sql).toBe("");
     expect(params).toEqual([]);
+  });
+});
+
+describe("seed-db mirrorTenantRows（SSO 租户镜像，语义照抄 lab-nextjs seed-db.ts）", () => {
+  const T = "00000000-0000-0000-0000-000000000001";
+
+  it("业务表：id 加 -sso 后缀 + tenant_id + FK 链重映射（空 FK 值不动）", async () => {
+    const { mirrorTenantRows } = await import("../scripts/seed-db.mjs");
+    const mirrored = mirrorTenantRows(
+      "sample_receipts",
+      [
+        { id: "SR-1", contract_id: "CT-1", tenant_id: "TENANT-001" },
+        { id: "SR-2", contract_id: "", tenant_id: "TENANT-001" },
+        { id: "SR-3", contract_id: null, tenant_id: "TENANT-001" },
+      ],
+      T,
+    )!;
+    expect(mirrored).toHaveLength(3);
+    expect(mirrored[0].id).toBe("SR-1-sso");
+    expect(mirrored[0].tenant_id).toBe(T);
+    expect(mirrored[0].contract_id).toBe("CT-1-sso");
+    expect(mirrored[1].contract_id).toBe("");
+    expect(mirrored[2].contract_id).toBeNull();
+    // 原行不被改动（镜像=追加副本）
+    expect(mirrored[0]).not.toBe(mirrored);
+  });
+
+  it("catalog 表（无 tenant_id 键）：code 加 -sso 后缀并补 tenant_id 列", async () => {
+    const { mirrorTenantRows } = await import("../scripts/seed-db.mjs");
+    const mirrored = mirrorTenantRows(
+      "inspection_brands",
+      [{ code: "32.5", inspection_object_code: "OBJ-SP01-P1", name: "32.5" }],
+      T,
+    )!;
+    expect(mirrored[0].code).toBe("32.5-sso");
+    expect(mirrored[0].tenant_id).toBe(T);
+    expect(mirrored[0].inspection_object_code).toBe("OBJ-SP01-P1"); // FK 指全局 objects 不重映射
+  });
+
+  it("非镜像表返回 null（inspection_* 基础数据无租户列，天然共享）", async () => {
+    const { mirrorTenantRows } = await import("../scripts/seed-db.mjs");
+    expect(mirrorTenantRows("inspection_objects", [{ code: "OBJ-1" }], T)).toBeNull();
+    expect(mirrorTenantRows("contracts", [{ id: "C1", tenant_id: "TENANT-001" }], T)).toBeDefined();
   });
 });
 
