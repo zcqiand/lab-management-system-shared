@@ -3,6 +3,14 @@
 格式参照 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
 ## [Unreleased]
+- feat(db+seeds): **批H 三件**——① V018 calc PK 补 testing_standard_code 维度：schema
+  `inspection_calculation_methods` PK 三列 `(obj,param,std)`（约束名历史遗留不改），testing_standard_code
+  NOT NULL + FK set null→no action（**行为变更**：删被引用标准码由静默置空变报错阻断），迁移
+  0009_sturdy_romulus.sql 已应用 lab_dev；② IP-0554 并入 IP-0006 + JC/T 600 补绑 IP-0006 种子回放
+  （5 种子 byte-equal，ip-0554-merge guard 测试在 nextjs 仓封面）；③ 101 模板单源 assets/templates
+  同步批H（IP-0554→IP-0006 4 处 param 标签）+ sample_receipts prettier 格式回放。双门绿。
+  同步清单：nextjs 批H 主条（fd70c6e / aafc233）；lab-react / lab-vue 模板 parity 回放
+  （7af221e / c6bedf6）。
 - feat(seeds): IP-0002 安定性新行回放（lab-nextjs 批F 人裁落点同批）——
   inspection_calculation_methods.json +IP-0002 行（OBJ-SP01-P1 × GB 175-2023，
   manual×2；按 seeds-parity 门契约与 nextjs src/seeds 快照 byte-equal，真实导入
