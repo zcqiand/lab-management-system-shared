@@ -33,6 +33,17 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "code": "GB/T 20065-2016",
+    "name": "预应力混凝土用螺纹钢筋",
+    "version": "2016",
+    "status": "active",
+    "source_document_id": "raw/standards/pdf/GB_T 20065-2016.pdf",
+    "source_hash": null,
+    "sort_order": 11,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "code": "GB 1499.2-2024",
     "name": "钢筋混凝土用钢 第2部分：热轧带肋钢筋",
     "version": "2024",

@@ -4,6 +4,26 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批 R1 Task 3 第二部标准入库——GB/T 20065-2016（预应力混凝土用螺纹钢筋）
+  tech_req +20 行**（2026-11-15，tech-req 管线 --write，OBJ-SP01-P2）——**8 键 PK 扩维后
+  首批真变体面**：表3 力学性能按 PSB 级别分行（PSB785/830/930/1080/1200 × 4 参数），
+  grade 落级别真值、brand/model/spec/sieve '' 哨兵。IP-0086 屈服强度 ReL≥785/830/930/
+  1080/1200 MPa + IP-0087 抗拉强度 Rm≥980/1030/1080/1230/1330 MPa 全 HIGH 直解（逐行
+  OCR 锚）；IP-0151 Agt≥3.5% 与 IP-0100 应力松弛（1000h ≤4.0%，conditions=「初始应力
+  =0.7Rm，1000h」）为表3 合并格内联——PSB930 直解 HIGH + 其余 4 牌号继承 MED（合并格
+  判定三依据：值落中间行/表级量限「不小于」/限值表每牌号行必须有限值，人批详查结论=
+  接受继承，medCount=8 过门旗标）；断后伸长率 A 列语料全空+垃圾行「1P0.21TV=」不可恢复
+  →缺列明说不硬凑（本批无 IP-0150 行）；表4 出厂检验排除（誘误词护栏）、本标准无独立
+  重量偏差限值表（无 IP-0153 行）；表3 标题=邻接 prose 7.4.1（规则 #12，锚审计 32 条
+  全过）。dry-run 20/20 过门 0 拒收 retired=0；lab_dev 重浇 tech_req 147 行 upserted
+  （seed JSON 153 − PK 粒度 dedupe dropped 6，6 组均 1499.2 两来源行既有挂账账 9，本批
+  0 新增）、seed:check clean（26 表 mirror=on）；DB 探针 count=20 全 verified、grade<>''
+  20 行 / grade='' 0 行。标准字典补行：inspection_standards.json +1（GB/T 20065-2016
+  active/sort_order 11/源路径 raw/standards/pdf/GB_T 20065-2016.pdf——FK
+  tech_req_judgment_standard_fk 依赖，GB 1499.1-2024 行后族邻插入）。管线依赖修复：
+  nextjs 同日条（limitKey 4→8 键，V020 收尾缺口，批 R1 Task 3 人批裁定）。抽取端+探针
+  过程件在 nextjs 仓 `_work/`（import-20065-tech-req.py / 20065-candidates.json /
+  20065-tech-req-import-report.md）。同步清单：nextjs 同日条（fix 上述）。
 - feat(seeds): **批 R1 Task 2 首部标准入库——GB 1499.1-2024（热轧光圆钢筋）tech_req +8 行**
   （2026-11-15，tech-req 管线 --write，OBJ-SP01-P2）：表4 重量偏差 3 行（IP-0153 range
   ±5.5/±4.5/±3.5，spec Φ6~12/Φ14~20/Φ22~25）+ 表6 力学性能 5 行（IP-0086 ≥300 MPa /
