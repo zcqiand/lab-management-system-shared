@@ -2065,18 +2065,6 @@
   },
   {
     "inspection_standard_code": "JC/T 600-2010",
-    "inspection_parameter_code": "IP-0055",
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_standard_code": "JC/T 600-2010",
-    "inspection_parameter_code": "IP-0056",
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_standard_code": "JC/T 600-2010",
     "inspection_parameter_code": "IP-0074",
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -3050,6 +3038,30 @@
   {
     "inspection_standard_code": "T/ZBTA 02-2024",
     "inspection_parameter_code": "IP-0523",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0555",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0556",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0557",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "JC/T 600-2010",
+    "inspection_parameter_code": "IP-0558",
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   }
