@@ -7616,5 +7616,31 @@
     "sort_order": 587,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0588",
+    "name": "7 天抗折强度",
+    "raw_name": "7 天抗折强度",
+    "canonical_name": "7 天抗折强度",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "MPa",
+    "source_type": "official",
+    "sort_order": 588,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0589",
+    "name": "7 天抗压强度",
+    "raw_name": "7 天抗压强度",
+    "canonical_name": "7 天抗压强度",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "MPa",
+    "source_type": "official",
+    "sort_order": 589,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
