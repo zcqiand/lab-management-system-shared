@@ -7720,5 +7720,31 @@
     "sort_order": 595,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0596",
+    "name": "水溶性铬（Ⅵ）",
+    "raw_name": "水溶性铬（Ⅵ）",
+    "canonical_name": "水溶性铬（Ⅵ）",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "mg/kg",
+    "source_type": "official",
+    "sort_order": 596,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0597",
+    "name": "白度",
+    "raw_name": "白度",
+    "canonical_name": "白度",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": null,
+    "source_type": "official",
+    "sort_order": 597,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
