@@ -7642,5 +7642,83 @@
     "sort_order": 589,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0590",
+    "name": "3 天水化热",
+    "raw_name": "3 天水化热",
+    "canonical_name": "3 天水化热",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "kJ/kg",
+    "source_type": "official",
+    "sort_order": 590,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0591",
+    "name": "7 天水化热",
+    "raw_name": "7 天水化热",
+    "canonical_name": "7 天水化热",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "kJ/kg",
+    "source_type": "official",
+    "sort_order": 591,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0592",
+    "name": "28 天水化热",
+    "raw_name": "28 天水化热",
+    "canonical_name": "28 天水化热",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "kJ/kg",
+    "source_type": "official",
+    "sort_order": 592,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0593",
+    "name": "硅酸三钙含量",
+    "raw_name": "硅酸三钙含量",
+    "canonical_name": "硅酸三钙含量",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "%",
+    "source_type": "official",
+    "sort_order": 593,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0594",
+    "name": "硅酸二钙含量",
+    "raw_name": "硅酸二钙含量",
+    "canonical_name": "硅酸二钙含量",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "%",
+    "source_type": "official",
+    "sort_order": 594,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0595",
+    "name": "铝酸三钙含量",
+    "raw_name": "铝酸三钙含量",
+    "canonical_name": "铝酸三钙含量",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "%",
+    "source_type": "official",
+    "sort_order": 595,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
