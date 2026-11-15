@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批 R1 Task 2 首部标准入库——GB 1499.1-2024（热轧光圆钢筋）tech_req +8 行**
+  （2026-11-15，tech-req 管线 --write，OBJ-SP01-P2）：表4 重量偏差 3 行（IP-0153 range
+  ±5.5/±4.5/±3.5，spec Φ6~12/Φ14~20/Φ22~25）+ 表6 力学性能 5 行（IP-0086 ≥300 MPa /
+  IP-0087 ≥420 MPa / IP-0150 ≥25% / IP-0151 ≥10.0% / IP-0155 D=d eq，唯一牌号 HPB300，
+  变体列 '' 哨兵、牌号进 remark）；全 HIGH 置信、dry-run 8/8 过门 0 拒收、无 superseded；
+  lab_dev 重浇 127 行 upserted（seed JSON 133 行 − PK 粒度 dedupe dropped 6，6 组均为
+  1499.2 curated×抽取两来源行既有挂账账 9，本批 0 新增）、seed:check clean；
+  DB 探针 count=8 实值核对过。抽取端+探针过程件在 nextjs 仓 `_work/`（import-14991-tech-req.py /
+  14991-candidates.json / 14991-tech-req-import-report.md / probe-14991-*.py）。同步清单：无
+  （消费仓镜像面 B1 已退役，数据单源=本仓 seeds）。
 - feat(schema): **tech_req PK 扩维 3→8 列（方案 A 人批 2026-11-15，standard-gen 挂账 3 收口）**——
   inspection_technical_requirements PK=(obj,param,std,brand,model,spec,grade,sieve)、变体列
   NOT NULL DEFAULT ''（'' 哨兵=不限维度）、撤 brand/model/grade/spec 四字典 FK（'' 过不了
