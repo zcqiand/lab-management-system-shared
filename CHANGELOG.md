@@ -9,8 +9,9 @@
   NOT NULL DEFAULT ''（'' 哨兵=不限维度）、撤 brand/model/grade/spec 四字典 FK（'' 过不了
   FK/set null 破 NOT NULL PK）；0010 迁移带 NULL→'' 回填；seeds tech_req 5 变体列 null→''
   归一（125 行 339 处）+ brands HRB600/CPB550 rename；seed:db 双库 41→119 行（dropped 6=
-  curated×抽取 8 键全等真重复，挂账 HISTORY 账 9；brand 9 值/spec 5 值字典缺口挂账账 10，
-  specimen-config 通道）。同步清单：nextjs 同日条（schema 镜像+db 层 dup 8 键+pipeline coerce）。
+  curated×抽取 8 键同维度两来源行，内容有出入 unit/target_value/sort_order，挂账 HISTORY
+  账 9；brand 9 值/spec 5 值字典缺口挂账账 10，specimen-config 通道）。同步清单：nextjs 同日条
+  （schema 镜像+db 层 dup 8 键+pipeline coerce）；**兄弟后端仓同步挂账 HISTORY 账 11**。
 - feat(seeds): 样品界面配置支首批落库（批 I，2026-11-15）——specimen 管线 --write 直写五文件：
   inspection_report_name_interfaces.json（sri-mech-joint v1→v2 jointType options=JGJ 107-2016
   五接头类型）+ inspection_report_name_links.json（5 links）+ inspection_brands/grades/models/specs.json
