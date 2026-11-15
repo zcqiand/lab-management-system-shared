@@ -4,6 +4,35 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批 C1 收官——ce 域三部水泥产品标准 tech_req +32 行**（2026-11-15，
+  tech-req 管线 --write，OBJ-SP01-P1；种子 153→185 行、diff 864 insertions=32×27）——
+  ① GB/T 2015-2017（白色硅酸盐水泥）+12：表1 双护栏选表（clause_id+caption）+ 邻接
+  prose 6.2.5 规则 #13，3 等级（32.5/42.5/52.5）× 4 参数（IP-0555 3d抗折 / IP-0557
+  28d抗折 / IP-0556 3d抗压 / IP-0558 28d抗压，列→参数由组×年龄推导禁按列号硬编码），
+  全 HIGH 直解；唯一脏点 32.5 行 3d 抗压 raw「≥>12.0」规则 #2 取首位比较符→「≥12.0」；
+  自检锚 28d 抗压值==等级值三等级全成立。② GB/T 3183-2025（砌筑水泥）+8（fix round 1
+  终态）：真表混合龄期（ground truth=gb-gbt.com 全文页同源实证，快照 nextjs
+  `_work/gbt3183-groundtruth.html`）——12.5/22.5 低龄抗折=7d 无码撤行（首轮 9 行版
+  IP-0555 两行撤，**批史首例裁定授权管线外最小删除**）、32.5 低龄=3d 保留 + 补 1 行
+  32.5×IP-0556 3d 抗压≥10.0（首轮漏解析面，HIGH 直解，acceptedNew=1/skipped 7 零手改
+  路径）；唯一 MED（12.5 低龄抗折「>1.5」→≥1.5 规则 #3 惯例归一）随撤行消失。
+  ③ GB/T 200-2025（中热/低热硅酸盐水泥）+12：**品种→model 人裁首航**——表2 按品种×
+  等级分行，model 落品种名 verbatim（中热水泥/低热水泥）、禁裸 grade 落行；中热42.5
+  4 行 HIGH 直解，低热 8 行整行 MED（7d 对 OCR 整对丢弃靠三判对位；低热42.5 3d 抗压
+  ≥13.0 三判行保 MED；「≥>3.5」规则 #2 确定性归一不降级）；GROUP BY param,grade,model
+  探针证双品种同等级不互吞（8 键 PK model 维度首次真消费）；--write 后复跑 dry-run
+  acceptedNew=0/skippedExisting=12 append-only 幂等实证。数字面：DB lab_dev/lab_test
+  tech_req 147→179（seed 185 − dedupe 6 既有账 9 组，本批 0 新增）；tests/seeds 18/18
+  绿、seed:check clean 双库、lab_test `-sso` 8 表 id/code 列探针全 0（mirror=off 无
+  污染）；grade 列无 FK（pg_constraint 实测仅 object/parameter/judgment_standard 三
+  FK），容忍面（对象域 code∨name 匹配口径）终态 25 行=本批 4（3183 12.5/22.5 无字典
+  行 12.5×2+22.5×2，32.5 有 GR-OBJ-SP01-P1-32-5）+ 既有 21。不入库面挂账账 16：
+  7d 抗压/抗折（中热42.5 ≥22.0/≥4.5 等已解析在册）、水化热表3 整表、矿物组成
+  C3S/C2S/C3A 表1 整表、低热 90d 抗压/28d 水化热——全缺 IP 码不入库。三标准品种
+  单一，model=''（2015/3183 人裁同款）；grade=等级真值、brand/spec/sieve '' 哨兵。
+  抽取端+探针过程件在 nextjs 仓 `_work/`（import-2015/3183/200-tech-req.py、三部
+  candidates/report 件、probe-200-db.py 等，gitignore 不入库）。同步清单：无仓内
+  同步件（nextjs 仓内零变更，数据单源=本仓 seeds）。
 - feat(seeds): **批 R1 Task 3 第二部标准入库——GB/T 20065-2016（预应力混凝土用螺纹钢筋）
   tech_req +20 行**（2026-11-15，tech-req 管线 --write，OBJ-SP01-P2）——**8 键 PK 扩维后
   首批真变体面**：表3 力学性能按 PSB 级别分行（PSB785/830/930/1080/1200 × 4 参数），
