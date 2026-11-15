@@ -4,6 +4,49 @@
 
 ## [Unreleased]
 
+- feat(seeds): **水泥组导面批——三部标准 tech_req +76 行（种子 208→284）+ 字典 +2 码（594→596）+ 在库 5 行搭车修**
+  （2026-11-16 人裁三裁：①按域分四批（水泥组/钢筋组/骨料组/方法标），本批为首；
+  ②HIGH 直解全导、MED 双证过照导（旗标进人看闸）、LOW/双证失败挂账不导；
+  ③疑点随域批搭车修。plan `docs/superpowers/plans/2026-11-16-cement-domain-surface-import.md`，
+  shared 提交 fd71251 字典 / d3d39dd 技术要求）。
+  三部明细（OBJ-SP01-P1，语料 dump `_work/surface/GB_175-2023.txt` 等三份为真源，禁再打 Weaviate）：
+  **GB 175-2023 +53**（终态 58=5 旧+53 新：表 4 品种×限值矩阵 MED 双证面+表 5 强度 7 档
+  IP-0555~0558，含 62.5 档 3d 对与 52.5R 同值旗标 MED；另含水溶性铬挂账面相关行见挂账清单）、
+  **GB/T 3183-2025 +12**（终态 20=8 旧+12 新：细度复用 IP-0217 记 sieve=80μm 方孔筛、
+  放射性 IP-0062 单行 ≤1.0 合一照批 200 挂账先例）、**GB/T 2015-2017 +11**（终态 23=12 旧+11 新：
+  白度 IP-0597 两行 model 挂等级 P·W-1/P·W-2、细度复用 IP-0549 45μm、碱含量选择性行
+  照批 200 6.2 先例 remark 记条件）。
+  字典 +2（fd71251，照 IP-0590~0595 行形状）：IP-0596 水溶性铬（Ⅵ）unit=mg/kg（三部共用）/
+  IP-0597 白度 unit=None（无量纲亨特白度，2015 独有）。
+  **搭车 5 行**（人看闸 2026-11-16 过目；既有行改动仅此 5 行——4 行 42.5 补挂+氯离子
+  旧键行删新键行插，其余既有行深等零漂移；种子文件既有 6 组 8 键全等重复对与账 9
+  一致原样未动）：
+  ①氯离子 IP-0004 model `P·O 42.5`→`''`（全品种适用，限值品种无关——**model 是 8 键 PK
+  维度，改键=旧键行删+新键行插**，账 17 两列混用就此收口）+clause 7.1 表4/page 6+
+  remark 品种注记；②IP-0555~0558 42.5 四行 clause `7.4.3 表5`/page 7 补挂；
+  ③其中 IP-0555 **D5 裁值 4.0**（人看闸 2026-11-16：语料 ≥4.0 为准，在库 remark 3.5 记废，
+  min_value null→4.0+remark 改写）。
+  **sort_order 偏差口径（ruling）**：candidates 抽取端 per-std 分配（各 std 现行 max+10）
+  被管线全局 append 尾段 max+10 覆盖（批 200 同机制），终态 175=1424 起/3183=1954 起/
+  2015=2074 起、步进 10，全库零撞——只记录不改码。
+  挂账 5 条（D1~D5，逐条缺口+解锁条件见 nextjs `_work/surface/cement-deferred.md`，
+  总账见 standard-gen HISTORY 账 18）：D1/D3 水溶性铬 ≤10 mg/kg 双证失败（GB 31893 原文
+  锚定解锁，双标准一次受益）/ D2 175 细度 45μm 方向存疑（原版 PDF 锚定）/ D4 175 表5
+  五档 28d 对 OCR 未读出（原版表5 锚定）/ D5 已裁值收口（见搭车③）。
+  DB 收口：seed:db append-only 常规浇 → seed:check **红（陈旧 1 行）**→ 根因=氯离子行
+  model 改键（plan 预估「model 非键」误判——model 在 8 键 PK 内，upsert 按新键插入、
+  旧键行残留）→ `seed:db -- --reset` 全量重浇（dev 库专用）→ seed:check clean。
+  **指纹：改键搭车必炸常规浇，--reset 是唯一收口**。lab_dev 探针六项（psycopg UTF-8
+  落盘）：三部行数 58/20/23 与新旧拆分 5+53/8+12/12+11 逐值过；搭车 5 行逐字段终态过；
+  白度 2 行 vt=string/min 89·87/expression ≥89·≥87；字典 596 两新码在册；tech_req 总面
+  278=284−dedupe 6（既有账 9 组）；绑定面 511 零触碰；8 键全库唯一。
+  **白度 vt 消费面结论**：判定链（cement-strength autoVerdict/requirement 格式化/
+  reportTemplateSeed/DynamicFormRenderer）全部以 comparison+minValue/maxValue 为消费键，
+  `value_type` 仅 range 分支读——`string`+min_value 行走 numeric ≥ 路径正常判定，
+  不忽略不报错；`string` 唯一作用=tech-req-gate 单位空豁免+报表 expression 显示。
+  双门绿（shared + nextjs exit 0）。同步清单：**react/vue 零改动**（本批只动 shared
+  种子+字典+nextjs 护栏，消费仓无代码面变化）；nextjs CHANGELOG 同批条（护栏消费侧）。
+
 - feat(seeds): **JC/T 600-2010 龄期进参数名迁移批——16 行泛龄期码拆四龄期码（IP-0555~0558），spec 龄期迁入参数名，绑定 2→4**
   （2026-11-15 人批；plan `docs/superpowers/plans/2026-11-15-age-in-parameter-name-migration.md`）。
   旧键 (JC/T 600-2010, IP-0055 抗压强度 / IP-0056 抗折强度) 四行携 spec=3d/28d 表龄期 →
