@@ -88,15 +88,5 @@
     "sort_order": 9,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "SP-SMK-001",
-    "official_no": "OFFICIAL-SMK-001",
-    "name": "专项 smoke 域",
-    "is_official": true,
-    "enabled": true,
-    "sort_order": 0,
-    "created_at": "2026-08-17T16:00:00Z",
-    "updated_at": "2026-08-17T16:00:00Z"
   }
 ]
