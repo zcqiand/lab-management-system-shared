@@ -41,22 +41,6 @@
   },
   {
     "report_name_code": "RN-101",
-    "inspection_standard_code": "GB/T 200-2025",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
-    "inspection_standard_code": "GB/T 2015-2017",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
     "inspection_standard_code": "GB/T 208-2014",
     "role": "TESTING",
     "remark": null,
@@ -65,23 +49,7 @@
   },
   {
     "report_name_code": "RN-101",
-    "inspection_standard_code": "GB/T 21372-2024",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
     "inspection_standard_code": "GB/T 2419-2005",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
-    "inspection_standard_code": "GB/T 3183-2025",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -104,33 +72,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-101",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-102-1",
     "inspection_standard_code": "GB 1499.2-2024",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-1",
-    "inspection_standard_code": "GB 1499.2-2024",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-1",
-    "inspection_standard_code": "GB 50204-2015",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -168,22 +112,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-102-1",
-    "inspection_standard_code": "Q/ZTG 001-2025",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-1",
-    "inspection_standard_code": "T/ZBTA 02-2024",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-102-2",
     "inspection_standard_code": "GB/T 228.1-2021",
     "role": "TESTING",
@@ -203,38 +131,6 @@
     "report_name_code": "RN-102-2",
     "inspection_standard_code": "JGJ 107-2016",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-2",
-    "inspection_standard_code": "JGJ 107-2016",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-2",
-    "inspection_standard_code": "JG/T 163-2013",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-2",
-    "inspection_standard_code": "Q/ZTG 001-2025",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-102-2",
-    "inspection_standard_code": "T/ZBTA 02-2024",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -280,33 +176,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-102-3",
-    "inspection_standard_code": "Q/ZTG 001-2025",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-1",
-    "inspection_standard_code": "GB 6566-2010",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-103-1",
     "inspection_standard_code": "GB/T 14684-2022",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-1",
-    "inspection_standard_code": "GB/T 14684-2022",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -320,49 +192,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-103-1",
-    "inspection_standard_code": "JG/T 494-2016",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-1",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-2",
-    "inspection_standard_code": "GB 6566-2010",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-103-2",
     "inspection_standard_code": "GB/T 14685-2022",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-2",
-    "inspection_standard_code": "GB/T 14685-2022",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-2",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -384,22 +216,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-103-3",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-4",
-    "inspection_standard_code": "GB 6566-2010",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-103-4",
     "inspection_standard_code": "GB/T 14685-2022",
     "role": "JUDGMENT",
@@ -410,30 +226,6 @@
   {
     "report_name_code": "RN-103-4",
     "inspection_standard_code": "JGJ 52-2006",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-4",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-5",
-    "inspection_standard_code": "GB/T 14684-2022",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-103-5",
-    "inspection_standard_code": "GB/T 14684-2022",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -457,32 +249,8 @@
   },
   {
     "report_name_code": "RN-104-2",
-    "inspection_standard_code": "GB/T 13545 - 2014",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-104-2",
     "inspection_standard_code": "GB/T 21144-2023",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-104-2",
-    "inspection_standard_code": "GB/T 21144-2023",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-104-3",
-    "inspection_standard_code": "GB 50208-2011",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -586,14 +354,6 @@
   {
     "report_name_code": "RN-105-2",
     "inspection_standard_code": "GB/T 50082-2024",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-105-2",
-    "inspection_standard_code": "GB/T 50082-2024",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -625,24 +385,8 @@
   },
   {
     "report_name_code": "RN-106-1",
-    "inspection_standard_code": "GB 50119-2013",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-106-1",
     "inspection_standard_code": "GB 8076-2008",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-106-1",
-    "inspection_standard_code": "GB 8076-2008",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -651,30 +395,6 @@
     "report_name_code": "RN-106-2",
     "inspection_standard_code": "GB 23439-2009",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-106-2",
-    "inspection_standard_code": "GB 23439-2009",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-106-2",
-    "inspection_standard_code": "GB/T 3183-2025",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-107-1",
-    "inspection_standard_code": "GB 6566-2010",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -720,22 +440,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "report_name_code": "RN-107-1",
-    "inspection_standard_code": "TB∕T 3275-2018",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-107-2",
-    "inspection_standard_code": "GB 6566-2010",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "report_name_code": "RN-107-2",
     "inspection_standard_code": "GB/T 1345-2026",
     "role": "TESTING",
@@ -761,14 +465,6 @@
   },
   {
     "report_name_code": "RN-107-2",
-    "inspection_standard_code": "GB/T 1596-2017",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-107-2",
     "inspection_standard_code": "GB/T 176-2025",
     "role": "TESTING",
     "remark": null,
@@ -778,22 +474,6 @@
   {
     "report_name_code": "RN-107-2",
     "inspection_standard_code": "GB/T 208-2014",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-107-2",
-    "inspection_standard_code": "GB/T 51003-2014",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-107-2",
-    "inspection_standard_code": "TB∕T 3275-2018",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -826,14 +506,6 @@
   {
     "report_name_code": "RN-108-2",
     "inspection_standard_code": "JGJ/T 70-2009",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-108-2",
-    "inspection_standard_code": "JGJ/T 70-2009",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -843,14 +515,6 @@
     "report_name_code": "RN-108-2",
     "inspection_standard_code": "SL/T 352-2020",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-1",
-    "inspection_standard_code": "GB/T 50123-2019",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -882,23 +546,7 @@
   {
     "report_name_code": "RN-109-2",
     "inspection_standard_code": "GB/T 50123-2019",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-2",
-    "inspection_standard_code": "GB/T 50123-2019",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-3",
-    "inspection_standard_code": "GB/T 50123-2019",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -915,30 +563,6 @@
     "report_name_code": "RN-110-1",
     "inspection_standard_code": "GB18242-2008",
     "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-110-1",
-    "inspection_standard_code": "GB18242-2008",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-110-1",
-    "inspection_standard_code": "GB18243-2008",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-110-1",
-    "inspection_standard_code": "GB/T 18242-2025",
-    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1017,14 +641,6 @@
   },
   {
     "report_name_code": "RN-110-2",
-    "inspection_standard_code": "GB/T 18173.3-2014",
-    "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-110-2",
     "inspection_standard_code": "GB/T 39693.4-2025",
     "role": "TESTING",
     "remark": null,
@@ -1050,7 +666,7 @@
   {
     "report_name_code": "RN-110-3",
     "inspection_standard_code": "GB 50208-2011",
-    "role": "TESTING",
+    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1074,6 +690,46 @@
   {
     "report_name_code": "RN-110-4",
     "inspection_standard_code": "JC/T 2428-2017",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-105-2",
+    "inspection_standard_code": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-108-2",
+    "inspection_standard_code": "GB/T 25181-2019",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-109-1",
+    "inspection_standard_code": "JTG 3430-2020",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-109-2",
+    "inspection_standard_code": "JTG 3430-2020",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-109-3",
+    "inspection_standard_code": "JTG 3430-2020",
     "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
