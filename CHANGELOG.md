@@ -4,6 +4,49 @@
 
 ## [Unreleased]
 
+- feat(seeds): **钢筋组导面批——三部标准 tech_req +129 行（种子 284→413）+ 搭车修 HF-1~5（删 8/改 21，终态 405）+ 字典 +23 码（596→619）**
+  （四批规划第二批，三裁纪律同批水泥导面；plan `docs/superpowers/plans/2026-11-16-rebar-domain-surface-import.md`，
+  shared 提交 7811850 字典 / faf7a86 sort_order 修正 / 8c89b7e 技术要求+搭车）。
+  三部明细（OBJ-SP01-P1，语料 dump `_work/surface/GB_1499.1-2024.txt` 等三份为真源，禁再打 Weaviate）：
+  **GB 1499.1-2024 +11**（终态 19=8 旧+11 新）/ **GB 1499.2-2024 +109**（终态 188=79 旧+109 新，
+  搭车删 8 后 180）/ **GB/T 20065-2016 +9**（终态 29=20 旧+9 新）；管线
+  `tech-req:import --domain rebar --write` acceptedNew=129 / rejected=0 / medCount=87
+  （flag 面 HIGH 42 / MED 87，旗标行 remark 留痕进人看闸）。
+  字典 +23（IP-0598~IP-0620，照批 200 形状；faf7a86 修正 23 新码 sort_order 对齐
+  code 序号 IP-0598→598…IP-0620→620，纠正抽取端 per-std 尾段分配）。
+  **管线 enrich 语义落库实证**：IP-0605 ≥0.055/≥0.060/≥0.065 → min_value 0.055/0.060/0.065
+  （string 行同样回填，IP-0597 先例同款）。**三冲突+flag 行 remark 留痕**：Si 0.80 dump 为准
+  （gap 报告 0.55 冲突）/反弯 D+1d 推导链/HRB600 合并格继承/疲劳应力范围 195 MPa；
+  20065 疲劳两行人裁形状：IP-0103 8.4.2 target=`2×10^6 次循环 0.7Fm～(0.7Fm+Fr) 不断裂`、
+  value_type=string+judgment_mode=manual（字典单位 kN 不适用，选择性协商项入 remark）。
+  **搭车修 HF-1~5**（人看闸 2026-11-16 过目；删 8/改 21）：HF-1 删 7 条 clause='' 草稿行
+  （IP-0086/0087/0150/0151/0559/0560，8 键判据）+删 IP-0153 clause=表4 Φ6~12 min/max 空值
+  同键 dup 1；HF-2 IP-0151 1499.2 存活 9 行 min_value 回填（普通 5 行 7.5 / E 4 行 9.0，
+  零 null）；HF-3 含于 HF-1 清单（IP-0559/0560 brand=HRB400 草稿 2 行随删）；HF-4
+  IP-0559/0560 ×8 remark 逐字订正（实测强屈比 Rm/ReL ≥1.25 / 实测超强比 R°eL/ReL ≤1.30，
+  小数落 expression 注记 V014 挂账）；HF-5 1499.1 IP-0086/IP-0150 clause=表6 remark 补注记
+  （Rp0.2 / 出厂检验时准许采用A / 仲裁检验时采用A / Agt/A 替代方向已对 dump 原文复核），
+  值面零动。**HISTORY 账 9 随批收口**：6 组 8 键全等真重复（curated×抽取 disagreement）
+  的 curated 草稿行随 HF-1 删行出局、文档抽取行存活——全库 405 行 8 键唯一（护栏断言
+  即收口证据）；⚠ 消费点注记：DataEntryPage specStandardYield IP-0086 唯一 verified 行
+  随裁定翻转为文档抽取行（≥300 MPa HPB300）。
+  挂账 8 条（RA-D1~D8，逐条缺口+解锁条件见 nextjs `_work/surface/rebar-deferred.md`，
+  总账见 standard-gen HISTORY 账 19）：RA-D1 20065 表3 断后伸长率 A 五档 OCR 残缺 /
+  RA-D2 20065 表2 外形尺寸逐档矩阵错序 / RA-D3 20065 松弛四行继承未逐格核（与 RA-D1
+  同次解锁）/ RA-D4 1499.1 5.4.2 盘条交货批量面不导（硬约束 4 裁定）/ RA-D5~D7 1499.2
+  表3 内径 11 档+横肋高 13 档+横肋间距 15 档 OCR 错位 / RA-D8 1499.1 表3 Φ28~40 档
+  dump 缺失（语料块截断，人裁不猜测）。
+  DB 收口：seed:db **--reset 全量重浇**（本批含删行+改键搭车，常规浇必留旧键孤儿——
+  批水泥/批 1 同款指纹：改键搭车唯一收口=--reset，dev 库专用）→ seed:check clean
+  （calc 面 dropped 2 = PK 粒度常态）。lab_dev 探针 12 项（psycopg UTF-8 落盘）：
+  tech_req 总面 405、三部 19/180/29、DB↔种子 23 字段多重集深等、IP-0151 9 行
+  7.5/9.0 零 null、IP-0152 表7/page 11/D=5d、IP-0153 Φ6~12 表4/page 9/-5.5/5.5 唯一行、
+  搭车删行零残留（三部内 clause 空面清零）、HF-4/5 remark 逐字在册、疲劳 string/manual
+  行+195 MPa remark 在册、IP-0605 enrich ×3、字典 619+23 新码在册、绑定面 511 零触碰
+  （per-std 6/7/0）、8 键全库唯一。双门绿（shared+nextjs exit 0）。同步清单：
+  **react/vue 零改动**（本批只动 shared 种子+字典+nextjs 护栏，消费仓无代码面变化）；
+  nextjs CHANGELOG 同批条（护栏消费侧）。
+
 - feat(seeds): **水泥组导面批——三部标准 tech_req +76 行（种子 208→284）+ 字典 +2 码（594→596）+ 在库 5 行搭车修**
   （2026-11-16 人裁三裁：①按域分四批（水泥组/钢筋组/骨料组/方法标），本批为首；
   ②HIGH 直解全导、MED 双证过照导（旗标进人看闸）、LOW/双证失败挂账不导；
