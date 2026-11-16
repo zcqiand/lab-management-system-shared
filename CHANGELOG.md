@@ -4,6 +4,29 @@
 
 ## [Unreleased]
 
+- fix(seeds): **REQ-2026-039 技术要求页判定挂链（role=JUDGMENT）过滤与假链清洗**——
+  inspection_object_standards 一轮 17 条假 JUDGMENT 链清洗（16 删 1 翻转 GBJ 82-85@P5
+  →TESTING，REQ §4 人批件）+ §5 判定行缺链补 2（GB/T 200-2025@P1 /
+  GB/T 20065-2016@P2 各 +1 JUDGMENT）+ 二轮 TESTING 面镜像错挂 30 删 2 翻转
+  （GB/T 21372-2024@P1 / GB/T 51003-2014@P7 →JUDGMENT）+ calc 行 4 迁 1 删
+  （REQ §8 人批件，随迁 inspection_calculation_methods 种子），终态挂链 219→189
+  （TESTING 83 / JUDGMENT 106）/ calc 31→30（shared 77efdcc 一轮 / 4a7f6bd 二轮 /
+  f29abdb SP-SMK-001 专项 smoke 种子行删除）。护栏测试在消费仓 nextjs
+  （tests/seeds/judgment-link-snapshot.test.ts：判定行⇒JUDGMENT 不变量含 2 版本错位
+  显式例外钉锚 / 快照锚 EXPECTED_JUDGMENT_STANDARDS 106 对同源导出 / TESTING 链
+  零 verdict 不变量，全绿）。DB 收口（nextjs 侧）：seed:db -- --reset 全量重浇
+  lab_dev（二轮含删行，常规浇不删孤儿链）→ seed:check clean；psycopg 探针 7 项全过
+  failures=0（总行 189 / GBJ 82-85@P5 翻转 / 17 假链零 JUDGMENT 残留 /
+  GB 175-2023@P1 仅 JUDGMENT / 2 补链在 DB / DB JUDGMENT 集合=锚 106 对逐位等价 /
+  specialties 零 SP-SMK* 且总行 9，报告 nextjs `_work/req039-probe-report.txt`）。
+  双门绿（shared+nextjs gate exit 0）。挂账：react/vue 树过滤镜像与其余后端栈字典
+  消费面另批（standard-gen HISTORY 账 20）；JGJ 52 / GB/T 50082 / GB/T 28900 版本
+  错位归一另批（账 21，ensureObjectStandardLinks standards-存在性护栏随下次导入批
+  前置）。**兄弟仓同步清单**：react——技术要求页树 JUDGMENT 过滤+计算方法页 TESTING
+  过滤镜像（账 20）；vue——同 react（账 20）；其余后端栈（springboot/aspnetcore/
+  fastapi/rails/kotlin/laravel/go/django）——inspection_object_standards 字典消费面
+  role 语义另批核对（账 20）；shared 本体零待回放。
+
 - feat(seeds): **钢筋组导面批——三部标准 tech_req +129 行（种子 284→413）+ 搭车修 HF-1~5（删 8/改 21，终态 405）+ 字典 +23 码（596→619）**
   （四批规划第二批，三裁纪律同批水泥导面；plan `docs/superpowers/plans/2026-11-16-rebar-domain-surface-import.md`，
   shared 提交 7811850 字典 / faf7a86 sort_order 修正 / 8c89b7e 技术要求+搭车）。
