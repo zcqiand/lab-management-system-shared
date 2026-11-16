@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 
+- docs(req): **REQ-2026-040 加载态统一收官登记**——行为标准
+  `docs/requirements/REQ-2026-040-loading-state.md`（§2 裁定 / §3 规约 / §4 面清单）
+  本批落地 nextjs（T1-T7 收口，2026-11-17）：A 组 8 面 B6 翻转（`loading &&
+  list.length === 0` 保旧行为 → loading 真值门控）+ B 组 9 面补门控 + C 组锚性质
+  校验 + 三 store（sample/receipt/contract）loading 初始值翻转 + 核对面清单收口
+  （TechnicalRequirementList 下拉源 / CategoryDictList 树源 / FlowStagePage 可撤回
+  子表 / contracts 在位恢复 / ReceiptFormModal 三来源错误条）。台账 README 状态行
+  改「已上线（2026-11-17，nextjs T1-T7 收口双门绿；react/vue 镜像挂账另批）」。
+  双门绿（shared+nextjs gate exit 0）。**兄弟仓同步清单**：react——A/B 组加载态
+  镜像 + store 初始值翻转 + dom 测试移植（standard-gen HISTORY 账 22）；vue——
+  同 react（账 22）；shared 本体零待回放（本批 shared 无代码改动，仅文档）。
+
 - fix(seeds): **REQ-2026-039 技术要求页判定挂链（role=JUDGMENT）过滤与假链清洗**——
   inspection_object_standards 一轮 17 条假 JUDGMENT 链清洗（16 删 1 翻转 GBJ 82-85@P5
   →TESTING，REQ §4 人批件）+ §5 判定行缺链补 2（GB/T 200-2025@P1 /
