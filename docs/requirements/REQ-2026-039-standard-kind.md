@@ -22,7 +22,7 @@
 | # | 问题 | 裁定 |
 |---|---|---|
 | 1 | 排除机制：按零行过滤 / 加 standard_kind 字段 / 只删一条？ | 初裁选 kind 字段；发现挂链已有 role 语义后**二裁：不加 kind**（2026-11-16）——role=JUDGMENT 挂链即「判定依据」语义真源，字段冗余。104 标准全量分类表随之退役（原 §3），仅留 17 条假链鉴定依据（方法=纯方法面标准，零限值面）。 |
-| 2 | 树过滤按什么？ | **挂链 role=JUDGMENT**（复用 M06.F01.I05-I07 既有机制，零契约变更优先：links 列表端点已支持 `role` 过滤）。计算方法页维持现状（不过滤）。 |
+| 2 | 树过滤按什么？ | **挂链 role=JUDGMENT**（复用 M06.F01.I05-I07 既有机制，零契约变更优先：links 列表端点已支持 `role` 过滤）。计算方法页维持现状（不过滤）。**〔勘误 2026-11-16 四裁：计算方法页按检测依据（TESTING）过滤落地，推翻本句，见 §9〕** |
 | 3 | 假 JUDGMENT 链怎么清？ | method 标准的 JUDGMENT 链：有 TESTING 孪生链的**删 JUDGMENT 行**；无孪生的**翻转为 TESTING**。清单见 §4，人批后机械执行。 |
 | 4 | 清洗后如何防复发？ | **三令（2026-11-16 三裁：用户令「标准条款入库时需维护项目↔标准 TESTING/JUDGMENT」）**：①导入管线挂链维护——`tech-req:import` 落库时对每个 (object, judgmentStandardCode) 补缺 JUDGMENT 链、`calc-method:import` 同理补 TESTING 链（append-only，三键已存在则不动）；②护栏升级为**真不变量**：判定行 ⇒ JUDGMENT 链存在（机器可断言，4 条历史欠账见 §5 补链清单，2 条版本错位例外挂账钉在锚内）；③快照锚（16 删 1 翻转后 JUDGMENT 集合形状）作第二道锚。 |
 | 5 | 其他后端栈与 react/vue 镜像？ | 本批落地 **shared 种子洗链 + nextjs 过滤**；其余消费仓镜像挂账另批。本批零 API 契约变更（links role 过滤端点已在契约内）；若计划落地中发现需新增端点/参数，按硬约束 contract-test 同 commit 同步。 |
@@ -43,10 +43,6 @@ method 面，tech-req 管线=verdict 面；运行时录入值经 calc 得结果�
 假链鉴定口径：「方法标准」=纯方法面标准（检验方法/试验方法/测定方法/试验规程，无限值
 验收面），基于标准名称+家族导入史（原 104 行分类草案在 `_work/standard-kind-draft.md`，
 过程件留档不随本 REQ 入库）。**§4 清洗清单 + §5 补链清单是本 REQ 唯二人批数据面。**
-
-「方法标准」=纯方法面标准（检验方法/试验方法/测定方法/试验规程，无限值验收面）。鉴定
-基于标准名称+家族导入史（原 104 行分类草案在 `_work/standard-kind-draft.md`，过程件留档，
-不随本 REQ 入库）。**清洗清单 §4 是本 REQ 唯一人批数据面。**
 
 ## 4. 假 JUDGMENT 链清洗清单（17 条，人批件）
 
@@ -90,7 +86,8 @@ method 面，tech-req 管线=verdict 面；运行时录入值经 calc 得结果�
    补 §5 的 2 条 JUDGMENT 链 + 护栏测试三件（判定行⇒JUDGMENT 不变量含 2 显式例外 /
    快照集合形状锚 / GBJ 82-85 翻转行恰 1 条 TESTING）先红后绿。
 3. **T-3** nextjs：技术要求页树按 role=JUDGMENT 过滤（links role 过滤端点已在契约，
-   零契约变更）；计算方法页不变；组件测试先红后绿。
+   零契约变更）；计算方法页不变〔勘误 2026-11-16 四裁：改按 TESTING 过滤，见 §9〕；
+   组件测试先红后绿。
 4. **T-4** 导入管线挂链维护：`scripts/tech-req-pipeline.ts` --write 后对每个
    (object, judgmentStandardCode) 补缺 JUDGMENT 链；`scripts/calc-method-import.ts`
    同理补 TESTING 链；append-only 三键去重；单测先红后绿（补链/幂等/零契约变更）。
@@ -101,7 +98,8 @@ method 面，tech-req 管线=verdict 面；运行时录入值经 calc 得结果�
 ## 7. 验收标准
 
 - 清洗清单 §4 经人批（本 REQ 状态转「开发中」转正即批）。
-- 技术要求页树只显 JUDGMENT 挂链标准；GB/T 1346-2024 选中路径消失；计算方法页不受影响。
+- 技术要求页树只显 JUDGMENT 挂链标准；GB/T 1346-2024 选中路径消失；计算方法页不受影响
+  〔勘误 2026-11-16 四裁：计算方法页树同样过滤（TESTING 面），见 §9〕。
 - 护栏绿：判定行⇒JUDGMENT 链不变量（§5 两条版本错位显式例外钉锚）+ 快照集合形状锚。
 - 管线挂链维护生效：tech-req/calc-method 导入落库自动补缺挂链（append-only 幂等，单测覆盖）。
 - 零 API 契约变更（若破此承诺，contract-test 同 commit 补同步并在 REQ §2#5 记账）。
@@ -170,3 +168,14 @@ JGJ 52（双链）、DB33/T 1095（仅判定）现状不动。TB∕T 3275（4 �
 
 挂链行 219→**189**（30 删）；TESTING 115→**83**；JUDGMENT 104→**106**（2 翻转）；
 calc 行 31→**30**（1 删）。T4 探针④随之改为「GB 175-2023@P1 仅 JUDGMENT 链」。
+
+## 9. 勘误记录（2026-11-16 收官终审补）
+
+- **四裁回填**：原 §2#2/§6 T-3/§7 写「计算方法页维持现状/不变/不受影响」，执行中
+  用户四裁（2026-11-16）裁定计算方法页树按检测依据（TESTING）过滤
+  （`CalculationMethodList.tsx` standardRoleFilter="TESTING"，nextjs 14a0889 已落地，
+  live 验收过）。三处原文加勘误标注不改写历史；行为授权链=ledger 四裁记录+CHANGELOG。
+- §3 旧版段落残留（「清洗清单 §4 是本 REQ 唯一人批数据面」）与修订版（§4+§5 双清单）
+  逐字双份——删旧留新。
+- 同面遗留：报告名称↔标准 junction（inspection_report_name_standards）同病未洗
+  （GB/T 200-2025 等产品标准 role=TESTING@RN-101），七裁立案 REQ-2026-040 另批。
