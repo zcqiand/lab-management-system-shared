@@ -360,6 +360,14 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "report_name_code": "RN-105-2",
+    "inspection_standard_code": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "report_name_code": "RN-105-3",
     "inspection_standard_code": "GB 55008-2021",
     "role": "JUDGMENT",
@@ -520,6 +528,14 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "report_name_code": "RN-108-2",
+    "inspection_standard_code": "GB/T 25181-2019",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "report_name_code": "RN-109-1",
     "inspection_standard_code": "GB/T 50123-2019",
     "role": "TESTING",
@@ -544,6 +560,14 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "report_name_code": "RN-109-1",
+    "inspection_standard_code": "JTG 3430-2020",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "report_name_code": "RN-109-2",
     "inspection_standard_code": "GB/T 50123-2019",
     "role": "TESTING",
@@ -552,9 +576,25 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
+    "report_name_code": "RN-109-2",
+    "inspection_standard_code": "JTG 3430-2020",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
     "report_name_code": "RN-109-3",
     "inspection_standard_code": "GB/T 50123-2019",
     "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "report_name_code": "RN-109-3",
+    "inspection_standard_code": "JTG 3430-2020",
+    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -690,46 +730,6 @@
   {
     "report_name_code": "RN-110-4",
     "inspection_standard_code": "JC/T 2428-2017",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-105-2",
-    "inspection_standard_code": "GB/T 50081-2019",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-108-2",
-    "inspection_standard_code": "GB/T 25181-2019",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-1",
-    "inspection_standard_code": "JTG 3430-2020",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-2",
-    "inspection_standard_code": "JTG 3430-2020",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-109-3",
-    "inspection_standard_code": "JTG 3430-2020",
     "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
