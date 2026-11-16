@@ -26,14 +26,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P1",
     "inspection_standard_code": "GB/T 1346-2024",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P1",
-    "inspection_standard_code": "GB/T 1346-2024",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -50,15 +42,15 @@
   {
     "inspection_object_code": "OBJ-SP01-P1",
     "inspection_standard_code": "GB/T 17671-2021",
-    "role": "JUDGMENT",
+    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P1",
-    "inspection_standard_code": "GB/T 17671-2021",
-    "role": "TESTING",
+    "inspection_standard_code": "GB/T 200-2025",
+    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -138,14 +130,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P1",
     "inspection_standard_code": "JC/T 600-2010",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P1",
-    "inspection_standard_code": "JTG 3420-2020",
     "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -521,16 +505,16 @@
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
-    "inspection_standard_code": "GB/T 21839-2008",
-    "role": "TESTING",
+    "inspection_standard_code": "GB/T 20065-2016",
+    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
-    "inspection_standard_code": "GB/T 228.1-2021",
-    "role": "JUDGMENT",
+    "inspection_standard_code": "GB/T 21839-2008",
+    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -834,14 +818,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P4",
     "inspection_standard_code": "GB/T 10294-2008",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P4",
-    "inspection_standard_code": "GB/T 10294-2008",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -858,14 +834,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P4",
     "inspection_standard_code": "GB/T 11968-2020",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P4",
-    "inspection_standard_code": "GB/T 11969-2020",
     "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -994,7 +962,7 @@
   {
     "inspection_object_code": "OBJ-SP01-P5",
     "inspection_standard_code": "GBJ 82-85",
-    "role": "JUDGMENT",
+    "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1018,14 +986,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P5",
     "inspection_standard_code": "GB/T 50082-2024",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P5",
-    "inspection_standard_code": "GB/T 50082-2024",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -1034,23 +994,7 @@
   {
     "inspection_object_code": "OBJ-SP01-P5",
     "inspection_standard_code": "JTG 3420-2020",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P5",
-    "inspection_standard_code": "JTG 3420-2020",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P5",
-    "inspection_standard_code": "SL/T 352-2020",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1218,14 +1162,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P7",
     "inspection_standard_code": "JTG 3432-2024",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P7",
-    "inspection_standard_code": "JTG 3432-2024",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -1274,14 +1210,6 @@
   {
     "inspection_object_code": "OBJ-SP01-P8",
     "inspection_standard_code": "JGJ/T 70-2009",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P8",
-    "inspection_standard_code": "JGJ/T 70-2009",
     "role": "TESTING",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -1290,23 +1218,7 @@
   {
     "inspection_object_code": "OBJ-SP01-P8",
     "inspection_standard_code": "SL/T 352-2020",
-    "role": "JUDGMENT",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P8",
-    "inspection_standard_code": "SL/T 352-2020",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P9",
-    "inspection_standard_code": "GB/T 50123-2019",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1331,14 +1243,6 @@
     "inspection_object_code": "OBJ-SP01-P9",
     "inspection_standard_code": "JTG 3430-2020",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP01-P9",
-    "inspection_standard_code": "JTG 3441-2024",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1379,14 +1283,6 @@
     "inspection_object_code": "OBJ-SP02-P2",
     "inspection_standard_code": "GB 1499.2-2024",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP02-P2",
-    "inspection_standard_code": "GB/T 228.1-2021",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
@@ -1779,14 +1675,6 @@
     "inspection_object_code": "OBJ-SP07-P11",
     "inspection_standard_code": "GB 1499.2-2024",
     "role": "TESTING",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "inspection_object_code": "OBJ-SP07-P11",
-    "inspection_standard_code": "GB/T 228.1-2021",
-    "role": "JUDGMENT",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
