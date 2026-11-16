@@ -6,7 +6,7 @@
     "features": 27,
     "items": 167
   },
-  "warnings_total": 336,
+  "warnings_total": 335,
   "warnings": {
     "已上线但无设计映射": [
       "M00.F01.I01",
@@ -339,7 +339,6 @@
       "M03.F06.I04",
       "M03.F07.I04",
       "M03.F08.I04",
-      "M06.F01.I07",
       "M06.F02.I09",
       "M06.F02.I10",
       "M06.F03.I08"
@@ -1594,7 +1593,9 @@
       "name": "项目↔标准 link",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-039-standard-kind.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
@@ -1950,7 +1951,10 @@
       "name": "技术要求列表",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\README.md",
+        "docs\\requirements\\REQ-2026-039-standard-kind.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],
