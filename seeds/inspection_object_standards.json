@@ -1534,5 +1534,21 @@
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P3-细骨料",
+    "inspection_standard_code": "JGJ 52",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P5",
+    "inspection_standard_code": "GB/T 50082-2009",
+    "role": "JUDGMENT",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

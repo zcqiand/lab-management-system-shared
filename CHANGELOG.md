@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批AG 骨料组批首行导入（GB/T 14685 粗骨料表观密度）**——
+  seeds/inspection_technical_requirements.json +1（OBJ-SP01-P3-粗骨料 × IP-0177
+  ≥2600 kg/m³，14685 §6.7 pg=10，verified/automatic；OCR 上标³误读为²，单位取
+  参数链 IP-0177 声明 kg/m³）；seeds/inspection_object_standards.json +2
+  JUDGMENT 补链（细骨料×JGJ 52 / P5×GB/T 50082-2009——既有缺链随批归一；新行
+  挂链三键 粗骨料×14685 JUDGMENT 已在 → skip）。挂账：RA-AG 族（14684 表1/3/4/5/6/7/8
+  + 14685 表1/2/3/4/5/7/8/9 矩阵限值 OCR 塌缩不导，解锁=原版 PDF 锚定）+
+  RA-J52（JGJ 52-2006 语料碎片化灾难级——页面重复/语序打乱/条文说明混正文，整
+  标准不导，解锁=语料重灌或 PDF）；细骨料 prose 有值无参数四例不硬凑（细度模数
+  §6.1.2 / 机制砂片状 §6.7 / 堆积密度 ≥1400 §6.8 / 不规则颗粒·岩石抗压强度
+  粗骨料侧）。lab_dev 重浇 seed:check clean；DB 探针全对（406/194）；双门绿。
+  兄弟仓同步：react/vue 零改动（种子唯一源 shared，无镜像回写）。
+
 - feat(seeds): **批R2 JGJ 107-2016 calc 三行导入（钢筋机械连接 prose 面）**——
   seeds/inspection_calculation_methods.json +3（OBJ-SP01-P2 × IP-0087
   steel_tensile sp=3 formula=ROUND_HALF_EVEN 复用现行引擎白名单串 / IP-0154
