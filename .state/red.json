@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "project": "lab-management-system-shared",
+  "evidence_at": "2026-11-17T07:51:58+0800",
+  "levels": {
+    "L4": 1
+  },
+  "note": "ADR-0044 红灯证据：red 期测试门失败自动落盘，供 phase.py --to green 核验"
+}

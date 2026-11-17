@@ -4,6 +4,15 @@
 
 ## [Unreleased]
 
+- feat(seeds): **REQ-2026-042 码表清洗（T2.5）**——「——」占位行统一不增加（照
+  2026-11-15 既裁「占位归渲染层」）：models/specs/grades 三表共删 23 行；名称去
+  「（seed 补全）」注水后缀：5 文件 13 行归正，其中 grades 2 行（'42.5'/'P6'）去后缀
+  后与同项目规范行真重复整行删。执行件=`_work/clean-catalog-seeds.py`（确定性变换，
+  重跑逐字节一致）。终态行数 models 118 / specs 66 / grades 344 / brands 95 /
+  interfaces 104。lab_dev `--reset` 重浇 + seed:check clean。兄弟仓同步清单：
+  saas-identity-platform-shared（REQ-2026-042 T1 菜单种子已同批落地 dfd7f09）；
+  lab-management-system-nextjs（T3 维护页另 commit）；react/vue 镜像另批挂账。
+
 - fix(seeds): **catalog 4 表退出 SSO 镜像**（2026-11-17 人裁：码表平台级全局字典，无 tenant
   列、端点无租户过滤——镜像副本对任何登录形态同可见，只产生成对重复行）。live 实证：
   等级维护页水泥 grades 每行 ×2（`GR-…-20` + `GR-…-20-sso` 同 sort_order 成对，
