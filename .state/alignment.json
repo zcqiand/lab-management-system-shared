@@ -2165,7 +2165,9 @@
       "name": "界面列表",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\REQ-2026-042-specimen-interface-menu.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [
