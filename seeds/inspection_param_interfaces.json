@@ -436,7 +436,7 @@
   {
     "code": "rebar-mech-tensile",
     "name": "钢筋力学性能抗拉强度",
-    "description": "钢筋力学性能抗拉强度（GB/T 228.1）：2 组 结构化表格 最大力(kN)+公称直径 → 抗拉强度 Rm=4000·F/(π·d²) 逐行算；标准要求列由 inspection_technical_requirements 下拉组装（缺省阈值 ≥540，越限红显）；公称直径只读、自动取样品 specification；无断口距/断裂特征。组数取 calcRule.specimenCount。",
+    "description": "钢筋力学性能抗拉强度（GB/T 228.1）：2 组 结构化表格 最大力(kN)+公称直径 → 抗拉强度 Rm=4000·F/(π·d²) 逐行算；标准要求列由 inspection_technical_requirements 下拉组装（缺省阈值 ≥540，越限红显）；公称直径只读、自动取样品 specification；无断口距/断裂特征。组数由界面 schema rows 驱动。",
     "version": 3,
     "config": {
       "fields": [

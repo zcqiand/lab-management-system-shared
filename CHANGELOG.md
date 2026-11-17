@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+- feat(contracts): **specimen_count 归属迁移 Phase 3——calc 表删列收官**（tsp→
+  openapi→DB 全链摘除）——契约：tsp/models/calculation-method.tsp 三 model
+  （CalculationMethod/Create/Update）删 specimenCount，openapi.yaml 再生（0 命中）；
+  DB：src/db/schema.ts 列删 + drizzle/0011_glossy_mandroid.sql（单条
+  `DROP COLUMN IF EXISTS`，lab_dev+lab_test 均应用，列+not_null CHECK 双消）；
+  种子：inspection_calculation_methods.json 33 行全摘键（diff 干净 33 删），
+  inspection_param_interfaces.json remark 措辞同步（「组数由界面 schema rows 驱动」）；
+  文档：docs/functions/function-tree.md M06.F05.I03 删「specimenCount 默认 1」。
+  管线宿主侧（nextjs 同批）：A 档源改语料锚直读（assembler rowsOrThrow/countOrThrow
+  fail-fast、6 锚 target 改 param_interface.count、calc-method-gate sanity 面退役
+  12 键键集失配 throw）、calc 页 UI 摘除试件数量列与表单字段。contract-test 同步：
+  全量断言审计零命中（specimen_count 无任何断言引用）——本批无测试面改动，按
+  CLAUDE.md §2 记录清偿。seed:db 重浇 26 表 + seed:check clean；DB 探针 31 行
+  （33−2 dedupe 常态）12 列无 specimen_count。兄弟仓同步清单：react/vue——
+  SDK 契约删列再生 + inspection-capability 同款 UI 适配，随镜像批（徽标+列修复+
+  Phase 2 回退链回放）一并回放，本批未动。
+
 - feat(seeds): **specimen_count 归属迁移 Phase 1——12 参数补卡批**（2026-11-17
   人裁「按迁移序走：先补 interface count 面」）——审计定性：calc 表
   specimen_count 已成陈旧副本（DIFF 参数 live 用 interface 值；钢筋族 table+rows

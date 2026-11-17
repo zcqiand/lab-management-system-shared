@@ -19,7 +19,6 @@ model CalculationMethod {
   testingStandardCode?: string;
   reportNameCode?: string;
   algorithmType: CalculationAlgorithmType;
-  specimenCount: int32;
   formula?: string;
   conditions?: string;
   roundingRule?: string;
@@ -35,7 +34,6 @@ model CreateCalculationMethodRequest {
   testingStandardCode?: string;
   reportNameCode?: string;
   algorithmType?: CalculationAlgorithmType;
-  specimenCount?: int32;
   formula?: string;
   conditions?: string;
   roundingRule?: string;
@@ -47,7 +45,6 @@ model UpdateCalculationMethodRequest {
   testingStandardCode?: string;
   reportNameCode?: string;
   algorithmType?: CalculationAlgorithmType;
-  specimenCount?: int32;
   formula?: string;
   conditions?: string;
   roundingRule?: string;

@@ -1,0 +1,1 @@
+ALTER TABLE "inspection_calculation_methods" DROP COLUMN IF EXISTS "specimen_count";

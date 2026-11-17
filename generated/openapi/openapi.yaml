@@ -4403,7 +4403,6 @@ components:
         - inspectionObjectCode
         - inspectionParameterCode
         - algorithmType
-        - specimenCount
         - sortOrder
         - createdAt
         - updatedAt
@@ -4418,9 +4417,6 @@ components:
           type: string
         algorithmType:
           $ref: '#/components/schemas/CalculationAlgorithmType'
-        specimenCount:
-          type: integer
-          format: int32
         formula:
           type: string
         conditions:
@@ -4514,9 +4510,6 @@ components:
           type: string
         algorithmType:
           $ref: '#/components/schemas/CalculationAlgorithmType'
-        specimenCount:
-          type: integer
-          format: int32
         formula:
           type: string
         conditions:
@@ -6155,9 +6148,6 @@ components:
           type: string
         algorithmType:
           $ref: '#/components/schemas/CalculationAlgorithmType'
-        specimenCount:
-          type: integer
-          format: int32
         formula:
           type: string
         conditions:

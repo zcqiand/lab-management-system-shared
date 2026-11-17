@@ -682,7 +682,6 @@ export const inspectionCalculationMethods = pgTable(
     testingStandardCode: text("testing_standard_code").notNull(),
     reportNameCode: text("report_name_code"),
     algorithmType: text("algorithm_type").default("manual").notNull(),
-    specimenCount: integer("specimen_count").default(1).notNull(),
     formula: text("formula"),
     conditions: text("conditions"),
     roundingRule: text("rounding_rule"),
