@@ -256,8 +256,8 @@
   {
     "code": "rebar-mech-connection-tensile",
     "name": "机械连接抗拉强度",
-    "description": "钢筋机械连接接头抗拉强度（JGJ 107）：3 试件 结构化表格 最大力(kN)+公称直径 → 抗拉强度逐行算；标准要求列由 inspection_technical_requirements 下拉组装（缺省阈值 ≥540，越限红显）；公称直径只读、自动取样品 specification；每试件断裂位置仍为独立 select_series。",
-    "version": 3,
+    "description": "钢筋机械连接接头抗拉强度（JGJ 107）：3 试件 结构化表格 最大力(kN)+公称直径 → 抗拉强度逐行算；标准要求列由 inspection_technical_requirements 下拉组装（缺省阈值 ≥540，越限红显）；公称直径只读、自动取样品 specification；断裂位置并入表格 select 列（2026-11-18 用户裁定：键/存储形状 string[] 不变，消费面零改动；模板 steel_tensile 屈服卡共用面不动，本行维持超模板手维护姿态）。",
+    "version": 4,
     "config": {
       "fields": [
         {
@@ -285,6 +285,12 @@
               "decimals": 0
             },
             {
+              "field": "fractureLocations",
+              "label": "断裂位置",
+              "mode": "select",
+              "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
+            },
+            {
               "field": "req",
               "label": "标准要求",
               "mode": "req_select"
@@ -298,13 +304,6 @@
             }
           },
           "showLabel": false
-        },
-        {
-          "field": "fractureLocations",
-          "type": "select_series",
-          "label": "断裂位置",
-          "count": 3,
-          "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
         }
       ],
       "computed": [
@@ -382,9 +381,9 @@
   },
   {
     "code": "rebar-mech-elongation",
-    "name": "断后伸长率+最大力总伸长率",
-    "description": "断后伸长率（%）：2 组直接录入 → 均值。同时承载最大力总伸长率 Agt（%）：2 组直接录入 → 均值。",
-    "version": 2,
+    "name": "断后伸长率",
+    "description": "断后伸长率（%）：2 组直接录入 → 均值。（2026-11-18 用户裁定：名剔「+最大力总伸长率」陈尾——Agt 半 2026-11-10 已拆分至 rebar-mech-agt，标题与内容一致）",
+    "version": 3,
     "config": {
       "fields": [
         {
@@ -555,9 +554,9 @@
   },
   {
     "code": "rebar-mech-yield-ratio",
-    "name": "强屈比+超强比",
-    "description": "强屈比：2 组 抗拉[i]/屈服[i]，由同样品 IP-0087/IP-0086 记录联立自动计算；缺值回退手动。同时承载超强比：2 组 实测屈服[i]/标准屈服值（IP-0086 技术要求 minValue）。",
-    "version": 2,
+    "name": "强屈比",
+    "description": "强屈比：2 组 抗拉[i]/屈服[i]，由同样品 IP-0087/IP-0086 记录联立自动计算；缺值回退手动。（2026-11-18 用户裁定：名剔「+超强比」陈尾——超强比半已拆分至 rebar-mech-super-ratio，标题与内容一致）",
+    "version": 3,
     "config": {
       "fields": [
         {

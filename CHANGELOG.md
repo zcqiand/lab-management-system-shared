@@ -4,6 +4,21 @@
 
 ## [Unreleased]
 
+- fix(seeds): **参数界面标题与内容一致化三行（2026-11-18 用户裁定）**——
+  inspection_param_interfaces.json 三行换版：①rebar-mech-elongation v2→3
+  名「断后伸长率+最大力总伸长率」→「断后伸长率」（Agt 半 2026-11-10 已拆分
+  至 rebar-mech-agt，标题剔「+」陈尾，描述同步）；②rebar-mech-yield-ratio
+  v2→3 名「强屈比+超强比」→「强屈比」（超强比半已拆至 rebar-mech-super-ratio，
+  描述同步）；③rebar-mech-connection-tensile v3→4 断裂位置由表外独立
+  select_series 并入表格 select 列（用户裁定「断裂位置作为表格列放在上面的
+  表格不是正好」；mode:select+列级 options=2026-11-11 弯曲卡先例；键
+  fractureLocations/存储形状 string[] 不变——algorithms/rebar-mechanics/
+  报表模板 srecord 源全按键读，消费面零改动；模板 steel_tensile 屈服卡共用
+  面不动，本行维持超模板手维护姿态）。护栏面：card-templates/assembler
+  深等的是 config 非 name——改名零波及。seed:db 重浇 + seed:check clean。
+  兄弟仓同步清单：nextjs（预览测试标题断言同批改）；angular 生成快照
+  inspection-param-interface.json 仍持陈名——归 angular 镜像批（挂账）。
+
 - feat(contracts): **specimen_count 归属迁移 Phase 3——calc 表删列收官**（tsp→
   openapi→DB 全链摘除）——契约：tsp/models/calculation-method.tsp 三 model
   （CalculationMethod/Create/Update）删 specimenCount，openapi.yaml 再生（0 命中）；
