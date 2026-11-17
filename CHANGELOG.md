@@ -4,6 +4,21 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R2 JGJ 107-2016 calc 三行导入（钢筋机械连接 prose 面）**——
+  seeds/inspection_calculation_methods.json +3（OBJ-SP01-P2 × IP-0087
+  steel_tensile sp=3 formula=ROUND_HALF_EVEN 复用现行引擎白名单串 / IP-0154
+  simple_avg sp=3 / IP-0151 simple_avg sp=3，全部 report_name_code=null 不扩 RN 面）；
+  seeds/inspection_object_standards.json +3 TESTING 补链（P2×JGJ 107-2016 真双链
+  J+T 成形 / P2×裸 GB/T 28900 / P5×GB/T 50082-2009——后两枚为 REQ-2026-039 T3
+  collectLinkPairs 扫全行暴露的既有缺链，账 21 前置护栏验证码均在字典在册，随批
+  归一）。挂账：JGJ 107 表3.0.5/表3.0.7 限值矩阵 OCR 错列塌缩不导（RA-J1/J2，
+  解锁=原版 PDF 锚定）；28900 IP-0151 手工法行（specimen_count 未规定不硬凑）；
+  IP-0097 不在 P2 对象链不硬凑。guard 随批改：挂链总数 189→192 / calc 绝对计数
+  30→33(P2 11→14) / TESTING 面白名单 3→4(+JGJ 107-2016)+50082-2009 版本错位例外。
+  lab_dev 重浇 seed:check clean（dedupe dropped 2 variant rows=PK 粒度常态）；
+  DB 探针 3 calc 行+4 链全对；shared/nextjs 双门绿。兄弟仓同步：react/vue 零改动
+  （种子唯一源 shared，无镜像回写）。
+
 - feat(seeds): **REQ-2026-042 码表清洗（T2.5）**——「——」占位行统一不增加（照
   2026-11-15 既裁「占位归渲染层」）：models/specs/grades 三表共删 23 行；名称去
   「（seed 补全）」注水后缀：5 文件 13 行归正，其中 grades 2 行（'42.5'/'P6'）去后缀
