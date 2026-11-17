@@ -3,16 +3,30 @@
     "code": "cement-compress",
     "name": "水泥胶砂抗压强度",
     "description": "6 试件破坏荷载(kN) → 抗压强度(Rc=F/A) → ±10% 剔除均值 → 单项评定（GB/T 17671）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "loads",
-          "type": "number_series",
-          "label": "破坏荷载 (kN)",
-          "required": true,
-          "count": 6,
-          "unit": "kN"
+          "field": "strengthTable",
+          "type": "table",
+          "label": "抗压强度测定",
+          "rows": 6,
+          "columns": [
+            {
+              "field": "loads",
+              "label": "破坏荷载 (kN)",
+              "mode": "input"
+            },
+            {
+              "field": "strengths",
+              "label": "抗压强度 (MPa)",
+              "mode": "computed",
+              "algorithm": "compressive_strength",
+              "decimals": 1,
+              "variant": "gb17671_compress"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -20,7 +34,9 @@
           "field": "strengths",
           "algorithm": "compressive_strength",
           "variant": "gb17671_compress",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗压强度 (MPa)"
         }
       ],
@@ -29,22 +45,36 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "cement-flexural",
     "name": "水泥胶砂抗折强度",
     "description": "3 试件破坏荷载(kN) → 抗折强度(Rf=1.5·F·L/b³) → ±10% 剔除均值 → 单项评定（GB/T 17671）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "loads",
-          "type": "number_series",
-          "label": "破坏荷载 (kN)",
-          "required": true,
-          "count": 3,
-          "unit": "kN"
+          "field": "strengthTable",
+          "type": "table",
+          "label": "抗折强度测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "loads",
+              "label": "破坏荷载 (kN)",
+              "mode": "input"
+            },
+            {
+              "field": "strengths",
+              "label": "抗折强度 (MPa)",
+              "mode": "computed",
+              "algorithm": "flexural_strength",
+              "decimals": 1,
+              "variant": "gb17671_flexural"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -52,7 +82,9 @@
           "field": "strengths",
           "algorithm": "flexural_strength",
           "variant": "gb17671_flexural",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗折强度 (MPa)"
         }
       ],
@@ -62,29 +94,44 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "concrete-compress",
     "name": "混凝土抗压",
     "description": "N 试件破坏荷载 → 抗压强度 → 代表值；无技术要求/单项评定",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "loads",
-          "type": "number_series",
-          "label": "破坏荷载 (kN)",
-          "required": true,
-          "count": 3,
-          "unit": "kN"
+          "field": "strengthTable",
+          "type": "table",
+          "label": "抗压强度测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "loads",
+              "label": "破坏荷载 (kN)",
+              "mode": "input"
+            },
+            {
+              "field": "strengths",
+              "label": "抗压强度 (MPa)",
+              "mode": "computed",
+              "algorithm": "compressive_strength",
+              "decimals": 1
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
         {
           "field": "strengths",
           "algorithm": "compressive_strength",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗压强度代表值"
         }
       ],
@@ -93,29 +140,37 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "concrete-permeability",
     "name": "混凝土抗渗性能",
     "description": "6 试件渗水压力 + 渗水情况 → 抗渗等级（按 GB/T 50082-2009）；无技术要求/单项评定",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "pressures",
-          "type": "number_series",
-          "label": "渗水压力 (MPa)",
-          "required": true,
-          "count": 6,
-          "unit": "MPa"
-        },
-        {
-          "field": "seepage",
-          "type": "select_series",
-          "label": "渗水情况",
-          "count": 6,
-          "options": ["未渗", "已渗"]
+          "field": "permTable",
+          "type": "table",
+          "label": "抗渗性能测定",
+          "rows": 6,
+          "columns": [
+            {
+              "field": "pressures",
+              "label": "渗水压力 (MPa)",
+              "mode": "input"
+            },
+            {
+              "field": "seepage",
+              "label": "渗水情况",
+              "mode": "select",
+              "options": [
+                "未渗",
+                "已渗"
+              ]
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -123,13 +178,16 @@
           "field": "grade",
           "algorithm": "formula",
           "variant": "permeability_grade",
-          "from": ["pressures", "seepage"],
+          "from": [
+            "pressures",
+            "seepage"
+          ],
           "label": "抗渗等级"
         }
       ]
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "default",
@@ -159,23 +217,38 @@
     "code": "mortar-compress",
     "name": "砂浆抗压强度",
     "description": "建筑砂浆抗压强度：70.7mm 立方体（承压面积 5000mm²）3 试件破坏荷载 → 抗压强度 → 代表值",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "loads",
-          "type": "number_series",
-          "label": "破坏荷载 (kN)",
-          "required": true,
-          "count": 3,
-          "unit": "kN"
+          "field": "strengthTable",
+          "type": "table",
+          "label": "抗压强度测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "loads",
+              "label": "破坏荷载 (kN)",
+              "mode": "input"
+            },
+            {
+              "field": "strengths",
+              "label": "抗压强度 (MPa)",
+              "mode": "computed",
+              "algorithm": "compressive_strength",
+              "decimals": 1
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
         {
           "field": "strengths",
           "algorithm": "compressive_strength",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗压强度 (MPa)"
         }
       ],
@@ -184,7 +257,7 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "particle-gradation",
@@ -219,7 +292,9 @@
           "field": "cumulativeRetains",
           "algorithm": "formula",
           "variant": "gradation",
-          "from": ["sieveRetains"],
+          "from": [
+            "sieveRetains"
+          ],
           "label": "累计筛余 / 细度模数"
         }
       ],
@@ -288,7 +363,12 @@
               "field": "fractureLocations",
               "label": "断裂位置",
               "mode": "select",
-              "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
+              "options": [
+                "母材断裂",
+                "断于接头",
+                "热影响区断裂",
+                "其他"
+              ]
             },
             {
               "field": "req",
@@ -310,7 +390,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "接头抗拉强度均值 (MPa)",
           "showDisplay": false
         }
@@ -370,7 +452,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "接头屈服强度均值 (MPa)",
           "showDisplay": false
         }
@@ -422,7 +506,10 @@
         {
           "field": "mean",
           "algorithm": "elongation",
-          "from": ["gaugeLengths", "ratios"],
+          "from": [
+            "gaugeLengths",
+            "ratios"
+          ],
           "label": "断后伸长率均值 (%)",
           "showDisplay": false
         }
@@ -483,7 +570,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗拉强度均值 (MPa)",
           "showDisplay": false
         }
@@ -543,7 +632,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "屈服强度均值 (MPa)",
           "showDisplay": false
         }
@@ -585,7 +676,10 @@
         {
           "field": "mean",
           "algorithm": "yield_ratio",
-          "from": ["gaugeLengths", "ratios"],
+          "from": [
+            "gaugeLengths",
+            "ratios"
+          ],
           "label": "强屈比均值",
           "showDisplay": false
         }
@@ -599,25 +693,33 @@
     "code": "rebar-welding-bend",
     "name": "钢筋焊接接头弯曲性能",
     "description": "3 试件：弯曲角度 + 合格/不合格；输出模板 wq0/wq·/wq1（wq· 中点位是模板字面量）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "angles",
-          "type": "number_series",
-          "label": "弯曲角度 (°)",
-          "required": true,
-          "count": 3,
-          "defaultValue": 90,
-          "unit": "°"
-        },
-        {
-          "field": "results",
-          "type": "select_series",
-          "label": "弯曲结果",
-          "count": 3,
-          "defaultValue": "合格",
-          "options": ["合格", "不合格"]
+          "field": "bendTable",
+          "type": "table",
+          "label": "弯曲性能测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "angles",
+              "label": "弯曲角度 (°)",
+              "mode": "input",
+              "defaultValue": 90
+            },
+            {
+              "field": "results",
+              "label": "弯曲结果",
+              "mode": "select",
+              "options": [
+                "合格",
+                "不合格"
+              ],
+              "defaultValue": "合格"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -625,41 +727,59 @@
           "field": "verdictDraft",
           "algorithm": "manual",
           "variant": "welding_bend",
-          "from": ["results"],
+          "from": [
+            "results"
+          ],
           "label": "弯曲性能评定"
         }
       ]
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "rebar-welding-tensile",
     "name": "钢筋焊接接头抗拉强度",
     "description": "1 样品 = 3 试件：最大荷重(kN) → 抗拉强度 Rm=4000·F/(π·22²) (MPa，规格 Φ22 硬编码不录入) / 断口距(mm) / 断裂特征；3 试件共享 1 条技术要求 → 单项评定（JGJ/T 27-2014，无 ±10% 剔除）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "loads",
-          "type": "number_series",
-          "label": "最大荷重 (kN)",
-          "required": true,
-          "count": 3,
-          "unit": "kN"
-        },
-        {
-          "field": "fractureDistances",
-          "type": "number_series",
-          "label": "断口距 (mm)",
-          "count": 3,
-          "unit": "mm"
-        },
-        {
-          "field": "fractureFeatures",
-          "type": "input_series",
-          "label": "断裂特征",
-          "count": 3
+          "field": "strengthTable",
+          "type": "table",
+          "label": "抗拉强度测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "loads",
+              "label": "最大荷重 (kN)",
+              "mode": "input"
+            },
+            {
+              "field": "fractureDistances",
+              "label": "断口距 (mm)",
+              "mode": "input"
+            },
+            {
+              "field": "fractureFeatures",
+              "label": "断裂特征",
+              "mode": "input_text"
+            },
+            {
+              "field": "strengths",
+              "label": "抗拉强度 (MPa)",
+              "mode": "computed",
+              "algorithm": "steel_tensile",
+              "decimals": 0,
+              "variant": "welding_tensile"
+            },
+            {
+              "field": "req",
+              "label": "标准要求",
+              "mode": "req_select"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -667,7 +787,9 @@
           "field": "strengths",
           "algorithm": "steel_tensile",
           "variant": "welding_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗拉强度 (MPa)"
         }
       ],
@@ -676,30 +798,33 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "soil-compaction",
     "name": "土工击实",
     "description": "击实曲线：N 组（干密度 g/cm³ + 含水率 %），自动求最大干密度与最优含水率（二次拟合峰值）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "dryDensities",
-          "type": "number_series",
-          "label": "干密度 (g/cm³)",
-          "required": true,
-          "count": 5,
-          "unit": "g/cm³"
-        },
-        {
-          "field": "waterContents",
-          "type": "number_series",
-          "label": "含水率 (%)",
-          "required": true,
-          "count": 5,
-          "unit": "%"
+          "field": "compactionTable",
+          "type": "table",
+          "label": "击实试验测定",
+          "rows": 5,
+          "columns": [
+            {
+              "field": "dryDensities",
+              "label": "干密度 (g/cm³)",
+              "mode": "input"
+            },
+            {
+              "field": "waterContents",
+              "label": "含水率 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -707,19 +832,22 @@
           "field": "peak",
           "algorithm": "formula",
           "variant": "compaction_peak",
-          "from": ["dryDensities", "waterContents"],
+          "from": [
+            "dryDensities",
+            "waterContents"
+          ],
           "label": "最大干密度 / 最优含水率"
         }
       ]
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "soil-compaction-degree-ring",
     "name": "土工压实度（环刀法）",
     "description": "逐试样录入：编号/部位/层次/设计压实度 + 湿密度 + 平均含水率 → 干密度 → 压实度；环刀法逐行显示最大干密度列",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
@@ -729,46 +857,43 @@
           "required": true
         },
         {
-          "field": "codes",
-          "type": "input_series",
-          "label": "试样编号",
-          "count": 6
-        },
-        {
-          "field": "parts",
-          "type": "input_series",
-          "label": "取样部位",
-          "count": 6
-        },
-        {
-          "field": "layers",
-          "type": "input_series",
-          "label": "层次",
-          "count": 6
-        },
-        {
-          "field": "designDegrees",
-          "type": "number_series",
-          "label": "设计压实度 (%)",
-          "required": true,
-          "count": 6,
-          "unit": "%"
-        },
-        {
-          "field": "wetDensities",
-          "type": "number_series",
-          "label": "湿密度 (g/cm³)",
-          "required": true,
-          "count": 6,
-          "unit": "g/cm³"
-        },
-        {
-          "field": "waterContents",
-          "type": "number_series",
-          "label": "含水率 (%)",
-          "required": true,
-          "count": 6,
-          "unit": "%"
+          "field": "degreeTable",
+          "type": "table",
+          "label": "压实度测定",
+          "rows": 6,
+          "columns": [
+            {
+              "field": "codes",
+              "label": "试样编号",
+              "mode": "input_text"
+            },
+            {
+              "field": "parts",
+              "label": "取样部位",
+              "mode": "input_text"
+            },
+            {
+              "field": "layers",
+              "label": "层次",
+              "mode": "input_text"
+            },
+            {
+              "field": "designDegrees",
+              "label": "设计压实度 (%)",
+              "mode": "input"
+            },
+            {
+              "field": "wetDensities",
+              "label": "湿密度 (g/cm³)",
+              "mode": "input"
+            },
+            {
+              "field": "waterContents",
+              "label": "含水率 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -776,7 +901,10 @@
           "field": "degrees",
           "algorithm": "formula",
           "variant": "compaction_degree",
-          "from": ["wetDensities", "waterContents"],
+          "from": [
+            "wetDensities",
+            "waterContents"
+          ],
           "label": "压实度 (%)"
         }
       ],
@@ -785,13 +913,13 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "soil-compaction-degree-sand",
     "name": "土工压实度（灌砂法）",
     "description": "逐试样录入：编号/部位/层次/设计压实度 + 湿密度 + 含水率 → 干密度 → 压实度（对最大干密度）；灌砂法不显示最大干密度列",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
@@ -801,46 +929,43 @@
           "required": true
         },
         {
-          "field": "codes",
-          "type": "input_series",
-          "label": "试样编号",
-          "count": 6
-        },
-        {
-          "field": "parts",
-          "type": "input_series",
-          "label": "取样部位",
-          "count": 6
-        },
-        {
-          "field": "layers",
-          "type": "input_series",
-          "label": "层次",
-          "count": 6
-        },
-        {
-          "field": "designDegrees",
-          "type": "number_series",
-          "label": "设计压实度 (%)",
-          "required": true,
-          "count": 6,
-          "unit": "%"
-        },
-        {
-          "field": "wetDensities",
-          "type": "number_series",
-          "label": "湿密度 (g/cm³)",
-          "required": true,
-          "count": 6,
-          "unit": "g/cm³"
-        },
-        {
-          "field": "waterContents",
-          "type": "number_series",
-          "label": "含水率 (%)",
-          "required": true,
-          "count": 6,
-          "unit": "%"
+          "field": "degreeTable",
+          "type": "table",
+          "label": "压实度测定",
+          "rows": 6,
+          "columns": [
+            {
+              "field": "codes",
+              "label": "试样编号",
+              "mode": "input_text"
+            },
+            {
+              "field": "parts",
+              "label": "取样部位",
+              "mode": "input_text"
+            },
+            {
+              "field": "layers",
+              "label": "层次",
+              "mode": "input_text"
+            },
+            {
+              "field": "designDegrees",
+              "label": "设计压实度 (%)",
+              "mode": "input"
+            },
+            {
+              "field": "wetDensities",
+              "label": "湿密度 (g/cm³)",
+              "mode": "input"
+            },
+            {
+              "field": "waterContents",
+              "label": "含水率 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -848,7 +973,10 @@
           "field": "degrees",
           "algorithm": "formula",
           "variant": "compaction_degree",
-          "from": ["wetDensities", "waterContents"],
+          "from": [
+            "wetDensities",
+            "waterContents"
+          ],
           "label": "压实度 (%)"
         }
       ],
@@ -857,7 +985,7 @@
       }
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "rebar-mech-yield-retest",
@@ -910,7 +1038,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "屈服强度均值 (MPa)",
           "showDisplay": false
         }
@@ -970,7 +1100,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "抗拉强度均值 (MPa)",
           "showDisplay": false
         }
@@ -1030,7 +1162,9 @@
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "接头屈服强度均值 (MPa)",
           "showDisplay": false
         }
@@ -1090,14 +1224,21 @@
           "type": "select_series",
           "label": "断裂位置",
           "count": 6,
-          "options": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
+          "options": [
+            "母材断裂",
+            "断于接头",
+            "热影响区断裂",
+            "其他"
+          ]
         }
       ],
       "computed": [
         {
           "field": "mean",
           "algorithm": "steel_tensile",
-          "from": ["loads"],
+          "from": [
+            "loads"
+          ],
           "label": "接头抗拉强度均值 (MPa)",
           "showDisplay": false
         }
@@ -1150,7 +1291,10 @@
         {
           "field": "mean",
           "algorithm": "elongation",
-          "from": ["gaugeLengths", "ratios"],
+          "from": [
+            "gaugeLengths",
+            "ratios"
+          ],
           "label": "最大力总伸长率均值 (%)",
           "variant": "agt",
           "showDisplay": false
@@ -1195,7 +1339,10 @@
         {
           "field": "mean",
           "algorithm": "auto_calc_ratio",
-          "from": ["gaugeLengths", "ratios"],
+          "from": [
+            "gaugeLengths",
+            "ratios"
+          ],
           "label": "超强比均值",
           "variant": "super_ratio",
           "showDisplay": false
@@ -1229,7 +1376,10 @@
               "field": "results",
               "label": "弯曲结果",
               "mode": "select",
-              "options": ["无裂纹", "裂纹"]
+              "options": [
+                "无裂纹",
+                "裂纹"
+              ]
             }
           ]
         }
@@ -1239,7 +1389,9 @@
           "field": "bendVerdict",
           "algorithm": "manual",
           "variant": "rebar_bend",
-          "from": ["results"],
+          "from": [
+            "results"
+          ],
           "label": "弯曲性能评定",
           "showDisplay": false
         }
@@ -1272,7 +1424,10 @@
               "field": "results",
               "label": "弯曲结果",
               "mode": "select",
-              "options": ["无裂纹", "裂纹"]
+              "options": [
+                "无裂纹",
+                "裂纹"
+              ]
             }
           ]
         }
@@ -1282,7 +1437,9 @@
           "field": "bendVerdict",
           "algorithm": "manual",
           "variant": "rebar_bend",
-          "from": ["results"],
+          "from": [
+            "results"
+          ],
           "label": "弯曲性能评定",
           "showDisplay": false
         }
@@ -1410,35 +1567,48 @@
     "code": "cement-soundness",
     "name": "安定性",
     "description": "沸煮法雷氏夹 ×2 增大值人工读数（GB/T 1346-2024）；平均 ≤5.0mm 判定走单项评定",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "expansionValues",
-          "type": "number_series",
-          "label": "雷氏夹增大值 (C−A)",
-          "count": 2,
-          "unit": "mm"
+          "field": "soundnessTable",
+          "type": "table",
+          "label": "安定性测定",
+          "rows": 2,
+          "columns": [
+            {
+              "field": "expansionValues",
+              "label": "雷氏夹增大值 (C−A)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
-      ],
-      "params": {}
+      ]
     },
     "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "cement-fineness",
     "name": "细度",
     "description": "负压筛析法两份平行筛余人工读数（GB/T 1345-2026 式1）；simple_avg 取平均",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "sieveResidues",
-          "type": "number_series",
-          "label": "筛余 (%)",
-          "count": 2,
-          "unit": "%"
+          "field": "finenessTable",
+          "type": "table",
+          "label": "细度测定",
+          "rows": 2,
+          "columns": [
+            {
+              "field": "sieveResidues",
+              "label": "筛余 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1450,11 +1620,10 @@
           ],
           "label": "细度平均值 (%)"
         }
-      ],
-      "params": {}
+      ]
     },
     "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "cement-chloride",
@@ -1540,15 +1709,22 @@
     "code": "rebar-mech-connection-agt",
     "name": "接头最大力下总延伸率",
     "description": "JGJ 107-2016 5.0.3 型式检验 3 试件实测人工读数平均；限值表3.0.7 挂账 RA-J2 待 PDF 锚定",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "agtValues",
-          "type": "number_series",
-          "label": "最大力下总延伸率 (%)",
-          "count": 3,
-          "unit": "%"
+          "field": "agtTable",
+          "type": "table",
+          "label": "最大力下总延伸率测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "agtValues",
+              "label": "最大力下总延伸率 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1560,25 +1736,31 @@
           ],
           "label": "平均值 (%)"
         }
-      ],
-      "params": {}
+      ]
     },
     "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "rebar-mech-connection-residual",
     "name": "接头残余变形",
     "description": "JGJ 107-2016 7.0.2 现场工艺检验 3 试件残余变形人工读数平均（标距 d/2~3d，附录A/A.2.1）",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "residualValues",
-          "type": "number_series",
-          "label": "残余变形 (mm)",
-          "count": 3,
-          "unit": "mm"
+          "field": "residualTable",
+          "type": "table",
+          "label": "残余变形测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "residualValues",
+              "label": "残余变形 (mm)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "computed": [
@@ -1590,31 +1772,36 @@
           ],
           "label": "平均值 (mm)"
         }
-      ],
-      "params": {}
+      ]
     },
     "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "concrete-splitting-tensile",
     "name": "劈裂抗拉强度",
     "description": "GB/T 50081-2019 9.0.5 三试件人工逐件读数（0.637×2F/πA）；公式转录挂账，manual 面",
-    "version": 1,
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "splitValues",
-          "type": "number_series",
-          "label": "破坏荷载 (kN)",
-          "count": 3,
-          "unit": "kN"
+          "field": "splitTable",
+          "type": "table",
+          "label": "劈裂抗拉强度测定",
+          "rows": 3,
+          "columns": [
+            {
+              "field": "splitValues",
+              "label": "破坏荷载 (kN)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
-      ],
-      "params": {}
+      ]
     },
     "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "code": "concrete-elastic-modulus",

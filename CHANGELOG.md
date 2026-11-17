@@ -4,6 +4,24 @@
 
 ## [Unreleased]
 
+- fix(seeds): **表格化批子批 3——15 张 series 卡换表格形 version+1（对照表人批 2026-11-18，用户原话「标准导入时尽量用表格界面」）**——
+  inspection_param_interfaces.json 15 行 config 换表格形（version+1、
+  updated_at 2026-11-18）：焊接抗拉/弯曲（=模板输出逐字节深等）、接头
+  agt/residual（simple_avg 均值）、水泥抗压/抗折（=模板输出，rows 6/3 +
+  area/span/width 协议常数）、混凝土/砂浆抗压（rows 3 + area 22500/5000）、
+  抗渗（permTable rows 6 渗水压力/渗水情况 select）、劈裂抗拉（splitTable
+  rows 3 manual 面）、土工击实（compactionTable rows 5）、压实度环刀/灌砂
+  （maxDryDensity 留表外 number + degreeTable rows 6 文本量 input_text 列
+  + showMaxDensityColumn params）、细度（finenessTable rows 2）、安定性
+  （soundnessTable rows 2 无 computed）。**config.computed 全部原样保留**
+  （引擎/verdict/record JSON 形状不变），列键=旧 series 键消费面零波及。
+  空 params {} 一律删键（parseFormSchema 缺省 {}）。模板消费 4 行（焊接×2
+  +水泥×2）与 card-templates 模板输出逐字节深等（护栏测试锚）。
+  _work/tableize-15-interfaces.py 过程件留档（确定性变换防长 CJK Write 退化）。
+  兄弟仓同步清单：nextjs（表格形模板/resolver/测试同批收官）；react/vue
+  镜像批挂账不变（镜像 renderer 尚不支持 input_text/列 defaultValue）；
+  angular 生成快照归 angular 镜像批。
+
 - fix(seeds): **参数界面标题与内容一致化三行（2026-11-18 用户裁定）**——
   inspection_param_interfaces.json 三行换版：①rebar-mech-elongation v2→3
   名「断后伸长率+最大力总伸长率」→「断后伸长率」（Agt 半 2026-11-10 已拆分

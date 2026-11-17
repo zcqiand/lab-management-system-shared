@@ -148,7 +148,7 @@
       "row": 11,
       "col": 6,
       "tag": "s1_tz0",
-      "source": "record:IP-0087:fractureCharacteristics[0]"
+      "source": "record:IP-0087:fractureFeatures[0]"
     },
     {
       "table": 1,
@@ -176,7 +176,7 @@
       "row": 12,
       "col": 6,
       "tag": "s1_tz1",
-      "source": "record:IP-0087:fractureCharacteristics[1]"
+      "source": "record:IP-0087:fractureFeatures[1]"
     },
     {
       "table": 1,
@@ -204,7 +204,7 @@
       "row": 13,
       "col": 6,
       "tag": "s1_tz2",
-      "source": "record:IP-0087:fractureCharacteristics[2]"
+      "source": "record:IP-0087:fractureFeatures[2]"
     },
     {
       "table": 1,
@@ -271,7 +271,7 @@
     },
     {
       "tag": "s2_tz0",
-      "source": "srecord:2:IP-0087:fractureCharacteristics[0]",
+      "source": "srecord:2:IP-0087:fractureFeatures[0]",
       "table": 1,
       "row": 11,
       "col": 6
@@ -299,7 +299,7 @@
     },
     {
       "tag": "s2_tz1",
-      "source": "srecord:2:IP-0087:fractureCharacteristics[1]",
+      "source": "srecord:2:IP-0087:fractureFeatures[1]",
       "table": 1,
       "row": 12,
       "col": 6
@@ -327,7 +327,7 @@
     },
     {
       "tag": "s2_tz2",
-      "source": "srecord:2:IP-0087:fractureCharacteristics[2]",
+      "source": "srecord:2:IP-0087:fractureFeatures[2]",
       "table": 1,
       "row": 13,
       "col": 6
@@ -383,7 +383,7 @@
     },
     {
       "tag": "s3_tz0",
-      "source": "srecord:3:IP-0087:fractureCharacteristics[0]",
+      "source": "srecord:3:IP-0087:fractureFeatures[0]",
       "table": 1,
       "row": 11,
       "col": 6
@@ -411,7 +411,7 @@
     },
     {
       "tag": "s3_tz1",
-      "source": "srecord:3:IP-0087:fractureCharacteristics[1]",
+      "source": "srecord:3:IP-0087:fractureFeatures[1]",
       "table": 1,
       "row": 12,
       "col": 6
@@ -439,7 +439,7 @@
     },
     {
       "tag": "s3_tz2",
-      "source": "srecord:3:IP-0087:fractureCharacteristics[2]",
+      "source": "srecord:3:IP-0087:fractureFeatures[2]",
       "table": 1,
       "row": 13,
       "col": 6
@@ -495,7 +495,7 @@
     },
     {
       "tag": "s4_tz0",
-      "source": "srecord:4:IP-0087:fractureCharacteristics[0]",
+      "source": "srecord:4:IP-0087:fractureFeatures[0]",
       "table": 1,
       "row": 11,
       "col": 6
@@ -523,7 +523,7 @@
     },
     {
       "tag": "s4_tz1",
-      "source": "srecord:4:IP-0087:fractureCharacteristics[1]",
+      "source": "srecord:4:IP-0087:fractureFeatures[1]",
       "table": 1,
       "row": 12,
       "col": 6
@@ -551,7 +551,7 @@
     },
     {
       "tag": "s4_tz2",
-      "source": "srecord:4:IP-0087:fractureCharacteristics[2]",
+      "source": "srecord:4:IP-0087:fractureFeatures[2]",
       "table": 1,
       "row": 13,
       "col": 6
