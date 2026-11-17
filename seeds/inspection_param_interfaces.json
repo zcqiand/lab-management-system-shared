@@ -1380,5 +1380,281 @@
     },
     "created_at": "2026-11-11T00:00:00Z",
     "updated_at": "2026-11-11T00:00:00Z"
+  },
+  {
+    "code": "cement-setting-time",
+    "name": "凝结时间",
+    "description": "初凝/终凝人工读数（GB/T 1346-2024 维卡仪法）；单值卡，评定走单项评定",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "initialSet",
+          "type": "number",
+          "label": "初凝时间 (min)",
+          "required": true,
+          "unit": "min"
+        },
+        {
+          "field": "finalSet",
+          "type": "number",
+          "label": "终凝时间 (min)",
+          "unit": "min"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-soundness",
+    "name": "安定性",
+    "description": "沸煮法雷氏夹 ×2 增大值人工读数（GB/T 1346-2024）；平均 ≤5.0mm 判定走单项评定",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "expansionValues",
+          "type": "number_series",
+          "label": "雷氏夹增大值 (C−A)",
+          "count": 2,
+          "unit": "mm"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-fineness",
+    "name": "细度",
+    "description": "负压筛析法两份平行筛余人工读数（GB/T 1345-2026 式1）；simple_avg 取平均",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "sieveResidues",
+          "type": "number_series",
+          "label": "筛余 (%)",
+          "count": 2,
+          "unit": "%"
+        }
+      ],
+      "computed": [
+        {
+          "field": "finenessMean",
+          "algorithm": "simple_avg",
+          "from": [
+            "sieveResidues"
+          ],
+          "label": "细度平均值 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-chloride",
+    "name": "氯离子含量",
+    "description": "硫氰酸铵容量法人工结果单值（GB/T 176-2025）；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "氯离子含量 (%)",
+          "required": true,
+          "unit": "%"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-alkali",
+    "name": "碱含量",
+    "description": "火焰光度法人工结果单值（GB/T 176-2025 式42/43）；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "碱含量 (%)",
+          "required": true,
+          "unit": "%"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-so3",
+    "name": "三氧化硫含量",
+    "description": "硫酸钡称量法人工结果单值（GB/T 176-2025 式31）；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "三氧化硫含量 (%)",
+          "required": true,
+          "unit": "%"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "cement-loss-on-ignition",
+    "name": "烧失量",
+    "description": "灼烧差减法人工结果单值（GB/T 176-2025 式27）；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "烧失量 (%)",
+          "required": true,
+          "unit": "%"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "rebar-mech-connection-agt",
+    "name": "接头最大力下总延伸率",
+    "description": "JGJ 107-2016 5.0.3 型式检验 3 试件实测人工读数平均；限值表3.0.7 挂账 RA-J2 待 PDF 锚定",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "agtValues",
+          "type": "number_series",
+          "label": "最大力下总延伸率 (%)",
+          "count": 3,
+          "unit": "%"
+        }
+      ],
+      "computed": [
+        {
+          "field": "agtMean",
+          "algorithm": "simple_avg",
+          "from": [
+            "agtValues"
+          ],
+          "label": "平均值 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "rebar-mech-connection-residual",
+    "name": "接头残余变形",
+    "description": "JGJ 107-2016 7.0.2 现场工艺检验 3 试件残余变形人工读数平均（标距 d/2~3d，附录A/A.2.1）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "residualValues",
+          "type": "number_series",
+          "label": "残余变形 (mm)",
+          "count": 3,
+          "unit": "mm"
+        }
+      ],
+      "computed": [
+        {
+          "field": "residualMean",
+          "algorithm": "simple_avg",
+          "from": [
+            "residualValues"
+          ],
+          "label": "平均值 (mm)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "concrete-splitting-tensile",
+    "name": "劈裂抗拉强度",
+    "description": "GB/T 50081-2019 9.0.5 三试件人工逐件读数（0.637×2F/πA）；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "splitValues",
+          "type": "number_series",
+          "label": "破坏荷载 (kN)",
+          "count": 3,
+          "unit": "kN"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "concrete-elastic-modulus",
+    "name": "静力受压弹性模量",
+    "description": "GB/T 50081-2019 7.0.5 人工结果单值；公式转录挂账，manual 面",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "弹性模量 (MPa)",
+          "required": true,
+          "unit": "MPa"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
+  },
+  {
+    "code": "soil-optimum-moisture",
+    "name": "最优含水率",
+    "description": "JTG 3430-2020 击实曲线峰值对应含水率人工判定单值",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "value",
+          "type": "number",
+          "label": "最优含水率 (%)",
+          "required": true,
+          "unit": "%"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-17T00:00:00Z",
+    "updated_at": "2026-11-17T00:00:00Z"
   }
 ]

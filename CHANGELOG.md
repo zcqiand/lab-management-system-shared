@@ -4,6 +4,21 @@
 
 ## [Unreleased]
 
+- feat(seeds): **specimen_count 归属迁移 Phase 1——12 参数补卡批**（2026-11-17
+  人裁「按迁移序走：先补 interface count 面」）——审计定性：calc 表
+  specimen_count 已成陈旧副本（DIFF 参数 live 用 interface 值；钢筋族 table+rows
+  早已配齐），真缺口 = 14 参数无挂卡（无卡不在录入流）。本批 12 interface +
+  12 link append（IP-0003 胶砂强度 / IP-0056 抗折强度 与 cement-compress/
+  flexural 全量 links 对账：cement-compress 挂 IP-0556/0558、cement-flexural
+  挂 IP-0555/0557，IP-0003/IP-0056 疑似新旧重复，排除待人裁）。卡形状：单值
+  number 卡（凝结时间初凝/终凝、氯离子/碱/SO₃/烧失量、弹性模量、最优含水率）+
+  series 卡（安定性 ×2、细度 ×2+simple_avg、接头延伸率/残余变形 ×3+simple_avg、
+  劈裂 ×3）。护栏测试 tests/seeds/param-interface-link-coverage.test.ts 4 用例
+  （T1 迁移锚先红后绿 / T2 零悬挂 / T3 series count+table rows 全覆盖不变量 /
+  T4 裁值与 calc 行一致）4/4 绿；seed:db 重浇 27→39 interface / 24→36 link；
+  seed:check clean；DB 探针全对。兄弟仓同步：react/vue 零改动（种子唯一源
+  shared，无镜像回写）。
+
 - feat(seeds): **账 6 三部解禁批（TB 10424-2018 / TB∕T 3275-2018）tech_req +35**——
   seeds/inspection_technical_requirements.json 406→441（10424 细 10+粗 5 /
   3275 细 12+粗 8；码形 TB∕T 全角 U+2215 对齐字典与挂链；grade 分档 <C30/C30~C45/≥C50
