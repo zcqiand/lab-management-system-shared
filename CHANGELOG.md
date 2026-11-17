@@ -4,6 +4,25 @@
 
 ## [Unreleased]
 
+- feat(seeds): **账 6 三部解禁批（TB 10424-2018 / TB∕T 3275-2018）tech_req +35**——
+  seeds/inspection_technical_requirements.json 406→441（10424 细 10+粗 5 /
+  3275 细 12+粗 8；码形 TB∕T 全角 U+2215 对齐字典与挂链；grade 分档 <C30/C30~C45/≥C50
+  首批入 tech_req，档位序由 3275 表头列序+两标值序互证+单调性三重支撑）；
+  挂链零新增（四组 obj×std JUDGMENT 三键全在 skip）。**挂账**：账 27 RA-TB1
+  （10424 硫化物乱码/压碎指标乱码/针片状塌缩/石粉MB 塌缩/级配表）；账 28 RA-TB2
+  （3275 石粉MB 三档结构不符/表7/9/10 矩阵）；账 29 无参数面（粗骨料链缺
+  吸水率/硫化物/氯化物/有机物 参数四行+紧密空隙率语义变体+岩石抗压强度≥1.5倍
+  +云母——参数链扩容批候选）；账 30 < 界符面（碱活性 6 行+10424 预应力坚固性
+  <5%——comparison "<" 枚举扩展批：管线 COMPARISONS/判定端/展示面/DB 四处同步）；
+  账 31 limitKey 面（冻融吸水率 ×2+3275 预应力坚固性 3 行被 limitKey 不含
+  conditions 批内互吞——limitKey 扩列批另立）；账 32 JTG 3420-2020（方法规程
+  零 tech_req 面，calc 公式转录归账 1 专门批）。术语映射两处 remark 在案
+  （氯化物→氯离子 IP-0004 / 机制砂→人工砂 IP-0181）。守卫先行出红（cement
+  441/rebar 441 两计数断言 L4 真红）→ --write → phase --to green 正门消费。
+  seed:db 重浇 441 行 + seed:check clean；DB 探针全对（15/20 拆分、针片状三档
+  grade 行、挂链 7 条 JUDGMENT）；双门绿。兄弟仓同步：react/vue 零改动
+  （种子唯一源 shared，无镜像回写）。
+
 - feat(seeds): **批AG 骨料组批首行导入（GB/T 14685 粗骨料表观密度）**——
   seeds/inspection_technical_requirements.json +1（OBJ-SP01-P3-粗骨料 × IP-0177
   ≥2600 kg/m³，14685 §6.7 pg=10，verified/automatic；OCR 上标³误读为²，单位取
