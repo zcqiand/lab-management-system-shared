@@ -4,6 +4,33 @@
 
 ## [Unreleased]
 
+- fix(seeds): **REQ-2026-041 报告名称↔标准挂链洗链收官（T-2/T-4）+ REQ §6/§3 勘误回填**——
+  `inspection_report_name_standards` 洗链（shared 78b1750+dd6eaf2）：A 组检验依据假腿
+  42 删（43 行规则 −RN-110-3 移出翻转）+ RN-110-3 GB 50208-2011 T→J 翻转（裁 #9）+
+  B 组判定依据 method 错挂 5 换裁（105-2→GB/T 50081-2019 / 108-2→GB/T 25181-2019 /
+  109-1/2/3→JTG 3430-2020，裁 #7/#8）+ C 组 RN-103-5 删错挂 J（GB/T 14684-2022 砂
+  产品标准，裁 #9），终态 135→**92 行**（TESTING 107→**64** / JUDGMENT **28**）；
+  白名单 T 腿 10 保留（实况分布 **50081×4 + JGJ 52-2006×5 + 3430×1**——3430 T 腿仅
+  RN-109-1 一条，REQ §3 勘误注记随本 commit）；J 缺失锚 {RN-103-5, RN-104-3}
+  （REQ §5 人裁挂账）；J≤1 不变式全绿。护栏 +2（tests/seeds/
+  report-name-standards-links.test.ts：①J 腿 obj 链 JUDGMENT 背书，
+  JUDGMENT_BACKIN_EXCEPTIONS 钉 RN-105-3|GB 55008-2021 单条例外——REQ §6 勘误回填：
+  「现状 J 腿逐个核过全满足」不成立，归一挂账拌合用水域覆盖批人裁三案
+  （补链/换挂/删挂）②T 腿 ∈ method 40 锚 ∪ 白名单 3 条）。红绿证据：入红
+  evidence_at 2026-11-17T07:51:58+0800 → gate L4 红（两断言 6 J 无背书+43 T 假腿）
+  → phase.py --to green 07:52:51 → 全门绿。DB 收口（nextjs 侧 T-3，零代码零测试
+  改动）：seed:db --reset 重浇 lab_dev（92 行）→ seed:check clean → psycopg 探针
+  15 断言全过 failures=0 → 全量 vitest 926 passed/1 skipped 与 REQ-040 基线全等 →
+  双门 gate exit 0（报告 shared `.superpowers/sdd/2026-11-17-req041-rn-wash/
+  task-T3-report.md`）。
+  contract-test 硬约束 §2 核查无命中（read 面 items/total drop、写面自建
+  per-target fixture，零种子行数/行内容钉死）。挂账：react/vue 等消费仓 junction
+  消费面镜像另批（standard-gen HISTORY 账 23）；RN-105-3 归一随拌合用水域覆盖批
+  人裁三案（账 23①）；RN-110-1 版本错位归一入账 21 扩面。**兄弟仓同步清单**：
+  react——报告名称维护关联聚合 / 接样表单标准候选随洗链 role 面镜像核对（账 23③）；
+  vue——同 react（账 23③）；其余后端栈 junction 字典消费面另批核对（账 23③）；
+  shared 本体零待回放。
+
 - docs(req): **REQ-2026-040 加载态统一收官登记**——行为标准
   `docs/requirements/REQ-2026-040-loading-state.md`（§2 裁定 / §3 规约 / §4 面清单）
   本批落地 nextjs（T1-T7 收口，2026-11-17）：A 组 8 面 B6 翻转（`loading &&
