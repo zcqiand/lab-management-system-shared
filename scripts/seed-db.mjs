@@ -102,10 +102,10 @@ export function dedupeByPk(table, rows, pkCols) {
 // 2026-09-23 引入）：业务 fixtures 全挂 demo 租户 TENANT-001（密码直登世界），SSO 登录
 // （token 租户=SAAS_TENANT_ID，家族统一 env 键）后按租户过滤的端点会空数据。镜像在灌库转换层做：
 // 4 张租户隔离表复制一份 id 加 "-sso" 后缀挂 SSO 租户，FK 沿 receipt.contractId →
-// sample.receiptId → test_record.sampleId 链重映射；catalog 4 表 PK=code 全局唯一 →
-// code 加后缀防撞 PK，FK 指全局 objects 不重映射，且表本身无 tenant_id 列
-//（ts 注释 unique(tenant_id, code) 系过时描述，2026-11-14 lab_dev schema 实证）→
-// 不注入。env 不设则跳过（lab_test
+// sample.receiptId → test_record.sampleId 链重映射。
+// catalog 4 表（brands/models/specs/grades）**不镜像**（2026-11-17 人裁）：平台级全局
+// 码表、无 tenant 列、端点无租户过滤——镜像副本对任何登录形态都是同一份可见数据，
+// 只会在码表维护页产生成对重复行（等/型/规/牌 四页 live 实证）。env 不设则跳过（lab_test
 // 等共享库不灌镜像面；禁兜底不等于禁分支——env 是显式开关，无默认值）。
 const SSO_ID_SUFFIX = "-sso";
 export const SSO_MIRROR_TABLES = {
@@ -113,10 +113,6 @@ export const SSO_MIRROR_TABLES = {
   sample_receipts: { idCol: "id", fkCols: ["contract_id"], tenant: true },
   samples: { idCol: "id", fkCols: ["receipt_id"], tenant: true },
   test_records: { idCol: "id", fkCols: ["sample_id"], tenant: true },
-  inspection_brands: { idCol: "code", fkCols: [], tenant: false },
-  inspection_models: { idCol: "code", fkCols: [], tenant: false },
-  inspection_specs: { idCol: "code", fkCols: [], tenant: false },
-  inspection_grades: { idCol: "code", fkCols: [], tenant: false },
 };
 
 export function mirrorTenantRows(table, rows, tenantId) {

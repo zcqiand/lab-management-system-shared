@@ -730,7 +730,10 @@
       "name": "任务分配",
       "status": "已上线",
       "type": "接口",
-      "requirements": [],
+      "requirements": [
+        "docs\\requirements\\README.md",
+        "docs\\requirements\\REQ-2026-041-report-name-links.md"
+      ],
       "flows": [],
       "designs": [],
       "tests": [],

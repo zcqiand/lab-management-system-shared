@@ -103,16 +103,16 @@ describe("seed-db mirrorTenantRows（SSO 租户镜像，语义照抄 lab-nextjs 
     expect(mirrored[0]).not.toBe(mirrored);
   });
 
-  it("catalog 表（无 tenant_id 列）：仅 code 加 -sso 后缀，不注入 tenant_id", async () => {
+  it("catalog 4 表不镜像（平台级全局码表，2026-11-17 人裁）——镜像副本只产生重复行", async () => {
     const { mirrorTenantRows } = await import("../scripts/seed-db.mjs");
-    const mirrored = mirrorTenantRows(
+    for (const table of [
       "inspection_brands",
-      [{ code: "32.5", inspection_object_code: "OBJ-SP01-P1", name: "32.5" }],
-      T,
-    )!;
-    expect(mirrored[0].code).toBe("32.5-sso");
-    expect("tenant_id" in mirrored[0]).toBe(false); // 表无此列（ts 注释 unique(tenant_id,code) 系过时描述）
-    expect(mirrored[0].inspection_object_code).toBe("OBJ-SP01-P1"); // FK 指全局 objects 不重映射
+      "inspection_models",
+      "inspection_specs",
+      "inspection_grades",
+    ]) {
+      expect(mirrorTenantRows(table, [{ code: "32.5", name: "32.5" }], T)).toBeNull();
+    }
   });
 
   it("非镜像表返回 null（inspection_* 基础数据无租户列，天然共享）", async () => {

@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 
+- fix(seeds): **catalog 4 表退出 SSO 镜像**（2026-11-17 人裁：码表平台级全局字典，无 tenant
+  列、端点无租户过滤——镜像副本对任何登录形态同可见，只产生成对重复行）。live 实证：
+  等级维护页水泥 grades 每行 ×2（`GR-…-20` + `GR-…-20-sso` 同 sort_order 成对，
+  lab_dev catalog 4 表共 648 条 -sso 行）。`seed-db.mjs` SSO_MIRROR_TABLES 删
+  brands/models/specs/grades 四目（业务 4 表租户镜像不变）；测试翻转
+  tests/seed-db.test.ts「catalog 表仅 code 加后缀」→「catalog 4 表不镜像（返回 null）」。
+  lab_dev `seed:db --reset` 重浇后归零（水泥 grades 20→10 行，业务镜像 samples 210
+  完好），seed:check clean，shared/nextjs 双门绿。兄弟仓同步：无（灌库转换层单源
+  lab shared；saas 家族 seed-db.mjs 无 mirror 特性；lab_test 不灌镜像面不受影响）。
+  遗留：lab_prod 若曾带镜像 env 灌库同样存 -sso 码表行，prod 重浇另批（动远程库先过
+  prod 政策）。
+
 - fix(seeds): **REQ-2026-041 报告名称↔标准挂链洗链收官（T-2/T-4）+ REQ §6/§3 勘误回填**——
   `inspection_report_name_standards` 洗链（shared 78b1750+dd6eaf2）：A 组检验依据假腿
   42 删（43 行规则 −RN-110-3 移出翻转）+ RN-110-3 GB 50208-2011 T→J 翻转（裁 #9）+
