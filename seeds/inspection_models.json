@@ -90,15 +90,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "MO-OBJ-SP01-P11-x",
-    "inspection_object_code": "OBJ-SP01-P11",
-    "name": "——",
-    "remark": "",
-    "sort_order": 72,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "MO-OBJ-SP01-P11-x-2",
     "inspection_object_code": "OBJ-SP01-P11",
     "name": "低密度石灰石",
@@ -243,15 +234,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "MO-OBJ-SP01-P15-x",
-    "inspection_object_code": "OBJ-SP01-P15",
-    "name": "——",
-    "remark": "",
-    "sort_order": 23,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "MO-OBJ-SP01-P15-x-2",
     "inspection_object_code": "OBJ-SP01-P15",
     "name": "化学锚固",
@@ -360,15 +342,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "MO-OBJ-SP01-P20-x",
-    "inspection_object_code": "OBJ-SP01-P20",
-    "name": "——",
-    "remark": "",
-    "sort_order": 46,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "MO-OBJ-SP01-P20-x-2",
     "inspection_object_code": "OBJ-SP01-P20",
     "name": "二涂氟碳漆涂层",
@@ -410,15 +383,6 @@
     "name": "聚酯粉末涂层",
     "remark": "",
     "sort_order": 51,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "MO-OBJ-SP01-P2-x",
-    "inspection_object_code": "OBJ-SP01-P2",
-    "name": "——",
-    "remark": "",
-    "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -563,15 +527,6 @@
     "name": "增强型加速干燥胶粘剂",
     "remark": "",
     "sort_order": 98,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "MO-OBJ-SP01-P4-x-10",
-    "inspection_object_code": "OBJ-SP01-P4",
-    "name": "——",
-    "remark": "",
-    "sort_order": 107,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -837,15 +792,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "MO-OBJ-SP01-P8-x",
-    "inspection_object_code": "OBJ-SP01-P8",
-    "name": "——",
-    "remark": "",
-    "sort_order": 12,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "MO-OBJ-SP01-P8-x-10",
     "inspection_object_code": "OBJ-SP01-P8",
     "name": "抹面砂浆（水泥砂浆）",
@@ -1089,15 +1035,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "MO-OBJ-SP01-P9-x",
-    "inspection_object_code": "OBJ-SP01-P9",
-    "name": "——",
-    "remark": "",
-    "sort_order": 81,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "MO-OBJ-SP01-P9-x-2",
     "inspection_object_code": "OBJ-SP01-P9",
     "name": "土路床",
@@ -1118,7 +1055,7 @@
   {
     "code": "P·O 42.5",
     "inspection_object_code": "OBJ-SP01-P1",
-    "name": "P·O 42.5（seed 补全）",
+    "name": "P·O 42.5",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",

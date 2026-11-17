@@ -794,7 +794,7 @@
   {
     "code": "HRB400",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "HRB400（seed 补全）",
+    "name": "HRB400",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -803,7 +803,7 @@
   {
     "code": "HRB400E",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "HRB400E（seed 补全）",
+    "name": "HRB400E",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -812,7 +812,7 @@
   {
     "code": "HRBF400",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "HRBF400（seed 补全）",
+    "name": "HRBF400",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",

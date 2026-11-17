@@ -135,15 +135,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "SP-OBJ-SP01-P3-粗骨料-x",
-    "inspection_object_code": "OBJ-SP01-P3-粗骨料",
-    "name": "——",
-    "remark": "",
-    "sort_order": 24,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "SP-OBJ-SP01-P4-190-100-100",
     "inspection_object_code": "OBJ-SP01-P4",
     "name": "190×100×100",
@@ -333,15 +324,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "SP-OBJ-SP01-P4-x",
-    "inspection_object_code": "OBJ-SP01-P4",
-    "name": "——",
-    "remark": "",
-    "sort_order": 39,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "SP-OBJ-SP01-P5-100-100",
     "inspection_object_code": "OBJ-SP01-P5",
     "name": "100×100",
@@ -495,15 +477,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "SP-OBJ-SP01-P6-x",
-    "inspection_object_code": "OBJ-SP01-P6",
-    "name": "——",
-    "remark": "",
-    "sort_order": 28,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "SP-OBJ-SP01-P6-x-2",
     "inspection_object_code": "OBJ-SP01-P6",
     "name": "Ⅰ型",
@@ -542,7 +515,7 @@
   {
     "code": "Φ22",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "Φ22（seed 补全）",
+    "name": "Φ22",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",

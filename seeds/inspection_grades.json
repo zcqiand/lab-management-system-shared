@@ -9,15 +9,6 @@
     "updated_at": "2026-11-14T16:20:47.744Z"
   },
   {
-    "code": "42.5",
-    "inspection_object_code": "OBJ-SP01-P1",
-    "name": "42.5（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P10-防水卷材-B",
     "inspection_object_code": "OBJ-SP01-P10-防水卷材",
     "name": "一等品(B)",
@@ -50,15 +41,6 @@
     "name": "Ⅱ型",
     "remark": "",
     "sort_order": 116,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P10-防水卷材-x-3",
-    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
-    "name": "——",
-    "remark": "",
-    "sort_order": 119,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -153,15 +135,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P11-x",
-    "inspection_object_code": "OBJ-SP01-P11",
-    "name": "——",
-    "remark": "",
-    "sort_order": 257,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P1-20",
     "inspection_object_code": "OBJ-SP01-P1",
     "name": "20",
@@ -185,15 +158,6 @@
     "name": "B",
     "remark": "",
     "sort_order": 181,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P12-塑料管材-x",
-    "inspection_object_code": "OBJ-SP01-P12-塑料管材",
-    "name": "——",
-    "remark": "",
-    "sort_order": 179,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -257,15 +221,6 @@
     "name": "D",
     "remark": "",
     "sort_order": 175,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P12-金属管材-x",
-    "inspection_object_code": "OBJ-SP01-P12-金属管材",
-    "name": "——",
-    "remark": "",
-    "sort_order": 171,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -360,15 +315,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P17-x",
-    "inspection_object_code": "OBJ-SP01-P17",
-    "name": "——",
-    "remark": "",
-    "sort_order": 176,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P2-A",
     "inspection_object_code": "OBJ-SP01-P2",
     "name": "A",
@@ -441,15 +387,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P2-x-4",
-    "inspection_object_code": "OBJ-SP01-P2",
-    "name": "——",
-    "remark": "",
-    "sort_order": 84,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P3-粗骨料-I",
     "inspection_object_code": "OBJ-SP01-P3-粗骨料",
     "name": "I类",
@@ -473,15 +410,6 @@
     "name": "III类",
     "remark": "",
     "sort_order": 189,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P3-粗骨料-x",
-    "inspection_object_code": "OBJ-SP01-P3-粗骨料",
-    "name": "——",
-    "remark": "",
-    "sort_order": 188,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -707,15 +635,6 @@
     "name": "MU7.5",
     "remark": "",
     "sort_order": 222,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P3-轻集料-x",
-    "inspection_object_code": "OBJ-SP01-P3-轻集料",
-    "name": "——",
-    "remark": "",
-    "sort_order": 198,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -1166,15 +1085,6 @@
     "name": "MU7.5",
     "remark": "",
     "sort_order": 164,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P4-x",
-    "inspection_object_code": "OBJ-SP01-P4",
-    "name": "——",
-    "remark": "",
-    "sort_order": 144,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -2412,15 +2322,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P5-x",
-    "inspection_object_code": "OBJ-SP01-P5",
-    "name": "——",
-    "remark": "",
-    "sort_order": 16,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P5-x-2",
     "inspection_object_code": "OBJ-SP01-P5",
     "name": "砌筑水泥",
@@ -2444,15 +2345,6 @@
     "name": "合格品",
     "remark": "",
     "sort_order": 187,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "GR-OBJ-SP01-P7-x",
-    "inspection_object_code": "OBJ-SP01-P7",
-    "name": "——",
-    "remark": "",
-    "sort_order": 293,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
   },
@@ -2934,15 +2826,6 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P8-x",
-    "inspection_object_code": "OBJ-SP01-P8",
-    "name": "——",
-    "remark": "",
-    "sort_order": 7,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "GR-OBJ-SP01-P8-x-2",
     "inspection_object_code": "OBJ-SP01-P8",
     "name": "优等品",
@@ -3168,18 +3051,9 @@
     "updated_at": "2026-01-01T00:00:00Z"
   },
   {
-    "code": "GR-OBJ-SP01-P9-x",
-    "inspection_object_code": "OBJ-SP01-P9",
-    "name": "——",
-    "remark": "",
-    "sort_order": 143,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
     "code": "Ⅱ类",
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
-    "name": "Ⅱ类（seed 补全）",
+    "name": "Ⅱ类",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -3188,7 +3062,7 @@
   {
     "code": "Ⅰ区",
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
-    "name": "Ⅰ区（seed 补全）",
+    "name": "Ⅰ区",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -3197,16 +3071,7 @@
   {
     "code": "Ⅰ类",
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
-    "name": "Ⅰ类（seed 补全）",
-    "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
-    "sort_order": 9999,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "code": "P6",
-    "inspection_object_code": "OBJ-SP01-P5",
-    "name": "P6（seed 补全）",
+    "name": "Ⅰ类",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -3215,7 +3080,7 @@
   {
     "code": "一级",
     "inspection_object_code": "OBJ-SP01-P2",
-    "name": "一级（seed 补全）",
+    "name": "一级",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
@@ -3224,7 +3089,7 @@
   {
     "code": "高速/一级公路",
     "inspection_object_code": "OBJ-SP01-P9",
-    "name": "高速/一级公路（seed 补全）",
+    "name": "高速/一级公路",
     "remark": "seed-db：tech-req/calc-rule FK 引用但码表缺失，灌库时合成",
     "sort_order": 9999,
     "created_at": "2026-01-01T00:00:00Z",
