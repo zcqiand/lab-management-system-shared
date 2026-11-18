@@ -4,6 +4,20 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批CE2 水泥方法标批——GB/T 8074-2008 比表面积 calc 单行导入（2026-11-18，覆盖推进第 4 批）**——
+  inspection_calculation_methods.json +1（35 行）：OBJ-SP01-P1 × IP-0548 ×
+  GB/T 8074-2008，algorithm_type=manual，rounding=保留至 10 cm²/g，remark
+  勃氏透气对比式族 LaTeX（式(2)-(7) $S=S_s\dfrac{\sqrt{T}}{\sqrt{T_s}}$ /
+  η 粘度修正 / 空隙率因子 / 密度比 + 式(1) m=ρV(1-ε) + 7.3 空隙率
+  PⅠ/PⅡ 0.500±0.005、其他 0.530±0.005 + 8.4.1 修约面）。挂链零新增
+  （P1×8074 TESTING 先前已在；三标全在 method 40 集，白名单不动）。
+  范围定性：GB/T 208 密度 / 2419 流动度参数码不在 P1 链→立码候选挂账
+  36/37（账 29 族）。抽端转义纪律落地首例（Write 工具+chr(92) 构造，
+  批R3 heredoc 指纹应用，一次干净）。
+  seed:db 重浇 + seed:check clean + DB 探针干净 + 种子字节复核
+  （TAB: False / `\sqrt` 字面在）。兄弟仓同步清单：nextjs（守卫计数随批改
+  同批提交）；react/vue 零改动（种子唯一源无镜像回写）。
+
 - feat(seeds): **批R3 钢筋方法标批——GB 13788-2024 重量偏差 calc 单行导入（2026-11-18，覆盖推进第 3 批）**——
   inspection_calculation_methods.json +1（34 行）：OBJ-SP01-P2 × IP-0153 ×
   GB 13788-2024，algorithm_type=manual，rounding=按 YB/T 081 修约，remark

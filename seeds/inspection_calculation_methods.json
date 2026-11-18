@@ -474,5 +474,19 @@
     "sort_order": 62,
     "created_at": "2026-11-18T02:46:23.838Z",
     "updated_at": "2026-11-18T02:46:23.838Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0548",
+    "testing_standard_code": "GB/T 8074-2008",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": "保留至 10 cm²/g",
+    "remark": "按 GB/T 8074-2008 勃氏透气法：被测试样与标准样品密度、空隙率相同且试验温度与校准温度之差 ≤3℃ 时按式(2) $S=S_s\\dfrac{\\sqrt{T}}{\\sqrt{T_s}}$；温差 >3℃ 按式(3) $S=S_s\\dfrac{\\sqrt{ηT}}{\\sqrt{η_s T_s}}$（η 为试验温度下空气粘度 μPa·s，附录B）；空隙率不同按式(4)/(5)（再乘空隙率修正因子比 $\\dfrac{\\sqrt{ε³}}{\\sqrt{1-ε}}$ 比值），密度与空隙率均不同按式(6)/(7)（再乘$\\dfrac{ρ_s}{ρ}$）；$S_s$ 为标准样品比表面积、$T/T_s$ 为被测/标准试样液面降落时间（s）。试样量按式(1) $m=ρV(1-ε)$（7.4）；PⅠ/PⅡ 型水泥空隙率 0.500±0.005、其他水泥或粉料 0.530±0.005（7.3）。结果由二次透气试验平均值确定，两次相差 2% 以上重新试验，保留至 10 cm²/g（8.4.1）；手动与自动勃氏仪有争议以手动为准（8.4.2）。",
+    "sort_order": 72,
+    "created_at": "2026-11-18T03:25:34.693Z",
+    "updated_at": "2026-11-18T03:25:34.693Z"
   }
 ]
