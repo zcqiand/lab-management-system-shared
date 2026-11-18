@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+- feat(seeds): **UI 表格化改造批——参数界面七卡平铺→表格（2026-11-18 用户图示+裁定两则）**——
+  inspection_param_interfaces.json 七卡 version 1→2：①cement-setting-time v2 表格
+  （rows=2，列 初凝/标准要求/终凝/标准要求 (min)，req_select 逐行标准要求下拉，
+  图示表头「凝结时间(min)」形状）；②六张单值卡（cement-chloride/alkali/so3/
+  loss-on-ignition、concrete-elastic-modulus、soil-optimum-moisture）v2 表格 rows=1
+  （技术要求 req_select + 检验结果 (单位) input）。裁定在案：评定列不做（GB 175
+  氯离子行 max=null 技术要求面未拆，机判不成立——评定保留卡头右上角）；
+  IP-0550/0551 初凝/终凝绑定拆分（机判拆分）另批；已有表格卡（soundness/fineness）
+  未加 req 列属候选扩面。护栏测试随 nextjs 同批（flat-card-table-form）；
+  seed:db/--reset 已浇 + seed:check clean + 双门全绿。
 - fix(seeds): **参数去重批——RN 关联删四行通用/误挂码（2026-11-18 人裁两则）**——
   inspection_report_name_parameters.json 260→256 行：①RN-101 删 IP-0001（凝结时间·通用）/
   IP-0002（安定性·通用）——保留 specific 码 IP-0550/0551（初凝/终凝）、IP-0552/0553

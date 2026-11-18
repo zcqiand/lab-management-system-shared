@@ -1540,22 +1540,38 @@
   {
     "code": "cement-setting-time",
     "name": "凝结时间",
-    "description": "初凝/终凝人工读数（GB/T 1346-2024 维卡仪法）；单值卡，评定走单项评定",
-    "version": 1,
+    "description": "初凝/终凝人工读数（GB/T 1346-2024 维卡仪法）；表格卡（2026-11-18 用户图示：初凝/标准要求/终凝/标准要求），评定走单项评定",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "initialSet",
-          "type": "number",
-          "label": "初凝时间 (min)",
-          "required": true,
-          "unit": "min"
-        },
-        {
-          "field": "finalSet",
-          "type": "number",
-          "label": "终凝时间 (min)",
-          "unit": "min"
+          "field": "settingTable",
+          "type": "table",
+          "label": "凝结时间测定",
+          "rows": 2,
+          "columns": [
+            {
+              "field": "initialSets",
+              "label": "初凝 (min)",
+              "mode": "input"
+            },
+            {
+              "field": "reqInitial",
+              "label": "标准要求 (min)",
+              "mode": "req_select"
+            },
+            {
+              "field": "finalSets",
+              "label": "终凝 (min)",
+              "mode": "input"
+            },
+            {
+              "field": "reqFinal",
+              "label": "标准要求 (min)",
+              "mode": "req_select"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1628,16 +1644,28 @@
   {
     "code": "cement-chloride",
     "name": "氯离子含量",
-    "description": "硫氰酸铵容量法人工结果单值（GB/T 176-2025）；公式转录挂账，manual 面",
-    "version": 1,
+    "description": "硫氰酸铵容量法人工结果单值（GB/T 176-2025）；表格卡（2026-11-18 用户图示：技术要求/检验结果），公式转录挂账，manual 面",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "氯离子含量 (%)",
-          "required": true,
-          "unit": "%"
+          "field": "chlorideTable",
+          "type": "table",
+          "label": "氯离子含量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1648,16 +1676,28 @@
   {
     "code": "cement-alkali",
     "name": "碱含量",
-    "description": "火焰光度法人工结果单值（GB/T 176-2025 式42/43）；公式转录挂账，manual 面",
-    "version": 1,
+    "description": "火焰光度法人工结果单值（GB/T 176-2025 式42/43）；表格卡（2026-11-18 表格化批），公式转录挂账，manual 面",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "碱含量 (%)",
-          "required": true,
-          "unit": "%"
+          "field": "alkaliTable",
+          "type": "table",
+          "label": "碱含量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1668,16 +1708,28 @@
   {
     "code": "cement-so3",
     "name": "三氧化硫含量",
-    "description": "硫酸钡称量法人工结果单值（GB/T 176-2025 式31）；公式转录挂账，manual 面",
-    "version": 1,
+    "description": "硫酸钡称量法人工结果单值（GB/T 176-2025 式31）；表格卡（2026-11-18 表格化批），公式转录挂账，manual 面",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "三氧化硫含量 (%)",
-          "required": true,
-          "unit": "%"
+          "field": "so3Table",
+          "type": "table",
+          "label": "三氧化硫含量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1688,16 +1740,28 @@
   {
     "code": "cement-loss-on-ignition",
     "name": "烧失量",
-    "description": "灼烧差减法人工结果单值（GB/T 176-2025 式27）；公式转录挂账，manual 面",
-    "version": 1,
+    "description": "灼烧差减法人工结果单值（GB/T 176-2025 式27）；表格卡（2026-11-18 表格化批），公式转录挂账，manual 面",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "烧失量 (%)",
-          "required": true,
-          "unit": "%"
+          "field": "loiTable",
+          "type": "table",
+          "label": "烧失量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1806,16 +1870,28 @@
   {
     "code": "concrete-elastic-modulus",
     "name": "静力受压弹性模量",
-    "description": "GB/T 50081-2019 7.0.5 人工结果单值；公式转录挂账，manual 面",
-    "version": 1,
+    "description": "GB/T 50081-2019 7.0.5 人工结果单值；表格卡（2026-11-18 表格化批），公式转录挂账，manual 面",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "弹性模量 (MPa)",
-          "required": true,
-          "unit": "MPa"
+          "field": "elasticModulusTable",
+          "type": "table",
+          "label": "弹性模量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (MPa)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
@@ -1826,16 +1902,28 @@
   {
     "code": "soil-optimum-moisture",
     "name": "最优含水率",
-    "description": "JTG 3430-2020 击实曲线峰值对应含水率人工判定单值",
-    "version": 1,
+    "description": "JTG 3430-2020 击实曲线峰值对应含水率人工判定单值；表格卡（2026-11-18 表格化批）",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "value",
-          "type": "number",
-          "label": "最优含水率 (%)",
-          "required": true,
-          "unit": "%"
+          "field": "optimumMoistureTable",
+          "type": "table",
+          "label": "最优含水率测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果 (%)",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
       ],
       "params": {}
