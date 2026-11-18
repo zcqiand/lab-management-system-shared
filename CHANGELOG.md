@@ -4,6 +4,20 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R3 钢筋方法标批——GB 13788-2024 重量偏差 calc 单行导入（2026-11-18，覆盖推进第 3 批）**——
+  inspection_calculation_methods.json +1（34 行）：OBJ-SP01-P2 × IP-0153 ×
+  GB 13788-2024，algorithm_type=manual，rounding=按 YB/T 081 修约，remark
+  LaTeX 式(3)（$W=\dfrac{M-(L\times m)}{L\times m}\times100\%$，符号 M/L/m
+  全按 7.5 条实文）+ 表4 取样挂面。挂链 +1：P2×GB 13788-2024 TESTING
+  （JUDGMENT 链先前已在，真双链成形）。范围定性（七标准语料实测）：232/2651/
+  2653 零导面；21839 公式面归账 1 公式转录批族；42901 滑移行语义重复不导（账 34）；
+  JGJ/T 27 立码候选（账 35）；13788 表2 矩阵 OCR 塌缩等 PDF（账 33 RA-13788-1）。
+  挂账总账 32→35。抽端转义事故修复在案（bash heredoc 吞反斜杠→TAB 进种子，
+  Edit 工具修复+重浇，指纹入 HISTORY 教训段候选）。
+  seed:db 重浇 + seed:check clean + DB 探针（remark 无 TAB、`\times` 字面在、
+  J/T 双链齐）。兄弟仓同步清单：nextjs（守卫随批改同批提交）；react/vue 零改动
+  （种子唯一源无镜像回写）。
+
 - feat(seeds): **计算方法备注批——33 行备注换标准计算方法说明（含公式，md+LaTeX；2026-11-18 用户需求「备注里面写md计算方法说明（包括公式）」）**——
   inspection_calculation_methods.json 全 33 行 remark 逐行转写（updated_at
   2026-11-18）：公式行 LaTeX 化（GB/T 176 式 27/30/31/42-44/66、50081 抗压/

@@ -460,5 +460,19 @@
     "sort_order": 52,
     "created_at": "2026-11-17T07:35:50.267Z",
     "updated_at": "2026-11-18T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P2",
+    "inspection_parameter_code": "IP-0153",
+    "testing_standard_code": "GB 13788-2024",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": "按 YB/T 081 修约",
+    "remark": "按 GB 13788-2024 第 7.5 条式(3)：$W=\\dfrac{M-(L\\times m)}{L\\times m}\\times100\\%$，$M$ 为试样实际重量（g）、$L$ 为试样长度（mm）、$m$ 为理论单位重量（g/mm）；试样长度不小于 500mm、长度测量精确到 1mm、重量测定精确到 1g（7.5）；数值修约与判定按 YB/T 081（7.6）。取样：表4 重量偏差每盘 1 个，在任一卷（根）中随机切取。",
+    "sort_order": 62,
+    "created_at": "2026-11-18T02:46:23.838Z",
+    "updated_at": "2026-11-18T02:46:23.838Z"
   }
 ]

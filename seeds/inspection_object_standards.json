@@ -1550,5 +1550,13 @@
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P2",
+    "inspection_standard_code": "GB 13788-2024",
+    "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
