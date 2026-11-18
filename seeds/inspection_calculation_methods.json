@@ -488,5 +488,33 @@
     "sort_order": 72,
     "created_at": "2026-11-18T03:25:34.693Z",
     "updated_at": "2026-11-18T03:25:34.693Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P9",
+    "inspection_parameter_code": "IP-0226",
+    "testing_standard_code": "GB/T 50123-2019",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": "修约到 0.01 g/cm³",
+    "remark": "按 GB/T 50123-2019 击实试验（13.4）：击实后各试样干密度按式(13.4.2) $\\rho_d=\\dfrac{\\rho}{1+0.01w}$（$\\rho$ 为试样湿密度 g/cm³、$w$ 为含水率 %），计算至 0.01 g/cm³（语料原文 g/cm² 为 OCR 误置，本行按 13.4.2 计算位数面归一 g/cm³）；以干密度为纵坐标、含水率为横坐标绘制关系曲线（13.4.4），曲线上峰值点的纵坐标即土的最大干密度 $\\rho_{d\\max}$，人工按曲线峰值判定；曲线不能给出峰值点时应进行补点试验（13.4.4）。",
+    "sort_order": 82,
+    "created_at": "2026-11-18T05:56:17.761Z",
+    "updated_at": "2026-11-18T05:56:17.761Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P9",
+    "inspection_parameter_code": "IP-0227",
+    "testing_standard_code": "GB/T 50123-2019",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": "修约到 0.1%",
+    "remark": "按 GB/T 50123-2019 击实试验（13.4）：击实后各试样含水率按式(13.4.1)计算（本标准 5.2.3 同族条款：含水率计算至 0.1%），以干密度为纵坐标、含水率为横坐标绘制关系曲线（13.4.4），曲线上峰值点的横坐标即土的最优含水率 $w_{op}$，与最大干密度同曲线人工判读；曲线不能给出峰值点时应进行补点试验（13.4.4）。",
+    "sort_order": 82,
+    "created_at": "2026-11-18T05:56:17.761Z",
+    "updated_at": "2026-11-18T05:56:17.761Z"
   }
 ]

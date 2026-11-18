@@ -4,6 +4,24 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批S2 土工域立域批——soil 域键+锚三件+GB/T 50123-2019 calc 两行导入（2026-11-18，覆盖推进第 5 批）**——
+  seeds 面两处：inspection_calculation_methods.json +2（37 行）：OBJ-SP01-P9 ×
+  IP-0226 最大干密度 / IP-0227 最优含水率 × GB/T 50123-2019，algorithm_type=manual，
+  rounding=修约到 0.01 g/cm³ / 0.1%，remark 击实曲线族 LaTeX（13.4.2 式
+  $\rho_d=\dfrac{\rho}{1+0.01w}$ + 13.4.4 峰值点纵/横坐标判读 + 补点试验条款；
+  语料 g/cm² OCR 误置注记归一）。IP-0228 压实系数零硬凑（50123 无算式面，
+  该面在验收规范）；JTG 3430-2020 侧击实三行先前已在（同键不同 std 不撞）。
+  挂链零新增（P9×50123 TESTING 先前已在；50123 已在 method 40 集）。
+  域面/锚面在 nextjs 仓（同批提交）：semantic-dictionary.json 增 soil 域
+  （terms 空数组起步——域零卡模板禁倒挂）；standard-extract-anchors.json 增
+  soil 三锚（13.4.1/13.4.2/13.4.4，clauseKind=clause 照 50123 语料 block_type
+  实测）；锚/字典期望测试先红后绿（phase lock 正门取证）。
+  30+ 其余方法扩面=新 IP 码面设计（junction/树镜像），转账 43。
+  seed:db 重浇 + seed:check clean + DB 探针 2 行干净；双门绿。
+  搭车发现：calc 种子 (P2,IP-0086/0087,228.1) 双胞胎变体行（他批已提交树内件，
+  dedupe 各丢 1）→ 挂账 44。兄弟仓同步清单：nextjs（域/锚 JSON+两测试文件+
+  守卫计数随批改同批提交）；react/vue 零改动（种子唯一源无镜像回写）。
+
 - feat(seeds): **批CE2 水泥方法标批——GB/T 8074-2008 比表面积 calc 单行导入（2026-11-18，覆盖推进第 4 批）**——
   inspection_calculation_methods.json +1（35 行）：OBJ-SP01-P1 × IP-0548 ×
   GB/T 8074-2008，algorithm_type=manual，rounding=保留至 10 cm²/g，remark
