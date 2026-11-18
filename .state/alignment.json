@@ -378,6 +378,7 @@
         "output\\lab-management-system-contract-test\\tests\\samples.test.ts:2066 (annot)",
         "output\\lab-management-system-contract-test\\tests\\summary.test.ts:1977 (annot)",
         "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:1119 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:5574 (annot)",
         "output\\lab-management-system-contract-test\\tests\\technical-requirements.test.ts:1996 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:810 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records.test.ts:2104 (annot)"
@@ -412,7 +413,7 @@
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:3716 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2944 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2321 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:2468 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:2497 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:2333 (annot)"
       ],
       "entry": []
@@ -504,7 +505,7 @@
         "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:4374 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:3538 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2964 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:3165 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:3194 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:2978 (annot)"
       ],
       "entry": []

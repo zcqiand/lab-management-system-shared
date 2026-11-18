@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- fix(seeds): **参数去重批——RN 关联删四行通用/误挂码（2026-11-18 人裁两则）**——
+  inspection_report_name_parameters.json 260→256 行：①RN-101 删 IP-0001（凝结时间·通用）/
+  IP-0002（安定性·通用）——保留 specific 码 IP-0550/0551（初凝/终凝）、IP-0552/0553
+  （沸煮法/压蒸法），用户裁定「保留带括号细分、删通用」；②RN-105-3（混凝土拌合用水）删
+  IP-0004（氯离子·通用）——specific IP-0580（氯离子（拌合用水））是正主；③RN-110-1
+  （防水卷材）删 IP-0044（延伸率·通用）——specific IP-0011 是正主。判定链源头核实：
+  RN-105-3 三标准 tech_req 只挂 IP-0055（1 行）、RN-110-1 九标准零 tech_req——删除不孤立
+  任何限值；RN-101×IP-0004（水泥氯离子，GB 175/3183/2015 限值在）保留不动。
+  specific 码 interface link 缺面在案（水泥初凝/终凝/沸煮/压蒸四码现走通用采集卡回退，
+  卡形状改造归 UI 表格化批另议），param-interface-link-coverage T1 钉的 IP-0001/IP-0002
+  link 面未动。DB 面 --reset 重浇（常规浇不删行、seed:check 陈旧 4 行红→收口），
+  seed:check clean + 探针 0 行余留 + 双门全绿。测试面零断言扰动（receiptFormParamFilter
+  「17 项」仅注释随批校正为 14）。
 - fix(seeds): **账 44 人裁收口——calc 228.1 双胞胎变体行删 null 孪生（2026-11-18）**——
   (OBJ-SP01-P2, IP-0086/0087, GB/T 228.1-2021) 各两行孪生（RN-102-2 vs null 报告名、
   remark JGJ 107 尾注、sort 异），灌库 dedupe（非空字段数多者胜）各丢 1 → seeds≠DB。

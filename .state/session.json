@@ -1,21 +1,20 @@
 {
-  "current_task": "批M 砂浆域立域批收官（2026-11-18）：mortar 域键+锚五件+70-2009 calc 十一行（种子 52→63 行，挂链 195→199）——五域大批次第五域收官；批AD 零导面定性转账 47",
+  "current_task": "账44人裁收口: calc 228.1 双胞胎删 null 孪生两行 63→61 (8fe7883), dedupe 零丢, 双门全绿",
   "done": [
-    "inspection_calculation_methods.json +11：OBJ-SP01-P8 + OBJ-SP07-P13 × JGJ/T 70-2009 各 4（IP-0055 立方体抗压 $f_{cu}=K\\times N_u/A$ 式体塌缩按符号族面唯一复原 remark 明示、9.0.5 三试件 15% 中值入 conditions、修约 0.1 MPa / IP-0001×8.0.5 贯入阻力 $f=N_p/A_s$ + ×8.0.6 凝结时间两试样平均≤30min / IP-0225×6.0.4 分层度前后差 / IP-0223×4.0.4 稠度两次平均——后三者修约 1mm）+ OBJ-SP05-P1/P4/P5 × 70-2009 各 1（IP-0296 拉伸粘结 $f_{at}=F/A$，10.0.8 十试件 20% 剔除有效≥6 入 conditions，修约 0.01 MPa）——全 manual formula=null prose 计算面",
-    "inspection_object_standards.json +4（195→199）：TESTING 机械补链（SP07-P13、SP05-P1/P4/P5 × 70-2009），judgment-link-snapshot 钉值随批改",
-    "判重键三键裁定：calcMethodKey 两键实现漂移修正对齐 DB PK (obj,param,std)——现行两键双占仅账 44 双胞胎（三键 PK 合法）零扰动",
-    "seed:db 重浇（calc 库面 61=63−2 账 44 dropped、object_standards 199）+ seed:check clean；psycopg 探针 70-2009 11/11 全实+补链 4 条全实；shared 门 exit 0"
+    "seeds/inspection_calculation_methods.json 删 (OBJ-SP01-P2, IP-0086/0087, GB/T 228.1-2021) null 报告名孪生两行（人裁留 RN-102-2 行，现行行胜先例同向）→ 63→61 行",
+    "dedupe 零丢（seeds↔DB 全等面恢复）；DB 实面零变化（被丢行本不在库，dropped 2 归零）",
+    "护栏镜像随 nextjs 同批（f814964）：calc-method-formula 2b 63→61/P2 15→13、consistency 锚 IP-0087 sort4→16、calc-method-gate steel_tensile ≥4→≥3",
+    "shared 门 exit 0；seed:db 重浇 + seed:check clean（dropped 0）"
   ],
-  "next": "批后队列：账 43/45/46/48 扩面（新 IP 码/挂链补/单位分叉，均须人批）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）、账 44 人裁",
+  "next": "批后队列：账 7 产线能力优化（用户 11-14 排队）、UI 表格化改造批（nextjs）、账 43/45/46/48 五域扩面逐域人批（推荐序 48→46→45→43）、账 52②/52① 余四仓放一放",
   "open_questions": [
-    "账 44（228.1 双胞胎变体行）待人裁或随账 2 收口",
-    "账 43/45/46/48 扩面需新 IP 码设计面/挂链补等裁序",
+    "账 43/45/46/48 扩面需新 IP 码设计面/挂链补/单位分叉，逐域人批",
     "328.18/328.20 × IP-0018/0019 单位分叉待人裁（账 46②）；SL/T 352-2020 语料不在库待补采（账 48）"
   ],
   "dont": [
-    "calc 种子（P2,IP-0086/0087,228.1）双胞胎变体两键动前必读账 44",
-    "guard 绝对计数/钉值测试批改尽量在种子落库之前；落库后暴露走诚实例序重建（回退→改→真红→--to green→幂等重浇），禁 --force",
-    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-m-calc.py 先例）",
-    "calcMethodKey 已三键化（obj|param|std）——动判重面先读 HISTORY 批M 段"
-  ]
+    "calc 种子变体面（同 PK 多行）动前先查 dedupeByPk 语义——非空字段数多者胜，seeds 文件允许变体行共存但灌库会丢",
+    "guard 绝对计数/钉值测试批改在种子落库之前；落库后暴露走诚实例序重建，禁 --force",
+    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-m-calc.py 先例）"
+  ],
+  "last_gate_passed_at": "2026-11-18T18:51:53"
 }

@@ -1,20 +1,6 @@
 [
   {
     "report_name_code": "RN-101",
-    "inspection_parameter_code": "IP-0001",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
-    "inspection_parameter_code": "IP-0002",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-101",
     "inspection_parameter_code": "IP-0004",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -946,13 +932,6 @@
   },
   {
     "report_name_code": "RN-105-3",
-    "inspection_parameter_code": "IP-0004",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-105-3",
     "inspection_parameter_code": "IP-0007",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
@@ -1612,13 +1591,6 @@
   {
     "report_name_code": "RN-110-1",
     "inspection_parameter_code": "IP-0030",
-    "remark": null,
-    "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
-  },
-  {
-    "report_name_code": "RN-110-1",
-    "inspection_parameter_code": "IP-0044",
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
