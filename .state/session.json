@@ -1,17 +1,18 @@
 {
-  "current_task": "参数去重批: RN 关联删四行通用/误挂码 (6528982), seed:check clean + 探针 0 余留 + 双门全绿",
+  "current_task": "UI 表格化批: 参数界面七卡 v1→v2 表格形 (dfea300), 护栏测试随 nextjs 同批, 双门全绿",
   "done": [
-    "inspection_report_name_parameters.json 260→256: RN-101 删 IP-0001/IP-0002 (保留 specific IP-0550/0551/0552/0553), RN-105-3 删 IP-0004 (IP-0580 正主), RN-110-1 删 IP-0044 (IP-0011 正主)",
-    "判定链核实: RN-105-3 三标准 tech_req 只挂 IP-0055 / RN-110-1 九标准零 tech_req / RN-101×IP-0004 (水泥氯离子) 保留",
-    "DB --reset 重浇收口 seed:check 陈旧 4 行"
+    "inspection_param_interfaces.json 七卡 version 1→2: cement-setting-time 表格 rows=2 (初凝/标准要求/终凝/标准要求, req_select 逐行) + 六单值卡 rows=1 (技术要求 req_select + 检验结果 (单位))",
+    "裁定在案: 评定列不做 (GB 175 氯离子行 max=null 机判不成立, 评定留卡头右上角); IP-0550/0551 绑定拆分另批; soundness/fineness 未加 req 列属候选扩面",
+    "seed:db --reset 重浇 + seed:check clean + 双门全绿 (EXIT=0)"
   ],
-  "next": "消费仓镜像挂账: react/vue/五后端仓各自吃同一种子删改 (种子单源直读仓零改动); specific 码 interface link 缺面 (IP-0550/0551/0552/0553 现走通用采集卡回退) 归 UI 表格化批另议",
+  "next": "消费仓镜像挂账: react/vue 等仓各自吃同一种子表格化 (种子单源直读仓零改动); IP-0550/0551 机判拆分另批 (数据面 remark 自带规划)",
   "open_questions": [
-    "IP-0553 压蒸法卡形状 (soundness 卡=沸煮法雷氏夹) 是否独立建界面——UI 表格化批过人裁"
+    "IP-0553 压蒸法卡形状是否独立建界面——过人裁",
+    "soundness/fineness 已有表格卡加 req 列——候选扩面, 过人裁"
   ],
   "dont": [
-    "param-interface-link-coverage T1 钉 IP-0001/IP-0002 的 interface link 不能删 (本批未动 link 面)",
-    "常规浇不删行——种子删行必 --reset, seed:check 陈旧行红是预期信号"
+    "种子改 config 必须 version+1 原位替换 (版本感知回放), 禁原地静默改",
+    "常规浇不删行——种子删行/换版必 --reset, seed:check 陈旧行红是预期信号"
   ],
-  "last_gate_passed_at": "2026-11-18T20:35:00"
+  "last_gate_passed_at": "2026-11-18T21:57:00"
 }
