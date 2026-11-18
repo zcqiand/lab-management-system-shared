@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+- feat(seeds): **计算方法备注批——33 行备注换标准计算方法说明（含公式，md+LaTeX；2026-11-18 用户需求「备注里面写md计算方法说明（包括公式）」）**——
+  inspection_calculation_methods.json 全 33 行 remark 逐行转写（updated_at
+  2026-11-18）：公式行 LaTeX 化（GB/T 176 式 27/30/31/42-44/66、50081 抗压/
+  抗折/劈裂/弹模、17671 式 1/2、1345 式 1、28900 式 10、JGJ 52 筛余、JTG
+  3430 压实度等），manual 行换标准判读/判定方法说明（1346 凝结时间读数节
+  奏/雷氏夹增值判定、28900 弯曲人工判定、50082 逐级加压+P=10H−1）；剔除
+  规则/尺寸换算系数/修约全按条款实文。**公式转录坑在案**：语料公式块 OCR
+  碎化（分式压平/下标丢失/LOI→LOD），纯机器转录必错——本批=语料锚定+
+  人工转写+差异表人批（calc-remark-merge.py dry-run 默认、33/33 命中、
+  calc-remark-diff-report.md 人批 2026-11-18 用户批「批准，照表写入」）。
+  JTG 3430-2020 三行语料外（语料 0 块），人工转写并注记「语料外人工转写」
+  待语料补齐另批校正。消费面：nextjs MarkdownRemark 已在（本批前收官），
+  列表列/弹窗预览直接渲染公式。兄弟仓同步清单：nextjs（同批收尾提交）；
+  react/vue/angular/RN 镜像批挂账不变。
+  seed:db 重浇 + seed:check clean（dedupe 2 variant 行=PK 粒度常态）+
+  DB 探针 27/31 行带 $ 公式。
+
 - fix(seeds): **表格化批子批 3——15 张 series 卡换表格形 version+1（对照表人批 2026-11-18，用户原话「标准导入时尽量用表格界面」）**——
   inspection_param_interfaces.json 15 行 config 换表格形（version+1、
   updated_at 2026-11-18）：焊接抗拉/弯曲（=模板输出逐字节深等）、接头

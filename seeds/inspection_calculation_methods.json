@@ -8,10 +8,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "凝结时间人工读数；原锚 GB 175-2023，2026-11-16 二轮洗链迁移",
+    "remark": "按 GB/T 1346-2024 第 10.3/10.4 条：初凝时间为自水泥全部加入水中起至试针沉至距底板 4 mm±1 mm（初凝状态）的时间，临近初凝每 5 min（或更短）测定一次；终凝时间为至终凝针沉入试体 0.5 mm 且环形附件开始不在试体上留下痕迹（终凝状态）的时间，临近终凝每 15 min（或更短）测定一次；达到状态须立即复测一次确认，全程人工读数。",
     "sort_order": 6,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -22,10 +22,10 @@
     "formula": "ROUND_HALF_EVEN(Fm * 1000 / (PI() * d^2 / 4), 0)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 1（五成双）",
-    "remark": "机械连接接头屈服强度（3 件，无断裂位置）",
+    "remark": "按 GB/T 228.1-2021 屈服强度判读：上屈服强度 $R_{eH}$ 取屈服阶段首次下降前的最高应力、下屈服强度 $R_{eL}$ 取不计初始瞬时效应的最低应力（力-伸长曲线人工判读）；横截面积按公称直径计算 $S_0=\\dfrac{\\pi d^2}{4}$，$R=\\dfrac{F}{S_0}$，结果按 GB/T 8170 修约到 1 MPa（五成双）；机械连接接头按 JGJ 107-2016 取 3 件试件算术平均，断裂位置不作判定项。",
     "sort_order": 17,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -36,10 +36,10 @@
     "formula": "ROUND_HALF_EVEN(Fm * 1000 / (PI() * d^2 / 4), 0)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 1（五成双）",
-    "remark": "屈服强度",
+    "remark": "按 GB/T 228.1-2021 屈服强度判读：上屈服强度 $R_{eH}$ 取屈服阶段首次下降前的最高应力、下屈服强度 $R_{eL}$ 取不计初始瞬时效应的最低应力（力-伸长曲线人工判读）；横截面积按公称直径计算 $S_0=\\dfrac{\\pi d^2}{4}$，$R=\\dfrac{F}{S_0}$，结果按 GB/T 8170 修约到 1 MPa（五成双）。",
     "sort_order": 3,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -50,10 +50,10 @@
     "formula": "ROUND_HALF_EVEN(Fm * 1000 / (PI() * d^2 / 4), 0)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 1（五成双）",
-    "remark": "抗拉强度",
+    "remark": "按 GB/T 228.1-2021 抗拉强度 $R_m=\\dfrac{F_m}{S_0}$，$F_m$ 为最大力（N）、$S_0$ 为公称直径圆面积 $\\dfrac{\\pi d^2}{4}$（mm²），结果按 GB/T 8170 修约到 1 MPa（五成双）。",
     "sort_order": 4,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -64,10 +64,10 @@
     "formula": "ROUND_HALF_EVEN(Fm * 1000 / (PI() * d^2 / 4), 0)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 1（五成双）",
-    "remark": "机械连接接头抗拉强度（3 件 + 断裂位置）",
+    "remark": "按 GB/T 228.1-2021 抗拉强度 $R_m=\\dfrac{F_m}{S_0}$，$F_m$ 为最大力（N）、$S_0$ 为公称直径圆面积 $\\dfrac{\\pi d^2}{4}$（mm²），结果按 GB/T 8170 修约到 1 MPa（五成双）；机械连接接头按 JGJ 107-2016 取 3 件试件算术平均，记录断裂位置（断裂形态为接头合格性判定项）。",
     "sort_order": 16,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -78,10 +78,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.5%",
-    "remark": "断后伸长率",
+    "remark": "按 GB/T 228.1-2021：断后伸长率 $A=\\dfrac{L_u-L_0}{L_0}\\times100\\%$，$L_0$ 为原始标距（mm）、$L_u$ 为断后标距（mm，断后取较长一段拼接测量），结果修约到 0.5%。",
     "sort_order": 11,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -92,10 +92,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1%",
-    "remark": "最大力总延伸率",
+    "remark": "按 GB/T 228.1-2021：最大力总延伸率 $A_{gt}=\\dfrac{\\Delta L_m}{L_e}\\times100\\%$，$\\Delta L_m$ 为达到最大力时引伸计总延伸（mm）、$L_e$ 为引伸计标距（mm，应不小于 100 mm），结果修约到 0.1%。",
     "sort_order": 12,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -106,10 +106,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "反向弯曲（裂纹观察）",
+    "remark": "按 GB/T 28900-2022 反向弯曲试验：试样先正向弯曲规定角度，经人工时效（5.3：产品标准未规定时效工艺时加热至 100 ℃±10 ℃ 保温）后反向弯曲规定角度，肉眼观察弯曲外表面有无裂纹，人工判定。",
     "sort_order": 13,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -120,10 +120,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.5%",
-    "remark": "重量偏差（每批 ≥10 根）；原锚 GB 1499.2-2024，2026-11-16 二轮洗链迁移",
+    "remark": "按 GB/T 28900-2022 第 13.3 条式(10)：$W=\\dfrac{m_{实}-(L_T\\times W_t)}{L_T\\times W_t}\\times100\\%$，$m_{实}$ 为试样实际总重量（kg）、$L_T$ 为试样总长度（m）、$W_t$ 为理论重量（kg/m）；长度测量精确到 1 mm、重量测量精确度不低于 1%（13.2），结果修约到 0.5%。",
     "sort_order": 14,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -134,10 +134,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "弯曲性能（裂纹观察）",
+    "remark": "按 GB/T 28900-2022 弯曲试验：按相关产品标准规定的弯曲压头（弯心）直径弯曲 180°，肉眼观察弯曲外表面有无裂纹，人工判定。",
     "sort_order": 15,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -148,10 +148,10 @@
     "formula": "ROUND_HALF_EVEN(Rm / ReH, 2)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 0.01（五成双）",
-    "remark": "强屈比=抗拉强度/屈服强度",
+    "remark": "强屈比为实测抗拉强度与实测屈服强度之比：$=\\dfrac{R_m}{R_{eH}}$，由同组拉伸试验两强度值相除求得，结果按 GB/T 8170 修约到 0.01（五成双）。",
     "sort_order": 9,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -162,10 +162,10 @@
     "formula": "ROUND_HALF_EVEN(ReH / ReH_spec, 2)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 0.01（五成双）",
-    "remark": "超强比=实测屈服/标准屈服",
+    "remark": "超强比为实测屈服强度与标准屈服强度值之比：$=\\dfrac{R_{eH}}{R_{eH\\_spec}}$（对应牌号的标准屈服值），结果按 GB/T 8170 修约到 0.01（五成双）。",
     "sort_order": 10,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P3-细骨料",
@@ -176,10 +176,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1%",
-    "remark": "颗粒级配累计筛余百分率（按级配区 × 筛孔查 GB/T 14684-2022 表 3）；原锚 GB/T 14684-2022，2026-11-16 二轮洗链迁移；14684 表 3 为级配区数据源引用，保留",
+    "remark": "按 JGJ 52-2006 第 7.3 条：分计筛余百分率 $a_i=\\dfrac{m_i}{m}\\times100\\%$（该号筛筛余量/试样总量），累计筛余百分率 $\\beta_i$ 为该号筛分计筛余百分率加上该号筛以上各分计筛余百分率之和（精确至 1%）；按 7.3.3.4 分计/累计筛余取两次试验结果算术平均，细度模数亦取两次平均；按级配区对照 GB/T 14684-2022 表 3 判定级配区属。",
     "sort_order": 22,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -190,10 +190,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1",
-    "remark": "立方体抗压强度取算术平均",
+    "remark": "按 GB/T 50081-2019 第 5.0.5 条：$f_{cc}=\\dfrac{F}{A}$，$F$ 为试件破坏荷载（N）、$A$ 为试件承压面积（mm²），结果精确至 0.1 MPa；以三个测值的算术平均为组值：最大或最小值与中间值差超中间值 15% 时剔除最大最小取中间值，两者均超 15% 该组无效；非标准试件（强度等级 <C60）乘尺寸换算系数：200 mm³ 取 1.05、100 mm³ 取 0.95。",
     "sort_order": 1,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -204,10 +204,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1",
-    "remark": "抗折强度",
+    "remark": "按 GB/T 50081-2019 第 10.0.5 条（断裂面位于两集中荷载作用线之间）：$f_f=\\dfrac{FL}{bh^2}$，$F$ 为破坏荷载（N）、$L$ 为支座间跨度（mm）、$b/h$ 为截面宽/高（mm），结果精确至 0.1 MPa；三测值取平均：最大或最小与中间值差超中间值 15% 剔两端取中值，均超则该组无效；一件断面在荷载线外按另两件计算（两值差不大于较小值 15% 取均，否则无效），两件在外该组无效；100 mm×100 mm×400 mm 非标试件乘尺寸换算系数 0.85。",
     "sort_order": 2,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P5",
@@ -218,10 +218,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "混凝土抗渗等级（逐级加压法：0.1MPa 起每 8h 加 0.1MPa，6 件中 4 件未渗水即停止）",
+    "remark": "按 GB/T 50082-2009 抗水渗透试验（逐级加压法）：从 0.1 MPa 开始加压，此后每隔 8 h 增加 0.1 MPa，六个试件中四个出现表面渗水时停止加压并记录水压；抗渗等级以六个试件中四个未出现渗水时的最大水压按 $P=10H-1$ 计算（$H$ 为对应水压，MPa），人工判定。",
     "sort_order": 18,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -232,10 +232,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.01 g/cm³",
-    "remark": "最大干密度（击实曲线峰值，对应 JTG 3430-2020 §4.3）",
+    "remark": "按 JTG 3430-2020《公路土工试验规程》击实试验（§4.3）：以干密度为纵坐标、含水率为横坐标绘制击实曲线，曲线峰值点对应的干密度即为最大干密度 $\\rho_{d\\max}$，人工按曲线峰值判定。注：本行语料外人工转写（2026-11-18）。",
     "sort_order": 19,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -246,10 +246,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1%",
-    "remark": "最优含水率（击实曲线峰值对应含水率）",
+    "remark": "按 JTG 3430-2020《公路土工试验规程》击实试验（§4.3）：击实曲线峰值点对应的含水率即为最优含水率 $w_{op}$，与最大干密度同曲线人工判读。注：本行语料外人工转写（2026-11-18）。",
     "sort_order": 20,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P9",
@@ -260,10 +260,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1%",
-    "remark": "压实度（实测干密度 / 最大干密度 × 100%）",
+    "remark": "按 JTG 3430-2020 击实试验与压实度评定：$K=\\dfrac{\\rho_d}{\\rho_{d\\max}}\\times100\\%$，$\\rho_d$ 为现场实测干密度（g/cm³，灌砂法或环刀法）、$\\rho_{d\\max}$ 为标准击实试验所得最大干密度（g/cm³），人工计算判定。注：本行语料外人工转写（2026-11-18）。",
     "sort_order": 21,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P1",
@@ -273,10 +273,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "安定性人工判定（沸煮法）；原锚 GB 175-2023，2026-11-16 二轮洗链迁移",
+    "remark": "按 GB/T 1346-2024 第 11~12 章（雷氏夹法，基准法）：标准稠度净浆一次装满两个雷氏夹试件，湿气养护后沸煮，测沸煮后两试件指针尖端间距增值 $C-A$ 并取平均；增值不大于 5.0 mm 判安定性合格，大于 5.0 mm 判不合格；试饼法为代用法，肉眼观察有无裂缝弯曲，人工判定。",
     "sort_order": 32,
     "created_at": "2026-11-13T09:16:05.490Z",
-    "updated_at": "2026-11-13T09:16:05.490Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0002"
   },
   {
@@ -287,10 +287,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "保留至 0.01%",
-    "remark": "细度筛余（负压筛析 式1；7.2.1 两份平行平均）",
+    "remark": "按 GB/T 1345-2026 第 7.1 条式(1)：$F=C\\times\\dfrac{m_t}{m_s}\\times100\\%$，$F$ 为试样筛余物质量分数（结果保留至 0.01%）、$C$ 为试验筛修正系数（附录 A 标定）、$m_t$ 为筛余物质量（g）、$m_s$ 为试样质量（g）；按 7.2.1 每个试样称取两个样品分别筛析，取平均值为结果；0.080 mm 筛两次结果差大于 0.20%（7.2.2）、0.045 mm 筛差大于 0.50%（7.2.3）时再做一次，取两次相近结果的算术平均，第三次仍不满足则该组作废。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0217"
   },
   {
@@ -301,10 +301,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "烧失量（灼烧差减法 式27/校正法 式30；公式转录挂账，manual 面）",
+    "remark": "按 GB/T 176-2025 第 6.3.3 条式(27)（灼烧差减法）：$w(\\mathrm{LOI})=\\dfrac{m-m_1}{m}\\times100\\%$，$m$ 为试料质量（g）、$m_1$ 为灼烧后试料质量（g）；矿渣硅酸盐水泥等硫化物干扰时按第 6.4 条式(28)~(30) 校正：先实测 $w(\\mathrm{LOI})$（式 28），再按灼烧前后硫酸盐三氧化硫变化校正 $w'(\\mathrm{LOI})=w(\\mathrm{LOI})+0.8\\times(w_2-w_1)$（式 30，0.8 为 $\\mathrm{S^{2-}}$ 氧化为 $\\mathrm{SO_3}$ 增氧与 $\\mathrm{SO_3}$ 的摩尔质量比，$w_1$ 为灼烧前三氧化硫质量分数、$w_2$ 为灼烧后按水泥基三氧化硫质量分数）。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0218"
   },
   {
@@ -315,10 +315,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "三氧化硫（硫酸钡称量法 式31；公式转录挂账，manual 面）",
+    "remark": "按 GB/T 176-2025 第 6.5.3 条式(31)（硫酸钡称量法，基准法）：$w(\\mathrm{SO_3})=\\dfrac{(m_{14}-m_{014})\\times0.343}{m_{13}}\\times100\\%$，$m_{14}$ 为灼烧后沉淀质量（g）、$m_{014}$ 为空白试验灼烧后沉淀质量（g）、0.343 为硫酸钡对三氧化硫的换算系数、$m_{13}$ 为试料质量（g）。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0008"
   },
   {
@@ -329,10 +329,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "碱含量（火焰光度法 式42/43；6.36 原子吸收代用；公式转录挂账）",
+    "remark": "按 GB/T 176-2025 第 6.14.3 条式(42)/(43)/(44)（火焰光度法，基准法）：$w(\\mathrm{K_2O})=\\dfrac{\\rho_1\\times100}{m_{30}\\times10^6}\\times100\\%$、$w(\\mathrm{Na_2O})=\\dfrac{\\rho_2\\times100}{m_{30}\\times10^6}\\times100\\%$，$\\rho_1/\\rho_2$ 为扣除空白后由工作曲线查得的 $\\mathrm{K_2O}$/$\\mathrm{Na_2O}$ 浓度（μg/mL）、$m_{30}$ 为试料质量（g）；碱含量 $w(\\mathrm{R_2O})=w(\\mathrm{Na_2O})+0.658\\times w(\\mathrm{K_2O})$（式 44）。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0007"
   },
   {
@@ -343,10 +343,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "氯离子（硫氰酸铵容量法；公式转录挂账，manual 面）",
+    "remark": "按 GB/T 176-2025 第 6.34.3 条式(66)（硫氰酸铵容量法，代用法）：$w(\\mathrm{Cl^-})=\\dfrac{1.773\\times5.00\\times(V_{44}-V_{43})}{m_{50}\\times1000}\\times100\\%$，1.773 为硝酸银对氯离子的滴定度换算系数、5.00 为加入硝酸银标准溶液体积（mL）、$V_{44}$ 为空白滴定消耗硫氰酸铵标准滴定溶液体积（mL）、$V_{43}$ 为试样滴定体积（mL）、$m_{50}$ 为试料质量（g）；$V_{43}$ 小于 0.5 mL 时减半试料质量重新测定（6.34.2）。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0004"
   },
   {
@@ -357,10 +357,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1",
-    "remark": "胶砂强度（7.1 一锅胶砂成型三条试体）",
+    "remark": "按 GB/T 17671-2021：抗折按第 10.1 条式(1) $R_f=\\dfrac{1.5F_fL}{b^3}$（$F_f$ 折断荷载 N、$L$ 支撑圆柱间距 mm、$b$ 棱柱体截面边长 mm，加荷速率 50 N/s±10 N/s）；抗压按第 10.2 条式(2) $R_c=\\dfrac{F_c}{A}$（受压面积 $A$ 计 1600 mm²，加荷速率 2400 N/s±200 N/s）；抗折按 11.1.1 三条试体平均（一个超均值 ±10% 剔除后取均、两个超则取剩余一个）；抗压按 11.2.1 六个测定值平均（一个超均值 ±10% 剔除取五均、五均中再有超取新五均、两个及以上超或五均后仍超则该组作废）；单值与均值均精确至 0.1 MPa。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0003"
   },
   {
@@ -371,10 +371,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1",
-    "remark": "抗压强度（11.2.1 六测定值平均 ±10% 两级剔除）",
+    "remark": "按 GB/T 17671-2021 第 10.2 条式(2)：$R_c=\\dfrac{F_c}{A}$，$F_c$ 为破坏时的最大荷载（N）、$A$ 为受压面积（计 1600 mm²），以 2400 N/s±200 N/s 加荷至破坏；按 11.2.1 以一组三条试体六个测定值的平均值为结果：一个超六值均值 ±10% 剔除取五均，五均中再有超五均 ±10% 或同时两个及以上超六值均值 ±10% 则该组作废；单值与均值精确至 0.1 MPa。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0055"
   },
   {
@@ -385,10 +385,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": "修约到 0.1",
-    "remark": "抗折强度（10.1 抗折测定）",
+    "remark": "按 GB/T 17671-2021 第 10.1 条式(1)：$R_f=\\dfrac{1.5F_fL}{b^3}$，$F_f$ 为折断时施加于棱柱体中部的荷载（N）、$L$ 为支撑圆柱间距（mm）、$b$ 为棱柱体截面边长（mm），以 50 N/s±10 N/s 加荷至折断；按 11.1.1 以一组三条抗折结果的平均值为结果：一个超均值 ±10% 剔除后取均、两个超均值 ±10% 取剩余一个；单值与均值精确至 0.1 MPa。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0056"
   },
   {
@@ -399,10 +399,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "静力受压弹性模量（式 7.0.5；公式转录挂账，manual 面）",
+    "remark": "按 GB/T 50081-2019 第 7.0.5 条式(7.0.5-1)/(7.0.5-2)：$E=\\dfrac{F_a-F_0}{A\\times\\Delta_n}$，$\\Delta_n=\\varepsilon_a-\\varepsilon_0$，$F_a$ 为应力达 1/3 轴心抗压强度时的荷载（N）、$F_0$ 为 0.5 MPa 基准应力对应初始荷载（N）、$A$ 为承压面积（mm²）、$\\varepsilon_a/\\varepsilon_0$ 为最后一次加荷至 $F_a$ 与基准 $F_0$ 时试件两侧变形读数平均值（mm，测量标距 150 mm）；三试件测值平均精确至 100 MPa；一件测后轴心抗压强度与检验控制荷载依据值差超 20% 时取另两件平均，两件超 20% 该次试验无效。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0202"
   },
   {
@@ -413,10 +413,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "劈裂抗拉强度（9.0.5，0.637×2F/πA；公式转录挂账，manual 面）",
+    "remark": "按 GB/T 50081-2019 第 9.0.5 条：$f_{ts}=\\dfrac{2F}{\\pi A}=0.637\\dfrac{F}{A}$，$F$ 为破坏荷载（N）、$A$ 为劈裂面面积（mm²），结果精确至 0.01 MPa；三测值取平均：最大或最小与中间值差超中间值 15% 剔两端取中值，均超则该组无效；100 mm×100 mm×100 mm 非标试件乘尺寸换算系数 0.85，强度等级不小于 C60 应采用标准试件。",
     "sort_order": 42,
     "created_at": "2026-11-13T16:17:02.045Z",
-    "updated_at": "2026-11-13T16:17:02.045Z",
+    "updated_at": "2026-11-18T00:00:00Z",
     "inspection_parameter_code": "IP-0201"
   },
   {
@@ -428,10 +428,10 @@
     "formula": "ROUND_HALF_EVEN(Fm * 1000 / (PI() * d^2 / 4), 0)",
     "conditions": null,
     "rounding_rule": "GB/T 8170 修约到 1（五成双）",
-    "remark": "接头极限抗拉强度（工艺检验≥3根，7.0.2；验收批随机截取3个接头试件，7.0.7）；公式复用现行机械连接行引擎白名单串（GB/T 228.1 同族）",
+    "remark": "按 JGJ 107-2016 第 7.0.2 条（现场工艺检验）/5.0.3（型式检验）：接头试件拉伸至断裂，抗拉强度 $R_m=\\dfrac{F_m}{S_0}$（$S_0$ 为钢筋公称截面积）；工艺检验每批随机截取 3 个接头试件（7.0.7），结果按 GB/T 8170 修约到 1 MPa。注：公式复用现行机械连接行引擎白名单（原备注）。",
     "sort_order": 52,
     "created_at": "2026-11-17T07:35:50.267Z",
-    "updated_at": "2026-11-17T07:35:50.267Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -442,10 +442,10 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "接头单向拉伸残余变形 3 根平均值（7.0.2 条4 现场工艺检验；测量方法附录A/A.2.1，标距 d/2~3d）",
+    "remark": "按 JGJ 107-2016 第 7.0.2 条4（现场工艺检验）：单向拉伸加载至 0.6$f_{yk}$ 后卸载，在附录 A/A.2.1 规定的变形测量标距上测量接头残余变形，取 3 根试件实测平均值；测量方法按附录 A，标距按 A.1.1 规定（接头长度加两侧钢筋段）。",
     "sort_order": 52,
     "created_at": "2026-11-17T07:35:50.267Z",
-    "updated_at": "2026-11-17T07:35:50.267Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P2",
@@ -456,9 +456,9 @@
     "formula": null,
     "conditions": null,
     "rounding_rule": null,
-    "remark": "接头最大力下总伸长率 3 试件实测平均值（5.0.3 条2 型式检验变形检验面；限值表3.0.7 挂账 RA-J2 待 PDF 锚定）",
+    "remark": "按 JGJ 107-2016 第 5.0.3 条 2（型式检验变形检验面）：接头最大力下总伸长率取 3 个试件实测平均值；限值要求见表 3.0.7（挂账 RA-J2 待补）。",
     "sort_order": 52,
     "created_at": "2026-11-17T07:35:50.267Z",
-    "updated_at": "2026-11-17T07:35:50.267Z"
+    "updated_at": "2026-11-18T00:00:00Z"
   }
 ]
