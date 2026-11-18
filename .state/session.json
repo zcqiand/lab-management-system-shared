@@ -1,18 +1,19 @@
 {
-  "current_task": "批B 砖砌块域立域批收官（2026-11-18）：brick 域键+锚六件+三方法标 calc 十行导入（种子 37→47 行）",
+  "current_task": "批WP 防水域立域批收官（2026-11-18）：wp 域键+锚五件+16777/328.8 calc 五行（种子 47→52 行）",
   "done": [
-    "inspection_calculation_methods.json +10：OBJ-SP01-P4 × 11969×4（IP-0189 干密度/IP-0055 抗压/IP-0056 抗折/IP-0195 抗冻强度损失）+ 2542×3（IP-0055 抗压——式体 OCR 塌缩按符号面转写 remark 明示/IP-0059 吸水率 W24/W3/IP-0195 抗冻 Pm/Gm）+ 4111×3（IP-0055 附录 A 直测面/IP-0059 吸水率/IP-0195 单块+平均损失率式(12)/(13)）",
-    "挂链零新增（P4×三标 TESTING 先前已在；三标全在 method 40 集）；IP 码无参数码面零硬凑不导→账 45",
-    "seed:db 重浇 + seed:check clean（dropped 2=账 44 既知双胞胎）+ DB 探针 P4 十行全实；shared 门 exit 0"
+    "inspection_calculation_methods.json +5：OBJ-SP01-P10-防水涂料 × 16777×3（IP-0045 固体含量 X=(m2−m0)/(m1−m0)×100——式体 OCR 塌缩按 5.2 步骤+符号面转写 remark 明示 / IP-0057 粘结强度 σ=F/(a×b) / IP-0034 拉伸强度 T=P/(B×D)）+ OBJ-SP01-P10-防水卷材 × 328.8×2（IP-0010 拉力修约 5N / IP-0011 延伸率修约 1%，prose 计算面 manual）",
+    "挂链零新增（P10 三对象×TESTING 七标先前已在；16777/328.8 全在 method 40 集）；零硬凑面→账 46（参数未立码/单位分叉/式体丢失三类）",
+    "seed:db 重浇 + seed:check clean（dropped 2=账 44 既知）+ DB 探针 WP 五行全实（库 50=52−2）；shared 门 exit 0"
   ],
-  "next": "WP 防水/AD 外加剂/M 砂浆三域续推（对象链与语料标侦察同批B 先例：先 dump 域语料实测 block_type）；队列：账 43/45 扩面（新 IP 码面）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）",
+  "next": "AD 外加剂 / M 砂浆两域续推（同批WP 流程：先 dump 域语料侦察 8076/50119/1596/25181/70 五标）；队列：账 43/45/46 扩面（新 IP 码面/单位分叉人裁）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）",
   "open_questions": [
     "账 44（228.1 双胞胎变体行）待人裁或随账 2 收口",
-    "账 43/45 扩面需新 IP 码设计面等裁序"
+    "账 43/45/46 扩面需新 IP 码设计面等裁序",
+    "328.18/328.20 × IP-0018/0019 单位分叉待人裁（账 46②）"
   ],
   "dont": [
     "calc 种子（P2,IP-0086/0087,228.1）双胞胎变体两键动前必读账 44",
-    "guard 绝对计数批改必须在种子落库之前（批B 工序教训，HISTORY 教训 7）",
-    "种子 47 行状态回滚取证走 shared stash（批B 先例）——禁改种子绕 guard"
+    "guard 绝对计数批改必须在种子落库之前（教训 7）",
+    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-wp-calc.py 先例）"
   ]
 }

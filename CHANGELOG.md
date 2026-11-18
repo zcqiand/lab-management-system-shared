@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批WP 防水域立域批——wp 域键+锚五件+16777/328.8 calc 五行导入（2026-11-18，五域大批次第三域）**——
+  seeds 面一处：inspection_calculation_methods.json +5（52 行）：OBJ-SP01-P10-防水涂料 ×
+  GB/T 16777-2008×3（IP-0045 固体含量 X=(m2−m0)/(m1−m0)×100——式体 OCR 塌缩按 5.2
+  步骤+式中符号面转写、remark 明示，修约 1% / IP-0057 粘结强度 σ=F/(a×b) ≥3 试件
+  平均修约 0.01 MPa / IP-0034 拉伸强度 T=P/(B×D) 5 试件平均修约 0.01 MPa）+
+  OBJ-SP01-P10-防水卷材 × GB/T 328.8-2007×2（IP-0010 拉力 5 试件平均修约 5N /
+  IP-0011 延伸率平均修约 1%——均 prose 计算面 manual 无公式体），algorithm_type=
+  manual 全族，remark 逐行人工判读描述。挂链零新增（P10 三对象×TESTING 七标先前
+  已在；两标全在 method 40 集）。零硬凑面（式(4) 公式体丢失/式(5)(7) 参数未立码/
+  撕裂·剥离单位分叉/328.26 M 系符号面丢失）→ HISTORY 账 46。域面/锚面在 nextjs 仓
+  （同批提交）：semantic-dictionary.json 增 wp 域（label 防水材料，terms 空数组
+  起步）；standard-extract-anchors.json 增 wp 五锚（solid-content/bond-strength/
+  tensile-strength/tensile-force-avg/elongation-avg，clauseKind=clause）。
 - feat(seeds): **批B 砖砌块域立域批——brick 域键+锚六件+三方法标 calc 十行导入（2026-11-18，覆盖推进第 6 批）**——
   seeds 面一处：inspection_calculation_methods.json +10（47 行）：OBJ-SP01-P4 ×
   GB/T 11969-2020×4（IP-0189 干密度 ρ0=M0/V×10⁶ 修约 1 kg/m³（语料 kg/m² OCR
