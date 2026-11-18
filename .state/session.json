@@ -1,18 +1,18 @@
 {
-  "current_task": "UI 表格化批: 参数界面七卡 v1→v2 表格形 (dfea300), 护栏测试随 nextjs 同批, 双门全绿",
+  "current_task": "表格化批收官确认: 种子七卡 v1→v2 (dfea300) 已提交, 消费仓 nextjs 后续批 (71cb47d/1dd5a4c) 未触种子, 双门全绿",
   "done": [
-    "inspection_param_interfaces.json 七卡 version 1→2: cement-setting-time 表格 rows=2 (初凝/标准要求/终凝/标准要求, req_select 逐行) + 六单值卡 rows=1 (技术要求 req_select + 检验结果 (单位))",
-    "裁定在案: 评定列不做 (GB 175 氯离子行 max=null 机判不成立, 评定留卡头右上角); IP-0550/0551 绑定拆分另批; soundness/fineness 未加 req 列属候选扩面",
-    "seed:db --reset 重浇 + seed:check clean + 双门全绿 (EXIT=0)"
+    "inspection_param_interfaces.json 七卡 version 1→2: cement-setting-time 表格 rows=2 + 六单值卡 rows=1 (dfea300, 已提交)",
+    "本仓无新改动——computed 并排/灰底/顶栏 chip 三批全落 nextjs 消费侧; 双门复跑全绿 (EXIT=0)",
+    "裁定在案: 评定列不做 (GB 175 氯离子行 max=null 机判不成立); IP-0550/0551 绑定拆分另批; soundness/fineness req 列候选扩面"
   ],
-  "next": "消费仓镜像挂账: react/vue 等仓各自吃同一种子表格化 (种子单源直读仓零改动); IP-0550/0551 机判拆分另批 (数据面 remark 自带规划)",
+  "next": "消费仓镜像挂账: react/vue 等仓各自吃同一种子表格化; IP-0550/0551 机判拆分另批 (数据面 remark 自带规划)",
   "open_questions": [
     "IP-0553 压蒸法卡形状是否独立建界面——过人裁",
-    "soundness/fineness 已有表格卡加 req 列——候选扩面, 过人裁"
+    "soundness/fineness 加 req 列——候选扩面, 过人裁"
   ],
   "dont": [
-    "种子改 config 必须 version+1 原位替换 (版本感知回放), 禁原地静默改",
-    "常规浇不删行——种子删行/换版必 --reset, seed:check 陈旧行红是预期信号"
+    "种子改 config 必须 version+1 原位替换, 禁原地静默改",
+    "常规浇不删行——种子删行/换版必 --reset"
   ],
-  "last_gate_passed_at": "2026-11-18T21:57:00"
+  "last_gate_passed_at": "2026-11-18T22:40:00"
 }
