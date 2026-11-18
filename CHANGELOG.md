@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+- feat(seeds): **默认兜底卡表格化+更名（2026-11-19 用户裁定）**——
+  inspection_param_interfaces.json code=default v1→2：「默认四格卡」→「默认卡」，
+  config 四格（requirement/result textarea）→单行表格（技术要求 req_select +
+  检验结果 input，通用兜底无域单位故检验结果不带后缀；showLabel false）；
+  description 注记四格退役。表格化批护栏 tests/seeds/flat-card-table-form.test.ts
+  末位追钉 default 用例（前批「default 兜底卡除外」清单随之收口）。三处测试
+  内旧名引用同步更名（mock fixture/注释，receipts/data-entry）。
+
 - feat(seeds): **批CE4——GB/T 176-2025 化学成分已立码三件收口（挂账 53①，2026-11-19 人批）**——
   inspection_calculation_methods.json +3（OBJ-SP01-P1 × 176-2025：IP-0006 氧化镁
   式(39)原子吸收基准/式(61)(62)EDTA 差减两分支 + IP-0385 不溶物式(32) +

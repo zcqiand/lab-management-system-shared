@@ -191,27 +191,35 @@
   },
   {
     "code": "default",
-    "name": "默认四格卡",
-    "description": "检测依据 / 技术要求 / 检测结果 / 单项评定",
-    "version": 1,
+    "name": "默认卡",
+    "description": "通用兜底卡（技术要求/检验结果单行表格，2026-11-19 用户裁定表格化+更名；原四格卡退役）",
+    "version": 2,
     "config": {
       "fields": [
         {
-          "field": "requirement",
-          "type": "textarea",
-          "label": "技术要求",
-          "required": true
-        },
-        {
-          "field": "result",
-          "type": "textarea",
-          "label": "检测结果",
-          "required": true
+          "field": "resultTable",
+          "type": "table",
+          "label": "检验结果",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "values",
+              "label": "检验结果",
+              "mode": "input"
+            }
+          ],
+          "showLabel": false
         }
-      ]
+      ],
+      "params": {}
     },
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-19T00:00:00Z"
   },
   {
     "code": "mortar-compress",
