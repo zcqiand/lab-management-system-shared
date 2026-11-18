@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+- fix(seeds): **账 44 人裁收口——calc 228.1 双胞胎变体行删 null 孪生（2026-11-18）**——
+  (OBJ-SP01-P2, IP-0086/0087, GB/T 228.1-2021) 各两行孪生（RN-102-2 vs null 报告名、
+  remark JGJ 107 尾注、sort 异），灌库 dedupe（非空字段数多者胜）各丢 1 → seeds≠DB。
+  人裁留 RN-102-2 行（现行行胜先例同向），删 null 孪生两行 → 63→61 行，dedupe 零丢，
+  种子↔DB 全等面恢复。DB 实面零变化（被丢行本不在库）。护栏镜像随 nextjs 同批
+  （calc-method-formula 2b 63→61/P2 15→13、consistency 锚 IP-0087 sort4→16、
+  calc-method-gate steel_tensile ≥4→≥3）。
 - refactor(contract): **tech_req DTO 摘 tenantId（2026-11-18 人裁账 49：tech_req 归全局共享、
   DB 无 tenant_id 列，契约面同步删字段）**——tsp/models/technical-requirement.tsp
   TechnicalRequirement 删 `tenantId: string`（含人裁注记，对照 2026-11-09 schema.ts:44-47）；
