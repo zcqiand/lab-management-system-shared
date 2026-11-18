@@ -1,20 +1,17 @@
 {
-  "current_task": "账44人裁收口: calc 228.1 双胞胎删 null 孪生两行 63→61 (8fe7883), dedupe 零丢, 双门全绿",
+  "current_task": "参数去重批: RN 关联删四行通用/误挂码 (6528982), seed:check clean + 探针 0 余留 + 双门全绿",
   "done": [
-    "seeds/inspection_calculation_methods.json 删 (OBJ-SP01-P2, IP-0086/0087, GB/T 228.1-2021) null 报告名孪生两行（人裁留 RN-102-2 行，现行行胜先例同向）→ 63→61 行",
-    "dedupe 零丢（seeds↔DB 全等面恢复）；DB 实面零变化（被丢行本不在库，dropped 2 归零）",
-    "护栏镜像随 nextjs 同批（f814964）：calc-method-formula 2b 63→61/P2 15→13、consistency 锚 IP-0087 sort4→16、calc-method-gate steel_tensile ≥4→≥3",
-    "shared 门 exit 0；seed:db 重浇 + seed:check clean（dropped 0）"
+    "inspection_report_name_parameters.json 260→256: RN-101 删 IP-0001/IP-0002 (保留 specific IP-0550/0551/0552/0553), RN-105-3 删 IP-0004 (IP-0580 正主), RN-110-1 删 IP-0044 (IP-0011 正主)",
+    "判定链核实: RN-105-3 三标准 tech_req 只挂 IP-0055 / RN-110-1 九标准零 tech_req / RN-101×IP-0004 (水泥氯离子) 保留",
+    "DB --reset 重浇收口 seed:check 陈旧 4 行"
   ],
-  "next": "批后队列：账 7 产线能力优化（用户 11-14 排队）、UI 表格化改造批（nextjs）、账 43/45/46/48 五域扩面逐域人批（推荐序 48→46→45→43）、账 52②/52① 余四仓放一放",
+  "next": "消费仓镜像挂账: react/vue/五后端仓各自吃同一种子删改 (种子单源直读仓零改动); specific 码 interface link 缺面 (IP-0550/0551/0552/0553 现走通用采集卡回退) 归 UI 表格化批另议",
   "open_questions": [
-    "账 43/45/46/48 扩面需新 IP 码设计面/挂链补/单位分叉，逐域人批",
-    "328.18/328.20 × IP-0018/0019 单位分叉待人裁（账 46②）；SL/T 352-2020 语料不在库待补采（账 48）"
+    "IP-0553 压蒸法卡形状 (soundness 卡=沸煮法雷氏夹) 是否独立建界面——UI 表格化批过人裁"
   ],
   "dont": [
-    "calc 种子变体面（同 PK 多行）动前先查 dedupeByPk 语义——非空字段数多者胜，seeds 文件允许变体行共存但灌库会丢",
-    "guard 绝对计数/钉值测试批改在种子落库之前；落库后暴露走诚实例序重建，禁 --force",
-    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-m-calc.py 先例）"
+    "param-interface-link-coverage T1 钉 IP-0001/IP-0002 的 interface link 不能删 (本批未动 link 面)",
+    "常规浇不删行——种子删行必 --reset, seed:check 陈旧行红是预期信号"
   ],
-  "last_gate_passed_at": "2026-11-18T18:51:53"
+  "last_gate_passed_at": "2026-11-18T20:35:00"
 }
