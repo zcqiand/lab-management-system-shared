@@ -1,19 +1,21 @@
 {
-  "current_task": "批WP 防水域立域批收官（2026-11-18）：wp 域键+锚五件+16777/328.8 calc 五行（种子 47→52 行）",
+  "current_task": "批M 砂浆域立域批收官（2026-11-18）：mortar 域键+锚五件+70-2009 calc 十一行（种子 52→63 行，挂链 195→199）——五域大批次第五域收官；批AD 零导面定性转账 47",
   "done": [
-    "inspection_calculation_methods.json +5：OBJ-SP01-P10-防水涂料 × 16777×3（IP-0045 固体含量 X=(m2−m0)/(m1−m0)×100——式体 OCR 塌缩按 5.2 步骤+符号面转写 remark 明示 / IP-0057 粘结强度 σ=F/(a×b) / IP-0034 拉伸强度 T=P/(B×D)）+ OBJ-SP01-P10-防水卷材 × 328.8×2（IP-0010 拉力修约 5N / IP-0011 延伸率修约 1%，prose 计算面 manual）",
-    "挂链零新增（P10 三对象×TESTING 七标先前已在；16777/328.8 全在 method 40 集）；零硬凑面→账 46（参数未立码/单位分叉/式体丢失三类）",
-    "seed:db 重浇 + seed:check clean（dropped 2=账 44 既知）+ DB 探针 WP 五行全实（库 50=52−2）；shared 门 exit 0"
+    "inspection_calculation_methods.json +11：OBJ-SP01-P8 + OBJ-SP07-P13 × JGJ/T 70-2009 各 4（IP-0055 立方体抗压 $f_{cu}=K\\times N_u/A$ 式体塌缩按符号族面唯一复原 remark 明示、9.0.5 三试件 15% 中值入 conditions、修约 0.1 MPa / IP-0001×8.0.5 贯入阻力 $f=N_p/A_s$ + ×8.0.6 凝结时间两试样平均≤30min / IP-0225×6.0.4 分层度前后差 / IP-0223×4.0.4 稠度两次平均——后三者修约 1mm）+ OBJ-SP05-P1/P4/P5 × 70-2009 各 1（IP-0296 拉伸粘结 $f_{at}=F/A$，10.0.8 十试件 20% 剔除有效≥6 入 conditions，修约 0.01 MPa）——全 manual formula=null prose 计算面",
+    "inspection_object_standards.json +4（195→199）：TESTING 机械补链（SP07-P13、SP05-P1/P4/P5 × 70-2009），judgment-link-snapshot 钉值随批改",
+    "判重键三键裁定：calcMethodKey 两键实现漂移修正对齐 DB PK (obj,param,std)——现行两键双占仅账 44 双胞胎（三键 PK 合法）零扰动",
+    "seed:db 重浇（calc 库面 61=63−2 账 44 dropped、object_standards 199）+ seed:check clean；psycopg 探针 70-2009 11/11 全实+补链 4 条全实；shared 门 exit 0"
   ],
-  "next": "AD 外加剂 / M 砂浆两域续推（同批WP 流程：先 dump 域语料侦察 8076/50119/1596/25181/70 五标）；队列：账 43/45/46 扩面（新 IP 码面/单位分叉人裁）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）",
+  "next": "批后队列：账 43/45/46/48 扩面（新 IP 码/挂链补/单位分叉，均须人批）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）、账 44 人裁",
   "open_questions": [
     "账 44（228.1 双胞胎变体行）待人裁或随账 2 收口",
-    "账 43/45/46 扩面需新 IP 码设计面等裁序",
-    "328.18/328.20 × IP-0018/0019 单位分叉待人裁（账 46②）"
+    "账 43/45/46/48 扩面需新 IP 码设计面/挂链补等裁序",
+    "328.18/328.20 × IP-0018/0019 单位分叉待人裁（账 46②）；SL/T 352-2020 语料不在库待补采（账 48）"
   ],
   "dont": [
     "calc 种子（P2,IP-0086/0087,228.1）双胞胎变体两键动前必读账 44",
-    "guard 绝对计数批改必须在种子落库之前（教训 7）",
-    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-wp-calc.py 先例）"
+    "guard 绝对计数/钉值测试批改尽量在种子落库之前；落库后暴露走诚实例序重建（回退→改→真红→--to green→幂等重浇），禁 --force",
+    "python 源码禁直写 LaTeX 字面转义——token 构造+控制字符回验（import-m-calc.py 先例）",
+    "calcMethodKey 已三键化（obj|param|std）——动判重面先读 HISTORY 批M 段"
   ]
 }

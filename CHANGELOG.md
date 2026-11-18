@@ -4,6 +4,26 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批M 砂浆域立域批——mortar 域键+锚五件+70-2009 calc 十一行导入（2026-11-18，五域大批次第五域收官）**——
+  seeds 面两处：① inspection_calculation_methods.json +11（52→63 行），全
+  algorithm_type=manual、formula=null 的 prose 计算面（公式 LaTeX 入 remark）：
+  OBJ-SP01-P8 + OBJ-SP07-P13 × JGJ/T 70-2009 各 4（IP-0055 立方体抗压
+  $f_{cu}=K\times N_u/A$——式体 OCR 塌缩按符号族面唯一复原、remark 明示，
+  9.0.5 三试件平均超 15% 取中值入 conditions，修约 0.1 MPa / IP-0001×8.0.5
+  贯入阻力 $f=N_p/A_s$ 与×8.0.6 凝结时间两试样平均 ≤30min / IP-0225×6.0.4
+  分层度前后稠度之差 / IP-0223×4.0.4 稠度两次平均——后三者修约 1mm）+
+  OBJ-SP05-P1/P4/P5 × 70-2009 各 1（IP-0296 拉伸粘结 $f_{at}=F/A$，10.0.8
+  十试件平均 20% 逐次剔除有效≥6 入 conditions，修约 0.01 MPa）；修约枚举
+  新增「修约到 0.1 MPa」「修约到 1mm」。② inspection_object_standards.json
+  +4（195→199 行）：TESTING 机械补链（SP07-P13、SP05-P1/P4/P5 × 70-2009），
+  judgment-link-snapshot 钉值 195→199 随批改。**判重键裁定**：calcMethodKey
+  两键（param|std）实现漂移修正为三键（obj|param|std）对齐 DB PK——同参同标
+  不同对象行（P8+SP07-P13 首撞）不再误判 skip；现行两键双占仅账 44 双胞胎
+  （三键 PK 下合法多对象行）零扰动。零硬凑面（保水率式体孤「1」/抹灰·砌筑
+  拉伸粘结挂链缺/表观密度 junction 缺/抗渗 PH0.1 双解/抗冻·收缩·含气量·
+  吸水率·轴压链缺/SL/T 352-2020 语料不在库）→ HISTORY 账 48；批AD 零导面
+  定性→账 47。域面/锚面在 nextjs 仓（同批提交）：semantic-dictionary.json
+  增 mortar 域；standard-extract-anchors.json 增 mortar 五锚。
 - feat(seeds): **批WP 防水域立域批——wp 域键+锚五件+16777/328.8 calc 五行导入（2026-11-18，五域大批次第三域）**——
   seeds 面一处：inspection_calculation_methods.json +5（52 行）：OBJ-SP01-P10-防水涂料 ×
   GB/T 16777-2008×3（IP-0045 固体含量 X=(m2−m0)/(m1−m0)×100——式体 OCR 塌缩按 5.2

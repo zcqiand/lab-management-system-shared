@@ -1558,5 +1558,37 @@
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP07-P13",
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP05-P1",
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP05-P4",
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP05-P5",
+    "inspection_standard_code": "JGJ/T 70-2009",
+    "role": "TESTING",
+    "remark": null,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
