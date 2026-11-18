@@ -4,6 +4,17 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批CE4——GB/T 176-2025 化学成分已立码三件收口（挂账 53①，2026-11-19 人批）**——
+  inspection_calculation_methods.json +3（OBJ-SP01-P1 × 176-2025：IP-0006 氧化镁
+  式(39)原子吸收基准/式(61)(62)EDTA 差减两分支 + IP-0385 不溶物式(32) +
+  IP-0403 游离钙式(75)-(78)四代用法，均 manual、公式 LaTeX 进 remark，
+  sort 113-115，全文件 61→64）；inspection_standard_parameters.json 挂链 +3
+  （176 × IP-0006/0385/0403，档 4→7）；inspection_object_parameters.json junction
+  +2（P1 × IP-0385 RESTRICTED（GB 175 限值 ≤0.75/1.5）/ IP-0403 QUALIFIED（无限值））。
+  转义指纹在册：`10^6` 经占位符替换被吞成 `10\6`，repr 回验抓到后定点修复——
+  LaTeX 上标 `^` 禁走占位符替换面。nextjs 同步：calc 护栏 61→64、挂链双守卫
+  511→514（cement/rebar surface-import）。双门全绿（nextjs+shared EXIT=0）。
+
 - feat(seeds): **UI 表格化改造批——参数界面七卡平铺→表格（2026-11-18 用户图示+裁定两则）**——
   inspection_param_interfaces.json 七卡 version 1→2：①cement-setting-time v2 表格
   （rows=2，列 初凝/标准要求/终凝/标准要求 (min)，req_select 逐行标准要求下拉，

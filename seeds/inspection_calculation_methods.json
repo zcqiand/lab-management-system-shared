@@ -852,5 +852,47 @@
     "sort_order": 112,
     "created_at": "2026-11-18T07:17:44.203Z",
     "updated_at": "2026-11-18T07:17:44.203Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "testing_standard_code": "GB/T 176-2025",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "remark": "按 GB/T 176-2025 三法：①第 6.11.3 条式(39)（原子吸收分光光度法，基准法）：$w(\\mathrm{MgO})=\\dfrac{c_5\\times100\\times n_2}{m_{27}\\times10^6}\\times100\\%$，$c_5$ 为扣除空白后由工作曲线查得的氧化镁浓度（μg/mL）、100 为测定溶液体积（mL）、$n_2$ 为全部试样溶液与所分取试样溶液的体积比（无分取时 n2=1）、$m_{27}$ 为试料质量（g）；②第 6.30.2.1 条式(61)（EDTA 滴定差减法，代用法，一氧化锰 ≤0.5%）：$w(\\mathrm{MgO})=\\dfrac{T(\\mathrm{MgO})\\times[(V_{37}-V_{037})-(V_{38}-V_{038})]\\times10}{m_{23}\\times1000}\\times100\\%$，$T$ 为 EDTA 对氧化镁滴定度（mg/mL）、$V_{37}$/$V_{037}$ 为滴定钙镁合量及其空白消耗（mL）、$V_{38}$/$V_{038}$ 为测氧化钙及其空白消耗（mL）、10 为体积比、$m_{23}$ 为试料质量（g）；③第 6.30.2.2 条式(62)（一氧化锰 >0.5%）：式(61) 结果再减 $0.57\\times w(\\mathrm{MnO})$，0.57 为一氧化锰对氧化镁换算系数。",
+    "sort_order": 113,
+    "inspection_parameter_code": "IP-0006",
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "testing_standard_code": "GB/T 176-2025",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "remark": "按 GB/T 176-2025 第 6.6.3 条式(32)（盐酸-氢氧化钠处理，基准法）：$w(\\mathrm{IR})=\\dfrac{m_{16}-m_{016}}{m_{15}}\\times100\\%$，$m_{16}$ 为灼烧后不溶物质量（g）、$m_{016}$ 为空白试验灼烧后不溶物质量（g）、$m_{15}$ 为试料质量（g）。",
+    "sort_order": 114,
+    "inspection_parameter_code": "IP-0385",
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "testing_standard_code": "GB/T 176-2025",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "remark": "按 GB/T 176-2025 四代用法：①第 6.42.3 条式(75)（甘油法）：$w(\\mathrm{fCaO})=\\dfrac{T'(\\mathrm{CaO})\\times V_{46}}{m_{57}\\times1000}\\times100\\%$，$T'$ 为苯甲酸-无水乙醇标准滴定溶液对氧化钙滴定度（mg/mL）、$V_{46}$ 为反复滴定至 10 min 不再显红色的累计消耗（mL）、$m_{57}$ 为试料质量（g）；②第 6.43.3 条式(76)（乙二醇法）：形状同式(75)，$V_{47}$ 为滴定消耗、$m_{58}$ 为试料质量；③第 6.44.3 条式(77)（乙二醇提取-EDTA 滴定法）：$w(\\mathrm{fCaO})=\\dfrac{T(\\mathrm{CaO})\\times(V_{48}-V_{048})}{m_{59}\\times1000}\\times100\\%$，$T$ 为 EDTA 对氧化钙滴定度、$V_{48}$/$V_{048}$ 为滴定及其空白消耗、$m_{59}$ 为试料质量；④第 6.45.3 条式(78)（电导法）：$w(\\mathrm{fCaO})=\\dfrac{\\beta_{18}\\times V_{49}}{m_{60}\\times1000}\\times100\\%$，$\\beta_{18}$ 为由工作曲线查得的氧化钙质量浓度（mg/mL）、$V_{49}$ 为加入乙二醇体积（mL）、$m_{60}$ 为试料质量（g）。",
+    "sort_order": 115,
+    "inspection_parameter_code": "IP-0403",
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z"
   }
 ]
