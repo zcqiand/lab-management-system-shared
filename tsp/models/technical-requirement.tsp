@@ -34,7 +34,8 @@ enum RequirementJudgmentMode {
 }
 
 model TechnicalRequirement {
-  tenantId: string;
+  // tenantId 已摘（2026-11-18 人裁 账 49：tech_req 归全局共享、DB 无 tenant_id 列，
+  // 契约面同步删字段——对照 2026-11-09 人裁 shared schema.ts:44-47）。
   inspectionObjectCode: string;
   inspectionParameterCode: string;
   judgmentStandardCode: string;

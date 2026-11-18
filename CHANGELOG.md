@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+- refactor(contract): **tech_req DTO 摘 tenantId（2026-11-18 人裁账 49：tech_req 归全局共享、
+  DB 无 tenant_id 列，契约面同步删字段）**——tsp/models/technical-requirement.tsp
+  TechnicalRequirement 删 `tenantId: string`（含人裁注记，对照 2026-11-09 schema.ts:44-47）；
+  generated/openapi/openapi.yaml required 列表+properties 同步（emit 重浇，仅该 model 三行）。
+  本批范围=shared+nextjs（人裁）：nextjs gen-shared 重浇生成物+marker 刷至本 commit，
+  两 dom 测试摘 tenantId 注水。**其余五后端现状留档暂不动**（fastapi/django/rails/go 落 ''
+  占位、aspnetcore Generated 属性 null、spring 已摘字段——gen-shared 重浇时各自收链，
+  详见 suite standard-gen HISTORY 挂账 49）。
 - feat(seeds): **批M 砂浆域立域批——mortar 域键+锚五件+70-2009 calc 十一行导入（2026-11-18，五域大批次第五域收官）**——
   seeds 面两处：① inspection_calculation_methods.json +11（52→63 行），全
   algorithm_type=manual、formula=null 的 prose 计算面（公式 LaTeX 入 remark）：

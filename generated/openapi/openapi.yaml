@@ -6005,7 +6005,6 @@ components:
     TechnicalRequirement:
       type: object
       required:
-        - tenantId
         - inspectionObjectCode
         - inspectionParameterCode
         - judgmentStandardCode
@@ -6017,8 +6016,6 @@ components:
         - createdAt
         - updatedAt
       properties:
-        tenantId:
-          type: string
         inspectionObjectCode:
           type: string
         inspectionParameterCode:
