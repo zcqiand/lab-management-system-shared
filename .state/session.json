@@ -1,9 +1,9 @@
 {
-  "current_task": "表格化批收官确认: 种子七卡 v1→v2 (dfea300) 已提交, 消费仓 nextjs 后续批 (71cb47d/1dd5a4c) 未触种子, 双门全绿",
+  "current_task": "REQ-2026-042 T4 收口确认: 本仓单跑门全绿 EXIT=0 (L5.inventory lab family PASS), T1/T2/T3 已于 11-17 收官 (dfd7f09/探针/ea0e917)",
   "done": [
-    "inspection_param_interfaces.json 七卡 version 1→2: cement-setting-time 表格 rows=2 + 六单值卡 rows=1 (dfea300, 已提交)",
-    "本仓无新改动——computed 并排/灰底/顶栏 chip 三批全落 nextjs 消费侧; 双门复跑全绿 (EXIT=0)",
-    "裁定在案: 评定列不做 (GB 175 氯离子行 max=null 机判不成立); IP-0550/0551 绑定拆分另批; soundness/fineness req 列候选扩面"
+    "REQ-2026-042 全程收官: T1 saas 种子洗链 (dfd7f09) + T2 saas_dev 重浇探针六项 PASS + T3 维护页 (ea0e917, nextjs 仓) + T4 live 探针六项 ALL_OK (探针件在 nextjs 仓 _work/)",
+    "本仓门单跑 EXIT=0; CHANGELOG T2.5 码表清洗条在案 (277 行) 且引用 saas T1 (dfd7f09)——三仓记账齐",
+    "发现: gate.py -p 单值参数, 重复 -p 只有最后一仓生效——多仓门必须逐仓单跑 (本会话 23:21 实证)"
   ],
   "next": "消费仓镜像挂账: react/vue 等仓各自吃同一种子表格化; IP-0550/0551 机判拆分另批 (数据面 remark 自带规划)",
   "open_questions": [
