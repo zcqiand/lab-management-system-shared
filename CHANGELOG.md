@@ -4,6 +4,30 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批B 砖砌块域立域批——brick 域键+锚六件+三方法标 calc 十行导入（2026-11-18，覆盖推进第 6 批）**——
+  seeds 面一处：inspection_calculation_methods.json +10（47 行）：OBJ-SP01-P4 ×
+  GB/T 11969-2020×4（IP-0189 干密度 ρ0=M0/V×10⁶ 修约 1 kg/m³（语料 kg/m² OCR
+  误置注记归一）/ IP-0055 抗压 fcc=P1/A1 修约 0.1 MPa / IP-0056 抗折
+  ff=PL/(bh²) 修约 0.01 MPa / IP-0195 抗冻强度损失 Fm 式(17)）+ GB/T 2542-2012×3
+  （IP-0055 抗压 R=P/(L×B)——式体 OCR 塌缩按 7.6.1 符号面转写、remark 明示 /
+  IP-0059 吸水率 W24 式(6)+W3 式(7) / IP-0195 抗冻 Pm 式(3)+Gm 式(4)）+
+  GB/T 4111-2013×3（IP-0055 附录 A 直测面修约 0.01 MPa（正文芯样推定族 B.5
+  不导另注）/ IP-0059 吸水率式(7) 修约 0.1%（块材三件平均 1%）/ IP-0195 单块/
+  平均损失率式(12)/(13) 修约 1%），algorithm_type=manual 全族，remark 逐行
+  LaTeX 人工判读描述。挂链零新增（P4×三标 TESTING 先前已在；三标全在
+  method 40 集）。域面/锚面在 nextjs 仓（同批提交）：semantic-dictionary.json
+  增 brick 域（label 砖与砌块，terms 空数组起步——域零卡模板禁倒挂）；
+  standard-extract-anchors.json 增 brick 六锚（density/compressive/flexural/
+  frost-strength-loss/frost-mass-loss/absorption，clauseKind=clause 照三标
+  block_type 实测）；锚/字典期望测试先红后绿（phase lock 正门取证）。
+  零硬凑面（11969 劈裂抗拉/轴心抗压/弹模/干燥收缩/碳化等 + 2542 体积密度/
+  孔洞率/饱和系数/泛霜/石灰爆裂等 + 4111 含水率/相对含水率/块体密度/空心率/
+  B.5 芯样族）=新 IP 码面，转账 45。
+  seed:db 重浇 + seed:check clean（dropped 2=账 44 既知）+ DB 探针 P4 十行
+  全实；双门绿。守卫计数 37→47（真红 1 条在案；护栏批改顺序教训入账——
+  见 HISTORY 教训 7）。兄弟仓同步清单：nextjs（域/锚 JSON+两测试文件+
+  守卫计数随批改同批提交）；react/vue 零改动（种子唯一源无镜像回写）。
+
 - feat(seeds): **批S2 土工域立域批——soil 域键+锚三件+GB/T 50123-2019 calc 两行导入（2026-11-18，覆盖推进第 5 批）**——
   seeds 面两处：inspection_calculation_methods.json +2（37 行）：OBJ-SP01-P9 ×
   IP-0226 最大干密度 / IP-0227 最优含水率 × GB/T 50123-2019，algorithm_type=manual，

@@ -1,18 +1,18 @@
 {
-  "current_task": "计算方法备注批收官（33 行 remark 换标准计算方法说明含公式，语料锚定+人工转写，差异表人批 2026-11-18）",
+  "current_task": "批B 砖砌块域立域批收官（2026-11-18）：brick 域键+锚六件+三方法标 calc 十行导入（种子 37→47 行）",
   "done": [
-    "33 行 remark 逐行转写：公式行 LaTeX 化（GB/T 176 式27/30/31/42-44/66、50081 四式、17671 式1/2、1345 式1、28900 式10、JGJ 52 筛余、JTG 3430 压实度），manual 行换标准判读说明；calc-remark-merge.py dry-run→差异表人批→--write（33/33 命中，用户批「批准，照表写入」）",
-    "公式转录纪律在案：语料公式块 OCR 碎化（分式压平/下标丢失/LOI→LOD），纯机器转录必错——本批=语料锚定+人工转写+差异表人批；JTG 3430 三行语料外人工转写已注记",
-    "seed:db 重浇 + seed:check clean（dedupe 2 variant=PK 粒度常态）+ DB 探针 27/31 行带 $ 公式；CHANGELOG 已记"
+    "inspection_calculation_methods.json +10：OBJ-SP01-P4 × 11969×4（IP-0189 干密度/IP-0055 抗压/IP-0056 抗折/IP-0195 抗冻强度损失）+ 2542×3（IP-0055 抗压——式体 OCR 塌缩按符号面转写 remark 明示/IP-0059 吸水率 W24/W3/IP-0195 抗冻 Pm/Gm）+ 4111×3（IP-0055 附录 A 直测面/IP-0059 吸水率/IP-0195 单块+平均损失率式(12)/(13)）",
+    "挂链零新增（P4×三标 TESTING 先前已在；三标全在 method 40 集）；IP 码无参数码面零硬凑不导→账 45",
+    "seed:db 重浇 + seed:check clean（dropped 2=账 44 既知双胞胎）+ DB 探针 P4 十行全实；shared 门 exit 0"
   ],
-  "next": "无挂起。镜像批挂账不变：react/vue/angular/RN 镜像批（含 MarkdownRemark 回放）",
+  "next": "WP 防水/AD 外加剂/M 砂浆三域续推（对象链与语料标侦察同批B 先例：先 dump 域语料实测 block_type）；队列：账 43/45 扩面（新 IP 码面）、react/vue 镜像批、账 11 兄弟仓 PK 收链（阻断级）",
   "open_questions": [
-    "react/vue/angular/RN 镜像批（MarkdownRemark/预览回放归此）",
-    "IP-0003/IP-0056 裁定"
+    "账 44（228.1 双胞胎变体行）待人裁或随账 2 收口",
+    "账 43/45 扩面需新 IP 码设计面等裁序"
   ],
   "dont": [
-    "语料公式块 OCR 碎化——公式转录禁纯机器直转，走语料锚定+人工转写+差异表人批（calc-remark-merge.py 先例）",
-    "种子 33 行大改走 python 确定性变换（_work/calc-remark-merge.py 留档）——长 CJK Write 退化防线",
-    "JTG 3430-2020 不在语料（0 块）——涉及该标准的内容批先探语料覆盖面再定路线"
+    "calc 种子（P2,IP-0086/0087,228.1）双胞胎变体两键动前必读账 44",
+    "guard 绝对计数批改必须在种子落库之前（批B 工序教训，HISTORY 教训 7）",
+    "种子 47 行状态回滚取证走 shared stash（批B 先例）——禁改种子绕 guard"
   ]
 }
