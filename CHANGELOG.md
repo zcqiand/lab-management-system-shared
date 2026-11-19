@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批CE8——176 化学分析 16 码 31 式 calc 转录 + IP-0568 合成行（账 1 收口，2026-11-19）**——
+  inspection_calculation_methods.json +17 行（64→81，全 manual/formula=null/LaTeX 进
+  remark/sort 125）：GB/T 176-2025 ×16（IP-0621~0636，基准法+代用法双面 31 式，
+  逐式锚条款号+式号+dfrac 公式，总 dfrac=30）+ GB/T 1596-2017 IP-0568 总量三输入
+  合成行（P1→P7 域，7.3 锚，SO3+不溶物+烧失量按 IP-0621/0622/0623 相加，测法争议
+  以硫酸铜返滴定为准进 remark）。MED 旗标 2 处（处置=批立项人批方案，依据进
+  remark）：IP-0623 式(37) OCR 减号缺失按 6.9.1 prose 归一为减号；IP-0627 式(69)
+  OCR 分数线破碎按式(68) 平行同构复原。inspection_object_standards.json +1
+  （OBJ-SP01-P7 × GB/T 1596-2017 TESTING，199→200，CE7 tech-req+本批试验 calc 行
+  =真双链，白名单挂法同 JGJ 107-2016 先例）。验证链：守卫先行真红（evidence
+  16:51:40）→ WRITE acceptedNew=17 rejected=0 medCount=2 → 护栏 97/97 →
+  seed:db --reset + seed:check clean → DB 探针全中 → 双门全绿。挂账：formula 型
+  运行时求值接线（58）/IP-0006 n2 注记出入（59）。
 - feat(seeds): **批CE7——GB/T 1596-2017 tech-req 限值导面（账 56，2026-11-19 人看闸四处照判读+spec 维度照收口）**——
   inspection_technical_requirements.json +29 行（441→470，全 verified/automatic，
   source_hash=sha256 证据文本前 16 位十六进制）：表1 拌制砂浆和混凝土用 ×18（spec=
