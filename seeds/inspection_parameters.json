@@ -8253,5 +8253,18 @@
     "sort_order": 636,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0637",
+    "name": "半水亚硫酸钙含量",
+    "raw_name": "半水亚硫酸钙含量",
+    "canonical_name": "半水亚硫酸钙含量",
+    "method_text": "按 GB/T 5484",
+    "aliases": [],
+    "unit": "%",
+    "source_type": "official",
+    "sort_order": 637,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

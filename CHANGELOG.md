@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批CE6——GB/T 1596-2017 粉煤灰链面批（挂账 55，2026-11-19 人批四裁定全推荐项）**——
+  inspection_parameters.json 字典 +1（IP-0637 半水亚硫酸钙含量，method_text
+  「按 GB/T 5484」库外标注记，sort 637，全文件 635→636）；
+  inspection_standard_parameters.json 挂链 +7（GB/T 1596-2017 × IP-0568 总量/
+  IP-0008 SO3/IP-0403 游离钙/IP-0565 含水量/IP-0549 细度45μm/IP-0221 活性指数/
+  IP-0637，1596 档 8→15，全文件 530→537）；inspection_object_parameters.json
+  junction +5（OBJ-SP01-P7 × IP-0568/0403/0565/0549/0637 全 QUALIFIED——1596
+  表1（续）/表2/6.4 均有真限值行，remark 记条款与限值，全文件 897→902）。
+  **IP-0568「总量」真源实锚**：表1（续）/表2 F≥70.0/C≥50.0，试验方法 7.3 按
+  GB/T 176 三组分相加——批CE5 新码 IP-0621/0622/0623 即三输入，CE5「转账 1596」
+  账面闭环（calc 合成行归账 1 另批）。细度挂 IP-0549 专项码（7.1 条款自证，
+  2026-11-19 人裁）；IP-0221 活性指数直接挂（calc/tech-req 面届时核语义）；
+  均匀性（6.5）定性不立码（以细度最大偏差表征）；tech-req 表1/表2 限值导面
+  （F/C×I/II/III 矩阵）另批。验证链：守卫先行真红（7 用例，evidence 13:15:33）
+  → 种子三面 → 全量 995 过 → seed:db --reset + seed:check clean → DB 探针全中
+  → 双门全绿。同步：nextjs 守卫两文件钉值（636/537/CE6 describe 三用例）。
+
 - feat(seeds): **批CE5——176 化学分析未立码 16 参数族立码（挂账 53②③，2026-11-19 人批）**——
   inspection_parameters.json 字典 +16（IP-0621~0636 连号，sort_order==code 数字
   全字典零例外口径，名称「X含量」形/method_text「见对应标准条款」/unit %；
