@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R4——GB/T 18046-2017 粒化高炉矿渣粉 tech-req 首入库（③语料产线第 4 部）**——
+  inspection_technical_requirements.json +5 行（473→478）：表1 全级别单值行——流动度比
+  IP-0222 ≥95 % / 含水量 IP-0565 ≤1.0 %（表值「\1.0」≤ OCR 破损归一，枚举无 <，GB 175 先例）/
+  三氧化硫 IP-0008 ≤4.0 % / 烧失量 IP-0218 ≤1.0 %（前言双证 3.0→1.0 升版注记）/ 放射性
+  IP-0062 IRa·Iγ ≤1.0（string/expression 合一单行，照 GB 175-2023 族形，语料「I」按 GB 6566
+  归一 Iγ）；8 键哨兵全 ''（表1 五行全级别统一 S75/S95/S105 无分档值）。抽取端锚纪律：禁
+  clause_id 直取——表行全串文本双证（表1 块标题锚+行串剥空白唯一命中），5 HIGH 0 MED 0 LOW，
+  锚自审计 24 项全绿（_work/import-r4-techreq.py）。定性不导挂账 64：比表面积/活性指数
+  per-grade 表行错位（IP-0220/IP-0221 在链）、密度/初凝时间比/玻璃体/不溶物码不在 P7 链、
+  氯离子表值「90°0」OCR 反转不可靠、calc 候选面附录A 式A.1-A.4+附录B 式B.1+6.6 烧失量
+  校正式(1)(2)。sync 清单：消费仓零同步（tech-req 种子消费面 nextjs 单仓先行，批60① 先例）。
+  验证链：机械门 dry-run acceptedNew=5 零拒收（挂链三键全在 linkSkip=21）→ --write →
+  守卫 slag-18046-techreq.test.ts 8 it（红证据 22:03:42 levels=[L4] stash 取证正门消费）
+  → seed:db --reset + seed:check clean → DB 探针 5 行实值全对 → 旧钉随批改钉（tech-req
+  总数 473→478：rebar/cement surface-import + cement countFor 18046=5 + rebar 跳过面/
+  零漂移滤出面，红证据 22:05:00）→ seeds 组 129/129 → 双门全绿。
+
 - feat(seeds): **批21372——GB/T 21372-2024 硅酸盐水泥熟料 tech-req 首入库（③语料 57 部产线首部）**——
   inspection_technical_requirements.json +3 行（470→473）：5.2.1.1 凝结时间 IP-0550 ≥45 min /
   IP-0551 ≤390 min（numeric automatic，全品种单行）+ 5.2.1.2 沸煮安定性 IP-0002 eq/string

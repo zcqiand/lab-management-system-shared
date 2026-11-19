@@ -1,21 +1,31 @@
 {
-  "current_task": "批21372（GB/T 21372-2024 熟料 tech-req 首入库，③语料 57 部产线首部）收官：scoping 净面 3 行（5.2.1.1 凝结×2 + 5.2.1.2 安定性×1，其余面定性不导转挂账 61）→ 抽取端文本双证锚 3 HIGH → 机械门 dry-run 零拒收 → --write → 守卫 6 it 红证据 stash 流程 → 旧钉 3 处改钉 → seeds 121/121 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿——本提交",
+  "current_task": "批R4（GB/T 18046-2017 矿渣粉 tech-req 首入库 +5 行）收官",
   "done": [
-    "inspection_technical_requirements.json +3 行（470→473）：IP-0550 ≥45 min / IP-0551 ≤390 min（numeric automatic 全品种单行）+ IP-0002 eq/string「合格」（照 JC/T 600-2010 行形）；8 键哨兵全 ''（无品种维度）",
-    "锚纪律禁 clause_id 直取：文本双证（prose 全句锚+数值形状唯一命中/标题+正文双证），锚自审计 22 项全绿",
-    "CHANGELOG [Unreleased] 批21372 entry（sync 清单=消费仓零同步）"
+    "scoping：corpus-r4-scope.txt 三标并盘（18046/17671/1596），净批=18046，1596/17671 已有消费面",
+    "净导入面 5 行（表1 全级别单值）：IP-0222 ≥95 / IP-0565 ≤1.0（OCR 归一）/ IP-0008 ≤4.0 / IP-0218 ≤1.0（前言双证首例）/ IP-0062 IRa·Iγ ≤1.0（合一单行族形）",
+    "抽取端 _work/import-r4-techreq.py：表行全串锚+chr(92) 防线，24 锚自审计全绿，5 HIGH",
+    "机械门 dry-run acceptedNew=5 零拒收 → --write 135 行=5 行自洽；挂链 linkSkip=21 零改动",
+    "守卫 tests/seeds/slag-18046-techreq.test.ts 8 it 红绿两轮（stash 流程，红证据 22:03:42/22:05:00）",
+    "旧钉改钉：rebar-surface 478/-65+跳过面+滤出面；cement-surface 478+countFor 18046=5",
+    "seeds 129/129 → seed:db --reset + seed:check clean → DB 探针 5 行实值全对 total 478 → 双门全绿",
+    "CHANGELOG [Unreleased] 批R4 entry 落档（shared+nextjs）"
   ],
-  "next": "nextjs 提交后 suite gitlink+HISTORY 收尾；队列下一项：③语料 57 部产线下一部（余 56 部照逐部三分法定性推进）；挂账 61（21372 阻塞面）/60② REGISTRY variant/JC/T 600 迁移欠条须人批另批",
+  "next": "③语料产线队列下一部：_work/corpus-gap-list.py（registered=104/corpus_distinct=115/have=88/missing=16）对照 HISTORY 消费史选部，走三分法（dump→全参数面盘点→净面导入/立码候选挂账/OCR 阻塞挂账）",
   "open_questions": [
-    "挂账 61（21372 阻塞面：OCR 错位/矿物组成四码/水化热/7d抗压/线膨胀率/放射性/方法标立册）须人批",
-    "挂账 60② REGISTRY 粉煤灰 variant 须人批另批",
-    "django/RN 线用户明确搁置"
+    "挂账 61（人批另批）",
+    "挂账 62 JGJ 107（人批另批）",
+    "挂账 63 28900 calc 面（人批另批）",
+    "挂账 64 18046 阻塞面八项（人批另批）",
+    "挂账 60② 50081（人批另批）",
+    "JC/T 600 迁移欠条（人批另批）"
   ],
   "dont": [
-    "gate.py -p 单值: 多仓必须逐仓单跑",
-    "brands/grades/models 种子三文件行尾假 M——不属本批不带入提交",
-    "tech-req 导入后旧钉计数（tech-req 总数）在 rebar/cement surface-import 两处——随批改钉走 stash 取证流程",
-    "session.json 用 Write 工具（免 cwd 误写）"
+    "禁只导已知面/顺手全导——全参数面盘点人裁后导（GB/T 200-2025 先例）",
+    "表值 < 由邻接 prose 归一 ≤/≥，remark 记依据；OCR 反转不可靠值禁机补",
+    "抽取端源码反斜杠走 chr(92)；HISTORY/seed 写入后 git diff 回验防坏写",
+    "审计预期清单按 sorted() 字典序写（IP-0062<IP-0218）",
+    "种子改动守卫红证据走 shared 仓 git stash push seeds → gate --only L4 → pop → phase.py 正门消费",
+    "gate.py 用绝对路径 /d/qiand-life/1-projects/xr-code-suite/scripts/gate.py；管道吞退出码以输出定性"
   ],
-  "last_gate_passed_at": "2026-11-19T21:00:00"
+  "last_gate_passed_at": "2026-11-19T22:30:00+08:00"
 }
