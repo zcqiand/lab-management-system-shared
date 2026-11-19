@@ -1,28 +1,16 @@
 {
-  "current_task": "批CE8 收官：176 化学分析 16 码 31 式 calc 转录 + IP-0568 合成行（账 1 收口）已落库+双门全绿+MED 两旗标过目；文档三件套已齐（CHANGELOG 批CE8 条 + suite HISTORY 账1收口/账58/59 新条/批CE8 段）+ 两仓 session.json 已重写——待三仓提交（shared → nextjs → suite）",
+  "current_task": "批57（账 57② spec 字典 P7 用途二值供货）收官：manifest 管线 append=2 零旗标→shared specs 66→68→守卫 P7 钉→seed:db --reset+seed:check clean→DB 探针→双门全绿——待提交（shared 一仓；nextjs UI 面+suite HISTORY 随批）",
   "done": [
-    "生成器 _work/import-ce8-calc-176.py（nextjs _work）：17 行 raw string+E1-E17 evidence+EXPECTED_FENS dfrac 断言（总 30）+reload roundtrip+U+FFFD 检查，长 CJK 坏写防线全程零坏写",
-    "落库：calc +17（64→81，全 manual/formula=null/LaTeX 进 remark/sort 125）：176×16（IP-0621~0636 基准法+代用法双面 31 式）+1596 IP-0568 三输入合成行（7.3 锚，硫酸铜返滴定争议注记）；挂链 +1（OBJ-SP01-P7 × GB/T 1596-2017 TESTING，199→200，白名单挂法）",
-    "MED 旗标 2 处过目：IP-0623 式(37) OCR 减号缺失按 6.9.1 prose 归一为减号；IP-0627 式(69) 分数线破碎按式(68) 同构复原——依据均已进 remark",
-    "事故在案：confidence 枚举写 MEDIUM 被 gate CONFIDENCES=[HIGH,MED,LOW] dry-run 契约红暴露 → 改 MED 重生成即过（门牙真咬合）",
-    "phase lock 正序：守卫先行（三文件改钉）vitest 6 红 → gate L4 exit 1 evidence 16:51:40 → phase --to green → 种子后落，无 force",
-    "验证链：dry-run 17/0/2/1 → WRITE → 护栏 13 files 97/97 → seed:db --reset + seed:check clean → DB 探针全中（16+1 行/manual+null/dfrac 面/P7 挂链）→ 双门逐仓全绿"
+    "seeds/inspection_specs.json 66→68：SP-OBJ-SP01-P7-拌制砂浆和混凝土用/水泥活性混合材料用（sort 1/2，source 记 GB/T 1596-2017 表1/表2 用途）——1596 tech-req spec 维度消费闭环",
+    "验证链：specimen-config:import dry-run（append=2 零旗标）→ --write → 守卫 P7=2 钉绿 → seed:db --reset → seed:check clean → DB 探针 → 双门全绿"
   ],
-  "next": "三仓依次提交：①shared（seeds/inspection_calculation_methods.json + seeds/inspection_object_standards.json + CHANGELOG.md）②nextjs（tests/seeds 三守卫文件 + CHANGELOG.md + .state/session.json；.state/phase.json+red.json 单独 chore(state) 提交）③suite（gitlink 升级 + git add -f .claude/skills/standard-gen/HISTORY.md）。提交后批CE8 完全收官，挂账 58/59+账 54/57 待人裁立项",
+  "next": "提交：shared（inspection_specs.json+CHANGELOG）→ nextjs（UI+守卫+CHANGELOG+session）→ suite（gitlink+HISTORY 账 57 收口）。之后队列：挂账 60①+水泥 7 参数补卡并批 → 挂账 60③ FM 样品维度 → saas shared L5 红 → 挂账 58 → 语料 57 部",
   "open_questions": [
-    "挂账 58：formula 型运行时求值接线（IP-0568 三输入合成行自动算术）——功能开发另批",
-    "挂账 59：IP-0006 remark n2=1 与 176-2025 语料式(39) n2=50 出入——动前先核语料原文，属错走种子修正批",
-    "账 57：1596 消费面两件（选择器 label 不含维度/spec 字典二值供货面）",
-    "账 54：1346 标准稠度用水量立码 + 初凝/终凝分列码口径",
-    "水泥 7 参数（IP-0006/0548-0553）补参数界面卡批次",
-    "saas shared L5.inventory 红 (admin-users fn-ID) 仍待人批另批"
+    "django/RN 线用户明确搁置"
   ],
   "dont": [
     "gate.py -p 单值: 多仓必须逐仓单跑",
-    "confidence 枚举=[HIGH,MED,LOW]（不是 MEDIUM）——生成器候选面写 MEDIUM 会被 gate 契约红拒（CE8 实证）",
-    "Edit 守卫 new_string 误粘其他文件片段——写完即 grep 断言结构",
-    "守卫随批改钉是 green-on-arrival 的测试编辑自动入红，须 phase lock 正序（守卫先红取证 → phase --to green → 种子后落），勿试 --force",
-    "常规浇不删行——种子删行/换版必 --reset"
+    "session.json 用 Write 工具（免 cwd 误写）"
   ],
-  "last_gate_passed_at": "2026-11-19T16:58:00"
+  "last_gate_passed_at": "2026-11-19T19:22:00"
 }

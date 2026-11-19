@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批57——spec 字典粉煤灰用途二值供货（账 57②）**——
+  inspection_specs.json 66→68：P7（粉煤灰）+2 行「拌制砂浆和混凝土用」/「水泥活性
+  混合材料用」（SP-OBJ-SP01-P7- 前缀，sort 1/2，source 记 GB/T 1596-2017 表1/表2
+  用途）——manifest 按需供货走 specimen-config:import 管线（dry-run append=2 零旗标，
+  append 通道不停人），1596 tech-req 29 行 spec 维度消费闭环。守卫：specimen-config
+  加 P7=2 钉；seed:db --reset + seed:check clean → DB 探针 → 双门全绿。
+
 - feat(seeds): **批54——GB/T 1346-2024 标准稠度用水量立码 IP-0638（账 54①，2026-11-19 人批队列）**——
   四面落库零删行：字典 +1（IP-0638，sort 638，unit %，method_text「按 GB/T 1346-2024」）+
   1346 挂链 +1（档 2→3）+ P1 junction +1（QUALIFIED，记录值参数）+ calc +3 manual 行
