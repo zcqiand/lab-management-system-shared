@@ -1,19 +1,21 @@
 {
-  "current_task": "批58（账 58 formula 型运行时求值接线）收官：人批三决定（ident=IP 码/REGISTRY formula 项/只读自动算）→ calc 行 IP-0568 manual→formula + 卡 flyash-total-silica-alumina-iron v2 → seeds 115/115 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿——本提交",
+  "current_task": "批21372（GB/T 21372-2024 熟料 tech-req 首入库，③语料 57 部产线首部）收官：scoping 净面 3 行（5.2.1.1 凝结×2 + 5.2.1.2 安定性×1，其余面定性不导转挂账 61）→ 抽取端文本双证锚 3 HIGH → 机械门 dry-run 零拒收 → --write → 守卫 6 it 红证据 stash 流程 → 旧钉 3 处改钉 → seeds 121/121 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿——本提交",
   "done": [
-    "inspection_calculation_methods.json IP-0568：algorithm_type manual→formula、formula=IP-0621 + IP-0622 + IP-0623、remark 尾段转接线收口注记",
-    "inspection_param_interfaces.json flyash-total-silica-alumina-iron v1→v2：values 手输列退役 → total 列 computed formula + config.computed 接线；契约枚举零改动"
+    "inspection_technical_requirements.json +3 行（470→473）：IP-0550 ≥45 min / IP-0551 ≤390 min（numeric automatic 全品种单行）+ IP-0002 eq/string「合格」（照 JC/T 600-2010 行形）；8 键哨兵全 ''（无品种维度）",
+    "锚纪律禁 clause_id 直取：文本双证（prose 全句锚+数值形状唯一命中/标题+正文双证），锚自审计 22 项全绿",
+    "CHANGELOG [Unreleased] 批21372 entry（sync 清单=消费仓零同步）"
   ],
-  "next": "消费仓 nextjs 提交后 suite gitlink+HISTORY 收尾；队列下一项：③语料 57 部批量导入产线（每部 1-2h）；挂账 60② REGISTRY 粉煤灰 variant 与 JC/T 600 迁移欠条须人批另批",
+  "next": "nextjs 提交后 suite gitlink+HISTORY 收尾；队列下一项：③语料 57 部产线下一部（余 56 部照逐部三分法定性推进）；挂账 61（21372 阻塞面）/60② REGISTRY variant/JC/T 600 迁移欠条须人批另批",
   "open_questions": [
-    "django/RN 线用户明确搁置",
-    "挂账 60② REGISTRY 粉煤灰 variant 须人批另批"
+    "挂账 61（21372 阻塞面：OCR 错位/矿物组成四码/水化热/7d抗压/线膨胀率/放射性/方法标立册）须人批",
+    "挂账 60② REGISTRY 粉煤灰 variant 须人批另批",
+    "django/RN 线用户明确搁置"
   ],
   "dont": [
     "gate.py -p 单值: 多仓必须逐仓单跑",
     "brands/grades/models 种子三文件行尾假 M——不属本批不带入提交",
-    "shared 种子面键名是 snake_case（judgment_standard_code）——守卫断言先查种子真源键名",
+    "tech-req 导入后旧钉计数（tech-req 总数）在 rebar/cement surface-import 两处——随批改钉走 stash 取证流程",
     "session.json 用 Write 工具（免 cwd 误写）"
   ],
-  "last_gate_passed_at": "2026-11-19T20:32:00"
+  "last_gate_passed_at": "2026-11-19T21:00:00"
 }

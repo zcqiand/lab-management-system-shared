@@ -4,6 +4,22 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批21372——GB/T 21372-2024 硅酸盐水泥熟料 tech-req 首入库（③语料 57 部产线首部）**——
+  inspection_technical_requirements.json +3 行（470→473）：5.2.1.1 凝结时间 IP-0550 ≥45 min /
+  IP-0551 ≤390 min（numeric automatic，全品种单行）+ 5.2.1.2 沸煮安定性 IP-0002 eq/string
+  目标值「合格」（照 JC/T 600-2010 行形）；8 键哨兵全 ''（21372 技术要求全品种统一无品种
+  维度，GB 175 per-variety model 行形不适用，scoping 已裁）。抽取端锚纪律：禁 clause_id
+  直取——文本双证（5.2.1.1 prose 全句锚+45/390 数值形状唯一命中；5.2.1.2 标题+正文双证），
+  3 HIGH 0 MED 0 LOW，锚自审计 22 项全绿（_work/import-21372-techreq.py）。定性不导挂账：
+  表1/2/3 OCR 错位（RA-21372-1）、6.1.3 矿物组成式(1)-(5)+四码立码、水化热（表4）、7d 抗压、
+  线膨胀率（GB/T 749 不在册）、放射性指数、方法标 749/750/12959/31893 立册；5.4/5.5 选择性
+  指标（商定）、6.2.2 制样细度（工序面）不导。sync 清单：消费仓零同步（tech-req 种子消费面
+  nextjs 单仓先行，批60① 先例）。验证链：机械门 dry-run acceptedNew=3 零拒收 → --write →
+  守卫 clinker-21372-techreq.test.ts 6 it（红证据 20:51:06 levels=[L4] stash 取证正门消费）
+  → seed:db --reset + seed:check clean → DB 探针 3 行实值全对 → 旧钉随批改钉 3 处（tech-req
+  总数 470→473：rebar/cement surface-import + cement countFor 21372=3，红证据 20:56:42）
+  → seeds 组 121/121 → 双门全绿。
+
 - feat(seeds): **挂账 58——IP-0568 总量行 formula 型 + 合成卡 v2（2026-11-19 人批三决定）**——
   inspection_calculation_methods.json IP-0568（OBJ-SP01-P7，GB/T 1596-2017 7.3 三输入
   合成）algorithm_type manual→formula、formula=`IP-0621 + IP-0622 + IP-0623`（ident 键=
