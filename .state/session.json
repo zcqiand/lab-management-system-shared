@@ -1,17 +1,19 @@
 {
-  "current_task": "批R4（GB/T 18046-2017 矿渣粉 tech-req 首入库 +5 行）收官",
+  "current_task": "批R5（GB/T 13544-2011 烧结多孔砖和多孔砌块 tech-req 首入库 +5 行）收官",
   "done": [
-    "scoping：corpus-r4-scope.txt 三标并盘（18046/17671/1596），净批=18046，1596/17671 已有消费面",
-    "净导入面 5 行（表1 全级别单值）：IP-0222 ≥95 / IP-0565 ≤1.0（OCR 归一）/ IP-0008 ≤4.0 / IP-0218 ≤1.0（前言双证首例）/ IP-0062 IRa·Iγ ≤1.0（合一单行族形）",
-    "抽取端 _work/import-r4-techreq.py：表行全串锚+chr(92) 防线，24 锚自审计全绿，5 HIGH",
-    "机械门 dry-run acceptedNew=5 零拒收 → --write 135 行=5 行自洽；挂链 linkSkip=21 零改动",
-    "守卫 tests/seeds/slag-18046-techreq.test.ts 8 it 红绿两轮（stash 流程，红证据 22:03:42/22:05:00）",
-    "旧钉改钉：rebar-surface 478/-65+跳过面+滤出面；cement-surface 478+countFor 18046=5",
-    "seeds 129/129 → seed:db --reset + seed:check clean → DB 探针 5 行实值全对 total 478 → 双门全绿",
-    "CHANGELOG [Unreleased] 批R4 entry 落档（shared+nextjs）"
+    "scoping：corpus-gap-list 方向修正（missing=16=缺语料不可导；have=88 才是可导池）→ 四候选 dump → 13544 表4 最干净胜出（5101 表4 抗风化乱、21144/11968 双维更重）",
+    "净导入面 5 行（表4 强度等级平均值行）：IP-0055 × MU30/25/20/15/10 ≥30.0/25.0/20.0/15.0/10.0 MPa，grade 键=MU 值（175 强度等级先例）；fk 标准值行不导（挂账 65①）",
+    "在册码映射新形状：语料 standard_no=GB 13544-2011（第5章历史编号）→ 在册码 GB/T 13544-2011，映射在锚审计钉死",
+    "junction 种子核证首例：IP-0055×P4 在 + IP-0062×P4 缺双面核证（inspection_object_standards）",
+    "抽取端 _work/import-r5-techreq.py：26 锚审计全绿 5 HIGH → dry-run acceptedNew=5 linkSkip=22 → --write 135 行=5 行自洽",
+    "守卫 tests/seeds/brick-13544-techreq.test.ts 6 it 红绿（stash 流程红证据 22:30:18 兼盖旧钉）",
+    "旧钉改钉第五处：rebar-surface 483/-70+13544 滤出；cement-surface 483+countFor 13544=5；age-param-migration 他标 IP-0055/0056 1→6",
+    "seeds 135/135 → seed:db --reset + seed:check clean → DB 探针 total 483 → 双门全绿",
+    "CHANGELOG [Unreleased] 批R5 entry 落档（shared+nextjs）；HISTORY 批R5 段+挂账 65 落档"
   ],
-  "next": "③语料产线队列下一部：_work/corpus-gap-list.py（registered=104/corpus_distinct=115/have=88/missing=16）对照 HISTORY 消费史选部，走三分法（dump→全参数面盘点→净面导入/立码候选挂账/OCR 阻塞挂账）",
+  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（砖系同族 5101/21144/11968/11945/13545/24492/25779/26538/15762 等可续），走三分法（dump→全参数面盘点→净面导入/立码候选挂账/OCR 阻塞挂账）",
   "open_questions": [
+    "挂账 65 13544 阻塞面八项（fk 立码候选「抗压强度标准值」须人批——IP-0587 族形/175 先例；junction IP-0062×P4 变更人批；余 OCR 面语料修复批）（人批另批）",
     "挂账 61（人批另批）",
     "挂账 62 JGJ 107（人批另批）",
     "挂账 63 28900 calc 面（人批另批）",
@@ -20,12 +22,15 @@
     "JC/T 600 迁移欠条（人批另批）"
   ],
   "dont": [
+    "corpus-gap-list 方向语义：missing=缺语料不可导；have=语料已有才是可导池（本批修正，别再反向读）",
+    "统计维（平均值/标准值）不入 spec 键——spec 语义=用途/交货形态（定尺交货先例）；单码双维撞 8 键 PK 走立码人批，禁顺手改键",
+    "表行全串锚剥空白含管道符（MU30|30.0|22.0），MU 前缀防撞 prose；OCR「30. 0」空格归一",
     "禁只导已知面/顺手全导——全参数面盘点人裁后导（GB/T 200-2025 先例）",
     "表值 < 由邻接 prose 归一 ≤/≥，remark 记依据；OCR 反转不可靠值禁机补",
-    "抽取端源码反斜杠走 chr(92)；HISTORY/seed 写入后 git diff 回验防坏写",
-    "审计预期清单按 sorted() 字典序写（IP-0062<IP-0218）",
+    "抽取端源码反斜杠走 chr(92)；HISTORY/seed 写入后 git diff 回验防坏写（本批守卫两连坏写+HISTORY 三处坏写在案）",
     "种子改动守卫红证据走 shared 仓 git stash push seeds → gate --only L4 → pop → phase.py 正门消费",
-    "gate.py 用绝对路径 /d/qiand-life/1-projects/xr-code-suite/scripts/gate.py；管道吞退出码以输出定性"
+    "gate.py 用绝对路径 /d/qiand-life/1-projects/xr-code-suite/scripts/gate.py；管道吞退出码以输出定性；pre_bash_guard 对含 gate.py 字面量+重定向的命令误报——拆单命令或 PIPESTATUS",
+    "gate.py -p 多项目参数不支持——分开两次跑"
   ],
-  "last_gate_passed_at": "2026-11-19T22:30:00+08:00"
+  "last_gate_passed_at": "2026-11-19T22:45:00+08:00"
 }

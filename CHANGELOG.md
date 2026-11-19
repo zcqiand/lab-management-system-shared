@@ -4,6 +4,25 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R5——GB/T 13544-2011 烧结多孔砖和多孔砌块 tech-req 首入库（③语料产线第 5 部，brick 域产品标首部）**——
+  inspection_technical_requirements.json +5 行（478→483）：表4 强度等级平均值行×5——
+  IP-0055 抗压强度，grade 键=MU30/MU25/MU20/MU15/MU10（GB 175-2023 grade=42.5 强度等级
+  键先例），min=30.0/25.0/20.0/15.0/10.0 MPa（comparison ≥，automatic，clause=表4 pg5，
+  OCR「30. 0」小数点后空格归一）。同表行强度标准值 fk（22.0/18.0/14.0/10.0/6.5）不属本批：
+  单码双维撞 8 键 PK——立码「抗压强度标准值」人批候选（175 龄期进参数名先例，挂账 65①）。
+  语料编号 GB 13544-2011→在册码 GB/T 13544-2011 映射在锚审计钉死（第 5 章强制性条款历史编号）。
+  抽取端锚纪律：禁 clause_id 直取——表4 块标题锚+行全串剥空白唯一命中+表头「抗压强度平均值/
+  强度标准值」双列方向锚，5 HIGH 0 MED 0 LOW，锚自审计 26 项全绿（_work/import-r5-techreq.py，
+  首次带 junction 种子核证：IP-0055×P4 在/IP-0062×P4 缺双面核证）。定性不导挂账 65：
+  fk 立码候选、calc 式(1) OCR 碎/式(2) 依赖立码、放射性 junction 缺、表6 抗风化 OCR 损
+  （IP-0059 在链）、表3 密度 OCR 损+区间值（IP-0189 在链）、表1 尺寸偏差码不在链、
+  表5 孔洞率码不在链、泛霜/石灰爆裂/冻融 prose 定性面。sync 清单：消费仓零同步。
+  验证链：机械门 dry-run acceptedNew=5 零拒收（挂链三键全在 linkSkip=22）→ --write →
+  守卫 brick-13544-techreq.test.ts 6 it（红证据 22:30:18 levels=[L4] stash 取证正门消费）
+  → 旧钉随批改钉（总数 478→483：cement/rebar surface + age-param-migration IP-0055
+  他标计数 1→6 第五处，同 stash 轮红证据）→ seeds 组 135/135 → seed:db --reset +
+  seed:check clean → DB 探针 5 行实值全对 total 483 → 双门全绿。
+
 - feat(seeds): **批R4——GB/T 18046-2017 粒化高炉矿渣粉 tech-req 首入库（③语料产线第 4 部）**——
   inspection_technical_requirements.json +5 行（473→478）：表1 全级别单值行——流动度比
   IP-0222 ≥95 % / 含水量 IP-0565 ≤1.0 %（表值「\1.0」≤ OCR 破损归一，枚举无 <，GB 175 先例）/
