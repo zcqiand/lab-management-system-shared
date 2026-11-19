@@ -8116,5 +8116,14 @@
     "remark": "批CE6 2026-11-19：GB/T 1596-2017 6.4 半水亚硫酸钙 ≤3.0%（干/半干法脱硫灰专属）；方法 7.5 按 GB/T 5484（库外标）",
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0638",
+    "qualification_level": "QUALIFIED",
+    "source_page": null,
+    "remark": "批54 2026-11-19：GB/T 1346-2024 标准稠度用水量立码（P1 链原 18 参无此参，账 54①）；方法面 8.3 试杆法/9.3.3 调整水量法/9.3.4 不变水量法式(1)；判定面无独立限值（记录值参数）",
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z"
   }
 ]

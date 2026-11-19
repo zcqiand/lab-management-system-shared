@@ -8266,5 +8266,18 @@
     "sort_order": 637,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "IP-0638",
+    "name": "标准稠度用水量",
+    "raw_name": "标准稠度用水量",
+    "canonical_name": "标准稠度用水量",
+    "method_text": "按 GB/T 1346-2024",
+    "aliases": [],
+    "unit": "%",
+    "source_type": "official",
+    "sort_order": 638,
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z"
   }
 ]

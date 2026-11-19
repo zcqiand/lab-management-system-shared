@@ -1132,5 +1132,47 @@
     "sort_order": 125,
     "created_at": "2026-11-19T08:54:49.453Z",
     "updated_at": "2026-11-19T08:54:49.453Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0638",
+    "testing_standard_code": "GB/T 1346-2024",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z",
+    "remark": "按 GB/T 1346-2024 第 8.3 条（试杆法·基准法）：标准稠度净浆以试杆沉入净浆并距玻璃底板 $6\\ \\mathrm{mm}\\pm 1\\ \\mathrm{mm}$ 为准；其拌和水量占水泥质量的百分数即为该水泥的标准稠度用水量 $P=\\dfrac{m_w}{m_c}\\times 100\\%$（$m_w$=拌和水量，$m_c$=水泥质量 500 g±1 g）。记录值，无独立限值。",
+    "sort_order": 130
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0638",
+    "testing_standard_code": "GB/T 1346-2024",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z",
+    "remark": "按 GB/T 1346-2024 第 9.3.3 条（试锥法·代用法·调整水量法）：以试锥下沉深度 $30\\ \\mathrm{mm}\\pm 1\\ \\mathrm{mm}$ 时的净浆为标准稠度净浆，其拌和水量为该水泥的标准稠度用水量，按水泥质量的百分比计；下沉深度超出范围须另称试样、调整水量重新试验，直至达到 $30\\ \\mathrm{mm}\\pm 1\\ \\mathrm{mm}$ 为止。",
+    "sort_order": 140
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0638",
+    "testing_standard_code": "GB/T 1346-2024",
+    "report_name_code": null,
+    "algorithm_type": "manual",
+    "formula": null,
+    "conditions": null,
+    "rounding_rule": null,
+    "created_at": "2026-11-19T00:00:00Z",
+    "updated_at": "2026-11-19T00:00:00Z",
+    "remark": "按 GB/T 1346-2024 第 9.3.4 条（试锥法·代用法·不变水量法）：拌和水量固定 $142.5\\ \\mathrm{mL}$，按式(1) $P = 33.4 - 0.185S$ 计算（$S$=试锥下沉深度，单位为毫米；亦可根据仪器对应标尺直读）；当试锥下沉深度小于 $13\\ \\mathrm{mm}$ 时应改用调整水量法测定。式(1) OCR 原文「P  33.4 --- 0.185S」按符号排版归一为减号。",
+    "sort_order": 150
   }
 ]

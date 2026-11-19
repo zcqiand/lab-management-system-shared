@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批54——GB/T 1346-2024 标准稠度用水量立码 IP-0638（账 54①，2026-11-19 人批队列）**——
+  四面落库零删行：字典 +1（IP-0638，sort 638，unit %，method_text「按 GB/T 1346-2024」）+
+  1346 挂链 +1（档 2→3）+ P1 junction +1（QUALIFIED，记录值参数）+ calc +3 manual 行
+  （sort 130/140/150：8.3 试杆法基准法 P=mw/mc×100% / 9.3.3 调整水量法 30mm±1mm /
+  9.3.4 不变水量式(1) P=33.4−0.185S，公式面全 remark LaTeX，挂账 58 接线时升级 formula 型）。
+  calc 变体面同 IP-0006×176 先例：种子 3 行、DB PK 三键存活 1 行（8.3 主方法）。
+  **账 54② 口径定谳（2026-11-19 人裁）：凝结时间判定分列（IP-0550/0551）/方法合并
+  （IP-0001）——1346 不加分列 calc 行；JC/T 600 迁移欠条另批照此口径办。**
+  验证链：守卫天然红 3（红证据 19:00:31）→ 出红 → 落库（生成器幂等，calc created_at
+  漏键事故在案：首写 3 行无时间戳被 seed:db NOT NULL 拦下，git checkout 回 calc 单文件
+  修复重落）→ 护栏改钉再红一轮正门（stash 回 HEAD 取真红，证据 19:04:24）→ 102/102 →
+  seed:db --reset + seed:check clean → DB 探针 → 双门全绿。
+
 - fix(seeds): **账 59——IP-0006 式(39) n2 注记修正（批CE4 转录错误，2026-11-19 人批）**——
   inspection_calculation_methods.json IP-0006（氧化镁，GB/T 176-2025 基准法）remark
   小段「（无分取时 n2=1）」→「（分取溶液体积无改变时按 n2=50 计算，如 250 mL 定容
