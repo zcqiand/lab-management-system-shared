@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+- fix(seeds): **账 59——IP-0006 式(39) n2 注记修正（批CE4 转录错误，2026-11-19 人批）**——
+  inspection_calculation_methods.json IP-0006（氧化镁，GB/T 176-2025 基准法）remark
+  小段「（无分取时 n2=1）」→「（分取溶液体积无改变时按 n2=50 计算，如 250 mL 定容
+  分取 5 mL）」——语料 6.11.3 符号释义原文「如分取溶液体积无改变按照 n2=50 计算」，
+  「无改变」误读成「无分取」且数值 50→1。守卫先红正门（cement-surface-import 账 59
+  describe 2 it，红证据 18:35:55）→ 种子修正 → 330/330 → seed:db --reset +
+  seed:check clean → DB 探针 → 双门全绿。
+
 - feat(seeds): **批CE8——176 化学分析 16 码 31 式 calc 转录 + IP-0568 合成行（账 1 收口，2026-11-19）**——
   inspection_calculation_methods.json +17 行（64→81，全 manual/formula=null/LaTeX 进
   remark/sort 125）：GB/T 176-2025 ×16（IP-0621~0636，基准法+代用法双面 31 式，
