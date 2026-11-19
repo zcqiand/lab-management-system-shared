@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批60①——粉煤灰 8 + 水泥 7 参数界面补卡（账 60①，2026-11-19 人批队列）**——
+  inspection_param_interfaces.json 39→54 / inspection_param_interface_links.json 36→51：
+  粉煤灰 8 参数（IP-0549/0219/0221/0565/0568/0403/0074/0637，1596 判定核验收层2 缺口
+  ——零卡走 GenericParamCard 回退无判定路径）+ 水泥 7 参数（IP-0006/0548/0550/0551/
+  0552/0553/0638，含批54 新码标准稠度用水量）各 15 卡 15 link。形状=cement-so3 表格卡
+  先例：rows=1 + 技术要求(req_select)/检验结果(unit)(input) 两列，version 1，
+  description 记标准条款与公式转录挂账态；凝结/安定性分列码 description 记批54 人裁
+  口径（判定分列/方法合并——方法面 IP-0001 一行）。公式面统一 manual+挂账（转 formula
+  另批照挂账 58 办）。验证链：守卫红（红证据 19:29:16 levels=[L4]）→ 出红 → 生成器
+  幂等落库 → seeds 组 105/105 → seed:db --reset + seed:check clean → DB 探针
+  （54 卡/51 link，15 卡 v1 全入库）→ 双门全绿。
+
 - feat(seeds): **批57——spec 字典粉煤灰用途二值供货（账 57②）**——
   inspection_specs.json 66→68：P7（粉煤灰）+2 行「拌制砂浆和混凝土用」/「水泥活性
   混合材料用」（SP-OBJ-SP01-P7- 前缀，sort 1/2，source 记 GB/T 1596-2017 表1/表2
