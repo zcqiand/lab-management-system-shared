@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 
+- feat(seeds): **挂账 58——IP-0568 总量行 formula 型 + 合成卡 v2（2026-11-19 人批三决定）**——
+  inspection_calculation_methods.json IP-0568（OBJ-SP01-P7，GB/T 1596-2017 7.3 三输入
+  合成）algorithm_type manual→formula、formula=`IP-0621 + IP-0622 + IP-0623`（ident 键=
+  IP 码直做，人裁 ①）、remark 尾段转接线收口注记；inspection_param_interfaces.json
+  flyash-total-silica-alumina-iron v1→v2：values 手输列退役 → total 列 mode=computed
+  algorithm=formula + config.computed 接线（label「总量合成 (%)」）。消费仓 nextjs 运行时
+  求值接线同 commit 批（REGISTRY formula 项，人裁 ②③——合成格只读自动算），契约枚举
+  CalculationAlgorithmType 零改动（formula 已在册）。sync 清单：react/vue/aspnetcore/
+  springboot/rails/fastapi/kotlin/laravel/go 等消费仓本批零同步（种子消费面在 nextjs
+  单仓先行先例同批60①③）。验证链：seeds 组 115/115 → seed:db --reset + seed:check
+  clean → DB 探针 → 双门全绿（shared L5 零挂）。
+
 - fix(seeds): **批60③——FM 粉煤灰样品三维修正（账 60③，2026-11-19 人批队列）**——
   samples.json SAMPLE-FM-0141~0147（委托 RN-107-2 判定依据 GB/T 1596-2017）三维
   model/grade/specification 由空/「标准试样」对齐字典四码表与 1596 tech-req 实际

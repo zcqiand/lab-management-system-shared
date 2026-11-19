@@ -1124,14 +1124,14 @@
     "inspection_parameter_code": "IP-0568",
     "testing_standard_code": "GB/T 1596-2017",
     "report_name_code": null,
-    "algorithm_type": "manual",
-    "formula": null,
+    "algorithm_type": "formula",
+    "formula": "IP-0621 + IP-0622 + IP-0623",
     "conditions": null,
     "rounding_rule": null,
-    "remark": "按 GB/T 1596-2017 第 7.3 条：二氧化硅、三氧化二铝、三氧化二铁按 GB/T 176 测定后相加合成总质量分数：$w(\\mathrm{总量})=w(\\mathrm{SiO_2})+w(\\mathrm{Al_2O_3})+w(\\mathrm{Fe_2O_3})$；三输入=IP-0621（二氧化硅含量）+IP-0622（三氧化二铁含量）+IP-0623（三氧化二铝含量）三条计算方法行，其中三氧化二铝按 7.3 采用硫酸铜返滴定法（GB/T 176-2025 第 6.27.3 条式(58)）或 X 射线荧光分析，有争议时以硫酸铜返滴定法为准。总量限值判定见 GB/T 1596-2017 表1（续）/表2 技术要求行（F 类 ≥70.0、C 类 ≥50.0，批CE7 已录 verified+automatic）。formula 型运行时求值接线未在位（挂账另批），本行按 algorithm_type=manual 形状人工录入总量值后由 autoVerdict 对照限值行判定。",
+    "remark": "按 GB/T 1596-2017 第 7.3 条：二氧化硅、三氧化二铝、三氧化二铁按 GB/T 176 测定后相加合成总质量分数：$w(\\mathrm{总量})=w(\\mathrm{SiO_2})+w(\\mathrm{Al_2O_3})+w(\\mathrm{Fe_2O_3})$；三输入=IP-0621（二氧化硅含量）+IP-0622（三氧化二铁含量）+IP-0623（三氧化二铝含量）三条计算方法行，其中三氧化二铝按 7.3 采用硫酸铜返滴定法（GB/T 176-2025 第 6.27.3 条式(58)）或 X 射线荧光分析，有争议时以硫酸铜返滴定法为准。总量限值判定见 GB/T 1596-2017 表1（续）/表2 技术要求行（F 类 ≥70.0、C 类 ≥50.0，批CE7 已录 verified+automatic）。formula 型运行时求值接线已收口（2026-11-19 挂账 58 人裁三决定：ident 键=IP 码直做/REGISTRY formula 项/合成格只读自动算）——algorithm_type=formula，formula 串 ident 即三依赖 IP 码，录入页跨参数自动求值+autoVerdict 对照限值行（求值引擎=calc-engine，引擎门 checkFormulaEngine 白名单=[IP-0621,IP-0622,IP-0623]）。",
     "sort_order": 125,
     "created_at": "2026-11-19T08:54:49.453Z",
-    "updated_at": "2026-11-19T08:54:49.453Z"
+    "updated_at": "2026-11-19T09:20:00.000Z"
   },
   {
     "inspection_object_code": "OBJ-SP01-P1",

@@ -2294,8 +2294,8 @@
   {
     "code": "flyash-total-silica-alumina-iron",
     "name": "二氧化硅、三氧化二铝和三氧化二铁总质量分数",
-    "description": "二氧化硅、三氧化二铝和三氧化二铁总质量分数人工结果单值（GB/T 1596-2017 表2 F/C 类限值，calc 合成行已入）；表格卡（批60①补卡），manual 面",
-    "version": 1,
+    "description": "二氧化硅、三氧化二铝和三氧化二铁总质量分数（GB/T 1596-2017 表1（续）/表2 F/C 类限值）；表格卡 v2（挂账 58 formula 接线批 2026-11-19 人裁三决定：ident=IP 码/REGISTRY formula 项/只读自动算）——检验结果列 computed formula 合成（IP-0621+IP-0622+IP-0623 跨参数自动求值），合成格只读非手录",
+    "version": 2,
     "config": {
       "fields": [
         {
@@ -2310,18 +2310,31 @@
               "mode": "req_select"
             },
             {
-              "field": "values",
+              "field": "total",
               "label": "检验结果 (%)",
-              "mode": "input"
+              "mode": "computed",
+              "algorithm": "formula"
             }
           ],
           "showLabel": false
         }
       ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0621",
+            "IP-0622",
+            "IP-0623"
+          ],
+          "label": "总量合成 (%)"
+        }
+      ],
       "params": {}
     },
     "created_at": "2026-11-19T00:00:00Z",
-    "updated_at": "2026-11-19T00:00:00Z"
+    "updated_at": "2026-11-19T09:20:00.000Z"
   },
   {
     "code": "flyash-free-calcium-oxide",

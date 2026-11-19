@@ -1,12 +1,13 @@
 {
-  "current_task": "批60③（账 60③ FM 粉煤灰样品三维修正）收官：守卫红（fm-sample-dimensions 2 it，证据 19:40:25 levels=[L4]）→出红→samples 7 行三维修正→seeds 107/107→seed:db --reset+seed:check clean→DB 探针→双门全绿——已提交",
+  "current_task": "批58（账 58 formula 型运行时求值接线）收官：人批三决定（ident=IP 码/REGISTRY formula 项/只读自动算）→ calc 行 IP-0568 manual→formula + 卡 flyash-total-silica-alumina-iron v2 → seeds 115/115 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿——本提交",
   "done": [
-    "SAMPLE-FM-0141~0147 三维修正：表1 拌制用全矩阵 6 样品（F/C × Ⅰ/Ⅱ/Ⅲ级）+ 表2 混合材用 1 样品（F类/grade 空通配）——字典四码表批57 已供货零改动",
-    "EntryModal 维度过滤 reqOptions 由空转可达；1596 录入即验收层3 端到端缺口关闭"
+    "inspection_calculation_methods.json IP-0568：algorithm_type manual→formula、formula=IP-0621 + IP-0622 + IP-0623、remark 尾段转接线收口注记",
+    "inspection_param_interfaces.json flyash-total-silica-alumina-iron v1→v2：values 手输列退役 → total 列 computed formula + config.computed 接线；契约枚举零改动"
   ],
-  "next": "队列下一项：saas shared L5 红（admin-users fn-ID，~1h）→ 挂账 58 formula 接线 → ③语料 57 部；suite 仓提交 gitlink+HISTORY 收尾",
+  "next": "消费仓 nextjs 提交后 suite gitlink+HISTORY 收尾；队列下一项：③语料 57 部批量导入产线（每部 1-2h）；挂账 60② REGISTRY 粉煤灰 variant 与 JC/T 600 迁移欠条须人批另批",
   "open_questions": [
-    "django/RN 线用户明确搁置"
+    "django/RN 线用户明确搁置",
+    "挂账 60② REGISTRY 粉煤灰 variant 须人批另批"
   ],
   "dont": [
     "gate.py -p 单值: 多仓必须逐仓单跑",
@@ -14,5 +15,5 @@
     "shared 种子面键名是 snake_case（judgment_standard_code）——守卫断言先查种子真源键名",
     "session.json 用 Write 工具（免 cwd 误写）"
   ],
-  "last_gate_passed_at": "2026-11-19T19:45:00"
+  "last_gate_passed_at": "2026-11-19T20:32:00"
 }
