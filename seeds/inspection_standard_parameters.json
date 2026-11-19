@@ -3082,5 +3082,101 @@
     "inspection_parameter_code": "IP-0403",
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0621",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0622",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0623",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0624",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0625",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0626",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0627",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0628",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0629",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0630",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0631",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0632",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0633",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0634",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0635",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 176-2025",
+    "inspection_parameter_code": "IP-0636",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]

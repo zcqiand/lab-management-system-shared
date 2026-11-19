@@ -4,6 +4,22 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批CE5——176 化学分析未立码 16 参数族立码（挂账 53②③，2026-11-19 人批）**——
+  inspection_parameters.json 字典 +16（IP-0621~0636 连号，sort_order==code 数字
+  全字典零例外口径，名称「X含量」形/method_text「见对应标准条款」/unit %；
+  二氧化硅/三氧化二铁/三氧化二铝/氧化钙/二氧化钛/氧化钾/氧化钠/硫化物硫/
+  一氧化锰/五氧化二磷/二氧化碳/氧化锌/氟离子/水溶性氧化钾/水溶性氧化钠/
+  水溶性碱——GB/T 176-2025 式(33)-(53) 结果参数族）；inspection_standard_parameters.json
+  挂链 +16（176 档 7→23，全文件 514→530）；inspection_object_parameters.json
+  junction +16（OBJ-SP01-P1 全 RESTRICTED，remark 逐码记公式条款号，全文件 881→897）。
+  ② IP-0568（SiO2+Al2O3+Fe2O3 总量）定性**不导 176**——176 语料无「总量」条款
+  （三组分各自式(35)/(36)/(37)），其真源=GB/T 1596 粉煤灰（method_text 自证），
+  转账 1596 链批（HISTORY 挂账新条）；③ calc 公式转录不在本批（挂账 1 长CJK
+  坏写防线，另批）；XRF 熔片族 式(81)-(92) 定性工具面不导（同批CE3 试剂标定逻辑）。
+  验证链：守卫先红（10 用例断言红，evidence 11:02:39）→ 种子三面 → 守卫+全量
+  992 过 → seed:db --reset 重浇 + seed:check clean → DB 探针 16/16/16 全中 →
+  双门全绿。同步：nextjs 守卫两文件钉值（635/530/176档23/16码形状）。
+
 - feat(seeds): **默认兜底卡表格化+更名（2026-11-19 用户裁定）**——
   inspection_param_interfaces.json code=default v1→2：「默认四格卡」→「默认卡」，
   config 四格（requirement/result textarea）→单行表格（技术要求 req_select +

@@ -7927,5 +7927,149 @@
     "remark": null,
     "created_at": "2026-01-01T00:00:00Z",
     "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0621",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(33)-(35) 基准法（胶凝+可溶合计）+式(54) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0622",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(36) 基准法+式(55)(56) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0623",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(37) 基准法（铁铝合量扣铁）+式(57)(58) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0624",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(38) 基准法 EDTA+式(59)(60) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0625",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(40) 基准法（6.12.3）；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0626",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(42) 基准法火焰光度+式(68) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0627",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(43) 基准法火焰光度+式(69) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0628",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(45) 基准法碘量+式(79)(80) 代用法灼烧基换算；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0629",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(46) 基准法+式(70)(71) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0630",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(47) 基准法+式(72) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0631",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(48) 基准法碱石棉吸收+式(73) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0632",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(49) 基准法（6.19）；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0633",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(50) 基准法+式(74) 代用法；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0634",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(51) 水溶性氧化钾（6.14 水溶性碱族）；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0635",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(52) 水溶性氧化钠（6.14 水溶性碱族）；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P1",
+    "inspection_parameter_code": "IP-0636",
+    "qualification_level": "RESTRICTED",
+    "source_page": null,
+    "remark": "批CE5 2026-11-19：GB/T 176-2025 式(53) 水溶性碱 R2O=水溶K2O×0.658+水溶Na2O×0.658；GB 175-2023 无限值行",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
   }
 ]
