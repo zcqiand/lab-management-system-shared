@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+- fix(seeds): **批60③——FM 粉煤灰样品三维修正（账 60③，2026-11-19 人批队列）**——
+  samples.json SAMPLE-FM-0141~0147（委托 RN-107-2 判定依据 GB/T 1596-2017）三维
+  model/grade/specification 由空/「标准试样」对齐字典四码表与 1596 tech-req 实际
+  组合面：表1 拌制用全矩阵 6 样品（F/C 类 × Ⅰ/Ⅱ/Ⅲ级）+ 表2 混合材用 1 样品
+  （F类/grade 空通配）——EntryModal 技术要求维度过滤（行维度非空即须与样品一致）
+  reqOptions 由空转可达，1596 录入即验收层3 端到端缺口关闭。验证链：守卫红
+  （fm-sample-dimensions 2 it，红证据 19:40:25 levels=[L4]）→ 出红 → 种子改 7 行 →
+  seeds 组 107/107 → seed:db --reset + seed:check clean → DB 探针（141~147+sso
+  镜像全带新三维）→ 双门全绿。
+
 - feat(seeds): **批60①——粉煤灰 8 + 水泥 7 参数界面补卡（账 60①，2026-11-19 人批队列）**——
   inspection_param_interfaces.json 39→54 / inspection_param_interface_links.json 36→51：
   粉煤灰 8 参数（IP-0549/0219/0221/0565/0568/0403/0074/0637，1596 判定核验收层2 缺口

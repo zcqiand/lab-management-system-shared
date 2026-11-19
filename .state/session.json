@@ -1,17 +1,18 @@
 {
-  "current_task": "批60①（账 60① 粉煤灰 8 + 水泥 7 参数界面补卡）收官：守卫红（证据 19:29:16 levels=[L4]）→出红→生成器幂等落库 interfaces 39→54/links 36→51→seeds 105/105→seed:db --reset+seed:check clean→DB 探针→双门全绿——已提交 1c0db3d",
+  "current_task": "批60③（账 60③ FM 粉煤灰样品三维修正）收官：守卫红（fm-sample-dimensions 2 it，证据 19:40:25 levels=[L4]）→出红→samples 7 行三维修正→seeds 107/107→seed:db --reset+seed:check clean→DB 探针→双门全绿——已提交",
   "done": [
-    "15 参数各补表格卡+挂链（形状=cement-so3 先例 rows=1 + req_select/input 两列 v1；公式面 manual+挂账照 58 办；凝结/安定性分列码记批54 人裁口径）",
-    "1596 判定核验收层2 缺口（粉煤灰 8 参数零卡 GenericParamCard 回退）关闭；REGISTRY 零改动（flyash-* 结果列仍 input 手录）"
+    "SAMPLE-FM-0141~0147 三维修正：表1 拌制用全矩阵 6 样品（F/C × Ⅰ/Ⅱ/Ⅲ级）+ 表2 混合材用 1 样品（F类/grade 空通配）——字典四码表批57 已供货零改动",
+    "EntryModal 维度过滤 reqOptions 由空转可达；1596 录入即验收层3 端到端缺口关闭"
   ],
-  "next": "队列下一项：挂账 60③ FM 样品维度修正（grade=Ⅰ/Ⅱ/Ⅲ级、specification=用途二值、model=F类/C类，种改已人批 ~0.5h）→ saas shared L5 红 → 挂账 58 formula 接线 → ③语料 57 部",
+  "next": "队列下一项：saas shared L5 红（admin-users fn-ID，~1h）→ 挂账 58 formula 接线 → ③语料 57 部；suite 仓提交 gitlink+HISTORY 收尾",
   "open_questions": [
     "django/RN 线用户明确搁置"
   ],
   "dont": [
     "gate.py -p 单值: 多仓必须逐仓单跑",
-    "brands/grades/models 种子三文件存在行尾假 M（numstat 零）——不属本批不带入提交",
+    "brands/grades/models 种子三文件行尾假 M——不属本批不带入提交",
+    "shared 种子面键名是 snake_case（judgment_standard_code）——守卫断言先查种子真源键名",
     "session.json 用 Write 工具（免 cwd 误写）"
   ],
-  "last_gate_passed_at": "2026-11-19T19:35:00"
+  "last_gate_passed_at": "2026-11-19T19:45:00"
 }
