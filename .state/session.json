@@ -1,16 +1,17 @@
 {
-  "current_task": "批57（账 57② spec 字典 P7 用途二值供货）收官：manifest 管线 append=2 零旗标→shared specs 66→68→守卫 P7 钉→seed:db --reset+seed:check clean→DB 探针→双门全绿——待提交（shared 一仓；nextjs UI 面+suite HISTORY 随批）",
+  "current_task": "批60①（账 60① 粉煤灰 8 + 水泥 7 参数界面补卡）收官：守卫红（证据 19:29:16 levels=[L4]）→出红→生成器幂等落库 interfaces 39→54/links 36→51→seeds 105/105→seed:db --reset+seed:check clean→DB 探针→双门全绿——已提交 1c0db3d",
   "done": [
-    "seeds/inspection_specs.json 66→68：SP-OBJ-SP01-P7-拌制砂浆和混凝土用/水泥活性混合材料用（sort 1/2，source 记 GB/T 1596-2017 表1/表2 用途）——1596 tech-req spec 维度消费闭环",
-    "验证链：specimen-config:import dry-run（append=2 零旗标）→ --write → 守卫 P7=2 钉绿 → seed:db --reset → seed:check clean → DB 探针 → 双门全绿"
+    "15 参数各补表格卡+挂链（形状=cement-so3 先例 rows=1 + req_select/input 两列 v1；公式面 manual+挂账照 58 办；凝结/安定性分列码记批54 人裁口径）",
+    "1596 判定核验收层2 缺口（粉煤灰 8 参数零卡 GenericParamCard 回退）关闭；REGISTRY 零改动（flyash-* 结果列仍 input 手录）"
   ],
-  "next": "提交：shared（inspection_specs.json+CHANGELOG）→ nextjs（UI+守卫+CHANGELOG+session）→ suite（gitlink+HISTORY 账 57 收口）。之后队列：挂账 60①+水泥 7 参数补卡并批 → 挂账 60③ FM 样品维度 → saas shared L5 红 → 挂账 58 → 语料 57 部",
+  "next": "队列下一项：挂账 60③ FM 样品维度修正（grade=Ⅰ/Ⅱ/Ⅲ级、specification=用途二值、model=F类/C类，种改已人批 ~0.5h）→ saas shared L5 红 → 挂账 58 formula 接线 → ③语料 57 部",
   "open_questions": [
     "django/RN 线用户明确搁置"
   ],
   "dont": [
     "gate.py -p 单值: 多仓必须逐仓单跑",
+    "brands/grades/models 种子三文件存在行尾假 M（numstat 零）——不属本批不带入提交",
     "session.json 用 Write 工具（免 cwd 误写）"
   ],
-  "last_gate_passed_at": "2026-11-19T19:22:00"
+  "last_gate_passed_at": "2026-11-19T19:35:00"
 }
