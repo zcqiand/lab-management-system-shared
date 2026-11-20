@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R9——GB 25779-2010 承重混凝土多孔砖 tech-req 首入库（③语料产线第 9 部，brick 域产品标第四部）**——
+  inspection_technical_requirements.json +3 行（500→503）：表4 抗压强度平均值行×3——
+  IP-0055，grade 键=MU25/20/15（175/R5/R6/R8 MU 先例），min=25/20/15 MPa
+  （automatic，clause=表4 pg6，三行同源 source_hash）。**历史编号映射**：语料
+  standard_no=「GB 25779-2010」（封面 GB 形）映射在册码「GB/T 25779 - 2010」
+  （带空格）——judgment_standard_code 用在册码（消费面绑定与 object_standards
+  JUDGMENT 行同形对齐），名称全等+active 双证，异形治理挂账 71⑥。锚纪律反形：
+  25779 表4 det 框管道行**带**数据行（|MU15|15.0|12.0|，与 11945 表3 反形），
+  文本框行双证同值；表头「单块最小值不小于」同 21144 词形；标题锚撞行坑
+  （裸「抗冻性」撞表7 抽样数行→「表6#抗冻性」升级）。candidates 3 HIGH 0 MED 0 LOW
+  （_work/import-r9-techreq.py，锚自审计 fail-fast 首跑拦 3 修锚后全绿）。净面
+  3 行 only——余面十项挂账 71（单块最小值立码/碳化·孔洞率·外壁肋厚无码/软化·吸水·
+  放射性未绑/表5 乱值/表6 抗冻空值/在册码异形/非参数面）。验证链：dry-run
+  acceptedNew=3 → --write → seeds 159/159 → 全量 1082|1sk → seed:db --reset+
+  seed:check clean → DB 探针 → 双门全绿。sync 清单：nextjs（守卫+旧钉四处改钉+
+  CHANGELOG）。
+
 - feat(seeds): **批R8——GB/T 11945-2019 蒸压灰砂实心砖和实心砌块 tech-req 首入库（③语料产线第 8 部，brick 域产品标第三部）**——
   inspection_technical_requirements.json +5 行（495→500）：表3 强度等级平均值行×5——
   IP-0055 抗压强度，grade 键=MU30/25/20/15/10（GB 175-2023/R5/R6 MU 先例），min=30/25/

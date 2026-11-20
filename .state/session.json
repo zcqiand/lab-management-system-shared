@@ -1,19 +1,19 @@
 {
-  "current_task": "批R8（GB/T 11945-2019 tech-req +5 行 495→500）收官提交",
+  "current_task": "批R9（GB 25779-2010 tech-req +3 行 500→503）收官提交",
   "done": [
-    "inspection_technical_requirements.json +5 行（495→500）：表3 强度等级平均值行×5——IP-0055，grade 键=MU30/25/20/15/10，min=30/25/20/15/10 MPa，clause=表3 pg5，五行同源 source_hash",
-    "绑定面核证链收口：JUDGMENT 对象=OBJ-SP01-P4；IP-0055 唯一绑；吸水率/软化系数/碳化系数/干燥收缩率/放射性五面全挂账 69——净导入面=表3 五级行 only",
-    "验证链全绿：dry-run acceptedNew=5 → --write → seeds 153/153 → 全量 1076|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
-    "CHANGELOG 批R8 entry 落档；HISTORY 挂账 69/70 落档"
+    "inspection_technical_requirements.json +3 行（500→503）：表4 抗压强度平均值行×3——IP-0055，grade 键=MU25/20/15，min=25/20/15 MPa，clause=表4 pg6，三行同源 source_hash",
+    "历史编号映射收口：语料码 GB 25779-2010（GB 形）映射在册码 GB/T 25779 - 2010（带空格）——tech-req 行用在册码（消费面绑定/JUDGMENT 挂链同形），名称全等+active 双证；异形治理挂账 71⑥",
+    "验证链全绿：dry-run acceptedNew=3 → --write → seeds 159/159 → 全量 1082|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
+    "CHANGELOG 批R9 entry 落档；HISTORY 挂账 71 落档"
   ],
-  "next": "③语料产线队列下一部：25779（次批候选）；或用户另有指令",
+  "next": "③语料产线队列下一部：另域三分法选部；或用户另有指令",
   "open_questions": [
-    "挂账 69 11945 阻塞面八项、70 24492 语料重扫候选、68 IP-0548 错位、67 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
+    "挂账 71 25779 十项、70 24492 重扫、69 11945 八项、68 IP-0548、67 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
   ],
   "dont": [
     "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件",
-    "EOL 漂移：brands/grades/models 曾被 seed:db 管线触成 CRLF（diff 零行）——git checkout -- 还原，提交前 git status 核",
-    "phase lock 出红须真红（测试门 FAIL 落 red.json）；--force 须人批"
+    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形（本批「GB/T 25779 - 2010」带空格）——语料码异形须映射核证，禁按语料码写行",
+    "EOL 漂移：提交前 git status 核 brands/grades/models CRLF；phase lock 出红须真红"
   ],
-  "last_gate_passed_at": "2026-11-20T11:30:00+08:00"
+  "last_gate_passed_at": "2026-11-20T12:45:00+08:00"
 }
