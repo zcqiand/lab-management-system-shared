@@ -8134,5 +8134,23 @@
     "remark": "批R12 2026-11-20 人批补绑定：GB/T 25181-2019 表7 预拌砂浆抗渗压力（28d ≥0.6/0.8/1.0 MPa，P6/P8/P10）；junction 原缺——绑定变更人批过闸，tech-req 3 行同批导入",
     "created_at": "2026-11-20T00:00:00Z",
     "updated_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P4",
+    "inspection_parameter_code": "IP-0327",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R13 2026-11-20 人批补绑定：GB/T 11968-2020 表6 蒸压加气混凝土砌块导热系数（B03~B07 ≤0.10~0.18 W/(m·K)）；junction 原缺（IP-0327 原仅挂 OBJ-SP05-P4 绝热材料）——绑定变更人批过闸，tech-req 5 行同批导入",
+    "created_at": "2026-11-20T00:00:00Z",
+    "updated_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P4",
+    "inspection_parameter_code": "IP-0639",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R13 2026-11-20 人批立码+绑定：GB/T 11968-2020 §6.4 蒸压加气混凝土砌块干燥收缩值（≤0.50 mm/m）；IP-0639 本批立码（字典原无精确参数，IP-0570 收缩率%≠干燥收缩值 mm/m），junction+std-bind 同批过闸，tech-req 1 行同批导入",
+    "created_at": "2026-11-20T00:00:00Z",
+    "updated_at": "2026-11-20T00:00:00Z"
   }
 ]

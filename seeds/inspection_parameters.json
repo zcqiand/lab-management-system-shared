@@ -8279,5 +8279,18 @@
     "sort_order": 638,
     "created_at": "2026-11-19T00:00:00Z",
     "updated_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "code": "IP-0639",
+    "name": "干燥收缩值",
+    "raw_name": "干燥收缩值",
+    "canonical_name": "干燥收缩值",
+    "method_text": "见对应标准条款",
+    "aliases": [],
+    "unit": "mm/m",
+    "source_type": "official",
+    "sort_order": 639,
+    "created_at": "2026-11-20T00:00:00Z",
+    "updated_at": "2026-11-20T00:00:00Z"
   }
 ]

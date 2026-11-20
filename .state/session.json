@@ -1,18 +1,19 @@
 {
-  "current_task": "批R12（GB/T 25181-2019 预拌砂浆 tech-req 首入库）收官提交",
+  "current_task": "批R13（GB/T 5101-2017 + GB/T 11968-2020 双标同批 tech-req 首入库）收官提交",
   "done": [
-    "tech-req +10 行（512→522）：表6 IP-0055 grade=M5~M30 七档 ≥5.0~30.0 MPa + 表7 IP-0569 grade=P6/P8/P10 ≥0.6/0.8/1.0 MPa；automatic，clause=表6/表7 pg10，HIGH×10（pipe 层头行+值行直锚）",
-    "人批补绑定：IP-0569 junction（OBJ-SP01-P8）+ std-bind（GB/T 25181-2019）两行种子落库（表7 原绑定双缺，绑定变更人批过闸清偿）",
-    "验证链全绿：dry-run acceptedNew=10 → --write（remark 元组化事故回滚重写一次）→ 种子护栏 177/177 → 全量 1101|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿"
+    "tech-req +21 行（522→543）：5101 表3 IP-0055 grade=MU30~MU10 ≥30/25/20/15/10 MPa + 11968 表4A×5（A1.5~A5.0 ≥1.5~5.0，最小值列挂账）+ 表4B×5（IP-0189 B03~B07 ≤350~750 kg/m³）+ 表6×5（IP-0327 B03~B07 ≤0.10~0.18 W/(m·K)）+ 6.4×1（IP-0639 ≤0.50 mm/m）",
+    "人批三答落地（2026-11-20）：双标同批/6.4 立码 IP-0639（junction+std-bind 同批补）/补绑定 P4×IP-0327；字典 +1（IP-0639 干燥收缩值 mm/m）+junction×2+std-bind×1",
+    "验证链全绿：dry-run 21/0/0 → --write → 种子护栏 186/186 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿"
   ],
-  "next": "③语料产线下一部（另域三分法再选部）；或用户另有指令",
+  "next": "③语料产线下一部（另域三分法再选部）；或挂账 75 公式批盘点（须人批立项）",
   "open_questions": [
-    "挂账存量（语料线）：74（25181 损形/区间/非限值面五项）、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
+    "挂账 75（2026-11-21 立，用户异议氯离子卡）：GB/T 176 化学面公式升 formula 型——立项第一步=全公式面盘点清单再人裁",
+    "挂账存量（语料线）：75、74（25181 五项）、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
   ],
   "dont": [
-    "tech-req 种子写面只走管线 --write（append-only）；批内未提交行须重写时=git checkout 回滚→修抽取端→重跑 --write（不算手改）",
-    "python dict 字面量赋值尾逗号 (expr,) = 单元素元组 → json 数组化——remark 类长串拼装后 repr 回验类型",
-    "python -I GBK 控制台须脚本内 reconfigure；EOL：autocrlf=true 检出态 CRLF 非漂移，提交前 git status 核对即可"
+    "tech-req 种子写面只走管线 --write（append-only）；批内未提交行须重写时=git checkout 回滚→修抽取端→重跑 --write",
+    "管线 expression 数值归一（≥30.0→≥30）；锚含反斜杠（\\350）走 chr(92)/Write 工具落盘，禁 bash heredoc",
+    "python -I GBK 控制台须脚本内 reconfigure；python 字面量尾逗号=元组陷阱（R12 事故）"
   ],
-  "last_gate_passed_at": "2026-11-20T20:05:00+08:00"
+  "last_gate_passed_at": "2026-11-21T07:05:00+08:00"
 }
