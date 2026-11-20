@@ -147,9 +147,9 @@ export const sampleReceipts = pgTable(
     testStartDate: text("test_start_date"),
     testEndDate: text("test_end_date"),
     originalRecordNo: text("original_record_no"),
-    // 复验方式（2026-11-10 人裁，不用布尔）：double = 双倍取样复验（数据录入走
-    // rows 翻倍的 -retest 界面变体）；original = 原样数量复验（常规行数，仅标记
-    // 供报告特殊处理）；none = 非复验。
+    // 复验方式（2026-11-10 人裁，不用布尔）：double = 双倍取样复验（数据录入侧
+    // 界面 config 翻倍 rows/count ×2，2026-11-20 收敛批）；original = 原样数量复验
+    // （常规行数，仅标记供报告特殊处理）；none = 非复验。
     retestMode: text("retest_mode").default("none").notNull(),
     remark: text("remark"),
     judgmentBasis: jsonb("judgment_basis"),

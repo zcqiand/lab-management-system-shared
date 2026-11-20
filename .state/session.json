@@ -1,21 +1,17 @@
 {
-  "current_task": "批R11（JC/T 864-2023 tech-req +6 行 506→512，wp 域续作）收官提交",
+  "current_task": "复验界面收敛批（注释面同步：schema.ts+tsp 去 -retest 旧措辞）收官提交",
   "done": [
-    "inspection_technical_requirements.json +6 行（506→512）：表1 三参数×T/G 两列——IP-0045 固体含量 ≥65/≥60 %、IP-0034 拉伸强度 ≥1.2/≥2.0 MPa（拉伸性能（标准状态）组）、IP-0017 断裂伸长率 ≥300/≥500 %；clause=表1 pg5，六行同源 source_hash；全 MED 旗标过门不改 verified",
-    "列身份证据链（整面 MED）：表1 列头行（T/G）语料缺失——4.1.1 行文序（通用型（T)在先，全角开+半角闭混排逐字实测）+注2 语义（高弹型→水性聚氨酯→高伸长 G 列自洽）双佐证、零矛盾；解锁=原版 PDF 表头重摄（挂账 73⑥）",
-    "历史编号映射：本批无映射——语料 standard_no=「JC/T 864-2023」=在册码原形（R9/R10 异形映射反形再证）",
-    "绑定面核证：净面三码 junction/绑定均在；定性不导面逐条实锚——IP-0057 std 绑定缺（绑定 9 码不含）、IP-0018/0041/0059 junction 缺、IP-0025 值面双缺语料损",
-    "验证链全绿：dry-run acceptedNew=6 linkSkip=28 → --write → seeds 170/170 → 全量 1093|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
-    "CHANGELOG 批R11 entry 落档；HISTORY 批R11 段+挂账 73 落档"
+    "共随 nextjs 复验收敛批：inspection_param_interfaces.json 删 4 张 -retest 卡（34→30 行）；retest_mode=double 语义改解析器 config 深拷贝翻倍（rows/count ×2）",
+    "schema.ts retest_mode 列注释+tsp/models/sample-receipt.tsp 注释同步（注释级，无 API 形状变更，contract-test 不涉）",
+    "验证链：seed:db --reset+seed:check clean → DB 探针（-retest ×0/total 30）→ 双门全绿"
   ],
-  "next": "③语料产线队列下一部：另域三分法再选部；或用户另有指令",
+  "next": "③语料产线下一部（另域三分法再选部）；或用户另有指令",
   "open_questions": [
-    "挂账 73 七项（IP-0057 绑定缺+行串位/IP-0018 junction 缺/IP-0025 值面缺/立码族/T-G 列头重摄）、72 七项、71 25779 十项、70 24492、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
+    "挂账存量（语料线）：73 七项、72 七项、71 25779 十项、70 24492、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
   ],
   "dont": [
-    "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件",
-    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形——映射方向逐标实测禁沿用上批（R9 空格→无空格/R10 无空格→带空格/R11 无映射三批三形状）",
-    "EOL 漂移：提交前 git status 核 brands/grades/models CRLF"
+    "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件（界面种子收敛删卡走收敛批先例，与 tech-req 管线面不同源）",
+    "EOL 漂移：提交前 git status 核 brands/grades/models"
   ],
-  "last_gate_passed_at": "2026-11-20T15:16:02+08:00"
+  "last_gate_passed_at": "2026-11-20T16:38:00+08:00"
 }

@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+- refactor(schema): **复验界面收敛批（共随 nextjs 批）——`-retest` 变体卡退役注释面
+  同步（2026-11-20 人裁「界面列表冗余，收掉」）**——retest_mode=double 的数据录入
+  语义改为解析器 config 深拷贝翻倍（table rows/series count ×2），4 张 `-retest`
+  界面卡退役（在 nextjs 种子 34→30 行）；schema.ts `retest_mode` 列注释与
+  tsp/models/sample-receipt.tsp 注释同步去 `-retest` 旧措辞（注释级，无 API 形状
+  变更）。sync：nextjs（解析器重写+种子删卡+守卫+CHANGELOG）。
 - feat(seeds): **批R11——JC/T 864-2023 聚合物乳液建筑防水涂料 tech-req 首入库（③语料产线第 11 部，wp 防水域续作）**——
   inspection_technical_requirements.json +6 行（506→512）：表1 三参数 ×T/G 两列——
   IP-0045 固体含量（≥65/≥60 %）、IP-0034 拉伸强度（≥1.2/≥2.0 MPa，拉伸性能

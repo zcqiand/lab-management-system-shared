@@ -45,8 +45,8 @@ model SampleReceipt {
   testStartDate?: string;
   testEndDate?: string;
   originalRecordNo?: string;
-  // 复验方式：double = 双倍取样复验（数据录入走 rows 翻倍的 -retest 界面变体）；
-  // original = 原样数量复验（常规行数，仅标记供报告特殊处理）
+  // 复验方式：double = 双倍取样复验（数据录入侧界面 config 翻倍 rows/count ×2，
+  // 2026-11-20 收敛批）；original = 原样数量复验（常规行数，仅标记供报告特殊处理）
   retestMode?: RetestMode;
   remark?: string;
 
