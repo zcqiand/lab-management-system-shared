@@ -1,7 +1,8 @@
 {
-  "current_task": "批R7（GB 50119-2013 混凝土外加剂应用技术规范 tech-req 首入库 +4 行）收官",
+  "current_task": "文案批（参数界面「检验结果」→「检测结果」种子 26 处换面）收官；批R7 已提交（shared 628c0e4）",
   "done": [
-    "立域（人裁）：concrete 域键随批落地（label 混凝土，terms 空数组零倒挂）——挂账 39（55008 氯离子面）随之解锁",
+    "文案批：inspection_param_interfaces.json 26 处换面（23 label+3 description；version 不动——全局文案统一非形状换版）→ DB 探针 23 interfaces 零残留 → 双门全绿；nextjs 守卫 10 处随批改钉（红证据 10:05:27）",
+    "批R7 立域（人裁）：concrete 域键随批落地（label 混凝土，terms 空数组零倒挂）——挂账 39（55008 氯离子面）随之解锁",
     "选部：三候选并盘（50119/55008/8076）——50119 表7.3.1 四行净面最大+18/20 在链胜出；dump 脚本照 r4 GraphQL+urllib 形（weaviate SDK ImportError 弃用）",
     "净导入面 4 行（表7.3.1 掺引气剂含气量限值）：grade 键=粗骨料最大公称粒径分档 10mm/15mm/20mm/25mm，max=7.0/6.0/5.5/5.0%，comparison ≤（上限 ≤ 形 min_value=None），clause=表7.3.1 pg27，sort_order 4334-4364 verified（DB 探针坐实）",
     "锚第三形状首例：det 框管道行带数据行（|10|7.0| 剥空白形）——锚形状三度实证逐块实测禁沿用；限值列表头 OCR 错字「含汽量」锚避开",

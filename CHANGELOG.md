@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+- seeds(param-interfaces): **参数界面文案统一「检验结果」→「检测结果」（2026-11-20 用户指令）**——
+  inspection_param_interfaces.json 26 处换面（23 label + 3 description；version 不动，
+  全局文案统一非形状换版；文件存量另 1 处「检测结果」本就在）。DB 探针 23 interfaces
+  全换面零残留；守卫面（nextjs flat-card-table-form.test.ts 10 处改钉）随批；
+  react/vue 等兄弟仓零落点。sync 清单：nextjs（守卫+CHANGELOG）。
+
 - feat(seeds): **批R7——GB 50119-2013 混凝土外加剂应用技术规范 tech-req 首入库（③语料产线第 7 部，concrete 域立域批·人裁 2026-11-20）**——
   inspection_technical_requirements.json +4 行（491→495）：表7.3.1 掺引气剂或引气减水剂
   混凝土含气量限值×4——IP-0200 含气量，grade 键=粗骨料最大公称粒径分档
