@@ -4,6 +4,26 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R10——GB 18243-2008 塑性体改性沥青防水卷材 tech-req 首入库（③语料产线第 10 部，wp 防水域首部）**——
+  inspection_technical_requirements.json +3 行（503→506）：表2 可溶物含量厚度行族×3——
+  IP-0009，spec 键=厚度 3mm/4mm/5mm（尺寸面，Φ 直径先例形），model 键=PY 胎基
+  （水泥 P·O 品种先例形；PYG 列语料全「—」禁硬凑），min=2100/2900/3500 g/m²
+  （automatic，clause=表2 pg5，三行同源 source_hash；5mm pipe 单层单证 MED 旗标进
+  Step 5 人看闸——18242-2008 跨标同值核证，过门不改 verified）。**历史编号映射
+  R9 反形**：语料 standard_no=「GB 18243-2008」（空格形）映射在册码「GB18243-2008」
+  （无空格，消费面绑定与 object_standards JUDGMENT 行同形对齐），名称全等+active
+  双证。**列身份矛盾指纹（账 72①）**：表2 pipe 层与 text 层同表互斥——pipe 不透水
+  2 值 vs text 3 值「0.3/0.2/0.3」、pipe 耐热性 |—|110|130| vs text 三列语料不可证，
+  18242-2008 跨标复现（|—|90|—| vs >90105）→ I/II×PYG 基本性能分档面整面阻塞
+  （解锁=原版 PDF，13788 账 33 同族）；表义佐证=18242-2025 现行版同行「≥2 900
+  可溶物含量/（g/m²） 4 mm」≥ 前缀。绑定面核证：IP-0009 junction 在（unit=% 与
+  表2 g/m² 分叉入 remark 不改字典，账 46② 同族候选）；IP-0020 全库零绑定（表4
+  搭接缝不透水净面惜失，绑定面变更人批——账 72⑤）；IP-0019 绑定在 unit=MPa 分叉。
+  candidates 3 HIGH 1 MED 0 LOW（_work/import-r10-techreq.py）。净面 3 行 only——
+  余面七项挂账 72。验证链：dry-run acceptedNew=3 → --write → seeds 165/165 →
+  全量 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿。sync 清单：
+  nextjs（守卫+旧钉改钉+CHANGELOG）。
+
 - feat(seeds): **批R9——GB 25779-2010 承重混凝土多孔砖 tech-req 首入库（③语料产线第 9 部，brick 域产品标第四部）**——
   inspection_technical_requirements.json +3 行（500→503）：表4 抗压强度平均值行×3——
   IP-0055，grade 键=MU25/20/15（175/R5/R6/R8 MU 先例），min=25/20/15 MPa

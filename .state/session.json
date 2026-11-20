@@ -1,19 +1,21 @@
 {
-  "current_task": "批R9（GB 25779-2010 tech-req +3 行 500→503）收官提交",
+  "current_task": "批R10（GB 18243-2008 tech-req +3 行 503→506，wp 防水域首部）收官提交",
   "done": [
-    "inspection_technical_requirements.json +3 行（500→503）：表4 抗压强度平均值行×3——IP-0055，grade 键=MU25/20/15，min=25/20/15 MPa，clause=表4 pg6，三行同源 source_hash",
-    "历史编号映射收口：语料码 GB 25779-2010（GB 形）映射在册码 GB/T 25779 - 2010（带空格）——tech-req 行用在册码（消费面绑定/JUDGMENT 挂链同形），名称全等+active 双证；异形治理挂账 71⑥",
-    "验证链全绿：dry-run acceptedNew=3 → --write → seeds 159/159 → 全量 1082|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
-    "CHANGELOG 批R9 entry 落档；HISTORY 挂账 71 落档"
+    "inspection_technical_requirements.json +3 行（503→506）：表2 可溶物含量厚度行族×3——IP-0009，spec 键=厚度 3mm/4mm/5mm，model 键=PY 胎基，min=2100/2900/3500 g/m²，clause=表2 pg5，三行同源 source_hash；5mm MED 旗标过门不改 verified",
+    "历史编号映射 R9 反形：语料码「GB 18243-2008」（空格形）映射在册码「GB18243-2008」（无空格）——tech-req 行用在册码，名称全等+active 双证",
+    "列身份矛盾指纹入账 72①：表2 pipe 层 vs text 层同表互斥+18242-2008 跨标复现→I/II×PYG 分档面整面阻塞；18242-2025 现行版 ≥ 前缀佐证归一",
+    "绑定面核证：IP-0009 junction 在（unit=% 分叉入 remark）；IP-0020 全库零绑定（惜失面账 72⑤）；IP-0019 绑定在 unit=MPa 分叉",
+    "验证链全绿：dry-run acceptedNew=3 linkSkip=27 → --write → seeds 165/165 → 全量 1088|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
+    "CHANGELOG 批R10 entry 落档；HISTORY 批R10 段+挂账 72 落档"
   ],
-  "next": "③语料产线队列下一部：另域三分法选部；或用户另有指令",
+  "next": "③语料产线队列下一部：wp 域 18243 余面（账 72 人批面）/另域三分法再选部；或用户另有指令",
   "open_questions": [
-    "挂账 71 25779 十项、70 24492 重扫、69 11945 八项、68 IP-0548、67 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
+    "挂账 72 七项（I/II 分档阻塞/IP-0020 惜失/单位分叉/立码族/18967 重扫）、71 25779 十项、70 24492 重扫、69/68/67/66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
   ],
   "dont": [
     "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件",
-    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形（本批「GB/T 25779 - 2010」带空格）——语料码异形须映射核证，禁按语料码写行",
-    "EOL 漂移：提交前 git status 核 brands/grades/models CRLF；phase lock 出红须真红"
+    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形（本批「GB18243-2008」无空格）——映射方向逐标实测禁沿用上批（R9 反形：语料空格→在册无空格）",
+    "EOL 漂移：提交前 git status 核 brands/grades/models CRLF"
   ],
   "last_gate_passed_at": "2026-11-20T12:45:00+08:00"
 }
