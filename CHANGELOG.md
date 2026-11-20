@@ -4,6 +4,29 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R11——JC/T 864-2023 聚合物乳液建筑防水涂料 tech-req 首入库（③语料产线第 11 部，wp 防水域续作）**——
+  inspection_technical_requirements.json +6 行（506→512）：表1 三参数 ×T/G 两列——
+  IP-0045 固体含量（≥65/≥60 %）、IP-0034 拉伸强度（≥1.2/≥2.0 MPa，拉伸性能
+  （标准状态）组）、IP-0017 断裂伸长率（≥300/≥500 %）——model 键=T/G 型别
+  （4.1.1 符号形，R10 model=PY 品种面同形），automatic，clause=表1 pg5，六行同源
+  source_hash。**列身份证据链（整面 MED 旗标进 Step 5 人看闸）**：表1 列头行（T/G）
+  语料缺失——列身份=4.1.1 行文序（通用型（T)在先）+注2 语义（高弹型→水性聚氨酯
+  →高伸长 G 列自洽）双佐证、零矛盾（pipe 层无三参数值行，无 R10 式互斥指纹）；
+  解锁=原版 PDF 表头重摄。**历史编号映射：本批无映射（R9/R10 反形再证）**——
+  语料 standard_no=「JC/T 864-2023」=在册码原形（名称全等+active 双证，逐标实测
+  禁沿用上批）。绑定面核证：IP-0045/0034/0017 junction 在+std 绑定在+unit 无分叉
+  （%/MPa/%）；IP-0057 粘结强度 junction 在+std 绑定缺+行串位矛盾嫌疑（pipe
+  「≥1.0标准状态/≥0.8潮湿基面」vs text 12 区「拉伸强度 ≥1.0 ≥2.0」）；IP-0018
+  撕裂强度 std 绑定在+junction 缺（≥12/≥15 值面净——绑定变更人批）；IP-0025
+  表干时间值面双缺（语料损）；IP-0041/0059 junction 缺；实干时间/加热伸缩率
+  字典无码（立码候选）；IP-0074 密度「报告实测值」无限值（定性关闭）；表2 有害
+  物质限量非对象检验参数面（定性关闭）。candidates 0 HIGH 6 MED 0 LOW
+  （_work/import-r11-techreq.py）。选部（四候选并盘 corpus-r11-scope.txt 288 块）：
+  864-2023 胜出；408-2005/326-2007/18173.4-2010 均值/标签交错损形不可导。
+  净面 6 行 only——余面七项挂账 73。验证链：dry-run acceptedNew=6 → --write →
+  seeds 170/170 → 全量 1093|1sk → seed:db --reset+seed:check clean → DB 探针 →
+  双门全绿。sync 清单：nextjs（守卫+旧钉改钉+CHANGELOG）。
+
 - feat(seeds): **批R10——GB 18243-2008 塑性体改性沥青防水卷材 tech-req 首入库（③语料产线第 10 部，wp 防水域首部）**——
   inspection_technical_requirements.json +3 行（503→506）：表2 可溶物含量厚度行族×3——
   IP-0009，spec 键=厚度 3mm/4mm/5mm（尺寸面，Φ 直径先例形），model 键=PY 胎基

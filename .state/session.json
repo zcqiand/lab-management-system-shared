@@ -1,21 +1,21 @@
 {
-  "current_task": "批R10（GB 18243-2008 tech-req +3 行 503→506，wp 防水域首部）收官提交",
+  "current_task": "批R11（JC/T 864-2023 tech-req +6 行 506→512，wp 域续作）收官提交",
   "done": [
-    "inspection_technical_requirements.json +3 行（503→506）：表2 可溶物含量厚度行族×3——IP-0009，spec 键=厚度 3mm/4mm/5mm，model 键=PY 胎基，min=2100/2900/3500 g/m²，clause=表2 pg5，三行同源 source_hash；5mm MED 旗标过门不改 verified",
-    "历史编号映射 R9 反形：语料码「GB 18243-2008」（空格形）映射在册码「GB18243-2008」（无空格）——tech-req 行用在册码，名称全等+active 双证",
-    "列身份矛盾指纹入账 72①：表2 pipe 层 vs text 层同表互斥+18242-2008 跨标复现→I/II×PYG 分档面整面阻塞；18242-2025 现行版 ≥ 前缀佐证归一",
-    "绑定面核证：IP-0009 junction 在（unit=% 分叉入 remark）；IP-0020 全库零绑定（惜失面账 72⑤）；IP-0019 绑定在 unit=MPa 分叉",
-    "验证链全绿：dry-run acceptedNew=3 linkSkip=27 → --write → seeds 165/165 → 全量 1088|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
-    "CHANGELOG 批R10 entry 落档；HISTORY 批R10 段+挂账 72 落档"
+    "inspection_technical_requirements.json +6 行（506→512）：表1 三参数×T/G 两列——IP-0045 固体含量 ≥65/≥60 %、IP-0034 拉伸强度 ≥1.2/≥2.0 MPa（拉伸性能（标准状态）组）、IP-0017 断裂伸长率 ≥300/≥500 %；clause=表1 pg5，六行同源 source_hash；全 MED 旗标过门不改 verified",
+    "列身份证据链（整面 MED）：表1 列头行（T/G）语料缺失——4.1.1 行文序（通用型（T)在先，全角开+半角闭混排逐字实测）+注2 语义（高弹型→水性聚氨酯→高伸长 G 列自洽）双佐证、零矛盾；解锁=原版 PDF 表头重摄（挂账 73⑥）",
+    "历史编号映射：本批无映射——语料 standard_no=「JC/T 864-2023」=在册码原形（R9/R10 异形映射反形再证）",
+    "绑定面核证：净面三码 junction/绑定均在；定性不导面逐条实锚——IP-0057 std 绑定缺（绑定 9 码不含）、IP-0018/0041/0059 junction 缺、IP-0025 值面双缺语料损",
+    "验证链全绿：dry-run acceptedNew=6 linkSkip=28 → --write → seeds 170/170 → 全量 1093|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
+    "CHANGELOG 批R11 entry 落档；HISTORY 批R11 段+挂账 73 落档"
   ],
-  "next": "③语料产线队列下一部：wp 域 18243 余面（账 72 人批面）/另域三分法再选部；或用户另有指令",
+  "next": "③语料产线队列下一部：另域三分法再选部；或用户另有指令",
   "open_questions": [
-    "挂账 72 七项（I/II 分档阻塞/IP-0020 惜失/单位分叉/立码族/18967 重扫）、71 25779 十项、70 24492 重扫、69/68/67/66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
+    "挂账 73 七项（IP-0057 绑定缺+行串位/IP-0018 junction 缺/IP-0025 值面缺/立码族/T-G 列头重摄）、72 七项、71 25779 十项、70 24492、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
   ],
   "dont": [
     "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件",
-    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形（本批「GB18243-2008」无空格）——映射方向逐标实测禁沿用上批（R9 反形：语料空格→在册无空格）",
+    "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形——映射方向逐标实测禁沿用上批（R9 空格→无空格/R10 无空格→带空格/R11 无映射三批三形状）",
     "EOL 漂移：提交前 git status 核 brands/grades/models CRLF"
   ],
-  "last_gate_passed_at": "2026-11-20T14:32:50+08:00"
+  "last_gate_passed_at": "2026-11-20T15:16:02+08:00"
 }
