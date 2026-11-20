@@ -4,6 +4,36 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R7——GB 50119-2013 混凝土外加剂应用技术规范 tech-req 首入库（③语料产线第 7 部，concrete 域立域批·人裁 2026-11-20）**——
+  inspection_technical_requirements.json +4 行（491→495）：表7.3.1 掺引气剂或引气减水剂
+  混凝土含气量限值×4——IP-0200 含气量，grade 键=粗骨料最大公称粒径分档
+  10mm/15mm/20mm/25mm（grade 槽广义分档先例 1区/Ⅰ类/P6），max=7.0/6.0/5.5/5.0 %
+  （正文 7.3.1「不宜超过」上限 ≤ 形走 max_value——R4 含水量 ≤1.0% 上限族形，
+  automatic，clause=表7.3.1 pg27，sort_order 4334-4364 verified；四档值面零 OCR 反转）。
+  行挂 OBJ-SP01-P5（检验对象=混凝土拌合物；IP-0200×P5/P6 junction 双在种子核证，
+  P6 外加剂进场检验面不属本表语义）。立域面：nextjs semantic-dictionary.json 增
+  concrete 域键（label 混凝土，terms 空数组照 soil/brick 先例零倒挂）——挂账 39
+  （55008-2021 氯离子面）随之解锁。选部三分法三候选并盘（corpus-r7-scope.txt
+  50119=349 块/JGJ52=77 块 + corpus-r7b-scope.txt 55008=249/8076=130 块）：
+  55008 表面=结构配筋域+表3.1.8 行值配对 OCR 损（挂账 39 面）；8076 表1 受检混凝土
+  性能指标（真限值面）OCR 全损不可复原——50119 净面最大胜出。抽取端锚纪律新形状：
+  50119 表7.3.1 det 框管道行带数据行（异于 21144 文本框行——锚形状逐块实测定禁沿用），
+  行锚=管道行全串剥空白块内/全语料双唯一命中，块标题锚+「粗骨料最大公称粒径」方向锚
+  双证，限值列表头 OCR 错字「含汽量」锚避开，4 HIGH 0 MED 0 LOW，锚自审计 36 项全绿
+  （_work/import-r7-techreq.py）。定性不导挂账 67 六项：①表7.3.1 粒径 40mm 行（OCR 值
+  「1.5」不可靠——原 PDF 复核后可导，表注 C60 降幅 OCR 尾损「1，不低于3.5」同批复核）
+  ②表13.3.1 限制膨胀率（IP-0199 双龄期维单码双维撞 8 键 PK 立码候选）③表8.4.2 硫酸钠
+  掺量（IP-0215 含量语义漂移+环境/种类双条件维）④表13.3.6 灌浆用膨胀砂浆（扩展度/
+  竖向膨胀率无在链码+OCR 列损）⑤表10.3.1/10.3.3 选择指南（区间值非判定限值+OCR 损）
+  ⑥表13.5.3/表6.4.9（非检验参数）。sync 清单：消费仓零同步。验证链：机械门 dry-run
+  acceptedNew=4 零拒收（linkSkip=24 三键全在）→ --write 108 行=4 行自洽 → 守卫
+  admixture-app-50119-techreq.test.ts 6 it（种子 append 前天然真红——gate --only L4
+  红证据 09:25:25 落 .state/red.json，phase.py 正门出红区；R6 遗留 red 区同批清偿）
+  → 旧钉随批改钉（总数 491→495：cement-surface +countFor 50119=4；rebar-surface
+  495/-82+50119 跳过面+零漂移滤出+rebarStds 面；age-param-migration 不触零改）
+  → seeds 组 147/147 → seed:db --reset + seed:check clean → DB 探针 4 行实值全对
+  total 495（comparison/expression hex 回验 e289a4=≤）→ 双门全绿。
+
 - feat(seeds): **批R6——GB/T 21144-2023 混凝土实心砖 tech-req 首入库（③语料产线第 6 部，brick 域产品标第二部）**——
   inspection_technical_requirements.json +8 行（483→491）：表4 强度等级平均值行×8——
   IP-0055 抗压强度，grade 键=MU40/MU35/MU30/MU25/MU20/MU15/MU10/MU7.5（GB 175-2023/

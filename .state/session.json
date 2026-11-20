@@ -1,32 +1,32 @@
 {
-  "current_task": "批R6（GB/T 21144-2023 混凝土实心砖 tech-req 首入库 +8 行）收官",
+  "current_task": "批R7（GB 50119-2013 混凝土外加剂应用技术规范 tech-req 首入库 +4 行）收官",
   "done": [
-    "scoping：批R5 已 dump 四标在盘复盘免再 dump——11968 表4 双维+OCR 损、5101 表3 同 13544 fk 形无增量、21144 表4 八级值全可读净面最大胜出；junction/绑定前置全在（P4×21144 JUDGMENT+IP-0055 绑 21144+IP-0055×P4）",
-    "净导入面 8 行（表4 强度等级平均值行）：IP-0055 × MU40/35/30/25/20/15/10/7.5 ≥40/35/30/25/20/15/10/7.5 MPa，grade 键=MU 值（175/13544 先例），clause=表4 pg6，sort_order 4254-4324 verified",
-    "锚新形状首例：21144 表4 det 框管道行无数据行——行锚=OCR 文本框行全串剥空白（MU40≥40.0≥35.0 形）；语料 standard_no 与在册码同形（无 13544 式映射）",
-    "junction 种子双面核证：IP-0055×P4 在 + IP-0074×P4 缺（挂账 66⑤ 表3 密度等级不导依据）",
-    "抽取端 _work/import-r6-techreq.py：32 锚审计全绿 8 HIGH → dry-run acceptedNew=8 linkSkip=23 → --write 216 行=8 行自洽",
-    "守卫 tests/seeds/concrete-brick-21144-techreq.test.ts 6 it 红绿（stash 流程红证据 08:37:06 levels=[L4]）",
-    "旧钉三处改钉：cement-surface 491+countFor 21144=8；rebar-surface 491/-78+21144 滤出；age-param-migration 他标 IP-0055/0056 6→14（旧钉第六处浮出）",
-    "seeds 141/141 → seed:db --reset + seed:check clean → DB 探针 total 491（hex 回验 e289a5=≥）→ 双门全绿",
-    "CHANGELOG [Unreleased] 批R6 entry 落档（shared+nextjs）；HISTORY 批R6 段+挂账 66 落档"
+    "立域（人裁）：concrete 域键随批落地（label 混凝土，terms 空数组零倒挂）——挂账 39（55008 氯离子面）随之解锁",
+    "选部：三候选并盘（50119/55008/8076）——50119 表7.3.1 四行净面最大+18/20 在链胜出；dump 脚本照 r4 GraphQL+urllib 形（weaviate SDK ImportError 弃用）",
+    "净导入面 4 行（表7.3.1 掺引气剂含气量限值）：grade 键=粗骨料最大公称粒径分档 10mm/15mm/20mm/25mm，max=7.0/6.0/5.5/5.0%，comparison ≤（上限 ≤ 形 min_value=None），clause=表7.3.1 pg27，sort_order 4334-4364 verified（DB 探针坐实）",
+    "锚第三形状首例：det 框管道行带数据行（|10|7.0| 剥空白形）——锚形状三度实证逐块实测禁沿用；限值列表头 OCR 错字「含汽量」锚避开",
+    "抽取端 _work/import-r7-techreq.py：36 锚审计全绿 4 HIGH（双对象推导 [P5,P6] 断言取 P5）→ dry-run acceptedNew=4 linkSkip=24 → --write 108 行=4 行自洽",
+    "R6 遗留 red 区正门清偿：调序守卫先行（种子无 50119 行天然真红）→ gate --only L4 落 red.json（09:25:25 levels=[L4]）→ phase.py --to green；非 --force",
+    "旧钉四处改钉：cement surface 491→495+countFor 50119=4；rebar surface 495/-82+50119 滤出+零漂移滤出+rebarStds 集合（第四处复跑才浮出——grep 全钉面纪律再实证）",
+    "seeds 147/147 → seed:db --reset + seed:check clean → DB 探针 4 行全对 total 495（hex e289a4=≤）→ 双门全绿",
+    "CHANGELOG [Unreleased] 批R7 entry 落档（shared+nextjs）；HISTORY 批R7 段+挂账 67 落档"
   ],
-  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（砖系余面 11968/5101 双维或立码候选依赖人批；或另域选部走三分法 dump→盘点→净面）",
+  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（50119 余面挂账 67 六项、55008 氯离子面随立域解锁但域键归属选型先核、8076 表1 语料重扫候选；或另域选部走三分法 dump→盘点→净面）",
   "open_questions": [
-    "挂账 66 21144 阻塞面八项（①最小值立码候选同 13544 fk 形②碳化系数字典无码立码候选③软化系数 IP-0578 绑定人批④放射性 IP-0062 绑定人批⑤表3 密度 IP-0074 junction 人批+OCR 丢级名⑥表5 吸水率 IP-0059 绑定人批⑦表6 OCR 乱⑧表7 抗冻码不在链）（人批另批）",
-    "挂账 65 13544 阻塞面八项（人批另批）",
-    "挂账 61/62/63/64、60②、JC/T 600 迁移欠条（人批另批）"
+    "挂账 67 50119 阻塞面六项（①40mm 行 OCR 存疑原 PDF 复核禁机补②表13.3.1 限制膨胀率立码候选③表8.4.2 硫酸钠语义漂移+双条件维④表13.3.6 灌浆砂浆立码候选⑤表10.3.1/10.3.3 区间值+OCR 损⑥表13.5.3/6.4.9 非检验参数定性关闭）（人批另批）",
+    "挂账 66 21144 八项、65 13544 八项、61/62/63/64、60②、JC/T 600 迁移欠条（人批另批）",
+    "挂账 39 55008：域键归属选型（concrete or rebar？）动前人裁"
   ],
   "dont": [
-    "JS/Python 字典序 sort：'MU7.5' 排 'MU40' 后（'7'>'4'）——字典序断言面以实序为准（守卫 grade 面断言踩过）",
-    "锚两形状并存：det 框管道行（13544 表4）vs OCR 文本框行（21144 表4）——行锚形状逐块实测定，禁沿用上标形状",
-    "统计维（平均值/最小值/标准值）不入 spec 键；单码双维撞 8 键 PK 走立码人批",
-    "禁只导已知面/顺手全导——全参数面盘点人裁后导",
-    "表值 < 由邻接 prose 归一 ≤/≥；OCR 反转不可靠值禁机补",
-    "抽取端源码反斜杠走 chr(92)；HISTORY/守卫写入后 grep 坏形扫描+git diff 回验（本批守卫两处毒化+路径笔误在案——坏写指纹第三次批内踩坑）",
-    "种子改动守卫红证据走 shared 仓 git stash push seeds → gate --only L4 → pop → phase.py 正门消费",
-    "pre_bash_guard 对含 phase.py/scripts 字面量命令误报——拆单命令跑",
-    "gate.py -p 多项目参数不支持——分开两次跑；DB 探针中文/≥ 显示乱码=GBK 控制台伪影，hex 回验字节"
+    "锚三形状并存：13544 det 管道行（无数据行）/21144 文本框行/50119 det 管道行带数据行（|10|7.0| 剥空白）——行锚形状逐块实测定，禁沿用",
+    "domain 只 fail-fast 非空不校验注册——新域键纪律上仍须人裁立域（HISTORY 挂账 39/40 先例）；terms 空数组起步零倒挂",
+    "phase lock：R6 式「gate 绿证据」不足以出红——须真红（L4 FAIL 落 red.json），正门=守卫先行天然红→gate --only L4→phase --to green；--force 须人批（ADR-0044）",
+    "统计维不入 spec 键；单码双维撞 8 键 PK 走立码人批；表值 < 由 prose 归一 ≤；OCR 反转禁机补",
+    "种子改动 grep 全部消费面钉值（cement/rebar/age-param/rebarStds 四面）先于 --write——rebarStds 类集合钉复跑才浮出",
+    "抽取端解包：drafts 迭代 r=row dict（r[0]=row dict）——for r,_,_,_ 解包后 r[0] 越界 KeyError: 0",
+    "pre_bash_guard 对含 scripts/gate.py|phase.py 字面量+管道/grep 组合误报——拆单命令",
+    "gate.py -p 多项目不支持分开跑；DB 探针控制台 GBK 乱码=显示伪影，hex 回验字节",
+    "dump 语料照 r4 GraphQL+urllib 直连形——weaviate SDK 面不可用（ModuleNotFoundError）"
   ],
-  "last_gate_passed_at": "2026-11-20T08:50:00+08:00"
+  "last_gate_passed_at": "2026-11-20T09:55:00+08:00"
 }
