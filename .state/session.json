@@ -1,36 +1,32 @@
 {
-  "current_task": "批R5（GB/T 13544-2011 烧结多孔砖和多孔砌块 tech-req 首入库 +5 行）收官",
+  "current_task": "批R6（GB/T 21144-2023 混凝土实心砖 tech-req 首入库 +8 行）收官",
   "done": [
-    "scoping：corpus-gap-list 方向修正（missing=16=缺语料不可导；have=88 才是可导池）→ 四候选 dump → 13544 表4 最干净胜出（5101 表4 抗风化乱、21144/11968 双维更重）",
-    "净导入面 5 行（表4 强度等级平均值行）：IP-0055 × MU30/25/20/15/10 ≥30.0/25.0/20.0/15.0/10.0 MPa，grade 键=MU 值（175 强度等级先例）；fk 标准值行不导（挂账 65①）",
-    "在册码映射新形状：语料 standard_no=GB 13544-2011（第5章历史编号）→ 在册码 GB/T 13544-2011，映射在锚审计钉死",
-    "junction 种子核证首例：IP-0055×P4 在 + IP-0062×P4 缺双面核证（inspection_object_standards）",
-    "抽取端 _work/import-r5-techreq.py：26 锚审计全绿 5 HIGH → dry-run acceptedNew=5 linkSkip=22 → --write 135 行=5 行自洽",
-    "守卫 tests/seeds/brick-13544-techreq.test.ts 6 it 红绿（stash 流程红证据 22:30:18 兼盖旧钉）",
-    "旧钉改钉第五处：rebar-surface 483/-70+13544 滤出；cement-surface 483+countFor 13544=5；age-param-migration 他标 IP-0055/0056 1→6",
-    "seeds 135/135 → seed:db --reset + seed:check clean → DB 探针 total 483 → 双门全绿",
-    "CHANGELOG [Unreleased] 批R5 entry 落档（shared+nextjs）；HISTORY 批R5 段+挂账 65 落档"
+    "scoping：批R5 已 dump 四标在盘复盘免再 dump——11968 表4 双维+OCR 损、5101 表3 同 13544 fk 形无增量、21144 表4 八级值全可读净面最大胜出；junction/绑定前置全在（P4×21144 JUDGMENT+IP-0055 绑 21144+IP-0055×P4）",
+    "净导入面 8 行（表4 强度等级平均值行）：IP-0055 × MU40/35/30/25/20/15/10/7.5 ≥40/35/30/25/20/15/10/7.5 MPa，grade 键=MU 值（175/13544 先例），clause=表4 pg6，sort_order 4254-4324 verified",
+    "锚新形状首例：21144 表4 det 框管道行无数据行——行锚=OCR 文本框行全串剥空白（MU40≥40.0≥35.0 形）；语料 standard_no 与在册码同形（无 13544 式映射）",
+    "junction 种子双面核证：IP-0055×P4 在 + IP-0074×P4 缺（挂账 66⑤ 表3 密度等级不导依据）",
+    "抽取端 _work/import-r6-techreq.py：32 锚审计全绿 8 HIGH → dry-run acceptedNew=8 linkSkip=23 → --write 216 行=8 行自洽",
+    "守卫 tests/seeds/concrete-brick-21144-techreq.test.ts 6 it 红绿（stash 流程红证据 08:37:06 levels=[L4]）",
+    "旧钉三处改钉：cement-surface 491+countFor 21144=8；rebar-surface 491/-78+21144 滤出；age-param-migration 他标 IP-0055/0056 6→14（旧钉第六处浮出）",
+    "seeds 141/141 → seed:db --reset + seed:check clean → DB 探针 total 491（hex 回验 e289a5=≥）→ 双门全绿",
+    "CHANGELOG [Unreleased] 批R6 entry 落档（shared+nextjs）；HISTORY 批R6 段+挂账 66 落档"
   ],
-  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（砖系同族 5101/21144/11968/11945/13545/24492/25779/26538/15762 等可续），走三分法（dump→全参数面盘点→净面导入/立码候选挂账/OCR 阻塞挂账）",
+  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（砖系余面 11968/5101 双维或立码候选依赖人批；或另域选部走三分法 dump→盘点→净面）",
   "open_questions": [
-    "挂账 65 13544 阻塞面八项（fk 立码候选「抗压强度标准值」须人批——IP-0587 族形/175 先例；junction IP-0062×P4 变更人批；余 OCR 面语料修复批）（人批另批）",
-    "挂账 61（人批另批）",
-    "挂账 62 JGJ 107（人批另批）",
-    "挂账 63 28900 calc 面（人批另批）",
-    "挂账 64 18046 阻塞面八项（人批另批）",
-    "挂账 60② 50081（人批另批）",
-    "JC/T 600 迁移欠条（人批另批）"
+    "挂账 66 21144 阻塞面八项（①最小值立码候选同 13544 fk 形②碳化系数字典无码立码候选③软化系数 IP-0578 绑定人批④放射性 IP-0062 绑定人批⑤表3 密度 IP-0074 junction 人批+OCR 丢级名⑥表5 吸水率 IP-0059 绑定人批⑦表6 OCR 乱⑧表7 抗冻码不在链）（人批另批）",
+    "挂账 65 13544 阻塞面八项（人批另批）",
+    "挂账 61/62/63/64、60②、JC/T 600 迁移欠条（人批另批）"
   ],
   "dont": [
-    "corpus-gap-list 方向语义：missing=缺语料不可导；have=语料已有才是可导池（本批修正，别再反向读）",
-    "统计维（平均值/标准值）不入 spec 键——spec 语义=用途/交货形态（定尺交货先例）；单码双维撞 8 键 PK 走立码人批，禁顺手改键",
-    "表行全串锚剥空白含管道符（MU30|30.0|22.0），MU 前缀防撞 prose；OCR「30. 0」空格归一",
-    "禁只导已知面/顺手全导——全参数面盘点人裁后导（GB/T 200-2025 先例）",
-    "表值 < 由邻接 prose 归一 ≤/≥，remark 记依据；OCR 反转不可靠值禁机补",
-    "抽取端源码反斜杠走 chr(92)；HISTORY/seed 写入后 git diff 回验防坏写（本批守卫两连坏写+HISTORY 三处坏写在案）",
+    "JS/Python 字典序 sort：'MU7.5' 排 'MU40' 后（'7'>'4'）——字典序断言面以实序为准（守卫 grade 面断言踩过）",
+    "锚两形状并存：det 框管道行（13544 表4）vs OCR 文本框行（21144 表4）——行锚形状逐块实测定，禁沿用上标形状",
+    "统计维（平均值/最小值/标准值）不入 spec 键；单码双维撞 8 键 PK 走立码人批",
+    "禁只导已知面/顺手全导——全参数面盘点人裁后导",
+    "表值 < 由邻接 prose 归一 ≤/≥；OCR 反转不可靠值禁机补",
+    "抽取端源码反斜杠走 chr(92)；HISTORY/守卫写入后 grep 坏形扫描+git diff 回验（本批守卫两处毒化+路径笔误在案——坏写指纹第三次批内踩坑）",
     "种子改动守卫红证据走 shared 仓 git stash push seeds → gate --only L4 → pop → phase.py 正门消费",
-    "gate.py 用绝对路径 /d/qiand-life/1-projects/xr-code-suite/scripts/gate.py；管道吞退出码以输出定性；pre_bash_guard 对含 gate.py 字面量+重定向的命令误报——拆单命令或 PIPESTATUS",
-    "gate.py -p 多项目参数不支持——分开两次跑"
+    "pre_bash_guard 对含 phase.py/scripts 字面量命令误报——拆单命令跑",
+    "gate.py -p 多项目参数不支持——分开两次跑；DB 探针中文/≥ 显示乱码=GBK 控制台伪影，hex 回验字节"
   ],
-  "last_gate_passed_at": "2026-11-19T22:45:00+08:00"
+  "last_gate_passed_at": "2026-11-20T08:50:00+08:00"
 }

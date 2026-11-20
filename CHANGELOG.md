@@ -4,6 +4,28 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R6——GB/T 21144-2023 混凝土实心砖 tech-req 首入库（③语料产线第 6 部，brick 域产品标第二部）**——
+  inspection_technical_requirements.json +8 行（483→491）：表4 强度等级平均值行×8——
+  IP-0055 抗压强度，grade 键=MU40/MU35/MU30/MU25/MU20/MU15/MU10/MU7.5（GB 175-2023/
+  批R5 13544 强度等级键先例），min=40/35/30/25/20/15/10/7.5 MPa（comparison ≥，
+  automatic，clause=表4 pg6，sort_order 4254-4324 verified；八级值面零 OCR 反转）。
+  同表行单块最小值（35/30/26/21/16/12/8/6）不属本批：单码双维撞 8 键 PK——立码候选
+  （同 13544 fk 形，挂账 66①，13544 fk 立码人批后随批）。抽取端锚纪律新形状：
+  21144 表4 det 框管道行无数据行（仅表头），数据行全在 OCR 文本框行——行锚=文本框行
+  全串剥空白（「MU40≥40.0≥35.0」族），块标题锚+表头「平均值/单块最小值」双证，
+  8 HIGH 0 MED 0 LOW，锚自审计 32 项全绿（_work/import-r6-techreq.py；junction 种子
+  双面核证：IP-0055×P4 在/IP-0074×P4 缺）。定性不导挂账 66 八项：①单块最小值立码候选
+  ②碳化系数 ≥0.85（字典无码）③软化系数 ≥0.85（IP-0578 在册未绑 21144）④放射性
+  IP-0062 未绑（13544 同款）⑤表3 密度等级（IP-0074 绑 21144 但不在 P4 对象链+OCR 丢级名）
+  ⑥表5 吸水率（IP-0059 未绑+B 级 OCR 反转+C 级 < 归一）⑦表6 干燥收缩 OCR 乱
+  ⑧表7 抗冻性（码不在链+F 分档）。语料 standard_no 与在册码同形（无 13544 式映射）。
+  sync 清单：消费仓零同步。验证链：机械门 dry-run acceptedNew=8 零拒收（linkSkip=23
+  三键全在）→ --write 216 行=8 行自洽 → 守卫 concrete-brick-21144-techreq.test.ts 6 it
+  （红证据 08:37:06 levels=[L4] stash 取证正门消费）→ 旧钉随批改钉（总数 483→491：
+  cement/rebar surface + age-param-migration IP-0055 他标计数 6→14 第六处）→
+  seeds 组 141/141 → seed:db --reset + seed:check clean（dedupe dropped 2 已知账 44）→
+  DB 探针 8 行实值全对 total 491（expression/comparison hex 回验 e289a5=≥）→ 双门全绿。
+
 - feat(seeds): **批R5——GB/T 13544-2011 烧结多孔砖和多孔砌块 tech-req 首入库（③语料产线第 5 部，brick 域产品标首部）**——
   inspection_technical_requirements.json +5 行（478→483）：表4 强度等级平均值行×5——
   IP-0055 抗压强度，grade 键=MU30/MU25/MU20/MU15/MU10（GB 175-2023 grade=42.5 强度等级
