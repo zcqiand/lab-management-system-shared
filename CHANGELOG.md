@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+- seeds(param-interfaces): **单值卡收敛批——20 张同构卡删废、links 收敛 default（2026-11-20 人裁）**——
+  inspection_param_interfaces.json 54→34（20 张 rows=1 纯单值卡 [req_select,input] 两列
+  删除；保留面=多行表 cement-setting-time/computed flyash-total·rebar-weight-deviation/
+  专用卡；rebar-weight-deviation·flyash-total computed 列「检测结果 (%)」后缀剥除——
+  单位改由渲染端注入）；inspection_param_interface_links.json 20 条
+  param_interface_code 重指 default（51 条总量不变）。
+  inspection_parameters.json IP-0202 静力受压弹性模量 unit 真数据 bug 随批修（%→MPa，
+  行值面全 MPa）。消费端注入逻辑与守卫随批落 nextjs（sync 清单）。DB 探针四面全过
+  （interfaces 34/links→default 20/单位后缀残留 0/IP-0202 MPa）→ seed:db --reset +
+  seed:check clean。挂账不顺手做：**IP-0548 比表面积限值行错位**——水泥比表面积限值行
+  挂在 IP-0217/0220 名下、IP-0548 名下零限值行（standard-gen 数据面，人批另批）；
+  IP-0202/0638 零限值行由 nextjs p.unit 兜底面覆盖已闭环。
+
 - seeds(param-interfaces): **参数界面文案统一「检验结果」→「检测结果」（2026-11-20 用户指令）**——
   inspection_param_interfaces.json 26 处换面（23 label + 3 description；version 不动，
   全局文案统一非形状换版；文件存量另 1 处「检测结果」本就在）。DB 探针 23 interfaces

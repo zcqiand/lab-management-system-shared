@@ -217,7 +217,7 @@
   },
   {
     "inspection_parameter_code": "IP-0004",
-    "param_interface_code": "cement-chloride",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -225,7 +225,7 @@
   },
   {
     "inspection_parameter_code": "IP-0007",
-    "param_interface_code": "cement-alkali",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -233,7 +233,7 @@
   },
   {
     "inspection_parameter_code": "IP-0008",
-    "param_interface_code": "cement-so3",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -241,7 +241,7 @@
   },
   {
     "inspection_parameter_code": "IP-0218",
-    "param_interface_code": "cement-loss-on-ignition",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -273,7 +273,7 @@
   },
   {
     "inspection_parameter_code": "IP-0202",
-    "param_interface_code": "concrete-elastic-modulus",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -281,7 +281,7 @@
   },
   {
     "inspection_parameter_code": "IP-0227",
-    "param_interface_code": "soil-optimum-moisture",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-17T00:00:00Z",
@@ -289,7 +289,7 @@
   },
   {
     "inspection_parameter_code": "IP-0006",
-    "param_interface_code": "cement-mgo",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -297,7 +297,7 @@
   },
   {
     "inspection_parameter_code": "IP-0548",
-    "param_interface_code": "cement-fineness-surface",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -305,7 +305,7 @@
   },
   {
     "inspection_parameter_code": "IP-0550",
-    "param_interface_code": "cement-initial-set",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -313,7 +313,7 @@
   },
   {
     "inspection_parameter_code": "IP-0551",
-    "param_interface_code": "cement-final-set",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -321,7 +321,7 @@
   },
   {
     "inspection_parameter_code": "IP-0552",
-    "param_interface_code": "cement-soundness-boil",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -329,7 +329,7 @@
   },
   {
     "inspection_parameter_code": "IP-0553",
-    "param_interface_code": "cement-soundness-autoclave",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -337,7 +337,7 @@
   },
   {
     "inspection_parameter_code": "IP-0638",
-    "param_interface_code": "cement-water-requirement",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -345,7 +345,7 @@
   },
   {
     "inspection_parameter_code": "IP-0549",
-    "param_interface_code": "flyash-fineness",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -353,7 +353,7 @@
   },
   {
     "inspection_parameter_code": "IP-0219",
-    "param_interface_code": "flyash-water-requirement-ratio",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -361,7 +361,7 @@
   },
   {
     "inspection_parameter_code": "IP-0221",
-    "param_interface_code": "flyash-activity-index",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -369,7 +369,7 @@
   },
   {
     "inspection_parameter_code": "IP-0565",
-    "param_interface_code": "flyash-moisture-content",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -385,7 +385,7 @@
   },
   {
     "inspection_parameter_code": "IP-0403",
-    "param_interface_code": "flyash-free-calcium-oxide",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -393,7 +393,7 @@
   },
   {
     "inspection_parameter_code": "IP-0074",
-    "param_interface_code": "flyash-density",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
@@ -401,7 +401,7 @@
   },
   {
     "inspection_parameter_code": "IP-0637",
-    "param_interface_code": "flyash-calcium-sulfite-hemihydrate",
+    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",

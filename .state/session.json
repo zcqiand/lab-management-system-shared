@@ -1,33 +1,23 @@
 {
-  "current_task": "文案批（参数界面「检验结果」→「检测结果」种子 26 处换面）收官；批R7 已提交（shared 628c0e4）",
+  "current_task": "单值卡收敛批（interfaces 54→34 + links 收敛 default + IP-0202 unit 修）收官提交",
   "done": [
-    "文案批：inspection_param_interfaces.json 26 处换面（23 label+3 description；version 不动——全局文案统一非形状换版）→ DB 探针 23 interfaces 零残留 → 双门全绿；nextjs 守卫 10 处随批改钉（红证据 10:05:27）",
-    "批R7 立域（人裁）：concrete 域键随批落地（label 混凝土，terms 空数组零倒挂）——挂账 39（55008 氯离子面）随之解锁",
-    "选部：三候选并盘（50119/55008/8076）——50119 表7.3.1 四行净面最大+18/20 在链胜出；dump 脚本照 r4 GraphQL+urllib 形（weaviate SDK ImportError 弃用）",
-    "净导入面 4 行（表7.3.1 掺引气剂含气量限值）：grade 键=粗骨料最大公称粒径分档 10mm/15mm/20mm/25mm，max=7.0/6.0/5.5/5.0%，comparison ≤（上限 ≤ 形 min_value=None），clause=表7.3.1 pg27，sort_order 4334-4364 verified（DB 探针坐实）",
-    "锚第三形状首例：det 框管道行带数据行（|10|7.0| 剥空白形）——锚形状三度实证逐块实测禁沿用；限值列表头 OCR 错字「含汽量」锚避开",
-    "抽取端 _work/import-r7-techreq.py：36 锚审计全绿 4 HIGH（双对象推导 [P5,P6] 断言取 P5）→ dry-run acceptedNew=4 linkSkip=24 → --write 108 行=4 行自洽",
-    "R6 遗留 red 区正门清偿：调序守卫先行（种子无 50119 行天然真红）→ gate --only L4 落 red.json（09:25:25 levels=[L4]）→ phase.py --to green；非 --force",
-    "旧钉四处改钉：cement surface 491→495+countFor 50119=4；rebar surface 495/-82+50119 滤出+零漂移滤出+rebarStds 集合（第四处复跑才浮出——grep 全钉面纪律再实证）",
-    "seeds 147/147 → seed:db --reset + seed:check clean → DB 探针 4 行全对 total 495（hex e289a4=≤）→ 双门全绿",
-    "CHANGELOG [Unreleased] 批R7 entry 落档（shared+nextjs）；HISTORY 批R7 段+挂账 67 落档"
+    "inspection_param_interfaces.json 删 20 张 rows=1 纯单值卡（54→34）+ 剥 2 处「检测结果 (%)」computed 后缀（rebar-weight-deviation/flyash-total）；保留面=多行表/computed/专用卡",
+    "inspection_param_interface_links.json 20 条 param_interface_code 重指 default（51 条总量不变）",
+    "inspection_parameters.json IP-0202 静力受压弹性模量 unit 真数据 bug 修（%→MPa，单点 Edit）",
+    "json 往返安全写验证（indent=2 字节级一致）后管线化删改；seed:db --reset + seed:check clean → DB 探针四面全过 → 双门全绿",
+    "CHANGELOG 收敛批 entry（含 IP-0548 错位挂账注记）落档"
   ],
-  "next": "③语料产线队列下一部：88 部可导池对照 HISTORY 消费史选部（50119 余面挂账 67 六项、55008 氯离子面随立域解锁但域键归属选型先核、8076 表1 语料重扫候选；或另域选部走三分法 dump→盘点→净面）",
+  "next": "③语料产线队列下一部选部：88 部可导池对照 HISTORY 消费史（50119 余面挂账 67、55008 氯离子面域键归属先核、8076 表1 语料重扫候选；或另域三分法）",
   "open_questions": [
-    "挂账 67 50119 阻塞面六项（①40mm 行 OCR 存疑原 PDF 复核禁机补②表13.3.1 限制膨胀率立码候选③表8.4.2 硫酸钠语义漂移+双条件维④表13.3.6 灌浆砂浆立码候选⑤表10.3.1/10.3.3 区间值+OCR 损⑥表13.5.3/6.4.9 非检验参数定性关闭）（人批另批）",
-    "挂账 66 21144 八项、65 13544 八项、61/62/63/64、60②、JC/T 600 迁移欠条（人批另批）",
-    "挂账 39 55008：域键归属选型（concrete or rebar？）动前人裁"
+    "挂账 68 IP-0548 比表面积限值行错位在 IP-0217/0220 名下（本批盘点发现，standard-gen 数据面人批另批）",
+    "挂账 67 50119 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条（人批另批）",
+    "挂账 39 55008 域键归属选型（concrete or rebar）动前人裁"
   ],
   "dont": [
-    "锚三形状并存：13544 det 管道行（无数据行）/21144 文本框行/50119 det 管道行带数据行（|10|7.0| 剥空白）——行锚形状逐块实测定，禁沿用",
-    "domain 只 fail-fast 非空不校验注册——新域键纪律上仍须人裁立域（HISTORY 挂账 39/40 先例）；terms 空数组起步零倒挂",
-    "phase lock：R6 式「gate 绿证据」不足以出红——须真红（L4 FAIL 落 red.json），正门=守卫先行天然红→gate --only L4→phase --to green；--force 须人批（ADR-0044）",
-    "统计维不入 spec 键；单码双维撞 8 键 PK 走立码人批；表值 < 由 prose 归一 ≤；OCR 反转禁机补",
-    "种子改动 grep 全部消费面钉值（cement/rebar/age-param/rebarStds 四面）先于 --write——rebarStds 类集合钉复跑才浮出",
-    "抽取端解包：drafts 迭代 r=row dict（r[0]=row dict）——for r,_,_,_ 解包后 r[0] 越界 KeyError: 0",
-    "pre_bash_guard 对含 scripts/gate.py|phase.py 字面量+管道/grep 组合误报——拆单命令",
-    "gate.py -p 多项目不支持分开跑；DB 探针控制台 GBK 乱码=显示伪影，hex 回验字节",
-    "dump 语料照 r4 GraphQL+urllib 直连形——weaviate SDK 面不可用（ModuleNotFoundError）"
+    "三种子只 interfaces/links 可 json 往返管线写；inspection_parameters.json 单点 Edit",
+    "EOL 漂移：brands/grades/models 曾被 seed:db 管线触成 CRLF（diff 零行）——git checkout -- 还原，提交前 git status 核",
+    "phase lock 出红须真红（测试门 FAIL 落 red.json）；--force 须人批",
+    "gate.py -p 多项目不支持分开跑"
   ],
-  "last_gate_passed_at": "2026-11-20T09:55:00+08:00"
+  "last_gate_passed_at": "2026-11-20T10:55:00+08:00"
 }

@@ -2619,7 +2619,7 @@
     "canonical_name": "静力受压弹性模量",
     "method_text": "见对应标准条款",
     "aliases": [],
-    "unit": "%",
+    "unit": "MPa",
     "source_type": "official",
     "sort_order": 202,
     "created_at": "2026-01-01T00:00:00Z",
