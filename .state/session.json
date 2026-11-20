@@ -1,23 +1,19 @@
 {
-  "current_task": "单值卡收敛批（interfaces 54→34 + links 收敛 default + IP-0202 unit 修）收官提交",
+  "current_task": "批R8（GB/T 11945-2019 tech-req +5 行 495→500）收官提交",
   "done": [
-    "inspection_param_interfaces.json 删 20 张 rows=1 纯单值卡（54→34）+ 剥 2 处「检测结果 (%)」computed 后缀（rebar-weight-deviation/flyash-total）；保留面=多行表/computed/专用卡",
-    "inspection_param_interface_links.json 20 条 param_interface_code 重指 default（51 条总量不变）",
-    "inspection_parameters.json IP-0202 静力受压弹性模量 unit 真数据 bug 修（%→MPa，单点 Edit）",
-    "json 往返安全写验证（indent=2 字节级一致）后管线化删改；seed:db --reset + seed:check clean → DB 探针四面全过 → 双门全绿",
-    "CHANGELOG 收敛批 entry（含 IP-0548 错位挂账注记）落档"
+    "inspection_technical_requirements.json +5 行（495→500）：表3 强度等级平均值行×5——IP-0055，grade 键=MU30/25/20/15/10，min=30/25/20/15/10 MPa，clause=表3 pg5，五行同源 source_hash",
+    "绑定面核证链收口：JUDGMENT 对象=OBJ-SP01-P4；IP-0055 唯一绑；吸水率/软化系数/碳化系数/干燥收缩率/放射性五面全挂账 69——净导入面=表3 五级行 only",
+    "验证链全绿：dry-run acceptedNew=5 → --write → seeds 153/153 → 全量 1076|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿",
+    "CHANGELOG 批R8 entry 落档；HISTORY 挂账 69/70 落档"
   ],
-  "next": "③语料产线队列下一部选部：88 部可导池对照 HISTORY 消费史（50119 余面挂账 67、55008 氯离子面域键归属先核、8076 表1 语料重扫候选；或另域三分法）",
+  "next": "③语料产线队列下一部：25779（次批候选）；或用户另有指令",
   "open_questions": [
-    "挂账 68 IP-0548 比表面积限值行错位在 IP-0217/0220 名下（本批盘点发现，standard-gen 数据面人批另批）",
-    "挂账 67 50119 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条（人批另批）",
-    "挂账 39 55008 域键归属选型（concrete or rebar）动前人裁"
+    "挂账 69 11945 阻塞面八项、70 24492 语料重扫候选、68 IP-0548 错位、67 六项、66/65/64/63/62/61、60②、JC/T 600 迁移欠条——均人批另批"
   ],
   "dont": [
-    "三种子只 interfaces/links 可 json 往返管线写；inspection_parameters.json 单点 Edit",
+    "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件",
     "EOL 漂移：brands/grades/models 曾被 seed:db 管线触成 CRLF（diff 零行）——git checkout -- 还原，提交前 git status 核",
-    "phase lock 出红须真红（测试门 FAIL 落 red.json）；--force 须人批",
-    "gate.py -p 多项目不支持分开跑"
+    "phase lock 出红须真红（测试门 FAIL 落 red.json）；--force 须人批"
   ],
-  "last_gate_passed_at": "2026-11-20T10:55:00+08:00"
+  "last_gate_passed_at": "2026-11-20T11:30:00+08:00"
 }

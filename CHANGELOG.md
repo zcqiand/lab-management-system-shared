@@ -4,6 +4,22 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R8——GB/T 11945-2019 蒸压灰砂实心砖和实心砌块 tech-req 首入库（③语料产线第 8 部，brick 域产品标第三部）**——
+  inspection_technical_requirements.json +5 行（495→500）：表3 强度等级平均值行×5——
+  IP-0055 抗压强度，grade 键=MU30/25/20/15/10（GB 175-2023/R5/R6 MU 先例），min=30/25/
+  20/15/10 MPa（automatic，clause=表3 pg5，五行同源 source_hash；统计维（平均值）不入
+  spec 键，11945 用词「单个最小值」≠21144「单块最小值」异形已核证入审计）。抽锚纪律
+  新形状：11945 表3 det 框管道行无数据行（仅表头「| 抗压强度 |」），数据行全在 OCR
+  文本框行——行锚=文本框行全串剥空白（MU30≥30.0≥25.5 形）块内/全语料双唯一命中，
+  块标题锚+表头双证；candidates 5 HIGH 0 MED 0 LOW（_work/import-r8-techreq.py）。
+  binding 面核证链：JUDGMENT 对象=OBJ-SP01-P4（P4 砖砌块瓦墙板链）；IP-0055 唯一绑；
+  IP-0059 吸水率 junction 在未绑/IP-0578 软化系数在册未绑/碳化系数·干燥收缩率字典无码
+  →净导入面=表3 五级行 only，其余八项挂账 69。语料 standard_no 与在册码同形（无历史
+  编号映射）。验证链：dry-run acceptedNew=5 rejected=0 linkSkip=25 → --write → seeds
+  153/153 → 全量 1076 passed|1 skipped → seed:db --reset+seed:check clean → DB 探针
+  （11945×5 五级 ≥ 面/表3/pg5/total 500）→ 双门全绿。sync 清单：nextjs（守卫+旧钉
+  四处改钉+CHANGELOG）。
+
 - seeds(param-interfaces): **单值卡收敛批——20 张同构卡删废、links 收敛 default（2026-11-20 人裁）**——
   inspection_param_interfaces.json 54→34（20 张 rows=1 纯单值卡 [req_select,input] 两列
   删除；保留面=多行表 cement-setting-time/computed flyash-total·rebar-weight-deviation/
