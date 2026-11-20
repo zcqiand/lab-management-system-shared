@@ -4,6 +4,29 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R12——GB/T 25181-2019 预拌砂浆 tech-req 首入库（③语料产线第 12 部，mortar 砂浆域续作）**——
+  inspection_technical_requirements.json +10 行（512→522）：表6 抗压强度 ×7——
+  IP-0055 grade=M5/M7.5/M10/M15/M20/M25/M30（grade 字典 P8 七档原形，
+  ≥5.0/7.5/10.0/15.0/20.0/25.0/30.0 MPa）+ 表7 抗渗压力 ×3——IP-0569
+  grade=P6/P8/P10（≥0.6/0.8/1.0 MPa，P 级 grade 键照 GB/T 50082-2009
+  IP-0190 grade=P6 先例），automatic，clause=表6/表7 pg10，双表双源
+  source_hash；28d 固定龄期记 remark（IP 码=通用码，龄期进参数名=立码候选
+  不属本批）。**人批补绑定（2026-11-20）**：IP-0569 junction（OBJ-SP01-P8）+
+  std-bind（GB/T 25181-2019）两行同批落库——表7 原绑定双缺，绑定变更人批
+  过闸（挂账面清偿非新增）。置信面 HIGH×10（表6/表7 pipe 层头行+值行直锚
+  齐全，R11 MED 表头缺位反形）。选部（两候选并盘 corpus-r12-scope.txt 486
+  块）：25181-2019 胜出；GB/T 15762-2020 显式排除（结构板承载面——承载力
+  检验系数/破坏标志，IP 链无对应参数，配对损挂账 70 同族）。定性不导（挂账
+  74）：表5/9/10/11/12 OCR 损形（值交错/错位/粘连——表9「≥12≥6」等，待
+  原版 PDF 重摄解锁）、表8/13/14/15 ± 区间面（comparison 枚举无区间形）、
+  表1-4 分类代号表、表16/17 出厂检验项目清单；prose 区零游离限值面
+  （Step 1.7 盘点）。candidates 10 HIGH 0 MED 0 LOW
+  （_work/import-r12-techreq.py；脚本 remark 尾逗号→单元素元组→JSON 数组化
+  事故一回，回滚未提交行重抽修复——管线 skip 面 append-only 下先 checkout
+  回滚再重写）。验证链：dry-run acceptedNew=10 → --write（回滚重写一次）→
+  种子护栏 177/177 → 全量 1101|1sk → seed:db --reset+seed:check clean →
+  DB 探针（10 行值面+双绑定）→ 双门全绿。sync 清单：nextjs（守卫+旧钉改钉
+  ×6 处+CHANGELOG）。
 - refactor(schema): **复验界面收敛批（共随 nextjs 批）——`-retest` 变体卡退役注释面
   同步（2026-11-20 人裁「界面列表冗余，收掉」）**——retest_mode=double 的数据录入
   语义改为解析器 config 深拷贝翻倍（table rows/series count ×2），4 张 `-retest`

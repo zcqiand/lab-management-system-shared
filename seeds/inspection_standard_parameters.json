@@ -3226,5 +3226,11 @@
     "inspection_parameter_code": "IP-0638",
     "created_at": "2026-11-19T00:00:00Z",
     "updated_at": "2026-11-19T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 25181-2019",
+    "inspection_parameter_code": "IP-0569",
+    "created_at": "2026-11-20T00:00:00Z",
+    "updated_at": "2026-11-20T00:00:00Z"
   }
 ]

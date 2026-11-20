@@ -1,17 +1,18 @@
 {
-  "current_task": "复验界面收敛批（注释面同步：schema.ts+tsp 去 -retest 旧措辞）收官提交",
+  "current_task": "批R12（GB/T 25181-2019 预拌砂浆 tech-req 首入库）收官提交",
   "done": [
-    "共随 nextjs 复验收敛批：inspection_param_interfaces.json 删 4 张 -retest 卡（34→30 行）；retest_mode=double 语义改解析器 config 深拷贝翻倍（rows/count ×2）",
-    "schema.ts retest_mode 列注释+tsp/models/sample-receipt.tsp 注释同步（注释级，无 API 形状变更，contract-test 不涉）",
-    "验证链：seed:db --reset+seed:check clean → DB 探针（-retest ×0/total 30）→ 双门全绿"
+    "tech-req +10 行（512→522）：表6 IP-0055 grade=M5~M30 七档 ≥5.0~30.0 MPa + 表7 IP-0569 grade=P6/P8/P10 ≥0.6/0.8/1.0 MPa；automatic，clause=表6/表7 pg10，HIGH×10（pipe 层头行+值行直锚）",
+    "人批补绑定：IP-0569 junction（OBJ-SP01-P8）+ std-bind（GB/T 25181-2019）两行种子落库（表7 原绑定双缺，绑定变更人批过闸清偿）",
+    "验证链全绿：dry-run acceptedNew=10 → --write（remark 元组化事故回滚重写一次）→ 种子护栏 177/177 → 全量 1101|1sk → seed:db --reset+seed:check clean → DB 探针 → 双门全绿"
   ],
   "next": "③语料产线下一部（另域三分法再选部）；或用户另有指令",
   "open_questions": [
-    "挂账存量（语料线）：73 七项、72 七项、71 25779 十项、70 24492、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
+    "挂账存量（语料线）：74（25181 损形/区间/非限值面五项）、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
   ],
   "dont": [
-    "tech-req 种子写面只走管线 --write（append-only）；禁手改种文件（界面种子收敛删卡走收敛批先例，与 tech-req 管线面不同源）",
-    "EOL 漂移：提交前 git status 核 brands/grades/models"
+    "tech-req 种子写面只走管线 --write（append-only）；批内未提交行须重写时=git checkout 回滚→修抽取端→重跑 --write（不算手改）",
+    "python dict 字面量赋值尾逗号 (expr,) = 单元素元组 → json 数组化——remark 类长串拼装后 repr 回验类型",
+    "python -I GBK 控制台须脚本内 reconfigure；EOL：autocrlf=true 检出态 CRLF 非漂移，提交前 git status 核对即可"
   ],
-  "last_gate_passed_at": "2026-11-20T16:38:00+08:00"
+  "last_gate_passed_at": "2026-11-20T20:05:00+08:00"
 }
