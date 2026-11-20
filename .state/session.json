@@ -17,5 +17,5 @@
     "tech-req 行 judgment_standard_code 必须用 standards.code 在册原形（本批「GB18243-2008」无空格）——映射方向逐标实测禁沿用上批（R9 反形：语料空格→在册无空格）",
     "EOL 漂移：提交前 git status 核 brands/grades/models CRLF"
   ],
-  "last_gate_passed_at": "2026-11-20T12:45:00+08:00"
+  "last_gate_passed_at": "2026-11-20T14:32:50+08:00"
 }
