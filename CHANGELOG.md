@@ -33,6 +33,10 @@
   旧钉改钉（cement/rebar dictionary 646→675、bindings 552→581、CE8 翻走 4 行
   型面、calc-method-formula EXPECTED 扩十五参数）+seed:db+seed:check clean+
   DB 探针（29/10+13/10/10/52/式(66) 串逐字）。
+  **收官修正（用户上屏验收发现，同批补）**：inspection_param_interface_links.json
+  摘 5 行 default 旧 link（61→56）——IP-0004/0007/0008/0218/0403 五参数旧默认卡
+  link 未随批摘除，消费端 pool[0] 先落库先赢致新卡被遮蔽（IP-0568 挂真卡摘
+  default 先例同形）。
 
 - feat(seeds): **批R14——GB/T 18242-2025 弹性体/塑性体改性沥青防水卷材 tech-req 全面导首入库（③语料产线第 14 部，wp 防水材料域产品标首例）**——
   inspection_technical_requirements.json +38 行（543→581）。**人批三答

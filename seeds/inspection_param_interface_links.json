@@ -216,38 +216,6 @@
     "updated_at": "2026-11-17T00:00:00Z"
   },
   {
-    "inspection_parameter_code": "IP-0004",
-    "param_interface_code": "default",
-    "report_name_code": null,
-    "inspection_standard_code": null,
-    "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
-  },
-  {
-    "inspection_parameter_code": "IP-0007",
-    "param_interface_code": "default",
-    "report_name_code": null,
-    "inspection_standard_code": null,
-    "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
-  },
-  {
-    "inspection_parameter_code": "IP-0008",
-    "param_interface_code": "default",
-    "report_name_code": null,
-    "inspection_standard_code": null,
-    "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
-  },
-  {
-    "inspection_parameter_code": "IP-0218",
-    "param_interface_code": "default",
-    "report_name_code": null,
-    "inspection_standard_code": null,
-    "created_at": "2026-11-17T00:00:00Z",
-    "updated_at": "2026-11-17T00:00:00Z"
-  },
-  {
     "inspection_parameter_code": "IP-0151",
     "param_interface_code": "rebar-mech-connection-agt",
     "report_name_code": null,
@@ -378,14 +346,6 @@
   {
     "inspection_parameter_code": "IP-0568",
     "param_interface_code": "flyash-total-silica-alumina-iron",
-    "report_name_code": null,
-    "inspection_standard_code": null,
-    "created_at": "2026-11-19T00:00:00Z",
-    "updated_at": "2026-11-19T00:00:00Z"
-  },
-  {
-    "inspection_parameter_code": "IP-0403",
-    "param_interface_code": "default",
     "report_name_code": null,
     "inspection_standard_code": null,
     "created_at": "2026-11-19T00:00:00Z",
