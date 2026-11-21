@@ -1,20 +1,21 @@
 {
-  "current_task": "批R14（GB/T 18242-2025 防水卷材 tech-req 全面导 38 行 + GB18242-2008 退役）种子收官提交",
+  "current_task": "批F2（GB/T 176-2025 化学面 formula 翻型修正批）收官——账 75 收口，双门全绿三仓提交",
   "done": [
-    "tech-req +38 行（543→581，数值 22+文字 16）：表1 厚度×2+可溶物×2 + 表2/表3 拉力×4+延伸率×4 + 表2续/3续 热老化六面（吸水率/渗油性/粒料粘附/保持率/质量损失/尺寸变化率）+ 表4 剥离/涂盖层/闪点/燃烧/搭接缝 + 6.4 总铅 + eq 文字面 16 行（不透水×2+耐热×4+低柔×4+热老化低柔×4+燃烧+搭接缝）",
-    "人批（2026-11-21）三答+中断修正：单标批/全面导/eq 文本行入库；只导 2025，GB18242-2008 退役（status→superseded；名下 tech-req 0 行；9 条 std-bind 历史面不动保 FK）",
-    "立码+绑定面：params +8（IP-0640~0647 sort 640~647）+ junction +15（P10 12→27）+ std-bind +12（2025 8→20）",
-    "验证链全绿：dry-run 38/0/0 → --write → 种子护栏 196/196 → seed:db --reset+seed:check clean → DB 探针 → 双门全绿"
+    "六种子写面：calc 10 行 manual→formula in-place + parameters +29（IP-0648~0676，646→675）+ junction/std-bind 各 +29 + interfaces +10 卡 v1（cement-chem-*）+ links +10（40/61）",
+    "faces 幂等脚本（manifest JSON CJK 独立 + 纯 ASCII python 逻辑）+ 写后自验全过",
+    "seed:db upsert 翻型面 in-place 落库 + seed:check clean + DB 探针全对（29/10+13/10/10/52/式(66) 串逐字）",
+    "双门全绿（shared L0-L5 exit 0 / nextjs L0-L5 exit 0）",
+    "CHANGELOG 批F2 段落档"
   ],
-  "next": "③语料产线下一部（另域三分法再选部）；或挂账 75 公式批盘点（须人批立项）",
+  "next": "无本仓待办。批R15（GB 13788-2024 冷轧带肋钢筋）回位续作——选部已人批，走 runbook 全程",
   "open_questions": [
-    "挂账 76（本批立）：18242-2025 定性不导面五项——均人批另批",
-    "挂账存量（语料线）：75、74、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
+    "挂账存量：76、77（IP-0631 CO₂ 式(48) 翻型，F2 期新挂）、78（烧失量式(30) 校正面，F2 期新挂）、74、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
   ],
   "dont": [
-    "tech-req 种子写面只走管线 --write（append-only）；批内未提交行须重写时=git checkout 回滚→修抽取端→重跑 --write",
-    "stash seeds→gate L4 真红落 red.json→pop→phase.py --to green 取证序；seed:db --reset 破坏性仅 dev 库",
-    "python -I -X utf8 才能过 GBK console；conditions 非 PK 键维禁条件注记进 spec"
+    "曲线族 12 行 + IP-0631 维持 manual 是人裁边界（护栏测试⑥钉住）——禁顺手翻",
+    "formula 卡 computed 列 field 必名 total（formulaEval data.total 硬编码）",
+    "种子 JSON 2 空格缩进 ensure_ascii=False 尾换行；tech-req 写面只走管线 --write（append-only）",
+    "gate -p 单仓参数——两仓须分两次跑（一次传两仓 exit 2 usage error）"
   ],
-  "last_gate_passed_at": "2026-11-21T14:10:00+08:00"
+  "last_gate_passed_at": "2026-11-21T21:20:00+08:00"
 }

@@ -4,9 +4,29 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批F3——formula 卡采集字段化 + 中间量撤码（2026-11-21 用户裁定，F2 分叉 2-A 当日翻案）**——
+  检测参数回归「标准规定的报告/评定量」：公式中间量不再以检测参数身份落字典，
+  采集字段进 formula 卡本体。**种子写面五文件**：inspection_parameters.json −29
+  （撤 IP-0648~0676，字典 675→646）；inspection_object_parameters.json −29
+  （junction 950→921）；inspection_standard_parameters.json −29（176 档 52→23，
+  std-bind 581→552）；inspection_calculation_methods.json 8 串 in-place 改字段键形
+  （IP-0004/0008/0218/0385/0403/0623/0624/0628——中间量引用 IP-06xx→卡字段键
+  V44/m50/T_FCaO 等，IP-0007/0636 引真实参数不动；回归锚数值逐位不变）；
+  inspection_param_interfaces.json 10 卡 v1→v2，其中 8 卡在 computed 列前插采集
+  输入列（field=label 语义取自计划映射表，label 带单位后缀「空白滴定消耗体积 (mL)」形，
+  列序=formulaIdents keep-first 序）。nextjs 同批：formula 求值源双源合并
+  （ident ∈ 卡输入列 field → 卡内 dirty 值优先 → 跨参数记录兜底，都缺 undefined
+  禁兜 0）。验证：seeds 守卫 28 文件 205/205 绿；DB 探针 9/9（lab_dev/lab_test
+  双库 reset 重灌）；双门 exit 0。⇒ nextjs 同批段。
+  **同批用户验收**：氯离子卡三采集列上屏通过（2026-11-22）；追加人裁——formula 卡
+  灰底盒去重（顶层 computed 已是表内 computed 列时不再重复显示，nextjs e28cf11，
+  机械卡均值盒不受影响）；氯离子合成灰底行 1.77 vs 表格列 1.8 系两路显示取整口径差
+  （格 toFixed(decimals??1) 缺省 1 位 vs 盒 round2），decimals 配置挂账候选。
+
 - feat(seeds): **批F2——GB/T 176-2025 化学面 formula 翻型修正批（账 75 收口，2026-11-21 人裁三答）**——
   挂账 75 三答为界：分叉1-A 只公式化 DSL 10 行（曲线族 12 行维持 manual 禁顺手翻）/
-  分叉2-A 码面路（采集值+配置面立 IP 码 29 个，junction/std-bind 随批）/分叉3-a
+  分叉2-A 码面路（采集值+配置面立 IP 码 29 个，junction/std-bind 随批）**【该分叉
+  2026-11-21 同日翻案：F3 撤码回 F2 前值，见上批F3 段】**/分叉3-a
   烧失量只翻式(27) 基础面，式(30) 校正面挂账另批。**种子写面六文件**：
   inspection_calculation_methods.json 10 行 manual→formula in-place（只动
   algorithm_type/formula/remark 追加批注/updated_at——IP-0004 氯离子式(66)/
