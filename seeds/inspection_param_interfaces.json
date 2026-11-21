@@ -1531,5 +1531,460 @@
     },
     "created_at": "2026-11-19T00:00:00Z",
     "updated_at": "2026-11-19T09:20:00.000Z"
+  },
+  {
+    "code": "cement-chem-chloride",
+    "name": "氯离子含量",
+    "description": "氯离子含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(66) formula 翻型——检测结果列 computed formula 合成只读自动算，采集/配置输入 IP-0648/0649/0650 各立码走通用采集卡，落卡=字典行+接样勾选）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "氯离子测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0648",
+            "IP-0649",
+            "IP-0650"
+          ],
+          "label": "氯离子合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-sulfate",
+    "name": "三氧化硫含量",
+    "description": "三氧化硫含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(31) 基准法硫酸钡称量法 formula 翻型，合成格只读自动算，输入 IP-0651/0652/0653）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "三氧化硫测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0651",
+            "IP-0652",
+            "IP-0653"
+          ],
+          "label": "三氧化硫合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-loi",
+    "name": "烧失量",
+    "description": "烧失量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(27) 灼烧差减法基础面 formula 翻型，合成格只读自动算，输入 IP-0654/0655；式(30) 校正面挂账另批）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "烧失量测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0654",
+            "IP-0655"
+          ],
+          "label": "烧失量合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-insoluble",
+    "name": "不溶物",
+    "description": "不溶物计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(32) 基准法 formula 翻型，合成格只读自动算，输入 IP-0656/0657/0658）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "不溶物测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0656",
+            "IP-0657",
+            "IP-0658"
+          ],
+          "label": "不溶物合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-fcao",
+    "name": "游离氧化钙",
+    "description": "游离氧化钙计算卡 v1（批F2 2026-11-21：GB/T 176-2025 主式=式(76) 乙二醇法 formula 翻型（四代用法公式同构采集异构，formula 面承载主式），合成格只读自动算，输入 IP-0659/0660/0661）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "游离氧化钙测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0659",
+            "IP-0660",
+            "IP-0661"
+          ],
+          "label": "游离钙合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-alumina",
+    "name": "三氧化二铝含量",
+    "description": "三氧化二铝含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(37) 基准法 formula 翻型——铁铝合量扣铁 0.639×IP-0622 跨 IP 引用，合成格只读自动算，输入 IP-0662~0666/0670）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "三氧化二铝测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0662",
+            "IP-0663",
+            "IP-0664",
+            "IP-0665",
+            "IP-0666",
+            "IP-0670",
+            "IP-0622"
+          ],
+          "label": "三氧化二铝合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-lime",
+    "name": "氧化钙含量",
+    "description": "氧化钙含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(38) 基准法 EDTA 滴定 formula 翻型，合成格只读自动算，输入 IP-0667/0668/0669/0670）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "氧化钙测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0667",
+            "IP-0668",
+            "IP-0669",
+            "IP-0670"
+          ],
+          "label": "氧化钙合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-sulfide",
+    "name": "硫化物硫含量",
+    "description": "硫化物硫含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(45) 碘量法 formula 翻型——K2 体积比配置码入式，合成格只读自动算，输入 IP-0671~0676）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "硫化物测定",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0671",
+            "IP-0676",
+            "IP-0672",
+            "IP-0673",
+            "IP-0674",
+            "IP-0675"
+          ],
+          "label": "硫化物合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-alkali",
+    "name": "碱含量",
+    "description": "碱含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(44) w(R2O)=w(Na2O)+0.658×w(K2O) formula 翻型——跨 IP 算术引用 IP-0627/0626 零新采集值，合成格只读自动算）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "碱含量合成",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0627",
+            "IP-0626"
+          ],
+          "label": "碱含量合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "code": "cement-chem-water-alkali",
+    "name": "水溶性碱含量",
+    "description": "水溶性碱含量计算卡 v1（批F2 2026-11-21：GB/T 176-2025 式(53) formula 翻型——跨 IP 算术引用 IP-0635/0634 零新采集值，合成格只读自动算）",
+    "version": 1,
+    "config": {
+      "fields": [
+        {
+          "field": "totalTable",
+          "type": "table",
+          "label": "水溶性碱合成",
+          "rows": 1,
+          "columns": [
+            {
+              "field": "req",
+              "label": "技术要求",
+              "mode": "req_select"
+            },
+            {
+              "field": "total",
+              "label": "检测结果",
+              "mode": "computed",
+              "algorithm": "formula"
+            }
+          ],
+          "showLabel": false
+        }
+      ],
+      "computed": [
+        {
+          "field": "total",
+          "algorithm": "formula",
+          "from": [
+            "IP-0635",
+            "IP-0634"
+          ],
+          "label": "水溶性碱合成 (%)"
+        }
+      ],
+      "params": {}
+    },
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
   }
 ]

@@ -4,6 +4,36 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批F2——GB/T 176-2025 化学面 formula 翻型修正批（账 75 收口，2026-11-21 人裁三答）**——
+  挂账 75 三答为界：分叉1-A 只公式化 DSL 10 行（曲线族 12 行维持 manual 禁顺手翻）/
+  分叉2-A 码面路（采集值+配置面立 IP 码 29 个，junction/std-bind 随批）/分叉3-a
+  烧失量只翻式(27) 基础面，式(30) 校正面挂账另批。**种子写面六文件**：
+  inspection_calculation_methods.json 10 行 manual→formula in-place（只动
+  algorithm_type/formula/remark 追加批注/updated_at——IP-0004 氯离子式(66)/
+  IP-0008 三氧化硫式(31)/IP-0218 烧失量式(27)/IP-0385 不溶物式(32)/IP-0403
+  游离钙主式=式(76) 乙二醇法（四代用法公式同构采集异构，formula 面承载主式）/
+  IP-0623 铝式(37) 扣铁 0.639×IP-0622 跨 IP/IP-0624 钙式(38)/IP-0628 硫式(45)
+  K2 体积比配置码入式/IP-0007 碱式(44) w(R2O)=w(Na2O)+0.658×w(K2O)（方向以
+  remark 为准）/IP-0636 水溶碱式(53) 同形——跨 IP 算术两行零新采集值）；
+  inspection_parameters.json +29（IP-0648~0676：25 采集+4 配置 0659/0662/0667/
+  0676，sort_order=码号，字典 646→675）；inspection_object_parameters.json +29
+  （P1 junction RESTRICTED）；inspection_standard_parameters.json +29（176 档
+  23→52）；inspection_param_interfaces.json +10 卡模板 v1（cement-chem-{chloride,
+  sulfate,loi,insoluble,fcao,alumina,lime,sulfide,alkali,water-alkali}，0568 v2
+  形：computed formula 列 field="total" 只读自动算——formulaEval data.total
+  硬编码故列名必 total）；inspection_param_interface_links.json +10（30→40 行 /
+  51→61 行）。**通用采集卡不消费 formulaInput 的发现**：formula 自动求值只活
+  在 SchemaForm（table 字段+computed formula 列），故 10 formula 参数须配卡模板
+  而 29 采集值 IP 本体走通用卡零模板（落卡=字典行+接样勾选，1596 形同款）。
+  **人裁边界钉（护栏⑥）**：曲线族 12 行+IP-0631 维持 manual——0631 CO₂ 式(48)
+  纯称量闭式 DSL-able 但为 F1 三分清单遗漏的第 23 行，不在人批十行内，挂账另批
+  禁顺手翻。**回放清单**：nextjs 守卫 tests/seeds/cement-176-formula-batch.test.ts
+  8 it（29 IP 钉值/配对面/calc 串钉+引擎门/evaluateFormula 数值回归锚十 case/
+  卡模板 v1+links/全域 IP 形 idents 防悬挂/manual 边界钉/176 行面守恒 23）+
+  旧钉改钉（cement/rebar dictionary 646→675、bindings 552→581、CE8 翻走 4 行
+  型面、calc-method-formula EXPECTED 扩十五参数）+seed:db+seed:check clean+
+  DB 探针（29/10+13/10/10/52/式(66) 串逐字）。
+
 - feat(seeds): **批R14——GB/T 18242-2025 弹性体/塑性体改性沥青防水卷材 tech-req 全面导首入库（③语料产线第 14 部，wp 防水材料域产品标首例）**——
   inspection_technical_requirements.json +38 行（543→581）。**人批三答
   （2026-11-21）**：单标批（JGJ 107-2016/GB 55008-2021 排除——107 grade×直径
