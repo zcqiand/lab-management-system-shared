@@ -4,6 +4,48 @@
 
 ## [Unreleased]
 
+- feat(seeds): **批R14——GB/T 18242-2025 弹性体/塑性体改性沥青防水卷材 tech-req 全面导首入库（③语料产线第 14 部，wp 防水材料域产品标首例）**——
+  inspection_technical_requirements.json +38 行（543→581）。**人批三答
+  （2026-11-21）**：单标批（JGJ 107-2016/GB 55008-2021 排除——107 grade×直径
+  两维+相对限值 ≥1.25fyk/fstk 不合固定值行形；55008 设计构造面为主净面小）/
+  全面导（8 绑参限值面+补绑定 4 参+立码 8 参，净面 38 行）/文字判定面 eq 文本
+  行入库 16 行（52 行 eq 先例形）。**人批中断修正（最高优先）**：只导 2025，
+  **GB18242-2008 退役**——status→superseded 软退役（retireSuperseded 机制在
+  库；名下 tech-req 0 行=翻转面空；9 条 std-bind+sample_receipts 历史面不动
+  保 FK；UI standards status 过滤面挂账——API listStandardsParams 已支持
+  status 参数）。**行面（数值 22）**：表1 厚度×2（IP-0396 spec=3mm/4mm
+  ≥3.0/≥4.0→≥3/≥4 mm；最小单值 2.7/3.7 同 PK 统计面变体挂账）+ 可溶物×2
+  （IP-0009 spec=3mm/4mm ≥2100/2900 g/m²）+ 表2/表3 拉力×4（IP-0010
+  model=SBS/APP × grade=Ⅰ型/Ⅱ型 ≥500/800 N/50mm）+ 延伸率×4（IP-0044
+  ≥30/40/25/40 %）+ 表2续/表3续 吸水率×1（IP-0059 ≤2.0→≤2 %，23℃,7d）+
+  渗油性×1（IP-0643 ≤2 张立码）+ 矿物粒料粘附性×1（IP-0644 ≤2.0→≤2 g
+  立码）+ 保持率×1（IP-0641 ≥90 % 立码；OCR 双碎片歧义取引用层项目名 MED
+  人看闸）+ 质量损失×1（IP-0642 ≤1.0→≤1 % 立码）+ 尺寸变化率×1（IP-0640
+  ≤0.7 %，80℃,10d 立码）+ 表4 剥离强度×1（IP-0019 无处理 ≥1.5 N/mm；
+  热处理/浸水 ≥1.2 变体挂账——conditions 非 PK 键维，禁条件注记进 spec
+  维度，龄期裁定同族）+ 涂盖层厚度×1（IP-0646 ≥1.0→≥1 mm 立码）+ 闪点×1
+  （IP-0421 ≥230 ℃）+ 搭接缝不透水×1（IP-0647 立码，三处理条件并 1 行——
+  conditions 非 PK 键维裁定 2026-11-21）+ 6.4 总铅×1（IP-0645 ≤90 mg/kg
+  立码，prose「不应大于」归一 ≤）。**文字面（eq 16 行）**：不透水×2（IP-0014
+  spec 0.2/0.3 MPa、120 min）+ 耐热性×4（IP-0021 90/105/110/130℃ 无流淌无
+  滴落）+ 低温柔性×4（IP-0022 -20/-25/-7/-15℃ 无裂缝；APP 7℃→-7℃ OCR
+  负温号损形归一 MED）+ 热老化后低柔×4（IP-0013 -18/-23/-5/-13℃）+ 燃烧
+  ×1（IP-0297 不低于 GB 8624 B2 级）+ 搭接缝×1。**立码+绑定面**：
+  inspection_parameters.json +8（IP-0640~0647 sort_order 640~647，语义字典
+  wp terms 不动——forward 前瞻词禁倒挂，wp 零卡模板，R13 brick 先例同形）+
+  inspection_object_parameters.json +15（P10 junction 12→27：8 立码+IP-0021/
+  0022/0044/0396/0059/0421/0297 补绑 7）+ inspection_standard_parameters.json
+  +12（2025 8→20：IP-0013/0059/0421/0297 补绑 4+8 立码）+ standards 2008
+  status→superseded。置信 HIGH×8+MED×30（符号归一/负温号损形/OCR 双碎片
+  旗标逐行 remark 记）。选部（第二轮三候选并盘）：18242-2025 主候选胜出
+  （wp 产品标限值面密集全 ≥/≤ 形、8 参已绑、tech-req 零行全开）。
+  定性不导挂账（新增候选）：滑移 ≤2mm（语料缺值）、面积偏差 ±0.10（± 区间
+  族挂账②）、人工气候加速老化现象面+≥80% 歧义碎片、剥离强度热处理/浸水
+  变体、UI status 过滤面。验证链：dry-run 38/0/0→--write→守卫 10 it 先红后
+  绿→旧钉 7 处一轮显形修毕→seeds 196/196→seed:db --reset+seed:check clean→
+  DB 探针（38/0/superseded/8/27/20/9/581 全过）→双门全绿。兄弟仓同步清单：
+  nextjs（守卫 tests/seeds/wp-r14-18242-techreq.test.ts 10 it+旧钉 7 处改钉，
+  照单回放提交）。
 - feat(seeds): **批R13——GB/T 5101-2017 烧结普通砖 + GB/T 11968-2020 蒸压加气混凝土砌块 双标同批 tech-req 首入库（③语料产线第 13 部，brick 砖砌块域回归 R5 后首次）**——
   inspection_technical_requirements.json +21 行（522→543）：5101 表3 强度
   等级×5——IP-0055 grade=MU30~MU10 平均值列 ≥30/25/20/15/10 MPa（fk 标准值

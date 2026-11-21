@@ -3238,5 +3238,77 @@
     "inspection_parameter_code": "IP-0639",
     "created_at": "2026-11-20T00:00:00Z",
     "updated_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0013",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0059",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0421",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0297",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0640",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0641",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0642",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0643",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0644",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0645",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0646",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_standard_code": "GB/T 18242-2025",
+    "inspection_parameter_code": "IP-0647",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
   }
 ]

@@ -8152,5 +8152,140 @@
     "remark": "批R13 2026-11-20 人批立码+绑定：GB/T 11968-2020 §6.4 蒸压加气混凝土砌块干燥收缩值（≤0.50 mm/m）；IP-0639 本批立码（字典原无精确参数，IP-0570 收缩率%≠干燥收缩值 mm/m），junction+std-bind 同批过闸，tech-req 1 行同批导入",
     "created_at": "2026-11-20T00:00:00Z",
     "updated_at": "2026-11-20T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0396",
+    "qualification_level": "QUALIFIED",
+    "source_page": 6,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表1 厚度平均值（3mm/4mm ≥3.0/≥4.0 mm；最小单值挂账）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0021",
+    "qualification_level": "QUALIFIED",
+    "source_page": 6,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表2/表3 耐热性（90/105/110/130℃ 无流淌无滴落）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0022",
+    "qualification_level": "QUALIFIED",
+    "source_page": 6,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表2/表3 低温柔性（-20/-25/-7/-15℃ 无裂缝；APP 7℃ OCR 负温号损形归一）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0044",
+    "qualification_level": "QUALIFIED",
+    "source_page": 6,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表2/表3 最大拉力时延伸率（≥30/40/25/40 %）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0059",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表2续/表3续 吸水率（≤2.0 %，23℃,7d）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0421",
+    "qualification_level": "QUALIFIED",
+    "source_page": 8,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表4 闪点（≥230 ℃）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0297",
+    "qualification_level": "QUALIFIED",
+    "source_page": 8,
+    "remark": "批R14 2026-11-21 人批补绑：GB/T 18242-2025 表4 燃烧性能（不低于 GB 8624 B2 级）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0640",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表2续/表3续 尺寸变化率（80℃,10d ≤0.7 %）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0641",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表2续/表3续 热老化最大拉力时延伸率保持率（≥90 %；OCR 双碎片歧义人看闸）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0642",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表2续/表3续 热老化质量损失（≤1.0 %）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0643",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表2续/表3续 渗油性（≤2 张）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0644",
+    "qualification_level": "QUALIFIED",
+    "source_page": 7,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表2续/表3续 矿物粒料粘附性（≤2.0 g，仅粗矿物粒料（G 类）卷材）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0645",
+    "qualification_level": "QUALIFIED",
+    "source_page": 8,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 6.4 总铅含量（≤90 mg/kg）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0646",
+    "qualification_level": "QUALIFIED",
+    "source_page": 8,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表4 卷材下表面沥青涂盖层厚度（≥1.0 mm）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
+  },
+  {
+    "inspection_object_code": "OBJ-SP01-P10-防水卷材",
+    "inspection_parameter_code": "IP-0647",
+    "qualification_level": "QUALIFIED",
+    "source_page": 8,
+    "remark": "批R14 2026-11-21 人批立码+绑定：GB/T 18242-2025 表4 搭接缝不透水性（0.2 MPa、30 min 不透水，三处理条件并 1 行）",
+    "created_at": "2026-11-21T00:00:00Z",
+    "updated_at": "2026-11-21T00:00:00Z"
   }
 ]

@@ -80,12 +80,12 @@
     "code": "GB18242-2008",
     "name": "弹性体改性沥青防水卷材",
     "version": "2008",
-    "status": "active",
+    "status": "superseded",
     "source_document_id": null,
     "source_hash": null,
     "sort_order": 112,
     "created_at": "2026-01-01T00:00:00Z",
-    "updated_at": "2026-01-01T00:00:00Z"
+    "updated_at": "2026-11-21T00:00:00Z"
   },
   {
     "code": "GB18243-2008",
