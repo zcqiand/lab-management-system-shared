@@ -326,6 +326,7 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 已上线 |
 | M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 已上线 |
 | M06.F09 | 报告名称扩展属性界面 | InspectionReportNameInterface 维护 + 报告名称↔界面 link（样品信息扩展属性，2026-11-10 接替 ext_fields） | 已上线 |
+| M06.F10 | 公式求值与记录复现 | /api/calc/evaluate（保存前预览+verdict）+ /api/calc/records/{recordId}（读库复算只读不落库；R2 纯增 2026-11-22 人批） | 开发中 |
 
 ### M06.F01 检测专项
 
@@ -444,3 +445,10 @@ M97/M98/M99/M96（infra/契约专属段）不进 BASE，由各消费仓自管。
 | M06.F09.I07 | 报告名称↔界面 unlink | 接口 | 前端+后端 | DELETE /api/report-name-interfaces/links：幂等 204 | 已上线 |
 
 （GET /api/report-name-interfaces/links → ADR-0034 §3 link GET list 自然豁免）
+
+### M06.F10 公式求值与记录复现
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F10.I01 | 公式求值 | 接口 | 前端+后端 | POST /api/calc/evaluate：formula+contexts(+techReq) → CalcEvaluationResult（strengths/mean/errors/verdict），保存前预览 | 开发中 |
+| M06.F10.I02 | 检测记录复现 | 接口 | 前端+后端 | GET /api/calc/records/{recordId}：读 test_records + calc_methods 复算，只读不落库 | 开发中 |

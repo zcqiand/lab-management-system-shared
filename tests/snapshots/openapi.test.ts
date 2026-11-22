@@ -52,6 +52,9 @@ describe("OpenAPI snapshot", () => {
       "/api/calculation-methods",
       "/api/param-interfaces",
       "/api/param-interfaces/links",
+      // R2 纯增 calc 段（2026-11-22 人批「两点处理」）：evaluate / records 复现
+      "/api/calc/evaluate",
+      "/api/calc/records/{recordId}",
     ]) {
       expect(content, `missing path: ${path}`).toContain(path);
     }

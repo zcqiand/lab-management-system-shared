@@ -1,21 +1,21 @@
 {
-  "current_task": "批F2（GB/T 176-2025 化学面 formula 翻型修正批）收官——账 75 收口，双门全绿三仓提交",
+  "current_task": "批F3（formula 卡采集字段化+中间量撤码）收官——五种子翻面提交（413cb67），F2 分叉 2-A 当日翻案",
   "done": [
-    "六种子写面：calc 10 行 manual→formula in-place + parameters +29（IP-0648~0676，646→675）+ junction/std-bind 各 +29 + interfaces +10 卡 v1（cement-chem-*）+ links +10（40/61）",
-    "faces 幂等脚本（manifest JSON CJK 独立 + 纯 ASCII python 逻辑）+ 写后自验全过",
-    "seed:db upsert 翻型面 in-place 落库 + seed:check clean + DB 探针全对（29/10+13/10/10/52/式(66) 串逐字）",
-    "双门全绿（shared L0-L5 exit 0 / nextjs L0-L5 exit 0）",
-    "CHANGELOG 批F2 段落档"
+    "五种子写面：parameters −29（675→646）+junction −29（950→921）+std-bind −29（581→552）+calc 8 串字段键化+interfaces 10 卡 v1→v2（8 卡插采集输入列）",
+    "CHANGELOG 批F3 段+批F2 分叉翻案注记；DB 探针 9/9（双库 --reset 重灌）；seeds 守卫 205/205",
+    "验收追加：灰底盒去重注记+decimals 口径挂账候选入 CHANGELOG"
   ],
-  "next": "无本仓待办。批R15（GB 13788-2024 冷轧带肋钢筋）回位续作——选部已人批，走 runbook 全程",
+  "next": "无本仓待办。批R15（GB 13788-2024）回位续作；氧化镁方案2 立批时本仓角色=calc 行翻型+卡模板方法面（随新机制设计定形）",
   "open_questions": [
-    "挂账存量：76、77（IP-0631 CO₂ 式(48) 翻型，F2 期新挂）、78（烧失量式(30) 校正面，F2 期新挂）、74、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批"
+    "氧化镁 formula 化已裁方案2（2026-11-22 用户）——新机制工程批独立 spec/plan 人批",
+    "挂账存量：76、77、78、74、73 七项、72 七项、71、70、69-61、60②、JC/T 600 迁移欠条、46②——均人批另批",
+    "挂账候选新增：decimals 显示口径、≥400 技术要求三卡同值"
   ],
   "dont": [
-    "曲线族 12 行 + IP-0631 维持 manual 是人裁边界（护栏测试⑥钉住）——禁顺手翻",
+    "曲线族 12 行 + IP-0631 维持 manual 是人裁边界（护栏测试钉住）——禁顺手翻",
     "formula 卡 computed 列 field 必名 total（formulaEval data.total 硬编码）",
-    "种子 JSON 2 空格缩进 ensure_ascii=False 尾换行；tech-req 写面只走管线 --write（append-only）",
-    "gate -p 单仓参数——两仓须分两次跑（一次传两仓 exit 2 usage error）"
+    "种子 JSON 2 空格缩进 ensure_ascii=False 尾换行；摘行/翻 v2 必 seed:db --reset",
+    "gate -p 单仓参数——两仓须分两次跑"
   ],
-  "last_gate_passed_at": "2026-11-21T21:20:00+08:00"
+  "last_gate_passed_at": "2026-11-22T00:57:00+08:00"
 }

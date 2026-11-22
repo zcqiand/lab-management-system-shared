@@ -4,6 +4,15 @@
 
 ## [Unreleased]
 
+- feat(tsp): **calc 段纯增（R2/REQ-2026-043，2026-11-22「两点处理」人批）**——
+  `tsp/routes/calc.tsp` 新增：`POST /api/calc/evaluate`（CalcEvaluateRequest
+  formula+contexts+techReq 可选 → CalcEvaluationResult strengths/mean/errors/
+  verdict）+ `GET /api/calc/records/{recordId}`（只读复现链）+ CalcError 三码
+  （FORMULA_PARSE_ERROR/CONTEXT_KEY_MISSING/DIVIDE_BY_ZERO）；function-tree.md F 行
+  M06.F10 已落盘（第一次 --approve）；**I 行 I01/I02 待第二次 --approve 后同 commit**
+  （回填批：shared commit → rules mirror --apply → rules calc 测试补锚）。openapi.yaml
+  重新 emit 同批。消费面：rules 仓 calc 段（commit 1b8c5e6）+ CT calc.test.ts
+  （2044f6c）已在消费侧就位。
 - feat(seeds): **批F3——formula 卡采集字段化 + 中间量撤码（2026-11-21 用户裁定，F2 分叉 2-A 当日翻案）**——
   检测参数回归「标准规定的报告/评定量」：公式中间量不再以检测参数身份落字典，
   采集字段进 formula 卡本体。**种子写面五文件**：inspection_parameters.json −29

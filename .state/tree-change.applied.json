@@ -1,16 +1,23 @@
 {
   "schema": 1,
-  "approved": true,
-  "base_sha": "2c8f833d5d58e4cb",
-  "summary": "REQ-2026-023 AC-7 验收闭环：M01.F05.I06 原生登录（代理 saas IdP）GA 翻转 开发中→已上线",
+  "project": "lab-management-system-shared",
+  "approved": false,
+  "base_sha": "506276b4d656ef73",
+  "summary": "M06.F10 I 段追加（第二批）：F 行已随第一批批准落盘，本批仅剩文件尾 I01/I02 两行（一批准一写入的令牌机制拆批）。人批依据同批：用户 2026-11-22『两点处理』+ 第一次 --approve 已亲跑。",
   "changes": [
     {
-      "id": "M01.F05.I06",
-      "action": "变更",
-      "name": "原生登录",
-      "reason": "REQ-2026-023：tag 链 5/5 部署探针全过 + lab-flutter prod 浏览器原生登录人工验收通过（2026-10-12），AC-1~AC-7 闭环"
+      "id": "M06.F10.I01",
+      "action": "新增",
+      "name": "公式求值",
+      "reason": "POST /api/calc/evaluate：formula+contexts(+techReq) → CalcEvaluationResult（strengths/mean/errors/verdict）"
+    },
+    {
+      "id": "M06.F10.I02",
+      "action": "新增",
+      "name": "检测记录复现",
+      "reason": "GET /api/calc/records/{recordId}：读 test_records + calc_methods 复算，只读不落库"
     }
   ],
   "sync_files": [],
-  "applied_at": "2026-10-12T00:56:28"
+  "applied_at": "2026-11-23T07:26:52+0800"
 }

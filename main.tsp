@@ -14,6 +14,7 @@ import "./tsp/models/inspection-dictionary.tsp";
 import "./tsp/models/report-name.tsp";
 import "./tsp/models/calculation-method.tsp";
 import "./tsp/models/param-interface.tsp";
+import "./tsp/models/calc.tsp";
 
 // --- Frontend Bind Contracts (Sprint 1) ---
 import "./tsp/contracts/frontend-bind.tsp";
@@ -32,6 +33,7 @@ import "./tsp/routes/report-names.tsp";
 import "./tsp/routes/calculation-methods.tsp";
 import "./tsp/routes/param-interfaces.tsp";
 import "./tsp/routes/report-name-interfaces.tsp";
+import "./tsp/routes/calc.tsp";
 
 using TypeSpec.Http;
 

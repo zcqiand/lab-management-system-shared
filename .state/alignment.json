@@ -3,10 +3,10 @@
   "project": "lab-management-system-shared",
   "functions": {
     "modules": 7,
-    "features": 27,
-    "items": 167
+    "features": 28,
+    "items": 169
   },
-  "warnings_total": 335,
+  "warnings_total": 337,
   "warnings": {
     "已上线但无设计映射": [
       "M00.F01.I01",
@@ -341,7 +341,9 @@
       "M03.F08.I04",
       "M06.F02.I09",
       "M06.F02.I10",
-      "M06.F03.I08"
+      "M06.F03.I08",
+      "M06.F10.I01",
+      "M06.F10.I02"
     ],
     "开发中但代码里无 UI 入口(用户还点不到)": [
       "M01.F04.I03",
@@ -366,21 +368,21 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-me.test.ts:644 (annot)",
         "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:518 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:1133 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\calculation-methods.test.ts:2111 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:1564 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\calculation-methods.test.ts:2942 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:4881 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:1704 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:1840 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:1836 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:2226 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2450 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:2696 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:2362 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2586 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:2832 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:734 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples.test.ts:2066 (annot)",
         "output\\lab-management-system-contract-test\\tests\\summary.test.ts:1977 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:1119 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:5574 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements.test.ts:1996 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:810 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:1255 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:6135 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements.test.ts:3046 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:1037 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records.test.ts:2104 (annot)"
       ],
       "entry": []
@@ -404,17 +406,17 @@
       "designs": [],
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:2081 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:2403 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:3247 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:7980 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:3332 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:3468 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:3710 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:1248 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:1030 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:3716 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:1384 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:1166 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:3852 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2944 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2321 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:2497 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:2333 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2805 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:3058 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:3556 (annot)"
       ],
       "entry": []
     },
@@ -430,14 +432,14 @@
         "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1883 (annot)",
         "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:3843 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:3455 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:2667 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:2803 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:3022 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:3272 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:3398 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:2588 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:3408 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:3534 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:2724 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:2295 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:2203 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:759 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:925 (annot)"
       ],
       "entry": []
     },
@@ -471,17 +473,17 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth.test.ts:1310 (annot)",
         "output\\lab-management-system-contract-test\\tests\\auth.test.ts:394 (path)",
-        "output\\lab-management-system-contract-test\\tests\\calculation-methods.test.ts:1042 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\calculation-methods.test.ts:1178 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:1784 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:2678 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:2814 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:2437 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:985 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1274 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:1578 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces.test.ts:1121 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1410 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:1714 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:1011 (annot)",
         "output\\lab-management-system-contract-test\\tests\\samples.test.ts:920 (annot)",
         "output\\lab-management-system-contract-test\\tests\\summary.test.ts:743 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements.test.ts:1066 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements.test.ts:1202 (annot)",
         "output\\lab-management-system-contract-test\\tests\\test-records.test.ts:912 (annot)"
       ],
       "entry": []
@@ -496,17 +498,17 @@
       "tests": [
         "output\\lab-management-system-contract-test\\tests\\auth-read.test.ts:4261 (annot)",
         "output\\lab-management-system-contract-test\\tests\\auth-write.test.ts:1336 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:3147 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\calculation-methods-write.test.ts:3991 (annot)",
         "output\\lab-management-system-contract-test\\tests\\contracts.test.ts:8707 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:3496 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:3632 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:2942 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2465 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2212 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:4374 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:2601 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2348 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:4510 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts-write.test.ts:3538 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:2964 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:3194 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:2978 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:3448 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\technical-requirements-write.test.ts:3755 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:4201 (annot)"
       ],
       "entry": []
     },
@@ -688,9 +690,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:3603 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:3650 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:3849 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:4087 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:4134 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\samples-write.test.ts:4333 (annot)"
       ],
       "entry": []
     },
@@ -1302,13 +1304,13 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:4260 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:4396 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:4367 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3139 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2910 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:3566 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3275 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3046 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:3702 (annot)",
         "output\\lab-management-system-contract-test\\tests\\sample-receipts.test.ts:3250 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:3593 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\test-records-write.test.ts:4816 (annot)"
       ],
       "entry": []
     },
@@ -1320,11 +1322,11 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5030 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5166 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:5553 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3761 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3566 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:4662 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:3897 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3702 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:4798 (annot)"
       ],
       "entry": []
     },
@@ -1336,11 +1338,11 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5695 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:5831 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:6223 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:4699 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4524 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:5800 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\param-interfaces-write.test.ts:4927 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4660 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\report-names.test.ts:5936 (annot)"
       ],
       "entry": []
     },
@@ -1362,9 +1364,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:4313 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:4449 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:3438 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:5065 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:5201 (annot)"
       ],
       "entry": []
     },
@@ -1376,9 +1378,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:6340 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:6476 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:6868 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:5685 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:5821 (annot)"
       ],
       "entry": []
     },
@@ -1390,7 +1392,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:7103 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:7239 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:7985 (annot)"
       ],
       "entry": []
@@ -1413,9 +1415,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:7763 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:7899 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:8670 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:7087 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:7223 (annot)"
       ],
       "entry": []
     },
@@ -1427,9 +1429,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:5126 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog.test.ts:5262 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary.test.ts:3942 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:7804 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:7940 (annot)"
       ],
       "entry": []
     },
@@ -1441,7 +1443,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:8404 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:8540 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:9328 (annot)"
       ],
       "entry": []
@@ -1643,9 +1645,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:9174 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:9310 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:10238 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:9383 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:9519 (annot)"
       ],
       "entry": []
     },
@@ -1657,9 +1659,9 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:9839 (annot)",
+        "output\\lab-management-system-contract-test\\tests\\inspection-catalog-write.test.ts:9975 (annot)",
         "output\\lab-management-system-contract-test\\tests\\inspection-dictionary-write.test.ts:10918 (annot)",
-        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:10059 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-names-write.test.ts:10195 (annot)"
       ],
       "entry": []
     },
@@ -2172,7 +2174,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1238 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:1374 (annot)"
       ],
       "entry": []
     },
@@ -2184,7 +2186,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2412 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces.test.ts:2548 (annot)"
       ],
       "entry": []
     },
@@ -2196,7 +2198,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:978 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:1114 (annot)"
       ],
       "entry": []
     },
@@ -2208,7 +2210,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2154 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2290 (annot)"
       ],
       "entry": []
     },
@@ -2220,7 +2222,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2849 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:2985 (annot)"
       ],
       "entry": []
     },
@@ -2232,7 +2234,7 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3508 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:3644 (annot)"
       ],
       "entry": []
     },
@@ -2244,7 +2246,31 @@
       "flows": [],
       "designs": [],
       "tests": [
-        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4464 (annot)"
+        "output\\lab-management-system-contract-test\\tests\\report-name-interfaces-write.test.ts:4600 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F10.I01": {
+      "name": "公式求值",
+      "status": "开发中",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\calc.test.ts:985 (annot)"
+      ],
+      "entry": []
+    },
+    "M06.F10.I02": {
+      "name": "检测记录复现",
+      "status": "开发中",
+      "type": "接口",
+      "requirements": [],
+      "flows": [],
+      "designs": [],
+      "tests": [
+        "output\\lab-management-system-contract-test\\tests\\calc.test.ts:2152 (annot)"
       ],
       "entry": []
     }
